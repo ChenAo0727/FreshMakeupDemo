@@ -24,6 +24,14 @@
 		2E8C342E1B7DF3DC006B5BC0 /* PickUpMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34231B7DF3DC006B5BC0 /* PickUpMotion.m */; };
 		2E8C342F1B7DF3DC006B5BC0 /* SlideMotion+Calculation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34261B7DF3DC006B5BC0 /* SlideMotion+Calculation.m */; };
 		2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34281B7DF3DC006B5BC0 /* SlideMotion.m */; };
+		2E8C34461B7DF46E006B5BC0 /* NSDictionary+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34361B7DF46E006B5BC0 /* NSDictionary+Utility.m */; };
+		2E8C34471B7DF46E006B5BC0 /* NSNumber+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34381B7DF46E006B5BC0 /* NSNumber+Utility.m */; };
+		2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C343B1B7DF46E006B5BC0 /* CGSizeUtility.m */; };
+		2E8C34491B7DF46E006B5BC0 /* UIAlertView+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C343D1B7DF46E006B5BC0 /* UIAlertView+Utility.m */; };
+		2E8C344A1B7DF46E006B5BC0 /* UIColor+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C343F1B7DF46E006B5BC0 /* UIColor+Utility.m */; };
+		2E8C344B1B7DF46E006B5BC0 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34411B7DF46E006B5BC0 /* UIImage+Utility.m */; };
+		2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34431B7DF46E006B5BC0 /* UIScreen+Utility.m */; };
+		2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34451B7DF46E006B5BC0 /* UITextField+Utility.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +78,22 @@
 		2E8C34261B7DF3DC006B5BC0 /* SlideMotion+Calculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SlideMotion+Calculation.m"; sourceTree = "<group>"; };
 		2E8C34271B7DF3DC006B5BC0 /* SlideMotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMotion.h; sourceTree = "<group>"; };
 		2E8C34281B7DF3DC006B5BC0 /* SlideMotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMotion.m; sourceTree = "<group>"; };
+		2E8C34351B7DF46E006B5BC0 /* NSDictionary+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Utility.h"; sourceTree = "<group>"; };
+		2E8C34361B7DF46E006B5BC0 /* NSDictionary+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Utility.m"; sourceTree = "<group>"; };
+		2E8C34371B7DF46E006B5BC0 /* NSNumber+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+Utility.h"; sourceTree = "<group>"; };
+		2E8C34381B7DF46E006B5BC0 /* NSNumber+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+Utility.m"; sourceTree = "<group>"; };
+		2E8C343A1B7DF46E006B5BC0 /* CGSizeUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSizeUtility.h; sourceTree = "<group>"; };
+		2E8C343B1B7DF46E006B5BC0 /* CGSizeUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGSizeUtility.m; sourceTree = "<group>"; };
+		2E8C343C1B7DF46E006B5BC0 /* UIAlertView+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Utility.h"; sourceTree = "<group>"; };
+		2E8C343D1B7DF46E006B5BC0 /* UIAlertView+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Utility.m"; sourceTree = "<group>"; };
+		2E8C343E1B7DF46E006B5BC0 /* UIColor+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Utility.h"; sourceTree = "<group>"; };
+		2E8C343F1B7DF46E006B5BC0 /* UIColor+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Utility.m"; sourceTree = "<group>"; };
+		2E8C34401B7DF46E006B5BC0 /* UIImage+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Utility.h"; sourceTree = "<group>"; };
+		2E8C34411B7DF46E006B5BC0 /* UIImage+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Utility.m"; sourceTree = "<group>"; };
+		2E8C34421B7DF46E006B5BC0 /* UIScreen+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+Utility.h"; sourceTree = "<group>"; };
+		2E8C34431B7DF46E006B5BC0 /* UIScreen+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Utility.m"; sourceTree = "<group>"; };
+		2E8C34441B7DF46E006B5BC0 /* UITextField+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Utility.h"; sourceTree = "<group>"; };
+		2E8C34451B7DF46E006B5BC0 /* UITextField+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Utility.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +135,7 @@
 		2E8C33D41B7DEC79006B5BC0 /* FreshMakeupDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2E8C34321B7DF46E006B5BC0 /* Tools */,
 				2E8C34121B7DF3DC006B5BC0 /* Custom Views */,
 				2E8C33FD1B7DF111006B5BC0 /* ViewControllers */,
 				2E8C33D91B7DEC79006B5BC0 /* AppDelegate.h */,
@@ -274,6 +299,53 @@
 			path = "Custon Cells";
 			sourceTree = "<group>";
 		};
+		2E8C34321B7DF46E006B5BC0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C34331B7DF46E006B5BC0 /* Utilities */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2E8C34331B7DF46E006B5BC0 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C34341B7DF46E006B5BC0 /* Fundation */,
+				2E8C34391B7DF46E006B5BC0 /* UIKit */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2E8C34341B7DF46E006B5BC0 /* Fundation */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C34351B7DF46E006B5BC0 /* NSDictionary+Utility.h */,
+				2E8C34361B7DF46E006B5BC0 /* NSDictionary+Utility.m */,
+				2E8C34371B7DF46E006B5BC0 /* NSNumber+Utility.h */,
+				2E8C34381B7DF46E006B5BC0 /* NSNumber+Utility.m */,
+			);
+			path = Fundation;
+			sourceTree = "<group>";
+		};
+		2E8C34391B7DF46E006B5BC0 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				2E8C343A1B7DF46E006B5BC0 /* CGSizeUtility.h */,
+				2E8C343B1B7DF46E006B5BC0 /* CGSizeUtility.m */,
+				2E8C343C1B7DF46E006B5BC0 /* UIAlertView+Utility.h */,
+				2E8C343D1B7DF46E006B5BC0 /* UIAlertView+Utility.m */,
+				2E8C343E1B7DF46E006B5BC0 /* UIColor+Utility.h */,
+				2E8C343F1B7DF46E006B5BC0 /* UIColor+Utility.m */,
+				2E8C34401B7DF46E006B5BC0 /* UIImage+Utility.h */,
+				2E8C34411B7DF46E006B5BC0 /* UIImage+Utility.m */,
+				2E8C34421B7DF46E006B5BC0 /* UIScreen+Utility.h */,
+				2E8C34431B7DF46E006B5BC0 /* UIScreen+Utility.m */,
+				2E8C34441B7DF46E006B5BC0 /* UITextField+Utility.h */,
+				2E8C34451B7DF46E006B5BC0 /* UITextField+Utility.m */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -375,17 +447,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8C342B1B7DF3DC006B5BC0 /* PickUpMotion+Animation.m in Sources */,
+				2E8C34461B7DF46E006B5BC0 /* NSDictionary+Utility.m in Sources */,
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
+				2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */,
 				2E8C342E1B7DF3DC006B5BC0 /* PickUpMotion.m in Sources */,
+				2E8C34471B7DF46E006B5BC0 /* NSNumber+Utility.m in Sources */,
+				2E8C34491B7DF46E006B5BC0 /* UIAlertView+Utility.m in Sources */,
 				2E8C342A1B7DF3DC006B5BC0 /* UIView+CommonSuperview.m in Sources */,
 				2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */,
 				2E8C342F1B7DF3DC006B5BC0 /* SlideMotion+Calculation.m in Sources */,
+				2E8C344B1B7DF46E006B5BC0 /* UIImage+Utility.m in Sources */,
 				2E8C34101B7DF361006B5BC0 /* BaseViewController.m in Sources */,
 				2E8C342C1B7DF3DC006B5BC0 /* PickUpMotion+Calculation.m in Sources */,
 				2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */,
+				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
+				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,
 				2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E8C34111B7DF361006B5BC0 /* UINavigationController+CustomNavigationController.m in Sources */,
+				2E8C344A1B7DF46E006B5BC0 /* UIColor+Utility.m in Sources */,
 				2E8C34071B7DF2B7006B5BC0 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
