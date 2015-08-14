@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
 		2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C33D71B7DEC79006B5BC0 /* main.m */; };
 		2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C33DA1B7DEC79006B5BC0 /* AppDelegate.m */; };
 		2E8C33E31B7DEC79006B5BC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C33E21B7DEC79006B5BC0 /* Images.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2E8C33D21B7DEC79006B5BC0 /* FreshMakeupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshMakeupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C33D61B7DEC79006B5BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8C33D71B7DEC79006B5BC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +96,8 @@
 		2E8C34431B7DF46E006B5BC0 /* UIScreen+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Utility.m"; sourceTree = "<group>"; };
 		2E8C34441B7DF46E006B5BC0 /* UITextField+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Utility.h"; sourceTree = "<group>"; };
 		2E8C34451B7DF46E006B5BC0 /* UITextField+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Utility.m"; sourceTree = "<group>"; };
+		497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6BEAE562AD3319ADF4371D12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,8 @@
 				2E8C33D41B7DEC79006B5BC0 /* FreshMakeupDemo */,
 				2E8C33EE1B7DEC79006B5BC0 /* FreshMakeupDemoTests */,
 				2E8C33D31B7DEC79006B5BC0 /* Products */,
+				EF0BB323A10A85CD2217AC02 /* Pods */,
+				F7691D9B3AFE5C5A498EBE74 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -346,6 +353,23 @@
 			path = UIKit;
 			sourceTree = "<group>";
 		};
+		EF0BB323A10A85CD2217AC02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */,
+				497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F7691D9B3AFE5C5A498EBE74 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6BEAE562AD3319ADF4371D12 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,9 +377,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E8C33F51B7DEC79006B5BC0 /* Build configuration list for PBXNativeTarget "FreshMakeupDemo" */;
 			buildPhases = (
+				392B33F545E5841F3C696A60 /* Check Pods Manifest.lock */,
 				2E8C33CE1B7DEC79006B5BC0 /* Sources */,
 				2E8C33CF1B7DEC79006B5BC0 /* Frameworks */,
 				2E8C33D01B7DEC79006B5BC0 /* Resources */,
+				318E52B2AD2E83A7605184A6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -440,6 +466,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		318E52B2AD2E83A7605184A6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		392B33F545E5841F3C696A60 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E8C33CE1B7DEC79006B5BC0 /* Sources */ = {
@@ -582,6 +641,7 @@
 		};
 		2E8C33F61B7DEC79006B5BC0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreshMakeupDemo/Info.plist;
@@ -592,6 +652,7 @@
 		};
 		2E8C33F71B7DEC79006B5BC0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreshMakeupDemo/Info.plist;

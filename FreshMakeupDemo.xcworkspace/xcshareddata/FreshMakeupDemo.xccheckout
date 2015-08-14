@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5EC1A3E2-7317-4BC1-84E6-8386F02AB963</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FreshMakeupDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>685219F83E186BDF56545F2F8D9681243D219859</key>
+		<string>10.0.2.217:shenchengguo/FreshMakeupDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FreshMakeupDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>685219F83E186BDF56545F2F8D9681243D219859</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>10.0.2.217:shenchengguo/FreshMakeupDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>685219F83E186BDF56545F2F8D9681243D219859</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>685219F83E186BDF56545F2F8D9681243D219859</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FreshMakeupDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>
