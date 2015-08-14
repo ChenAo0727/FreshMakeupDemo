@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MBProgressHUD.h"
 
 @interface BaseViewController : UIViewController
 
 + (instancetype)create;
 
-- (void)toast:(NSString *)message complete:(MBProgressHUDCompletionBlock)complete;
+//- (void)toast:(NSString *)message complete:(MBProgressHUDCompletionBlock)complete;
 - (void)addAutoDismissKeyboardGesture;
 
 @end

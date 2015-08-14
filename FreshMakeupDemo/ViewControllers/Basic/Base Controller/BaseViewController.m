@@ -21,18 +21,18 @@
 
 #pragma mark Public Methods
 
-- (void)toast:(NSString *)message complete:(MBProgressHUDCompletionBlock)complete {
-    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    hud.mode = MBProgressHUDModeText;
-    hud.labelText = message;
-    hud.labelFont = [UIFont fontWithName:@"HelveticaNeue" size:12];
-    hud.margin = 14.f;
-    hud.userInteractionEnabled = NO;
-    hud.removeFromSuperViewOnHide = YES;
-    hud.completionBlock = complete;
-    hud.yOffset = 0;
-    [hud hide:YES afterDelay:1.3];
-}
+//- (void)toast:(NSString *)message complete:(MBProgressHUDCompletionBlock)complete {
+//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+//    hud.mode = MBProgressHUDModeText;
+//    hud.labelText = message;
+//    hud.labelFont = [UIFont fontWithName:@"HelveticaNeue" size:12];
+//    hud.margin = 14.f;
+//    hud.userInteractionEnabled = NO;
+//    hud.removeFromSuperViewOnHide = YES;
+//    hud.completionBlock = complete;
+//    hud.yOffset = 0;
+//    [hud hide:YES afterDelay:1.3];
+//}
 
 - (void)addAutoDismissKeyboardGesture {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
