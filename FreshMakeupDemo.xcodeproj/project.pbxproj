@@ -79,6 +79,8 @@
 		2E8C33D41B7DEC79006B5BC0 /* FreshMakeupDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2E8C33FD1B7DF111006B5BC0 /* ViewControllers */,
+				2E8C33FC1B7DF0DB006B5BC0 /* Custom Views */,
 				2E8C33D91B7DEC79006B5BC0 /* AppDelegate.h */,
 				2E8C33DA1B7DEC79006B5BC0 /* AppDelegate.m */,
 				2E8C33DC1B7DEC79006B5BC0 /* ViewController.h */,
@@ -115,6 +117,21 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		2E8C33FC1B7DF0DB006B5BC0 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		2E8C33FD1B7DF111006B5BC0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			path = FreshMakeupDemo/ViewControllers;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -404,6 +421,7 @@
 				2E8C33F71B7DEC79006B5BC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E8C33F81B7DEC79006B5BC0 /* Build configuration list for PBXNativeTarget "FreshMakeupDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +430,7 @@
 				2E8C33FA1B7DEC79006B5BC0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
