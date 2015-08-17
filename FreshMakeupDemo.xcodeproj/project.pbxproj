@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054DFD241B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD1E1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m */; };
+		054DFD251B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD201B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m */; };
+		054DFD261B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD221B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.m */; };
+		054DFD271B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD231B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.xib */; };
+		054DFD351B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD2A1B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m */; };
+		054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD2B1B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib */; };
+		054DFD371B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD2D1B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.m */; };
+		054DFD381B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD2E1B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.xib */; };
+		054DFD391B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD301B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.m */; };
+		054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD311B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib */; };
+		054DFD3B1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD331B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.m */; };
+		054DFD3C1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD341B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib */; };
+		054DFD401B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD3E1B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m */; };
+		054DFD411B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD3F1B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib */; };
+		054DFD491B81AAEE00651F11 /* apply_head_product.png in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD431B81AAEE00651F11 /* apply_head_product.png */; };
+		054DFD4A1B81AAEE00651F11 /* apply_luck.png in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD441B81AAEE00651F11 /* apply_luck.png */; };
+		054DFD4B1B81AAEE00651F11 /* apply_power.png in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD451B81AAEE00651F11 /* apply_power.png */; };
+		054DFD4C1B81AAEE00651F11 /* Information.png in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD461B81AAEE00651F11 /* Information.png */; };
+		054DFD4D1B81AAEE00651F11 /* report.png in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD471B81AAEE00651F11 /* report.png */; };
+		054DFD4E1B81AAEE00651F11 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD481B81AAEE00651F11 /* title.png */; };
+		054DFD501B81AB8D00651F11 /* 0007.png in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD4F1B81AB8D00651F11 /* 0007.png */; };
+		054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD551B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m */; };
+		054DFD5A1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 054DFD581B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.m */; };
+		054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD591B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib */; };
+		054DFD5D1B820D0900651F11 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 054DFD5C1B820D0900651F11 /* .gitignore */; };
 		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
 		2E6B46371B81755600BF39D5 /* BookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6B46351B81755600BF39D5 /* BookCollectionViewCell.m */; };
 		2E6B46381B81755600BF39D5 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6B46361B81755600BF39D5 /* BookCollectionViewCell.xib */; };
@@ -55,6 +80,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		054DFD1D1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EarlyAdoptersTheTrialViewController+Animation.h"; sourceTree = "<group>"; };
+		054DFD1E1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EarlyAdoptersTheTrialViewController+Animation.m"; sourceTree = "<group>"; };
+		054DFD1F1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EarlyAdoptersTheTrialViewController+Configuration.h"; sourceTree = "<group>"; };
+		054DFD201B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EarlyAdoptersTheTrialViewController+Configuration.m"; sourceTree = "<group>"; };
+		054DFD211B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyAdoptersTheTrialViewController.h; sourceTree = "<group>"; };
+		054DFD221B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlyAdoptersTheTrialViewController.m; sourceTree = "<group>"; };
+		054DFD231B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarlyAdoptersTheTrialViewController.xib; sourceTree = "<group>"; };
+		054DFD291B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyAdoptersInformationTableViewCell.h; sourceTree = "<group>"; };
+		054DFD2A1B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlyAdoptersInformationTableViewCell.m; sourceTree = "<group>"; };
+		054DFD2B1B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarlyAdoptersInformationTableViewCell.xib; sourceTree = "<group>"; };
+		054DFD2C1B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyAdoptersReceiveTableViewCell.h; sourceTree = "<group>"; };
+		054DFD2D1B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlyAdoptersReceiveTableViewCell.m; sourceTree = "<group>"; };
+		054DFD2E1B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarlyAdoptersReceiveTableViewCell.xib; sourceTree = "<group>"; };
+		054DFD2F1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyAdoptersReportTableViewCell.h; sourceTree = "<group>"; };
+		054DFD301B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlyAdoptersReportTableViewCell.m; sourceTree = "<group>"; };
+		054DFD311B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarlyAdoptersReportTableViewCell.xib; sourceTree = "<group>"; };
+		054DFD321B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyAdoptersTitleImageTableViewCell.h; sourceTree = "<group>"; };
+		054DFD331B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlyAdoptersTitleImageTableViewCell.m; sourceTree = "<group>"; };
+		054DFD341B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarlyAdoptersTitleImageTableViewCell.xib; sourceTree = "<group>"; };
+		054DFD3D1B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyAdoptersReportTitleTableViewCell.h; sourceTree = "<group>"; };
+		054DFD3E1B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlyAdoptersReportTitleTableViewCell.m; sourceTree = "<group>"; };
+		054DFD3F1B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarlyAdoptersReportTitleTableViewCell.xib; sourceTree = "<group>"; };
+		054DFD431B81AAEE00651F11 /* apply_head_product.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apply_head_product.png; sourceTree = "<group>"; };
+		054DFD441B81AAEE00651F11 /* apply_luck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apply_luck.png; sourceTree = "<group>"; };
+		054DFD451B81AAEE00651F11 /* apply_power.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apply_power.png; sourceTree = "<group>"; };
+		054DFD461B81AAEE00651F11 /* Information.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Information.png; sourceTree = "<group>"; };
+		054DFD471B81AAEE00651F11 /* report.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = report.png; sourceTree = "<group>"; };
+		054DFD481B81AAEE00651F11 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
+		054DFD4F1B81AB8D00651F11 /* 0007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0007.png; sourceTree = "<group>"; };
+		054DFD541B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyAdoptersTheTrialViewControllerDataSource.h; sourceTree = "<group>"; };
+		054DFD551B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlyAdoptersTheTrialViewControllerDataSource.m; sourceTree = "<group>"; };
+		054DFD571B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyAdoptersPartitionTableViewCell.h; sourceTree = "<group>"; };
+		054DFD581B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarlyAdoptersPartitionTableViewCell.m; sourceTree = "<group>"; };
+		054DFD591B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EarlyAdoptersPartitionTableViewCell.xib; sourceTree = "<group>"; };
+		054DFD5C1B820D0900651F11 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2E6B46341B81755600BF39D5 /* BookCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCollectionViewCell.h; sourceTree = "<group>"; };
 		2E6B46351B81755600BF39D5 /* BookCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCollectionViewCell.m; sourceTree = "<group>"; };
@@ -141,6 +201,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		054DFD1C1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController */ = {
+			isa = PBXGroup;
+			children = (
+				054DFD1D1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.h */,
+				054DFD1E1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m */,
+				054DFD1F1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.h */,
+				054DFD201B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m */,
+				054DFD211B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.h */,
+				054DFD221B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.m */,
+				054DFD231B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.xib */,
+				054DFD541B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.h */,
+				054DFD551B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m */,
+			);
+			path = EarlyAdoptersTheTrialViewController;
+			sourceTree = "<group>";
+		};
+		054DFD281B81A0ED00651F11 /* EarlyAdoptersTheTrialViewController Cells */ = {
+			isa = PBXGroup;
+			children = (
+				054DFD291B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.h */,
+				054DFD2A1B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m */,
+				054DFD2B1B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib */,
+				054DFD2C1B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.h */,
+				054DFD2D1B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.m */,
+				054DFD2E1B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.xib */,
+				054DFD2F1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.h */,
+				054DFD301B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.m */,
+				054DFD311B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib */,
+				054DFD3D1B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.h */,
+				054DFD3E1B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m */,
+				054DFD3F1B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib */,
+				054DFD321B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.h */,
+				054DFD331B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.m */,
+				054DFD341B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib */,
+				054DFD571B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.h */,
+				054DFD581B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.m */,
+				054DFD591B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib */,
+			);
+			path = "EarlyAdoptersTheTrialViewController Cells";
+			sourceTree = "<group>";
+		};
+		054DFD421B81AAEE00651F11 /* EarlyAdoptersTheTrialImages */ = {
+			isa = PBXGroup;
+			children = (
+				054DFD431B81AAEE00651F11 /* apply_head_product.png */,
+				054DFD441B81AAEE00651F11 /* apply_luck.png */,
+				054DFD451B81AAEE00651F11 /* apply_power.png */,
+				054DFD461B81AAEE00651F11 /* Information.png */,
+				054DFD471B81AAEE00651F11 /* report.png */,
+				054DFD481B81AAEE00651F11 /* title.png */,
+				054DFD4F1B81AB8D00651F11 /* 0007.png */,
+			);
+			path = EarlyAdoptersTheTrialImages;
+			sourceTree = "<group>";
+		};
 		2E6B46331B81752D00BF39D5 /* BookCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +295,7 @@
 				2E8C33FD1B7DF111006B5BC0 /* ViewControllers */,
 				2E8C33D91B7DEC79006B5BC0 /* AppDelegate.h */,
 				2E8C33DA1B7DEC79006B5BC0 /* AppDelegate.m */,
+				054DFD5C1B820D0900651F11 /* .gitignore */,
 				2E8C33E21B7DEC79006B5BC0 /* Images.xcassets */,
 				2E8C33E41B7DEC79006B5BC0 /* LaunchScreen.xib */,
 				2E8C33D51B7DEC79006B5BC0 /* Supporting Files */,
@@ -219,6 +335,7 @@
 				2E8E27961B804BD000687E1B /* CommentViewController */,
 				2E8C34091B7DF361006B5BC0 /* Basic */,
 				2E8C34031B7DF2B7006B5BC0 /* HomeViewController */,
+				054DFD1C1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController */,
 			);
 			name = ViewControllers;
 			path = FreshMakeupDemo/ViewControllers;
@@ -338,6 +455,7 @@
 			isa = PBXGroup;
 			children = (
 				2E6B46331B81752D00BF39D5 /* BookCollectionViewCell */,
+				054DFD281B81A0ED00651F11 /* EarlyAdoptersTheTrialViewController Cells */,
 			);
 			path = "Custon Cells";
 			sourceTree = "<group>";
@@ -423,6 +541,7 @@
 		2EA427451B7ED71900BF4705 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				054DFD421B81AAEE00651F11 /* EarlyAdoptersTheTrialImages */,
 				2E6B46391B817F2E00BF39D5 /* home_book_cover_image.png */,
 				2EA427461B7ED72000BF4705 /* home_book_image.png */,
 			);
@@ -528,13 +647,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054DFD501B81AB8D00651F11 /* 0007.png in Resources */,
+				054DFD4B1B81AAEE00651F11 /* apply_power.png in Resources */,
 				2E8C33E61B7DEC79006B5BC0 /* LaunchScreen.xib in Resources */,
+				054DFD4C1B81AAEE00651F11 /* Information.png in Resources */,
 				2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */,
+				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
+				054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */,
+				054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */,
+				054DFD411B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib in Resources */,
+				054DFD4A1B81AAEE00651F11 /* apply_luck.png in Resources */,
+				054DFD271B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.xib in Resources */,
+				054DFD491B81AAEE00651F11 /* apply_head_product.png in Resources */,
 				2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */,
 				2E6B46381B81755600BF39D5 /* BookCollectionViewCell.xib in Resources */,
 				2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */,
+				054DFD4D1B81AAEE00651F11 /* report.png in Resources */,
+				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
 				2E8C33E31B7DEC79006B5BC0 /* Images.xcassets in Resources */,
+				054DFD3C1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib in Resources */,
+				054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */,
+				054DFD381B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.xib in Resources */,
 				2E8C34081B7DF2B7006B5BC0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,10 +721,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8C342B1B7DF3DC006B5BC0 /* PickUpMotion+Animation.m in Sources */,
+				054DFD391B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.m in Sources */,
 				2E8C34461B7DF46E006B5BC0 /* NSDictionary+Utility.m in Sources */,
+				054DFD241B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m in Sources */,
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
+				054DFD251B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m in Sources */,
 				2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */,
 				2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */,
+				054DFD3B1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.m in Sources */,
 				2E8C342E1B7DF3DC006B5BC0 /* PickUpMotion.m in Sources */,
 				2EA4273F1B7ED0FE00BF4705 /* LineLayout.m in Sources */,
 				2E8C34471B7DF46E006B5BC0 /* NSNumber+Utility.m in Sources */,
@@ -598,14 +736,20 @@
 				2E8C342A1B7DF3DC006B5BC0 /* UIView+CommonSuperview.m in Sources */,
 				2E6B46371B81755600BF39D5 /* BookCollectionViewCell.m in Sources */,
 				2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */,
+				054DFD5A1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.m in Sources */,
 				2E8C342F1B7DF3DC006B5BC0 /* SlideMotion+Calculation.m in Sources */,
+				054DFD371B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.m in Sources */,
+				054DFD261B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.m in Sources */,
 				2E8C344B1B7DF46E006B5BC0 /* UIImage+Utility.m in Sources */,
 				2E8C34101B7DF361006B5BC0 /* BaseViewController.m in Sources */,
 				2E8C342C1B7DF3DC006B5BC0 /* PickUpMotion+Calculation.m in Sources */,
 				2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */,
 				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
+				054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */,
 				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
 				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,
+				054DFD401B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m in Sources */,
+				054DFD351B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m in Sources */,
 				2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E8C34111B7DF361006B5BC0 /* UINavigationController+CustomNavigationController.m in Sources */,

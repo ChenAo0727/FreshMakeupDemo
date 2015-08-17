@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
-
+//#import "HomeViewController.h"
+#import "EarlyAdoptersTheTrialViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,10 +18,13 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[HomeViewController create]];
+//    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[HomeViewController create]];
     self.navigationController.navigationBarHidden = YES;
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
+    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialVC = [[EarlyAdoptersTheTrialViewController alloc] init];
+
+    self.window.rootViewController = earlyAdoptersTheTrialVC;
     return YES;
 }
 
