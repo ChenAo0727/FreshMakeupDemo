@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
+		2E6B46371B81755600BF39D5 /* BookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6B46351B81755600BF39D5 /* BookCollectionViewCell.m */; };
+		2E6B46381B81755600BF39D5 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6B46361B81755600BF39D5 /* BookCollectionViewCell.xib */; };
+		2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6B46391B817F2E00BF39D5 /* home_book_cover_image.png */; };
 		2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C33D71B7DEC79006B5BC0 /* main.m */; };
 		2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C33DA1B7DEC79006B5BC0 /* AppDelegate.m */; };
 		2E8C33E31B7DEC79006B5BC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C33E21B7DEC79006B5BC0 /* Images.xcassets */; };
@@ -33,6 +36,12 @@
 		2E8C344B1B7DF46E006B5BC0 /* UIImage+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34411B7DF46E006B5BC0 /* UIImage+Utility.m */; };
 		2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34431B7DF46E006B5BC0 /* UIScreen+Utility.m */; };
 		2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34451B7DF46E006B5BC0 /* UITextField+Utility.m */; };
+		2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E27981B804BE000687E1B /* CommentViewController.m */; };
+		2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E27991B804BE000687E1B /* CommentViewController.xib */; };
+		2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E92F5461B7E4EEB00C14B7A /* BookCollectionView.m */; };
+		2EA4273F1B7ED0FE00BF4705 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4273E1B7ED0FE00BF4705 /* LineLayout.m */; };
+		2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */; };
+		2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA427461B7ED72000BF4705 /* home_book_image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,10 @@
 
 /* Begin PBXFileReference section */
 		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2E6B46341B81755600BF39D5 /* BookCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCollectionViewCell.h; sourceTree = "<group>"; };
+		2E6B46351B81755600BF39D5 /* BookCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCollectionViewCell.m; sourceTree = "<group>"; };
+		2E6B46361B81755600BF39D5 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
+		2E6B46391B817F2E00BF39D5 /* home_book_cover_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_book_cover_image.png; sourceTree = "<group>"; };
 		2E8C33D21B7DEC79006B5BC0 /* FreshMakeupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshMakeupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C33D61B7DEC79006B5BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8C33D71B7DEC79006B5BC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -96,6 +109,15 @@
 		2E8C34431B7DF46E006B5BC0 /* UIScreen+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+Utility.m"; sourceTree = "<group>"; };
 		2E8C34441B7DF46E006B5BC0 /* UITextField+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Utility.h"; sourceTree = "<group>"; };
 		2E8C34451B7DF46E006B5BC0 /* UITextField+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Utility.m"; sourceTree = "<group>"; };
+		2E8E27971B804BE000687E1B /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
+		2E8E27981B804BE000687E1B /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
+		2E8E27991B804BE000687E1B /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
+		2E92F5451B7E4EEB00C14B7A /* BookCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCollectionView.h; sourceTree = "<group>"; };
+		2E92F5461B7E4EEB00C14B7A /* BookCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCollectionView.m; sourceTree = "<group>"; };
+		2EA4273D1B7ED0FE00BF4705 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
+		2EA4273E1B7ED0FE00BF4705 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
+		2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionView.xib; sourceTree = "<group>"; };
+		2EA427461B7ED72000BF4705 /* home_book_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_book_image.png; sourceTree = "<group>"; };
 		497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6BEAE562AD3319ADF4371D12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -119,6 +141,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E6B46331B81752D00BF39D5 /* BookCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2E6B46341B81755600BF39D5 /* BookCollectionViewCell.h */,
+				2E6B46351B81755600BF39D5 /* BookCollectionViewCell.m */,
+				2E6B46361B81755600BF39D5 /* BookCollectionViewCell.xib */,
+			);
+			path = BookCollectionViewCell;
+			sourceTree = "<group>";
+		};
 		2E8C33C91B7DEC79006B5BC0 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +174,7 @@
 		2E8C33D41B7DEC79006B5BC0 /* FreshMakeupDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2EA427451B7ED71900BF4705 /* Images */,
 				2E8C34321B7DF46E006B5BC0 /* Tools */,
 				2E8C34121B7DF3DC006B5BC0 /* Custom Views */,
 				2E8C33FD1B7DF111006B5BC0 /* ViewControllers */,
@@ -183,6 +216,7 @@
 		2E8C33FD1B7DF111006B5BC0 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2E8E27961B804BD000687E1B /* CommentViewController */,
 				2E8C34091B7DF361006B5BC0 /* Basic */,
 				2E8C34031B7DF2B7006B5BC0 /* HomeViewController */,
 			);
@@ -260,6 +294,7 @@
 		2E8C34191B7DF3DC006B5BC0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2E92F5441B7E4EA800C14B7A /* BookCollectionView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -302,6 +337,7 @@
 		2E8C34311B7DF404006B5BC0 /* Custon Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2E6B46331B81752D00BF39D5 /* BookCollectionViewCell */,
 			);
 			path = "Custon Cells";
 			sourceTree = "<group>";
@@ -351,6 +387,46 @@
 				2E8C34451B7DF46E006B5BC0 /* UITextField+Utility.m */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		2E8E27961B804BD000687E1B /* CommentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2E8E27971B804BE000687E1B /* CommentViewController.h */,
+				2E8E27981B804BE000687E1B /* CommentViewController.m */,
+				2E8E27991B804BE000687E1B /* CommentViewController.xib */,
+			);
+			path = CommentViewController;
+			sourceTree = "<group>";
+		};
+		2E92F5441B7E4EA800C14B7A /* BookCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				2EA4273C1B7ED0D600BF4705 /* LineLayout */,
+				2E92F5451B7E4EEB00C14B7A /* BookCollectionView.h */,
+				2E92F5461B7E4EEB00C14B7A /* BookCollectionView.m */,
+				2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */,
+			);
+			name = BookCollectionView;
+			path = "FreshMakeupDemo/Custom Views/Components/BookCollectionView";
+			sourceTree = SOURCE_ROOT;
+		};
+		2EA4273C1B7ED0D600BF4705 /* LineLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2EA4273D1B7ED0FE00BF4705 /* LineLayout.h */,
+				2EA4273E1B7ED0FE00BF4705 /* LineLayout.m */,
+			);
+			path = LineLayout;
+			sourceTree = "<group>";
+		};
+		2EA427451B7ED71900BF4705 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				2E6B46391B817F2E00BF39D5 /* home_book_cover_image.png */,
+				2EA427461B7ED72000BF4705 /* home_book_image.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		EF0BB323A10A85CD2217AC02 /* Pods */ = {
@@ -453,6 +529,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E8C33E61B7DEC79006B5BC0 /* LaunchScreen.xib in Resources */,
+				2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */,
+				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
+				2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */,
+				2E6B46381B81755600BF39D5 /* BookCollectionViewCell.xib in Resources */,
+				2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */,
 				2E8C33E31B7DEC79006B5BC0 /* Images.xcassets in Resources */,
 				2E8C34081B7DF2B7006B5BC0 /* HomeViewController.xib in Resources */,
 			);
@@ -509,10 +590,13 @@
 				2E8C34461B7DF46E006B5BC0 /* NSDictionary+Utility.m in Sources */,
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
 				2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */,
+				2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */,
 				2E8C342E1B7DF3DC006B5BC0 /* PickUpMotion.m in Sources */,
+				2EA4273F1B7ED0FE00BF4705 /* LineLayout.m in Sources */,
 				2E8C34471B7DF46E006B5BC0 /* NSNumber+Utility.m in Sources */,
 				2E8C34491B7DF46E006B5BC0 /* UIAlertView+Utility.m in Sources */,
 				2E8C342A1B7DF3DC006B5BC0 /* UIView+CommonSuperview.m in Sources */,
+				2E6B46371B81755600BF39D5 /* BookCollectionViewCell.m in Sources */,
 				2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */,
 				2E8C342F1B7DF3DC006B5BC0 /* SlideMotion+Calculation.m in Sources */,
 				2E8C344B1B7DF46E006B5BC0 /* UIImage+Utility.m in Sources */,
@@ -520,6 +604,7 @@
 				2E8C342C1B7DF3DC006B5BC0 /* PickUpMotion+Calculation.m in Sources */,
 				2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */,
 				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
+				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
 				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,
 				2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,

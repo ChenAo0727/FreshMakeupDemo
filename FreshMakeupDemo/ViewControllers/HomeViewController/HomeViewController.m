@@ -14,8 +14,19 @@
 
 @implementation HomeViewController
 
++ (instancetype)create {
+    return [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    BookCollectionView *bookCollectionView = [BookCollectionView create];
+    [self.view addSubview:bookCollectionView];
+    [bookCollectionView setLeftSpace:0];
+    [bookCollectionView setRightSpace:0];
+    [bookCollectionView setTopSpace:113];
+    [bookCollectionView setBottomSpace:-113];
+    [self.view layoutIfNeeded];
     // Do any additional setup after loading the view from its nib.
 }
 
