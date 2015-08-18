@@ -24,7 +24,7 @@
     [self.view addSubview:bookCollectionView];
     [bookCollectionView setLeftSpace:0];
     [bookCollectionView setRightSpace:0];
-    [bookCollectionView setTopSpace:113];
+    [bookCollectionView setTopSpace:60];
     [bookCollectionView setBottomSpace:-113];
     [self.view layoutIfNeeded];
     // Do any additional setup after loading the view from its nib.

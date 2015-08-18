@@ -10,8 +10,7 @@
 
 @implementation LineLayout
 
-- (instancetype)init
-{
+- (instancetype)init {
     if (self = [super init]) {
     }
     return self;
@@ -20,8 +19,7 @@
 /**
  * 准备操作：一般在这里设置一些初始化参数
  */
-- (void)prepareLayout
-{
+- (void)prepareLayout {
     // 必须要调用父类(父类也有一些准备操作)
     [super prepareLayout];
     
