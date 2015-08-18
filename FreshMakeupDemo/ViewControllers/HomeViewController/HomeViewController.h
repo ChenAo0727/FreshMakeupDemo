@@ -13,4 +13,8 @@
 
 @interface HomeViewController : BaseViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *leftIconImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *rightIconImageView;
+
 @end
