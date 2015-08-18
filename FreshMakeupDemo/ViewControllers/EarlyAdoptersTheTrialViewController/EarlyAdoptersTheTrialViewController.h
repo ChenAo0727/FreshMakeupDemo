@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "EarlyAdoptersTheTrialViewControllerDataSource.h"
-@interface EarlyAdoptersTheTrialViewController : UIViewController<UITableViewDelegate>
+#import "BaseViewController.h"
+@interface EarlyAdoptersTheTrialViewController : BaseViewController<UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UILabel *earlyAdoptersTheTrialTitleLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialLeftInconImage;
+@property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialRightInconImageView;
 @property (strong, nonatomic) IBOutlet UITableView *earlyAdoptersTableView;
 @property (strong, nonatomic) EarlyAdoptersTheTrialViewControllerDataSource *earlyAdoptersTheTrialViewControllerDataSource;
 @end

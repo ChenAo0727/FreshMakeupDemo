@@ -1,45 +1,33 @@
 //
-//  EarlyAdoptersTheTrialViewController.m
+//  FoundViewController.m
 //  FreshMakeupDemo
 //
-//  Created by winchance on 15/8/17.
+//  Created by winchance on 15/8/18.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "EarlyAdoptersTheTrialViewController.h"
-#import "EarlyAdoptersTheTrialViewController+Configuration.h"
-@interface EarlyAdoptersTheTrialViewController ()
+#import "FoundViewController.h"
+#import "FoundViewController+Configuration.h"
+#import "FoundViewController+Animation.h"
+@interface FoundViewController ()
 
 @end
 
-@implementation EarlyAdoptersTheTrialViewController
+@implementation FoundViewController
 + (instancetype)create {
-    return [[EarlyAdoptersTheTrialViewController alloc] initWithNibName:@"EarlyAdoptersTheTrialViewController" bundle:nil];
+    return [[FoundViewController alloc] initWithNibName:@"FoundViewController" bundle:nil];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self configureViews];
-   
+    [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(foundThreeDimensionalRollAnimation) userInfo:nil repeats:YES];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 0) {
-        return 266;
-    } else if (indexPath.row == 1) {
-        return 66;
-        
-    } else if (indexPath.row == 2) {
-        return 12;
-    } else if (indexPath.row == 3) {
-        return 88;
-    } else if (indexPath.row == 4) {
-        return 14;
-    } else if (indexPath.row == 5) {
-        return 47;
-    } else if (indexPath.row == 8) {
-        return 50;
+    if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 5 || indexPath.row == 7) {
+        return 18;
     } else {
-        return 250;
+        return 235;
     }
 }
 - (void)didReceiveMemoryWarning {

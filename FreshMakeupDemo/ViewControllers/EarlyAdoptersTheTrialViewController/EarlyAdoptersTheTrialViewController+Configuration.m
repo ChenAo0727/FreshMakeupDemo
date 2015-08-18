@@ -23,7 +23,7 @@
 }
 - (void)tableViewEdit {
     self.earlyAdoptersTheTrialViewControllerDataSource = [EarlyAdoptersTheTrialViewControllerDataSource new];
-    self.earlyAdoptersTableView.separatorStyle = NO;
+    self.earlyAdoptersTableView.separatorStyle = NO;//分割线
     self.earlyAdoptersTableView.delegate = self;
     self.earlyAdoptersTableView.dataSource = self.earlyAdoptersTheTrialViewControllerDataSource;
     [self.earlyAdoptersTableView registerNib:[UINib nibWithNibName:@"EarlyAdoptersTitleImageTableViewCell" bundle:nil] forCellReuseIdentifier:EARLY_ADOPTERS_TITLEIMAGE_TABLEVIEW_CELL];
