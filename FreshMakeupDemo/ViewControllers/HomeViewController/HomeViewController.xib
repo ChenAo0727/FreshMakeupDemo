@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
             <connections>
-                <outlet property="booksTableView" destination="bqc-IM-hdg" id="DjG-MT-hOT"/>
                 <outlet property="leftIconImageView" destination="XA4-in-V9J" id="go0-gx-cGi"/>
                 <outlet property="rightIconImageView" destination="JGa-d9-xTU" id="2pd-zv-fIF"/>
                 <outlet property="titleLabel" destination="0iH-MN-bGo" id="bqY-yp-aPv"/>
@@ -70,20 +69,12 @@
                         <constraint firstItem="BZK-qW-tBB" firstAttribute="top" secondItem="xmD-17-heJ" secondAttribute="top" constant="15" id="lPW-55-eWp"/>
                     </constraints>
                 </view>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bqc-IM-hdg">
-                    <rect key="frame" x="0.0" y="65" width="320" height="503"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="bqc-IM-hdg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="99G-Un-s71"/>
                 <constraint firstItem="xmD-17-heJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RMX-8J-347"/>
                 <constraint firstAttribute="trailing" secondItem="xmD-17-heJ" secondAttribute="trailing" id="Vio-0g-3RV"/>
                 <constraint firstItem="xmD-17-heJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="aFd-TQ-l8y"/>
-                <constraint firstItem="bqc-IM-hdg" firstAttribute="top" secondItem="xmD-17-heJ" secondAttribute="bottom" id="an9-4R-oQT"/>
-                <constraint firstAttribute="trailing" secondItem="bqc-IM-hdg" secondAttribute="trailing" id="dvn-cH-7SR"/>
-                <constraint firstAttribute="bottom" secondItem="bqc-IM-hdg" secondAttribute="bottom" id="e0W-3Y-yUo"/>
             </constraints>
             <point key="canvasLocation" x="216" y="285"/>
         </view>
