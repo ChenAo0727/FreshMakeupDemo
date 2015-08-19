@@ -43,6 +43,10 @@
 		2E6B46621B82182D00BF39D5 /* Pool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6B46611B82182D00BF39D5 /* Pool.m */; };
 		2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7DC9301B82BCD400152A0B /* StackCollectionViewPile.m */; };
 		2E7DC9341B82BD1F00152A0B /* StackCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7DC9331B82BD1F00152A0B /* StackCollectionViewCell.m */; };
+		2E7DC9371B82CF3900152A0B /* StackCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7DC9361B82CF3900152A0B /* StackCollectionView.m */; };
+		2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7DC9381B82CFB300152A0B /* StackCollectionView.xib */; };
+		2E7DC93C1B82D2BD00152A0B /* StackCollectionView+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7DC93B1B82D2BD00152A0B /* StackCollectionView+Configuration.m */; };
+		2E7DC93F1B82D2D300152A0B /* StackCollectionView+Caculation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7DC93E1B82D2D300152A0B /* StackCollectionView+Caculation.m */; };
 		2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C33D71B7DEC79006B5BC0 /* main.m */; };
 		2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C33DA1B7DEC79006B5BC0 /* AppDelegate.m */; };
 		2E8C33E31B7DEC79006B5BC0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8C33E21B7DEC79006B5BC0 /* Images.xcassets */; };
@@ -138,6 +142,13 @@
 		2E7DC9301B82BCD400152A0B /* StackCollectionViewPile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackCollectionViewPile.m; sourceTree = "<group>"; };
 		2E7DC9321B82BD1F00152A0B /* StackCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackCollectionViewCell.h; sourceTree = "<group>"; };
 		2E7DC9331B82BD1F00152A0B /* StackCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackCollectionViewCell.m; sourceTree = "<group>"; };
+		2E7DC9351B82CF3900152A0B /* StackCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackCollectionView.h; sourceTree = "<group>"; };
+		2E7DC9361B82CF3900152A0B /* StackCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackCollectionView.m; sourceTree = "<group>"; };
+		2E7DC9381B82CFB300152A0B /* StackCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackCollectionView.xib; sourceTree = "<group>"; };
+		2E7DC93A1B82D2BD00152A0B /* StackCollectionView+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StackCollectionView+Configuration.h"; sourceTree = "<group>"; };
+		2E7DC93B1B82D2BD00152A0B /* StackCollectionView+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StackCollectionView+Configuration.m"; sourceTree = "<group>"; };
+		2E7DC93D1B82D2D300152A0B /* StackCollectionView+Caculation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "StackCollectionView+Caculation.h"; sourceTree = "<group>"; };
+		2E7DC93E1B82D2D300152A0B /* StackCollectionView+Caculation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "StackCollectionView+Caculation.m"; sourceTree = "<group>"; };
 		2E8C33D21B7DEC79006B5BC0 /* FreshMakeupDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreshMakeupDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E8C33D61B7DEC79006B5BC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E8C33D71B7DEC79006B5BC0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -303,6 +314,13 @@
 				2E7DC9301B82BCD400152A0B /* StackCollectionViewPile.m */,
 				2E7DC9321B82BD1F00152A0B /* StackCollectionViewCell.h */,
 				2E7DC9331B82BD1F00152A0B /* StackCollectionViewCell.m */,
+				2E7DC9351B82CF3900152A0B /* StackCollectionView.h */,
+				2E7DC9361B82CF3900152A0B /* StackCollectionView.m */,
+				2E7DC9381B82CFB300152A0B /* StackCollectionView.xib */,
+				2E7DC93A1B82D2BD00152A0B /* StackCollectionView+Configuration.h */,
+				2E7DC93B1B82D2BD00152A0B /* StackCollectionView+Configuration.m */,
+				2E7DC93D1B82D2D300152A0B /* StackCollectionView+Caculation.h */,
+				2E7DC93E1B82D2D300152A0B /* StackCollectionView+Caculation.m */,
 			);
 			path = StackCollectionView;
 			sourceTree = "<group>";
@@ -701,6 +719,7 @@
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
 				054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */,
+				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
 				054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */,
 				054DFD411B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib in Resources */,
 				054DFD4A1B81AAEE00651F11 /* apply_luck.png in Resources */,
@@ -773,6 +792,7 @@
 				2E8C34461B7DF46E006B5BC0 /* NSDictionary+Utility.m in Sources */,
 				054DFD241B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m in Sources */,
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
+				2E7DC9371B82CF3900152A0B /* StackCollectionView.m in Sources */,
 				054DFD251B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m in Sources */,
 				2E7DC9341B82BD1F00152A0B /* StackCollectionViewCell.m in Sources */,
 				2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */,
@@ -796,10 +816,12 @@
 				2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */,
 				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
 				054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */,
+				2E7DC93C1B82D2BD00152A0B /* StackCollectionView+Configuration.m in Sources */,
 				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
 				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,
 				054DFD401B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m in Sources */,
 				054DFD351B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m in Sources */,
+				2E7DC93F1B82D2D300152A0B /* StackCollectionView+Caculation.m in Sources */,
 				2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */,
