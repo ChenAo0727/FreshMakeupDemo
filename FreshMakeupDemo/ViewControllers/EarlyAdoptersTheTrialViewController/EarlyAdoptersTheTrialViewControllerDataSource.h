@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface EarlyAdoptersTheTrialViewControllerDataSource : NSObject<UITableViewDataSource>
-@property (strong, nonatomic) NSString *timeString;
+
 @end
