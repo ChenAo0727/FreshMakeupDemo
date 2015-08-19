@@ -1,36 +1,36 @@
 //
-//  FoundViewController+Configuration.m
+//  findViewController+Configuration.m
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/8/18.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "FoundViewController+Configuration.h"
-#import "FoundTableViewCell.h"
-#import "FoundBranchTableViewCell.h"
+#import "FindViewController+Configuration.h"
+#import "FindTableViewCell.h"
+#import "FindBranchTableViewCell.h"
 #import "RollCollectionViewCell.h"
 #import "UIColor+Utility.h"
-#import "FoundViewController+Animation.h"
-@implementation FoundViewController (Configuration)
+#import "FindViewController+Animation.h"
+@implementation FindViewController (Configuration)
 - (void)configureViews {
     [self tableViewEdit];
-    [self fountRollView];
-    [self fountTitleView];
-    [self foundThreeDimensionalRollView];
+    [self findRollView];
+    [self findTitleView];
+    [self findThreeDimensionalRollView];
     
 }
 - (void)tableViewEdit {
-    self.foundViewControllerDataSource = [FoundViewControllerDataSource new];
-    self.foundTableView.tableHeaderView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, self.foundTableView.frame.size.width, 386))];
-    self.foundTableView.tableFooterView = [[UIView alloc] initWithFrame:FOOTER_FRAME];
-    self.foundTableView.separatorStyle = NO;
-    self.foundTableView.delegate = self;
-    self.foundTableView.dataSource = self.foundViewControllerDataSource;
-    [self.foundTableView registerNib:[UINib nibWithNibName:@"FoundTableViewCell" bundle:nil] forCellReuseIdentifier:FOUND_TABLEVIEW_CELL];
-    [self.foundTableView registerNib:[UINib nibWithNibName:@"FoundBranchTableViewCell" bundle:nil] forCellReuseIdentifier:FOUND_BRANCH_TABLEVIEWCELL];
+    self.findViewControllerDataSource = [FindViewControllerDataSource new];
+    self.findTableView.tableHeaderView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, self.findTableView.frame.size.width, 386))];
+    self.findTableView.tableFooterView = [[UIView alloc] initWithFrame:FOOTER_FRAME];
+    self.findTableView.separatorStyle = NO;
+    self.findTableView.delegate = self;
+    self.findTableView.dataSource = self.findViewControllerDataSource;
+    [self.findTableView registerNib:[UINib nibWithNibName:@"FindTableViewCell" bundle:nil] forCellReuseIdentifier:FIND_TABLEVIEW_CELL];
+    [self.findTableView registerNib:[UINib nibWithNibName:@"FindBranchTableViewCell" bundle:nil] forCellReuseIdentifier:FIND_BRANCH_TABLEVIEWCELL];
 }
-- (void)fountRollView {
+- (void)findRollView {
     UICollectionViewFlowLayout *classVFL = [[UICollectionViewFlowLayout alloc] init];
     classVFL.itemSize = CGSizeMake(90,125);//单视图的大小
     classVFL.scrollDirection = UICollectionViewScrollDirectionHorizontal;
@@ -42,26 +42,26 @@
     self.rollCollectionViewDataSource = [RollCollectionViewDataSource new];
     self.rollCollectionView.dataSource = self.rollCollectionViewDataSource;
     self.rollCollectionView.delegate = self;
-    [self.foundTableView.tableHeaderView addSubview: self.rollCollectionView];
+    [self.findTableView.tableHeaderView addSubview: self.rollCollectionView];
     //提前注册
     [self.rollCollectionView registerNib:[UINib nibWithNibName:@"RollCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ROLL_COLLECTIONVIEW_CELL];
 }
-- (void)fountTitleView {
+- (void)findTitleView {
     UIImageView *titleImageView = [[UIImageView alloc] initWithFrame:(CGRectMake(0, 178, 374, 35))];
     titleImageView.image = [UIImage imageNamed:@"fount_title.png"];
-    [self.foundTableView.tableHeaderView addSubview:titleImageView];
+    [self.findTableView.tableHeaderView addSubview:titleImageView];
     
     UILabel *titleHeaderLabel = [[UILabel alloc] initWithFrame:(CGRectMake(158, 338, 90, 35))];
     titleHeaderLabel.text = @"往期新品";
-    [self.foundTableView.tableHeaderView addSubview:titleHeaderLabel];
+    [self.findTableView.tableHeaderView addSubview:titleHeaderLabel];
     
     UILabel *titleFooterLabel = [[UILabel alloc] initWithFrame:(CGRectMake(158, 17, 90, 35))];
     titleFooterLabel.text = @"往期新品";
-    [self.foundTableView.tableFooterView addSubview:titleFooterLabel];
+    [self.findTableView.tableFooterView addSubview:titleFooterLabel];
 }
-- (void)foundThreeDimensionalRollView {
+- (void)findThreeDimensionalRollView {
     self.threeDimensionalView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, 375, 178))];
-    [self.foundTableView.tableHeaderView addSubview:self.threeDimensionalView];
+    [self.findTableView.tableHeaderView addSubview:self.threeDimensionalView];
     
     
     

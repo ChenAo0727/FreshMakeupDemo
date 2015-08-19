@@ -6,11 +6,11 @@
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "FoundViewControllerDataSource.h"
-#import "FoundTableViewCell.h"
-#import "FoundBranchTableViewCell.h"
+#import "FindViewControllerDataSource.h"
+#import "FindTableViewCell.h"
+#import "FindBranchTableViewCell.h"
 #import "UIColor+Utility.h"
-@implementation FoundViewControllerDataSource
+@implementation FindViewControllerDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     self.headImageArray = [NSMutableArray arrayWithObjects:@"findarticleavatar1.png",@"2",@"findarticleavatar2.png",@"4",@"findarticleavatar3.png",@"6",@"findarticleavatar2.png", nil];
     self.imageArray = [NSMutableArray arrayWithObjects:@"findarticle1.png",@"2",@"findarticle2.png",@"4",@"findarticle3.png",@"6",@"findarticle4.png", nil];
@@ -19,15 +19,15 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 1 || indexPath.row == 3|| indexPath.row == 5 || indexPath.row == 7) {
-        FoundBranchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FOUND_BRANCH_TABLEVIEWCELL];
+        FindBranchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_BRANCH_TABLEVIEWCELL];
         cell.backgroundColor = [UIColor colorFromHexCode:@"#C0C0C0"];
         return cell;
     } else {
 
-    FoundTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FOUND_TABLEVIEW_CELL];
-    cell.foundImageView.image = [UIImage imageNamed:[self.imageArray objectAtIndex:indexPath.row]];
-    cell.foundHeadImageView.image = [UIImage imageNamed:[self.headImageArray objectAtIndex:indexPath.row]];
-    cell.foundLabel.text = [self.lableArray objectAtIndex:indexPath.row];
+    FindTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_TABLEVIEW_CELL];
+    cell.findImageView.image = [UIImage imageNamed:[self.imageArray objectAtIndex:indexPath.row]];
+    cell.findHeadImageView.image = [UIImage imageNamed:[self.headImageArray objectAtIndex:indexPath.row]];
+    cell.findLabel.text = [self.lableArray objectAtIndex:indexPath.row];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     return cell;
     }

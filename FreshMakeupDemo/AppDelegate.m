@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 //#import "HomeViewController.h"
-#import "FoundViewController.h"
+#import "FindViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[FoundViewController create]];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[FindViewController create]];
     self.navigationController.navigationBarHidden = YES;
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];

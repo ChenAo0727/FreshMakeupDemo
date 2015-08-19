@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#define FOUND_BRANCH_TABLEVIEWCELL @"FoundBranchTableViewCell"
-@interface FoundBranchTableViewCell : UITableViewCell
+#define FIND_BRANCH_TABLEVIEWCELL @"FindBranchTableViewCell"
+@interface FindBranchTableViewCell : UITableViewCell
 
 @end

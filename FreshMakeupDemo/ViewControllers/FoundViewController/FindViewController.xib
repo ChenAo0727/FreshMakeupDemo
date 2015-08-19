@@ -4,12 +4,12 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FoundViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindViewController">
             <connections>
-                <outlet property="foundLeftIconImageView" destination="6sH-bB-sl9" id="cQI-3V-soP"/>
-                <outlet property="foundRightIconImageView" destination="wEj-BS-5WR" id="faa-AF-gy3"/>
-                <outlet property="foundTableView" destination="3Ie-wC-hVQ" id="2vU-cz-u4i"/>
-                <outlet property="foundTitleLabel" destination="bFF-up-R86" id="vhQ-op-iw0"/>
+                <outlet property="findLeftIconImageView" destination="6sH-bB-sl9" id="SBI-R8-rpY"/>
+                <outlet property="findRightIconImageView" destination="wEj-BS-5WR" id="Lzp-Fo-T9k"/>
+                <outlet property="findTableView" destination="3Ie-wC-hVQ" id="PF8-cT-ZbC"/>
+                <outlet property="findTitleLabel" destination="bFF-up-R86" id="43z-Wf-InP"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -1,5 +1,5 @@
 //
-//  FoundViewController.h
+//  findViewController.h
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/8/18.
@@ -7,15 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FoundViewControllerDataSource.h"
+#import "FindViewControllerDataSource.h"
 #import "BaseViewController.h"
 #import "RollCollectionViewDataSource.h"
-@interface FoundViewController :BaseViewController <UITableViewDelegate,UICollectionViewDelegate>
-@property (strong, nonatomic) IBOutlet UILabel *foundTitleLabel;
-@property (strong, nonatomic) IBOutlet UIImageView *foundLeftIconImageView;
-@property (strong, nonatomic) IBOutlet UIImageView *foundRightIconImageView;
-@property (strong, nonatomic) IBOutlet UITableView *foundTableView;
-@property (strong, nonatomic) FoundViewControllerDataSource *foundViewControllerDataSource;
+@interface FindViewController :BaseViewController <UITableViewDelegate,UICollectionViewDelegate>
+
+
+@property (strong, nonatomic) IBOutlet UILabel *findTitleLabel;
+@property (strong, nonatomic) IBOutlet UIImageView *findLeftIconImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *findRightIconImageView;
+@property (strong, nonatomic) IBOutlet UITableView *findTableView;
+
+
+
+@property (strong, nonatomic) FindViewControllerDataSource *findViewControllerDataSource;
 @property (strong, nonatomic) UICollectionView *rollCollectionView;
 @property (strong, nonatomic) RollCollectionViewDataSource *rollCollectionViewDataSource;
 @property (strong, nonatomic) UIButton *threeDimensionalOne;

@@ -1,27 +1,27 @@
 //
-//  FoundViewController.m
+//  findViewController.m
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/8/18.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "FoundViewController.h"
-#import "FoundViewController+Configuration.h"
-#import "FoundViewController+Animation.h"
-@interface FoundViewController ()
+#import "FindViewController.h"
+#import "FindViewController+Configuration.h"
+#import "FindViewController+Animation.h"
+@interface FindViewController ()
 
 @end
 
-@implementation FoundViewController
+@implementation FindViewController
 + (instancetype)create {
-    return [[FoundViewController alloc] initWithNibName:@"FoundViewController" bundle:nil];
+    return [[FindViewController alloc] initWithNibName:@"FindViewController" bundle:nil];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self configureViews];
-    [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(foundThreeDimensionalRollAnimation) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(findThreeDimensionalRollAnimation) userInfo:nil repeats:YES];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 5 || indexPath.row == 7) {

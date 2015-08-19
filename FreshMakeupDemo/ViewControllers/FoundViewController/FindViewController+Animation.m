@@ -1,21 +1,21 @@
 //
-//  FoundViewController+Animation.m
+//  findViewController+Animation.m
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/8/18.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "FoundViewController+Animation.h"
+#import "FindViewController+Animation.h"
 
-@implementation FoundViewController (Animation)
-- (void)foundThreeDimensionalRollAnimation {
-    [self foundThreeDimensional];
+@implementation FindViewController (Animation)
+- (void)findThreeDimensionalRollAnimation {
+    [self findThreeDimensional];
 }
 - (void)buttonClicked:(UIButton *)button {
-    [self foundThreeDimensional];
+    [self findThreeDimensional];
 }
-- (void)foundThreeDimensional {
+- (void)findThreeDimensional {
     CATransition *animation = [CATransition animation];
     animation.duration = 1.0;
     animation.type = @"cube";

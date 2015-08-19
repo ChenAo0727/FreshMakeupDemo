@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FoundViewControllerDataSource : NSObject<UITableViewDataSource>
+@interface FindViewControllerDataSource : NSObject<UITableViewDataSource>
 @property (strong, nonatomic) NSMutableArray *headImageArray;
 @property (strong, nonatomic) NSMutableArray *imageArray;
 @property (strong, nonatomic) NSMutableArray *lableArray;

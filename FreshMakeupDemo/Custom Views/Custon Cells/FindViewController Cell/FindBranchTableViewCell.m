@@ -1,14 +1,14 @@
 //
-//  FoundTableViewCell.m
+//  FoundBranchTableViewCell.m
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/8/18.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "FoundTableViewCell.h"
+#import "FindBranchTableViewCell.h"
 
-@implementation FoundTableViewCell
+@implementation FindBranchTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code

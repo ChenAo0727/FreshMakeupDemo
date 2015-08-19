@@ -6,9 +6,9 @@
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "FoundViewController.h"
+#import "FindViewController.h"
 
-@interface FoundViewController (Animation)
-- (void)foundThreeDimensionalRollAnimation;
+@interface FindViewController (Animation)
+- (void)findThreeDimensionalRollAnimation;
 - (void)buttonClicked:(UIButton *)button;
 @end
