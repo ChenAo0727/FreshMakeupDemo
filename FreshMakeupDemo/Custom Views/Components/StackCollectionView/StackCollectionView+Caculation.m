@@ -158,6 +158,10 @@
     }
 }
 
+- (BOOL)hasNextCard {
+    return self.currentIndex < self.numberOfItems - 1;
+}
+
 
 #pragma mark - Private Methods
 

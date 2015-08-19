@@ -89,7 +89,7 @@
     }
     NSInteger previousCardIndex = [self previousCardIndex];
     StackCollectionViewCell *cell = (self.numberOfItems <= previousCardIndex) ? nil : [self.dataSource stackCollectionView:self cellForItemAtIndexPath:[NSIndexPath indexPathForItem:previousCardIndex inSection:0]];
-    self.pile.nextCell = cell;
+    self.pile.previousCell = cell;
     if (cell) {
         cell.alpha = (self.currentIndex == previousCardIndex) ? 0 : 0.5;
         [self.contentView insertSubview:cell atIndex:0];
@@ -112,8 +112,8 @@
 - (void)layoutPileByPullUpOffset:(CGFloat)offset {
     CGFloat nextCellOffset = [self decelerateDistanceOfPullUpOffset:offset];
     CGFloat underCellOffset = [self offsetOfUnderCellCorrespondToAboveCellPullUpOffset:nextCellOffset];
-    self.pile.previousCell.alpha  = [self decelerateAlphaOfPullUpOffset:nextCellOffset];
-    [self moveDownNextCellBy:-nextCellOffset];
+    self.pile.nextCell.alpha  = [self decelerateAlphaOfPullUpOffset:nextCellOffset];
+    [self moveDownNextCellBy: - nextCellOffset];
     [self pushUpCurrentCellBy:underCellOffset];
 }
 
@@ -121,25 +121,20 @@
     if (self.needLoopStack && 2 > self.numberOfItems) {
         return;
     }
-//    if ([self isDisplayingLastCell]) {
-    if (/* DISABLES CODE */ (NO)) {
-        [self moveDownCurrentCellBy:[self bigDampingDecelerateDistanceOfPullDownOffset:offset]];
-    } else {
-        CGFloat topCellOffset = [self decelerateDistanceOfPullDownOffset:offset];
-        CGFloat middleCellOffset = [self offsetOfUnderCellCorrespondToAboveCellPullDownOffset:topCellOffset];
-        self.pile.currentCell.alpha = [self decelerateAlphaOfPullDownOffset:topCellOffset];
-        [self moveDownCurrentCellBy:topCellOffset];
-        [self popDownMiddleAndBottomCellBy:middleCellOffset];
-    }
+    CGFloat topCellOffset = [self decelerateDistanceOfPullDownOffset:offset];
+    self.pile.currentCell.alpha = [self decelerateAlphaOfPullDownOffset:topCellOffset];
+    [self moveDownCurrentCellBy:topCellOffset];
 }
 
 - (void)layoutPileBeforeRecovery {
-    [self resetCellConstraint:self.pile.nextCell atIndex:1];
     [self resetCellConstraint:self.pile.currentCell atIndex:0];
 }
 
 - (void)layoutPileAfterRecovery {
-    self.pile.previousCell.alpha = 0.5;
+    if ([self hasPreviousCard]) {
+        self.pile.previousCell.alpha = 0.5;
+    }
+    self.pile.nextCell.alpha = 0.0;
     self.pile.currentCell.alpha = [DEFAULT_CELLS_ALPHA[0] floatValue];
     [self resetCellTransform:self.pile.currentCell atIndex:0];
 }
@@ -150,7 +145,8 @@
 
 - (void)layoutPileAfterBringInPreviousCell {
     self.pile.currentCell.alpha = 0.0;
-    self.pile.nextCell.alpha = [DEFAULT_CELLS_ALPHA[1] floatValue];
+    self.pile.previousCell.alpha = [DEFAULT_CELLS_ALPHA[1] floatValue];
+    [self resetCellTransform:self.pile.previousCell atIndex:0];
 }
 
 - (void)layoutPileBeforeBringInNextCell {
@@ -179,17 +175,17 @@
 }
 
 - (void)removeNextCellFromPile {
-    if (self.pile.previousCell) {
-        [self removeCell:self.pile.previousCell];
+    if (self.pile.nextCell) {
+        [self removeCell:self.pile.nextCell];
         self.pile.previousCell = nil;
     }
 }
 
 - (void)removePreviousAndNextCellFromPile {
-    [self removePreviousCellFromPile];
-    if (self.pile.nextCell) {
-        [self removeCell:self.pile.nextCell];
-        self.pile.nextCell = nil;
+    [self removeNextCellFromPile];
+    if (self.pile.previousCell) {
+        [self removeCell:self.pile.previousCell];
+        self.pile.previousCell = nil;
     }
 }
 
@@ -202,15 +198,15 @@
 }
 
 - (void)cleanPileByBringInPreviousCell {
-    StackCollectionViewCell *oldCell = [self.pile bringPreviousCellToTop];
+    StackCollectionViewCell *oldCell = [self.pile bringPreviousCellToBottom];
     [self removeCell:oldCell];
-    [self finishDisplayTopCell];
+    [self finishDisplayCurrentCell];
 }
 
 - (void)cleanPileByBringInNextCell {
-    StackCollectionViewCell *oldCell = [self.pile bringNextCellToBottom];
+    StackCollectionViewCell *oldCell = [self.pile bringNextCellToTop];
     [self removeCell:oldCell];
-    [self finishDisplayTopCell];
+    [self finishDisplayCurrentCell];
 }
 
 #pragma mark - Private Methods
@@ -264,11 +260,10 @@
         index = 0;
         topSpace = self.frame.size.height;
     }
-    CGFloat scale = self.zoomScale * pow(DEFAULT_CELL_SCALE, index);
     [cell setWidthConstant:DEFAULT_CELL_WIDTH];
     [cell setHeightConstant:DEFAULT_CELL_HEIGHT];
     [cell setTopSpace:topSpace];
-    [cell setLeftSpace:(self.frame.size.width - DEFAULT_CELL_WIDTH * scale) / 2];
+    [self addConstraint:[NSLayoutConstraint constraintWithItem:cell attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
 }
 
 - (void)resetCellTransform:(StackCollectionViewCell *)cell atIndex:(NSInteger)index {
@@ -299,6 +294,7 @@
 
 - (void)moveDownNextCellBy:(CGFloat)movement {
     [self.pile moveCellVerticallyBy:movement atIndex:1];
+    [self layoutIfNeeded];
 }
 
 - (void)moveDownCurrentCellBy:(CGFloat)movement {
@@ -311,7 +307,17 @@
     [self.pile moveCellVerticallyBy:-movement atIndex:0];
     StackCollectionViewCell *cell = [self.pile cellOfIndex:0];
     if (cell) {
-        [cell setLeftSpace:(self.frame.size.width - DEFAULT_CELL_WIDTH * self.zoomScale * scale) / 2];
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:cell attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    }
+}
+
+- (void)popDownPreviousCellBy:(CGFloat)movement {
+    CGFloat scale = [self zoomOutScaleOfUnderCellOffset:movement];
+    [self.pile scaleCellBy:scale atIndex:-1];
+    [self.pile moveCellVerticallyBy:-movement atIndex:-1];
+    StackCollectionViewCell *cell = [self.pile cellOfIndex:-1];
+    if (cell) {
+        [self addConstraint:[NSLayoutConstraint constraintWithItem:cell attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
     }
 }
 
@@ -322,8 +328,7 @@
         [self.pile moveCellVerticallyBy:movement atIndex:i];
         StackCollectionViewCell *cell = [self.pile cellOfIndex:i];
         if (cell) {
-            CGFloat actualScale = pow(DEFAULT_CELL_SCALE, i) * self.zoomScale * scale;
-            [cell setLeftSpace:(self.frame.size.width - DEFAULT_CELL_WIDTH * actualScale) / 2];
+            [self addConstraint:[NSLayoutConstraint constraintWithItem:cell attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
         }
     }
 }

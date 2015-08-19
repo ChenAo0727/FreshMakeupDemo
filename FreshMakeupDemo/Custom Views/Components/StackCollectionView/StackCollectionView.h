@@ -36,7 +36,7 @@
 @property (nonatomic, weak) id<StackCollectionViewDelegate> delegate;
 @property (nonatomic, weak) id<StackCollectionViewDataSource> dataSource;
 
-- (void)relodData;
+- (void)reloadData;
 - (void)reloadDataForLoadOldDataWithIndex:(int)index;
 - (NSArray *)visibleCells;
 - (CGFloat)frontCellTopSpace;

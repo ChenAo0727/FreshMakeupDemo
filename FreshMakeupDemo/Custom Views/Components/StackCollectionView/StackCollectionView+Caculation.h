@@ -46,5 +46,6 @@
 - (BOOL)shouldBringInNextCell;
 - (BOOL)shouldBeginPullPreviousCardGesture:(UIPanGestureRecognizer *)gesture;
 - (BOOL)hasPreviousCard;
+- (BOOL)hasNextCard;
 
 @end

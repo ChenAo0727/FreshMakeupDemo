@@ -107,6 +107,8 @@
 		2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E27981B804BE000687E1B /* CommentViewController.m */; };
 		2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E27991B804BE000687E1B /* CommentViewController.xib */; };
 		2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E92F5461B7E4EEB00C14B7A /* BookCollectionView.m */; };
+		2EA116EB1B84472A0022E524 /* BlankStackCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA116EA1B84472A0022E524 /* BlankStackCollectionViewCell.m */; };
+		2EA116ED1B84473D0022E524 /* BlankStackCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA116EC1B84473D0022E524 /* BlankStackCollectionViewCell.xib */; };
 		2EA4273F1B7ED0FE00BF4705 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4273E1B7ED0FE00BF4705 /* LineLayout.m */; };
 		2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */; };
 		2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA427461B7ED72000BF4705 /* home_book_image.png */; };
@@ -275,6 +277,9 @@
 		2E8E27991B804BE000687E1B /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
 		2E92F5451B7E4EEB00C14B7A /* BookCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCollectionView.h; sourceTree = "<group>"; };
 		2E92F5461B7E4EEB00C14B7A /* BookCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCollectionView.m; sourceTree = "<group>"; };
+		2EA116E91B84472A0022E524 /* BlankStackCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlankStackCollectionViewCell.h; sourceTree = "<group>"; };
+		2EA116EA1B84472A0022E524 /* BlankStackCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlankStackCollectionViewCell.m; sourceTree = "<group>"; };
+		2EA116EC1B84473D0022E524 /* BlankStackCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlankStackCollectionViewCell.xib; sourceTree = "<group>"; };
 		2EA4273D1B7ED0FE00BF4705 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
 		2EA4273E1B7ED0FE00BF4705 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
 		2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionView.xib; sourceTree = "<group>"; };
@@ -547,6 +552,9 @@
 				2E8C34041B7DF2B7006B5BC0 /* HomeViewController.h */,
 				2E8C34051B7DF2B7006B5BC0 /* HomeViewController.m */,
 				2E8C34061B7DF2B7006B5BC0 /* HomeViewController.xib */,
+				2EA116E91B84472A0022E524 /* BlankStackCollectionViewCell.h */,
+				2EA116EA1B84472A0022E524 /* BlankStackCollectionViewCell.m */,
+				2EA116EC1B84473D0022E524 /* BlankStackCollectionViewCell.xib */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -870,6 +878,7 @@
 				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
 				054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */,
 				058ABF521B82C58100A0BA8A /* findarticle4.png in Resources */,
+				2EA116ED1B84473D0022E524 /* BlankStackCollectionViewCell.xib in Resources */,
 				058ABF151B82C3F100A0BA8A /* FindViewController.xib in Resources */,
 				054DFD411B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib in Resources */,
 				054DFD4A1B81AAEE00651F11 /* apply_luck.png in Resources */,
@@ -992,6 +1001,7 @@
 				2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */,
 				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
 				054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */,
+				2EA116EB1B84472A0022E524 /* BlankStackCollectionViewCell.m in Sources */,
 				2E7DC93C1B82D2BD00152A0B /* StackCollectionView+Configuration.m in Sources */,
 				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
 				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,
