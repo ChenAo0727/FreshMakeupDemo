@@ -8,6 +8,7 @@
 
 #import "EarlyAdoptersTheTrialViewController.h"
 #import "EarlyAdoptersTheTrialViewController+Configuration.h"
+#import "EarlyAdoptersReportTableViewCell.h"
 @interface EarlyAdoptersTheTrialViewController ()
 
 @end
@@ -23,6 +24,8 @@
    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  
+    
     if (indexPath.row == 0) {
         return 266;
     } else if (indexPath.row == 1) {
@@ -39,6 +42,8 @@
     } else if (indexPath.row == 8) {
         return 50;
     } else {
+//        EarlyAdoptersReportTableViewCell *cell = (EarlyAdoptersReportTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+//        CGFloat cellHeight = [cell getCellHeight];
         return 250;
     }
 }

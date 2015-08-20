@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -17,14 +16,32 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="report.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ee-0J-oUm">
                         <rect key="frame" x="111" y="0.0" width="92" height="46"/>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4y-T1-OCC">
+                        <rect key="frame" x="203" y="0.0" width="101" height="46"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9Q-FB-DcB">
+                        <rect key="frame" x="10" y="0.0" width="101" height="46"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                 </subviews>
+                <color key="backgroundColor" red="0.92156862745098034" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstAttribute="trailingMargin" secondItem="5ee-0J-oUm" secondAttribute="trailing" constant="103" id="9gb-h0-DfC"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="5ee-0J-oUm" secondAttribute="bottom" constant="-8" id="EVX-Yh-NBZ"/>
-                    <constraint firstItem="5ee-0J-oUm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="Hqf-Wz-lBE"/>
-                    <constraint firstItem="5ee-0J-oUm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="103" id="atA-ty-ze5"/>
+                    <constraint firstItem="5ee-0J-oUm" firstAttribute="leading" secondItem="s9Q-FB-DcB" secondAttribute="trailing" id="0T7-W0-DJp"/>
+                    <constraint firstItem="s9Q-FB-DcB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8jT-ZZ-U7l"/>
+                    <constraint firstAttribute="trailing" secondItem="5ee-0J-oUm" secondAttribute="trailing" constant="111" id="IGB-Xa-76F"/>
+                    <constraint firstItem="E4y-T1-OCC" firstAttribute="leading" secondItem="5ee-0J-oUm" secondAttribute="trailing" id="PNf-Jf-ZyD"/>
+                    <constraint firstItem="s9Q-FB-DcB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="br1-PZ-dV8"/>
+                    <constraint firstItem="5ee-0J-oUm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fSG-7C-SAf"/>
+                    <constraint firstAttribute="bottom" secondItem="s9Q-FB-DcB" secondAttribute="bottom" id="hf7-Lk-wNO"/>
+                    <constraint firstItem="5ee-0J-oUm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="111" id="jFp-Vj-xz3"/>
+                    <constraint firstItem="E4y-T1-OCC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qJC-Fj-xvW"/>
+                    <constraint firstAttribute="bottom" secondItem="E4y-T1-OCC" secondAttribute="bottom" id="sGi-lM-b46"/>
+                    <constraint firstAttribute="trailing" secondItem="E4y-T1-OCC" secondAttribute="trailing" constant="10" id="sa0-gj-hW9"/>
+                    <constraint firstAttribute="bottom" secondItem="5ee-0J-oUm" secondAttribute="bottom" id="wdu-ou-IxB"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
             <point key="canvasLocation" x="369" y="460.5"/>
         </tableViewCell>
     </objects>

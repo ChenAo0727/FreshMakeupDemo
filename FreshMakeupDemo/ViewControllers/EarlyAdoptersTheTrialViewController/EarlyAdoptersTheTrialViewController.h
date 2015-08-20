@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialLeftInconImage;
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialRightInconImageView;
 @property (strong, nonatomic) IBOutlet UITableView *earlyAdoptersTableView;
+@property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialRightTestInconImageView;
 @property (strong, nonatomic) EarlyAdoptersTheTrialViewControllerDataSource *earlyAdoptersTheTrialViewControllerDataSource;
 @end
