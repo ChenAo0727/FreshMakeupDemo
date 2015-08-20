@@ -26,6 +26,10 @@
     return bookCollectionView;
 }
 
+- (void)updateWithCurrentIndex:(NSInteger)index {
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+}
+
 - (void)awakeFromNib {
     [self configureImages];
     // 创建布局
@@ -38,6 +42,7 @@
 }
 
 #pragma mark - <UICollectionViewDataSource>
+
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.images.count;
 }
@@ -49,6 +54,7 @@
 }
 
 #pragma mark - <UICollectionViewDelegate>
+
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     BookCollectionViewCell *cell = (BookCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
     [cell animationOpenBook];

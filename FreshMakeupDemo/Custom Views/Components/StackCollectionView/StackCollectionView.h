@@ -40,7 +40,7 @@
 - (void)reloadDataForLoadOldDataWithIndex:(int)index;
 - (NSArray *)visibleCells;
 - (CGFloat)frontCellTopSpace;
-
+- (StackCollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier;
 - (StackCollectionViewCell *)dequeueReusableCellWithReuseIdentifier:(NSString *)identifier forIndexPath:(NSIndexPath *)indexPath;
 

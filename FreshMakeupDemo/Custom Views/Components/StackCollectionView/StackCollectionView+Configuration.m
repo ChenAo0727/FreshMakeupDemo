@@ -8,6 +8,7 @@
 
 #import "StackCollectionView+Configuration.h"
 #import "StackCollectionView+Caculation.h"
+#import "UIScreen+Utility.h"
 
 #define DEFAULT_CELL_WIDTH 255
 #define DEFAULT_CELL_HEIGHT 363
@@ -260,7 +261,7 @@
         index = 0;
         topSpace = self.frame.size.height;
     }
-    [cell setWidthConstant:DEFAULT_CELL_WIDTH];
+    [cell setWidthConstant:[UIScreen screenWidth]];
     [cell setHeightConstant:DEFAULT_CELL_HEIGHT];
     [cell setTopSpace:topSpace];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:cell attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];

@@ -7,7 +7,6 @@
 //
 
 #import "HomeViewController.h"
-#import "BlankStackCollectionViewCell.h"
 
 @interface HomeViewController ()
 
@@ -35,7 +34,7 @@
     [self.stackCollectionView setBottomSpace:-50];
     self.stackCollectionView.delegate = self;
     self.stackCollectionView.dataSource = self;
-    [self.stackCollectionView registerClass:[BlankStackCollectionViewCell class] forCellReuseIdentifier:@"BlankStackCollectionViewCell"];
+    [self.stackCollectionView registerClass:[BookCollectionView class] forCellReuseIdentifier:@"BookCollectionView"];
     
     
     [self.view layoutIfNeeded];
@@ -52,20 +51,8 @@
 }
 
 - (StackCollectionViewCell *)stackCollectionView:(StackCollectionView *)stackCollectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    BlankStackCollectionViewCell *cell = (BlankStackCollectionViewCell *)[stackCollectionView dequeueReusableCellWithReuseIdentifier:@"BlankStackCollectionViewCell" forIndexPath:indexPath];
-    if (indexPath.row == 0) {
-        cell.backgroundColor = [UIColor redColor];
-    } else if (indexPath.row == 1) {
-        cell.backgroundColor = [UIColor blackColor];
-    } else if (indexPath.row == 2) {
-        cell.backgroundColor = [UIColor blueColor];
-    } else if (indexPath.row == 3) {
-        cell.backgroundColor = [UIColor redColor];
-    } else {
-        cell.backgroundColor = [UIColor blackColor];
-    }
+    BookCollectionView *cell = (BookCollectionView *)[stackCollectionView dequeueReusableCellWithReuseIdentifier:@"BookCollectionView" forIndexPath:indexPath];
+    [cell updateWithCurrentIndex:2];
     return cell;
 }
-
-
 @end

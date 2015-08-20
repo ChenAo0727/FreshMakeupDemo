@@ -19,6 +19,10 @@
     return nil;
 }
 
+- (void)viewDidLoad {
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+}
+
 #pragma mark Public Methods
 
 //- (void)toast:(NSString *)message complete:(MBProgressHUDCompletionBlock)complete {

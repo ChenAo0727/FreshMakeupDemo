@@ -76,6 +76,11 @@
     return [self defaultTopCellSpaceAtIndex:0];
 }
 
+- (StackCollectionViewCell *)cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    StackCollectionViewCell *cell = [self.dataSource stackCollectionView:self cellForItemAtIndexPath:[NSIndexPath indexPathForItem:[self nextCardIndex] inSection:0]];
+    return cell;
+}
+
 - (void)registerClass:(Class)cellClass forCellReuseIdentifier:(NSString *)identifier {
     [self.reusabelCellIdDictionary setValue:cellClass forKey:identifier];
 }

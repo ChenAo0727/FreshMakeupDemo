@@ -6,11 +6,13 @@
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
 
-#import "AutoLayoutView.h"
+#import "StackCollectionViewCell.h"
 
-@interface BookCollectionView :AutoLayoutView <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface BookCollectionView :StackCollectionViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *lineCollectionView;
 @property (strong, nonatomic) NSMutableArray *images;
+
+- (void)updateWithCurrentIndex:(NSInteger)index;
 
 @end

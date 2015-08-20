@@ -12,13 +12,13 @@
     CATransform3D originTransform;
 }
 
+- (IBAction)didClickButton:(id)sender {
+    [self animationOpenBook];
+}
+
 - (void)awakeFromNib {
-    self.imageView.layer.borderWidth = 5;
-    self.imageView.layer.borderColor = [UIColor whiteColor].CGColor;
     self.imageView.layer.cornerRadius = 5;
     self.imageView.clipsToBounds = YES;
-    self.coverImageView.layer.borderWidth = 5;
-    self.coverImageView.layer.borderColor = [UIColor whiteColor].CGColor;
     self.coverImageView.layer.cornerRadius = 5;
     self.coverImageView.clipsToBounds = YES;
     self.coverImageViewLeftContraint.constant = - self.frame.size.width / 2;

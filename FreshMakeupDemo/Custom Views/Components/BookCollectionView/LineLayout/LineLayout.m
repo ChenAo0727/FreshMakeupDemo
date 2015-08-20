@@ -27,13 +27,14 @@
     self.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     
     // 设置cell的大小
-    CGFloat itemWith = self.collectionView.frame.size.height * 0.67;
+    CGFloat itemWith = self.collectionView.frame.size.height * 0.6;
     CGFloat itemHeight = self.collectionView.frame.size.height;
     self.itemSize = CGSizeMake(itemWith, itemHeight);
     
     // 设置内边距
-    CGFloat inset = (self.collectionView.frame.size.width - itemWith) * 0.5;
-    self.sectionInset = UIEdgeInsetsMake(0, inset, 0, inset);
+    CGFloat insert = (self.collectionView.frame.size.width - itemWith) * 0.5;
+    self.minimumLineSpacing = -10;
+    self.sectionInset = UIEdgeInsetsMake(0, insert, 0, insert);
 }
 
 /**
@@ -62,8 +63,7 @@
 /**
  * 当uicollectionView的bounds发生改变时，是否要刷新布局
  */
-- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds
-{
+- (BOOL)shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds {
     return YES;
 }
 
@@ -71,8 +71,7 @@
  * targetContentOffset ：通过修改后，collectionView最终的contentOffset(取决定情况)
  * proposedContentOffset ：默认情况下，collectionView最终的contentOffset
  */
-- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity
-{
+- (CGPoint)targetContentOffsetForProposedContentOffset:(CGPoint)proposedContentOffset withScrollingVelocity:(CGPoint)velocity {
     // 计算最终的可见范围
     CGRect rect;
     rect.origin = proposedContentOffset;
@@ -87,12 +86,15 @@
     // 计算最小的间距值
     CGFloat minDetal = MAXFLOAT;
     for (UICollectionViewLayoutAttributes *attrs in array) {
-        if (ABS(minDetal) > ABS(attrs.center.x - centerX)) {
+        if (fabs(minDetal) > fabs(attrs.center.x - centerX)) {
             minDetal = attrs.center.x - centerX;
         }
     }
     
     // 在原有offset的基础上进行微调
+    if (minDetal + proposedContentOffset.x < 0) {
+        return CGPointMake(0, proposedContentOffset.y);
+    }
     return CGPointMake(proposedContentOffset.x + minDetal, proposedContentOffset.y);
 }
 
