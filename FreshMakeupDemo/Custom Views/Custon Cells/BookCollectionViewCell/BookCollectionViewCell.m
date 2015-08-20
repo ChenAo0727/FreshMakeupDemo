@@ -17,10 +17,6 @@
 }
 
 - (void)awakeFromNib {
-    self.imageView.layer.cornerRadius = 5;
-    self.imageView.clipsToBounds = YES;
-    self.coverImageView.layer.cornerRadius = 5;
-    self.coverImageView.clipsToBounds = YES;
     self.coverImageViewLeftContraint.constant = - self.frame.size.width / 2;
     self.coverImageViewRightContraint.constant = self.frame.size.width / 2;
     self.coverImageView.layer.anchorPoint = CGPointMake(0.0, 0.5);

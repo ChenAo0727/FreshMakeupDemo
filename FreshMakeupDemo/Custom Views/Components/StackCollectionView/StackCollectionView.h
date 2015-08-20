@@ -58,6 +58,7 @@
 - (void)stackCollectionView:(StackCollectionView *)stackCollectionView didBeginSlideDownItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)stackCollectionView:(StackCollectionView *)stackCollectionView didBeginSlideUpItemAtIndexPath:(NSIndexPath *)indexPath;
 - (void)stackCollectionView:(StackCollectionView *)stackCollectionView didSlideToItemAtIndexPath:(NSIndexPath *)indexPath;
+- (void)stackCollectionView:(StackCollectionView *)stackCollectionView didSlideWithOffset:(CGFloat)offset;
 - (void)stackCollectionViewDidEndSlideDown:(StackCollectionView *)stackCollectionView;
 - (void)stackCollectionView:(StackCollectionView *)stackCollectionView didEndSlideDownItemAtIndexPath:(NSIndexPath *)indexPath;
 - (BOOL)stackcollectionviewNeedContinueSlideCrossTriggerPoint:(StackCollectionView *)stackCollectionView AtIndexPath:(NSIndexPath *)indexPath;

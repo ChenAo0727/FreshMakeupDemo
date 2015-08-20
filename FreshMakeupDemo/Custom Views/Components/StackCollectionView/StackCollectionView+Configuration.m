@@ -10,8 +10,6 @@
 #import "StackCollectionView+Caculation.h"
 #import "UIScreen+Utility.h"
 
-#define DEFAULT_CELL_WIDTH 255
-#define DEFAULT_CELL_HEIGHT 363
 #define DEFAULT_CELL_SCALE 0.92
 
 #define DEFAULT_NEXT_CELL_THRESHOLD 180
@@ -35,6 +33,8 @@
 }
 
 - (void)configureView {
+    self.backgroundColor = [UIColor blackColor];
+    self.clipsToBounds = NO;
     [self configureSlideMotion];
     [self addPanGesture];
 }
@@ -262,7 +262,7 @@
         topSpace = self.frame.size.height;
     }
     [cell setWidthConstant:[UIScreen screenWidth]];
-    [cell setHeightConstant:DEFAULT_CELL_HEIGHT];
+    [cell setHeightConstant:self.frame.size.height];
     [cell setTopSpace:topSpace];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:cell attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
 }

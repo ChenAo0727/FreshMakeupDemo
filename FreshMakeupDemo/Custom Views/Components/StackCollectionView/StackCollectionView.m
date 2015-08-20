@@ -174,6 +174,9 @@
 
 - (void)panGestureDidMove:(UIPanGestureRecognizer *)gesture {
     CGFloat yOffset = [gesture locationInView:self].y - self.panGestureStartLocation.y;
+    if ([self.delegate respondsToSelector:@selector(stackCollectionView:didSlideWithOffset:)]) {
+        [self.delegate stackCollectionView:self didSlideWithOffset:yOffset];
+    }
     [self layoutPileByPullUpOffset:yOffset];
     if ([self.delegate respondsToSelector:@selector(stackCollectionView:didSlideToItemAtIndexPath:)]) {
         NSIndexPath *indexPath = [NSIndexPath indexPathForItem:([self shouldBringInNextCell] ? [self nextCardIndex] : self.currentIndex) inSection:0];
@@ -239,6 +242,9 @@
 
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
     [self layoutPileByPullDownOffset:offset];
+    if ([self.delegate respondsToSelector:@selector(stackCollectionView:didSlideWithOffset:)]) {
+        [self.delegate stackCollectionView:self didSlideWithOffset:-offset];
+    }
     if ([self.delegate respondsToSelector:@selector(stackCollectionView:didSlideToItemAtIndexPath:)]) {
         if ([self shouldRecoverPile]) {
             NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.currentIndex inSection:0];

@@ -52,7 +52,7 @@
         CGFloat delta = ABS(centerX - attrs.center.x);
         
         // 利用差距计算出缩放比例（成反比）
-        CGFloat scale = 1 - delta / (self.collectionView.frame.size.width + self.itemSize.width);
+        CGFloat scale = 1 - 0.5 * delta / (self.collectionView.frame.size.width + self.itemSize.width);
         attrs.transform = CGAffineTransformMakeScale(scale, scale);
         //        attrs.transform3D = CATransform3DMakeRotation(scale * M_PI_4, 0, 1, 1);
     }

@@ -73,6 +73,13 @@
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
+		2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F841B85A71F005DCF14 /* home_update_time_image.png */; };
+		2E132F891B85B0E7005DCF14 /* home_down_guide1.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F861B85B0E7005DCF14 /* home_down_guide1.png */; };
+		2E132F8A1B85B0E7005DCF14 /* home_down_guide2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F871B85B0E7005DCF14 /* home_down_guide2.png */; };
+		2E132F8B1B85B0E7005DCF14 /* home_down_guide3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F881B85B0E7005DCF14 /* home_down_guide3.png */; };
+		2E132F8E1B85B505005DCF14 /* HomeViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E132F8D1B85B505005DCF14 /* HomeViewController+Configuration.m */; };
+		2E132F911B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E132F901B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m */; };
+		2E132F941B85BC5C005DCF14 /* HomeViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E132F931B85BC5C005DCF14 /* HomeViewController+Animation.m */; };
 		2E6B46371B81755600BF39D5 /* BookCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6B46351B81755600BF39D5 /* BookCollectionViewCell.m */; };
 		2E6B46381B81755600BF39D5 /* BookCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E6B46361B81755600BF39D5 /* BookCollectionViewCell.xib */; };
 		2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E6B46391B817F2E00BF39D5 /* home_book_cover_image.png */; };
@@ -215,6 +222,16 @@
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2E132F841B85A71F005DCF14 /* home_update_time_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_update_time_image.png; sourceTree = "<group>"; };
+		2E132F861B85B0E7005DCF14 /* home_down_guide1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_down_guide1.png; sourceTree = "<group>"; };
+		2E132F871B85B0E7005DCF14 /* home_down_guide2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_down_guide2.png; sourceTree = "<group>"; };
+		2E132F881B85B0E7005DCF14 /* home_down_guide3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_down_guide3.png; sourceTree = "<group>"; };
+		2E132F8C1B85B505005DCF14 /* HomeViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeViewController+Configuration.h"; sourceTree = "<group>"; };
+		2E132F8D1B85B505005DCF14 /* HomeViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeViewController+Configuration.m"; sourceTree = "<group>"; };
+		2E132F8F1B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeViewController+StackCollectionViewDelegate.h"; sourceTree = "<group>"; };
+		2E132F901B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeViewController+StackCollectionViewDelegate.m"; sourceTree = "<group>"; };
+		2E132F921B85BC5C005DCF14 /* HomeViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeViewController+Animation.h"; sourceTree = "<group>"; };
+		2E132F931B85BC5C005DCF14 /* HomeViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeViewController+Animation.m"; sourceTree = "<group>"; };
 		2E6B46341B81755600BF39D5 /* BookCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCollectionViewCell.h; sourceTree = "<group>"; };
 		2E6B46351B81755600BF39D5 /* BookCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCollectionViewCell.m; sourceTree = "<group>"; };
 		2E6B46361B81755600BF39D5 /* BookCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -579,6 +596,12 @@
 				2E8C34041B7DF2B7006B5BC0 /* HomeViewController.h */,
 				2E8C34051B7DF2B7006B5BC0 /* HomeViewController.m */,
 				2E8C34061B7DF2B7006B5BC0 /* HomeViewController.xib */,
+				2E132F8C1B85B505005DCF14 /* HomeViewController+Configuration.h */,
+				2E132F8D1B85B505005DCF14 /* HomeViewController+Configuration.m */,
+				2E132F8F1B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.h */,
+				2E132F901B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m */,
+				2E132F921B85BC5C005DCF14 /* HomeViewController+Animation.h */,
+				2E132F931B85BC5C005DCF14 /* HomeViewController+Animation.m */,
 			);
 			path = HomeViewController;
 			sourceTree = "<group>";
@@ -776,6 +799,10 @@
 		2EA427451B7ED71900BF4705 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2E132F861B85B0E7005DCF14 /* home_down_guide1.png */,
+				2E132F871B85B0E7005DCF14 /* home_down_guide2.png */,
+				2E132F881B85B0E7005DCF14 /* home_down_guide3.png */,
+				2E132F841B85A71F005DCF14 /* home_update_time_image.png */,
 				054DFD421B81AAEE00651F11 /* EarlyAdoptersTheTrialImages */,
 				058ABF391B82C58100A0BA8A /* FoundImages */,
 				2E6B46411B81A85400BF39D5 /* home_discovery_icon.png */,
@@ -904,6 +931,7 @@
 				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				053BFEA31B84AD80002058BA /* simhei.ttf in Resources */,
+				2E132F8B1B85B0E7005DCF14 /* home_down_guide3.png in Resources */,
 				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
 				054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */,
 				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
@@ -923,6 +951,7 @@
 				2E6B46381B81755600BF39D5 /* BookCollectionViewCell.xib in Resources */,
 				059E88D81B8431460086544F /* title3.png in Resources */,
 				058ABF581B82C58100A0BA8A /* findhottopic3.jpg in Resources */,
+				2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */,
 				2E6B46431B81A85400BF39D5 /* home_discovery_icon.png in Resources */,
 				058ABF5B1B82C58100A0BA8A /* newarticlebg.9.png in Resources */,
 				058ABF4C1B82C58100A0BA8A /* findad2.jpg in Resources */,
@@ -940,6 +969,8 @@
 				058ABF4E1B82C58100A0BA8A /* findad4.jpg in Resources */,
 				054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */,
 				059E88C01B8414D30086544F /* FindTableViewCell.xib in Resources */,
+				2E132F8A1B85B0E7005DCF14 /* home_down_guide2.png in Resources */,
+				2E132F891B85B0E7005DCF14 /* home_down_guide1.png in Resources */,
 				058ABF4D1B82C58100A0BA8A /* findad3.jpg in Resources */,
 				058ABF551B82C58100A0BA8A /* findarticleavatar3.png in Resources */,
 				054DFD381B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.xib in Resources */,
@@ -1004,9 +1035,9 @@
 				054DFD241B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m in Sources */,
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
 				2E7DC9371B82CF3900152A0B /* StackCollectionView.m in Sources */,
-				058ABF5E1B82CA6500A0BA8A /* FindViewController+Configuration.m in Sources */,
 				054DFD251B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m in Sources */,
 				2E7DC9341B82BD1F00152A0B /* StackCollectionViewCell.m in Sources */,
+				2E132F941B85BC5C005DCF14 /* HomeViewController+Animation.m in Sources */,
 				2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */,
 				2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */,
 				054DFD3B1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.m in Sources */,
@@ -1036,12 +1067,14 @@
 				2E7DC93C1B82D2BD00152A0B /* StackCollectionView+Configuration.m in Sources */,
 				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
 				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,
+				2E132F8E1B85B505005DCF14 /* HomeViewController+Configuration.m in Sources */,
 				054DFD401B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m in Sources */,
 				054DFD351B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m in Sources */,
 				2E7DC93F1B82D2D300152A0B /* StackCollectionView+Caculation.m in Sources */,
 				2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */,
+				2E132F911B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m in Sources */,
 				2E8C34111B7DF361006B5BC0 /* UINavigationController+CustomNavigationController.m in Sources */,
 				059E88CE1B841BB20086544F /* FindViewController+Configuration.m in Sources */,
 				2E8C344A1B7DF46E006B5BC0 /* UIColor+Utility.m in Sources */,
