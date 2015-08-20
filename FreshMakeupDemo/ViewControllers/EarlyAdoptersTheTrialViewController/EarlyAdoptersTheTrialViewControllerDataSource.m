@@ -33,9 +33,9 @@
         EarlyAdoptersReceiveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_RECEIVE_TABLEVIEW_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         cell.strengthButton.layer.borderWidth = 1;
-        cell.strengthButton.layer.borderColor = [UIColor colorFromHexCode:@"#00FFFF"].CGColor;
+        cell.strengthButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
         cell.luckButton.layer.borderWidth = 1;
-        cell.luckButton.layer.borderColor = [UIColor colorFromHexCode:@"#00FFFF"].CGColor;
+        cell.luckButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
         return cell;
 
     } else if (indexPath. row == 5) {
@@ -47,12 +47,12 @@
     } else if (indexPath.row == 6 || indexPath.row == 7) {
         EarlyAdoptersReportTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_REPORT_TABLEVIEW_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        
         return cell;
 
     } else {
         EarlyAdoptersPartitionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        cell.backgroundColor = [UIColor colorFromHexCode:@"#AAAAAA"];
         [cell.moreButton setTitle:nil forState:UIControlStateNormal];
         if (indexPath.row == 8) {
             cell.backgroundColor = [UIColor whiteColor];

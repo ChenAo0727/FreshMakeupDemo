@@ -19,5 +19,29 @@
 
     // Configure the view for the selected state
 }
+- (IBAction)earlyClickLeftButtonAction:(id)sender {
+    NSInteger praiseCountLeft = [self.earlyClickLeftLabel.text integerValue];
+    if (praiseCountLeft == 24) {
+        self.earlyClickLeftLabel.text = @"25";
+    } else {
+        self.earlyClickLeftLabel.text = @"24";
+    }
+    
+    [self layoutIfNeeded];
+}
+- (IBAction)earlyClickRightButtonAction:(id)sender {
+    NSInteger praiseCountRight = [self.earlyClickRightLabel.text integerValue];
+    if (praiseCountRight == 24) {
+        self.earlyClickRightLabel.text = @"25";
+    } else {
+        self.earlyClickRightLabel.text = @"24";
+    }
+    
+    [self layoutIfNeeded];
 
+}
+
+- (CGFloat)getCellHeight {
+    return 250;
+}
 @end

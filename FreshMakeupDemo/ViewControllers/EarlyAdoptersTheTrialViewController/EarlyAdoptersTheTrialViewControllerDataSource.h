@@ -7,7 +7,5 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface EarlyAdoptersTheTrialViewControllerDataSource : NSObject<UITableViewDataSource>
-
 @end
