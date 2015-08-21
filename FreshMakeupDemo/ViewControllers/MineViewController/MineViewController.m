@@ -1,36 +1,37 @@
 //
-//  findViewController.m
+//  MineViewController.m
 //  FreshMakeupDemo
 //
-//  Created by winchance on 15/8/18.
+//  Created by winchance on 15/8/21.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "FindViewController.h"
-#import "FindViewController+Configuration.h"
-#import "FindViewController+Animation.h"
-@interface FindViewController ()
+#import "MineViewController.h"
+#import "MineViewController+Animation.h"
+@interface MineViewController ()
 
 @end
 
-@implementation FindViewController
+@implementation MineViewController
 + (instancetype)create {
-    return [[FindViewController alloc] initWithNibName:@"FindViewController" bundle:nil];
+    return [[MineViewController alloc] initWithNibName:@"MineViewController" bundle:nil];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self configureViews];
-    
-   
+    [self mineConfigureViews];
+}
+//出现的时候调用
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self mineLabelAnimation];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 5 || indexPath.row == 7) {
-        return 18;
-    } else {
-        return 235;
-    }
+    return 60;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
+    [self guideViewAnimation:indexPath.row];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -12,13 +12,14 @@
 #import "RollCollectionViewCell.h"
 #import "UIColor+Utility.h"
 #import "FindViewController+Animation.h"
+#import "XHDrawerController.h"
 @implementation FindViewController (Configuration)
 - (void)configureViews {
     [self tableViewEdit];
     [self findRollView];
     [self findTitleView];
     [self findThreeDimensionalRollView];
-    
+    [self mineViewEdit];
 }
 - (void)tableViewEdit {
     self.findViewControllerDataSource = [FindViewControllerDataSource new];
@@ -63,35 +64,19 @@
     [self.findTableView.tableFooterView addSubview:titleFooterLabel];
 }
 - (void)findThreeDimensionalRollView {
-    self.threeDimensionalView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, 375, 178))];
-    [self.findTableView.tableHeaderView addSubview:self.threeDimensionalView];
+    self.findAutomatiRollingView = [[FindAutomatiRollingView alloc] initWithFrame:(CGRectMake(0, 0, 375, 178))];
+    [self.findTableView.tableHeaderView addSubview:self.self.findAutomatiRollingView];
     
+}
+- (void)mineViewEdit {
     
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(left)];
+    self.findLeftIconImageView.userInteractionEnabled = YES;
+    [self.findLeftIconImageView addGestureRecognizer:tap];
     
-    self.threeDimensionalOne = [[UIButton alloc] initWithFrame:(CGRectMake(0, 0, 375, 178))];
-    [self.threeDimensionalOne setImage:[UIImage imageNamed:@"findad1.png"] forState:UIControlStateNormal];
-    [self.threeDimensionalOne setTag:101];
-    [self.threeDimensionalOne addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.threeDimensionalView addSubview:self.threeDimensionalOne];
-    
-    self.threeDimensionalTow = [[UIButton alloc] initWithFrame:(CGRectMake(0, 0, 375, 178))];
-    [self.threeDimensionalTow setImage:[UIImage imageNamed:@"findad2.jpg"] forState:UIControlStateNormal];
-    [self.threeDimensionalTow setTag:102];
-    [self.threeDimensionalTow addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.threeDimensionalView addSubview:self.threeDimensionalTow];
-    
-    self.threeDimensionalThree = [[UIButton alloc] initWithFrame:(CGRectMake(0, 0, 375, 178))];
-    [self.threeDimensionalThree setImage:[UIImage imageNamed:@"findad3.jpg"] forState:UIControlStateNormal];
-    [self.threeDimensionalThree setTag:103];
-    [self.threeDimensionalThree addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.threeDimensionalView addSubview:self.threeDimensionalThree];
-    
-    self.threeDimensionalFour = [[UIButton alloc] initWithFrame:(CGRectMake(0, 0, 375, 178))];
-    [self.threeDimensionalFour setImage:[UIImage imageNamed:@"findad4.jpg"] forState:UIControlStateNormal];
-    [self.threeDimensionalFour setTag:104];
-    [self.threeDimensionalFour addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    [self.threeDimensionalView addSubview:self.threeDimensionalFour];
-
+}
+- (void)left {
+    [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:NULL];
 }
 
 @end

@@ -9,7 +9,5 @@
 #import "FindViewController.h"
 
 @interface FindViewController (Animation)
-- (void)findThreeDimensionalRollAnimation;
-- (void)buttonClicked:(UIButton *)button;
-- (NSInteger)OSVersion;
+
 @end
