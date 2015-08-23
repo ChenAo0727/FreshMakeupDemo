@@ -10,6 +10,7 @@
 #import "FindViewControllerDataSource.h"
 #import "BaseViewController.h"
 #import "RollCollectionViewDataSource.h"
+#import "FindAutomatiRollingView.h"
 @interface FindViewController :BaseViewController <UITableViewDelegate,UICollectionViewDelegate>
 
 
@@ -23,9 +24,5 @@
 @property (strong, nonatomic) FindViewControllerDataSource *findViewControllerDataSource;
 @property (strong, nonatomic) UICollectionView *rollCollectionView;
 @property (strong, nonatomic) RollCollectionViewDataSource *rollCollectionViewDataSource;
-@property (strong, nonatomic) UIButton *threeDimensionalOne;
-@property (strong, nonatomic) UIButton *threeDimensionalTow;
-@property (strong, nonatomic) UIButton *threeDimensionalThree;
-@property (strong, nonatomic) UIButton *threeDimensionalFour;
-@property (strong, nonatomic) UIView *threeDimensionalView;
+@property (strong, nonatomic) FindAutomatiRollingView *findAutomatiRollingView;
 @end
