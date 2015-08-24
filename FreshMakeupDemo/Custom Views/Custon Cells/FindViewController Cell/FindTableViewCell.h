@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *findImageView;
 
 @property (strong, nonatomic) IBOutlet UIImageView *findHeadImageView;
+@property (strong, nonatomic) IBOutlet UIImageView *findSubtitleImageView;
 @property (strong, nonatomic) IBOutlet UILabel *findLabel;
 
 @end

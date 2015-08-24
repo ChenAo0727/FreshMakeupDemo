@@ -7,5 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+@protocol EarlyAdoptersTheTrialViewControllerDataSourceDelegate <NSObject>
+- (void)EarlyAdoptersTheTrialViewControllerShakeAshake;
+@end
 @interface EarlyAdoptersTheTrialViewControllerDataSource : NSObject<UITableViewDataSource>
+@property (nonatomic, weak) id<EarlyAdoptersTheTrialViewControllerDataSourceDelegate>delegate;
 @end

@@ -36,6 +36,7 @@
         cell.strengthButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
         cell.luckButton.layer.borderWidth = 1;
         cell.luckButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
+        [cell.luckButton addTarget:self action:@selector(luckButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
 
     } else if (indexPath. row == 5) {
@@ -62,6 +63,12 @@
             [cell.moreButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         }
         return cell;
+    }
+
+}
+- (void)luckButtonAction:(UIButton *)button {
+    if ([self.delegate respondsToSelector:@selector(EarlyAdoptersTheTrialViewControllerShakeAshake)]) {
+        [self.delegate EarlyAdoptersTheTrialViewControllerShakeAshake];
     }
 
 }

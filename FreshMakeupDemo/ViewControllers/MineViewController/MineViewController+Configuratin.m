@@ -33,7 +33,7 @@
     self.mineEndLabel.textAlignment = NSTextAlignmentCenter;
 }
 - (void)mineGuideViewEdit {
-    self.mineGuideimageView = [[UIImageView alloc] initWithFrame:(CGRectMake(0, self.mineGuideView.frame.size.height + 5, 8, 47))];
+    self.mineGuideimageView = [[UIImageView alloc] initWithFrame:(CGRectMake(0, self.mineGuideView.frame.size.height + 5, 8, 31))];
     self.mineGuideimageView.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.mineGuideimageView];
 }

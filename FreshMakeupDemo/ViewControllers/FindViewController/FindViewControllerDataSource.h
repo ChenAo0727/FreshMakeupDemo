@@ -12,4 +12,5 @@
 @property (strong, nonatomic) NSMutableArray *headImageArray;
 @property (strong, nonatomic) NSMutableArray *imageArray;
 @property (strong, nonatomic) NSMutableArray *lableArray;
+@property (strong, nonatomic) NSMutableArray *subtitleArray;
 @end
