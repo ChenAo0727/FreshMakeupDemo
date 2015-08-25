@@ -13,6 +13,7 @@
 #import "UIColor+Utility.h"
 #import "FindViewController+Animation.h"
 #import "XHDrawerController.h"
+#import "MineViewController+Animation.h"
 @implementation FindViewController (Configuration)
 - (void)configureViews {
     [self tableViewEdit];
@@ -92,7 +93,10 @@
     
 }
 - (void)left {
-    [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:NULL];
+    [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:^(BOOL finished) {
+        MineViewController *viewController = (MineViewController *)self.drawerController.leftViewController;
+        [viewController mineLabelAnimation];
+    }];
 }
 //自定义SECTION
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
@@ -143,6 +147,7 @@
 
     
 }
+//滚动视图  imageView初始化
 - (void)imageViewData {
     self.imageViewOne = [[UIImageView alloc] initWithFrame:(CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height))];
     self.imageViewOne.image = self.imageOne;
@@ -163,6 +168,7 @@
     self.imageThree = [UIImage imageNamed:@"findad3.jpg"];
     self.imageFour = [UIImage imageNamed:@"findad4.jpg"];
 }
+//滚动视图 动画
 - (void)findThreeDimensional {
     if (self.num == 0) {
         [UIView animateKeyframesWithDuration:0.8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{

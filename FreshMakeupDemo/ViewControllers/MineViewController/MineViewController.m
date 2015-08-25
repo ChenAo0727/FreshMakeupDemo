@@ -24,7 +24,7 @@
 //出现的时候调用
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    [self mineLabelAnimation];
+    //[self mineLabelAnimation];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

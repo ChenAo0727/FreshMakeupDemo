@@ -14,6 +14,7 @@
 #import "EarlyAdoptersInformationTableViewCell.h"
 #import "EarlyAdoptersPartitionTableViewCell.h"
 #import "XHDrawerController.h"
+#import "MineViewController+Animation.h"
 @implementation EarlyAdoptersTheTrialViewController (Configuration)
 - (void)configureViews {
     [self titleEdit];
@@ -45,6 +46,9 @@
     
 }
 - (void)leftAction {
-     [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:NULL];
+     [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:^(BOOL finished) {
+         MineViewController *viewController = (MineViewController *)self.drawerController.leftViewController;
+         [viewController mineLabelAnimation];
+     }];
 }
 @end
