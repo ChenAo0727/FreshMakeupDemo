@@ -120,7 +120,7 @@ typedef enum ScrollDirection {
     CGFloat damping = [self isSpringAnimationOn] ? 0.7f : 1.0f;
     
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0) {
-        [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:damping initialSpringVelocity:velocity options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+        [UIView animateWithDuration:0.2 delay:0.0 usingSpringWithDamping:damping initialSpringVelocity:velocity options:UIViewAnimationOptionAllowAnimatedContent animations:^{
             [self.scrollView setContentOffset:CGPointMake(XHContentContainerViewOriginX, 0.0f) animated:NO];
         } completion:^(BOOL finished) {
             self.openSide = XHDrawerSideNone;
@@ -155,7 +155,7 @@ typedef enum ScrollDirection {
     CGFloat damping = [self isSpringAnimationOn] ? 0.7f : 1.0f;
     
     if ([[UIDevice currentDevice].systemVersion floatValue] >= 7.0) {
-        [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:damping initialSpringVelocity:velocity options:UIViewAnimationOptionAllowAnimatedContent animations:^{
+        [UIView animateWithDuration:0.2 delay:0.0 usingSpringWithDamping:damping initialSpringVelocity:velocity options:UIViewAnimationOptionAllowAnimatedContent animations:^{
             if (drawerSide == XHDrawerSideLeft) {
                 [self.scrollView setContentOffset:CGPointMake(0.0f, 0.0f) animated:NO];
             }
@@ -167,7 +167,7 @@ typedef enum ScrollDirection {
             }
         }];
     } else {
-        [UIView animateWithDuration:0.3 delay:0 options:options animations:^{
+        [UIView animateWithDuration:0.5 delay:0 options:options animations:^{
             if (drawerSide == XHDrawerSideLeft) {
                 [self.scrollView setContentOffset:CGPointMake(0.0f, 0.0f) animated:NO];
             }
@@ -202,6 +202,7 @@ typedef enum ScrollDirection {
     }
     UIViewController *currentContentViewController =self.centerViewController;
     _centerViewController = centerViewController;
+    
     
     UIView *contentContainerView = self.zoomDrawerView.contentContainerView;
     CGAffineTransform currentTransform = [contentContainerView transform];
@@ -281,6 +282,7 @@ typedef enum ScrollDirection {
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
     CGPoint contentOffset = [scrollView contentOffset];
     
     CGFloat currentContentOffsetX = contentOffset.x;
@@ -339,7 +341,7 @@ typedef enum ScrollDirection {
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
     
     CGFloat targetContentOffsetX = targetContentOffset->x;
-    CGFloat drawerPadding = XHContentContainerViewOriginX * 2 / 3.;
+    CGFloat drawerPadding = XHContentContainerViewOriginX * 2/ 3.;
     if (targetContentOffsetX >= drawerPadding && targetContentOffsetX < XHContentContainerViewOriginX && self.openSide == XHDrawerSideLeft) {
         targetContentOffset->x = XHContentContainerViewOriginX;
     } else if ((targetContentOffsetX >= 0 && targetContentOffsetX <= drawerPadding && self.openSide == XHDrawerSideLeft)) {

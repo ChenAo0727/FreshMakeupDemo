@@ -51,12 +51,37 @@
     [self.rollCollectionView registerNib:[UINib nibWithNibName:@"RollCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ROLL_COLLECTIONVIEW_CELL];
 }
 - (void)findTitleView {
-    UIImageView *titleImageView = [[UIImageView alloc] initWithFrame:(CGRectMake(0, 178, 374, 35))];
-    titleImageView.image = [UIImage imageNamed:@"fount_title.png"];
+    UIImageView *titleImageView = [[UIImageView alloc] initWithFrame:(CGRectMake(3, 181, 8, 29))];
+    titleImageView.backgroundColor = [UIColor colorFromHexCode:@"#78bab7"];
     [self.findTableView.tableHeaderView addSubview:titleImageView];
-    UILabel *titleFooterLabel = [[UILabel alloc] initWithFrame:(CGRectMake(158, 17, 90, 35))];
+    UILabel *titleHeaderLeftLabel = [[UILabel alloc] initWithFrame:(CGRectMake(14, 178, 150, 35))];
+    titleHeaderLeftLabel.text = @"闺蜜正在聊";
+    [self.findTableView.tableHeaderView addSubview:titleHeaderLeftLabel];
+    UILabel *titleHeaderRightLabel = [[UILabel alloc] initWithFrame:(CGRectMake(self.findTableView.frame.size.width, 178, 40, 35))];
+    titleHeaderRightLabel.text = @"全部";
+    titleHeaderRightLabel.textColor =[UIColor colorFromHexCode:@"#78bab7"];
+    [self.findTableView.tableHeaderView addSubview:titleHeaderRightLabel];
+    
+    UILabel *titleFooterLabel = [[UILabel alloc] initWithFrame:(CGRectMake(145, 17, 90, 33))];
+    titleFooterLabel.textAlignment = NSTextAlignmentCenter;
     titleFooterLabel.text = @"往期新品";
     [self.findTableView.tableFooterView addSubview:titleFooterLabel];
+    
+    UILabel *lateLabel = [[UILabel alloc] init];
+    lateLabel.frame = CGRectMake(145, 50, 90, 15);
+    lateLabel.textAlignment = NSTextAlignmentCenter;
+    lateLabel.text = @"2015年8月10日";
+    lateLabel.textColor = [UIColor grayColor];
+    lateLabel.font = [UIFont fontWithName:nil size:10];
+    [self.findTableView.tableFooterView addSubview:lateLabel];
+  
+    UIImageView *imageFooterLeftView = [[UIImageView alloc] initWithFrame:(CGRectMake(45, 34.5, 100, 1))];
+    imageFooterLeftView.backgroundColor = [UIColor grayColor];
+    [self.findTableView.tableFooterView addSubview:imageFooterLeftView];
+    [self.findTableView.tableFooterView addSubview:titleFooterLabel];
+    UIImageView *imageFooterRightView = [[UIImageView alloc] initWithFrame:(CGRectMake(235, 34.5, 100, 1))];
+    imageFooterRightView.backgroundColor = [UIColor grayColor];
+    [self.findTableView.tableFooterView addSubview:imageFooterRightView];
 }
 
 - (void)mineViewEdit {
@@ -73,9 +98,27 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     UIView *sectionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 45)];
     UILabel *label = [[UILabel alloc] init];
-    label.frame = CGRectMake(self.findTableView.frame.size.width / 2 - 30, 5, 100, 30);
+    label.frame = CGRectMake(self.findTableView.frame.size.width / 2 - 40, 5, 80, 30);
+    label.textAlignment = NSTextAlignmentCenter;
     label.text = @"往期新品";
     [sectionView setBackgroundColor:[UIColor whiteColor]];
+    
+    UILabel *lateLabel = [[UILabel alloc] init];
+    lateLabel.frame = CGRectMake(self.findTableView.frame.size.width / 2 - 100, 35, 200, 15);
+    lateLabel.textAlignment = NSTextAlignmentCenter;
+    lateLabel.text = @"2015年8月10日";
+    lateLabel.textColor = [UIColor grayColor];
+    lateLabel.font = [UIFont fontWithName:nil size:10];
+    [sectionView addSubview:lateLabel];
+    
+    UIImageView *imageFooterLeftView = [[UIImageView alloc] initWithFrame:(CGRectMake(self.findTableView.frame.size.width / 2 - 140, 22.5, 100, 1))];
+    imageFooterLeftView.backgroundColor = [UIColor grayColor];
+    [sectionView addSubview:imageFooterLeftView];
+    UIImageView *imageFooterRightView = [[UIImageView alloc] initWithFrame:(CGRectMake(self.findTableView.frame.size.width / 2 + 40, 22.5, 100, 1))];
+    imageFooterRightView.backgroundColor = [UIColor grayColor];
+    [sectionView addSubview:imageFooterRightView];
+    
+    
     [sectionView addSubview:label];
     return sectionView;
 }

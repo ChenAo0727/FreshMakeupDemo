@@ -26,10 +26,37 @@
     
     [self.shakeView addSubview:self.shakeImageView];
     [self.view addSubview:self.shakeView];
-
+    
+    [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
+    [self becomeFirstResponder];
 }
 
 - (void)shakeImageAction {
     self.shakeView.alpha = 0;
+}
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+        self.shakeImageView.frame = CGRectMake(self.view.frame.size.width / 2 - 40, 280, 80, 50);
+        self.shakeInteger = (arc4random() % 2) + 1;
+    } completion:nil];
+}
+- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+        self.shakeImageView.image = [UIImage imageNamed:@"shakeaShake.png"];
+        self.shakeImageView.frame = CGRectMake(0, 200, self.view.frame.size.width, 200);
+    } completion:nil];
+}
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (self.shakeInteger == 2) {
+        self.shakeImageView.image = [UIImage imageNamed:@"last.png"];
+    } else {
+        self.shakeImageView.image = [UIImage imageNamed:@"underthe.png"];
+    }
+    if (event.subtype == UIEventSubtypeMotionShake) {
+        self.view.backgroundColor = [UIColor redColor];
+        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+            self.shakeImageView.frame = CGRectMake(0, 200, self.view.frame.size.width, 200);
+        } completion:nil];
+    }
 }
 @end
