@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *disapproveCountLabel;
 @property (weak, nonatomic) IBOutlet UILabel *approveLabel;
 @property (weak, nonatomic) IBOutlet UILabel *disapproveLabel;
-
+@property (weak, nonatomic) IBOutlet UIImageView *unlikeLineImageView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *unLikeLineImageViewTopConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *processLeftViewWithConstraint;
 
 @end

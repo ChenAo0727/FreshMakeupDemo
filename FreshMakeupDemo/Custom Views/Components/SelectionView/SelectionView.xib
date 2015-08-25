@@ -122,6 +122,13 @@
                         <action selector="onClickRightButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="DeQ-g6-Kah"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selection_view_unlike_line.png" translatesAutoresizingMaskIntoConstraints="NO" id="fjc-Rc-CMj">
+                    <rect key="frame" x="276" y="0.0" width="30" height="27"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="78P-1i-Lt9"/>
+                        <constraint firstAttribute="width" constant="30" id="YaA-X6-ZlR"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -150,7 +157,9 @@
                 <constraint firstAttribute="bottom" secondItem="D6W-gM-xUn" secondAttribute="bottom" id="kjB-CX-oF7"/>
                 <constraint firstItem="0qA-qo-HiD" firstAttribute="leading" secondItem="rxb-uu-vYX" secondAttribute="trailing" constant="5" id="l1G-F5-9SO"/>
                 <constraint firstAttribute="centerX" secondItem="IN6-lH-oJl" secondAttribute="centerX" id="pTr-dU-aby"/>
+                <constraint firstItem="fjc-Rc-CMj" firstAttribute="leading" secondItem="rxb-uu-vYX" secondAttribute="trailing" constant="45" id="tdc-oD-01p"/>
                 <constraint firstItem="rGR-V8-nth" firstAttribute="leading" secondItem="IN6-lH-oJl" secondAttribute="trailing" id="vtV-sc-LrA"/>
+                <constraint firstItem="fjc-Rc-CMj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zk2-GS-o3X"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -160,10 +169,13 @@
                 <outlet property="disapproveCountLabel" destination="rGR-V8-nth" id="9h4-OG-HlJ"/>
                 <outlet property="disapproveLabel" destination="cHD-ID-GbG" id="ZcU-7N-JAr"/>
                 <outlet property="processLeftView" destination="Pwq-RR-jHc" id="Jvs-Pr-9Z3"/>
+                <outlet property="processLeftViewWithConstraint" destination="Y0N-9z-XiA" id="2yt-yj-NX6"/>
                 <outlet property="processView" destination="Srn-6R-ohD" id="Lgy-lp-QGM"/>
                 <outlet property="selectionLikeImageView" destination="kzS-Ku-WIJ" id="O71-Lu-rgY"/>
                 <outlet property="selectionUnlikeImageView" destination="0qA-qo-HiD" id="9FX-Ot-JNo"/>
                 <outlet property="sumUserCountLabel" destination="rxb-uu-vYX" id="znc-ka-EFf"/>
+                <outlet property="unLikeLineImageViewTopConstraint" destination="zk2-GS-o3X" id="yfN-io-GWH"/>
+                <outlet property="unlikeLineImageView" destination="fjc-Rc-CMj" id="wbZ-M0-mwB"/>
             </connections>
             <point key="canvasLocation" x="572" y="497"/>
         </view>
@@ -171,6 +183,7 @@
     <resources>
         <image name="selection_like_image.png" width="150" height="150"/>
         <image name="selection_unlike_image.png" width="150" height="150"/>
+        <image name="selection_view_unlike_line.png" width="16" height="38"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

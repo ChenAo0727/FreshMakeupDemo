@@ -26,7 +26,6 @@
     
     [self.shakeView addSubview:self.shakeImageView];
     [self.view addSubview:self.shakeView];
-
 }
 
 - (void)shakeImageAction {
