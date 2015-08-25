@@ -34,23 +34,57 @@
     self.layout.minimumInteritemSpacing = 0;
     self.detailCollectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.detailCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"BaseInfomationCell" bundle:nil] forCellWithReuseIdentifier:BASE_INFO_CELL];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"OwnerSayCell" bundle:nil] forCellWithReuseIdentifier:OWNER_SAY_CELL];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"TitleCell" bundle:nil] forCellWithReuseIdentifier:TITLE_CELL];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"ImageCell" bundle:nil] forCellWithReuseIdentifier:IMAGE_CELL];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"MoreInfomationCell" bundle:nil] forCellWithReuseIdentifier:MORE_INFOMATION_CELL];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"FeatureDescriptionCell" bundle:nil] forCellWithReuseIdentifier:FEATURE_DESCRIPTION_CELL];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"CommentCell" bundle:nil] forCellWithReuseIdentifier:COMMENT_CELL];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"CopywriterCell" bundle:nil] forCellWithReuseIdentifier:COPY_WRITER_CELL];
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"TrialCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:TRIAL_COLLECTION_VIEW_CELL];
+    NSDictionary *nibDictionary = @{BASE_INFO_CELL : @"BaseInfomationCell", OWNER_SAY_CELL : @"OwnerSayCell", TITLE_CELL : @"TitleCell", IMAGE_CELL : @"ImageCell", MORE_INFOMATION_CELL : @"MoreInfomationCell", FEATURE_DESCRIPTION_CELL : @"FeatureDescriptionCell", COMMENT_CELL : @"CommentCell", COPY_WRITER_CELL : @"CopywriterCell", TRIAL_COLLECTION_VIEW_CELL : @"TrialCollectionViewCell"};
+    [self registerNibWithDictionaty:nibDictionary];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
     self.detailCollectionView.dataSource = self;
     self.detailCollectionView.delegate = self;
+    [self addSelectionView];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self updateSelectionViewY];
+}
+
+
+- (void)updateSelectionViewY {
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:4];
+    TitleCell *cell = [self.detailCollectionView dequeueReusableCellWithReuseIdentifier:TITLE_CELL forIndexPath:indexPath];
+    CGRect frame = cell.frame;
+    self.selectionViewY = frame.origin.y + frame.size.height;
+}
+
+- (void)registerNibWithDictionaty:(NSDictionary *)dictionary {
+    NSEnumerator * enumeratorKey = [dictionary keyEnumerator];
+    for (NSString *identifier in enumeratorKey) {
+        [self.detailCollectionView registerNib:[UINib nibWithNibName:[dictionary objectForKey:identifier] bundle:nil] forCellWithReuseIdentifier:identifier];
+    }
+}
+
+- (void)addSelectionView {
+    self.selectionView = [SelectionView create];
+    [self.view insertSubview:self.selectionView belowSubview:self.topViewContainer];
+    [self.selectionView setLeftSpace:0];
+    [self.selectionView setRightSpace:0];
+    [self.selectionView setBottomSpace:0];
+    [self.selectionView setHeightConstant:54];
 }
 
 - (void)dealloc {
     self.detailCollectionView.dataSource = nil;
     self.detailCollectionView.delegate = nil;
+}
+
+#pragma mark - ScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    CGFloat expectOffset = self.selectionViewY + 54 - self.detailCollectionView.frame.size.height;
+    if (scrollView.contentOffset.y >= expectOffset) {
+        [self.selectionView updateBottomSpace:(expectOffset - scrollView.contentOffset.y)];
+    } else {
+        [self.selectionView updateBottomSpace:0];
+    }
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -104,7 +138,7 @@
         case 3:
             return 3;
         case 4:
-            return 1;
+            return 2;
         case 5:
             return 6;
         case 6:
@@ -201,6 +235,8 @@
     switch (indexPath.row) {
         case 0:
             return [self generateTitleCellWithCollectionView:collectionView indexPath:indexPath];
+        case 1:
+            return [self generateSelctionCellWithCollectionView:collectionView indexPath:indexPath];
         default:
             return nil;
     }
@@ -315,6 +351,12 @@
 
 }
 
+- (UICollectionViewCell *)generateSelctionCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
+    cell.backgroundColor = [UIColor whiteColor];
+    return cell;
+}
+
 - (UICollectionViewCell *)generateTopCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionViewCell" forIndexPath:indexPath];
     cell.backgroundColor = [UIColor clearColor];
@@ -337,6 +379,8 @@
     switch (indexPath.row) {
         case 0:
             return [self sizeOfTitleCell];
+        case 1:
+            return CGSizeMake([UIScreen mainScreen].bounds.size.width, 54);
         default:
             return CGSizeZero;
     }
@@ -405,7 +449,7 @@
 - (CGSize)sizeOfCellInSectionZeroOfIndex:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0:
-            return CGSizeMake([UIScreen mainScreen].bounds.size.width, 276);
+            return CGSizeMake([UIScreen mainScreen].bounds.size.width, 285);
         case 1:
             return [self sizeOfBaseInfomationCellWithIndexPath:indexPath];
         case 2:

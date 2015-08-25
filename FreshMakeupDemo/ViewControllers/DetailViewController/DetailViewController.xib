@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController">
             <connections>
                 <outlet property="detailCollectionView" destination="Vd1-mD-l4y" id="K1f-ud-Lwl"/>
+                <outlet property="topViewContainer" destination="6Zc-UQ-pFB" id="KtP-og-Tav"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,6 +22,29 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_top_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Mc-EE-uAo">
+                    <rect key="frame" x="0.0" y="65" width="320" height="267"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="267" id="Q4P-KS-2qC"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INg-20-Oiy">
+                    <rect key="frame" x="0.0" y="332" width="320" height="9"/>
+                    <color key="backgroundColor" red="0.90588235294117647" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="9" id="Pye-FW-w7h"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-mD-l4y">
+                    <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4AI-gl-Utk">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Zc-UQ-pFB" userLabel="topViewContainer">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="65"/>
                     <subviews>
@@ -72,29 +96,6 @@
                         <constraint firstAttribute="bottom" secondItem="wfF-4d-o1w" secondAttribute="bottom" id="tqy-yg-XBd"/>
                     </constraints>
                 </view>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_top_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Mc-EE-uAo">
-                    <rect key="frame" x="0.0" y="65" width="320" height="267"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="267" id="Q4P-KS-2qC"/>
-                    </constraints>
-                </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INg-20-Oiy">
-                    <rect key="frame" x="0.0" y="332" width="320" height="9"/>
-                    <color key="backgroundColor" red="0.90588235294117647" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="9" id="Pye-FW-w7h"/>
-                    </constraints>
-                </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vd1-mD-l4y">
-                    <rect key="frame" x="0.0" y="65" width="320" height="503"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4AI-gl-Utk">
-                        <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
