@@ -6,8 +6,16 @@
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "SelectionView.h"
+#import "CHTCollectionViewWaterfallLayout.h"
 
-@interface DetailViewController : UIViewController
+@interface DetailViewController : BaseViewController<UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout>
+
+@property (weak, nonatomic) IBOutlet UIView *topViewContainer;
+@property (weak, nonatomic) IBOutlet UICollectionView *detailCollectionView;
+@property (strong, nonatomic) CHTCollectionViewWaterfallLayout *layout;
+@property (strong, nonatomic) SelectionView *selectionView;
+@property (assign, nonatomic) CGFloat selectionViewY;
 
 @end

@@ -13,6 +13,7 @@
 - (void)EarlyAdoptersTheTrialViewControllerShakeAshake {
     [self shakeAShakeAction];
 }
+
 - (void) shakeAShakeAction {
     self.shakeView = [[UIView alloc] initWithFrame:self.view.bounds];
     self.shakeView.backgroundColor = [UIColor blackColor];
@@ -21,12 +22,9 @@
     self.shakeImageView.image = [UIImage imageNamed:@"shakeaShake.png"];
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(shakeImageAction)];
     self.shakeImageView.userInteractionEnabled = YES;
-    
     [self.shakeImageView addGestureRecognizer:tap];
-    
     [self.shakeView addSubview:self.shakeImageView];
     [self.view addSubview:self.shakeView];
-    
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
 }
