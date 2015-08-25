@@ -9,11 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "EarlyAdoptersTheTrialViewControllerDataSource.h"
 #import "BaseViewController.h"
-@interface EarlyAdoptersTheTrialViewController : BaseViewController<UITableViewDelegate>
+@interface EarlyAdoptersTheTrialViewController : BaseViewController<UITableViewDelegate,EarlyAdoptersTheTrialViewControllerDataSourceDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *earlyAdoptersTheTrialTitleLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialLeftInconImage;
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialRightInconImageView;
 @property (strong, nonatomic) IBOutlet UITableView *earlyAdoptersTableView;
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialRightTestInconImageView;
 @property (strong, nonatomic) EarlyAdoptersTheTrialViewControllerDataSource *earlyAdoptersTheTrialViewControllerDataSource;
+@property (strong, nonatomic) UIImageView *shakeImageView;
+@property (strong, nonatomic) UIView *shakeView;
+@property (assign, nonatomic) NSInteger shakeInteger;
 @end

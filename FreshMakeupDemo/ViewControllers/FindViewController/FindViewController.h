@@ -10,19 +10,40 @@
 #import "FindViewControllerDataSource.h"
 #import "BaseViewController.h"
 #import "RollCollectionViewDataSource.h"
-#import "FindAutomatiRollingView.h"
-@interface FindViewController :BaseViewController <UITableViewDelegate,UICollectionViewDelegate>
+
+#import "SlideMotion.h"
+#import "FindViewController.h"
+@interface FindViewController :BaseViewController <UITableViewDelegate,UICollectionViewDelegate,SlideMotionDataSource,SlideMotionDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UILabel *findTitleLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *findLeftIconImageView;
 @property (strong, nonatomic) IBOutlet UIImageView *findRightIconImageView;
 @property (strong, nonatomic) IBOutlet UITableView *findTableView;
+@property (strong, nonatomic) IBOutlet UIView *findView;
 
 
 
 @property (strong, nonatomic) FindViewControllerDataSource *findViewControllerDataSource;
 @property (strong, nonatomic) UICollectionView *rollCollectionView;
 @property (strong, nonatomic) RollCollectionViewDataSource *rollCollectionViewDataSource;
-@property (strong, nonatomic) FindAutomatiRollingView *findAutomatiRollingView;
+
+
+
+//滚动视图
+@property (strong, nonatomic) UIImageView *imageViewOne;
+@property (strong, nonatomic) UIImageView *imageViewTow;
+@property (strong, nonatomic) UIImageView *imageViewThree;
+@property (strong, nonatomic) UIImageView *imageViewFour;
+@property (strong, nonatomic) UIImage *imageOne;
+@property (strong, nonatomic) UIImage *imageTow;
+@property (strong, nonatomic) UIImage *imageThree;
+@property (strong, nonatomic) UIImage *imageFour;
+@property (assign, nonatomic) NSInteger num;
+@property (retain, nonatomic) UIPageControl *pageControl;
+@property (strong, nonatomic) NSTimer *timer;
+@property (strong, nonatomic) SlideMotion *slideMotion;
+@property (strong, nonatomic) FindViewController *findViewController;
+@property (strong, nonatomic) UIView *findAutomatiView;
+
 @end

@@ -11,6 +11,7 @@
                 <outlet property="findRightIconImageView" destination="wEj-BS-5WR" id="Lzp-Fo-T9k"/>
                 <outlet property="findTableView" destination="3Ie-wC-hVQ" id="PF8-cT-ZbC"/>
                 <outlet property="findTitleLabel" destination="bFF-up-R86" id="43z-Wf-InP"/>
+                <outlet property="findView" destination="i5M-Pr-FkT" id="18W-ca-01e"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

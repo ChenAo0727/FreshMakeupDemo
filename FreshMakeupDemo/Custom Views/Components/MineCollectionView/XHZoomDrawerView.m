@@ -48,7 +48,6 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    
     self.backgroundView.frame = self.bounds;
     [self.contentContainerView bringSubviewToFront:self.contentContainerButton];
 }
