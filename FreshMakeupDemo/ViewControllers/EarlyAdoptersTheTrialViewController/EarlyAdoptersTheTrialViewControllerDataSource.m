@@ -38,7 +38,6 @@
         cell.luckButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
         [cell.luckButton addTarget:self action:@selector(luckButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
-
     } else if (indexPath. row == 5) {
         EarlyAdoptersReportTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_REPORT_TITLE_TABLEVIEW_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
@@ -55,6 +54,7 @@
         EarlyAdoptersPartitionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         [cell.moreButton setTitle:nil forState:UIControlStateNormal];
+        cell.moreButton.layer.borderWidth = 0;
         if (indexPath.row == 8) {
             cell.backgroundColor = [UIColor whiteColor];
             [cell.moreButton setTitle:@"查看更多" forState:UIControlStateNormal];

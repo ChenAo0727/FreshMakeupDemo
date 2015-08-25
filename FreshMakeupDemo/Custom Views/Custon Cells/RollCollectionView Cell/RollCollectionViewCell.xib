@@ -20,7 +20,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fn7-34-lOj">
-                        <rect key="frame" x="8" y="82" width="68" height="21"/>
+                        <rect key="frame" x="8" y="82" width="82" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="Qhk-NB-4y7"/>
                         </constraints>
@@ -41,7 +41,7 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="fn7-34-lOj" secondAttribute="trailing" constant="14" id="2Rm-yk-EoZ"/>
+                <constraint firstAttribute="trailing" secondItem="fn7-34-lOj" secondAttribute="trailing" id="2Rm-yk-EoZ"/>
                 <constraint firstItem="u8C-NH-3vI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5Ny-CF-ZCn"/>
                 <constraint firstItem="fn7-34-lOj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="9Sa-sH-2yN"/>
                 <constraint firstItem="Zo7-nO-2Qe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="LbU-QD-Rvw"/>

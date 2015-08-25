@@ -13,10 +13,12 @@
 #import "EarlyAdoptersReceiveTableViewCell.h"
 #import "EarlyAdoptersInformationTableViewCell.h"
 #import "EarlyAdoptersPartitionTableViewCell.h"
+#import "XHDrawerController.h"
 @implementation EarlyAdoptersTheTrialViewController (Configuration)
 - (void)configureViews {
     [self titleEdit];
     [self tableViewEdit];
+    [self mineViewEdit];
 }
 - (void)titleEdit {
     self.title = @"尝鲜试用";
@@ -35,5 +37,14 @@
     [self.earlyAdoptersTableView registerNib:[UINib nibWithNibName:@"EarlyAdoptersInformationTableViewCell" bundle:nil] forCellReuseIdentifier:EARLY_ADOPTERS_INFORMATION_TABLEVIEW_CELL];
     [self.earlyAdoptersTableView registerNib:[UINib nibWithNibName:@"EarlyAdoptersPartitionTableViewCell" bundle:nil] forCellReuseIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
 }
-
+- (void)mineViewEdit {
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(leftAction)];
+    self.earlyAdoptersTheTrialLeftInconImage.userInteractionEnabled = YES;
+    [self.earlyAdoptersTheTrialLeftInconImage addGestureRecognizer:tap];
+    
+}
+- (void)leftAction {
+     [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:NULL];
+}
 @end

@@ -8,7 +8,7 @@
 
 #import "XHZoomDrawerView.h"
 #import "XHDrawerControllerHeader.h"
-
+#import "UIColor+Utility.h"
 @implementation XHZoomDrawerView
 
 #pragma mark - UIView Overrides
@@ -18,18 +18,21 @@
     if (self) {        
         _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
         self.scrollView.scrollsToTop = NO;
-        self.scrollView.scrollEnabled = NO;
+        self.scrollView.bounces = NO;
+        self.scrollView.scrollEnabled = YES;
         self.scrollView.showsHorizontalScrollIndicator = NO;
         self.scrollView.showsVerticalScrollIndicator = NO;
-        self.scrollView.backgroundColor = [UIColor clearColor];
-        self.scrollView.contentSize = CGSizeMake((CGRectGetWidth(frame) + XHContentContainerViewOriginX * 2), CGRectGetHeight(frame));
-        
+        self.scrollView.backgroundColor = [UIColor colorFromHexCode:@"#78bab7"];
+        //self.scrollView.contentSize = CGSizeMake((CGRectGetWidth(frame) + XHContentContainerViewOriginX * 2) - 230, CGRectGetHeight(frame));
+        self.scrollView.contentSize = CGSizeMake((CGRectGetWidth(frame) + XHContentContainerViewOriginX * 2) - 230, CGRectGetHeight(frame));
         // 左边
         _leftContainerView = [[UIView alloc] initWithFrame:self.bounds];
-        
         // 中间内容
         _contentContainerView = [[UIView alloc] initWithFrame:self.bounds];
         xh_UIViewSetFrameOriginX(self.contentContainerView, XHContentContainerViewOriginX);
+        self.contentContainerView.layer.shadowOffset = CGSizeMake(0, 0);
+        self.contentContainerView.layer.shadowOpacity = 0.8;
+        self.contentContainerView.layer.shadowColor = [UIColor grayColor].CGColor;
         
         // 中间内容按钮
         _contentContainerButton = [UIButton buttonWithType:UIButtonTypeCustom];
