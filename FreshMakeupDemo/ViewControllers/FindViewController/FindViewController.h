@@ -20,7 +20,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *findRightIconImageView;
 @property (strong, nonatomic) IBOutlet UITableView *findTableView;
 @property (strong, nonatomic) IBOutlet UIView *findView;
-
+@property (strong, nonatomic) NSMutableArray *fenquArr;
 
 
 @property (strong, nonatomic) FindViewControllerDataSource *findViewControllerDataSource;

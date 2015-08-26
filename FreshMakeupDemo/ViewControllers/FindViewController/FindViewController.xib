@@ -4,6 +4,11 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="yaoti.ttf">
+            <string>FZYTJW--GB1-0</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindViewController">
             <connections>
@@ -31,7 +36,7 @@
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="IUZ-qR-G5R"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue-Italic" family="Helvetica Neue" pointSize="24"/>
+                                    <fontDescription key="fontDescription" name="FZYTJW--GB1-0" family="FZYaoTi-M06S" pointSize="24"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>

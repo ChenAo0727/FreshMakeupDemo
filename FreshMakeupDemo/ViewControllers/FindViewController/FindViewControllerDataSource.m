@@ -20,6 +20,7 @@
     return 8;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
     if (indexPath.row == 1 || indexPath.row == 3|| indexPath.row == 5 || indexPath.row == 7) {
         FindBranchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_BRANCH_TABLEVIEWCELL];
         cell.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
@@ -34,6 +35,22 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     return cell;
     }
+    } else {
+        static NSString *str = @"retuse";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
+        if (cell == nil) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:str];
+        }
+        return cell;
+
+    }
+}
+//分区个数
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    // Return the number of sections.
+    
+    return 2;
 }
 
 @end
