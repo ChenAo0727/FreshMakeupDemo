@@ -8,8 +8,11 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
-//#import "FindViewController.h"
+#import "FindViewController.h"
 #import "DetailViewController.h"
+#import "XHDrawerController.h"
+#import "MineViewController.h"
+#import "EarlyAdoptersTheTrialViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,9 +22,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[DetailViewController create]];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[FindViewController create]];
+    MineViewController *mineViewController = [MineViewController create];
+    
+    XHDrawerController *drawerController = [[XHDrawerController alloc] init];
+    drawerController.leftViewController  = mineViewController;
+    drawerController.centerViewController = self.navigationController;
     self.navigationController.navigationBarHidden = YES;
-    self.window.rootViewController = self.navigationController;
+    self.window.rootViewController = drawerController;
     [self.window makeKeyAndVisible];
     return YES;
 }
