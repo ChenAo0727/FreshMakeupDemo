@@ -24,7 +24,7 @@
 }
 - (void)tableViewEdit {
     self.findViewControllerDataSource = [FindViewControllerDataSource new];
-    self.findTableView.tableHeaderView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, self.findTableView.frame.size.width, 350))];
+    self.findTableView.tableHeaderView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, self.findTableView.frame.size.width, 380))];
     self.findTableView.tableFooterView = [[UIView alloc] initWithFrame:FOOTER_FRAME];
     self.findTableView.separatorStyle = NO;
     self.findTableView.delegate = self;
@@ -33,15 +33,15 @@
     [self.findTableView registerNib:[UINib nibWithNibName:@"FindBranchTableViewCell" bundle:nil] forCellReuseIdentifier:FIND_BRANCH_TABLEVIEWCELL];
 }
 - (void)findRollView {
-    UIView *rollView = [[UIView alloc] initWithFrame:(CGRectMake(0, 213, 374, 125))];
+    UIView *rollView = [[UIView alloc] initWithFrame:(CGRectMake(0, 213, 374, 155))];
     rollView.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
     [self.findTableView.tableHeaderView addSubview:rollView];
     UICollectionViewFlowLayout *classVFL = [[UICollectionViewFlowLayout alloc] init];
-    classVFL.itemSize = CGSizeMake(90,125);//单视图的大小
+    classVFL.itemSize = CGSizeMake(120,155);//单视图的大小
     classVFL.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     classVFL.minimumLineSpacing = 10;//列间距
 
-    self.rollCollectionView = [[UICollectionView alloc] initWithFrame:(CGRectMake(0, 4,374, 119)) collectionViewLayout:classVFL];
+    self.rollCollectionView = [[UICollectionView alloc] initWithFrame:(CGRectMake(0, 4,374, 147)) collectionViewLayout:classVFL];
     self.rollCollectionView.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
     self.rollCollectionView.showsHorizontalScrollIndicator = NO;
     self.rollCollectionViewDataSource = [RollCollectionViewDataSource new];
@@ -66,6 +66,7 @@
     UILabel *titleFooterLabel = [[UILabel alloc] initWithFrame:(CGRectMake(145, 17, 90, 33))];
     titleFooterLabel.textAlignment = NSTextAlignmentCenter;
     titleFooterLabel.text = @"往期新品";
+    titleFooterLabel.textColor = [UIColor colorFromHexCode:@"#9E9E9C"];
     [self.findTableView.tableFooterView addSubview:titleFooterLabel];
     
     UILabel *lateLabel = [[UILabel alloc] init];
@@ -77,11 +78,11 @@
     [self.findTableView.tableFooterView addSubview:lateLabel];
   
     UIImageView *imageFooterLeftView = [[UIImageView alloc] initWithFrame:(CGRectMake(45, 34.5, 100, 1))];
-    imageFooterLeftView.backgroundColor = [UIColor grayColor];
+    imageFooterLeftView.backgroundColor = [UIColor colorFromHexCode:@"#F2F2F2"];
     [self.findTableView.tableFooterView addSubview:imageFooterLeftView];
     [self.findTableView.tableFooterView addSubview:titleFooterLabel];
     UIImageView *imageFooterRightView = [[UIImageView alloc] initWithFrame:(CGRectMake(235, 34.5, 100, 1))];
-    imageFooterRightView.backgroundColor = [UIColor grayColor];
+    imageFooterRightView.backgroundColor = [UIColor colorFromHexCode:@"#F2F2F2"];
     [self.findTableView.tableFooterView addSubview:imageFooterRightView];
 }
 
@@ -104,6 +105,7 @@
     UILabel *label = [[UILabel alloc] init];
     label.frame = CGRectMake(self.findTableView.frame.size.width / 2 - 40, 5, 80, 30);
     label.textAlignment = NSTextAlignmentCenter;
+    label.textColor = [UIColor colorFromHexCode:@"#9E9E9C"];
     label.text = @"往期新品";
     [sectionView setBackgroundColor:[UIColor whiteColor]];
     
@@ -116,10 +118,10 @@
     [sectionView addSubview:lateLabel];
     
     UIImageView *imageFooterLeftView = [[UIImageView alloc] initWithFrame:(CGRectMake(self.findTableView.frame.size.width / 2 - 140, 22.5, 100, 1))];
-    imageFooterLeftView.backgroundColor = [UIColor grayColor];
+    imageFooterLeftView.backgroundColor = [UIColor colorFromHexCode:@"#F2F2F2"];
     [sectionView addSubview:imageFooterLeftView];
     UIImageView *imageFooterRightView = [[UIImageView alloc] initWithFrame:(CGRectMake(self.findTableView.frame.size.width / 2 + 40, 22.5, 100, 1))];
-    imageFooterRightView.backgroundColor = [UIColor grayColor];
+    imageFooterRightView.backgroundColor = [UIColor colorFromHexCode:@"#F2F2F2"];
     [sectionView addSubview:imageFooterRightView];
     
     
@@ -140,7 +142,7 @@
     self.timer = [NSTimer scheduledTimerWithTimeInterval:6 target:self selector:@selector(findThreeDimensional) userInfo:nil repeats:YES];
     self.num = 0;
     self.slideMotion = [SlideMotion new];
-    self.slideMotion.direction =  SlideMotionDirectionLeft;
+    self.slideMotion.direction = SlideMotionDirectionLeft;
     self.slideMotion.delegate = self;
     self.slideMotion.dataSource = self;
     [self.slideMotion attachToView:self.findAutomatiView];
@@ -171,7 +173,7 @@
 //滚动视图 动画
 - (void)findThreeDimensional {
     if (self.num == 0) {
-        [UIView animateKeyframesWithDuration:0.8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
             self.imageViewOne.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
             self.imageViewTow.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
             
@@ -181,7 +183,7 @@
         self.pageControl.currentPage = self.num + 1;
         self.num = 1;
     } else if (self.num == 1) {
-        [UIView animateKeyframesWithDuration:0.8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
             self.imageViewTow.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
             self.imageViewThree.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
             
@@ -192,7 +194,7 @@
         self.pageControl.currentPage = self.num + 1;
         self.num = 2;
     } else if (self.num == 2) {
-        [UIView animateKeyframesWithDuration:0.8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
             self.imageViewThree.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
             self.imageViewFour.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
             
@@ -203,7 +205,7 @@
         self.pageControl.currentPage = self.num + 1;
         self.num = 3;
     } else {
-        [UIView animateKeyframesWithDuration:0.8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
             self.imageViewFour.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
             self.imageViewOne.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
             

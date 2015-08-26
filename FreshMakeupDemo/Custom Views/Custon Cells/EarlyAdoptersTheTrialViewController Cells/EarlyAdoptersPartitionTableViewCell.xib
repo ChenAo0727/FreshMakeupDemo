@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -15,22 +14,38 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STX-cD-u6G">
-                        <rect key="frame" x="99" y="5" width="123" height="30"/>
-                        <state key="normal">
-                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                        </state>
-                    </button>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fND-E1-mSb">
+                        <rect key="frame" x="10" y="0.0" width="368" height="43"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STX-cD-u6G">
+                                <rect key="frame" x="112" y="7" width="123" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="vV0-Sv-3G8"/>
+                                    <constraint firstAttribute="width" constant="123" id="ytQ-e9-PtR"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90196078431372551" green="0.92549019607843142" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="STX-cD-u6G" firstAttribute="leading" secondItem="fND-E1-mSb" secondAttribute="leading" constant="112" id="0G3-Ue-bxB"/>
+                            <constraint firstItem="STX-cD-u6G" firstAttribute="top" secondItem="fND-E1-mSb" secondAttribute="top" constant="7" id="UdK-uO-fbG"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" red="0.92156862745098034" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
-                    <constraint firstItem="STX-cD-u6G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="Oa1-QJ-9ta"/>
-                    <constraint firstItem="STX-cD-u6G" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="aPK-Fm-lAh"/>
-                    <constraint firstItem="STX-cD-u6G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="91" id="iuQ-66-yPD"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="STX-cD-u6G" secondAttribute="trailing" constant="90" id="lD0-Cj-cHV"/>
+                    <constraint firstItem="fND-E1-mSb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="LmO-O4-DoB"/>
+                    <constraint firstAttribute="trailing" secondItem="fND-E1-mSb" secondAttribute="trailing" constant="10" id="ROv-Dk-KXC"/>
+                    <constraint firstItem="fND-E1-mSb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="SfA-18-0CD"/>
+                    <constraint firstAttribute="bottom" secondItem="fND-E1-mSb" secondAttribute="bottom" id="a6o-Lx-rh1"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="earlyPartition" destination="H2p-sc-9uM" id="DCp-a5-eFt"/>
+                <outlet property="earlyPartitionTow" destination="fND-E1-mSb" id="Cye-Du-Gyk"/>
                 <outlet property="moreButton" destination="STX-cD-u6G" id="P3g-oA-CyI"/>
             </connections>
             <point key="canvasLocation" x="479" y="445"/>

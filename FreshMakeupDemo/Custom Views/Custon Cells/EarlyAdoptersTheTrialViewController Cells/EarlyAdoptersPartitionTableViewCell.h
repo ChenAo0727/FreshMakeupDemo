@@ -11,6 +11,8 @@
 @interface EarlyAdoptersPartitionTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIButton *moreButton;
 
+@property (strong, nonatomic) IBOutlet UIView *earlyPartition;
 
+@property (strong, nonatomic) IBOutlet UIView *earlyPartitionTow;
 
 @end

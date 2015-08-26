@@ -23,7 +23,6 @@
         self.scrollView.showsHorizontalScrollIndicator = NO;
         self.scrollView.showsVerticalScrollIndicator = NO;
         self.scrollView.backgroundColor = [UIColor colorFromHexCode:@"#78bab7"];
-        //self.scrollView.contentSize = CGSizeMake((CGRectGetWidth(frame) + XHContentContainerViewOriginX * 2) - 230, CGRectGetHeight(frame));
         self.scrollView.contentSize = CGSizeMake((CGRectGetWidth(frame) + XHContentContainerViewOriginX * 2) - 230, CGRectGetHeight(frame));
         // 左边
         _leftContainerView = [[UIView alloc] initWithFrame:self.bounds];
@@ -38,7 +37,6 @@
         _contentContainerButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.contentContainerButton.frame = self.contentContainerView.bounds;
         [self.contentContainerView addSubview:self.contentContainerButton];
-        
         
         [self.scrollView setContentOffset:CGPointMake(XHContentContainerViewOriginX, 0.0f) animated:NO];
         
