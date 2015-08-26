@@ -19,8 +19,6 @@
     
 }
 
-
-
 - (void)stackCollectionViewDidEndSlideUp:(StackCollectionView *)stackCollectionView {
     [self recoverAllComponent];
 }

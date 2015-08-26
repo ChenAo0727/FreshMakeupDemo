@@ -27,7 +27,7 @@
 }
 
 - (void)updateWithCurrentIndex:(NSInteger)index {
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+    //NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
 }
 
 - (void)awakeFromNib {
@@ -50,6 +50,12 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     BookCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL forIndexPath:indexPath];
     cell.image = self.images[indexPath.item];
+    __weak typeof(self) weakself = self;
+    cell.didSelectCellBllock = ^(UICollectionViewCell *cell) {
+        if ([weakself.delegate respondsToSelector:@selector(BookCollectionView:didSelectItemAtIndex:)]) {
+            [weakself.delegate BookCollectionView:self didSelectItemAtIndex:0];
+        }
+    };
     return cell;
 }
 

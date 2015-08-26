@@ -13,7 +13,9 @@
 }
 
 - (IBAction)didClickButton:(id)sender {
-    [self animationOpenBook];
+    if (self.didSelectCellBllock) {
+        self.didSelectCellBllock(self);
+    }
 }
 
 - (void)awakeFromNib {

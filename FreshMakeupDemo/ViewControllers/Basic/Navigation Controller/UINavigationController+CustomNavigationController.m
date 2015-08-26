@@ -43,7 +43,7 @@
 
 - (void)fadePushViewController:(UIViewController *)viewController {
     CATransition *transition = [CATransition animation];
-    transition.duration = 0.2f;
+    transition.duration = 0.4f;
     transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     transition.type = kCATransitionFade;
     [self.view.layer addAnimation:transition forKey:nil];
