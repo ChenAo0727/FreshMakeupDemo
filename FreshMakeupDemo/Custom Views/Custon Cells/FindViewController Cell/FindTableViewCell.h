@@ -15,5 +15,5 @@
 @property (strong, nonatomic) IBOutlet UIImageView *findSubtitleImageView;
 @property (strong, nonatomic) IBOutlet UILabel *findLabel;
 @property (strong, nonatomic) IBOutlet UILabel *findAdvertLabel;
-
+- (CGFloat)getCellHeight;
 @end

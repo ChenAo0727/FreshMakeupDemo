@@ -29,9 +29,9 @@
 - (void)timerFire {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
-    [components setYear:2015];
-    [components setMonth:8];
-    [components setDay:29];
+    [components setYear:2016];
+    [components setMonth:9];
+    [components setDay:30];
     [components setHour:12];
     [components setMinute:0];
     [components setSecond:0];
@@ -39,7 +39,7 @@
     NSDate *today = [NSDate date];//当前时间
     unsigned int unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     NSDateComponents *d = [calendar components:unitFlags fromDate:today toDate:fireDate options:0];//计算时间差
-    self.titltImageViewTimerLabel.text = [NSString stringWithFormat:@"%ld小时%ld%分%d秒",(long)[d hour], (long)[d minute], [d second]];//倒计时显示
+    self.titltImageViewTimerLabel.text = [NSString stringWithFormat:@"%ld小时%ld分%ld秒",(long)[d hour], (long)[d minute], (long)[d second]];//倒计时显示
     
 }
 @end

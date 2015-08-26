@@ -8,6 +8,7 @@
 
 #import "FindViewController.h"
 #import "FindViewController+Configuration.h"
+#import "FindTableViewCell.h"
 #import "FindViewController+Animation.h"
 @interface FindViewController ()
 
@@ -31,7 +32,9 @@
     if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 5 || indexPath.row == 7) {
         return 12;
     } else {
-        return 235;
+         FindTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_TABLEVIEW_CELL];
+        CGFloat cellHeight = [cell getCellHeight];
+        return cellHeight;
     }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

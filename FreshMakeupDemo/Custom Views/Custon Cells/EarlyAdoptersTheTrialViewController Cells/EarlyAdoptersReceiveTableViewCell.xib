@@ -15,12 +15,12 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="你打算靠什么获得试用装?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-mX-qjh">
-                        <rect key="frame" x="62" y="8" width="151" height="16"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你打算靠什么获得试用装?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-mX-qjh">
+                        <rect key="frame" x="62" y="8" width="205" height="28"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="21" id="phc-WE-wTB"/>
+                            <constraint firstAttribute="height" constant="28" id="phc-WE-wTB"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -61,7 +61,7 @@
                     <constraint firstAttribute="bottomMargin" secondItem="kPR-ox-wfk" secondAttribute="bottom" constant="6" id="VvJ-n7-bT6"/>
                     <constraint firstItem="xs4-mX-qjh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="54" id="XlY-ti-TCl"/>
                     <constraint firstItem="kPR-ox-wfk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="39" id="aBo-qD-6Ow"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="xs4-mX-qjh" secondAttribute="trailing" constant="53" id="dvv-de-QQi"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xs4-mX-qjh" secondAttribute="trailing" constant="45" id="dvv-de-QQi"/>
                     <constraint firstItem="xs4-mX-qjh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="lN4-Od-Vxt"/>
                 </constraints>
             </tableViewCellContentView>

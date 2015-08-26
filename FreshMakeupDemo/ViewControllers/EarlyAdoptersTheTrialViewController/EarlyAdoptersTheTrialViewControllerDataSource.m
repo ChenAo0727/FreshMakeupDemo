@@ -50,21 +50,24 @@
         
         return cell;
 
-    } else {
-        EarlyAdoptersPartitionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
-        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        [cell.moreButton setTitle:nil forState:UIControlStateNormal];
-        cell.moreButton.layer.borderWidth = 0;
-        if (indexPath.row == 8) {
-            cell.backgroundColor = [UIColor whiteColor];
+    } else  if (indexPath.row == 8){
+          EarlyAdoptersPartitionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
+           [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+            cell.earlyPartitionTow.backgroundColor = [UIColor whiteColor];
             [cell.moreButton setTitle:@"查看更多" forState:UIControlStateNormal];
             cell.moreButton.layer.borderWidth = 1;
             cell.moreButton.layer.borderColor = [UIColor colorFromHexCode:@"#AAAAAA"].CGColor;
             [cell.moreButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
-        }
+        return cell;
+
+    } else {
+        EarlyAdoptersPartitionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
+        cell.earlyPartitionTow.backgroundColor = nil;
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        [cell.moreButton setTitle:nil forState:UIControlStateNormal];
+        cell.moreButton.layer.borderWidth = 0;
         return cell;
     }
-
 }
 - (void)luckButtonAction:(UIButton *)button {
     if ([self.delegate respondsToSelector:@selector(EarlyAdoptersTheTrialViewControllerShakeAshake)]) {

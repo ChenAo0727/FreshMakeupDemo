@@ -14,6 +14,8 @@
 #import "EarlyAdoptersInformationTableViewCell.h"
 #import "EarlyAdoptersPartitionTableViewCell.h"
 #import "XHDrawerController.h"
+#import "MineViewController+Animation.h"
+#import "UIColor+Utility.h"
 @implementation EarlyAdoptersTheTrialViewController (Configuration)
 - (void)configureViews {
     [self titleEdit];
@@ -26,6 +28,9 @@
 - (void)tableViewEdit {
     self.earlyAdoptersTheTrialViewControllerDataSource = [EarlyAdoptersTheTrialViewControllerDataSource new];
     self.earlyAdoptersTheTrialViewControllerDataSource.delegate = self;//摇一摇代理
+    self.earlyAdoptersTableView.tableFooterView = [[UIView alloc] initWithFrame:(CGRectMake(0, self.earlyAdoptersTableView.frame.size.height, self.earlyAdoptersTableView.frame.size.width, 30))];
+    self.earlyAdoptersTableView.tableFooterView.backgroundColor = [UIColor colorFromHexCode:@"#EFF1F1"];
+    
     self.earlyAdoptersTableView.separatorStyle = NO;//分割线
     self.earlyAdoptersTableView.delegate = self;
     self.earlyAdoptersTableView.dataSource = self.earlyAdoptersTheTrialViewControllerDataSource;
@@ -45,6 +50,6 @@
     
 }
 - (void)leftAction {
-     [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:NULL];
+
 }
 @end
