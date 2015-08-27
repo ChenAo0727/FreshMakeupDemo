@@ -54,6 +54,13 @@
     UIImageView *titleImageView = [[UIImageView alloc] initWithFrame:(CGRectMake(3, 181, 8, 29))];
     titleImageView.backgroundColor = [UIColor colorFromHexCode:@"#78bab7"];
     [self.findTableView.tableHeaderView addSubview:titleImageView];
+    UILabel *titleHeaderLeftLabel = [[UILabel alloc] initWithFrame:(CGRectMake(14, 178, 150, 35))];
+    titleHeaderLeftLabel.text = @"闺蜜正在聊";
+    [self.findTableView.tableHeaderView addSubview:titleHeaderLeftLabel];
+    UILabel *titleHeaderRightLabel = [[UILabel alloc] initWithFrame:(CGRectMake(self.findTableView.frame.size.width, 178, 40, 35))];
+    titleHeaderRightLabel.text = @"全部";
+    titleHeaderRightLabel.textColor =[UIColor colorFromHexCode:@"#78bab7"];
+    [self.findTableView.tableHeaderView addSubview:titleHeaderRightLabel];
 }
 
 - (void)mineViewEdit {
