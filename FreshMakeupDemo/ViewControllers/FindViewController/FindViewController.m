@@ -21,12 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self getScreenWidth];
     [self configureViews];
-    [self.findView.layer setShadowColor:[UIColor redColor].CGColor];
-    [self.findView.layer setShadowOpacity:0.8f];//设置阴影的透明度
-    [self.findView.layer setShadowOffset:CGSizeMake(-3, 0)];//设置View Shadow的偏移量
+   
 }
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 1) {
         return 1;

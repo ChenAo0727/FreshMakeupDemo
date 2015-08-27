@@ -15,6 +15,11 @@
 #import "XHDrawerController.h"
 #import "MineViewController+Animation.h"
 @implementation FindViewController (Configuration)
+- (void)getScreenWidth {
+    CGRect rect = [[UIScreen mainScreen] bounds];
+    CGSize size = rect.size;
+    self.width = size.width;
+}
 - (void)configureViews {
     [self tableViewEdit];
     [self findRollView];
@@ -24,7 +29,7 @@
 }
 - (void)tableViewEdit {
     self.findViewControllerDataSource = [FindViewControllerDataSource new];
-    self.findTableView.tableHeaderView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, self.findTableView.frame.size.width, 380))];
+    self.findTableView.tableHeaderView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, self.width, 380))];
     self.findTableView.separatorStyle = NO;
     self.findTableView.delegate = self;
     self.findTableView.dataSource = self.findViewControllerDataSource;
@@ -32,7 +37,7 @@
     [self.findTableView registerNib:[UINib nibWithNibName:@"FindBranchTableViewCell" bundle:nil] forCellReuseIdentifier:FIND_BRANCH_TABLEVIEWCELL];
 }
 - (void)findRollView {
-    UIView *rollView = [[UIView alloc] initWithFrame:(CGRectMake(0, 213, 374, 155))];
+    UIView *rollView = [[UIView alloc] initWithFrame:(CGRectMake(0, 213, self.width, 155))];
     rollView.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
     [self.findTableView.tableHeaderView addSubview:rollView];
     UICollectionViewFlowLayout *classVFL = [[UICollectionViewFlowLayout alloc] init];
@@ -40,7 +45,7 @@
     classVFL.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     classVFL.minimumLineSpacing = 10;//列间距
 
-    self.rollCollectionView = [[UICollectionView alloc] initWithFrame:(CGRectMake(0, 4,374, 147)) collectionViewLayout:classVFL];
+    self.rollCollectionView = [[UICollectionView alloc] initWithFrame:(CGRectMake(0, 4,self.width, 147)) collectionViewLayout:classVFL];
     self.rollCollectionView.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
     self.rollCollectionView.showsHorizontalScrollIndicator = NO;
     self.rollCollectionViewDataSource = [RollCollectionViewDataSource new];
@@ -57,7 +62,7 @@
     UILabel *titleHeaderLeftLabel = [[UILabel alloc] initWithFrame:(CGRectMake(14, 178, 150, 35))];
     titleHeaderLeftLabel.text = @"闺蜜正在聊";
     [self.findTableView.tableHeaderView addSubview:titleHeaderLeftLabel];
-    UILabel *titleHeaderRightLabel = [[UILabel alloc] initWithFrame:(CGRectMake(self.findTableView.frame.size.width, 178, 40, 35))];
+    UILabel *titleHeaderRightLabel = [[UILabel alloc] initWithFrame:(CGRectMake(self.width - 50, 178, 40, 35))];
     titleHeaderRightLabel.text = @"全部";
     titleHeaderRightLabel.textColor =[UIColor colorFromHexCode:@"#78bab7"];
     [self.findTableView.tableHeaderView addSubview:titleHeaderRightLabel];
@@ -105,7 +110,7 @@
 }
 
 - (void)findThreeDimensionalRollView {
-    self.findAutomatiView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, 375, 178))];
+    self.findAutomatiView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, self.width, 178))];
     [self.findTableView.tableHeaderView addSubview:self.findAutomatiView];
     [self imageData];
     [self imageViewData];

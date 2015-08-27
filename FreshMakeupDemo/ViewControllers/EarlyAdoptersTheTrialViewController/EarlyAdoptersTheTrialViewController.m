@@ -44,8 +44,6 @@
     } else if (indexPath.row == 8) {
         return 50;
     } else {
-//        EarlyAdoptersReportTableViewCell *cell = (EarlyAdoptersReportTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
-//        CGFloat cellHeight = [cell getCellHeight];
         return 250;
     }
 }

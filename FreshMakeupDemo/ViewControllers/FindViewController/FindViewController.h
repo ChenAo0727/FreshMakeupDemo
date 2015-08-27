@@ -21,7 +21,7 @@
 @property (strong, nonatomic) IBOutlet UITableView *findTableView;
 @property (strong, nonatomic) IBOutlet UIView *findView;
 @property (strong, nonatomic) NSMutableArray *fenquArr;
-
+@property (assign, nonatomic) NSInteger width;
 
 @property (strong, nonatomic) FindViewControllerDataSource *findViewControllerDataSource;
 @property (strong, nonatomic) UICollectionView *rollCollectionView;
