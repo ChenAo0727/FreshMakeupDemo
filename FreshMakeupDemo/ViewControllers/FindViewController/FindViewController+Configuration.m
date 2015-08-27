@@ -50,7 +50,6 @@
     self.rollCollectionView.showsHorizontalScrollIndicator = NO;
     self.rollCollectionViewDataSource = [RollCollectionViewDataSource new];
     self.rollCollectionView.dataSource = self.rollCollectionViewDataSource;
-    self.rollCollectionView.delegate = self;
     [rollView addSubview: self.rollCollectionView];
     //提前注册
     [self.rollCollectionView registerNib:[UINib nibWithNibName:@"RollCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ROLL_COLLECTIONVIEW_CELL];

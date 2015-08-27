@@ -14,5 +14,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *earlyClickLeftButton;
 @property (strong, nonatomic) IBOutlet UILabel *earlyClickLeftLabel;
 @property (strong, nonatomic) IBOutlet UIButton *earlyClickRightButton;
+@property (strong, nonatomic) IBOutlet UIView *earlyView;
 @property (strong, nonatomic) IBOutlet UILabel *earlyClickRightLabel;
 @end
