@@ -97,7 +97,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.45882352941176469" green="0.76470588235294112" blue="0.72941176470588232" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.45098039215686275" green="0.76470588235294112" blue="0.73725490196078436" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="uTh-aa-5Iu" firstAttribute="leading" secondItem="CIM-5w-Hte" secondAttribute="leading" id="LWr-cb-jly"/>
                         <constraint firstAttribute="trailing" secondItem="uTh-aa-5Iu" secondAttribute="trailing" id="WKd-lY-Med"/>
