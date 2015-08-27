@@ -121,20 +121,26 @@
                                             <constraint firstAttribute="width" constant="20" id="ok8-Jt-yxt"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyp-CO-LeI">
-                                        <rect key="frame" x="15" y="5" width="54" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyp-CO-LeI">
+                                        <rect key="frame" x="-7" y="5" width="70" height="26"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="54" id="6bN-Gh-qdd"/>
+                                            <constraint firstAttribute="width" constant="70" id="6bN-Gh-qdd"/>
                                         </constraints>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onClickTrialCollectionButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Olf-Lr-ex2"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUh-56-MZ4">
-                                        <rect key="frame" x="88" y="0.0" width="30" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUh-56-MZ4">
+                                        <rect key="frame" x="82" y="0.0" width="60" height="30"/>
                                         <state key="normal">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onClickTrialApproveButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Bx6-cG-My0"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
@@ -148,13 +154,13 @@
                                     <constraint firstAttribute="centerY" secondItem="B88-GV-zKh" secondAttribute="centerY" id="NdD-NV-NzS"/>
                                     <constraint firstAttribute="height" constant="36" id="PLu-rv-vgG"/>
                                     <constraint firstAttribute="centerY" secondItem="TQY-75-adq" secondAttribute="centerY" id="Yin-dO-fnq"/>
-                                    <constraint firstAttribute="trailing" secondItem="rUh-56-MZ4" secondAttribute="trailing" constant="16" id="Ywv-7M-NgW"/>
+                                    <constraint firstAttribute="trailing" secondItem="rUh-56-MZ4" secondAttribute="trailing" constant="8" id="Ywv-7M-NgW"/>
                                     <constraint firstItem="TQY-75-adq" firstAttribute="leading" secondItem="B88-GV-zKh" secondAttribute="trailing" constant="5" id="dUg-FV-sX1"/>
                                     <constraint firstAttribute="trailing" secondItem="8KE-7h-bPB" secondAttribute="trailing" constant="10" id="gxJ-Ef-vsl"/>
                                     <constraint firstAttribute="centerY" secondItem="8KE-7h-bPB" secondAttribute="centerY" id="hos-yW-RDQ"/>
                                     <constraint firstItem="Wyp-CO-LeI" firstAttribute="top" secondItem="50B-I6-25i" secondAttribute="top" constant="5" id="jzi-6U-a0B"/>
                                     <constraint firstItem="rUh-56-MZ4" firstAttribute="top" secondItem="50B-I6-25i" secondAttribute="top" id="pBT-cm-qNj"/>
-                                    <constraint firstItem="cea-t3-LQY" firstAttribute="leading" secondItem="Wyp-CO-LeI" secondAttribute="trailing" constant="19" id="uFm-OR-3TQ"/>
+                                    <constraint firstItem="cea-t3-LQY" firstAttribute="leading" secondItem="Wyp-CO-LeI" secondAttribute="trailing" constant="25" id="uFm-OR-3TQ"/>
                                 </constraints>
                             </view>
                         </subviews>

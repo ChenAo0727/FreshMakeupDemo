@@ -76,7 +76,16 @@
         [UIView animateWithDuration:0.1 animations:^{
             self.approveImageView.transform = approveTransform;
         } completion:^(BOOL finished) {
-            
+           NSInteger praiseCountLeft = [self.approveCountLabel.text integerValue];
+           if (praiseCountLeft == 233) {
+                self.approveCountLabel.text = @"234";
+                self.approveImageView.image = [UIImage imageNamed:@"detail_approve_clicked_icon.png"];
+                self.approveCountLabel.textColor = [UIColor redColor];
+            } else {
+                self.approveCountLabel.text = @"233";
+                self.approveImageView.image = [UIImage imageNamed:@"detail_approve_icon.png"];
+                self.approveCountLabel.textColor = [UIColor grayColor];
+            }
         }];
     }];
 }
