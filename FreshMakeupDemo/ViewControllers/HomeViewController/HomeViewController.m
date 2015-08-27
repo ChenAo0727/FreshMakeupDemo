@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "HomeViewController+Configuration.h"
+#import "FindViewController.h"
 #import "HomeViewController+Animation.h"
 #import "XHDrawerController.h"
 
@@ -41,7 +42,8 @@
 }
 
 - (IBAction)onClickRightButton:(id)sender {
-    
+    FindViewController *findViewController = [FindViewController create];
+    [self.navigationController pushViewController:findViewController animated:YES];
 }
 
 - (StackCollectionViewCell *)stackCollectionView:(StackCollectionView *)stackCollectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
