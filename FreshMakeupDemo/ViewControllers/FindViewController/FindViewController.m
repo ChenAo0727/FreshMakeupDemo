@@ -25,20 +25,35 @@
     [self.findView.layer setShadowColor:[UIColor redColor].CGColor];
     [self.findView.layer setShadowOpacity:0.8f];//设置阴影的透明度
     [self.findView.layer setShadowOffset:CGSizeMake(-3, 0)];//设置View Shadow的偏移量
-   
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 5 || indexPath.row == 7) {
-        return 12;
-    } else {
-         FindTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_TABLEVIEW_CELL];
-        CGFloat cellHeight = [cell getCellHeight];
-        return cellHeight;
+    if (indexPath.section == 1) {
+        return 1;
+    }else{
+        if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 5 || indexPath.row == 7) {
+            return 12;
+        } else {
+            FindTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_TABLEVIEW_CELL];
+            CGFloat cellHeight = [cell getCellHeight];
+            return cellHeight;
+        }
+    }
+}
+//每个分区个数
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    switch (section) {
+        case 0:
+            return 5;
+            break;
+        default:
+         return 0;
+            break;
     }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 55;
+    return 54;
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
