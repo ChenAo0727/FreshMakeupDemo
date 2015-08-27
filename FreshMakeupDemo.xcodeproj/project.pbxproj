@@ -66,6 +66,7 @@
 		058ABF6D1B830A8E00A0BA8A /* RollCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF6B1B830A8E00A0BA8A /* RollCollectionViewCell.xib */; };
 		058ABF7C1B8337A600A0BA8A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058ABF7B1B8337A600A0BA8A /* QuartzCore.framework */; };
 		058ABF7E1B83416F00A0BA8A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 058ABF7D1B83416F00A0BA8A /* UIKit.framework */; };
+		059C688C1B8EE2D200902C97 /* SeeMoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 059C688B1B8EE2D200902C97 /* SeeMoreView.m */; };
 		059E88BD1B8414D30086544F /* FindBranchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 059E88B81B8414D30086544F /* FindBranchTableViewCell.m */; };
 		059E88BE1B8414D30086544F /* FindBranchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 059E88B91B8414D30086544F /* FindBranchTableViewCell.xib */; };
 		059E88BF1B8414D30086544F /* FindTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 059E88BB1B8414D30086544F /* FindTableViewCell.m */; };
@@ -279,6 +280,8 @@
 		058ABF6B1B830A8E00A0BA8A /* RollCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RollCollectionViewCell.xib; sourceTree = "<group>"; };
 		058ABF7B1B8337A600A0BA8A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		058ABF7D1B83416F00A0BA8A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		059C688A1B8EE2D200902C97 /* SeeMoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeeMoreView.h; sourceTree = "<group>"; };
+		059C688B1B8EE2D200902C97 /* SeeMoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeeMoreView.m; sourceTree = "<group>"; };
 		059E88B71B8414D30086544F /* FindBranchTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindBranchTableViewCell.h; sourceTree = "<group>"; };
 		059E88B81B8414D30086544F /* FindBranchTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindBranchTableViewCell.m; sourceTree = "<group>"; };
 		059E88B91B8414D30086544F /* FindBranchTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FindBranchTableViewCell.xib; sourceTree = "<group>"; };
@@ -624,6 +627,15 @@
 			path = "RollCollectionView Cell";
 			sourceTree = "<group>";
 		};
+		059C68891B8EE29700902C97 /* SeeMoreView */ = {
+			isa = PBXGroup;
+			children = (
+				059C688A1B8EE2D200902C97 /* SeeMoreView.h */,
+				059C688B1B8EE2D200902C97 /* SeeMoreView.m */,
+			);
+			path = SeeMoreView;
+			sourceTree = "<group>";
+		};
 		059E88B61B8414D30086544F /* FindViewController Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -923,6 +935,7 @@
 				2E6B464B1B820EC500BF39D5 /* StackCollectionView */,
 				2E92F5441B7E4EA800C14B7A /* BookCollectionView */,
 				057A263B1B86CD69003DAF07 /* MineCollectionView */,
+				059C68891B8EE29700902C97 /* SeeMoreView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1429,6 +1442,7 @@
 				057A26551B86F9DA003DAF07 /* MineViewController+Animation.m in Sources */,
 				2E8C34461B7DF46E006B5BC0 /* NSDictionary+Utility.m in Sources */,
 				057A26411B86CDB2003DAF07 /* XHDrawerController.m in Sources */,
+				059C688C1B8EE2D200902C97 /* SeeMoreView.m in Sources */,
 				054DFD241B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m in Sources */,
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
 				2E7DC9371B82CF3900152A0B /* StackCollectionView.m in Sources */,

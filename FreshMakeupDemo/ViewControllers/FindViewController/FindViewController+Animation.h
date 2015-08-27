@@ -9,5 +9,5 @@
 #import "FindViewController.h"
 
 @interface FindViewController (Animation)
-
+- (void)findThreeDimensional;
 @end

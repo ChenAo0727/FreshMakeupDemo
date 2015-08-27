@@ -7,7 +7,7 @@
 //
 
 #import "EarlyAdoptersReportTableViewCell.h"
-
+#import "UIColor+Utility.h"
 @implementation EarlyAdoptersReportTableViewCell{
     CGAffineTransform approveTransform;
     CGAffineTransform commentTransform;
@@ -37,7 +37,7 @@
             if (praiseCountLeft == 24) {
                 self.earlyClickLeftLabel.text = @"25";
                 [self.earlyClickLeftButton setImage:[UIImage imageNamed:@"detail_approve_clicked_icon.png"] forState:UIControlStateNormal];
-                self.earlyClickLeftLabel.textColor = [UIColor redColor];
+                self.earlyClickLeftLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
             } else {
                 self.earlyClickLeftLabel.text = @"24";
                 [self.earlyClickLeftButton setImage:[UIImage imageNamed:@"detail_approve_icon.png"] forState:UIControlStateNormal];
@@ -45,19 +45,6 @@
             }
         }];
     }];
-
-    
-    
-    
-    
-//    NSInteger praiseCountLeft = [self.earlyClickLeftLabel.text integerValue];
-//    if (praiseCountLeft == 24) {
-//        self.earlyClickLeftLabel.text = @"25";
-//    } else {
-//        self.earlyClickLeftLabel.text = @"24";
-//    }
-//    
-//    [self layoutIfNeeded];
 }
 - (IBAction)earlyClickRightButtonAction:(id)sender {
     CGAffineTransform transform = approveTransform;
@@ -72,7 +59,7 @@
             if (praiseCountLeft == 24) {
                 self.earlyClickRightLabel.text = @"25";
                 [self.earlyClickRightButton setImage:[UIImage imageNamed:@"detail_approve_clicked_icon.png"] forState:UIControlStateNormal];
-                self.earlyClickRightLabel.textColor = [UIColor redColor];
+                self.earlyClickRightLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
             } else {
                 self.earlyClickRightLabel.text = @"24";
                 [self.earlyClickRightButton setImage:[UIImage imageNamed:@"detail_approve_icon.png"] forState:UIControlStateNormal];

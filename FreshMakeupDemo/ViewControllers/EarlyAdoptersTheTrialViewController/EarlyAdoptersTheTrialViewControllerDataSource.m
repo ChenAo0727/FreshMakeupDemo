@@ -32,34 +32,27 @@
     } else if (indexPath.row == 3) {
         EarlyAdoptersReceiveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_RECEIVE_TABLEVIEW_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        cell.strengthButton.layer.borderWidth = 1;
         cell.strengthButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
-        cell.luckButton.layer.borderWidth = 1;
         cell.luckButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
         [cell.luckButton addTarget:self action:@selector(luckButtonAction:) forControlEvents:UIControlEventTouchUpInside];
         return cell;
     } else if (indexPath. row == 5) {
         EarlyAdoptersReportTitleTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_REPORT_TITLE_TABLEVIEW_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-       
         return cell;
-
     } else if (indexPath.row == 6 || indexPath.row == 7) {
         EarlyAdoptersReportTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_REPORT_TABLEVIEW_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        
         return cell;
-
     } else  if (indexPath.row == 8){
-          EarlyAdoptersPartitionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
-           [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-            cell.earlyPartitionTow.backgroundColor = [UIColor whiteColor];
-            [cell.moreButton setTitle:@"查看更多" forState:UIControlStateNormal];
-            cell.moreButton.layer.borderWidth = 1;
-            cell.moreButton.layer.borderColor = [UIColor colorFromHexCode:@"#AAAAAA"].CGColor;
-            [cell.moreButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+        EarlyAdoptersPartitionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        cell.earlyPartitionTow.backgroundColor = [UIColor whiteColor];
+        [cell.moreButton setTitle:@"查看更多" forState:UIControlStateNormal];
+        cell.moreButton.layer.borderWidth = 1;
+        cell.moreButton.layer.borderColor = [UIColor colorFromHexCode:@"#AAAAAA"].CGColor;
+        [cell.moreButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         return cell;
-
     } else {
         EarlyAdoptersPartitionTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
         cell.earlyPartitionTow.backgroundColor = nil;

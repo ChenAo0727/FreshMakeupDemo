@@ -7,11 +7,11 @@
 //
 
 #import "EarlyAdoptersReceiveTableViewCell.h"
-
 @implementation EarlyAdoptersReceiveTableViewCell
 
 - (void)awakeFromNib {
-
+    self.strengthButton.layer.borderWidth = 1;
+    self.luckButton.layer.borderWidth = 1;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

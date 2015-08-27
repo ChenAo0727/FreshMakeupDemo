@@ -44,7 +44,7 @@
     classVFL.itemSize = CGSizeMake(120,155);//单视图的大小
     classVFL.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     classVFL.minimumLineSpacing = 10;//列间距
-
+ 
     self.rollCollectionView = [[UICollectionView alloc] initWithFrame:(CGRectMake(0, 4,self.width, 147)) collectionViewLayout:classVFL];
     self.rollCollectionView.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
     self.rollCollectionView.showsHorizontalScrollIndicator = NO;
@@ -67,13 +67,10 @@
     titleHeaderRightLabel.textColor =[UIColor colorFromHexCode:@"#78bab7"];
     [self.findTableView.tableHeaderView addSubview:titleHeaderRightLabel];
 }
-
 - (void)mineViewEdit {
-    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(left)];
     self.findLeftIconImageView.userInteractionEnabled = YES;
     [self.findLeftIconImageView addGestureRecognizer:tap];
-    
 }
 - (void)left {
     [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:^(BOOL finished) {
@@ -81,34 +78,11 @@
         [viewController mineLabelAnimation];
     }];
 }
-//自定义SECTION
+#pragma mark 自定义SECTION
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    UIView *sectionView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 45)];
-    UILabel *label = [[UILabel alloc] init];
-    label.frame = CGRectMake(self.view.frame.size.width / 2 - 40, 5, 80, 30);
-    label.textAlignment = NSTextAlignmentCenter;
-    label.textColor = [UIColor colorFromHexCode:@"#9E9E9C"];
-    label.text = @"往期新品";
-    [sectionView setBackgroundColor:[UIColor whiteColor]];
-    
-    UILabel *lateLabel = [[UILabel alloc] init];
-    lateLabel.frame = CGRectMake(self.view.frame.size.width / 2 - 100, 35, 200, 15);
-    lateLabel.textAlignment = NSTextAlignmentCenter;
-    lateLabel.text = @"2015年8月10日";
-    lateLabel.textColor = [UIColor grayColor];
-    lateLabel.font = [UIFont fontWithName:nil size:10];
-    [sectionView addSubview:lateLabel];
-    
-    UIImageView *imageFooterLeftView = [[UIImageView alloc] initWithFrame:(CGRectMake(self.view.frame.size.width / 2 - 140, 22.5, 100, 1))];
-    imageFooterLeftView.backgroundColor = [UIColor colorFromHexCode:@"#F2F2F2"];
-    [sectionView addSubview:imageFooterLeftView];
-    UIImageView *imageFooterRightView = [[UIImageView alloc] initWithFrame:(CGRectMake(self.view.frame.size.width / 2 + 40, 22.5, 100, 1))];
-    imageFooterRightView.backgroundColor = [UIColor colorFromHexCode:@"#F2F2F2"];
-    [sectionView addSubview:imageFooterRightView];
-    [sectionView addSubview:label];
-    return sectionView;
+    self.seeMoreView = [[SeeMoreView alloc] initWithFrame:(CGRectMake(0, 0, self.width, 45))];
+    return self.seeMoreView;
 }
-
 - (void)findThreeDimensionalRollView {
     self.findAutomatiView = [[UIView alloc] initWithFrame:(CGRectMake(0, 0, self.width, 178))];
     [self.findTableView.tableHeaderView addSubview:self.findAutomatiView];
@@ -121,15 +95,17 @@
     self.pageControl.numberOfPages = 4;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:6 target:self selector:@selector(findThreeDimensional) userInfo:nil repeats:YES];
     self.num = 0;
+    [self slideMotinEdit];
+}
+#pragma mark 手势 添加
+- (void)slideMotinEdit {
     self.slideMotion = [SlideMotion new];
     self.slideMotion.direction = SlideMotionDirectionLeft;
     self.slideMotion.delegate = self;
     self.slideMotion.dataSource = self;
     [self.slideMotion attachToView:self.findAutomatiView];
-
-    
 }
-//滚动视图  imageView初始化
+#pragma mark 滚动视图  imageView初始化
 - (void)imageViewData {
     self.imageViewOne = [[UIImageView alloc] initWithFrame:(CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height))];
     self.imageViewOne.image = self.imageOne;
@@ -149,53 +125,6 @@
     self.imageTow = [UIImage imageNamed:@"findad2.jpg"];
     self.imageThree = [UIImage imageNamed:@"findad3.jpg"];
     self.imageFour = [UIImage imageNamed:@"findad4.jpg"];
-}
-//滚动视图 动画
-- (void)findThreeDimensional {
-    if (self.num == 0) {
-        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
-            self.imageViewOne.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
-            self.imageViewTow.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
-            
-        } completion:^(BOOL finished) {
-            self.imageViewOne.frame = CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height);
-        }];
-        self.pageControl.currentPage = self.num + 1;
-        self.num = 1;
-    } else if (self.num == 1) {
-        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
-            self.imageViewTow.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
-            self.imageViewThree.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
-            
-        } completion:^(BOOL finished) {
-            self.imageViewTow.frame = CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height);
-            self.imageViewThree.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
-        }];
-        self.pageControl.currentPage = self.num + 1;
-        self.num = 2;
-    } else if (self.num == 2) {
-        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
-            self.imageViewThree.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
-            self.imageViewFour.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
-            
-        } completion:^(BOOL finished) {
-            self.imageViewThree.frame = CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height);
-            self.imageViewFour.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
-        }];
-        self.pageControl.currentPage = self.num + 1;
-        self.num = 3;
-    } else {
-        [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
-            self.imageViewFour.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
-            self.imageViewOne.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
-            
-        } completion:^(BOOL finished) {
-            self.imageViewFour.frame = CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height);
-            self.imageViewOne.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
-        }];
-        self.pageControl.currentPage = 0;
-        self.num = 0;
-    }
 }
 #define mark SlideMotion -delegate
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
