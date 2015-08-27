@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController+Animation.h"
+#import "UINavigationController+CustomNavigationController.h"
+#import "DetailViewController.h"
 
 @implementation HomeViewController (Animation)
 
@@ -17,6 +19,16 @@
         self.downGuideImageView.alpha = 1;
     } completion:^(BOOL finished) {
         [self.downGuideImageView startAnimating];
+    }];
+}
+
+- (void)animatePushDetailViewController {
+    self.bookAnimationView.hidden = NO;
+    [self.downGuideImageView stopAnimating];
+    self.downGuideImageView.hidden = YES;
+    DetailViewController *detailViewController = [DetailViewController create];
+    [self.bookAnimationView animationOpenBookcompletion:^(BOOL finished) {
+        [self.navigationController pushViewController:detailViewController animated:NO];
     }];
 }
 

@@ -9,9 +9,15 @@
 #import "CommentCell.h"
 #import "UIColor+Utility.h"
 
-@implementation CommentCell
+@implementation CommentCell {
+    CGAffineTransform approveTransform;
+    CGAffineTransform commentTransform;
+}
 
 - (void)awakeFromNib {
+    
+    approveTransform = self.approveImageView.transform;
+    commentTransform = self.commentImageView.transform;
     self.avatarImageView.layer.cornerRadius = self.avatarImageView.frame.size.width / 2;
     self.avatarImageView.layer.borderWidth = 1;
     self.avatarImageView.layer.borderColor = [[UIColor colorWithIntRed:103 green:212 blue:223] CGColor];
@@ -44,6 +50,35 @@
 - (CGFloat)heightOfCell {
     CGRect frame  = self.bottomLineView.frame;
     return frame.origin.y + self.frame.size.height;
+}
+
+- (IBAction)onClickCommentButton:(id)sender {
+    CGAffineTransform transform = commentTransform;
+    transform = CGAffineTransformScale(transform, 1.2, 1.2);
+    [UIView animateWithDuration:0.1 animations:^{
+        self.commentImageView.transform = transform;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.1 animations:^{
+            self.commentImageView.transform = commentTransform;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }];
+}
+
+
+- (IBAction)onClickApproveButton:(id)sender {
+    CGAffineTransform transform = approveTransform;
+    transform = CGAffineTransformScale(transform, 1.2, 1.2);
+    [UIView animateWithDuration:0.1 animations:^{
+        self.approveImageView.transform = transform;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.1 animations:^{
+            self.approveImageView.transform = approveTransform;
+        } completion:^(BOOL finished) {
+            
+        }];
+    }];
 }
 
 @end

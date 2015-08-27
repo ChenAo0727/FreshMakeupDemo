@@ -11,5 +11,6 @@
 @interface HomeViewController (Animation)
 
 - (void)recoverAllComponent;
+- (void)animatePushDetailViewController;
 
 @end

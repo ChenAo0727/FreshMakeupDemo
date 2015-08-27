@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -54,16 +54,46 @@
                                         <constraint firstAttribute="width" constant="25" id="RFa-Hf-yML"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dg-zz-53F">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="7M3-QF-MK5"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickLeftButton:" destination="-1" eventType="touchUpInside" id="KfM-6N-Gmb"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3G-c5-soT">
+                                    <rect key="frame" x="270" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="FIG-7B-rh0"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="onClickRightButton:" destination="-1" eventType="touchUpInside" id="MT9-70-NRU"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="centerY" secondItem="6sH-bB-sl9" secondAttribute="centerY" id="8SZ-gz-8T7"/>
+                                <constraint firstItem="9Dg-zz-53F" firstAttribute="leading" secondItem="uTh-aa-5Iu" secondAttribute="leading" id="8rO-cQ-co0"/>
+                                <constraint firstAttribute="bottom" secondItem="9Dg-zz-53F" secondAttribute="bottom" id="F8a-pZ-aIJ"/>
                                 <constraint firstAttribute="centerY" secondItem="wEj-BS-5WR" secondAttribute="centerY" id="K4w-CT-lTU"/>
                                 <constraint firstAttribute="bottom" secondItem="bFF-up-R86" secondAttribute="bottom" id="PO0-2H-Tf3"/>
                                 <constraint firstItem="6sH-bB-sl9" firstAttribute="leading" secondItem="uTh-aa-5Iu" secondAttribute="leading" constant="13" id="gSS-Cd-4D2"/>
                                 <constraint firstItem="bFF-up-R86" firstAttribute="top" secondItem="uTh-aa-5Iu" secondAttribute="top" id="hr8-eK-iJC"/>
+                                <constraint firstItem="9Dg-zz-53F" firstAttribute="top" secondItem="uTh-aa-5Iu" secondAttribute="top" id="iOF-Fm-CeS"/>
                                 <constraint firstAttribute="centerX" secondItem="bFF-up-R86" secondAttribute="centerX" id="lin-dB-lka"/>
+                                <constraint firstAttribute="trailing" secondItem="T3G-c5-soT" secondAttribute="trailing" id="rks-EI-vf0"/>
+                                <constraint firstAttribute="bottom" secondItem="T3G-c5-soT" secondAttribute="bottom" id="tVc-tH-scs"/>
                                 <constraint firstAttribute="trailing" secondItem="wEj-BS-5WR" secondAttribute="trailing" constant="13" id="z7q-VU-1bI"/>
+                                <constraint firstItem="T3G-c5-soT" firstAttribute="top" secondItem="uTh-aa-5Iu" secondAttribute="top" id="zBY-gq-Y3f"/>
                             </constraints>
                         </view>
                     </subviews>

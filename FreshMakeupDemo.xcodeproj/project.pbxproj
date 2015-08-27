@@ -181,6 +181,8 @@
 		2EB611B91B8755A7000414A2 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB611B71B8755A7000414A2 /* ImageCell.xib */; };
 		2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB611BD1B8757E9000414A2 /* TitleCell.m */; };
 		2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB611BE1B8757E9000414A2 /* TitleCell.xib */; };
+		2EDC1D9B1B8D965600424D62 /* BookAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC1D9A1B8D965600424D62 /* BookAnimationView.m */; };
+		2EDC1D9D1B8D966700424D62 /* BookAnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDC1D9C1B8D966700424D62 /* BookAnimationView.xib */; };
 		2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */; };
 		2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */; };
 		2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA821B8AD6130044BAF0 /* selection_like_image.png */; };
@@ -446,6 +448,9 @@
 		2EB611BC1B8757E9000414A2 /* TitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
 		2EB611BD1B8757E9000414A2 /* TitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
 		2EB611BE1B8757E9000414A2 /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		2EDC1D991B8D965600424D62 /* BookAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAnimationView.h; sourceTree = "<group>"; };
+		2EDC1D9A1B8D965600424D62 /* BookAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAnimationView.m; sourceTree = "<group>"; };
+		2EDC1D9C1B8D966700424D62 /* BookAnimationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookAnimationView.xib; sourceTree = "<group>"; };
 		2EFAEA7D1B8AB4170044BAF0 /* SelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionView.h; sourceTree = "<group>"; };
 		2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionView.m; sourceTree = "<group>"; };
 		2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionView.xib; sourceTree = "<group>"; };
@@ -913,6 +918,7 @@
 		2E8C34191B7DF3DC006B5BC0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2EDC1D981B8D961E00424D62 /* BookAnimationView */,
 				2EFAEA7C1B8AB3FE0044BAF0 /* SelectionView */,
 				2E6B464B1B820EC500BF39D5 /* StackCollectionView */,
 				2E92F5441B7E4EA800C14B7A /* BookCollectionView */,
@@ -1138,6 +1144,16 @@
 			path = TitleCell;
 			sourceTree = "<group>";
 		};
+		2EDC1D981B8D961E00424D62 /* BookAnimationView */ = {
+			isa = PBXGroup;
+			children = (
+				2EDC1D991B8D965600424D62 /* BookAnimationView.h */,
+				2EDC1D9A1B8D965600424D62 /* BookAnimationView.m */,
+				2EDC1D9C1B8D966700424D62 /* BookAnimationView.xib */,
+			);
+			path = BookAnimationView;
+			sourceTree = "<group>";
+		};
 		2EFAEA7C1B8AB3FE0044BAF0 /* SelectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1351,6 +1367,7 @@
 				2EB6119C1B86ED62000414A2 /* detail_top_image.png in Resources */,
 				058ABF551B82C58100A0BA8A /* findarticleavatar3.png in Resources */,
 				054DFD381B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.xib in Resources */,
+				2EDC1D9D1B8D966700424D62 /* BookAnimationView.xib in Resources */,
 				058ABF531B82C58100A0BA8A /* findarticleavatar1.png in Resources */,
 				059E88D61B8431460086544F /* title1.png in Resources */,
 				2E8C34081B7DF2B7006B5BC0 /* HomeViewController.xib in Resources */,
@@ -1426,6 +1443,7 @@
 				2E8C342E1B7DF3DC006B5BC0 /* PickUpMotion.m in Sources */,
 				2EA4273F1B7ED0FE00BF4705 /* LineLayout.m in Sources */,
 				2E8C34471B7DF46E006B5BC0 /* NSNumber+Utility.m in Sources */,
+				2EDC1D9B1B8D965600424D62 /* BookAnimationView.m in Sources */,
 				2EB611B21B874570000414A2 /* OwnerSayCell.m in Sources */,
 				059E88CD1B841BB20086544F /* FindViewController+Animation.m in Sources */,
 				2E8C34491B7DF46E006B5BC0 /* UIAlertView+Utility.m in Sources */,

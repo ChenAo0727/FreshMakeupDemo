@@ -11,6 +11,7 @@
 @implementation HomeViewController (Configuration)
 
 - (void)configureViews {
+    [self addBookAnimationView];
     [self configureStackView];
     [self configureGuiAnimation];
 }
@@ -19,6 +20,7 @@
 
 - (void)configureStackView {
     self.stackCollectionView = [StackCollectionView create];
+    //[self.stackViewContainer insertSubview:self.stackCollectionView belowSubview:self.bookAnimationView];
     [self.stackViewContainer addSubview:self.stackCollectionView];
     [self.stackCollectionView setLeftSpace:0];
     [self.stackCollectionView setRightSpace:0];
@@ -33,6 +35,16 @@
 - (void)configureGuiAnimation {
     [self.downGuideImageView setAnimationImages:@[[UIImage imageNamed:@"home_down_guide1"], [UIImage imageNamed:@"home_down_guide2"], [UIImage imageNamed:@"home_down_guide3"]]];
     [self.downGuideImageView setAnimationDuration:1];
+}
+
+- (void)addBookAnimationView {
+    self.bookAnimationView = [BookAnimationView create];
+    [self.view insertSubview:self.bookAnimationView aboveSubview:self.stackViewContainer];
+    [self.bookAnimationView setLeftSpace:0];
+    [self.bookAnimationView setRightSpace:0];
+    [self.bookAnimationView setTopSpace:0];
+    [self.bookAnimationView setBottomSpace:0];
+    self.bookAnimationView.hidden = YES;
 }
 
 @end

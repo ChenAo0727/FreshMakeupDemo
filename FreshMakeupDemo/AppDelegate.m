@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
-#import "FindViewController.h"
+#import "MineViewController.h"
+#import "XHDrawerController.h"
 #import "DetailViewController.h"
 #import "XHDrawerController.h"
 #import "MineViewController.h"
@@ -22,14 +23,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[FindViewController create]];
-    MineViewController *mineViewController = [MineViewController create];
-    
-    XHDrawerController *drawerController = [[XHDrawerController alloc] init];
-    drawerController.leftViewController  = mineViewController;
-    drawerController.centerViewController = self.navigationController;
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[HomeViewController create]];
     self.navigationController.navigationBarHidden = YES;
-    self.window.rootViewController = drawerController;
+//    MineViewController *mineViewController = [MineViewController create];
+//    
+//    XHDrawerController *xhDrawerController = [[XHDrawerController alloc] init];
+//    xhDrawerController.leftViewController = mineViewController;
+//    xhDrawerController.centerViewController = self.navigationController;
+    
+    
+    self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }
