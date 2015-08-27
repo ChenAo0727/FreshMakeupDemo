@@ -11,8 +11,9 @@
 #import "BookCollectionView.h"
 #import "StackCollectionView.h"
 #import "BookAnimationView.h"
+#import "MaterialTransition.h"
 
-@interface HomeViewController : BaseViewController<StackCollectionViewDataSource, StackCollectionViewDelegate, BookCollectionViewDelegate>
+@interface HomeViewController : BaseViewController<UIViewControllerTransitioningDelegate, StackCollectionViewDataSource, StackCollectionViewDelegate, BookCollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *leftIconImageView;
@@ -26,5 +27,6 @@
 @property (weak, nonatomic) IBOutlet UIView *topViewContainer;
 @property (strong, nonatomic) StackCollectionView *stackCollectionView;
 @property (strong, nonatomic) BookAnimationView *bookAnimationView;
+@property (nonatomic, strong) MaterialTransition *materialTransition;
 
 @end

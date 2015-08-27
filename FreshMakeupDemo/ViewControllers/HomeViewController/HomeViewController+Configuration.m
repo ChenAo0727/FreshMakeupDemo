@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController+Configuration.h"
+#import "UIScreen+Utility.h"
 
 @implementation HomeViewController (Configuration)
 
@@ -14,9 +15,17 @@
     [self addBookAnimationView];
     [self configureStackView];
     [self configureGuiAnimation];
+    [self createTransition];
 }
 
 #pragma marks - PrivateMethod
+
+- (void)createTransition
+{
+    //    self.transition = [[JTMaterialTransition alloc] initWithAnimatedView:self.presentControllerButton];
+    self.materialTransition = [[MaterialTransition alloc] init];
+    self.materialTransition.startFrame = CGRectMake([UIScreen screenWidth] - 25, -25, 50, 50);
+}
 
 - (void)configureStackView {
     self.stackCollectionView = [StackCollectionView create];
