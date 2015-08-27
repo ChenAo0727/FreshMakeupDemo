@@ -181,6 +181,7 @@
 		2EB611B91B8755A7000414A2 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB611B71B8755A7000414A2 /* ImageCell.xib */; };
 		2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB611BD1B8757E9000414A2 /* TitleCell.m */; };
 		2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB611BE1B8757E9000414A2 /* TitleCell.xib */; };
+		2ECD47F41B8EE249002AFEEB /* MaterialTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD47F31B8EE249002AFEEB /* MaterialTransition.m */; };
 		2EDC1D9B1B8D965600424D62 /* BookAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC1D9A1B8D965600424D62 /* BookAnimationView.m */; };
 		2EDC1D9D1B8D966700424D62 /* BookAnimationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EDC1D9C1B8D966700424D62 /* BookAnimationView.xib */; };
 		2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */; };
@@ -448,6 +449,8 @@
 		2EB611BC1B8757E9000414A2 /* TitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
 		2EB611BD1B8757E9000414A2 /* TitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
 		2EB611BE1B8757E9000414A2 /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		2ECD47F21B8EE249002AFEEB /* MaterialTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialTransition.h; sourceTree = "<group>"; };
+		2ECD47F31B8EE249002AFEEB /* MaterialTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialTransition.m; sourceTree = "<group>"; };
 		2EDC1D991B8D965600424D62 /* BookAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAnimationView.h; sourceTree = "<group>"; };
 		2EDC1D9A1B8D965600424D62 /* BookAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAnimationView.m; sourceTree = "<group>"; };
 		2EDC1D9C1B8D966700424D62 /* BookAnimationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookAnimationView.xib; sourceTree = "<group>"; };
@@ -881,6 +884,8 @@
 			children = (
 				2E8C340E1B7DF361006B5BC0 /* UINavigationController+CustomNavigationController.h */,
 				2E8C340F1B7DF361006B5BC0 /* UINavigationController+CustomNavigationController.m */,
+				2ECD47F21B8EE249002AFEEB /* MaterialTransition.h */,
+				2ECD47F31B8EE249002AFEEB /* MaterialTransition.m */,
 			);
 			path = "Navigation Controller";
 			sourceTree = "<group>";
@@ -1433,6 +1438,7 @@
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
 				2E7DC9371B82CF3900152A0B /* StackCollectionView.m in Sources */,
 				054DFD251B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m in Sources */,
+				2ECD47F41B8EE249002AFEEB /* MaterialTransition.m in Sources */,
 				2E7DC9341B82BD1F00152A0B /* StackCollectionViewCell.m in Sources */,
 				2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */,
 				2E132F941B85BC5C005DCF14 /* HomeViewController+Animation.m in Sources */,

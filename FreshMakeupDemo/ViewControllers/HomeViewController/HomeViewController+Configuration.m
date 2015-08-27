@@ -14,9 +14,17 @@
     [self addBookAnimationView];
     [self configureStackView];
     [self configureGuiAnimation];
+    [self createTransition];
 }
 
 #pragma marks - PrivateMethod
+
+- (void)createTransition
+{
+    //    self.transition = [[JTMaterialTransition alloc] initWithAnimatedView:self.presentControllerButton];
+    self.materialTransition = [[MaterialTransition alloc] init];
+    self.materialTransition.startFrame = CGRectMake(self.view.frame.size.width - 25, -25, 50, 50);
+}
 
 - (void)configureStackView {
     self.stackCollectionView = [StackCollectionView create];

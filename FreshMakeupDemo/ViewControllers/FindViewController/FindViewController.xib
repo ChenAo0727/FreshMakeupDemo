@@ -97,7 +97,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.45098039220000002" green="0.76470588240000004" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.45882352941176469" green="0.76470588235294112" blue="0.72941176470588232" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="uTh-aa-5Iu" firstAttribute="leading" secondItem="CIM-5w-Hte" secondAttribute="leading" id="LWr-cb-jly"/>
                         <constraint firstAttribute="trailing" secondItem="uTh-aa-5Iu" secondAttribute="trailing" id="WKd-lY-Med"/>
@@ -107,14 +107,14 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-wC-hVQ">
-                    <rect key="frame" x="0.0" y="60" width="320" height="508"/>
+                    <rect key="frame" x="0.0" y="65" width="320" height="503"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="3Ie-wC-hVQ" secondAttribute="trailing" id="Ctc-w3-904"/>
-                <constraint firstItem="3Ie-wC-hVQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="ahD-cD-ckw"/>
+                <constraint firstItem="3Ie-wC-hVQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="65" id="ahD-cD-ckw"/>
                 <constraint firstItem="CIM-5w-Hte" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="azX-SX-oNL"/>
                 <constraint firstAttribute="trailing" secondItem="CIM-5w-Hte" secondAttribute="trailing" id="giW-yM-mOj"/>
                 <constraint firstItem="CIM-5w-Hte" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hiH-eQ-evi"/>

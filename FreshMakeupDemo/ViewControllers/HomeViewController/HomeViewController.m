@@ -12,10 +12,6 @@
 #import "HomeViewController+Animation.h"
 #import "XHDrawerController.h"
 
-@interface HomeViewController ()
-
-@end
-
 @implementation HomeViewController
 
 + (instancetype)create {
@@ -43,7 +39,9 @@
 
 - (IBAction)onClickRightButton:(id)sender {
     FindViewController *findViewController = [FindViewController create];
-    [self.navigationController pushViewController:findViewController animated:YES];
+    findViewController.modalPresentationStyle = UIModalPresentationCustom;
+    findViewController.transitioningDelegate = self;
+    [self presentViewController:findViewController animated:YES completion:nil];
 }
 
 - (StackCollectionViewCell *)stackCollectionView:(StackCollectionView *)stackCollectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -55,6 +53,16 @@
 
 - (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index {
     [self animatePushDetailViewController];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    self.materialTransition.reverse = NO;
+    return self.materialTransition;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    self.materialTransition.reverse = YES;
+    return self.materialTransition;
 }
 
 @end
