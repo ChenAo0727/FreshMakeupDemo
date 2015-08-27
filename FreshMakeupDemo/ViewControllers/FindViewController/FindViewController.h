@@ -12,6 +12,7 @@
 #import "RollCollectionViewDataSource.h"
 #import "SlideMotion.h"
 #import "FindViewController.h"
+#import "SeeMoreView.h"
 @interface FindViewController :BaseViewController <UITableViewDelegate,UICollectionViewDelegate,SlideMotionDataSource,SlideMotionDelegate>
 
 
@@ -21,11 +22,12 @@
 @property (strong, nonatomic) IBOutlet UITableView *findTableView;
 @property (strong, nonatomic) IBOutlet UIView *findView;
 @property (strong, nonatomic) NSMutableArray *fenquArr;
-
+@property (assign, nonatomic) NSInteger width;
 
 @property (strong, nonatomic) FindViewControllerDataSource *findViewControllerDataSource;
 @property (strong, nonatomic) UICollectionView *rollCollectionView;
 @property (strong, nonatomic) RollCollectionViewDataSource *rollCollectionViewDataSource;
+@property (strong, nonatomic) SeeMoreView *seeMoreView;
 //滚动视图
 @property (strong, nonatomic) UIImageView *imageViewOne;
 @property (strong, nonatomic) UIImageView *imageViewTow;

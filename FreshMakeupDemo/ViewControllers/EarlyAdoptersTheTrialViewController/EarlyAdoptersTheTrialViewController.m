@@ -26,13 +26,10 @@
    
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-  
-    
     if (indexPath.row == 0) {
         return 266;
     } else if (indexPath.row == 1) {
         return 66;
-        
     } else if (indexPath.row == 2) {
         return 12;
     } else if (indexPath.row == 3) {
@@ -44,8 +41,6 @@
     } else if (indexPath.row == 8) {
         return 50;
     } else {
-//        EarlyAdoptersReportTableViewCell *cell = (EarlyAdoptersReportTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
-//        CGFloat cellHeight = [cell getCellHeight];
         return 250;
     }
 }

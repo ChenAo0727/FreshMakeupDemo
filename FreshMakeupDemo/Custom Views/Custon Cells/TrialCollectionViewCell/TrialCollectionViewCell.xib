@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -95,7 +95,7 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11688" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQY-75-adq">
-                                        <rect key="frame" x="35" y="8" width="33.5" height="21"/>
+                                        <rect key="frame" x="35" y="8" width="34" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="bdZ-UA-voJ"/>
                                             <constraint firstAttribute="height" constant="21" id="ivc-tT-y2P"/>
@@ -121,18 +121,46 @@
                                             <constraint firstAttribute="width" constant="20" id="ok8-Jt-yxt"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyp-CO-LeI">
+                                        <rect key="frame" x="-7" y="5" width="70" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="6bN-Gh-qdd"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickTrialCollectionButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Olf-Lr-ex2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUh-56-MZ4">
+                                        <rect key="frame" x="82" y="0.0" width="60" height="30"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onClickTrialApproveButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Bx6-cG-My0"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="B88-GV-zKh" firstAttribute="leading" secondItem="50B-I6-25i" secondAttribute="leading" constant="10" id="2IY-Ow-Fwh"/>
                                     <constraint firstAttribute="centerY" secondItem="cea-t3-LQY" secondAttribute="centerY" constant="3" id="85v-5L-2Hb"/>
                                     <constraint firstItem="8KE-7h-bPB" firstAttribute="leading" secondItem="cea-t3-LQY" secondAttribute="trailing" constant="5" id="BYn-Sc-awO"/>
+                                    <constraint firstItem="rUh-56-MZ4" firstAttribute="leading" secondItem="Wyp-CO-LeI" secondAttribute="trailing" constant="19" id="D1r-5m-lve"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wyp-CO-LeI" secondAttribute="bottom" constant="5" id="K0B-3P-uoM"/>
+                                    <constraint firstAttribute="bottom" secondItem="rUh-56-MZ4" secondAttribute="bottom" constant="6" id="Kzk-eC-KTo"/>
                                     <constraint firstAttribute="centerY" secondItem="B88-GV-zKh" secondAttribute="centerY" id="NdD-NV-NzS"/>
                                     <constraint firstAttribute="height" constant="36" id="PLu-rv-vgG"/>
                                     <constraint firstAttribute="centerY" secondItem="TQY-75-adq" secondAttribute="centerY" id="Yin-dO-fnq"/>
+                                    <constraint firstAttribute="trailing" secondItem="rUh-56-MZ4" secondAttribute="trailing" constant="8" id="Ywv-7M-NgW"/>
                                     <constraint firstItem="TQY-75-adq" firstAttribute="leading" secondItem="B88-GV-zKh" secondAttribute="trailing" constant="5" id="dUg-FV-sX1"/>
                                     <constraint firstAttribute="trailing" secondItem="8KE-7h-bPB" secondAttribute="trailing" constant="10" id="gxJ-Ef-vsl"/>
                                     <constraint firstAttribute="centerY" secondItem="8KE-7h-bPB" secondAttribute="centerY" id="hos-yW-RDQ"/>
+                                    <constraint firstItem="Wyp-CO-LeI" firstAttribute="top" secondItem="50B-I6-25i" secondAttribute="top" constant="5" id="jzi-6U-a0B"/>
+                                    <constraint firstItem="rUh-56-MZ4" firstAttribute="top" secondItem="50B-I6-25i" secondAttribute="top" id="pBT-cm-qNj"/>
+                                    <constraint firstItem="cea-t3-LQY" firstAttribute="leading" secondItem="Wyp-CO-LeI" secondAttribute="trailing" constant="25" id="uFm-OR-3TQ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -177,7 +205,7 @@
                 <outlet property="watchCountLabel" destination="TQY-75-adq" id="hIq-ZM-Mdn"/>
                 <outlet property="watchImageView" destination="B88-GV-zKh" id="F32-QX-d7F"/>
             </connections>
-            <point key="canvasLocation" x="572" y="497"/>
+            <point key="canvasLocation" x="572" y="496.5"/>
         </collectionViewCell>
     </objects>
     <resources>

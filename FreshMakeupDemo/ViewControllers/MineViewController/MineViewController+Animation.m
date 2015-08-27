@@ -12,7 +12,6 @@
 - (void)guideViewAnimation:(NSInteger)integer {
     [UIView animateKeyframesWithDuration:0.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         self.mineGuideimageView.center = (CGPoint){4, self.mineGuideView.frame.size.height + 40 * integer  + 20};
-        
     } completion:nil];
    
 }

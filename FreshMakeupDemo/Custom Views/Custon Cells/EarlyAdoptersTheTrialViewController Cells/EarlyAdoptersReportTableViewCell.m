@@ -7,11 +7,17 @@
 //
 
 #import "EarlyAdoptersReportTableViewCell.h"
+#import "UIColor+Utility.h"
+@implementation EarlyAdoptersReportTableViewCell{
+    CGAffineTransform approveTransform;
+    CGAffineTransform commentTransform;
+}
 
-@implementation EarlyAdoptersReportTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
+    approveTransform = self.earlyClickLeftButton.transform;
+    commentTransform = self.earlyClickRightButton.transform;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -19,24 +25,49 @@
     // Configure the view for the selected state
 }
 - (IBAction)earlyClickLeftButtonAction:(id)sender {
-    NSInteger praiseCountLeft = [self.earlyClickLeftLabel.text integerValue];
-    if (praiseCountLeft == 24) {
-        self.earlyClickLeftLabel.text = @"25";
-    } else {
-        self.earlyClickLeftLabel.text = @"24";
-    }
-    
-    [self layoutIfNeeded];
+    CGAffineTransform transform = approveTransform;
+    transform = CGAffineTransformScale(transform, 1.2, 1.2);
+    [UIView animateWithDuration:0.1 animations:^{
+        self.earlyClickLeftButton.transform = transform;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.1 animations:^{
+            self.earlyClickLeftButton.transform = approveTransform;
+        } completion:^(BOOL finished) {
+            NSInteger praiseCountLeft = [self.earlyClickLeftLabel.text integerValue];
+            if (praiseCountLeft == 24) {
+                self.earlyClickLeftLabel.text = @"25";
+                [self.earlyClickLeftButton setImage:[UIImage imageNamed:@"detail_approve_clicked_icon.png"] forState:UIControlStateNormal];
+                self.earlyClickLeftLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
+            } else {
+                self.earlyClickLeftLabel.text = @"24";
+                [self.earlyClickLeftButton setImage:[UIImage imageNamed:@"detail_approve_icon.png"] forState:UIControlStateNormal];
+                self.earlyClickLeftLabel.textColor = [UIColor grayColor];
+            }
+        }];
+    }];
 }
 - (IBAction)earlyClickRightButtonAction:(id)sender {
-    NSInteger praiseCountRight = [self.earlyClickRightLabel.text integerValue];
-    if (praiseCountRight == 24) {
-        self.earlyClickRightLabel.text = @"25";
-    } else {
-        self.earlyClickRightLabel.text = @"24";
-    }
-    
-    [self layoutIfNeeded];
+    CGAffineTransform transform = approveTransform;
+    transform = CGAffineTransformScale(transform, 1.2, 1.2);
+    [UIView animateWithDuration:0.1 animations:^{
+        self.earlyClickRightButton.transform = transform;
+    } completion:^(BOOL finished) {
+        [UIView animateWithDuration:0.1 animations:^{
+            self.earlyClickRightButton.transform = approveTransform;
+        } completion:^(BOOL finished) {
+            NSInteger praiseCountLeft = [self.earlyClickRightLabel.text integerValue];
+            if (praiseCountLeft == 24) {
+                self.earlyClickRightLabel.text = @"25";
+                [self.earlyClickRightButton setImage:[UIImage imageNamed:@"detail_approve_clicked_icon.png"] forState:UIControlStateNormal];
+                self.earlyClickRightLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
+            } else {
+                self.earlyClickRightLabel.text = @"24";
+                [self.earlyClickRightButton setImage:[UIImage imageNamed:@"detail_approve_icon.png"] forState:UIControlStateNormal];
+                self.earlyClickRightLabel.textColor = [UIColor grayColor];
+            }
+        }];
+    }];
+
 
 }
 

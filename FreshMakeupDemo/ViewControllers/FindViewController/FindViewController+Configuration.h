@@ -10,5 +10,6 @@
 #import "FindViewController.h"
 
 @interface FindViewController (Configuration)
+- (void)getScreenWidth;
 - (void)configureViews;
 @end

@@ -21,12 +21,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    [self getScreenWidth];
     [self configureViews];
-    [self.findView.layer setShadowColor:[UIColor redColor].CGColor];
-    [self.findView.layer setShadowOpacity:0.8f];//设置阴影的透明度
-    [self.findView.layer setShadowOffset:CGSizeMake(-3, 0)];//设置View Shadow的偏移量
+   
 }
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 1) {
         return 1;
@@ -40,17 +38,6 @@
         }
     }
 }
-//每个分区个数
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    switch (section) {
-        case 0:
-            return 5;
-            break;
-        default:
-         return 0;
-            break;
-    }
-}
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     return 54;
 
@@ -59,7 +46,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//UICollectionView 页眉尺寸设置
+#pragma mark UICollectionView 页眉尺寸设置
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section {
     CGSize size = {10,25};
     return size;
