@@ -19,18 +19,18 @@
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     CGRect startFrame = [transitionContext.containerView.superview convertRect:self.startFrame toView:transitionContext.containerView];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    toViewController.view.frame = transitionContext.containerView.bounds;
     UIViewController *fromViewController = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
+    fromViewController.view.frame = transitionContext.containerView.bounds;
     UIImageView *imageView = [self generateImageWithToViewController:toViewController fromViewController:fromViewController containerFrame:startFrame];
     UIView *animatedViewForTransition = [self generateViewWithStartFrame:startFrame];
     [animatedViewForTransition addSubview:imageView];
     [transitionContext.containerView addSubview:animatedViewForTransition];
     if (!self.isReverse) {
-        toViewController.view.frame = transitionContext.containerView.bounds;
         toViewController.view.layer.opacity = 0;
         [transitionContext.containerView addSubview:toViewController.view];
         [self animationForPresent:transitionContext animatedViewForTransition:animatedViewForTransition imageView:imageView toViewController:toViewController];
     } else {
-        fromViewController.view.frame = transitionContext.containerView.bounds;
         [fromViewController.view removeFromSuperview];
         [self animationForDismiss:transitionContext animatedViewForTransition:animatedViewForTransition imageView:imageView startFrame:startFrame];
     }
