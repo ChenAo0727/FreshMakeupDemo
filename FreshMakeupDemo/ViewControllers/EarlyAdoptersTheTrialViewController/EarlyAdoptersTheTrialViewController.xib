@@ -41,14 +41,14 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="0VC-yc-5Xg">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="0VC-yc-5Xg">
                                     <rect key="frame" x="13" y="27" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="eMU-Bx-WJq"/>
                                         <constraint firstAttribute="height" constant="25" id="pkH-81-A6b"/>
                                     </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="try.png" translatesAutoresizingMaskIntoConstraints="NO" id="fDr-dh-PyQ">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="try.png" translatesAutoresizingMaskIntoConstraints="NO" id="fDr-dh-PyQ">
                                     <rect key="frame" x="249" y="27" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="6sE-XB-3z7"/>
@@ -57,7 +57,7 @@
                                         <constraint firstAttribute="width" constant="25" id="hUD-5D-Eip"/>
                                     </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="CHa-h8-xDr">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="CHa-h8-xDr">
                                     <rect key="frame" x="287" y="27" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="Z4P-ec-eor"/>
