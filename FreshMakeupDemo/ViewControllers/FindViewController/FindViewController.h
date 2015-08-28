@@ -43,5 +43,5 @@
 @property (strong, nonatomic) SlideMotion *slideMotion;
 @property (strong, nonatomic) FindViewController *findViewController;
 @property (strong, nonatomic) UIView *findAutomatiView;
-
+@property (assign, nonatomic)  NSInteger set;
 @end
