@@ -64,12 +64,27 @@
                                         <constraint firstAttribute="height" constant="25" id="rL0-PE-p5G"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t0-BE-Gqy">
+                                    <rect key="frame" x="8" y="23" width="47" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="47" id="ICd-zy-Ers"/>
+                                        <constraint firstAttribute="height" constant="32" id="ZQW-zf-kT7"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="earlyRetainButtonAction:" destination="-1" eventType="touchUpInside" id="P05-Nh-IAM"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="CHa-h8-xDr" firstAttribute="leading" secondItem="fDr-dh-PyQ" secondAttribute="trailing" constant="13" id="6aF-Bk-4hN"/>
+                                <constraint firstItem="4t0-BE-Gqy" firstAttribute="leading" secondItem="fPd-SN-kaT" secondAttribute="leading" constant="8" id="6ft-Z1-apZ"/>
                                 <constraint firstAttribute="bottom" secondItem="CHa-h8-xDr" secondAttribute="bottom" constant="13" id="7j2-rg-vCD"/>
                                 <constraint firstAttribute="bottom" secondItem="7P3-s8-gsY" secondAttribute="bottom" id="Cz0-4X-8z2"/>
+                                <constraint firstAttribute="centerY" secondItem="4t0-BE-Gqy" secondAttribute="centerY" id="Eje-BO-SMX"/>
                                 <constraint firstAttribute="trailing" secondItem="CHa-h8-xDr" secondAttribute="trailing" constant="8" id="Erx-4i-rFN"/>
                                 <constraint firstItem="7P3-s8-gsY" firstAttribute="top" secondItem="fPd-SN-kaT" secondAttribute="top" constant="15" id="OBS-fJ-dEL"/>
                                 <constraint firstItem="0VC-yc-5Xg" firstAttribute="top" secondItem="fPd-SN-kaT" secondAttribute="top" constant="27" id="Rjf-s5-z3u"/>

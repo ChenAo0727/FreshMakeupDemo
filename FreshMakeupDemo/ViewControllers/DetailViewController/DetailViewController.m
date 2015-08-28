@@ -17,7 +17,7 @@
 #import "OwnerSayCell.h"
 #import "ImageCell.h"
 #import "TitleCell.h"
-
+#import "EarlyAdoptersTheTrialViewController.h"
 @implementation DetailViewController
 
 + (instancetype)create {
@@ -362,7 +362,6 @@
     cell.backgroundColor = [UIColor clearColor];
     return cell;
 }
-
 - (UICollectionViewCell *)generateBaseInfomationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
     BaseInfomationCell *cell = (BaseInfomationCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BASE_INFO_CELL forIndexPath:indexPath];
     return cell;
@@ -514,6 +513,14 @@
     [cell setNeedsLayout];
     [cell layoutIfNeeded];
     return cell;
+}
+- (IBAction)detailRetainButtonAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+    
+}
+- (IBAction)detailOnTrialButtonAction:(id)sender {
+    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
+    [self.navigationController pushViewController:earlyAdoptersTheTrialViewController animated:YES];
 }
 
 @end
