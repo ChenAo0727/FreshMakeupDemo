@@ -64,12 +64,13 @@
     [view addSubview:realBookView];
     [realBookView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(@(0));
-        make.top.equalTo(@(91));
+        make.top.equalTo(@(88));
         make.bottom.equalTo(@(-60));
         make.width.equalTo(realBookView.mas_height).multipliedBy(0.6);
     }];
     [realBookView layoutIfNeeded];
     if (self.isReverse) {
+        realBookView.coverContainerView.layer.anchorPoint = CGPointMake(0, 0.5);
         [realBookView updateToOpenBookStatus];
     }
     return view;

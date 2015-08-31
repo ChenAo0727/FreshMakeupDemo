@@ -47,14 +47,22 @@
     [self layoutIfNeeded];
     CATransform3D transfrom = originTransform;
     transfrom.m34 = 1.0 / 1000;
+    CGFloat widthScale = [UIScreen screenWidth] / self.coverContainerView.frame.size.width;
+    CGFloat heightScale = (1.1 * [UIScreen screenHeight]) / self.coverContainerView.frame.size.height;
     //transfrom = CATransform3DTranslate(transfrom, -([UIScreen screenWidth] - self.coverContainerView.frame.size.width) / 2, 0, 0);
     transfrom = CATransform3DRotate(transfrom, M_PI / 2, 0 , 1, 0);
-    transfrom = CATransform3DScale(transfrom, [UIScreen screenWidth] / self.coverContainerView.frame.size.width, [UIScreen screenHeight] / self.coverContainerView.frame.size.height * 1.1, 1);
+    transfrom = CATransform3DScale(transfrom, widthScale, heightScale, 1);
     self.coverContainerView.layer.transform = transfrom;
 }
 
 - (void)updateToCloseBookStatus {
     self.coverContainerView.layer.transform = originTransform;
+    self.coverViewLeftConstraint.constant = -self.frame.size.width / 2;
+    self.coverViewRightConstraint.constant = self.frame.size.width / 2;
+    CGFloat widthScale = self.coverContainerView.frame.size.width / ([UIScreen screenWidth] * 2);
+    CGFloat heightScale = self.coverContainerView.frame.size.height / ([UIScreen screenHeight] * 1.2);
+    CGAffineTransform transform = self.backgroundContanerView.transform;
+    self.backgroundContanerView.transform = CGAffineTransformScale(transform, widthScale, heightScale);
 }
 
 - (void)animationToOpenBookWithCompletion:(void (^)(BOOL finished))completion  {
@@ -62,7 +70,7 @@
     self.coverViewLeftConstraint.constant = -self.coverContainerView.frame.size.width / 2;
     self.coverViewRightConstraint.constant = self.coverContainerView.frame.size.width / 2;
     [self layoutIfNeeded];
-    [UIView animateWithDuration:0.5 animations:^{
+    [UIView animateWithDuration:0.3 animations:^{
         [self updateToOpenBookStatus];
     } completion:^(BOOL finished) {
         self.coverContainerView.layer.anchorPoint = CGPointMake(0.5, 0.5);
@@ -71,8 +79,11 @@
 }
 
 - (void)animationToCloseBookWithCompletion:(void (^)(BOOL finished))completion {
-    [UIView animateWithDuration:1 animations:^{
+    [self layoutIfNeeded];
+    [UIView animateWithDuration:0.3 animations:^{
         [self updateToCloseBookStatus];
+    } completion:^(BOOL finished) {
+        completion(finished);
     }];
 }
 
