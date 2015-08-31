@@ -187,6 +187,7 @@
 		380D8F7B1B8C37AF000FA98C /* CommentViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7A1B8C37AF000FA98C /* CommentViewLayout.m */; };
 		380D8F7F1B8C5369000FA98C /* HeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */; };
 		380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */; };
+		38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B48A2F1B941EB100092D6D /* MySegmentControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -457,6 +458,8 @@
 		380D8F7C1B8C5369000FA98C /* HeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewCell.h; sourceTree = "<group>"; };
 		380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewCell.m; sourceTree = "<group>"; };
 		380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
+		38B48A2E1B941EB100092D6D /* MySegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySegmentControl.h; sourceTree = "<group>"; };
+		38B48A2F1B941EB100092D6D /* MySegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySegmentControl.m; sourceTree = "<group>"; };
 		497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6BEAE562AD3319ADF4371D12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1040,6 +1043,8 @@
 				380D8F7C1B8C5369000FA98C /* HeaderViewCell.h */,
 				380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */,
 				380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */,
+				38B48A2E1B941EB100092D6D /* MySegmentControl.h */,
+				38B48A2F1B941EB100092D6D /* MySegmentControl.m */,
 			);
 			path = CommentViewController;
 			sourceTree = "<group>";
@@ -1483,6 +1488,7 @@
 				2E8C34071B7DF2B7006B5BC0 /* HomeViewController.m in Sources */,
 				2E6B46621B82182D00BF39D5 /* Pool.m in Sources */,
 				2E7706841B8818960024282D /* CopywriterCell.m in Sources */,
+				38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
