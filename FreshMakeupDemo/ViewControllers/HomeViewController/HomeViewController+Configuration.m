@@ -12,7 +12,6 @@
 @implementation HomeViewController (Configuration)
 
 - (void)configureViews {
-    [self addBookAnimationView];
     [self configureStackView];
     [self configureGuiAnimation];
     [self createTransition];
@@ -20,11 +19,10 @@
 
 #pragma marks - PrivateMethod
 
-- (void)createTransition
-{
-    //    self.transition = [[JTMaterialTransition alloc] initWithAnimatedView:self.presentControllerButton];
+- (void)createTransition {
     self.materialTransition = [[MaterialTransition alloc] init];
     self.materialTransition.startFrame = CGRectMake([UIScreen screenWidth] - 25, -25, 50, 50);
+    self.flipTransition = [[FlipTransition alloc] init];
 }
 
 - (void)configureStackView {
@@ -44,16 +42,6 @@
 - (void)configureGuiAnimation {
     [self.downGuideImageView setAnimationImages:@[[UIImage imageNamed:@"home_down_guide1"], [UIImage imageNamed:@"home_down_guide2"], [UIImage imageNamed:@"home_down_guide3"]]];
     [self.downGuideImageView setAnimationDuration:1];
-}
-
-- (void)addBookAnimationView {
-    self.bookAnimationView = [BookAnimationView create];
-    [self.view insertSubview:self.bookAnimationView aboveSubview:self.stackViewContainer];
-    [self.bookAnimationView setLeftSpace:0];
-    [self.bookAnimationView setRightSpace:0];
-    [self.bookAnimationView setTopSpace:0];
-    [self.bookAnimationView setBottomSpace:0];
-    self.bookAnimationView.hidden = YES;
 }
 
 @end

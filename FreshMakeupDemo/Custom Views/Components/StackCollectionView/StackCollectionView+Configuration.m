@@ -230,9 +230,9 @@
             return; // skip if already attached
         }
     }
-    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction:)];
-    tapRecognizer.delegate = self;
-    [cell addGestureRecognizer:tapRecognizer];
+//    UITapGestureRecognizer *tapRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapGestureAction:)];
+//    tapRecognizer.delegate = self;
+//    [cell addGestureRecognizer:tapRecognizer];
 }
 
 - (void)removeTapRecognizerFromCell:(StackCollectionViewCell *)cell {

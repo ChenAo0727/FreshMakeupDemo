@@ -22,14 +22,4 @@
     }];
 }
 
-- (void)animatePushDetailViewController {
-    self.bookAnimationView.hidden = NO;
-    [self.downGuideImageView stopAnimating];
-    self.downGuideImageView.hidden = YES;
-    DetailViewController *detailViewController = [DetailViewController create];
-    [self.bookAnimationView animationOpenBookcompletion:^(BOOL finished) {
-        [self.navigationController pushViewController:detailViewController animated:NO];
-    }];
-}
-
 @end

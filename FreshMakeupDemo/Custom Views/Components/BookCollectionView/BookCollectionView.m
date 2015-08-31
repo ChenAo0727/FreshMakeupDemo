@@ -7,7 +7,7 @@
 //
 
 #import "BookCollectionView.h"
-#import "BookCollectionViewCell.h"
+#import "RealBookView.h"
 #import "LineLayout.h"
 
 @implementation BookCollectionView
@@ -38,7 +38,7 @@
     [self.lineCollectionView setCollectionViewLayout:layout];
     self.lineCollectionView.dataSource = self;
     self.lineCollectionView.delegate = self;
-    [self.lineCollectionView registerNib:[UINib nibWithNibName:@"BookCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL];
+    [self.lineCollectionView registerNib:[UINib nibWithNibName:@"RealBookView" bundle:nil] forCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL];
 }
 
 #pragma mark - <UICollectionViewDataSource>
@@ -48,22 +48,21 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    BookCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL forIndexPath:indexPath];
-    cell.image = self.images[indexPath.item];
+    RealBookView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL forIndexPath:indexPath];
     __weak typeof(self) weakself = self;
     cell.didSelectCellBllock = ^(UICollectionViewCell *cell) {
         if ([weakself.delegate respondsToSelector:@selector(BookCollectionView:didSelectItemAtIndex:)]) {
             [weakself.delegate BookCollectionView:self didSelectItemAtIndex:0];
         }
     };
+    [cell layoutIfNeeded];
     return cell;
 }
 
 #pragma mark - <UICollectionViewDelegate>
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    BookCollectionViewCell *cell = (BookCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
-    [cell animationOpenBook];
+    RealBookView *cell = (RealBookView *)[collectionView cellForItemAtIndexPath:indexPath];
 }
 
 @end

@@ -11,6 +11,7 @@
 #import "FindViewController.h"
 #import "HomeViewController+Animation.h"
 #import "XHDrawerController.h"
+#import "DetailViewController.h"
 
 @implementation HomeViewController
 
@@ -43,6 +44,7 @@
     [self presentViewController:findViewController animated:YES completion:nil];
 }
 
+
 - (StackCollectionViewCell *)stackCollectionView:(StackCollectionView *)stackCollectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     BookCollectionView *cell = (BookCollectionView *)[stackCollectionView dequeueReusableCellWithReuseIdentifier:@"BookCollectionView" forIndexPath:indexPath];
     cell.delegate = self;
@@ -51,17 +53,30 @@
 }
 
 - (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index {
-    [self animatePushDetailViewController];
+    DetailViewController *detailViewController = [DetailViewController create];
+    detailViewController.modalPresentationStyle = UIModalPresentationCustom;
+    detailViewController.transitioningDelegate = self;
+    [self presentViewController:detailViewController animated:YES completion:nil];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    self.materialTransition.reverse = NO;
-    return self.materialTransition;
+    if ([presented isKindOfClass:[DetailViewController class]]) {
+        self.flipTransition.reverse = NO;
+        return self.flipTransition;
+    } else {
+        self.materialTransition.reverse = NO;
+        return self.materialTransition;
+    }
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    self.materialTransition.reverse = YES;
-    return self.materialTransition;
+    if ([dismissed isKindOfClass:[DetailViewController class]]) {
+        self.flipTransition.reverse = YES;
+        return self.flipTransition;
+    } else {
+        self.materialTransition.reverse = YES;
+        return self.materialTransition;
+    }
 }
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "DetailViewController.h"
-#import "BookCollectionViewCell.h"
 #import "BaseInfomationCelll.h"
 #import "MoreInfomationCell.h"
 #import "FeatureDescriptionCell.h"
@@ -47,6 +46,14 @@
     [self updateSelectionViewY];
 }
 
+- (IBAction)detailRetainButtonAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+- (IBAction)detailOnTrialButtonAction:(id)sender {
+    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
+    [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
+}
 
 - (void)updateSelectionViewY {
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:4];
@@ -513,14 +520,6 @@
     [cell setNeedsLayout];
     [cell layoutIfNeeded];
     return cell;
-}
-- (IBAction)detailRetainButtonAction:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-    
-}
-- (IBAction)detailOnTrialButtonAction:(id)sender {
-    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
-    [self.navigationController pushViewController:earlyAdoptersTheTrialViewController animated:YES];
 }
 
 @end
