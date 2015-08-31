@@ -10,8 +10,8 @@
 #import "BaseViewController.h"
 #import "BookCollectionView.h"
 #import "StackCollectionView.h"
-#import "BookAnimationView.h"
 #import "MaterialTransition.h"
+#import "FlipTransition.h"
 
 @interface HomeViewController : BaseViewController<UIViewControllerTransitioningDelegate, StackCollectionViewDataSource, StackCollectionViewDelegate, BookCollectionViewDelegate>
 
@@ -25,8 +25,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *updateTimeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *updateTimeImageView;
 @property (weak, nonatomic) IBOutlet UIView *topViewContainer;
+
 @property (strong, nonatomic) StackCollectionView *stackCollectionView;
-@property (strong, nonatomic) BookAnimationView *bookAnimationView;
 @property (nonatomic, strong) MaterialTransition *materialTransition;
+@property (nonatomic, strong) FlipTransition *flipTransition;
 
 @end

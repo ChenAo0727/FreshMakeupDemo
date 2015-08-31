@@ -7,7 +7,6 @@
 //
 
 #import "DetailViewController.h"
-#import "BookCollectionViewCell.h"
 #import "BaseInfomationCelll.h"
 #import "MoreInfomationCell.h"
 #import "FeatureDescriptionCell.h"
