@@ -18,6 +18,14 @@
     return bookCollectionView;
 }
 
+- (void)startSpriteAnimation {
+    [self.downGuideImageView startAnimating];
+}
+
+- (void)stopSpriteAnimation {
+    [self.downGuideImageView stopAnimating];
+}
+
 - (void)updateWithCurrentIndex:(NSInteger)index {
     //NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
 }
@@ -31,6 +39,10 @@
     self.lineCollectionView.delegate = self;
     [self.lineCollectionView registerNib:[UINib nibWithNibName:@"RealBookView" bundle:nil] forCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL];
     [self configureGuiAnimation];
+}
+
+- (void)dealloc {
+    [self.downGuideImageView stopAnimating];
 }
 
 - (void)configureGuiAnimation {

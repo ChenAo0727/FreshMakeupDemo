@@ -20,6 +20,8 @@
 @property (weak, nonatomic) id<BookCollectionViewDelegate>delegate;
 
 - (void)updateWithCurrentIndex:(NSInteger)index;
+- (void)startSpriteAnimation;
+- (void)stopSpriteAnimation;
 
 @end
 

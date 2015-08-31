@@ -59,6 +59,16 @@
     return 6;
 }
 
+- (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    BookCollectionView *bookCollectionView = (BookCollectionView *)cell;
+    [bookCollectionView stopSpriteAnimation];
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    BookCollectionView *bookCollectionView = (BookCollectionView *)cell;
+    [bookCollectionView startSpriteAnimation];
+}
+
 - (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index {
     DetailViewController *detailViewController = [DetailViewController create];
     detailViewController.modalPresentationStyle = UIModalPresentationCustom;
