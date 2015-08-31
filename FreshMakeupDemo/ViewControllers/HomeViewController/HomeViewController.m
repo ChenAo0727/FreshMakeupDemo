@@ -45,12 +45,18 @@
     [self presentViewController:findViewController animated:YES completion:nil];
 }
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    BookCollectionView *bookCollectionView = [tableView dequeueReusableCellWithIdentifier:@"BookCollectionView" forIndexPath:indexPath];
+    bookCollectionView.delegate = self;
+    return bookCollectionView;
+}
 
-- (StackCollectionViewCell *)stackCollectionView:(StackCollectionView *)stackCollectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    BookCollectionView *cell = (BookCollectionView *)[stackCollectionView dequeueReusableCellWithReuseIdentifier:@"BookCollectionView" forIndexPath:indexPath];
-    cell.delegate = self;
-    [cell updateWithCurrentIndex:2];
-    return cell;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return tableView.frame.size.height;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 6;
 }
 
 - (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index {

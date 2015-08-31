@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
 
-#import "StackCollectionViewCell.h"
+#import <UIKit/UIKit.h>
 
 @protocol BookCollectionViewDelegate;
 
-@interface BookCollectionView :StackCollectionViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
+@interface BookCollectionView :UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *lineCollectionView;
 @property (strong, nonatomic) NSMutableArray *images;
