@@ -184,6 +184,9 @@
 		2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA821B8AD6130044BAF0 /* selection_like_image.png */; };
 		2EFAEA851B8AD6130044BAF0 /* selection_unlike_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA831B8AD6130044BAF0 /* selection_unlike_image.png */; };
 		2EFAEA8D1B8B1D3D0044BAF0 /* DetailViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA8C1B8B1D3D0044BAF0 /* DetailViewController+Animation.m */; };
+		380D8F7B1B8C37AF000FA98C /* CommentViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7A1B8C37AF000FA98C /* CommentViewLayout.m */; };
+		380D8F7F1B8C5369000FA98C /* HeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */; };
+		380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -449,6 +452,11 @@
 		2EFAEA831B8AD6130044BAF0 /* selection_unlike_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_unlike_image.png; sourceTree = "<group>"; };
 		2EFAEA8B1B8B1D3D0044BAF0 /* DetailViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DetailViewController+Animation.h"; sourceTree = "<group>"; };
 		2EFAEA8C1B8B1D3D0044BAF0 /* DetailViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DetailViewController+Animation.m"; sourceTree = "<group>"; };
+		380D8F791B8C37AF000FA98C /* CommentViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewLayout.h; sourceTree = "<group>"; };
+		380D8F7A1B8C37AF000FA98C /* CommentViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewLayout.m; sourceTree = "<group>"; };
+		380D8F7C1B8C5369000FA98C /* HeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewCell.h; sourceTree = "<group>"; };
+		380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewCell.m; sourceTree = "<group>"; };
+		380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
 		497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6BEAE562AD3319ADF4371D12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1027,6 +1035,11 @@
 				2E8E27971B804BE000687E1B /* CommentViewController.h */,
 				2E8E27981B804BE000687E1B /* CommentViewController.m */,
 				2E8E27991B804BE000687E1B /* CommentViewController.xib */,
+				380D8F791B8C37AF000FA98C /* CommentViewLayout.h */,
+				380D8F7A1B8C37AF000FA98C /* CommentViewLayout.m */,
+				380D8F7C1B8C5369000FA98C /* HeaderViewCell.h */,
+				380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */,
+				380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */,
 			);
 			path = CommentViewController;
 			sourceTree = "<group>";
@@ -1252,7 +1265,6 @@
 				054DFD4B1B81AAEE00651F11 /* apply_power.png in Resources */,
 				2E7EB50A1B877FAA00DA6494 /* detail_argument_image.png in Resources */,
 				2E7706931B883C4E0024282D /* detail_approve_clicked_icon.png in Resources */,
-				057A265B1B875256003DAF07 /* FindAutomatiRollingView.xib in Resources */,
 				059E88D71B8431460086544F /* title2.png in Resources */,
 				2EB611B91B8755A7000414A2 /* ImageCell.xib in Resources */,
 				2E8C33E61B7DEC79006B5BC0 /* LaunchScreen.xib in Resources */,
@@ -1268,6 +1280,7 @@
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				053BFEA31B84AD80002058BA /* simhei.ttf in Resources */,
 				2E77067E1B8813FE0024282D /* detail_keepwet_icon.png in Resources */,
+				380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */,
 				2EB611A21B86EFDF000414A2 /* BaseInfomationCell.xib in Resources */,
 				2EB611B31B874570000414A2 /* OwnerSayCell.xib in Resources */,
 				2E77068F1B883C460024282D /* detail_approve_icon.png in Resources */,
@@ -1426,6 +1439,7 @@
 				2E6B463F1B819DB800BF39D5 /* DetailViewController.m in Sources */,
 				2E8C342A1B7DF3DC006B5BC0 /* UIView+CommonSuperview.m in Sources */,
 				2E6B46371B81755600BF39D5 /* BookCollectionViewCell.m in Sources */,
+				380D8F7F1B8C5369000FA98C /* HeaderViewCell.m in Sources */,
 				2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */,
 				057A26421B86CDB2003DAF07 /* XHZoomDrawerView.m in Sources */,
 				054DFD5A1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.m in Sources */,
@@ -1463,6 +1477,7 @@
 				059E88CE1B841BB20086544F /* FindViewController+Configuration.m in Sources */,
 				2EB611A11B86EFDF000414A2 /* BaseInfomationCell.m in Sources */,
 				2EB611B81B8755A7000414A2 /* ImageCell.m in Sources */,
+				380D8F7B1B8C37AF000FA98C /* CommentViewLayout.m in Sources */,
 				057A264F1B86D08C003DAF07 /* MineViewController+Configuratin.m in Sources */,
 				2E8C344A1B7DF46E006B5BC0 /* UIColor+Utility.m in Sources */,
 				2E8C34071B7DF2B7006B5BC0 /* HomeViewController.m in Sources */,

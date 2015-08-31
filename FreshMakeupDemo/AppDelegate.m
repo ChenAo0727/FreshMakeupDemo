@@ -10,6 +10,7 @@
 #import "HomeViewController.h"
 //#import "FindViewController.h"
 #import "DetailViewController.h"
+#import "CommentViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,7 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[DetailViewController create]];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[CommentViewController create]];
     self.navigationController.navigationBarHidden = YES;
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
