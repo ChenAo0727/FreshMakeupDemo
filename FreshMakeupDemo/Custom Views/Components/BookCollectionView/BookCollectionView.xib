@@ -4,11 +4,16 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="simhei.ttf">
+            <string>SimHei</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BookCollectionView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="agM-nk-6q4">
@@ -21,21 +26,71 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29S-n1-PLH">
+                    <rect key="frame" x="0.0" y="400" width="320" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新鲜惠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJw-zb-1Ln">
+                            <rect key="frame" x="122" y="0.0" width="76" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="76" id="TeB-99-DBt"/>
+                                <constraint firstAttribute="height" constant="21" id="rJw-tz-exX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SimHei" family="SimHei" pointSize="18"/>
+                            <color key="textColor" red="0.67450980390000004" green="0.67843137249999996" blue="0.66274509800000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kge-dH-EMx" userLabel="lineView">
+                            <rect key="frame" x="120" y="22" width="80" height="1"/>
+                            <color key="backgroundColor" red="0.70588235290000001" green="0.70980392160000005" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="Jvv-zd-Xtk"/>
+                                <constraint firstAttribute="height" constant="1" id="oQi-f0-KWl"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_down_guide1.png" translatesAutoresizingMaskIntoConstraints="NO" id="emO-Sm-BoH">
+                            <rect key="frame" x="130" y="24" width="60" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="Ifq-Se-qqt"/>
+                                <constraint firstAttribute="height" constant="29" id="vqt-3T-aaR"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="AUK-jq-1Dr"/>
+                        <constraint firstAttribute="centerX" secondItem="oJw-zb-1Ln" secondAttribute="centerX" id="ExW-gz-Rny"/>
+                        <constraint firstItem="oJw-zb-1Ln" firstAttribute="top" secondItem="29S-n1-PLH" secondAttribute="top" id="Fwr-QC-G6Q"/>
+                        <constraint firstAttribute="centerX" secondItem="emO-Sm-BoH" secondAttribute="centerX" id="Qp7-dz-w5h"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="TrB-lK-Nn3"/>
+                        <constraint firstItem="Kge-dH-EMx" firstAttribute="top" secondItem="oJw-zb-1Ln" secondAttribute="bottom" constant="1" id="YNY-3I-K5P"/>
+                        <constraint firstAttribute="centerX" secondItem="Kge-dH-EMx" secondAttribute="centerX" id="YyA-Qf-UyY"/>
+                        <constraint firstItem="emO-Sm-BoH" firstAttribute="top" secondItem="Kge-dH-EMx" secondAttribute="bottom" constant="1" id="uIe-HV-UJ1"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="agM-nk-6q4" secondAttribute="bottom" id="7sD-Ba-sIh"/>
+                <constraint firstItem="29S-n1-PLH" firstAttribute="top" secondItem="agM-nk-6q4" secondAttribute="bottom" id="A5K-A8-dYr"/>
                 <constraint firstAttribute="trailing" secondItem="agM-nk-6q4" secondAttribute="trailing" id="DeD-el-piS"/>
+                <constraint firstAttribute="bottom" secondItem="29S-n1-PLH" secondAttribute="bottom" id="JMY-hT-NuJ"/>
                 <constraint firstItem="agM-nk-6q4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LSo-oO-PMF"/>
+                <constraint firstAttribute="trailing" secondItem="29S-n1-PLH" secondAttribute="trailing" id="WHQ-YY-pZJ"/>
+                <constraint firstItem="29S-n1-PLH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kgW-Xe-Hjz"/>
                 <constraint firstItem="agM-nk-6q4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="odQ-cH-9QB"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="downGuideImageView" destination="emO-Sm-BoH" id="KZz-wN-se8"/>
                 <outlet property="lineCollectionView" destination="agM-nk-6q4" id="quZ-QV-ahE"/>
+                <outlet property="lineView" destination="Kge-dH-EMx" id="5HK-88-7O1"/>
+                <outlet property="nextStackTitleLabel" destination="oJw-zb-1Ln" id="NCC-07-6wO"/>
             </connections>
             <point key="canvasLocation" x="248" y="357"/>
         </view>
     </objects>
+    <resources>
+        <image name="home_down_guide1.png" width="90" height="65"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

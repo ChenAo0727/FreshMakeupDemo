@@ -25,7 +25,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [self.downGuideImageView startAnimating];
+//    [self.downGuideImageView startAnimating];
 }
 
 - (NSInteger)stackCollectionView:(StackCollectionView *)stackCollectionView numberOfItemsInSection:(NSInteger)section {

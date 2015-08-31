@@ -18,9 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *leftIconImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *rightIconImageView;
-@property (weak, nonatomic) IBOutlet UILabel *nextStackTitleLabel;
-@property (weak, nonatomic) IBOutlet UIView *lineView;
-@property (weak, nonatomic) IBOutlet UIImageView *downGuideImageView;
 @property (weak, nonatomic) IBOutlet UILabel *updateTimeLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *updateTimeImageView;
 @property (weak, nonatomic) IBOutlet UIView *topViewContainer;

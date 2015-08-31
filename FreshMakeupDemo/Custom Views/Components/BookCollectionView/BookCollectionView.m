@@ -12,14 +12,6 @@
 
 @implementation BookCollectionView
 
-- (void)configureImages {
-    self.images = [[NSMutableArray alloc] init];
-    
-    for (int i = 1; i<=12; i++) {
-        [self.images addObject:@"home_book_image"];
-    }
-}
-
 + (instancetype)create {
     BookCollectionView *bookCollectionView = [[[NSBundle mainBundle] loadNibNamed:@"BookCollectionView" owner:nil options:nil] lastObject];
     bookCollectionView.translatesAutoresizingMaskIntoConstraints = NO;
@@ -31,7 +23,6 @@
 }
 
 - (void)awakeFromNib {
-    [self configureImages];
     // 创建布局
     LineLayout *layout = [[LineLayout alloc] init];
     // 创建collectionView
@@ -39,12 +30,18 @@
     self.lineCollectionView.dataSource = self;
     self.lineCollectionView.delegate = self;
     [self.lineCollectionView registerNib:[UINib nibWithNibName:@"RealBookView" bundle:nil] forCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL];
+    [self configureGuiAnimation];
+}
+
+- (void)configureGuiAnimation {
+    [self.downGuideImageView setAnimationImages:@[[UIImage imageNamed:@"home_down_guide1"], [UIImage imageNamed:@"home_down_guide2"], [UIImage imageNamed:@"home_down_guide3"]]];
+    [self.downGuideImageView setAnimationDuration:1];
 }
 
 #pragma mark - <UICollectionViewDataSource>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return self.images.count;
+    return 7;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

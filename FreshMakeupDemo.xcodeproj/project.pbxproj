@@ -103,7 +103,6 @@
 		2E132F8A1B85B0E7005DCF14 /* home_down_guide2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F871B85B0E7005DCF14 /* home_down_guide2.png */; };
 		2E132F8B1B85B0E7005DCF14 /* home_down_guide3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F881B85B0E7005DCF14 /* home_down_guide3.png */; };
 		2E132F8E1B85B505005DCF14 /* HomeViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E132F8D1B85B505005DCF14 /* HomeViewController+Configuration.m */; };
-		2E132F911B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E132F901B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m */; };
 		2E132F941B85BC5C005DCF14 /* HomeViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E132F931B85BC5C005DCF14 /* HomeViewController+Animation.m */; };
 		2E21BAD11B897F91001F75D8 /* detail_cover_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E21BAD01B897F91001F75D8 /* detail_cover_image.png */; };
 		2E4C0C7F1B900AA100ECD2BF /* RealBookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4C0C7D1B900AA100ECD2BF /* RealBookView.m */; };
@@ -328,8 +327,6 @@
 		2E132F881B85B0E7005DCF14 /* home_down_guide3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_down_guide3.png; sourceTree = "<group>"; };
 		2E132F8C1B85B505005DCF14 /* HomeViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeViewController+Configuration.h"; sourceTree = "<group>"; };
 		2E132F8D1B85B505005DCF14 /* HomeViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeViewController+Configuration.m"; sourceTree = "<group>"; };
-		2E132F8F1B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeViewController+StackCollectionViewDelegate.h"; sourceTree = "<group>"; };
-		2E132F901B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeViewController+StackCollectionViewDelegate.m"; sourceTree = "<group>"; };
 		2E132F921B85BC5C005DCF14 /* HomeViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HomeViewController+Animation.h"; sourceTree = "<group>"; };
 		2E132F931B85BC5C005DCF14 /* HomeViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HomeViewController+Animation.m"; sourceTree = "<group>"; };
 		2E21BAD01B897F91001F75D8 /* detail_cover_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail_cover_image.png; sourceTree = "<group>"; };
@@ -867,8 +864,6 @@
 				2E8C34061B7DF2B7006B5BC0 /* HomeViewController.xib */,
 				2E132F8C1B85B505005DCF14 /* HomeViewController+Configuration.h */,
 				2E132F8D1B85B505005DCF14 /* HomeViewController+Configuration.m */,
-				2E132F8F1B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.h */,
-				2E132F901B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m */,
 				2E132F921B85BC5C005DCF14 /* HomeViewController+Animation.h */,
 				2E132F931B85BC5C005DCF14 /* HomeViewController+Animation.m */,
 			);
@@ -1497,7 +1492,6 @@
 				057A26501B86D08C003DAF07 /* MineViewControllerDataSource.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */,
-				2E132F911B85B61D005DCF14 /* HomeViewController+StackCollectionViewDelegate.m in Sources */,
 				2E7706781B8812E10024282D /* FeatureDescriptionCell.m in Sources */,
 				2E7706721B88085A0024282D /* MoreInfomationCell.m in Sources */,
 				2E8C34111B7DF361006B5BC0 /* UINavigationController+CustomNavigationController.m in Sources */,

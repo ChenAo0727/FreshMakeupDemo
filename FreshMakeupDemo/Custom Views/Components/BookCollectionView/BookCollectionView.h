@@ -13,6 +13,9 @@
 @interface BookCollectionView :UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *lineCollectionView;
+@property (weak, nonatomic) IBOutlet UILabel *nextStackTitleLabel;
+@property (weak, nonatomic) IBOutlet UIView *lineView;
+@property (weak, nonatomic) IBOutlet UIImageView *downGuideImageView;
 @property (strong, nonatomic) NSMutableArray *images;
 @property (weak, nonatomic) id<BookCollectionViewDelegate>delegate;
 

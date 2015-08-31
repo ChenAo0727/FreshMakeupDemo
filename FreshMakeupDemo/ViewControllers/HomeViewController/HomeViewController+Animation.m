@@ -16,9 +16,9 @@
     [UIView animateWithDuration:0.2 animations:^{
         self.updateTimeLabel.alpha = 1;
         self.updateTimeImageView.alpha = 1;
-        self.downGuideImageView.alpha = 1;
+        //self.downGuideImageView.alpha = 1;
     } completion:^(BOOL finished) {
-        [self.downGuideImageView startAnimating];
+        //[self.downGuideImageView startAnimating];
     }];
 }
 
