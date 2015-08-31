@@ -25,6 +25,9 @@
     [self configureViews];
    
 }
+- (void)dealloc {
+    [self.timer setFireDate:[NSDate distantFuture]];
+}
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 1) {
         return 1;

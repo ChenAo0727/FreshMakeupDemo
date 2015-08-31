@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface MaterialTransition : NSObject<UIViewControllerAnimatedTransitioning>
 
 @property (getter=isReverse) BOOL reverse;
 @property (nonatomic) CGRect startFrame;
-
 @end

@@ -13,7 +13,6 @@
 - (void)awakeFromNib {
     UIImage *image = [UIImage imageNamed:@"apply_head_product.png"];
     [self.titleImageView setImage:image];
-   
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -24,8 +23,9 @@
 
 
 - (void)startTimer {
-    [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerFire) userInfo:nil repeats:YES];
+   self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerFire) userInfo:nil repeats:YES];
 }
+
 - (void)timerFire {
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [[NSDateComponents alloc] init];
@@ -40,6 +40,9 @@
     unsigned int unitFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
     NSDateComponents *d = [calendar components:unitFlags fromDate:today toDate:fireDate options:0];//计算时间差
     self.titltImageViewTimerLabel.text = [NSString stringWithFormat:@"%ld小时%ld分%ld秒",(long)[d hour], (long)[d minute], (long)[d second]];//倒计时显示
-    
+}
+
+- (void)dealloc {
+    [self.timer setFireDate:[NSDate distantFuture]];
 }
 @end

@@ -18,6 +18,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleImageViewTitltLabel;
 @property (strong, nonatomic) IBOutlet UILabel *titleImageViewTime;
 @property (strong, nonatomic) IBOutlet UILabel *titltImageViewTimerLabel;
+@property (strong, nonatomic) NSTimer *timer;
 - (void)startTimer;
-
 @end

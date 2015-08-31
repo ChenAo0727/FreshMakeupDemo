@@ -9,13 +9,10 @@
 #import "MaterialTransition.h"
 #import "UIImage+Utility.h"
 #import "UIScreen+Utility.h"
-
 @implementation MaterialTransition
-
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
     return 0.5;
 }
-
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     CGRect startFrame = [transitionContext.containerView.superview convertRect:self.startFrame toView:transitionContext.containerView];
     UIViewController *toViewController = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
@@ -86,6 +83,7 @@
 
 - (UIView *)generateViewIfNotReverseWithStartFrame:(CGRect)startFrame {
     UIView *animatedViewForTransition = [[UIView alloc] initWithFrame:startFrame];
+    animatedViewForTransition.backgroundColor = [UIColor redColor];
     animatedViewForTransition.layer.cornerRadius = animatedViewForTransition.frame.size.width / 2;
     animatedViewForTransition.clipsToBounds = YES;
     return animatedViewForTransition;

@@ -32,7 +32,6 @@
         self.contentContainerView.layer.shadowOffset = CGSizeMake(0, 0);
         self.contentContainerView.layer.shadowOpacity = 0.8;
         self.contentContainerView.layer.shadowColor = [UIColor grayColor].CGColor;
-        
         // 中间内容按钮
         _contentContainerButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.contentContainerButton.frame = self.contentContainerView.bounds;
@@ -60,5 +59,4 @@
     _backgroundView = backgroundView;
     [self insertSubview:self.backgroundView atIndex:0];
 }
-
 @end

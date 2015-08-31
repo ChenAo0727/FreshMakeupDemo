@@ -171,7 +171,6 @@
         } else {
             [self returnRightAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
         }
-        
     } else if (self.set > 0 && self.set < 190) {
         if (self.num == 0) {
             [self returnLeftAnimationView:self.imageViewFour ViewTow:self.imageViewOne];

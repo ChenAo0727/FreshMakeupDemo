@@ -28,7 +28,6 @@
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
 }
-
 - (void)shakeImageAction {
     self.shakeView.alpha = 0;
 }
