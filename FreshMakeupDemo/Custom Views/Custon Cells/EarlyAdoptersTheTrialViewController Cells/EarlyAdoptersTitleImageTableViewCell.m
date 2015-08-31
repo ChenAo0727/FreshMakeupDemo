@@ -23,7 +23,7 @@
 
 
 - (void)startTimer {
-   self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerFire) userInfo:nil repeats:YES];
+   self.timerCell = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerFire) userInfo:nil repeats:YES];
 }
 
 - (void)timerFire {
@@ -43,6 +43,6 @@
 }
 
 - (void)dealloc {
-    [self.timer setFireDate:[NSDate distantFuture]];
+    [self.timerCell setFireDate:[NSDate distantFuture]];
 }
 @end

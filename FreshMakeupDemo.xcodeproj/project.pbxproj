@@ -83,6 +83,8 @@
 		05D3CDED1B8D8FB100DD1667 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDEC1B8D8FB100DD1667 /* share.png */; };
 		05D3CDEF1B8D8FB600DD1667 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDEE1B8D8FB600DD1667 /* back.png */; };
 		05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDF01B8D8FBC00DD1667 /* try.png */; };
+		05D5F3691B944FBE0080AE64 /* ShakeAshakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5F3681B944FBE0080AE64 /* ShakeAshakeView.m */; };
+		05D5F36B1B944FEA0080AE64 /* ShakeAshakeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */; };
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		05DEA0541B880C560094E123 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA0521B880C560094E123 /* black.png */; };
@@ -307,6 +309,9 @@
 		05D3CDEC1B8D8FB100DD1667 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		05D3CDEE1B8D8FB600DD1667 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		05D3CDF01B8D8FBC00DD1667 /* try.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = try.png; sourceTree = "<group>"; };
+		05D5F3671B944FBE0080AE64 /* ShakeAshakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeAshakeView.h; sourceTree = "<group>"; };
+		05D5F3681B944FBE0080AE64 /* ShakeAshakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeAshakeView.m; sourceTree = "<group>"; };
+		05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeAshakeView.xib; sourceTree = "<group>"; };
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05DEA0521B880C560094E123 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -672,6 +677,16 @@
 			path = FindViewController;
 			sourceTree = "<group>";
 		};
+		05D5F3661B944F910080AE64 /* ShakeAshakeView */ = {
+			isa = PBXGroup;
+			children = (
+				05D5F3671B944FBE0080AE64 /* ShakeAshakeView.h */,
+				05D5F3681B944FBE0080AE64 /* ShakeAshakeView.m */,
+				05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */,
+			);
+			path = ShakeAshakeView;
+			sourceTree = "<group>";
+		};
 		05DEA0561B8858CB0094E123 /* Shake a shakeImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -945,6 +960,7 @@
 				2E92F5441B7E4EA800C14B7A /* BookCollectionView */,
 				057A263B1B86CD69003DAF07 /* MineCollectionView */,
 				059C68891B8EE29700902C97 /* SeeMoreView */,
+				05D5F3661B944F910080AE64 /* ShakeAshakeView */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -1356,6 +1372,7 @@
 				2E8C33E31B7DEC79006B5BC0 /* Images.xcassets in Resources */,
 				2E7706951B8845D10024282D /* detail_avatar_image.jpg in Resources */,
 				058ABF4F1B82C58100A0BA8A /* findarticle1.png in Resources */,
+				05D5F36B1B944FEA0080AE64 /* ShakeAshakeView.xib in Resources */,
 				058ABF6D1B830A8E00A0BA8A /* RollCollectionViewCell.xib in Resources */,
 				2E7706731B88085A0024282D /* MoreInfomationCell.xib in Resources */,
 				2E77069B1B88890D0024282D /* TrialCollectionViewCell.xib in Resources */,
@@ -1490,6 +1507,7 @@
 				2E132F8E1B85B505005DCF14 /* HomeViewController+Configuration.m in Sources */,
 				054DFD401B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m in Sources */,
 				054DFD351B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m in Sources */,
+				05D5F3691B944FBE0080AE64 /* ShakeAshakeView.m in Sources */,
 				2E7DC93F1B82D2D300152A0B /* StackCollectionView+Caculation.m in Sources */,
 				2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */,
 				2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */,

@@ -14,6 +14,10 @@
 }
 - (void)awakeFromNib {
     // Initialization code
+    self.earlyLeftView.layer.borderWidth = 1;
+    self.earlyLeftView.layer.borderColor = [UIColor colorFromHexCode:@"#9bd5d3"].CGColor;
+    self.earlyRightView.layer.borderWidth = 1;
+    self.earlyRightView.layer.borderColor = [UIColor colorFromHexCode:@"#9bd5d3"].CGColor;
     approveTransform = self.earlyClickLeftButton.transform;
     commentTransform = self.earlyClickRightButton.transform;
 }

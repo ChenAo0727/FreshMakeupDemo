@@ -9,7 +9,25 @@
 #import "FindViewController+Animation.h"
 
 @implementation FindViewController (Animation)
-
+- (void)findThreeDimensional {
+    if (self.num == 0) {
+        [self animationLeftView:self.imageViewOne viewTow:self.imageViewTow viewThree:self.imageViewFour];
+        self.pageControl.currentPage = self.num + 1;
+        self.num = 1;
+    } else if (self.num == 1) {
+        [self animationLeftView:self.imageViewTow viewTow:self.imageViewThree viewThree:self.imageViewOne];
+        self.pageControl.currentPage = self.num + 1;
+        self.num = 2;
+    } else if (self.num == 2) {
+        [self animationLeftView:self.imageViewThree viewTow:self.imageViewFour viewThree:self.imageViewTow];
+        self.pageControl.currentPage = self.num + 1;
+        self.num = 3;
+    } else {
+        [self animationLeftView:self.imageViewFour viewTow:self.imageViewOne viewThree:self.imageViewThree];
+        self.pageControl.currentPage = 0;
+        self.num = 0;
+    }
+}
 - (void)findRightDimensional {
     if (self.num == 0) {
         [self animationReghtView:self.imageViewFour viewTow:self.imageViewOne   viewThree:self.imageViewThree];
