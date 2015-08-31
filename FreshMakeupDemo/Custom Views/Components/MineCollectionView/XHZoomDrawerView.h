@@ -16,5 +16,4 @@
 @property (nonatomic, strong) UIView *contentContainerView;
 @property (nonatomic, strong) UIView *leftContainerView;
 @property (nonatomic, strong) UIButton *contentContainerButton;
-
 @end

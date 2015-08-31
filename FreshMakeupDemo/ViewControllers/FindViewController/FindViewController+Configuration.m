@@ -171,7 +171,6 @@
         } else {
             [self returnRightAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
         }
-        
     } else if (self.set > 0 && self.set < 190) {
         if (self.num == 0) {
             [self returnLeftAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
@@ -186,6 +185,6 @@
     } else if (self.set > 190) {
         [self findRightDimensional];
     }
-   self.timer = [NSTimer scheduledTimerWithTimeInterval:6 target:self selector:@selector(findThreeDimensional) userInfo:nil repeats:YES];
+     self.timer = [NSTimer scheduledTimerWithTimeInterval:6 target:self selector:@selector(findThreeDimensional) userInfo:nil repeats:YES];
 }
 @end

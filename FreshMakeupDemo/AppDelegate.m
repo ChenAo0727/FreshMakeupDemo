@@ -26,7 +26,6 @@
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:[HomeViewController create]];
     self.navigationController.navigationBarHidden = YES;
 //    MineViewController *mineViewController = [MineViewController create];
-//    
 //    XHDrawerController *xhDrawerController = [[XHDrawerController alloc] init];
 //    xhDrawerController.leftViewController = mineViewController;
 //    xhDrawerController.centerViewController = self.navigationController;
