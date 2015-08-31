@@ -10,4 +10,9 @@
 
 @interface FindViewController (Animation)
 - (void)findThreeDimensional;
+- (void)findRightDimensional;
+- (void)findLeftView:(UIView *)viewOne ViewTow:(UIView *)viewTow;
+- (void)findRightView:(UIView *)viewOne ViewTow:(UIView *)viewTow;
+- (void)returnLeftAnimationView:(UIView *)viewOne ViewTow:(UIView *)viewTow;
+- (void)returnRightAnimationView:(UIView *)viewOne ViewTow:(UIView *)viewTow;
 @end

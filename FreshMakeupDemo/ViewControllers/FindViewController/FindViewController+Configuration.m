@@ -50,7 +50,6 @@
     self.rollCollectionView.showsHorizontalScrollIndicator = NO;
     self.rollCollectionViewDataSource = [RollCollectionViewDataSource new];
     self.rollCollectionView.dataSource = self.rollCollectionViewDataSource;
-    self.rollCollectionView.delegate = self;
     [rollView addSubview: self.rollCollectionView];
     //提前注册
     [self.rollCollectionView registerNib:[UINib nibWithNibName:@"RollCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:ROLL_COLLECTIONVIEW_CELL];
@@ -100,7 +99,7 @@
 #pragma mark 手势 添加
 - (void)slideMotinEdit {
     self.slideMotion = [SlideMotion new];
-    self.slideMotion.direction = SlideMotionDirectionLeft;
+    self.slideMotion.direction = SlideMotionDirectionLeft &SlideMotionDirectionRight;
     self.slideMotion.delegate = self;
     self.slideMotion.dataSource = self;
     [self.slideMotion attachToView:self.findAutomatiView];
@@ -116,7 +115,7 @@
     self.imageViewThree = [[UIImageView alloc] initWithFrame:CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height)];
     self.imageViewThree.image = self.imageThree;
     [self.findAutomatiView addSubview:self.imageViewThree];
-    self.imageViewFour = [[UIImageView alloc] initWithFrame:CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height)];
+    self.imageViewFour = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height)];
     self.imageViewFour.image = self.imageFour;
     [self.findAutomatiView addSubview:self.imageViewFour];
 }
@@ -128,35 +127,65 @@
 }
 #define mark SlideMotion -delegate
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
-    NSInteger set = [[NSString stringWithFormat:@"%g",offset] integerValue];
-    if (set < 0) {
-        set = set / (-1);
-    }
+    self.set = [[NSString stringWithFormat:@"%g",offset] integerValue];
+    if (self.set < 0) {
     if (self.num == 0) {
-        self.imageViewOne.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width - set, self.findAutomatiView.frame.size.height);
-        self.imageViewTow.frame = CGRectMake(self.findAutomatiView.frame.size.width - set, 0, set, self.findAutomatiView.frame.size.height);
-        
+        [self findLeftView:self.imageViewOne ViewTow:self.imageViewTow];
     } else if (self.num == 1) {
-        self.imageViewTow.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width - set, self.findAutomatiView.frame.size.height);
-        self.imageViewThree.frame = CGRectMake(self.findAutomatiView.frame.size.width - set, 0, set, self.findAutomatiView.frame.size.height);
-
+        [self findLeftView:self.imageViewTow ViewTow:self.imageViewThree];
     } else if (self.num == 2) {
-        self.imageViewThree.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width - set, self.findAutomatiView.frame.size.height);
-        self.imageViewFour.frame = CGRectMake(self.findAutomatiView.frame.size.width - set, 0, set, self.findAutomatiView.frame.size.height);
-        
+        [self findLeftView:self.imageViewThree ViewTow:self.imageViewFour];
     } else {
-        self.imageViewFour.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width - set, self.findAutomatiView.frame.size.height);
-        self.imageViewOne.frame = CGRectMake(self.findAutomatiView.frame.size.width - set, 0, set, self.findAutomatiView.frame.size.height);
+        [self findLeftView:self.imageViewFour ViewTow:self.imageViewOne];
     }
-    
+    } else {
+        if (self.num == 0) {
+            [self findRightView:self.imageViewFour ViewTow:self.imageViewOne];
+        } else if (self.num == 1) {
+            [self findRightView:self.imageViewOne ViewTow:self.imageViewTow];
+        } else if (self.num == 2) {
+            [self findRightView:self.imageViewTow ViewTow:self.imageViewThree];
+        } else {
+            [self findRightView:self.imageViewThree ViewTow:self.imageViewFour];
+        }
+
+       
+    }
 }
 //关闭 定时器
 - (void)slideMotion:(SlideMotion *)slideMotion willBeginSlideView:(UIView *)view {
    [self.timer setFireDate:[NSDate distantFuture]];
 }
 
-//开启 定时器
+//手势 结束 重启  动画
 - (void)slideMotion:(SlideMotion *)slideMotion didEndSlideView:(UIView *)view {
-   [self.timer setFireDate:[NSDate distantPast]];
+    if (self.set < -190 ) {
+        [self findThreeDimensional];
+    } else if (self.set > -190 && self.set < 0) {
+        if (self.num == 0) {
+            [self returnRightAnimationView:self.imageViewOne ViewTow:self.imageViewTow];
+        } else if (self.num == 1) {
+            [self returnRightAnimationView:self.imageViewTow ViewTow:self.imageViewThree];
+        } else if (self.num == 2) {
+            [self returnRightAnimationView:self.imageViewThree ViewTow:self.imageViewFour];
+        } else {
+            [self returnRightAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
+        }
+        
+    } else if (self.set > 0 && self.set < 190) {
+        if (self.num == 0) {
+            [self returnLeftAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
+        } else if (self.num == 1) {
+            [self returnLeftAnimationView:self.imageViewOne ViewTow:self.imageViewTow];
+        } else if (self.num == 2) {
+            [self returnLeftAnimationView:self.imageViewTow ViewTow:self.imageViewThree];
+        } else {
+            [self returnLeftAnimationView:self.imageViewThree ViewTow:self.imageViewFour];
+        }
+
+    } else if (self.set > 190) {
+        [self findRightDimensional];
+    }
+   self.timer = [NSTimer scheduledTimerWithTimeInterval:6 target:self selector:@selector(findThreeDimensional) userInfo:nil repeats:YES];
 }
 @end

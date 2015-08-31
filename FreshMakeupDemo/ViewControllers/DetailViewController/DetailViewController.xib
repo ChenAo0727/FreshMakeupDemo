@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -60,30 +60,69 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_user_info_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="3WW-Ox-w8D">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="3WW-Ox-w8D">
                                     <rect key="frame" x="13" y="12" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="ZPi-vf-70w"/>
                                         <constraint firstAttribute="height" constant="25" id="dTs-hE-Px6"/>
                                     </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_discovery_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="oRs-Kq-21o">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="oRs-Kq-21o">
                                     <rect key="frame" x="282" y="12" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="Cll-6p-xOy"/>
                                         <constraint firstAttribute="width" constant="25" id="OtD-6i-KsA"/>
                                     </constraints>
                                 </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="try.png" translatesAutoresizingMaskIntoConstraints="NO" id="dmA-Ir-xkh">
+                                    <rect key="frame" x="242" y="12" width="25" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="GZX-Ri-NHp"/>
+                                        <constraint firstAttribute="width" constant="25" id="yby-pG-sfC"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jHB-5E-BFh">
+                                    <rect key="frame" x="8" y="8" width="46" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="AmF-Jf-Wg1"/>
+                                        <constraint firstAttribute="width" constant="46" id="sC6-Yy-0da"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="detailRetainButtonAction:" destination="-1" eventType="touchUpInside" id="17X-34-BAi"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTZ-AW-vh3">
+                                    <rect key="frame" x="235" y="8" width="39" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="39" id="BYQ-KB-IX9"/>
+                                        <constraint firstAttribute="height" constant="32" id="Z8q-C5-lMf"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="detailOnTrialButtonAction:" destination="-1" eventType="touchUpInside" id="yeF-74-DP0"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="0b4-NU-UOX" firstAttribute="top" secondItem="wfF-4d-o1w" secondAttribute="top" id="1XG-11-4iu"/>
+                                <constraint firstAttribute="centerY" secondItem="jHB-5E-BFh" secondAttribute="centerY" id="5LH-CN-aWG"/>
+                                <constraint firstAttribute="bottom" secondItem="dmA-Ir-xkh" secondAttribute="bottom" constant="13" id="DGR-Lz-1fy"/>
                                 <constraint firstAttribute="centerX" secondItem="0b4-NU-UOX" secondAttribute="centerX" id="Prc-Pa-3ek"/>
+                                <constraint firstItem="jHB-5E-BFh" firstAttribute="leading" secondItem="wfF-4d-o1w" secondAttribute="leading" constant="8" id="RR2-2b-1bV"/>
+                                <constraint firstItem="oRs-Kq-21o" firstAttribute="leading" secondItem="dmA-Ir-xkh" secondAttribute="trailing" constant="15" id="XtY-KG-0yg"/>
+                                <constraint firstAttribute="centerY" secondItem="ZTZ-AW-vh3" secondAttribute="centerY" id="cuy-RY-ezK"/>
                                 <constraint firstAttribute="bottom" secondItem="0b4-NU-UOX" secondAttribute="bottom" id="iFu-hb-rRH"/>
                                 <constraint firstItem="3WW-Ox-w8D" firstAttribute="leading" secondItem="wfF-4d-o1w" secondAttribute="leading" constant="13" id="lIu-CY-z7T"/>
                                 <constraint firstAttribute="centerY" secondItem="3WW-Ox-w8D" secondAttribute="centerY" id="mvh-TJ-ewi"/>
                                 <constraint firstAttribute="centerY" secondItem="oRs-Kq-21o" secondAttribute="centerY" id="qxe-VP-A8Q"/>
                                 <constraint firstAttribute="trailing" secondItem="oRs-Kq-21o" secondAttribute="trailing" constant="13" id="rWB-jL-U8k"/>
+                                <constraint firstItem="oRs-Kq-21o" firstAttribute="leading" secondItem="ZTZ-AW-vh3" secondAttribute="trailing" constant="8" id="zRz-aK-Qxh"/>
                             </constraints>
                         </view>
                     </subviews>
@@ -117,9 +156,10 @@
         </view>
     </objects>
     <resources>
+        <image name="back.png" width="27" height="48"/>
         <image name="detail_top_image.png" width="720" height="600"/>
-        <image name="home_discovery_icon.png" width="50" height="50"/>
-        <image name="home_user_info_icon.png" width="50" height="50"/>
+        <image name="share.png" width="42" height="41"/>
+        <image name="try.png" width="42" height="41"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

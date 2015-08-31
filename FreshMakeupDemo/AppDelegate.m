@@ -30,8 +30,6 @@
 //    XHDrawerController *xhDrawerController = [[XHDrawerController alloc] init];
 //    xhDrawerController.leftViewController = mineViewController;
 //    xhDrawerController.centerViewController = self.navigationController;
-    
-    
     self.window.rootViewController = self.navigationController;
     [self.window makeKeyAndVisible];
     return YES;

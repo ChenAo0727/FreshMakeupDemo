@@ -44,6 +44,9 @@
         return 250;
     }
 }
+- (IBAction)earlyRetainButtonAction:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 
 - (void)didReceiveMemoryWarning {

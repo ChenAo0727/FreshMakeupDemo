@@ -12,8 +12,6 @@
     CGAffineTransform approveTransform;
     CGAffineTransform commentTransform;
 }
-
-
 - (void)awakeFromNib {
     // Initialization code
     approveTransform = self.earlyClickLeftButton.transform;
@@ -24,6 +22,7 @@
     [super setSelected:selected animated:animated];
     // Configure the view for the selected state
 }
+
 - (IBAction)earlyClickLeftButtonAction:(id)sender {
     CGAffineTransform transform = approveTransform;
     transform = CGAffineTransformScale(transform, 1.2, 1.2);

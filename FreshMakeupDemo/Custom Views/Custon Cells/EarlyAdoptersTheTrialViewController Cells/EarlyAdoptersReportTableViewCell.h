@@ -11,8 +11,12 @@
 #define EARLY_ADOPTERS_REPORT_TABLEVIEW_CELL @"EarlyAdoptersReportTableViewCell"
 @interface EarlyAdoptersReportTableViewCell : UITableViewCell
 - (CGFloat)getCellHeight;
-@property (strong, nonatomic) IBOutlet UIButton *earlyClickLeftButton;
-@property (strong, nonatomic) IBOutlet UILabel *earlyClickLeftLabel;
-@property (strong, nonatomic) IBOutlet UIButton *earlyClickRightButton;
-@property (strong, nonatomic) IBOutlet UILabel *earlyClickRightLabel;
+@property (weak, nonatomic) IBOutlet UIButton *earlyClickLeftButton;
+@property (weak, nonatomic) IBOutlet UILabel *earlyClickLeftLabel;
+@property (weak, nonatomic) IBOutlet UIButton *earlyClickRightButton;
+@property (weak, nonatomic) IBOutlet UIView *earlyView;
+@property (weak, nonatomic) IBOutlet UILabel *earlyClickRightLabel;
+@property (weak, nonatomic) IBOutlet UIView *earlyMainView;
+@property (weak, nonatomic) IBOutlet UIView *earlyLeftView;
+@property (weak, nonatomic) IBOutlet UIView *earlyRightView;
 @end

@@ -41,14 +41,14 @@
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="0VC-yc-5Xg">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="0VC-yc-5Xg">
                                     <rect key="frame" x="13" y="27" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="eMU-Bx-WJq"/>
                                         <constraint firstAttribute="height" constant="25" id="pkH-81-A6b"/>
                                     </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="try.png" translatesAutoresizingMaskIntoConstraints="NO" id="fDr-dh-PyQ">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="try.png" translatesAutoresizingMaskIntoConstraints="NO" id="fDr-dh-PyQ">
                                     <rect key="frame" x="249" y="27" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="6sE-XB-3z7"/>
@@ -57,19 +57,34 @@
                                         <constraint firstAttribute="width" constant="25" id="hUD-5D-Eip"/>
                                     </constraints>
                                 </imageView>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="CHa-h8-xDr">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="CHa-h8-xDr">
                                     <rect key="frame" x="287" y="27" width="25" height="25"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="Z4P-ec-eor"/>
                                         <constraint firstAttribute="height" constant="25" id="rL0-PE-p5G"/>
                                     </constraints>
                                 </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t0-BE-Gqy">
+                                    <rect key="frame" x="8" y="23" width="47" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="47" id="ICd-zy-Ers"/>
+                                        <constraint firstAttribute="height" constant="32" id="ZQW-zf-kT7"/>
+                                    </constraints>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="earlyRetainButtonAction:" destination="-1" eventType="touchUpInside" id="P05-Nh-IAM"/>
+                                    </connections>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstItem="CHa-h8-xDr" firstAttribute="leading" secondItem="fDr-dh-PyQ" secondAttribute="trailing" constant="13" id="6aF-Bk-4hN"/>
+                                <constraint firstItem="4t0-BE-Gqy" firstAttribute="leading" secondItem="fPd-SN-kaT" secondAttribute="leading" constant="8" id="6ft-Z1-apZ"/>
                                 <constraint firstAttribute="bottom" secondItem="CHa-h8-xDr" secondAttribute="bottom" constant="13" id="7j2-rg-vCD"/>
                                 <constraint firstAttribute="bottom" secondItem="7P3-s8-gsY" secondAttribute="bottom" id="Cz0-4X-8z2"/>
+                                <constraint firstAttribute="centerY" secondItem="4t0-BE-Gqy" secondAttribute="centerY" id="Eje-BO-SMX"/>
                                 <constraint firstAttribute="trailing" secondItem="CHa-h8-xDr" secondAttribute="trailing" constant="8" id="Erx-4i-rFN"/>
                                 <constraint firstItem="7P3-s8-gsY" firstAttribute="top" secondItem="fPd-SN-kaT" secondAttribute="top" constant="15" id="OBS-fJ-dEL"/>
                                 <constraint firstItem="0VC-yc-5Xg" firstAttribute="top" secondItem="fPd-SN-kaT" secondAttribute="top" constant="27" id="Rjf-s5-z3u"/>
