@@ -13,7 +13,7 @@
 
 + (instancetype)create {
     SelectionView *selectionView = [[[NSBundle mainBundle] loadNibNamed:@"SelectionView" owner:nil options:nil] lastObject];
-//    selectionView.translatesAutoresizingMaskIntoConstraints = NO;
+   selectionView.translatesAutoresizingMaskIntoConstraints = NO;
     return selectionView;
 }
 
