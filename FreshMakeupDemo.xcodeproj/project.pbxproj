@@ -177,6 +177,7 @@
 		2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */; };
 		2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA427461B7ED72000BF4705 /* home_book_image.png */; };
 		2EA556EF1B953A4300C696B0 /* DetailCollectionViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA556EE1B953A4300C696B0 /* DetailCollectionViewDatasource.m */; };
+		2EA556F21B95460400C696B0 /* DetailViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA556F11B95460400C696B0 /* DetailViewController+Configuration.m */; };
 		2EB6119C1B86ED62000414A2 /* detail_top_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EB6119B1B86ED62000414A2 /* detail_top_image.png */; };
 		2EB611A11B86EFDF000414A2 /* BaseInfomationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB6119F1B86EFDF000414A2 /* BaseInfomationCell.m */; };
 		2EB611A21B86EFDF000414A2 /* BaseInfomationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB611A01B86EFDF000414A2 /* BaseInfomationCell.xib */; };
@@ -454,6 +455,8 @@
 		2EA427461B7ED72000BF4705 /* home_book_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_book_image.png; sourceTree = "<group>"; };
 		2EA556ED1B953A4300C696B0 /* DetailCollectionViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewDatasource.h; sourceTree = "<group>"; };
 		2EA556EE1B953A4300C696B0 /* DetailCollectionViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewDatasource.m; sourceTree = "<group>"; };
+		2EA556F01B95460400C696B0 /* DetailViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DetailViewController+Configuration.h"; sourceTree = "<group>"; };
+		2EA556F11B95460400C696B0 /* DetailViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DetailViewController+Configuration.m"; sourceTree = "<group>"; };
 		2EB6119B1B86ED62000414A2 /* detail_top_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail_top_image.png; sourceTree = "<group>"; };
 		2EB6119E1B86EFDF000414A2 /* BaseInfomationCelll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseInfomationCelll.h; sourceTree = "<group>"; };
 		2EB6119F1B86EFDF000414A2 /* BaseInfomationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseInfomationCell.m; sourceTree = "<group>"; };
@@ -734,6 +737,8 @@
 			children = (
 				2E6B463C1B819DB800BF39D5 /* DetailViewController.h */,
 				2E6B463D1B819DB800BF39D5 /* DetailViewController.m */,
+				2EA556F01B95460400C696B0 /* DetailViewController+Configuration.h */,
+				2EA556F11B95460400C696B0 /* DetailViewController+Configuration.m */,
 				2EFAEA8B1B8B1D3D0044BAF0 /* DetailViewController+Animation.h */,
 				2EFAEA8C1B8B1D3D0044BAF0 /* DetailViewController+Animation.m */,
 				2E6B463E1B819DB800BF39D5 /* DetailViewController.xib */,
@@ -1521,7 +1526,6 @@
 				058ABF6C1B830A8E00A0BA8A /* RollCollectionViewCell.m in Sources */,
 				2E6B463F1B819DB800BF39D5 /* DetailViewController.m in Sources */,
 				2E8C342A1B7DF3DC006B5BC0 /* UIView+CommonSuperview.m in Sources */,
-				2E6B46371B81755600BF39D5 /* BookCollectionViewCell.m in Sources */,
 				380D8F7F1B8C5369000FA98C /* HeaderViewCell.m in Sources */,
 				2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */,
 				057A26421B86CDB2003DAF07 /* XHZoomDrawerView.m in Sources */,
@@ -1541,6 +1545,7 @@
 				054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */,
 				2E7DC93C1B82D2BD00152A0B /* StackCollectionView+Configuration.m in Sources */,
 				057A26491B86D046003DAF07 /* MineTableViewCell.m in Sources */,
+				2EA556F21B95460400C696B0 /* DetailViewController+Configuration.m in Sources */,
 				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
 				057A26391B86CC8C003DAF07 /* MineViewController.m in Sources */,
 				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,

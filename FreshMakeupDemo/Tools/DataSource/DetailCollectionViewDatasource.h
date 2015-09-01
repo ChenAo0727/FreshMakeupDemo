@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "CHTCollectionViewWaterfallLayout.h"
 
-@interface DetailCollectionViewDatasource : NSObject<UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout>
+@interface DetailCollectionViewDatasource : NSObject<UICollectionViewDataSource>
 
-
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section;
 
 @end
