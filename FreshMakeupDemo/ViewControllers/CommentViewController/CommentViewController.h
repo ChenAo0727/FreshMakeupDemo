@@ -14,6 +14,7 @@
 @interface CommentViewController : BaseViewController<UICollectionViewDataSource,CHTCollectionViewDelegateWaterfallLayout>
 @property(nonatomic,strong)UICollectionView *collectionView;
 @property(nonatomic,strong)CHTCollectionViewWaterfallLayout *layout;
+- (IBAction)backClick:(id)sender;
 
 
 @end

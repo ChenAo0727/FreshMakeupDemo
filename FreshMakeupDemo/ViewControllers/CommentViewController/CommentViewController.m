@@ -137,4 +137,8 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
     return column;
 }
 
+- (IBAction)backClick:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
