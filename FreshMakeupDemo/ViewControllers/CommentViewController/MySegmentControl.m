@@ -61,14 +61,16 @@
     }
     [[self.ButtonArray firstObject] setSelected:YES];
 }
+
 - (void)changeTheSegument:(UIButton*)button {
     
     [self selectTheSegument:button.tag];
     
 }
+
 - (void)selectTheSegument:(NSInteger)segument {
     
-    if (selectSeugment!=segument) {
+    if (selectSeugment != segument) {
         [self.ButtonArray[selectSeugment] setSelected:NO];
         [self.ButtonArray[segument] setSelected:YES];
         [UIView animateWithDuration:0.2 animations:^{
