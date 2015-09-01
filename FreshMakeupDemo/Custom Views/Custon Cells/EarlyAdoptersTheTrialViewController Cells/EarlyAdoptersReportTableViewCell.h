@@ -13,6 +13,8 @@
 - (CGFloat)getCellHeight;
 @property (weak, nonatomic) IBOutlet UIButton *earlyClickLeftButton;
 @property (weak, nonatomic) IBOutlet UILabel *earlyClickLeftLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *earlyClickLefImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *earlyClickRightImageView;
 @property (weak, nonatomic) IBOutlet UIButton *earlyClickRightButton;
 @property (weak, nonatomic) IBOutlet UIView *earlyView;
 @property (weak, nonatomic) IBOutlet UILabel *earlyClickRightLabel;
