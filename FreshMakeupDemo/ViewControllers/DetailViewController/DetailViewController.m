@@ -9,7 +9,9 @@
 #import "EarlyAdoptersTheTrialViewController.h"
 #import "DetailViewController+Configuration.h"
 #import "DetailCollectionViewDatasource.h"
+#import "CommentViewController.h"
 #import "DetailViewController.h"
+#import "MoreInfomationCell.h"
 #import "TitleCell.h"
 
 @implementation DetailViewController
@@ -42,7 +44,7 @@
     self.detailCollectionView.delegate = nil;
 }
 
-#pragma mark - ScrollViewDelegate
+#pragma mark - UICollectionDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat expectOffset = self.selectionViewY + 54 - self.detailCollectionView.frame.size.height;
@@ -50,6 +52,15 @@
         [self.selectionView updateBottomSpace:(expectOffset - scrollView.contentOffset.y)];
     } else {
         [self.selectionView updateBottomSpace:0];
+    }
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+    if ([cell isKindOfClass:[MoreInfomationCell class]]) {
+        if (indexPath.section == 6 && indexPath.row == 0) {
+            [self pushViewCommentViewController];
+        }
     }
 }
 
@@ -61,5 +72,11 @@
     return [self.detailCollectionViewDatasource collectionView:collectionView layout:collectionViewLayout columnCountForSection:section];
 }
 
+#pragma mark - PrivateMethod
+
+- (void)pushViewCommentViewController {
+    CommentViewController *commentViewController = [CommentViewController create];
+    [self presentViewController:commentViewController animated:YES completion:nil];
+}
 
 @end
