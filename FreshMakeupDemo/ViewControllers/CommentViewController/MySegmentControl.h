@@ -8,20 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol MyUISegmentedControlDelegate< NSObject>
+@protocol MyUISegmentedControlDelegate<NSObject>
 @optional
--(void)segmentSelectionChange:(NSInteger)selection;
+- (void)segmentSelectionChange:(NSInteger)selection;
 @end
 @interface MySegmentControl : UIView
 
-@property(nonatomic,weak)id <MyUISegmentedControlDelegate>delegate;
-@property(nonatomic,strong)NSMutableArray* ButtonArray;
+@property (weak, nonatomic) id <MyUISegmentedControlDelegate>delegate;
+@property (strong, nonatomic) NSMutableArray* ButtonArray;
 
-@property(strong,nonatomic)UIColor* titleColor;
-@property(strong,nonatomic)UIColor* selectColor;
-@property(strong,nonatomic)UIFont* titleFont;
--(void)AddSegumentArray:(NSArray *)SegumentArray;
--(instancetype)initWithFrame:(CGRect)frame;
--(void)selectTheSegument:(NSInteger)segument;
+@property (strong, nonatomic) UIColor* titleColor;
+@property (strong, nonatomic) UIColor* selectColor;
+@property (strong, nonatomic) UIFont* titleFont;
+- (void)AddSegumentArray:(NSArray *)SegumentArray;
+- (instancetype)initWithFrame:(CGRect)frame;
+- (void)selectTheSegument:(NSInteger)segument;
 
 @end
