@@ -63,7 +63,9 @@
         [UIView animateWithDuration:0.1 animations:^{
             self.commentImageView.transform = commentTransform;
         } completion:^(BOOL finished) {
-            
+            if ([self.delegate respondsToSelector:@selector(CommentCell:didClickCommentButtonWithTag:)]) {
+                [self.delegate CommentCell:self didClickCommentButtonWithTag:0];
+            }
         }];
     }];
 }

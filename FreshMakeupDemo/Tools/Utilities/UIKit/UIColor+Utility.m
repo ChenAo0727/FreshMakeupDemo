@@ -22,6 +22,11 @@
 + (instancetype)colorWithIntRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue {
     return [UIColor colorWithIntRed:red green:green blue:blue alpha:255];
 }
+
++ (UIColor *)mainBlueColor {
+    return [UIColor colorWithIntRed:133 green:204 blue:201];
+}
+
 + (UIColor *) colorFromHexCode:(NSString *)hexString {
     NSString *cleanString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
     if([cleanString length] == 3) {

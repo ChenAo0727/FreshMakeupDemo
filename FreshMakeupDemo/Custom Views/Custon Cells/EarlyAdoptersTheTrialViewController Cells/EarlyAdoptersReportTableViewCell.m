@@ -18,8 +18,8 @@
     self.earlyLeftView.layer.borderColor = [UIColor colorFromHexCode:@"#9bd5d3"].CGColor;
     self.earlyRightView.layer.borderWidth = 1;
     self.earlyRightView.layer.borderColor = [UIColor colorFromHexCode:@"#9bd5d3"].CGColor;
-    approveTransform = self.earlyClickLeftButton.transform;
-    commentTransform = self.earlyClickRightButton.transform;
+    approveTransform = self.earlyClickLefImageView.transform;
+    commentTransform = self.earlyClickRightImageView.transform;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -31,19 +31,19 @@
     CGAffineTransform transform = approveTransform;
     transform = CGAffineTransformScale(transform, 1.2, 1.2);
     [UIView animateWithDuration:0.1 animations:^{
-        self.earlyClickLeftButton.transform = transform;
+        self.earlyClickLefImageView.transform = transform;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.1 animations:^{
-            self.earlyClickLeftButton.transform = approveTransform;
+            self.earlyClickLefImageView.transform = approveTransform;
         } completion:^(BOOL finished) {
             NSInteger praiseCountLeft = [self.earlyClickLeftLabel.text integerValue];
             if (praiseCountLeft == 24) {
                 self.earlyClickLeftLabel.text = @"25";
-                [self.earlyClickLeftButton setImage:[UIImage imageNamed:@"detail_approve_clicked_icon.png"] forState:UIControlStateNormal];
+                self.earlyClickLefImageView.image = [UIImage imageNamed:@"detail_approve_clicked_icon.png"];
                 self.earlyClickLeftLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
             } else {
                 self.earlyClickLeftLabel.text = @"24";
-                [self.earlyClickLeftButton setImage:[UIImage imageNamed:@"detail_approve_icon.png"] forState:UIControlStateNormal];
+                self.earlyClickLefImageView.image = [UIImage imageNamed:@"detail_approve_icon.png"];
                 self.earlyClickLeftLabel.textColor = [UIColor grayColor];
             }
         }];
@@ -53,19 +53,19 @@
     CGAffineTransform transform = approveTransform;
     transform = CGAffineTransformScale(transform, 1.2, 1.2);
     [UIView animateWithDuration:0.1 animations:^{
-        self.earlyClickRightButton.transform = transform;
+        self.earlyClickRightImageView.transform = transform;
     } completion:^(BOOL finished) {
         [UIView animateWithDuration:0.1 animations:^{
-            self.earlyClickRightButton.transform = approveTransform;
+            self.earlyClickRightImageView.transform = approveTransform;
         } completion:^(BOOL finished) {
             NSInteger praiseCountLeft = [self.earlyClickRightLabel.text integerValue];
             if (praiseCountLeft == 24) {
                 self.earlyClickRightLabel.text = @"25";
-                [self.earlyClickRightButton setImage:[UIImage imageNamed:@"detail_approve_clicked_icon.png"] forState:UIControlStateNormal];
+                self.earlyClickRightImageView.image =[UIImage imageNamed:@"detail_approve_clicked_icon.png"];
                 self.earlyClickRightLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
             } else {
                 self.earlyClickRightLabel.text = @"24";
-                [self.earlyClickRightButton setImage:[UIImage imageNamed:@"detail_approve_icon.png"] forState:UIControlStateNormal];
+                self.earlyClickRightImageView.image = [UIImage imageNamed:@"detail_approve_icon.png"];
                 self.earlyClickRightLabel.textColor = [UIColor grayColor];
             }
         }];
