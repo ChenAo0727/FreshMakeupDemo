@@ -8,7 +8,6 @@
 
 #import "EarlyAdoptersTheTrialViewController+Animation.h"
 @implementation EarlyAdoptersTheTrialViewController (Animation)
-
 - (void)EarlyAdoptersTheTrialViewControllerShakeAshake {
     
     [self shakeAShakeAction];
