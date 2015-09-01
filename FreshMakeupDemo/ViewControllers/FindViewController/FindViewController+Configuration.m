@@ -41,7 +41,7 @@
     rollView.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
     [self.findTableView.tableHeaderView addSubview:rollView];
     UICollectionViewFlowLayout *classVFL = [[UICollectionViewFlowLayout alloc] init];
-    classVFL.itemSize = CGSizeMake(120,155);//单视图的大小
+    classVFL.itemSize = CGSizeMake(120,147);//单视图的大小
     classVFL.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     classVFL.minimumLineSpacing = 10;//列间距
  
@@ -49,6 +49,7 @@
     self.rollCollectionView.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
     self.rollCollectionView.showsHorizontalScrollIndicator = NO;
     self.rollCollectionViewDataSource = [RollCollectionViewDataSource new];
+    self.rollCollectionView.delegate = self;
     self.rollCollectionView.dataSource = self.rollCollectionViewDataSource;
     [rollView addSubview: self.rollCollectionView];
     //提前注册
