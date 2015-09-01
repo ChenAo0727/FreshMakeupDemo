@@ -16,4 +16,6 @@
 //custom color
 + (instancetype)darkGreyLabelColor;
 + (UIColor *) colorFromHexCode:(NSString *)hexString;
++ (UIColor *)mainBlueColor;
+
 @end

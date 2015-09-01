@@ -7,7 +7,6 @@
 //
 
 #import "CommentViewController.h"
-#import "CommentCell.h"
 #import "CommentViewLayout.h"
 #import "SelectionView.h"
 #import "HeaderViewCell.h"
@@ -29,7 +28,7 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initCollectionView];
-
+    [self addDetailView];
 
 }
 
@@ -50,7 +49,16 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
         self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerNib:[UINib nibWithNibName:@"NewCommentCell" bundle:nil ]forCellWithReuseIdentifier:@"NewCommentCell"];
     [self.view addSubview:self.collectionView];
+}
 
+- (void)addDetailView {
+    self.detailCommentView = [DetailCommentView create];
+    [self.view addSubview:self.detailCommentView];
+    [self.detailCommentView setLeftSpace:10];
+    [self.detailCommentView setRightSpace:-10];
+    [self.detailCommentView setTopSpace:20];
+    [self.detailCommentView setBottomSpace:-20];
+    self.detailCommentView.hidden = YES;
 }
 
 #pragma mark - UICollectionViewDataSource
@@ -105,7 +113,7 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
     if (indexPath.section == 1 || indexPath.section == 3) {
         
         CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CommentIdentifier forIndexPath:indexPath];
-
+        cell.delegate = self;
         return cell;
 
 
@@ -116,6 +124,9 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
 
 }
 
+- (void)CommentCell:(CommentCell *)commentCell didClickCommentButtonWithTag:(NSInteger)tag {
+    self.detailCommentView.hidden = NO;
+}
 
 #pragma mark - UICollectionViewDelegateFlowLayout
 

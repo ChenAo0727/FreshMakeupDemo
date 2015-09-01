@@ -10,6 +10,8 @@
 
 #define COMMENT_CELL @"CommentCell"
 
+@protocol CommentCellDelegate;
+
 @interface CommentCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
@@ -25,8 +27,15 @@
 @property (weak, nonatomic) IBOutlet UIImageView *approveImageView;
 @property (weak, nonatomic) IBOutlet UIView *bottomLineView;
 
-- (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount;
+@property (weak, nonatomic) id<CommentCellDelegate> delegate;
 
+- (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount;
 - (CGFloat)heightOfCell;
+
+@end
+
+@protocol CommentCellDelegate <NSObject>
+@optional
+- (void)CommentCell:(CommentCell *)commentCell didClickCommentButtonWithTag:(NSInteger)tag;
 
 @end
