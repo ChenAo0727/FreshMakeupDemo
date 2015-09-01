@@ -2,12 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CommentCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommentCell" id="gTV-IL-0wX" customClass="CommentCell">
             <rect key="frame" x="0.0" y="0.0" width="160" height="240"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -215,6 +215,7 @@
                 <constraint firstItem="8r7-k6-sRL" firstAttribute="top" secondItem="WYQ-bf-3pN" secondAttribute="bottom" constant="10" id="yf6-JY-pYm"/>
                 <constraint firstAttribute="trailing" secondItem="fEm-YQ-uhG" secondAttribute="trailing" id="z2r-60-qn5"/>
             </constraints>
+            <size key="customSize" width="160" height="240"/>
             <connections>
                 <outlet property="ageLabel" destination="CUY-xO-af2" id="xdA-SI-i5v"/>
                 <outlet property="approveCountLabel" destination="CRs-dY-HPs" id="RNL-nh-if9"/>
@@ -229,7 +230,7 @@
                 <outlet property="nickNameLabel" destination="zkk-aV-68s" id="nag-M4-2Ib"/>
                 <outlet property="skinPropertyLabel" destination="qRO-W1-vi1" id="dmO-z5-bpy"/>
             </connections>
-            <point key="canvasLocation" x="571" y="497"/>
+            <point key="canvasLocation" x="461" y="420"/>
         </collectionViewCell>
     </objects>
     <resources>

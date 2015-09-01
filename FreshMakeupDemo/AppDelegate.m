@@ -11,9 +11,6 @@
 #import "MineViewController.h"
 #import "XHDrawerController.h"
 #import "DetailViewController.h"
-#import "XHDrawerController.h"
-#import "MineViewController.h"
-#import "EarlyAdoptersTheTrialViewController.h"
 @interface AppDelegate ()
 
 @end

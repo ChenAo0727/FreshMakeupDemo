@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "CHTCollectionViewWaterfallLayout.h"
 
-@interface CommentViewController : UIViewController
+@class CommentViewLayout;
+@interface CommentViewController : BaseViewController<UICollectionViewDataSource,CHTCollectionViewDelegateWaterfallLayout>
+@property(nonatomic,strong)UICollectionView *collectionView;
+@property(nonatomic,strong)CHTCollectionViewWaterfallLayout *layout;
+
 
 @end

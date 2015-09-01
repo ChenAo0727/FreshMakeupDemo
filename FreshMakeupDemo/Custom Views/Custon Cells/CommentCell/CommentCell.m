@@ -43,11 +43,13 @@
     self.identityLabel.text = identity;
     self.commentCountLabel.text = [NSString stringWithFormat:@"%ld", (long)commentCount];
     self.approveCountLabel.text = [NSString stringWithFormat:@"%ld", (long)approveCount];
+
     [self setNeedsLayout];
     [self layoutIfNeeded];
 }
 
 - (CGFloat)heightOfCell {
+    
     CGRect frame  = self.bottomLineView.frame;
     return frame.origin.y + self.frame.size.height;
 }

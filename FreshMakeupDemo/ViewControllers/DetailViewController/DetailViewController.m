@@ -36,6 +36,7 @@
     NSDictionary *nibDictionary = @{BASE_INFO_CELL : @"BaseInfomationCell", OWNER_SAY_CELL : @"OwnerSayCell", TITLE_CELL : @"TitleCell", IMAGE_CELL : @"ImageCell", MORE_INFOMATION_CELL : @"MoreInfomationCell", FEATURE_DESCRIPTION_CELL : @"FeatureDescriptionCell", COMMENT_CELL : @"CommentCell", COPY_WRITER_CELL : @"CopywriterCell", TRIAL_COLLECTION_VIEW_CELL : @"TrialCollectionViewCell"};
     [self registerNibWithDictionaty:nibDictionary];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
+
     self.detailCollectionView.dataSource = self;
     self.detailCollectionView.delegate = self;
     [self addSelectionView];
@@ -70,6 +71,7 @@
 }
 
 - (void)addSelectionView {
+    
     self.selectionView = [SelectionView create];
     [self.view insertSubview:self.selectionView belowSubview:self.topViewContainer];
     [self.selectionView setLeftSpace:0];
