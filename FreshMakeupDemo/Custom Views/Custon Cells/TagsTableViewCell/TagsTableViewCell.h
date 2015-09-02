@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "SGSStaggeredFlowLayout.h"
+#import "EqualSpaceFlowLayout.h"
 
 #define TAGS_TABLEVIEW_CELL @"TagsTableViewCell"
 
 @interface TagsTableViewCell : UITableViewCell <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *tagCollectionView;
-@property SGSStaggeredFlowLayout *staggeredFlowLayout;
+@property (strong, nonatomic) EqualSpaceFlowLayout *equalSpaceFlowLayout;
 - (CGFloat)heightOfCell;
 
 @end
