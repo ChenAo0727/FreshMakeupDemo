@@ -14,15 +14,11 @@
 }
 
 - (void)awakeFromNib {
-    tags = @[@"#贝玲妃", @"#彩妆", @"#腮红", @"#贝玲妃蒲公英蜜粉", @"#呵呵呵呵"];
-    self.staggeredFlowLayout = [[SGSStaggeredFlowLayout alloc] init];
-    self.staggeredFlowLayout.layoutMode = SGSStaggeredFlowLayoutMode_Even;
-    self.staggeredFlowLayout.minimumLineSpacing = 2.0f;
-    self.staggeredFlowLayout.minimumInteritemSpacing = 2.0f;
-    self.staggeredFlowLayout.sectionInset = UIEdgeInsetsMake(0.0f, 0.0f, 0.0f, 0.0f);
+    tags = @[@"#贝玲妃", @"#彩妆", @"#腮红", @"#贝玲妃蒲公英蜜粉", @"#呵呵呵呵", @"#贝玲妃", @"#彩妆", @"#腮红", @"#贝玲妃蒲公英蜜粉", @"#呵呵呵呵"];
+    self.equalSpaceFlowLayout = [[EqualSpaceFlowLayout alloc] init];
     [self.tagCollectionView registerNib:[UINib nibWithNibName:@"TagCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:TAG_COLLECTION_VIEW_CELL];
     [self.tagCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"DEFAULT_CELL"];
-    self.tagCollectionView.collectionViewLayout = self.staggeredFlowLayout;
+    self.tagCollectionView.collectionViewLayout = self.equalSpaceFlowLayout;
     self.tagCollectionView.dataSource = self;
     self.tagCollectionView.delegate = self;
 }
@@ -50,7 +46,7 @@
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (0 == indexPath.row) {
-        return CGSizeMake(55, 27);
+        return CGSizeMake(80, 27);
     }
     TagCollectionViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagCollectionViewCell" owner:nil options:nil] lastObject];
     [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1]];
