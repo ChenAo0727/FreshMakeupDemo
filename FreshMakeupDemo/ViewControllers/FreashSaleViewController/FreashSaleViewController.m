@@ -40,21 +40,31 @@
 
 
     } else if (indexPath.row == 1) {
-        TextCell *cell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
-        CGFloat cellHeight = [cell heightOfCell];
-        return cellHeight;
-    }else if (indexPath.row == 2) {
+        TextCell *textCell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
+        CGRect frame = textCell.frame;
+        frame.size.width = [UIScreen screenWidth];
+        textCell.frame = frame;
+        CGFloat cellHeight = [textCell heightOfCell];
+       return cellHeight;
+    } else if (indexPath.row == 2) {
         TagsTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagsTableViewCell" owner:nil options:nil] lastObject];
         CGRect frame = cell.frame;
         frame.size.width = [UIScreen screenWidth];
-        cell.frame = frame;;
+        cell.frame = frame;
         [cell layoutIfNeeded];
         return [cell heightOfCell];
-    } else if (indexPath.row == 4) {
-        return 170;
 
-    } else {
+    } else if (indexPath.row == 3) {
         return 50;
+    } else if (indexPath.row == 7) {
+        return 50;
+    } else {
+        CommentViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"CommentViewCell" owner:nil options:nil] lastObject];
+        CGRect frame = cell.frame;
+        frame.size.width = [UIScreen screenWidth];
+        cell.frame = frame;
+        [cell layoutIfNeeded];
+        return [cell getCommentHeight];
     }
 }
 - (void)didReceiveMemoryWarning {

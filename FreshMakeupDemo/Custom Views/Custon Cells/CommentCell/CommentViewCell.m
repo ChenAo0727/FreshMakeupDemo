@@ -12,13 +12,15 @@
 @implementation CommentViewCell
 
 - (void)awakeFromNib {
-
     self.userImage.layer.cornerRadius = self.userImage.frame.size.width / 2;
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+
+    [super awakeFromNib];
+    self.userImage.layer.cornerRadius = self.frame.size.width / 2;
     self.userImage.layer.borderColor = [UIColor greenColor].CGColor;
     self.userImage.layer.borderWidth = 0.4;
     self.userImage.layer.masksToBounds = YES;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
-    
 }
 - (IBAction)addApprove:(id)sender {
     
