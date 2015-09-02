@@ -104,10 +104,10 @@
 		05E04CC71B968CD700E5D28C /* FreashSaleViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CC61B968CD700E5D28C /* FreashSaleViewControllerDataSource.m */; };
 		05E04CCA1B96928700E5D28C /* feash_sale_review.png in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CC81B96928600E5D28C /* feash_sale_review.png */; };
 		05E04CCB1B96928700E5D28C /* freash_sale_title_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CC91B96928600E5D28C /* freash_sale_title_image.jpg */; };
-		05E04CD31B9693F000E5D28C /* TitleHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CD11B9693F000E5D28C /* TitleHeadCell.m */; };
-		05E04CD41B9693F000E5D28C /* TitleHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CD21B9693F000E5D28C /* TitleHeadCell.xib */; };
 		05E04CD91B9697CE00E5D28C /* ImageMaxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CD71B9697CE00E5D28C /* ImageMaxCell.m */; };
 		05E04CDA1B9697CE00E5D28C /* ImageMaxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CD81B9697CE00E5D28C /* ImageMaxCell.xib */; };
+		05E04CDF1B96A67800E5D28C /* TitleHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CDD1B96A67800E5D28C /* TitleHeadCell.m */; };
+		05E04CE01B96A67800E5D28C /* TitleHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CDE1B96A67800E5D28C /* TitleHeadCell.xib */; };
 		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
 		2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */; };
 		2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F841B85A71F005DCF14 /* home_update_time_image.png */; };
@@ -361,12 +361,12 @@
 		05E04CC61B968CD700E5D28C /* FreashSaleViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreashSaleViewControllerDataSource.m; sourceTree = "<group>"; };
 		05E04CC81B96928600E5D28C /* feash_sale_review.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feash_sale_review.png; sourceTree = "<group>"; };
 		05E04CC91B96928600E5D28C /* freash_sale_title_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = freash_sale_title_image.jpg; sourceTree = "<group>"; };
-		05E04CD01B9693F000E5D28C /* TitleHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleHeadCell.h; path = ../../../../../../../Documents/TitleHeadCell.h; sourceTree = "<group>"; };
-		05E04CD11B9693F000E5D28C /* TitleHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitleHeadCell.m; path = ../../../../../../../Documents/TitleHeadCell.m; sourceTree = "<group>"; };
-		05E04CD21B9693F000E5D28C /* TitleHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TitleHeadCell.xib; path = ../../../../../../../Documents/TitleHeadCell.xib; sourceTree = "<group>"; };
 		05E04CD61B9697CE00E5D28C /* ImageMaxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageMaxCell.h; sourceTree = "<group>"; };
 		05E04CD71B9697CE00E5D28C /* ImageMaxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMaxCell.m; sourceTree = "<group>"; };
 		05E04CD81B9697CE00E5D28C /* ImageMaxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageMaxCell.xib; sourceTree = "<group>"; };
+		05E04CDC1B96A67800E5D28C /* TitleHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleHeadCell.h; sourceTree = "<group>"; };
+		05E04CDD1B96A67800E5D28C /* TitleHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleHeadCell.m; sourceTree = "<group>"; };
+		05E04CDE1B96A67800E5D28C /* TitleHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleHeadCell.xib; sourceTree = "<group>"; };
 		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_view_unlike_line.png; sourceTree = "<group>"; };
 		2E132F841B85A71F005DCF14 /* home_update_time_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_update_time_image.png; sourceTree = "<group>"; };
@@ -785,16 +785,6 @@
 			path = FreashSaleViewController;
 			sourceTree = "<group>";
 		};
-		05E04CCC1B96931B00E5D28C /* TitleHeadCell */ = {
-			isa = PBXGroup;
-			children = (
-				05E04CD01B9693F000E5D28C /* TitleHeadCell.h */,
-				05E04CD11B9693F000E5D28C /* TitleHeadCell.m */,
-				05E04CD21B9693F000E5D28C /* TitleHeadCell.xib */,
-			);
-			path = TitleHeadCell;
-			sourceTree = "<group>";
-		};
 		05E04CD51B9697B100E5D28C /* ImageMaxCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -803,6 +793,16 @@
 				05E04CD81B9697CE00E5D28C /* ImageMaxCell.xib */,
 			);
 			path = ImageMaxCell;
+			sourceTree = "<group>";
+		};
+		05E04CDB1B96A64500E5D28C /* TitleHeadCell */ = {
+			isa = PBXGroup;
+			children = (
+				05E04CDC1B96A67800E5D28C /* TitleHeadCell.h */,
+				05E04CDD1B96A67800E5D28C /* TitleHeadCell.m */,
+				05E04CDE1B96A67800E5D28C /* TitleHeadCell.xib */,
+			);
+			path = TitleHeadCell;
 			sourceTree = "<group>";
 		};
 		2E4C0C7B1B900AA100ECD2BF /* RealBookView */ = {
@@ -1123,7 +1123,7 @@
 				058ABF681B830A6000A0BA8A /* RollCollectionView Cell */,
 				059E88B61B8414D30086544F /* FindViewController Cell */,
 				057A26451B86D046003DAF07 /* MineViewControllerCell */,
-				05E04CCC1B96931B00E5D28C /* TitleHeadCell */,
+				05E04CDB1B96A64500E5D28C /* TitleHeadCell */,
 			);
 			path = "Custon Cells";
 			sourceTree = "<group>";
@@ -1484,7 +1484,6 @@
 				2E7EB50D1B87835800DA6494 /* detail_movie_image.png in Resources */,
 				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
-				05E04CD41B9693F000E5D28C /* TitleHeadCell.xib in Resources */,
 				053BFEA31B84AD80002058BA /* simhei.ttf in Resources */,
 				2E77067E1B8813FE0024282D /* detail_keepwet_icon.png in Resources */,
 				380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */,
@@ -1571,6 +1570,7 @@
 				05E04CC11B96864E00E5D28C /* FreashSaleViewController.xib in Resources */,
 				05DEA0671B8858CB0094E123 /* underthe.png in Resources */,
 				2E132F8A1B85B0E7005DCF14 /* home_down_guide2.png in Resources */,
+				05E04CE01B96A67800E5D28C /* TitleHeadCell.xib in Resources */,
 				2E132F891B85B0E7005DCF14 /* home_down_guide1.png in Resources */,
 				05DEA0601B8858CB0094E123 /* last.png in Resources */,
 				058ABF4D1B82C58100A0BA8A /* findad3.jpg in Resources */,
@@ -1650,7 +1650,6 @@
 				2ECD47F41B8EE249002AFEEB /* MaterialTransition.m in Sources */,
 				2E7DC9341B82BD1F00152A0B /* StackCollectionViewCell.m in Sources */,
 				2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */,
-				05E04CD31B9693F000E5D28C /* TitleHeadCell.m in Sources */,
 				2E132F941B85BC5C005DCF14 /* HomeViewController+Animation.m in Sources */,
 				2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */,
 				2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */,
@@ -1701,6 +1700,7 @@
 				2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */,
 				2EB4EF4C1B968B640080185A /* DetailInfomationTool.m in Sources */,
 				2E77068A1B8829B30024282D /* CommentCell.m in Sources */,
+				05E04CDF1B96A67800E5D28C /* TitleHeadCell.m in Sources */,
 				057A26501B86D08C003DAF07 /* MineViewControllerDataSource.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */,
