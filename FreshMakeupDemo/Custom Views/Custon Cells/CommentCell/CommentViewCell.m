@@ -31,9 +31,6 @@
                           NSFontAttributeName:[UIFont fontWithName: @"Helvetica(Neue)"  size:12]
                           
                           };
-
-    
-
     return 0;
 }
 

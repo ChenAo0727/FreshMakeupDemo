@@ -9,6 +9,7 @@
 #import "FreashSaleViewController+Configuration.h"
 #import "TitleHeadCell.h"
 #import "ImageMaxCell.h"
+#import "CommentViewCell.h"
 @implementation FreashSaleViewController (Configuration)
 - (void)configureViews {
     [self tableViewEdit];
@@ -20,5 +21,6 @@
     self.freashSaleTableView.dataSource = self.freashSaleViewControllerDataSource;
     [self.freashSaleTableView registerNib:[UINib nibWithNibName:@"TitleHeadCell" bundle:nil] forCellReuseIdentifier:TITLE_HEAD_CELL];
     [self.freashSaleTableView registerNib:[UINib nibWithNibName:@"ImageMaxCell" bundle:nil] forCellReuseIdentifier:IMAGE_MAX_CELL];
+    [self.freashSaleTableView registerNib:[UINib nibWithNibName:@"CommentViewCell" bundle:nil] forCellReuseIdentifier:COMMENT_VIEW_CELL];
 }
 @end
