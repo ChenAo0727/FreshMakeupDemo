@@ -25,14 +25,4 @@
 
 }
 
-- (CGFloat)getCommentHeight:(NSString *)commentString{
-    NSDictionary *dic = @{
-                          NSFontAttributeName:[UIFont fontWithName: @"Helvetica(Neue)"  size:12]
-                          
-                          };
-
-    
-
-
-}
 @end
