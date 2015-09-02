@@ -8,6 +8,7 @@
 
 #import "FreashSaleViewController.h"
 #import "FreashSaleViewController+Configuration.h"
+#import "TextCell.h"
 @interface FreashSaleViewController ()
 
 @end
@@ -23,9 +24,13 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        return 384;
-    } else if (indexPath.row == 2) {
-        return 70;
+        return 380;
+    } else if (indexPath.row == 1) {
+        TextCell *cell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
+        CGFloat cellHeight = [cell heightOfCell];
+        return cellHeight;
+    }else if (indexPath.row == 3) {
+        return 170;
     } else {
     return 50;
     }

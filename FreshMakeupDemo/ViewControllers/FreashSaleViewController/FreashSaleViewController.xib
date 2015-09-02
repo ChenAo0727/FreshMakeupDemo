@@ -23,24 +23,31 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="DFJ-a9-aCJ">
-                    <rect key="frame" x="0.0" y="65" width="320" height="468"/>
+                    <rect key="frame" x="0.0" y="65" width="320" height="466"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P9B-F0-faL">
                     <rect key="frame" x="0.0" y="531" width="320" height="37"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feash_sale_review.png" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-y2-ZWY">
-                            <rect key="frame" x="19" y="6" width="25" height="25"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n6O-Qd-cqN">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="5"/>
+                            <color key="backgroundColor" red="0.88627450980392153" green="0.9137254901960784" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="25" id="IvT-a3-sx2"/>
-                                <constraint firstAttribute="width" constant="25" id="XRj-2z-Tj8"/>
+                                <constraint firstAttribute="height" constant="5" id="vwz-EP-5gS"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feash_sale_review.png" translatesAutoresizingMaskIntoConstraints="NO" id="zTo-y2-ZWY">
+                            <rect key="frame" x="19" y="9" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="OVt-HW-YIu"/>
+                                <constraint firstAttribute="width" constant="25" id="bkg-GD-IGl"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="写评论..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bia-DZ-Frn">
-                            <rect key="frame" x="52" y="8" width="66" height="21"/>
+                            <rect key="frame" x="52" y="11" width="66" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" relation="greaterThanOrEqual" id="RHM-bA-Kfd"/>
-                                <constraint firstAttribute="height" constant="21" id="hb4-h7-0rX"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" id="596-wk-cy4"/>
+                                <constraint firstAttribute="height" constant="21" id="klD-yI-VEX"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
                             <color key="textColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.62352941176470589" alpha="1" colorSpace="calibratedRGB"/>
@@ -50,10 +57,13 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="37" id="CMW-ep-AQA"/>
-                        <constraint firstItem="bia-DZ-Frn" firstAttribute="leading" secondItem="zTo-y2-ZWY" secondAttribute="trailing" constant="8" id="Gu0-cD-SId"/>
-                        <constraint firstItem="zTo-y2-ZWY" firstAttribute="leading" secondItem="P9B-F0-faL" secondAttribute="leading" constant="19" id="YuF-9K-3QE"/>
-                        <constraint firstAttribute="centerY" secondItem="zTo-y2-ZWY" secondAttribute="centerY" id="ZJi-7Y-1AG"/>
-                        <constraint firstAttribute="centerY" secondItem="bia-DZ-Frn" secondAttribute="centerY" id="n7h-ww-If1"/>
+                        <constraint firstItem="bia-DZ-Frn" firstAttribute="leading" secondItem="zTo-y2-ZWY" secondAttribute="trailing" constant="8" id="GRE-Ao-cOW"/>
+                        <constraint firstItem="zTo-y2-ZWY" firstAttribute="top" secondItem="n6O-Qd-cqN" secondAttribute="bottom" constant="4" id="HlB-JE-BXe"/>
+                        <constraint firstItem="zTo-y2-ZWY" firstAttribute="leading" secondItem="P9B-F0-faL" secondAttribute="leading" constant="19" id="Ipm-BW-wWg"/>
+                        <constraint firstItem="n6O-Qd-cqN" firstAttribute="leading" secondItem="P9B-F0-faL" secondAttribute="leading" id="Jyc-Ik-fI8"/>
+                        <constraint firstAttribute="trailing" secondItem="n6O-Qd-cqN" secondAttribute="trailing" id="jGg-37-1Kr"/>
+                        <constraint firstItem="bia-DZ-Frn" firstAttribute="top" secondItem="n6O-Qd-cqN" secondAttribute="bottom" constant="6" id="ocp-Ox-N1J"/>
+                        <constraint firstItem="n6O-Qd-cqN" firstAttribute="top" secondItem="P9B-F0-faL" secondAttribute="top" id="sY8-ji-vJF"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oq5-MV-nhm" userLabel="topView">
@@ -117,7 +127,7 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="DFJ-a9-aCJ" secondAttribute="bottom" constant="35" id="6WL-Qh-LtA"/>
+                <constraint firstAttribute="bottom" secondItem="DFJ-a9-aCJ" secondAttribute="bottom" constant="37" id="6WL-Qh-LtA"/>
                 <constraint firstItem="P9B-F0-faL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="L1K-Mw-EJ1"/>
                 <constraint firstAttribute="trailing" secondItem="DFJ-a9-aCJ" secondAttribute="trailing" id="L2x-fw-Ycn"/>
                 <constraint firstAttribute="trailing" secondItem="P9B-F0-faL" secondAttribute="trailing" id="NlN-0M-BH4"/>
