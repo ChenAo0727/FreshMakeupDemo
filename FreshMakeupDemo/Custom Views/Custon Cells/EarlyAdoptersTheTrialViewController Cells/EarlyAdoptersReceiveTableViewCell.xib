@@ -15,8 +15,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="你打算靠什么获得试用装?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-mX-qjh">
-                        <rect key="frame" x="62" y="8" width="205" height="28"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你打算靠什么获得试用装?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-mX-qjh">
+                        <rect key="frame" x="62" y="8" width="197" height="28"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" red="0.53725490196078429" green="0.53725490196078429" blue="0.52941176470588236" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                         </userDefinedRuntimeAttributes>
                     </button>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uS-ti-8iC">
-                        <rect key="frame" x="163" y="43" width="96" height="30"/>
+                        <rect key="frame" x="177" y="43" width="96" height="30"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="96" id="3uU-DI-5hs"/>
                             <constraint firstAttribute="height" constant="30" id="4vr-YZ-lva"/>
@@ -55,7 +55,7 @@
                 <constraints>
                     <constraint firstItem="3uS-ti-8iC" firstAttribute="top" secondItem="xs4-mX-qjh" secondAttribute="bottom" constant="7" id="JLX-UM-Mfu"/>
                     <constraint firstAttribute="centerX" secondItem="xs4-mX-qjh" secondAttribute="centerX" id="Jrt-lf-6rg"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="3uS-ti-8iC" secondAttribute="trailing" constant="53" id="JxW-0o-kVV"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3uS-ti-8iC" secondAttribute="trailing" constant="39" id="JxW-0o-kVV"/>
                     <constraint firstAttribute="bottomMargin" secondItem="3uS-ti-8iC" secondAttribute="bottom" constant="6" id="Qna-Ff-xNp"/>
                     <constraint firstAttribute="bottomMargin" secondItem="kPR-ox-wfk" secondAttribute="bottom" constant="6" id="VvJ-n7-bT6"/>
                     <constraint firstItem="kPR-ox-wfk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="39" id="aBo-qD-6Ow"/>
