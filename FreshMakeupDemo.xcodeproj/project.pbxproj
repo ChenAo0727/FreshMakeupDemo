@@ -203,6 +203,8 @@
 		380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */; };
 		3876B2641B95361500D916FF /* NewCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876B2621B95361500D916FF /* NewCommentCell.m */; };
 		3876B2651B95361500D916FF /* NewCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876B2631B95361500D916FF /* NewCommentCell.xib */; };
+		38AF47171B9686B4006C45CB /* CommentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AF47151B9686B4006C45CB /* CommentViewCell.m */; };
+		38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AF47161B9686B4006C45CB /* CommentViewCell.xib */; };
 		38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B48A2F1B941EB100092D6D /* MySegmentControl.m */; };
 /* End PBXBuildFile section */
 
@@ -498,6 +500,9 @@
 		3876B2611B95361500D916FF /* NewCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCommentCell.h; sourceTree = "<group>"; };
 		3876B2621B95361500D916FF /* NewCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCommentCell.m; sourceTree = "<group>"; };
 		3876B2631B95361500D916FF /* NewCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCommentCell.xib; sourceTree = "<group>"; };
+		38AF47141B9686B4006C45CB /* CommentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewCell.h; sourceTree = "<group>"; };
+		38AF47151B9686B4006C45CB /* CommentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewCell.m; sourceTree = "<group>"; wrapsLines = 1; };
+		38AF47161B9686B4006C45CB /* CommentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewCell.xib; sourceTree = "<group>"; };
 		38B48A2E1B941EB100092D6D /* MySegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySegmentControl.h; sourceTree = "<group>"; };
 		38B48A2F1B941EB100092D6D /* MySegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySegmentControl.m; sourceTree = "<group>"; };
 		497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -812,6 +817,9 @@
 				2E7706871B8829B30024282D /* CommentCell.h */,
 				2E7706881B8829B30024282D /* CommentCell.m */,
 				2E7706891B8829B30024282D /* CommentCell.xib */,
+				38AF47141B9686B4006C45CB /* CommentViewCell.h */,
+				38AF47151B9686B4006C45CB /* CommentViewCell.m */,
+				38AF47161B9686B4006C45CB /* CommentViewCell.xib */,
 			);
 			path = CommentCell;
 			sourceTree = "<group>";
@@ -1456,6 +1464,7 @@
 				2E7EB50B1B877FAA00DA6494 /* detail_introduction_image.png in Resources */,
 				3876B2651B95361500D916FF /* NewCommentCell.xib in Resources */,
 				2E77067F1B8813FE0024282D /* detail_wrinkle_icon.png in Resources */,
+				38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */,
 				058ABF4E1B82C58100A0BA8A /* findad4.jpg in Resources */,
 				05DEA0651B8858CB0094E123 /* shaking3.png in Resources */,
 				054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */,
@@ -1567,6 +1576,7 @@
 				054DFD5A1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.m in Sources */,
 				2E8C342F1B7DF3DC006B5BC0 /* SlideMotion+Calculation.m in Sources */,
 				054DFD371B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.m in Sources */,
+				38AF47171B9686B4006C45CB /* CommentViewCell.m in Sources */,
 				054DFD261B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.m in Sources */,
 				2E8C344B1B7DF46E006B5BC0 /* UIImage+Utility.m in Sources */,
 				059E88D21B841BB20086544F /* RollCollectionViewDataSource.m in Sources */,

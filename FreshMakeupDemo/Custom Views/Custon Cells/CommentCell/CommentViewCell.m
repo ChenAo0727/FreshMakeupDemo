@@ -10,14 +10,29 @@
 
 @implementation CommentViewCell
 
+
 - (void)awakeFromNib {
-    // Initialization code
+    [super awakeFromNib];
+    self.userImage.layer.cornerRadius = self.frame.size.width / 2;
+    self.userImage.layer.borderColor = [UIColor greenColor].CGColor;
+    self.userImage.layer.borderWidth = 1.0;
+
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
+- (void)layoutSubviews{
+    [super layoutSubviews];
 
-    // Configure the view for the selected state
+
 }
 
+- (CGFloat)getCommentHeight:(NSString *)commentString{
+    NSDictionary *dic = @{
+                          NSFontAttributeName:[UIFont fontWithName: @"Helvetica(Neue)"  size:12]
+                          
+                          };
+
+    
+
+
+}
 @end
