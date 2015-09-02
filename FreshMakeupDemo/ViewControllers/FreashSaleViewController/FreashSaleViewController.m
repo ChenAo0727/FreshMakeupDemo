@@ -31,14 +31,6 @@
     if (indexPath.row == 0) {
         return 384;
     
-    } else if (indexPath.row == 3) {
-        CommentViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CommentViewCell"];
-        cell.commentLabel.text = @"这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高";
-        [cell layoutIfNeeded];
-     return [cell getCommentHeight];
-
-
-
     } else if (indexPath.row == 1) {
         TextCell *textCell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
         CGRect frame = textCell.frame;
