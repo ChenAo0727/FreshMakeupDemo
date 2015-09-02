@@ -72,7 +72,6 @@
     return imageView;
 }
 
-
 - (UIView *)generateViewWithStartFrame:(CGRect)startFrame {
     if (!self.isReverse) {
         return [self generateViewIfNotReverseWithStartFrame:startFrame];
@@ -83,7 +82,6 @@
 
 - (UIView *)generateViewIfNotReverseWithStartFrame:(CGRect)startFrame {
     UIView *animatedViewForTransition = [[UIView alloc] initWithFrame:startFrame];
-    animatedViewForTransition.backgroundColor = [UIColor redColor];
     animatedViewForTransition.layer.cornerRadius = animatedViewForTransition.frame.size.width / 2;
     animatedViewForTransition.clipsToBounds = YES;
     return animatedViewForTransition;

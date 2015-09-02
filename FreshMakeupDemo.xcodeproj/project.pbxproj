@@ -98,6 +98,16 @@
 		05DEA0661B8858CB0094E123 /* twinkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA05D1B8858CB0094E123 /* twinkle.png */; };
 		05DEA0671B8858CB0094E123 /* underthe.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA05E1B8858CB0094E123 /* underthe.png */; };
 		05DEA0681B8858CB0094E123 /* undertheNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA05F1B8858CB0094E123 /* undertheNew.png */; };
+		05E04CC01B96864E00E5D28C /* FreashSaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CBE1B96864E00E5D28C /* FreashSaleViewController.m */; };
+		05E04CC11B96864E00E5D28C /* FreashSaleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CBF1B96864E00E5D28C /* FreashSaleViewController.xib */; };
+		05E04CC41B9688C900E5D28C /* FreashSaleViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CC31B9688C900E5D28C /* FreashSaleViewController+Configuration.m */; };
+		05E04CC71B968CD700E5D28C /* FreashSaleViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CC61B968CD700E5D28C /* FreashSaleViewControllerDataSource.m */; };
+		05E04CCA1B96928700E5D28C /* feash_sale_review.png in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CC81B96928600E5D28C /* feash_sale_review.png */; };
+		05E04CCB1B96928700E5D28C /* freash_sale_title_image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CC91B96928600E5D28C /* freash_sale_title_image.jpg */; };
+		05E04CD31B9693F000E5D28C /* TitleHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CD11B9693F000E5D28C /* TitleHeadCell.m */; };
+		05E04CD41B9693F000E5D28C /* TitleHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CD21B9693F000E5D28C /* TitleHeadCell.xib */; };
+		05E04CD91B9697CE00E5D28C /* ImageMaxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CD71B9697CE00E5D28C /* ImageMaxCell.m */; };
+		05E04CDA1B9697CE00E5D28C /* ImageMaxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CD81B9697CE00E5D28C /* ImageMaxCell.xib */; };
 		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
 		2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */; };
 		2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F841B85A71F005DCF14 /* home_update_time_image.png */; };
@@ -336,6 +346,21 @@
 		05DEA05D1B8858CB0094E123 /* twinkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twinkle.png; sourceTree = "<group>"; };
 		05DEA05E1B8858CB0094E123 /* underthe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underthe.png; sourceTree = "<group>"; };
 		05DEA05F1B8858CB0094E123 /* undertheNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = undertheNew.png; sourceTree = "<group>"; };
+		05E04CBD1B96864E00E5D28C /* FreashSaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreashSaleViewController.h; sourceTree = "<group>"; };
+		05E04CBE1B96864E00E5D28C /* FreashSaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreashSaleViewController.m; sourceTree = "<group>"; };
+		05E04CBF1B96864E00E5D28C /* FreashSaleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FreashSaleViewController.xib; sourceTree = "<group>"; };
+		05E04CC21B9688C900E5D28C /* FreashSaleViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FreashSaleViewController+Configuration.h"; sourceTree = "<group>"; };
+		05E04CC31B9688C900E5D28C /* FreashSaleViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FreashSaleViewController+Configuration.m"; sourceTree = "<group>"; };
+		05E04CC51B968CD700E5D28C /* FreashSaleViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreashSaleViewControllerDataSource.h; sourceTree = "<group>"; };
+		05E04CC61B968CD700E5D28C /* FreashSaleViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreashSaleViewControllerDataSource.m; sourceTree = "<group>"; };
+		05E04CC81B96928600E5D28C /* feash_sale_review.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feash_sale_review.png; sourceTree = "<group>"; };
+		05E04CC91B96928600E5D28C /* freash_sale_title_image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = freash_sale_title_image.jpg; sourceTree = "<group>"; };
+		05E04CD01B9693F000E5D28C /* TitleHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TitleHeadCell.h; path = ../../../../../../../Documents/TitleHeadCell.h; sourceTree = "<group>"; };
+		05E04CD11B9693F000E5D28C /* TitleHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TitleHeadCell.m; path = ../../../../../../../Documents/TitleHeadCell.m; sourceTree = "<group>"; };
+		05E04CD21B9693F000E5D28C /* TitleHeadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TitleHeadCell.xib; path = ../../../../../../../Documents/TitleHeadCell.xib; sourceTree = "<group>"; };
+		05E04CD61B9697CE00E5D28C /* ImageMaxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageMaxCell.h; sourceTree = "<group>"; };
+		05E04CD71B9697CE00E5D28C /* ImageMaxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageMaxCell.m; sourceTree = "<group>"; };
+		05E04CD81B9697CE00E5D28C /* ImageMaxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageMaxCell.xib; sourceTree = "<group>"; };
 		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_view_unlike_line.png; sourceTree = "<group>"; };
 		2E132F841B85A71F005DCF14 /* home_update_time_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_update_time_image.png; sourceTree = "<group>"; };
@@ -732,6 +757,40 @@
 			path = "Shake a shakeImage";
 			sourceTree = "<group>";
 		};
+		05E04CBC1B9685D200E5D28C /* FreashSaleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05E04CBD1B96864E00E5D28C /* FreashSaleViewController.h */,
+				05E04CBE1B96864E00E5D28C /* FreashSaleViewController.m */,
+				05E04CBF1B96864E00E5D28C /* FreashSaleViewController.xib */,
+				05E04CC21B9688C900E5D28C /* FreashSaleViewController+Configuration.h */,
+				05E04CC31B9688C900E5D28C /* FreashSaleViewController+Configuration.m */,
+				05E04CC51B968CD700E5D28C /* FreashSaleViewControllerDataSource.h */,
+				05E04CC61B968CD700E5D28C /* FreashSaleViewControllerDataSource.m */,
+			);
+			path = FreashSaleViewController;
+			sourceTree = "<group>";
+		};
+		05E04CCC1B96931B00E5D28C /* TitleHeadCell */ = {
+			isa = PBXGroup;
+			children = (
+				05E04CD01B9693F000E5D28C /* TitleHeadCell.h */,
+				05E04CD11B9693F000E5D28C /* TitleHeadCell.m */,
+				05E04CD21B9693F000E5D28C /* TitleHeadCell.xib */,
+			);
+			path = TitleHeadCell;
+			sourceTree = "<group>";
+		};
+		05E04CD51B9697B100E5D28C /* ImageMaxCell */ = {
+			isa = PBXGroup;
+			children = (
+				05E04CD61B9697CE00E5D28C /* ImageMaxCell.h */,
+				05E04CD71B9697CE00E5D28C /* ImageMaxCell.m */,
+				05E04CD81B9697CE00E5D28C /* ImageMaxCell.xib */,
+			);
+			path = ImageMaxCell;
+			sourceTree = "<group>";
+		};
 		2E4C0C7B1B900AA100ECD2BF /* RealBookView */ = {
 			isa = PBXGroup;
 			children = (
@@ -900,6 +959,7 @@
 				054DFD1C1B81A09D00651F11 /* EarlyAdoptersTheTrialViewController */,
 				059E88C11B841BB20086544F /* FindViewController */,
 				057A26351B86CC75003DAF07 /* MineViewController */,
+				05E04CBC1B9685D200E5D28C /* FreashSaleViewController */,
 			);
 			name = ViewControllers;
 			path = FreshMakeupDemo/ViewControllers;
@@ -1041,12 +1101,14 @@
 				2E77066E1B8808410024282D /* MoreInfomationCell */,
 				2EB611BB1B87579D000414A2 /* TitleCell */,
 				2EB611B41B875590000414A2 /* ImageCell */,
+				05E04CD51B9697B100E5D28C /* ImageMaxCell */,
 				2EB611AE1B874551000414A2 /* OwnerSayCell */,
 				2EB6119D1B86EFB6000414A2 /* BaseInfomationCell */,
 				054DFD281B81A0ED00651F11 /* EarlyAdoptersTheTrialViewController Cells */,
 				058ABF681B830A6000A0BA8A /* RollCollectionView Cell */,
 				059E88B61B8414D30086544F /* FindViewController Cell */,
 				057A26451B86D046003DAF07 /* MineViewControllerCell */,
+				05E04CCC1B96931B00E5D28C /* TitleHeadCell */,
 			);
 			path = "Custon Cells";
 			sourceTree = "<group>";
@@ -1180,6 +1242,8 @@
 				05D3CDEC1B8D8FB100DD1667 /* share.png */,
 				05D3CDEE1B8D8FB600DD1667 /* back.png */,
 				05D3CDF01B8D8FBC00DD1667 /* try.png */,
+				05E04CC81B96928600E5D28C /* feash_sale_review.png */,
+				05E04CC91B96928600E5D28C /* freash_sale_title_image.jpg */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -1368,6 +1432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E04CDA1B9697CE00E5D28C /* ImageMaxCell.xib in Resources */,
 				2E77068B1B8829B30024282D /* CommentCell.xib in Resources */,
 				054DFD501B81AB8D00651F11 /* 0007.png in Resources */,
 				058ABF571B82C58100A0BA8A /* findhottopic2.png in Resources */,
@@ -1389,11 +1454,13 @@
 				2E7EB50D1B87835800DA6494 /* detail_movie_image.png in Resources */,
 				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
+				05E04CD41B9693F000E5D28C /* TitleHeadCell.xib in Resources */,
 				053BFEA31B84AD80002058BA /* simhei.ttf in Resources */,
 				2E77067E1B8813FE0024282D /* detail_keepwet_icon.png in Resources */,
 				380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */,
 				2EB611A21B86EFDF000414A2 /* BaseInfomationCell.xib in Resources */,
 				2EB611B31B874570000414A2 /* OwnerSayCell.xib in Resources */,
+				05E04CCB1B96928700E5D28C /* freash_sale_title_image.jpg in Resources */,
 				2E77068F1B883C460024282D /* detail_approve_icon.png in Resources */,
 				2E7706791B8812E10024282D /* FeatureDescriptionCell.xib in Resources */,
 				2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */,
@@ -1435,6 +1502,7 @@
 				058ABF5B1B82C58100A0BA8A /* newarticlebg.9.png in Resources */,
 				058ABF4C1B82C58100A0BA8A /* findad2.jpg in Resources */,
 				058ABF501B82C58100A0BA8A /* findarticle2.png in Resources */,
+				05E04CCA1B96928700E5D28C /* feash_sale_review.png in Resources */,
 				05DEA0611B8858CB0094E123 /* lastNew.png in Resources */,
 				2E4C0C861B90511A00ECD2BF /* book_shadow.png in Resources */,
 				2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */,
@@ -1466,6 +1534,7 @@
 				059E88C01B8414D30086544F /* FindTableViewCell.xib in Resources */,
 				05DEA0631B8858CB0094E123 /* shaking1.png in Resources */,
 				2E4C0C801B900AA100ECD2BF /* RealBookView.xib in Resources */,
+				05E04CC11B96864E00E5D28C /* FreashSaleViewController.xib in Resources */,
 				05DEA0671B8858CB0094E123 /* underthe.png in Resources */,
 				2E132F8A1B85B0E7005DCF14 /* home_down_guide2.png in Resources */,
 				2E132F891B85B0E7005DCF14 /* home_down_guide1.png in Resources */,
@@ -1538,6 +1607,7 @@
 				2E4C0C891B90522200ECD2BF /* FlipTransition.m in Sources */,
 				2E8C34461B7DF46E006B5BC0 /* NSDictionary+Utility.m in Sources */,
 				057A26411B86CDB2003DAF07 /* XHDrawerController.m in Sources */,
+				05E04CC41B9688C900E5D28C /* FreashSaleViewController+Configuration.m in Sources */,
 				059C688C1B8EE2D200902C97 /* SeeMoreView.m in Sources */,
 				054DFD241B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m in Sources */,
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
@@ -1546,9 +1616,11 @@
 				2ECD47F41B8EE249002AFEEB /* MaterialTransition.m in Sources */,
 				2E7DC9341B82BD1F00152A0B /* StackCollectionViewCell.m in Sources */,
 				2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */,
+				05E04CD31B9693F000E5D28C /* TitleHeadCell.m in Sources */,
 				2E132F941B85BC5C005DCF14 /* HomeViewController+Animation.m in Sources */,
 				2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */,
 				2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */,
+				05E04CD91B9697CE00E5D28C /* ImageMaxCell.m in Sources */,
 				2EA556EF1B953A4300C696B0 /* DetailCollectionViewDatasource.m in Sources */,
 				054DFD3B1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.m in Sources */,
 				059E88BF1B8414D30086544F /* FindTableViewCell.m in Sources */,
@@ -1560,6 +1632,7 @@
 				2E8C34491B7DF46E006B5BC0 /* UIAlertView+Utility.m in Sources */,
 				058ABF6C1B830A8E00A0BA8A /* RollCollectionViewCell.m in Sources */,
 				2E6B463F1B819DB800BF39D5 /* DetailViewController.m in Sources */,
+				05E04CC71B968CD700E5D28C /* FreashSaleViewControllerDataSource.m in Sources */,
 				2E8C342A1B7DF3DC006B5BC0 /* UIView+CommonSuperview.m in Sources */,
 				380D8F7F1B8C5369000FA98C /* HeaderViewCell.m in Sources */,
 				2E8C33DB1B7DEC79006B5BC0 /* AppDelegate.m in Sources */,
@@ -1596,6 +1669,7 @@
 				057A26501B86D08C003DAF07 /* MineViewControllerDataSource.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */,
+				05E04CC01B96864E00E5D28C /* FreashSaleViewController.m in Sources */,
 				2E7706781B8812E10024282D /* FeatureDescriptionCell.m in Sources */,
 				2E7706721B88085A0024282D /* MoreInfomationCell.m in Sources */,
 				2E8C34111B7DF361006B5BC0 /* UINavigationController+CustomNavigationController.m in Sources */,
