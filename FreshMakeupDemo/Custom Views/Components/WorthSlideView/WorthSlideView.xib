@@ -8,11 +8,11 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WorthSlideView">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfI-uH-hux">
-                    <rect key="frame" x="25" y="45" width="25" height="45"/>
+                    <rect key="frame" x="25" y="2" width="25" height="43"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worth_slideview_worth.png" translatesAutoresizingMaskIntoConstraints="NO" id="hkv-B7-fTY">
                             <rect key="frame" x="0.0" y="2" width="25" height="25"/>
@@ -23,7 +23,7 @@
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="119" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCX-sh-3c4">
-                            <rect key="frame" x="2" y="29" width="23" height="16"/>
+                            <rect key="frame" x="1" y="29" width="23" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" id="4Af-v6-o4a"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" id="532-oz-fhv"/>
@@ -43,7 +43,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stz-Z3-Yvj">
-                    <rect key="frame" x="270" y="45" width="25" height="45"/>
+                    <rect key="frame" x="270" y="2" width="25" height="43"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worth_slideview_notworth.png" translatesAutoresizingMaskIntoConstraints="NO" id="447-Fz-THa">
                             <rect key="frame" x="0.0" y="2" width="25" height="25"/>
@@ -72,8 +72,8 @@
                         <constraint firstItem="447-Fz-THa" firstAttribute="top" secondItem="stz-Z3-Yvj" secondAttribute="top" constant="2" id="dZh-Ld-pad"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6B7-hR-CxP">
-                    <rect key="frame" x="52" y="60" width="216" height="14"/>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6B7-hR-CxP">
+                    <rect key="frame" x="52" y="16" width="216" height="14"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrB-5r-IQP">
                             <rect key="frame" x="0.0" y="0.0" width="150" height="14"/>
@@ -92,7 +92,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vRn-4L-pw1">
-                    <rect key="frame" x="128" y="15" width="74" height="60"/>
+                    <rect key="frame" x="128" y="-29" width="74" height="60"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="worth_slideview_car.png" translatesAutoresizingMaskIntoConstraints="NO" id="dml-sv-Lc4">
                             <rect key="frame" x="0.0" y="0.0" width="74" height="60"/>
@@ -137,15 +137,15 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="stz-Z3-Yvj" firstAttribute="leading" secondItem="6B7-hR-CxP" secondAttribute="trailing" constant="2" id="2xZ-zH-J27"/>
-                <constraint firstItem="6B7-hR-CxP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="Chu-5q-1yI"/>
                 <constraint firstItem="jfI-uH-hux" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="PJD-mD-3Il"/>
                 <constraint firstItem="6B7-hR-CxP" firstAttribute="top" secondItem="vRn-4L-pw1" secondAttribute="bottom" constant="-15" id="RKT-Bk-pcI"/>
                 <constraint firstAttribute="bottom" secondItem="stz-Z3-Yvj" secondAttribute="bottom" id="WHE-OJ-MJI"/>
                 <constraint firstAttribute="trailing" secondItem="stz-Z3-Yvj" secondAttribute="trailing" constant="25" id="amk-dP-7WR"/>
                 <constraint firstAttribute="bottom" secondItem="jfI-uH-hux" secondAttribute="bottom" id="ba6-Jf-DFp"/>
                 <constraint firstItem="6B7-hR-CxP" firstAttribute="leading" secondItem="jfI-uH-hux" secondAttribute="trailing" constant="2" id="d4n-7N-suk"/>
-                <constraint firstItem="stz-Z3-Yvj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="45" id="eUX-na-DhM"/>
-                <constraint firstItem="jfI-uH-hux" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="45" id="tV8-IR-2KW"/>
+                <constraint firstItem="stz-Z3-Yvj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="eUX-na-DhM"/>
+                <constraint firstItem="jfI-uH-hux" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="tV8-IR-2KW"/>
+                <constraint firstAttribute="centerY" secondItem="6B7-hR-CxP" secondAttribute="centerY" id="ybq-tu-Ewp"/>
                 <constraint firstItem="stz-Z3-Yvj" firstAttribute="leading" secondItem="vRn-4L-pw1" secondAttribute="trailing" constant="68" id="zuW-na-UCl"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>

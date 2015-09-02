@@ -16,4 +16,8 @@
     return worthSlideView;
 }
 
+- (void)awakeFromNib {
+    self.processView.layer.cornerRadius = self.processView.frame.size.height / 2;
+}
+
 @end

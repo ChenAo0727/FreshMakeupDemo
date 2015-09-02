@@ -11,13 +11,13 @@
 @implementation ImageMaxCell
 
 - (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    self.worthSlideView = [WorthSlideView create];
+    [self.contentView addSubview:self.worthSlideView];
+    [self.worthSlideView setBottomSpace:0];
+    [self.worthSlideView setLeftSpace:0];
+    [self.worthSlideView setRightSpace:0];
+    [self.worthSlideView setHeightConstant:45];
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
 }
 
 @end
