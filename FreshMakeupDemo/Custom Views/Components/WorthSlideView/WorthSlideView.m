@@ -8,12 +8,53 @@
 
 #import "WorthSlideView.h"
 
-@implementation WorthSlideView
+@implementation WorthSlideView {
+    CGFloat lastCarViewConstraint;
+}
 
 + (instancetype)create {
     WorthSlideView *worthSlideView = [[[NSBundle mainBundle] loadNibNamed:@"WorthSlideView" owner:nil options:nil] lastObject];
     worthSlideView.translatesAutoresizingMaskIntoConstraints = NO;
     return worthSlideView;
+}
+
+- (void)awakeFromNib {
+    self.processView.layer.cornerRadius = self.processView.frame.size.height / 2;
+    [self configureSlideMotion];
+}
+
+- (void)configureSlideMotion {
+    self.slideMotion = [SlideMotion new];
+    self.slideMotion.direction = SlideMotionDirectionHorizontal;
+    self.slideMotion.delegate = self;
+    self.slideMotion.dataSource = self;
+    [self.slideMotion attachToView:self.carView];
+}
+
+- (void)updateCarToDefaultPostion {
+    self.carViewRightConstraint.constant = self.processView.frame.size.width - self.leftProcessViewWithConstraint.constant;
+    [self layoutIfNeeded];
+}
+
+- (UIView *)containerViewOfSlideMotion:(SlideMotion *)slideMotion {
+    return self;
+}
+
+- (void)slideMotion:(SlideMotion *)slideMotion didBeginSlideView:(UIView *)view {
+    lastCarViewConstraint = self.carViewRightConstraint.constant;
+}
+
+- (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
+    self.carViewRightConstraint.constant = lastCarViewConstraint - offset;
+    [self layoutIfNeeded];
+}
+
+- (void)slideMotion:(SlideMotion *)slideMotion didEndSlideView:(UIView *)view {
+    [UIView animateWithDuration:0.2 animations:^{
+        [self updateCarToDefaultPostion];
+    } completion:^(BOOL finished) {
+        
+    }];
 }
 
 @end

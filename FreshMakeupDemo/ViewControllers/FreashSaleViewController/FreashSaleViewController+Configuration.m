@@ -15,7 +15,7 @@
 }
 
 - (void)tableViewEdit {
-    self.freashSaleViewControllerDataSource =[FreashSaleViewControllerDataSource new];
+    self.freashSaleViewControllerDataSource = [FreashSaleViewControllerDataSource new];
     self.freashSaleTableView.delegate = self;
     self.freashSaleTableView.dataSource = self.freashSaleViewControllerDataSource;
     [self.freashSaleTableView registerNib:[UINib nibWithNibName:@"TitleHeadCell" bundle:nil] forCellReuseIdentifier:TITLE_HEAD_CELL];

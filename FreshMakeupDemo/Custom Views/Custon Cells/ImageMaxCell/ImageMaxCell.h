@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WorthSlideView.h"
+
 #define IMAGE_MAX_CELL @"ImageMaxCell"
+
 @interface ImageMaxCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *imageMaxLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageMaxImageView;
+@property (strong, nonatomic) WorthSlideView *worthSlideView;
 
 @end
