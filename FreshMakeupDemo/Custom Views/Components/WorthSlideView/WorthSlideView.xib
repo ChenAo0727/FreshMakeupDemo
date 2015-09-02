@@ -152,9 +152,11 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="carImageView" destination="dml-sv-Lc4" id="pyK-Gw-ri1"/>
-                <outlet property="centerSaleView" destination="vRn-4L-pw1" id="uk3-q8-atk"/>
+                <outlet property="carView" destination="vRn-4L-pw1" id="Nmy-80-vv7"/>
+                <outlet property="carViewRightConstraint" destination="zuW-na-UCl" id="v64-6Q-D3H"/>
                 <outlet property="clickToBuyLabel" destination="lbh-LU-AZY" id="kWE-yO-0iS"/>
                 <outlet property="leftProcessView" destination="nrB-5r-IQP" id="hAO-hM-Q8e"/>
+                <outlet property="leftProcessViewWithConstraint" destination="POZ-qK-IK7" id="JQS-FU-jX7"/>
                 <outlet property="notWorthCountLabel" destination="PnT-MF-Ejo" id="IFV-Ip-nUg"/>
                 <outlet property="notWorthImageView" destination="447-Fz-THa" id="7jy-0J-gV3"/>
                 <outlet property="priceLabel" destination="Y3l-nK-sHI" id="zfX-dT-yGc"/>
