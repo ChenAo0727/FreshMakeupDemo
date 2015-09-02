@@ -365,7 +365,7 @@
                 <outlet property="earlyRightView" destination="W9K-1L-XLb" id="R8F-m5-GQb"/>
                 <outlet property="earlyView" destination="qRv-FL-nkE" id="7OF-sJ-Xue"/>
             </connections>
-            <point key="canvasLocation" x="812" y="541"/>
+            <point key="canvasLocation" x="633" y="493"/>
         </tableViewCell>
     </objects>
     <resources>
