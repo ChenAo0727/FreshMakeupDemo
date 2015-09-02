@@ -20,6 +20,7 @@
 
 - (void)awakeFromNib {
     self.processView.layer.cornerRadius = self.processView.frame.size.height / 2;
+    [self updateCarToDefaultPostion];
     [self configureSlideMotion];
 }
 
@@ -45,7 +46,13 @@
 }
 
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
-    self.carViewRightConstraint.constant = lastCarViewConstraint - offset;
+    if (lastCarViewConstraint - offset < 0) {
+        self.carViewRightConstraint.constant = 0;
+    } else if (self.processView.frame.size.width - self.carView.frame.size.width < lastCarViewConstraint - offset) {
+        self.carViewRightConstraint.constant = self.processView.frame.size.width - self.carView.frame.size.width;
+    } else {
+        self.carViewRightConstraint.constant = lastCarViewConstraint - offset;
+    }
     [self layoutIfNeeded];
 }
 
