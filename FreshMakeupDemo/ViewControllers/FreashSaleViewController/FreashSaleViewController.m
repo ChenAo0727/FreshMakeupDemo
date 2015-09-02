@@ -8,6 +8,7 @@
 
 #import "FreashSaleViewController.h"
 #import "FreashSaleViewController+Configuration.h"
+#import "TagsTableViewCell.h"
 @interface FreashSaleViewController ()
 
 @end
@@ -25,7 +26,9 @@
     if (indexPath.row == 0) {
         return 384;
     } else if (indexPath.row == 2) {
-        return 70;
+        TagsTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagsTableViewCell" owner:nil options:nil] lastObject];
+        [cell layoutIfNeeded];
+        return [cell heightOfCell];;
     } else {
     return 50;
     }
