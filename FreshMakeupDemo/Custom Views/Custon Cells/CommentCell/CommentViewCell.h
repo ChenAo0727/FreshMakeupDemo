@@ -16,6 +16,12 @@
 @property (weak, nonatomic) IBOutlet UILabel *approveCount;
 @property (weak, nonatomic) IBOutlet UILabel *commentCount;
 @property (weak, nonatomic) IBOutlet UILabel *commentLabel;
+@property (weak, nonatomic) IBOutlet UIView *bottomLine;
+@property (weak, nonatomic) IBOutlet UIImageView *approveImage;
+@property (weak, nonatomic) IBOutlet UIImageView *commentImage;
+@property (weak, nonatomic) IBOutlet UIView *bootomView;
 
-- (CGFloat)getCommentHeight:(NSString *)commentString;
+
+- (void)updateWithUserImage:(UIImage *)image userName:(NSString *)name curentFloor:(NSInteger)floor commitTime:(NSString *)time approveCount:(NSInteger)approveCount commentCount:(NSInteger)commentCount commentLabel:(NSString *)comment;
+- (CGFloat)getCommentHeight;
 @end
