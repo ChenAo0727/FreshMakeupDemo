@@ -9,14 +9,17 @@
 #import "FreashSaleViewControllerDataSource.h"
 #import "TitleHeadCell.h"
 #import "ImageMaxCell.h"
+#import "CommentViewCell.h"
 @implementation FreashSaleViewControllerDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return 4;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         return [self imageMaxTableView:tableView indexPath:indexPath];
-    } else {
+    } else if (indexPath.row == 1) {
+        return [self commentViewTableView:tableView indexPath:indexPath];
+    }else {
     return [self titleHeadTableView:tableView indexPath:indexPath];
     }
 }
@@ -32,6 +35,10 @@
 }
 - (UITableViewCell *)imageMaxTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
     ImageMaxCell *cell = [tableView dequeueReusableCellWithIdentifier:IMAGE_MAX_CELL];
+    return cell;
+}
+- (UITableViewCell *)commentViewTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indesPath {
+    CommentViewCell *cell = [tableView dequeueReusableCellWithIdentifier:COMMENT_VIEW_CELL];
     return cell;
 }
 @end

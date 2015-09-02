@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define COMMENT_VIEW_CELL @"CommentViewCell"
 @interface CommentViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *userImage;
 @property (weak, nonatomic) IBOutlet UILabel *userName;
