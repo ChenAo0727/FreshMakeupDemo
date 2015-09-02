@@ -27,17 +27,22 @@
     if (indexPath.row == 0) {
         return 380;
     } else if (indexPath.row == 1) {
-        TextCell *cell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
-        CGFloat cellHeight = [cell heightOfCell];
-        return cellHeight;
-    }else if (indexPath.row == 2) {
-        TagsTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagsTableViewCell" owner:nil options:nil] lastObject];
-        [cell layoutIfNeeded];
-        return [cell heightOfCell];
+        TextCell *textCell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
+        CGFloat cellHeight = [textCell heightOfCell];
+       return cellHeight;
+    } else if (indexPath.row == 2) {
+        TagsTableViewCell *tagsCell = [[[NSBundle mainBundle] loadNibNamed:@"TagsTableViewCell" owner:nil options:nil] lastObject];
+        [tagsCell layoutIfNeeded];
+        return [tagsCell heightOfCell];
+
+    } else if (indexPath.row == 3) {
+        return 50;
     } else if (indexPath.row == 4) {
         return 170;
+    } else if (indexPath.row == 7) {
+        return 50;
     } else {
-    return 50;
+        return 0;
     }
 }
 - (void)didReceiveMemoryWarning {

@@ -19,5 +19,7 @@
 
     // Configure the view for the selected state
 }
-
+- (void)updateWithLabel:(NSString *)label {
+    self.titleHeadLabel.text = label;
+}
 @end

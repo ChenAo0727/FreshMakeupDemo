@@ -10,5 +10,5 @@
 #define TITLE_HEAD_CELL @"TitleHeadCell"
 @interface TitleHeadCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *titleHeadLabel;
-
+- (void)updateWithLabel:(NSString *)label;
 @end

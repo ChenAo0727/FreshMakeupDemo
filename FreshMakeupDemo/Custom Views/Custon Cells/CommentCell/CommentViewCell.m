@@ -12,6 +12,8 @@
 
 
 - (void)awakeFromNib {
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+
     [super awakeFromNib];
     self.userImage.layer.cornerRadius = self.frame.size.width / 2;
     self.userImage.layer.borderColor = [UIColor greenColor].CGColor;

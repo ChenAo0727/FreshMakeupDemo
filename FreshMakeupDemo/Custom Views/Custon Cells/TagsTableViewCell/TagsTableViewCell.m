@@ -14,6 +14,7 @@
 }
 
 - (void)awakeFromNib {
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
     tags = @[@"#贝玲妃", @"#彩妆", @"#腮红", @"#贝玲妃蒲公英蜜粉", @"#呵呵呵呵"];
     self.staggeredFlowLayout = [[SGSStaggeredFlowLayout alloc] init];
     self.staggeredFlowLayout.layoutMode = SGSStaggeredFlowLayoutMode_Even;
