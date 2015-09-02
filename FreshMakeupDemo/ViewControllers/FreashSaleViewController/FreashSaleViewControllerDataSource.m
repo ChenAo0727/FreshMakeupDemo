@@ -11,18 +11,21 @@
 #import "ImageMaxCell.h"
 #import "CommentViewCell.h"
 #import "TextCell.h"
+#import "TagsTableViewCell.h"
 @implementation FreashSaleViewControllerDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return 6;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         return [self imageMaxTableView:tableView indexPath:indexPath];
     } else if (indexPath.row == 1) {
         return [self textTableView:tableView indexPath:indexPath];
-    } else if (indexPath.row == 3) {
+    } else if (indexPath.row == 2) {
+        return [self tagsTableView:tableView indexPath:indexPath];
+    } else if (indexPath.row == 4) {
         return [self commentViewTableView:tableView indexPath:indexPath];
-    }else {
+    } else {
     return [self titleHeadTableView:tableView indexPath:indexPath];
     }
 }
@@ -30,7 +33,7 @@
 - (UITableViewCell *)titleHeadTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
     TitleHeadCell *cell = [tableView dequeueReusableCellWithIdentifier:TITLE_HEAD_CELL];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    if (indexPath.row == 2) {
+    if (indexPath.row == 4) {
         cell.titleHeadLabel.text = @"热门评论";
     } else {
         cell.titleHeadLabel.text = @"最新评论";
@@ -49,6 +52,11 @@
 }
 - (UITableViewCell *)textTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
     TextCell *cell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    return cell;
+}
+- (UITableViewCell *)tagsTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
+    TagsTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:TAGS_TABLEVIEW_CELL];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     return cell;
 }

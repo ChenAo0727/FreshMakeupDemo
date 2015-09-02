@@ -30,12 +30,12 @@
         TextCell *cell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
         CGFloat cellHeight = [cell heightOfCell];
         return cellHeight;
-    }else if (indexPath.row == 3) {
-        return 170;
-    } else if (indexPath.row == 2) {
+    }else if (indexPath.row == 2) {
         TagsTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagsTableViewCell" owner:nil options:nil] lastObject];
         [cell layoutIfNeeded];
         return [cell heightOfCell];
+    } else if (indexPath.row == 4) {
+        return 170;
     } else {
     return 50;
     }
