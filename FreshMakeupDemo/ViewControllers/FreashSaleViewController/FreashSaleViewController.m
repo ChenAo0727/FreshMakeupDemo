@@ -9,6 +9,7 @@
 #import "FreashSaleViewController.h"
 #import "FreashSaleViewController+Configuration.h"
 #import "TextCell.h"
+#import "UIScreen+Utility.h"
 #import "TagsTableViewCell.h"
 @interface FreashSaleViewController ()
 
@@ -24,6 +25,7 @@
     // Do any additional setup after loading the view from its nib.
     [self configureViews];
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         return 380;
@@ -33,6 +35,9 @@
         return cellHeight;
     }else if (indexPath.row == 2) {
         TagsTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagsTableViewCell" owner:nil options:nil] lastObject];
+        CGRect frame = cell.frame;
+        frame.size.width = [UIScreen screenWidth];
+        cell.frame = frame;;
         [cell layoutIfNeeded];
         return [cell heightOfCell];
     } else if (indexPath.row == 4) {
