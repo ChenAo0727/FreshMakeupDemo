@@ -40,13 +40,15 @@
         CGFloat cellHeight = [textCell heightOfCell];
        return cellHeight;
     } else if (indexPath.row == 2) {
-        TagsTableViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagsTableViewCell" owner:nil options:nil] lastObject];
-        CGRect frame = cell.frame;
-        frame.size.width = [UIScreen screenWidth];
-        cell.frame = frame;
-        [cell layoutIfNeeded];
-        return [cell heightOfCell];
-
+        CGFloat cellHeight = [tableView fd_heightForCellWithIdentifier:TAGS_TABLEVIEW_CELL cacheByIndexPath:indexPath configuration:^(TagsTableViewCell *cell) {
+            [cell.tagCollectionView reloadData];
+            [cell layoutIfNeeded];
+            [cell updateHeightConstraint];
+            CGRect frame = cell.frame;
+            frame.size.width = [UIScreen screenWidth];
+            cell.frame = frame;
+        }];;
+        return cellHeight;
     } else if (indexPath.row == 3) {
         return 50;
     } else if (indexPath.row == 7) {

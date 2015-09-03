@@ -27,6 +27,10 @@
     return self.tagCollectionView.contentSize.height + 50;
 }
 
+- (void)updateHeightConstraint {
+    self.collectionViewHeightConstraint.constant = self.tagCollectionView.contentSize.height;
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (0 == indexPath.row) {
         UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DEFAULT_CELL" forIndexPath:indexPath];

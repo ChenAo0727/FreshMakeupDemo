@@ -15,7 +15,9 @@
 @interface TagsTableViewCell : UITableViewCell <UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UICollectionView *tagCollectionView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *collectionViewHeightConstraint;
 @property (strong, nonatomic) EqualSpaceFlowLayout *equalSpaceFlowLayout;
 - (CGFloat)heightOfCell;
+- (void)updateHeightConstraint;
 
 @end
