@@ -18,6 +18,8 @@
 }
 
 - (void)tableViewEdit {
+    self.freashSaleTableView.rowHeight = UITableViewAutomaticDimension;
+    self.freashSaleTableView.estimatedRowHeight = 20;
     self.freashSaleViewControllerDataSource = [FreashSaleViewControllerDataSource new];
     self.freashSaleTableView.delegate = self;
     self.freashSaleTableView.dataSource = self.freashSaleViewControllerDataSource;

@@ -58,14 +58,8 @@
     self.approveCount.text = [NSString stringWithFormat:@"%ld",approveCount];
     self.commentCount.text = [NSString stringWithFormat:@"%ld",commentCount];
     self.commentLabel.text = comment;
-    [self setNeedsLayout];
-    [self layoutIfNeeded];
-
-
 }
-- (void)layoutSubviews{
-    [super layoutSubviews];
-}
+
 - (IBAction)commentButtonClick:(id)sender {
     
     
@@ -74,8 +68,9 @@
 }
 
 - (CGFloat)getCommentHeight{
-
- return self.bottomLine.frame.size.height + self.bottomLine.frame.origin.y ;
+    return [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    
+ //return self.bottomLine.frame.size.height + self.bottomLine.frame.origin.y ;
     
     
 }

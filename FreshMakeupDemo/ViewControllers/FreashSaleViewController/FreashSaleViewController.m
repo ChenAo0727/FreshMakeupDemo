@@ -8,6 +8,7 @@
 
 #import "FreashSaleViewController.h"
 #import "FreashSaleViewController+Configuration.h"
+#import "UITableView+FDTemplateLayoutCell.h"
 #import "CommentViewCell.h"
 #import "TextCell.h"
 #import "UIScreen+Utility.h"
@@ -51,15 +52,13 @@
     } else if (indexPath.row == 7) {
         return 50;
     } else {
-        CommentViewCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"CommentViewCell" owner:nil options:nil] lastObject];
-            NSString *comment = @"这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高";
-        [cell updateWithUserImage:[UIImage imageNamed:@"detail_avatar_image.jpg"] userName:@"宝贝" curentFloor:1 commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:comment];
-
-        CGRect frame = cell.frame;
-        frame.size.width = [UIScreen screenWidth];
-        cell.frame = frame;
-        [cell layoutIfNeeded];
-        return [cell getCommentHeight];
+        NSString *comment = @"这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高";
+        return [tableView fd_heightForCellWithIdentifier:COMMENT_VIEW_CELL cacheByIndexPath:indexPath configuration:^(CommentViewCell *cell) {
+            [cell updateWithUserImage:[UIImage imageNamed:@"detail_avatar_image.jpg"] userName:@"宝贝" curentFloor:1 commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:comment];
+            CGRect frame = cell.frame;
+            frame.size.width = [UIScreen screenWidth];
+            cell.frame = frame;
+        }];
     }
 }
 - (void)didReceiveMemoryWarning {
