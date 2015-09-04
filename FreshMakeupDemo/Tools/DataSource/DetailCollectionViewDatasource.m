@@ -335,7 +335,9 @@
 
 - (CGSize)sizeOfCellInSectionFiveOfIndex:(NSIndexPath *)indexPath {
     CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
-    return CGSizeMake([UIScreen mainScreen].bounds.size.width, [cell heightOfCell]);
+    CGSize size = [cell sizeOfCell];
+    return size;
+//    return CGSizeMake([UIScreen mainScreen].bounds.size.width, [cell heightOfCell]);
 }
 
 - (CGSize)sizeOfCellInSectionThreeOfIndex:(NSIndexPath *)indexPath {
@@ -402,7 +404,9 @@
         default:
             break;
     }
-    return CGSizeMake([UIScreen mainScreen].bounds.size.width, [cell heightOfCell]);
+    CGSize size = [cell sizeOfCell];
+    return size;
+    //return CGSizeMake([UIScreen mainScreen].bounds.size.width, [cell heightOfCell]);
 }
 
 - (CGSize)sizeOfFeatureDecriptionCell {
