@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[FreashSaleViewController create]];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:[HomeViewController create]];
     self.navigationController.navigationBarHidden = YES;
 //    MineViewController *mineViewController = [MineViewController create];
 //    XHDrawerController *xhDrawerController = [[XHDrawerController alloc] init];
