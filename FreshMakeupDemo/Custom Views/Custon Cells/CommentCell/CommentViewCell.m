@@ -8,6 +8,11 @@
 
 #import "CommentViewCell.h"
 #import "UIColor+Utility.h"
+#import "ChatCell.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+#import "UIScreen+Utility.h"
+
+static NSString *CHATCELL = @"ChatCell";
 
 @implementation CommentViewCell
 
@@ -18,6 +23,14 @@
     self.userImage.layer.borderWidth = 0.4;
     self.userImage.layer.masksToBounds = YES;
     self.selectionStyle = UITableViewCellSelectionStyleNone;
+
+    self.commentTableView.delegate = self;
+    self.commentTableView.dataSource = self;
+    [self.commentTableView registerNib:[UINib nibWithNibName:CHATCELL bundle:nil] forCellReuseIdentifier:CHATCELL];
+
+
+
+
 }
 - (IBAction)addApprove:(id)sender {
     
@@ -62,17 +75,67 @@
 
 - (IBAction)commentButtonClick:(id)sender {
     
+    if (!self.commentTableView.hidden) {
+        
+        self.commentTableView.hidden = YES;
+        CGRect frame = self.bootomView.frame;
+        frame.origin.y -= self.commentTableView.frame.size.height;
+        self.bootomView.frame = frame;
+        CGRect frame1 = self.bottomLine.frame;
+        frame1.origin.y -= self.commentTableView.frame.size.height;
+        
+        self.bottomLine.frame = frame1;
+        
+    }else{
     
-    
+        self.commentTableView.hidden = NO;
+
+        CGRect frame = self.bootomView.frame;
+        frame.origin.y += self.commentTableView.frame.size.height;
+        self.bootomView.frame = frame;
+        CGRect frame1 = self.bottomLine.frame;
+        frame1.origin.y += self.commentTableView.frame.size.height;
+        
+        self.bottomLine.frame = frame1;
+
+
+    }
     
 }
-
+- (void)updateHeightConstraint{
+    
+    self.heightConstraint.constant = self.commentTableView.contentSize.height ;
+    [self layoutIfNeeded];
+    [self setNeedsLayout];
+}
 - (CGFloat)getCommentHeight{
+    
+
+    
     return [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
     
- //return self.bottomLine.frame.size.height + self.bottomLine.frame.origin.y ;
     
     
 }
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 3;
 
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+
+    ChatCell *cell = [tableView dequeueReusableCellWithIdentifier:CHATCELL forIndexPath:indexPath];
+
+    return cell;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    ChatCell *cell = [tableView dequeueReusableCellWithIdentifier:CHATCELL];
+
+    CGFloat height = [cell cellHeight];
+    [cell setNeedsLayout];
+    [cell layoutIfNeeded];
+    return height;
+
+}
 @end

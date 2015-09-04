@@ -229,6 +229,8 @@
 		38AF47171B9686B4006C45CB /* CommentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AF47151B9686B4006C45CB /* CommentViewCell.m */; };
 		38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AF47161B9686B4006C45CB /* CommentViewCell.xib */; };
 		38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B48A2F1B941EB100092D6D /* MySegmentControl.m */; };
+		38DEFC431B993FA3003E9E0F /* ChatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38DEFC411B993FA3003E9E0F /* ChatCell.m */; };
+		38DEFC441B993FA3003E9E0F /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38DEFC421B993FA3003E9E0F /* ChatCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -562,6 +564,9 @@
 		38AF47161B9686B4006C45CB /* CommentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewCell.xib; sourceTree = "<group>"; };
 		38B48A2E1B941EB100092D6D /* MySegmentControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySegmentControl.h; sourceTree = "<group>"; };
 		38B48A2F1B941EB100092D6D /* MySegmentControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySegmentControl.m; sourceTree = "<group>"; };
+		38DEFC401B993FA3003E9E0F /* ChatCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCell.h; sourceTree = "<group>"; };
+		38DEFC411B993FA3003E9E0F /* ChatCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCell.m; sourceTree = "<group>"; };
+		38DEFC421B993FA3003E9E0F /* ChatCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
 		497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6BEAE562AD3319ADF4371D12 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -921,6 +926,9 @@
 				38AF47141B9686B4006C45CB /* CommentViewCell.h */,
 				38AF47151B9686B4006C45CB /* CommentViewCell.m */,
 				38AF47161B9686B4006C45CB /* CommentViewCell.xib */,
+				38DEFC401B993FA3003E9E0F /* ChatCell.h */,
+				38DEFC411B993FA3003E9E0F /* ChatCell.m */,
+				38DEFC421B993FA3003E9E0F /* ChatCell.xib */,
 			);
 			path = CommentCell;
 			sourceTree = "<group>";
@@ -1570,6 +1578,7 @@
 				05DEA0551B880C560094E123 /* white.png in Resources */,
 				058ABF5A1B82C58100A0BA8A /* findhottopic5.jpg in Resources */,
 				058ABF591B82C58100A0BA8A /* findhottopic4.jpg in Resources */,
+				38DEFC441B993FA3003E9E0F /* ChatCell.xib in Resources */,
 				2E6B46401B819DB800BF39D5 /* DetailViewController.xib in Resources */,
 				057A26441B86CFCB003DAF07 /* headPortrait.png in Resources */,
 				2EFAEA851B8AD6130044BAF0 /* selection_unlike_image.png in Resources */,
@@ -1710,6 +1719,7 @@
 				2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */,
 				2E132F941B85BC5C005DCF14 /* HomeViewController+Animation.m in Sources */,
 				2E8C34481B7DF46E006B5BC0 /* CGSizeUtility.m in Sources */,
+				38DEFC431B993FA3003E9E0F /* ChatCell.m in Sources */,
 				2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */,
 				05E04CD91B9697CE00E5D28C /* ImageMaxCell.m in Sources */,
 				2EA556EF1B953A4300C696B0 /* DetailCollectionViewDatasource.m in Sources */,
