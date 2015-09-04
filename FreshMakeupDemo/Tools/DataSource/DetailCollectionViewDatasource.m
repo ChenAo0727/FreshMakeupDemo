@@ -68,7 +68,7 @@
         case 2:
             return 1 + 2 * self.detailInfomationTool.feeling.count;//标题 + (图片,文字) * 数量
         case 3:
-            return 2 + 2 *self.detailInfomationTool.productionDescription.count;//标题 and 按钮 + (图片+文字) * 数量
+            return 2 + 2 * self.detailInfomationTool.productionDescription.count;//标题 and 按钮 + (图片+文字) * 数量
         case 4:
             return 2;
         case 5:
@@ -441,7 +441,7 @@
             [cell updateWithContentText:@"这款美妆拥有四大必杀技, 集补水，保湿，美白，抗皱为一体，绝对是资深护肤达人必备的美妆利器"];
             break;
         case 2:
-            [cell updateWithContentText:[self.detailInfomationTool.feeling objectAtIndex:indexPath]];
+            [cell updateWithContentText:[[self.detailInfomationTool.feeling objectAtIndex:(indexPath.row / 2 -1)] objectForKey:@"text"]];
             break;
         default:
             break;
