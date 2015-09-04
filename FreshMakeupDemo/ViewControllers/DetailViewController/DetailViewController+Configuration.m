@@ -16,7 +16,7 @@
 #import "OwnerSayCell.h"
 #import "ImageCell.h"
 #import "TitleCell.h"
-
+#import "DetailInfomationTool.h"
 @implementation DetailViewController (Configuration)
 
 - (void)updateSelectionViewY {
@@ -52,6 +52,8 @@
     NSDictionary *nibDictionary = @{BASE_INFO_CELL : @"BaseInfomationCell", OWNER_SAY_CELL : @"OwnerSayCell", TITLE_CELL : @"TitleCell", IMAGE_CELL : @"ImageCell", MORE_INFOMATION_CELL : @"MoreInfomationCell", FEATURE_DESCRIPTION_CELL : @"FeatureDescriptionCell", COMMENT_CELL : @"CommentCell", COPY_WRITER_CELL : @"CopywriterCell", TRIAL_COLLECTION_VIEW_CELL : @"TrialCollectionViewCell"};
     [self registerNibWithDictionaty:nibDictionary];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
+    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithYaDunInfomation];
+    self.detailCollectionViewDatasource.detailInfomationTool = detailInfomationTool;
     self.detailCollectionView.dataSource = self.detailCollectionViewDatasource;
     self.detailCollectionView.delegate = self;
 }
