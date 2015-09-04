@@ -39,7 +39,7 @@
 
 - (void)configureWaterFlowLayout {
     self.layout = [[CHTCollectionViewWaterfallLayout alloc] init];
-    self.layout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5);
+    self.layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.layout.headerHeight = 0;
     self.layout.footerHeight = 0;
     self.layout.minimumColumnSpacing = 0;

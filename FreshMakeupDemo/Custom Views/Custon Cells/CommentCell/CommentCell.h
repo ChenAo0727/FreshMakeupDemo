@@ -31,6 +31,7 @@
 
 - (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount;
 - (CGFloat)heightOfCell;
+- (CGSize)sizeOfCell;
 
 @end
 

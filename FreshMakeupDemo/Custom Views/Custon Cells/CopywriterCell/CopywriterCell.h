@@ -15,5 +15,6 @@
 
 - (void)updateWithContentText:(NSString *)contentText;
 - (CGFloat)heightOfCell;
+- (CGSize)sizeOfCell;
 
 @end
