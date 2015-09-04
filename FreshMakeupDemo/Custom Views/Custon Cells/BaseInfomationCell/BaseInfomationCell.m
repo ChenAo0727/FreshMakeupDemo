@@ -18,5 +18,7 @@
     CGRect frame = self.bottomView.frame;
     return frame.origin.y + frame.size.height + 10;
 }
-
+- (void)updateWithTitleLabel:(NSString *)label {
+    self.titleLabel.text = label;
+}
 @end

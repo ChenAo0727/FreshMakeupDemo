@@ -66,9 +66,9 @@
         case 1:
             return 6;
         case 2:
-            return 3;
+            return 1 + 2 * self.detailInfomationTool.feeling.count;//标题 + (图片,文字) * 数量
         case 3:
-            return 3;
+            return 2 + 2 *self.detailInfomationTool.productionDescription.count;//标题 and 按钮 + (图片+文字) * 数量
         case 4:
             return 2;
         case 5:
@@ -146,21 +146,35 @@
         case 2:
             return [self generateCopywriterCellWithCollectionView:collectionView indexPath:indexPath];
         default:
+            if (indexPath.row % 2 == 1) {
+                 return [self generateImageCellWithCollectionView:collectionView indexPath:indexPath];
+            } else {
+                 return [self generateCopywriterCellWithCollectionView:collectionView indexPath:indexPath];
+            }
+           
             return nil;
     }
 }
 
 - (UICollectionViewCell *)generateCellInSectionThreeWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0:
-            return [self generateTitleCellWithCollectionView:collectionView indexPath:indexPath];
-        case 1:
+    
+    
+    if (indexPath.row == 0) {
+        return [self generateTitleCellWithCollectionView:collectionView indexPath:indexPath];
+    } else if (indexPath.row == self.detailInfomationTool.productionDescription.count * 2 + 1) {
+       return [self generateMoreInfomationCellWithCollectionView:collectionView indexPath:indexPath];
+    } else if (indexPath.row == 1) {
+       return [self generateImageCellWithCollectionView:collectionView indexPath:indexPath];
+    } else if (indexPath.row == 2) {
+       return [self generateCopywriterCellWithCollectionView:collectionView indexPath:indexPath];
+    } else {
+        if (indexPath.row % 2 == 1) {
             return [self generateImageCellWithCollectionView:collectionView indexPath:indexPath];
-        case 2:
-            return [self generateMoreInfomationCellWithCollectionView:collectionView indexPath:indexPath];
-        default:
-            return nil;
+        } else {
+            return [self generateCopywriterCellWithCollectionView:collectionView indexPath:indexPath];
+        }
     }
+    
 }
 
 - (UICollectionViewCell *)generateCellInSectionFourWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath  {
@@ -215,7 +229,10 @@
             [cell updateWithContentText:@"这款美妆拥有四大必杀技, 集补水，保湿，美白，抗皱为一体，绝对是资深护肤达人必备的美妆利器"];
             break;
         case 2:
-            [cell updateWithContentText:@"这款美妆拥有四大必杀技, 集补水，保湿，美白，抗皱为一体，绝对是资深护肤达人必备的美妆利器。这款美妆拥有四大必杀技, 集补水，保湿，美白，抗皱为一体，绝对是资深护肤达人必备的美妆利器。"];
+            [cell updateWithContentText:[[self.detailInfomationTool.feeling objectAtIndex:indexPath.row / 2 - 1] objectForKey:@"text"]];
+            break;
+        case 3:
+            [cell updateWithContentText:[[self.detailInfomationTool.productionDescription objectAtIndex:indexPath.row / 2 - 1] objectForKey:@"text"]];
         default:
             break;
     }
@@ -253,10 +270,20 @@
             [cell updateWithImage:[UIImage imageNamed:@"detail_argument_image"]];
             break;
         case 2:
-            [cell updateWithImage:[UIImage imageNamed:@"detail_introduction_image"]];
+            if (indexPath.row > 1) {
+             [cell updateWithImage:[UIImage imageNamed:[[self.detailInfomationTool.feeling objectAtIndex:indexPath.row / 2 - 1] objectForKey:@"image"]]];
+            } else {
+            [cell updateWithImage:[UIImage imageNamed:[[self.detailInfomationTool.feeling objectAtIndex:0] objectForKey:@"image"]]];
+            }
+           
             break;
         case 3:
-            [cell updateWithImage:[UIImage imageNamed:@"detail_movie_image"]];
+            if (indexPath.row > 1) {
+                [cell updateWithImage:[UIImage imageNamed:[[self.detailInfomationTool.productionDescription objectAtIndex:indexPath.row / 2 - 1] objectForKey:@"image"]]];
+            } else {
+                [cell updateWithImage:[UIImage imageNamed:[[self.detailInfomationTool.productionDescription objectAtIndex:0] objectForKey:@"image"]]];
+            }
+
             break;
         default:
             break;
@@ -296,11 +323,13 @@
 }
 - (UICollectionViewCell *)generateBaseInfomationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
     BaseInfomationCell *cell = (BaseInfomationCell *)[collectionView dequeueReusableCellWithReuseIdentifier:BASE_INFO_CELL forIndexPath:indexPath];
+    [cell updateWithTitleLabel:self.detailInfomationTool.title];
     return cell;
 }
 
 - (UICollectionViewCell *)generateOwnerSayCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
     OwnerSayCell *cell = (OwnerSayCell *)[collectionView dequeueReusableCellWithReuseIdentifier:OWNER_SAY_CELL forIndexPath:indexPath];
+    [cell updateWithLabel:self.detailInfomationTool.shortComment];
     return cell;
 }
 
@@ -341,15 +370,24 @@
 }
 
 - (CGSize)sizeOfCellInSectionThreeOfIndex:(NSIndexPath *)indexPath {
-    switch (indexPath.row) {
-        case 0:
-            return [self sizeOfTitleCell];
-        case 1:
+    if (indexPath.row == 0) {
+        return [self sizeOfTitleCell];
+    } else if (indexPath.row == 1) {
+        return [self sizeOfImageCellInIndexPath:indexPath];
+    } else if (indexPath.row == self.detailInfomationTool.productionDescription.count * 2 + 1) {
+        return [self sizeOfMoreInfomationCell];
+    } else {
+        if (indexPath.row % 2 == 1) {
             return [self sizeOfImageCellInIndexPath:indexPath];
-        case 2:
-            return [self sizeOfMoreInfomationCell];
-        default:
-            return CGSizeZero;
+        } else {
+            if (indexPath.row > 1  && [[[self.detailInfomationTool.productionDescription objectAtIndex:indexPath.row / 2 - 1] objectForKey:@"text"] isEqualToString:@""]){
+                return CGSizeZero;
+            } else if (indexPath.row < 2 && [[[self.detailInfomationTool.productionDescription objectAtIndex:0] objectForKey:@"text"] isEqualToString:@""]) {
+                return CGSizeZero;
+            } else {
+            return [self sizeOfCopywriterCellWithIndexPath:indexPath];
+            }
+        }
     }
 }
 
@@ -362,7 +400,11 @@
         case 2:
             return [self sizeOfCopywriterCellWithIndexPath:indexPath];
         default:
-            return CGSizeZero;
+            if (indexPath.row % 2 == 1) {
+                return [self sizeOfImageCellInIndexPath:indexPath];
+            } else {
+                return [self sizeOfCopywriterCellWithIndexPath:indexPath];
+            }
     }
 }
 
@@ -399,7 +441,7 @@
             [cell updateWithContentText:@"这款美妆拥有四大必杀技, 集补水，保湿，美白，抗皱为一体，绝对是资深护肤达人必备的美妆利器"];
             break;
         case 2:
-            [cell updateWithContentText:@"这款美妆拥有四大必杀技, 集补水，保湿，美白，抗皱为一体，绝对是资深护肤达人必备的美妆利器。这款美妆拥有四大必杀技, 集补水，保湿，美白，抗皱为一体，绝对是资深护肤达人必备的美妆利器。"];
+            [cell updateWithContentText:[self.detailInfomationTool.feeling objectAtIndex:indexPath]];
             break;
         default:
             break;

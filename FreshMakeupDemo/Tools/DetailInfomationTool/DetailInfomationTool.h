@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface DetailInfomationTool : NSObject
 
 @property (strong, nonatomic) NSString *title;
@@ -16,4 +15,5 @@
 @property (strong, nonatomic) NSArray *productionDescription;
 @property (strong, nonatomic) NSArray *feeling;
 
+- (instancetype)initWithYaDunInfomation;
 @end
