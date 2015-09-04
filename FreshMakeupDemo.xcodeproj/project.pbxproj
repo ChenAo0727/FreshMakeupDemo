@@ -85,6 +85,8 @@
 		05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDF01B8D8FBC00DD1667 /* try.png */; };
 		05D5F3691B944FBE0080AE64 /* ShakeAshakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5F3681B944FBE0080AE64 /* ShakeAshakeView.m */; };
 		05D5F36B1B944FEA0080AE64 /* ShakeAshakeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */; };
+		05D6BA601B99C50D00C20107 /* DetaBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D6BA5E1B99C50D00C20107 /* DetaBaseCollectionViewCell.m */; };
+		05D6BA611B99C50D00C20107 /* DetaBaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D6BA5F1B99C50D00C20107 /* DetaBaseCollectionViewCell.xib */; };
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		05DEA0541B880C560094E123 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA0521B880C560094E123 /* black.png */; };
@@ -349,6 +351,9 @@
 		05D5F3671B944FBE0080AE64 /* ShakeAshakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeAshakeView.h; sourceTree = "<group>"; };
 		05D5F3681B944FBE0080AE64 /* ShakeAshakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeAshakeView.m; sourceTree = "<group>"; };
 		05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeAshakeView.xib; sourceTree = "<group>"; };
+		05D6BA5D1B99C50D00C20107 /* DetaBaseCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetaBaseCollectionViewCell.h; sourceTree = "<group>"; };
+		05D6BA5E1B99C50D00C20107 /* DetaBaseCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetaBaseCollectionViewCell.m; sourceTree = "<group>"; };
+		05D6BA5F1B99C50D00C20107 /* DetaBaseCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetaBaseCollectionViewCell.xib; sourceTree = "<group>"; };
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05DEA0521B880C560094E123 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -781,6 +786,16 @@
 			path = ShakeAshakeView;
 			sourceTree = "<group>";
 		};
+		05D6BA571B99961C00C20107 /* DetailBaseInfomationCell */ = {
+			isa = PBXGroup;
+			children = (
+				05D6BA5D1B99C50D00C20107 /* DetaBaseCollectionViewCell.h */,
+				05D6BA5E1B99C50D00C20107 /* DetaBaseCollectionViewCell.m */,
+				05D6BA5F1B99C50D00C20107 /* DetaBaseCollectionViewCell.xib */,
+			);
+			path = DetailBaseInfomationCell;
+			sourceTree = "<group>";
+		};
 		05DEA0561B8858CB0094E123 /* Shake a shakeImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1159,6 +1174,7 @@
 				05E04CD51B9697B100E5D28C /* ImageMaxCell */,
 				2EB611AE1B874551000414A2 /* OwnerSayCell */,
 				2EB6119D1B86EFB6000414A2 /* BaseInfomationCell */,
+				05D6BA571B99961C00C20107 /* DetailBaseInfomationCell */,
 				054DFD281B81A0ED00651F11 /* EarlyAdoptersTheTrialViewController Cells */,
 				058ABF681B830A6000A0BA8A /* RollCollectionView Cell */,
 				059E88B61B8414D30086544F /* FindViewController Cell */,
@@ -1599,6 +1615,7 @@
 				2E4C0C861B90511A00ECD2BF /* book_shadow.png in Resources */,
 				2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */,
 				058ABF4B1B82C58100A0BA8A /* findad1.png in Resources */,
+				05D6BA611B99C50D00C20107 /* DetaBaseCollectionViewCell.xib in Resources */,
 				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
 				2EA556FB1B95725A00C696B0 /* DetailCommentView.xib in Resources */,
 				059E88BE1B8414D30086544F /* FindBranchTableViewCell.xib in Resources */,
@@ -1747,6 +1764,7 @@
 				059E88CF1B841BB20086544F /* FindViewController.m in Sources */,
 				2E8C34101B7DF361006B5BC0 /* BaseViewController.m in Sources */,
 				2E8C342C1B7DF3DC006B5BC0 /* PickUpMotion+Calculation.m in Sources */,
+				05D6BA601B99C50D00C20107 /* DetaBaseCollectionViewCell.m in Sources */,
 				2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */,
 				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
 				054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */,

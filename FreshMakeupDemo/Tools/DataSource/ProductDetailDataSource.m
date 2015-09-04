@@ -7,11 +7,11 @@
 //
 
 #import "ProductDetailDataSource.h"
-
+#import "DetaBaseCollectionViewCell.h"
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeZero;
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, 568);
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section {
@@ -19,15 +19,24 @@
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 0;
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (section == 0) {
+        return 1;
+    } else {
     return 0;
+    }
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    if (indexPath.section == 0 && indexPath.row == 0) {
+    DetaBaseCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETA_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
+    return cell;
+    } else {
+        return nil;
+    }
 }
 
 
