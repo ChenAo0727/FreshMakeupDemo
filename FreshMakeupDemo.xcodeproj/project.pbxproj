@@ -112,6 +112,8 @@
 		05E04CE01B96A67800E5D28C /* TitleHeadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CDE1B96A67800E5D28C /* TitleHeadCell.xib */; };
 		05E04CE51B96C36500E5D28C /* TextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E04CE31B96C36500E5D28C /* TextCell.m */; };
 		05E04CE61B96C36500E5D28C /* TextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E04CE41B96C36500E5D28C /* TextCell.xib */; };
+		05E2B2961B9A832B0024C7FE /* EvaluationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E2B2941B9A832B0024C7FE /* EvaluationCell.m */; };
+		05E2B2971B9A832B0024C7FE /* EvaluationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E2B2951B9A832B0024C7FE /* EvaluationCell.xib */; };
 		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
 		2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */; };
 		2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F841B85A71F005DCF14 /* home_update_time_image.png */; };
@@ -387,6 +389,9 @@
 		05E04CE21B96C36500E5D28C /* TextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextCell.h; sourceTree = "<group>"; };
 		05E04CE31B96C36500E5D28C /* TextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextCell.m; sourceTree = "<group>"; };
 		05E04CE41B96C36500E5D28C /* TextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextCell.xib; sourceTree = "<group>"; };
+		05E2B2931B9A832B0024C7FE /* EvaluationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EvaluationCell.h; sourceTree = "<group>"; };
+		05E2B2941B9A832B0024C7FE /* EvaluationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EvaluationCell.m; sourceTree = "<group>"; };
+		05E2B2951B9A832B0024C7FE /* EvaluationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EvaluationCell.xib; sourceTree = "<group>"; };
 		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_view_unlike_line.png; sourceTree = "<group>"; };
 		2E132F841B85A71F005DCF14 /* home_update_time_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_update_time_image.png; sourceTree = "<group>"; };
@@ -861,6 +866,17 @@
 			path = TextCell;
 			sourceTree = "<group>";
 		};
+		05E2B2921B9A82F90024C7FE /* EvaluationCell */ = {
+			isa = PBXGroup;
+			children = (
+				05E2B2931B9A832B0024C7FE /* EvaluationCell.h */,
+				05E2B2941B9A832B0024C7FE /* EvaluationCell.m */,
+				05E2B2951B9A832B0024C7FE /* EvaluationCell.xib */,
+			);
+			name = EvaluationCell;
+			path = EvaluationControllerCell;
+			sourceTree = "<group>";
+		};
 		2E4C0C7B1B900AA100ECD2BF /* RealBookView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1167,6 +1183,7 @@
 		2E8C34311B7DF404006B5BC0 /* Custon Cells */ = {
 			isa = PBXGroup;
 			children = (
+				05E2B2921B9A82F90024C7FE /* EvaluationCell */,
 				2EECA6A81B999504007D51C2 /* SimpleRichTextCell */,
 				2EB4EF591B96C0350080185A /* TagsTableViewCell */,
 				2EA556FC1B95756100C696B0 /* DetailCommentCell */,
@@ -1576,6 +1593,7 @@
 				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				053BFEA31B84AD80002058BA /* simhei.ttf in Resources */,
+				05E2B2971B9A832B0024C7FE /* EvaluationCell.xib in Resources */,
 				2E77067E1B8813FE0024282D /* detail_keepwet_icon.png in Resources */,
 				380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */,
 				2EB611A21B86EFDF000414A2 /* BaseInfomationCell.xib in Resources */,
@@ -1783,6 +1801,7 @@
 				2E8C34101B7DF361006B5BC0 /* BaseViewController.m in Sources */,
 				2E8C342C1B7DF3DC006B5BC0 /* PickUpMotion+Calculation.m in Sources */,
 				05D6BA601B99C50D00C20107 /* DetailBaseInfomationCell.m in Sources */,
+				05E2B2961B9A832B0024C7FE /* EvaluationCell.m in Sources */,
 				2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */,
 				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
 				054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */,
