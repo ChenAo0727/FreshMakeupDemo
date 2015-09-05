@@ -21,7 +21,11 @@
     } else {
         self.coverImageViewRightConstraint.constant = [UIScreen screenWidth];
     }
-    self.contentLabel.text = contentText;
+    if ([contentText isEqual:@""]) {
+        self.contentLabel.text = @"没有文字内容啦~~";
+    } else {
+        self.contentLabel.text = contentText;
+    }
     if (isFeeling) {
         self.titleLabel.text = @"使用感受";
         self.descriptionTitleLabel.text = @"感受:";

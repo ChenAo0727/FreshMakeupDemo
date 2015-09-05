@@ -22,16 +22,22 @@
     if ([self isBaseInfoCell:indexPath]) {
         return [self sizeOfDetailBaseInfomationCellWithIndexPath:indexPath];
     } else if ([self isUserFeeling:indexPath]) {
-        SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
-        NSDictionary *userFeeling = [self.detailInfomationTool.feeling objectAtIndex:0];
-        [cell updateWithCoverImage:nil contentText:[userFeeling objectForKey:@"text"] isFeeling:NO];
-        return [cell sizeOfCell];
+        if ([[self.detailInfomationTool.feeling objectAtIndex:0] objectForKey:@"video"]) {
+            return [self productionCellSizeWithCollectionView:collectionView indexPath:indexPath isFeeling:YES video:@""];
+        } else {
+            NSDictionary *userFeeling = [self.detailInfomationTool.feeling objectAtIndex:0];
+            return [self userFeelingCellSizeWithCollectionView:collectionView indexPath:indexPath data:userFeeling isFeeling:YES];
+        }
     }else if ([self isCommentCell:indexPath]) {
         CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
         return [cell sizeOfCell];
     } else if ([self isProductiDescriptionCell:indexPath]) {
-        ProductiDescriptionCell *cell = (ProductiDescriptionCell *)[self getCellWithNibName:@"ProductiDescriptionCell"];
-        return [cell sizeOfCell];
+        if ([[self.detailInfomationTool.productionDescription objectAtIndex:0] objectForKey:@"video"]) {
+            return [self productionCellSizeWithCollectionView:collectionView indexPath:indexPath isFeeling:NO video:@""];
+        } else {
+            NSDictionary *userFeeling = [self.detailInfomationTool.productionDescription objectAtIndex:0];
+            return [self userFeelingCellSizeWithCollectionView:collectionView indexPath:indexPath data:userFeeling isFeeling:NO];
+        }
     } else if ([self isTrailCell:indexPath]){
         TrialCollectionViewCell *cell = (TrialCollectionViewCell *)[self getCellWithNibName:@"TrialCollectionViewCell"];
         return [cell sizeOfCell];
@@ -80,10 +86,17 @@
     if ([self isBaseInfoCell:indexPath]) {
         return [self detailBaseInfomationCellWithCollectionView:collectionView indexPath:indexPath];
     } else if ([self isUserFeeling:indexPath]) {
-        return [self userFeelingCellWithCollectionView:collectionView indexPath:indexPath];
+        if ([[self.detailInfomationTool.feeling objectAtIndex:0] objectForKey:@"video"]) {
+            return [self productionCellWithCollectionView:collectionView indexPath:indexPath isFeeling:YES video:@""];
+        } else {
+            return [self userFeelingCellWithCollectionView:collectionView indexPath:indexPath data:[self.detailInfomationTool.feeling objectAtIndex:0] isFeeling:NO];
+        }
     } else if ([self isProductiDescriptionCell:indexPath]) {
-        ProductiDescriptionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:USER_FELLING_CELL forIndexPath:indexPath];
-        return cell;
+        if ([[self.detailInfomationTool.productionDescription objectAtIndex:0] objectForKey:@"video"]) {
+            return [self productionCellWithCollectionView:collectionView indexPath:indexPath isFeeling:YES video:@""];
+        } else {
+            return [self userFeelingCellWithCollectionView:collectionView indexPath:indexPath data:[self.detailInfomationTool.productionDescription objectAtIndex:0] isFeeling:NO];
+        }
     } else if ([self isEvalueCell:indexPath]) {
         return [self evaluationCellWithCollectionView:collectionView indexPath:indexPath];
     } else if ([self isCommentCell:indexPath] ) {
@@ -101,10 +114,25 @@
     }
 }
 
-- (UICollectionViewCell *)userFeelingCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
+- (CGSize)userFeelingCellSizeWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath data:(NSDictionary *)data isFeeling:(BOOL)isFeeling {
+    SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
+    [cell updateWithCoverImage:[UIImage imageNamed:[data objectForKey:@"image"]] contentText:[data objectForKey:@"text"] isFeeling:NO];
+    return [cell sizeOfCell];
+}
+
+- (CGSize)productionCellSizeWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath isFeeling:(BOOL)isFeeling video:(NSString *)video {
+    ProductiDescriptionCell *cell = (ProductiDescriptionCell *)[self getCellWithNibName:@"ProductiDescriptionCell"];
+    return [cell sizeOfCell];
+}
+
+- (UICollectionViewCell *)productionCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath isFeeling:(BOOL)isFeeling video:(NSString *)video {
+    ProductiDescriptionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:USER_FELLING_CELL forIndexPath:indexPath];
+    return cell;
+}
+
+- (UICollectionViewCell *)userFeelingCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath data:(NSDictionary *)data isFeeling:(BOOL)isFeeling {
     SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
-    NSDictionary *userFeeling = [self.detailInfomationTool.feeling objectAtIndex:0];
-    [cell updateWithCoverImage:nil contentText:[userFeeling objectForKey:@"text"] isFeeling:NO];
+    [cell updateWithCoverImage:[UIImage imageNamed:[data objectForKey:@"image"]] contentText:[data objectForKey:@"text"] isFeeling:isFeeling];
     return cell;
 }
 
