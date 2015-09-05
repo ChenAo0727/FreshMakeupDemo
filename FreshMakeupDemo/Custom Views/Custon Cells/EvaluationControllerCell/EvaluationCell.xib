@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -53,11 +53,11 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Zbx-HH-xan" firstAttribute="centerX" secondItem="Qwe-Qp-jyh" secondAttribute="centerX" id="4ja-EX-RDV"/>
                 <constraint firstItem="aSC-5n-xU8" firstAttribute="top" secondItem="Zbx-HH-xan" secondAttribute="bottom" constant="2" id="GMy-dL-X7c"/>
                 <constraint firstItem="Zbx-HH-xan" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="Kvd-TF-0CT"/>
-                <constraint firstItem="zwe-M6-sZJ" firstAttribute="top" secondItem="Qwe-Qp-jyh" secondAttribute="bottom" id="Nbw-tA-bTE"/>
                 <constraint firstAttribute="centerX" secondItem="Zbx-HH-xan" secondAttribute="centerX" id="W9r-92-9J2"/>
                 <constraint firstAttribute="centerX" secondItem="aSC-5n-xU8" secondAttribute="centerX" id="c7t-Nz-G9d"/>
                 <constraint firstAttribute="bottom" secondItem="zwe-M6-sZJ" secondAttribute="bottom" constant="6" id="fMr-V8-JSn"/>
@@ -65,12 +65,12 @@
                 <constraint firstAttribute="bottom" secondItem="Qwe-Qp-jyh" secondAttribute="bottom" constant="25" id="mKL-86-XdJ"/>
             </constraints>
             <size key="customSize" width="320" height="201"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="Nbw-tA-bTE"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="307" y="355.5"/>
         </collectionViewCell>
     </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

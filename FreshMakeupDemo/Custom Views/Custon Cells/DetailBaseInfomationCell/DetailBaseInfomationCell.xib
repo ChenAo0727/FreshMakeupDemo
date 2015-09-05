@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -73,18 +73,20 @@
                         <rect key="frame" x="0.0" y="396" width="320" height="30"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7m-px-2sM">
-                                <rect key="frame" x="0.0" y="15" width="320" height="3"/>
+                                <rect key="frame" x="0.0" y="15" width="320" height="1"/>
                                 <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="dPy-Z8-3aa"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="CkQ-Nu-jwx"/>
-                            <constraint firstAttribute="trailing" secondItem="O7m-px-2sM" secondAttribute="trailing" id="HJs-yf-hD5"/>
-                            <constraint firstItem="O7m-px-2sM" firstAttribute="top" secondItem="ens-ed-uhH" secondAttribute="top" constant="15" id="JaN-sH-vh7"/>
-                            <constraint firstItem="O7m-px-2sM" firstAttribute="leading" secondItem="ens-ed-uhH" secondAttribute="leading" id="Pej-7f-6js"/>
-                            <constraint firstAttribute="centerX" secondItem="O7m-px-2sM" secondAttribute="centerX" id="vuE-ay-hkN"/>
-                            <constraint firstAttribute="centerY" secondItem="O7m-px-2sM" secondAttribute="centerY" constant="-1.5" id="yL2-cU-5zT"/>
+                            <constraint firstAttribute="centerX" secondItem="O7m-px-2sM" secondAttribute="centerX" id="Kdo-cM-zGi"/>
+                            <constraint firstItem="O7m-px-2sM" firstAttribute="leading" secondItem="ens-ed-uhH" secondAttribute="leading" id="iAZ-C2-pH9"/>
+                            <constraint firstAttribute="centerY" secondItem="O7m-px-2sM" secondAttribute="centerY" id="ovZ-4U-Rkp"/>
+                            <constraint firstAttribute="trailing" secondItem="O7m-px-2sM" secondAttribute="trailing" id="uFu-Ml-yaR"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-rs-b80">

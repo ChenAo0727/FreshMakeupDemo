@@ -7,17 +7,16 @@
 //
 
 #import "EvaluationCell.h"
+#import "UIScreen+Utility.h"
 
 @implementation EvaluationCell
 
 - (void)awakeFromNib {
     // Initialization code
-    self.worthSlideView = [WorthSlideView create];
-    [self.contentView addSubview:self.worthSlideView];
-    [self.worthSlideView setBottomSpace:103];
-    [self.worthSlideView setLeftSpace:0];
-    [self.worthSlideView setRightSpace:0];
-    [self.worthSlideView setHeightConstant:45];
+    self.backgroundColor = [UIColor whiteColor];
+     self.mySegmentControl = [[MySegmentControl alloc]initWithFrame:CGRectMake(([UIScreen screenWidth] - 220) / 2, 45, 220, 26)];
+    [self.mySegmentControl AddSegumentArray:[NSArray arrayWithObjects:@"所有的人",@"相近的人",nil]];
+    [self addSubview:self.mySegmentControl];
 }
 
 @end
