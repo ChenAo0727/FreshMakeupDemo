@@ -15,9 +15,22 @@
    self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight; 
 }
 
-- (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText {
-    self.coverImageView.image = coverImage;
+- (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText isFeeling:(BOOL)isFeeling {
+    if (coverImage) {
+        self.coverImageView.image = coverImage;
+    } else {
+        self.coverImageViewRightConstraint.constant = [UIScreen screenWidth];
+    }
     self.contentLabel.text = contentText;
+    if (isFeeling) {
+        self.titleLabel.text = @"使用感受";
+        self.descriptionTitleLabel.text = @"感受:";
+        self.moreViewHeightConstraint.constant = 32;
+    } else {
+        self.titleLabel.text = @"产品介绍";
+        self.descriptionTitleLabel.text = @"简介:";
+        self.moreViewHeightConstraint.constant = 0;
+    }
 }
 
 - (CGSize)sizeOfCell {

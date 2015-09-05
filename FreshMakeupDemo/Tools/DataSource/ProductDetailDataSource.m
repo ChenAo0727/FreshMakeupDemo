@@ -24,7 +24,7 @@
     } else if ([self isUserFeeling:indexPath]) {
         SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
         NSDictionary *userFeeling = [self.detailInfomationTool.feeling objectAtIndex:0];
-        [cell updateWithCoverImage:[UIImage imageNamed:[userFeeling objectForKey:@"image"]] contentText:[userFeeling objectForKey:@"text"]];
+        [cell updateWithCoverImage:nil contentText:[userFeeling objectForKey:@"text"] isFeeling:NO];
         return [cell sizeOfCell];
     }else if ([self isCommentCell:indexPath]) {
         CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
@@ -95,8 +95,6 @@
     } else if ([self isTrailCell:indexPath]){
         TrialCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:TRIAL_COLLECTION_VIEW_CELL forIndexPath:indexPath];
         return cell;
-    
-    
     }
     else {
         return nil;
@@ -106,7 +104,7 @@
 - (UICollectionViewCell *)userFeelingCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
     SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
     NSDictionary *userFeeling = [self.detailInfomationTool.feeling objectAtIndex:0];
-    [cell updateWithCoverImage:[UIImage imageNamed:[userFeeling objectForKey:@"image"]] contentText:[userFeeling objectForKey:@"text"]];
+    [cell updateWithCoverImage:nil contentText:[userFeeling objectForKey:@"text"] isFeeling:NO];
     return cell;
 }
 
