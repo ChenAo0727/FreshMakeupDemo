@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface HeaderViewCell : UICollectionViewCell
-
++ (instancetype)create;
 
 @end

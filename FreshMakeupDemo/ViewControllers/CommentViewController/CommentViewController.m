@@ -66,7 +66,7 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
     
     CGSize size;
     
-    CommentCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"CommentCell" owner:nil options:nil] lastObject];
+    CommentCell *cell = [CommentCell create];
 
     if (indexPath.section == 0 ) {
         
