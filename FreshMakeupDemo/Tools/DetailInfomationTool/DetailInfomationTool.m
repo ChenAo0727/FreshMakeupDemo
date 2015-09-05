@@ -15,7 +15,7 @@
       self.title = @"拯救压力初老肌 雅顿无瑕未来微胶囊全新上市";
       self.coverImage = [UIImage imageNamed:@"detail_yadun.png"];
         self.shortComment = @"跨入的2015年，工作越来越忙，是种忙不停歇的节奏，每日里最为感慨的就是时间不够用不够用，在一步一步迈向职场精英的同时，也愈加体会了随之而来的压力.\n让我感受最为明显的即是我的皮肤，每天远超8小时的办公，密闭空间，电脑辐射，还有因各种压力带来的疲倦，走向成熟不再青春的肌肤需要能量，抗老的步调走起~";
-       NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"detail_yadun_produc.png",@"image", nil];
+       NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"detail_yadun_produc.png",@"image", @"http://v.youku.com/v_show/id_XOTQ3OTk3MzI0.html", @"video", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
         NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"用起这个新收回的雅顿无瑕未来系列,对于雅顿，这个陪伴我多年的小伙伴，对它的好感是源源不断。从早先的8小时保湿到21天显效霜再到逆时空胶囊，算得上一步一个脚印见证了它的好用!",@"text",@"detail_yadun_feeling_one.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
@@ -63,7 +63,7 @@
         self.title = @"YSL妍活青春角质调理液";
         self.coverImage = [UIImage imageNamed:@"detail_YSL_cover.png"];
         self.shortComment = @"YSL妍活青春角质调理液，利用诺贝尔聚糖科技，揭示最新护肤发现：角质层的规律代谢，以及角质细胞的健康成熟程度，是决定肌肤肤质的关键因素。通过“角质调理”让角质层重回规律代谢，肌肤重获青春、水润、强韧健康，释放绝对光芒.";
-        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"detail_YSL_produc.png",@"image", nil];
+        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"detail_YSL_produc.png",@"image",@"http://v.youku.com/v_show/id_XMTI5NjU0NTQ5Mg==.html?from=y1.7-1.2",@"video", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
         NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"小编：精华质地呈白色晶莹感的半透明凝乳状，水润感十足，触感轻盈不厚重，独具迷人的果香加花香的复合香味。轻轻涂抹即能迅速与肌肤结合，吸收速度快，用后肌肤触感轻柔舒润。\n评测：\n     感觉还是应该配套使用才会有效果的！用在霜类产品之前利于霜的很好吸收。夏天用的话可以不用乳霜类产品。不会出油",@"text",@"detail_YSL_feeling.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
