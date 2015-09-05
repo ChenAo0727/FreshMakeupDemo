@@ -15,5 +15,11 @@
 @property (strong, nonatomic) NSArray *productionDescription;
 @property (strong, nonatomic) NSArray *feeling;
 
-- (instancetype)initWithYaDunInfomation;
+- (instancetype)initWithElizabethArdenInfomation;//伊丽莎白雅顿
+- (instancetype)initWithEsteeLauderInfomation;//雅诗兰黛
+- (instancetype)initWithBobblBrownInfomation;//芭比布朗
+- (instancetype)initWithCPBInfomation;//肌肤之钥
+- (instancetype)initWithYSLInfomation;//美妆资讯整理
+- (instancetype)initWithSisleyInfomation;//科莱丽
+- (instancetype)initWithHelpClearSkinInfomation;//祛痘牛奶
 @end
