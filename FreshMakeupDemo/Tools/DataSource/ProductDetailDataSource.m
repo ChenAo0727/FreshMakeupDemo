@@ -7,7 +7,7 @@
 //
 
 #import "ProductDetailDataSource.h"
-#import "DetaBaseCollectionViewCell.h"
+#import "DetailBaseInfomationCell.h"
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -32,7 +32,7 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0 && indexPath.row == 0) {
-    DetaBaseCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETA_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
+    DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
     return cell;
     } else {
         return nil;

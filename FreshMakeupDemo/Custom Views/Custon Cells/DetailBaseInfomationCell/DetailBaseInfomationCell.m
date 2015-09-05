@@ -1,14 +1,14 @@
 //
-//  DetaBaseCollectionViewCell.m
+//  DetailBaseInfomationCell.m
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/9/4.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "DetaBaseCollectionViewCell.h"
+#import "DetailBaseInfomationCell.h"
 
-@implementation DetaBaseCollectionViewCell
+@implementation DetailBaseInfomationCell
 
 - (void)awakeFromNib {
     // Initialization code

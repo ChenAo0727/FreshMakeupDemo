@@ -7,13 +7,13 @@
 //
 
 #import "DetailViewController+Configuration.h"
-#import "DetaBaseCollectionViewCell.h"
+#import "DetailBaseInfomationCell.h"
 #import "DetailInfomationTool.h"
 @implementation DetailViewController (Configuration)
 
 - (void)updateSelectionViewY {
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
-    DetaBaseCollectionViewCell *cell = [self.detailCollectionView dequeueReusableCellWithReuseIdentifier:DETA_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
+    DetailBaseInfomationCell *cell = [self.detailCollectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
     CGRect frame = cell.frame;
     self.selectionViewY = frame.origin.y + frame.size.height;
 }
@@ -40,7 +40,7 @@
 
 - (void)configureCollectionView {
     self.detailCollectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"DetaBaseCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:DETA_BASE_COLLECTION_VIEW_CELL];
+    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"DetailBaseInfomationCell" bundle:nil] forCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
     DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithYaDunInfomation];
     self.productDetailDataSource.detailInfomationTool = detailInfomationTool;

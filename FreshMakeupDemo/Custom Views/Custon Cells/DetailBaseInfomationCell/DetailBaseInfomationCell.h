@@ -1,5 +1,5 @@
 //
-//  DetaBaseCollectionViewCell.h
+//  DetailBaseInfomationCell.h
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/9/4.
@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#define DETA_BASE_COLLECTION_VIEW_CELL @"DetaBaseCollectionViewCell"
-@interface DetaBaseCollectionViewCell : UICollectionViewCell
+#define DETAIL_BASE_COLLECTION_VIEW_CELL @"DetailBaseInfomationCell"
+@interface DetailBaseInfomationCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIView *detaBaseView;
 @property (weak, nonatomic) IBOutlet UILabel *detaBaseTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detaBaseSpeakLabel;
