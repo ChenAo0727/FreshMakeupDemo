@@ -13,6 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *detaBaseTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detaBaseSpeakLabel;
 - (CGFloat)heightOfCell;
+- (CGSize)sizeOfCell;
 - (void)updateWithTitleLabel:(NSString *)label;
 - (void)updateWithSpeakLabel:(NSString *)label;
 @end

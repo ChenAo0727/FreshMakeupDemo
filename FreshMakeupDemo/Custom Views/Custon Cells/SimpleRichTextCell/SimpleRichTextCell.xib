@@ -46,12 +46,12 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用感受:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-8G-h7j">
-                        <rect key="frame" x="10" y="275" width="60" height="20"/>
+                        <rect key="frame" x="10" y="280" width="70" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="4tD-0Q-evG"/>
+                            <constraint firstAttribute="width" constant="70" id="4tD-0Q-evG"/>
                             <constraint firstAttribute="height" constant="20" id="Fvi-xb-VaI"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                         <color key="textColor" red="0.52156862749999999" green="0.80000000000000004" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -61,8 +61,8 @@
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="prq-eS-Wjd"/>
                         </constraints>
                         <string key="text">雅诗兰黛的Advanced TrueVision Technology ™科技使这支液体唇膏展现魅力四射的动人色彩，更兼具立体丰盈妆效。独特的缓释水分胶囊复合成分协同玻尿酸，助力双唇锁住水分，持续补水。配方还特别添加了滋养混合精油：鳄梨油、荷荷巴油和葵花籽油</string>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -78,8 +78,8 @@
                 <constraint firstItem="VeL-Iq-UrW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UqW-SX-KgE"/>
                 <constraint firstAttribute="bottom" secondItem="e8M-pP-tZp" secondAttribute="bottom" constant="22" id="Vsv-fT-HeM"/>
                 <constraint firstAttribute="trailing" secondItem="VeL-Iq-UrW" secondAttribute="trailing" id="YPQ-Go-e5B"/>
-                <constraint firstItem="e8M-pP-tZp" firstAttribute="top" secondItem="zLP-8G-h7j" secondAttribute="bottom" constant="5" id="YZF-qT-xxJ"/>
-                <constraint firstItem="zLP-8G-h7j" firstAttribute="top" secondItem="mZ5-qu-XLc" secondAttribute="bottom" constant="5" id="cjD-QW-hy1"/>
+                <constraint firstItem="e8M-pP-tZp" firstAttribute="top" secondItem="zLP-8G-h7j" secondAttribute="bottom" id="YZF-qT-xxJ"/>
+                <constraint firstItem="zLP-8G-h7j" firstAttribute="top" secondItem="mZ5-qu-XLc" secondAttribute="bottom" constant="10" id="cjD-QW-hy1"/>
                 <constraint firstItem="mZ5-qu-XLc" firstAttribute="top" secondItem="BEV-jE-dcm" secondAttribute="bottom" constant="20" id="crh-Ge-Byy"/>
                 <constraint firstAttribute="centerX" secondItem="l27-bN-OrY" secondAttribute="centerX" id="e7r-tD-xu2"/>
                 <constraint firstItem="e8M-pP-tZp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="jwJ-f8-qsG"/>

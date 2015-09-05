@@ -170,7 +170,6 @@
 - (CGSize)sizeOfDetailBaseInfomationCellWithIndexPath:(NSIndexPath *)indexPath {
     DetailBaseInfomationCell *cell = (DetailBaseInfomationCell *)[self getCellWithNibName:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
-    [cell layoutIfNeeded];
-    return CGSizeMake([UIScreen mainScreen].bounds.size.width, [cell heightOfCell]);
+    return [cell sizeOfCell];
 }
 @end

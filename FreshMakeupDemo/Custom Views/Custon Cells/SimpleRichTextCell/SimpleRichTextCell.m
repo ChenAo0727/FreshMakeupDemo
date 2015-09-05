@@ -32,12 +32,11 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1.0
-                                  constant:[UIScreen screenWidth] - 20];
+                                  constant:[UIScreen screenWidth] - 35];
     [self.contentLabel addConstraint:tempWidthConstraint];
     CGSize size = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     [self.contentLabel removeConstraint:tempWidthConstraint];
     return size;
-    return CGSizeZero;
 }
 
 @end
