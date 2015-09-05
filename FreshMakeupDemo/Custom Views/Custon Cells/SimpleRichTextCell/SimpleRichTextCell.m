@@ -7,6 +7,7 @@
 //
 
 #import "SimpleRichTextCell.h"
+#import "UIScreen+Utility.h"
 
 @implementation SimpleRichTextCell
 
@@ -14,23 +15,28 @@
    self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight; 
 }
 
+- (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText {
+    self.coverImageView.image = coverImage;
+    self.contentLabel.text = contentText;
+}
+
 - (CGSize)sizeOfCell {
-//    self.bounds = CGRectMake(0, 0, 320, self.frame.size.height);
-//    self.contentView.bounds = self.bounds;
-//    [self setNeedsLayout];
-//    [self layoutIfNeeded];
-//    NSLayoutConstraint *tempWidthConstraint =
-//    [NSLayoutConstraint constraintWithItem:self.commentLabel
-//                                 attribute:NSLayoutAttributeWidth
-//                                 relatedBy:NSLayoutRelationEqual
-//                                    toItem:nil
-//                                 attribute:NSLayoutAttributeNotAnAttribute
-//                                multiplier:1.0
-//                                  constant:[UIScreen screenWidth] / 2 - 24];
-//    [self.commentLabel addConstraint:tempWidthConstraint];
-//    CGSize size = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
-//    [self.commentLabel removeConstraint:tempWidthConstraint];
-//    return size;
+    self.bounds = CGRectMake(0, 0, 320, self.frame.size.height);
+    self.contentView.bounds = self.bounds;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+    NSLayoutConstraint *tempWidthConstraint =
+    [NSLayoutConstraint constraintWithItem:self.contentLabel
+                                 attribute:NSLayoutAttributeWidth
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:nil
+                                 attribute:NSLayoutAttributeNotAnAttribute
+                                multiplier:1.0
+                                  constant:[UIScreen screenWidth] - 20];
+    [self.contentLabel addConstraint:tempWidthConstraint];
+    CGSize size = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    [self.contentLabel removeConstraint:tempWidthConstraint];
+    return size;
     return CGSizeZero;
 }
 

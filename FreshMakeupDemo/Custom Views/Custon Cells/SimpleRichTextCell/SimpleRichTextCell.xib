@@ -39,7 +39,7 @@
                             <constraint firstAttribute="height" constant="2" id="llD-No-08S"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mZ5-qu-XLc">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_top_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="mZ5-qu-XLc">
                         <rect key="frame" x="0.0" y="70" width="320" height="200"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="mZ5-qu-XLc" secondAttribute="height" multiplier="8:5" id="uj6-6A-V6k"/>
@@ -68,6 +68,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="centerX" secondItem="BEV-jE-dcm" secondAttribute="centerX" id="3cO-d9-G1d"/>
                 <constraint firstItem="VeL-Iq-UrW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5nt-Uv-ArY"/>
@@ -86,9 +87,18 @@
                 <constraint firstAttribute="trailing" secondItem="mZ5-qu-XLc" secondAttribute="trailing" id="xJY-mq-eTD"/>
                 <constraint firstItem="zLP-8G-h7j" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="yXb-1u-und"/>
             </constraints>
+            <connections>
+                <outlet property="contentLabel" destination="e8M-pP-tZp" id="GT8-Gn-2Fd"/>
+                <outlet property="coverImageView" destination="mZ5-qu-XLc" id="F2z-dK-J5k"/>
+                <outlet property="descriptionTitleLabel" destination="zLP-8G-h7j" id="1v3-yO-hTM"/>
+                <outlet property="titleLabel" destination="l27-bN-OrY" id="9jc-VS-tXD"/>
+            </connections>
             <point key="canvasLocation" x="563" y="345"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="detail_top_image.png" width="720" height="600"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
