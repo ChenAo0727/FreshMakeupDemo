@@ -12,6 +12,8 @@
 #import "CommentViewCell.h"
 #import "TextCell.h"
 #import "TagsTableViewCell.h"
+#import "UITableView+FDTemplateLayoutCell.h"
+
 @implementation FreashSaleViewControllerDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -62,10 +64,14 @@
 
 - (UITableViewCell *)commentViewTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indesPath {
     CommentViewCell *cell = [tableView dequeueReusableCellWithIdentifier:COMMENT_VIEW_CELL];
-   
     NSString *comment = @"这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高";
     
     [cell updateWithUserImage:[UIImage imageNamed:@"detail_avatar_image.jpg"] userName:@"宝贝" curentFloor:1 commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:comment];
+    
+       cell.block = ^(CommentViewCell *cell){
+           cell.isHide = !cell.isHide;
+           [tableView reloadData];
+   };
     return cell;
 }
 
@@ -78,4 +84,5 @@
     TagsTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:TAGS_TABLEVIEW_CELL];
     return cell;
 }
+
 @end

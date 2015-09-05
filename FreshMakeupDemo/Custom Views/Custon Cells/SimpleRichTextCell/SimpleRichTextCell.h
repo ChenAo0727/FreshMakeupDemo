@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+#define SIMPLE_RICH_TEXTCELL @"SimpleRichTextCell"
+
 @interface SimpleRichTextCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
+@property (weak, nonatomic) IBOutlet UILabel *descriptionTitleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 
+- (CGSize)sizeOfCell;
 
 @end

@@ -16,7 +16,7 @@
 @interface FreashSaleViewController ()
 
 @end
-
+static int i = 0;
 @implementation FreashSaleViewController
 + (instancetype)create {
     return [[FreashSaleViewController alloc] initWithNibName:@"FreashSaleViewController" bundle:nil];
@@ -29,6 +29,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+   
     if (indexPath.row == 0) {
         return 384;
     
@@ -54,15 +55,23 @@
     } else if (indexPath.row == 7) {
         return 50;
     } else {
+        
         NSString *comment = @"这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高";
+
         return [tableView fd_heightForCellWithIdentifier:COMMENT_VIEW_CELL cacheByIndexPath:indexPath configuration:^(CommentViewCell *cell) {
+            
             [cell updateWithUserImage:[UIImage imageNamed:@"detail_avatar_image.jpg"] userName:@"宝贝" curentFloor:1 commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:comment];
-            CGRect frame = cell.frame;
-            frame.size.width = [UIScreen screenWidth];
-            cell.frame = frame;
+
+            [cell.commentTableView reloadData];
+            
+            [cell layoutIfNeeded];
+
+            [cell updateHeightConstraint];
+    
         }];
     }
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

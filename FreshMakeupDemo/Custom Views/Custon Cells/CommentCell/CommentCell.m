@@ -23,6 +23,7 @@
     self.avatarImageView.layer.borderWidth = 1;
     self.avatarImageView.layer.borderColor = [[UIColor colorWithIntRed:103 green:212 blue:223] CGColor];
     self.skinPropertyLabel.layer.cornerRadius = self.skinPropertyLabel.frame.size.width / 2;
+    
 }
 
 - (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount {
