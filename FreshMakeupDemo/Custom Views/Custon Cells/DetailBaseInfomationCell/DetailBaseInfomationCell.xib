@@ -9,10 +9,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailBaseInfomationCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-Uc-uZE">
                         <rect key="frame" x="0.0" y="376" width="320" height="20"/>
@@ -135,14 +135,14 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okx-dT-oT9">
-                        <rect key="frame" x="0.0" y="456" width="320" height="5"/>
+                        <rect key="frame" x="0.0" y="456" width="320" height="8"/>
                         <color key="backgroundColor" red="0.90980392160000001" green="0.93725490199999995" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="5" id="Po9-wW-3Xq"/>
+                            <constraint firstAttribute="height" constant="8" id="Po9-wW-3Xq"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-7B-Zon">
-                        <rect key="frame" x="0.0" y="461" width="320" height="107"/>
+                        <rect key="frame" x="0.0" y="464" width="320" height="124"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“这款产品是赫莲娜家推出的一款新品，它XXXXXXXXXXXXXXXXXXXXXX，效果炒鸡棒，各方面的文章看点，总结成这段100字”" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olN-eL-GzY">
                                 <rect key="frame" x="17" y="30" width="285" height="77"/>
@@ -239,13 +239,13 @@
                 <constraint firstItem="Zaa-Uc-uZE" firstAttribute="top" secondItem="AL7-gX-3w4" secondAttribute="bottom" id="wM7-dz-j1H"/>
                 <constraint firstItem="AL7-gX-3w4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="276" id="wWh-j5-erF"/>
             </constraints>
-            <size key="customSize" width="320" height="570"/>
+            <size key="customSize" width="320" height="590"/>
             <connections>
                 <outlet property="detaBaseSpeakLabel" destination="olN-eL-GzY" id="fb2-xR-fSE"/>
                 <outlet property="detaBaseTitleLabel" destination="4Kq-MU-8Tw" id="8td-8i-PwV"/>
                 <outlet property="detaBaseView" destination="rPu-7B-Zon" id="bSM-bZ-DXO"/>
             </connections>
-            <point key="canvasLocation" x="216" y="331"/>
+            <point key="canvasLocation" x="216" y="341"/>
         </collectionViewCell>
     </objects>
     <resources>
