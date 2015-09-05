@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BookCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="255" height="380"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="255" height="380"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L3U-hn-ezh">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="380"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WXQ-gv-nEp">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="380"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FRK-mA-AbG">
+                                <rect key="frame" x="0.0" y="0.0" width="255" height="380"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FRK-mA-AbG" secondAttribute="bottom" id="2vG-wv-uXi"/>
+                            <constraint firstItem="FRK-mA-AbG" firstAttribute="leading" secondItem="WXQ-gv-nEp" secondAttribute="leading" id="Drn-9l-980"/>
+                            <constraint firstItem="FRK-mA-AbG" firstAttribute="top" secondItem="WXQ-gv-nEp" secondAttribute="top" id="Gu2-Hy-bB9"/>
+                            <constraint firstAttribute="trailing" secondItem="FRK-mA-AbG" secondAttribute="trailing" id="hCR-G6-AwF"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBx-18-W7a">
+                        <rect key="frame" x="0.0" y="0.0" width="255" height="380"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="didClickButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="sdD-xC-vNz"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="L3U-hn-ezh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0gw-RN-MXk"/>
+                <constraint firstAttribute="bottom" secondItem="WXQ-gv-nEp" secondAttribute="bottom" id="AjQ-C6-CEL"/>
+                <constraint firstAttribute="bottom" secondItem="L3U-hn-ezh" secondAttribute="bottom" id="DYD-6s-Cvy"/>
+                <constraint firstAttribute="trailing" secondItem="L3U-hn-ezh" secondAttribute="trailing" id="ZRB-hh-SG1"/>
+                <constraint firstAttribute="trailing" secondItem="WXQ-gv-nEp" secondAttribute="trailing" id="m17-QS-4Ud"/>
+                <constraint firstItem="L3U-hn-ezh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="o6z-73-4rZ"/>
+                <constraint firstItem="WXQ-gv-nEp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="q1B-IM-bVZ"/>
+                <constraint firstItem="WXQ-gv-nEp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uue-9Z-A1S"/>
+            </constraints>
+            <connections>
+                <outlet property="coverImageView" destination="FRK-mA-AbG" id="Opx-BJ-6wg"/>
+                <outlet property="coverImageViewLeftContraint" destination="Drn-9l-980" id="7Ht-SG-XBK"/>
+                <outlet property="coverImageViewRightContraint" destination="hCR-G6-AwF" id="en3-1v-FpJ"/>
+                <outlet property="imageView" destination="L3U-hn-ezh" id="E30-Dd-axu"/>
+            </connections>
+            <point key="canvasLocation" x="599.5" y="321"/>
+        </collectionViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
