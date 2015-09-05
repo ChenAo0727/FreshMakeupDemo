@@ -21,13 +21,13 @@
     if ([self isBaseInfoCell:indexPath]) {
         return [self sizeOfDetailBaseInfomationCellWithIndexPath:indexPath];
     } else if ([self isProductionDescriptionCell:indexPath]) {
+        
         SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
         return [cell sizeOfCell];
     }else if ([self isCommentCell:indexPath]) {
+        
         CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
         return [cell sizeOfCell];
-    
-    
     } else if ([self isUserFeelingCell:indexPath]) {
         UserFeelingCell *cell = (UserFeelingCell *)[self getCellWithNibName:@"UserFeelingCell"];
         return [cell sizeOfCell];
@@ -40,11 +40,14 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section {
+    if(section == 1) {
+        return 2;
+    }
     return 1;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 2;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -67,23 +70,22 @@
     } else if ([self isProductionDescriptionCell:indexPath]) {
         SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
         return cell;
-    } else if (indexPath.section == 1 && indexPath.row == 0) {
-        //评价
-        HeaderViewCell *cell = [HeaderViewCell create];
-        return cell;
-    } else if (indexPath.section == 1 && indexPath.row != 0) {
-        CommentCell *cell = [CommentCell create];
-        return cell;
     } else if ([self isUserFeelingCell:indexPath]) {
         UserFeelingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:USER_FELLING_CELL forIndexPath:indexPath];
         return cell;
     } else if ([self isEvalueCell:indexPath]) {
         return [self evaluationCellWithCollectionView:collectionView indexPath:indexPath];
-    } else {
+    } else if (indexPath.section == 1 ) {
+        CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:COMMENT_CELL forIndexPath:indexPath];
+        return cell;
+    }
+    
+    else {
         return nil;
     }
 }
 - (UICollectionViewCell *)detailBaseInfomationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
+    
     DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
     [cell updateWithTitleLabel:self.detailInfomationTool.title];
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
@@ -91,6 +93,7 @@
 }
 
 - (UICollectionViewCell *)getCellWithNibName:(NSString *)nibName {
+    
     static UICollectionViewCell *cell = nil;
     cell = [[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil][0];
     [cell setNeedsLayout];
@@ -104,18 +107,22 @@
 
 
 - (BOOL)isBaseInfoCell:(NSIndexPath *)indexPath {
+    
     return (0 == indexPath.row) && (0 == indexPath.section);
 }
 
 - (BOOL)isProductionDescriptionCell:(NSIndexPath *)indexPath {
+    
     return (0 == indexPath.section) && (1 == indexPath.row);
 }
 
 - (BOOL)isUserFeelingCell:(NSIndexPath *)indexPath {
+    
     return (0 == indexPath.section) && (2 == indexPath.row);
 }
 
 - (BOOL)isEvalueCell:(NSIndexPath *)indexPath {
+    
     return  (0 == indexPath.section) && (3 == indexPath.row);
 }
 
