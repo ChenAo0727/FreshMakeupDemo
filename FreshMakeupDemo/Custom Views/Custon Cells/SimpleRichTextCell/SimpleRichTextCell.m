@@ -15,9 +15,26 @@
    self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight; 
 }
 
-- (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText {
-    self.coverImageView.image = coverImage;
-    self.contentLabel.text = contentText;
+- (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText isFeeling:(BOOL)isFeeling {
+    if (coverImage) {
+        self.coverImageView.image = coverImage;
+    } else {
+        self.coverImageViewRightConstraint.constant = [UIScreen screenWidth];
+    }
+    if ([contentText isEqual:@""]) {
+        self.contentLabel.text = @"没有文字内容啦~~";
+    } else {
+        self.contentLabel.text = contentText;
+    }
+    if (isFeeling) {
+        self.titleLabel.text = @"使用感受";
+        self.descriptionTitleLabel.text = @"感受:";
+        self.moreViewHeightConstraint.constant = 32;
+    } else {
+        self.titleLabel.text = @"产品介绍";
+        self.descriptionTitleLabel.text = @"简介:";
+        self.moreViewHeightConstraint.constant = 0;
+    }
 }
 
 - (CGSize)sizeOfCell {
@@ -32,12 +49,11 @@
                                     toItem:nil
                                  attribute:NSLayoutAttributeNotAnAttribute
                                 multiplier:1.0
-                                  constant:[UIScreen screenWidth] - 20];
+                                  constant:[UIScreen screenWidth] - 35];
     [self.contentLabel addConstraint:tempWidthConstraint];
     CGSize size = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     [self.contentLabel removeConstraint:tempWidthConstraint];
     return size;
-    return CGSizeZero;
 }
 
 @end
