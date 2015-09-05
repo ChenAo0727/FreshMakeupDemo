@@ -10,6 +10,7 @@
 #import "DetailBaseInfomationCell.h"
 #import "SimpleRichTextCell.h"
 #import "DetailInfomationTool.h"
+#import "CommentCell.h"
 @implementation DetailViewController (Configuration)
 
 - (void)updateSelectionViewY {
@@ -20,6 +21,7 @@
 }
 
 - (void)configureViews {
+    
     [self configureWaterFlowLayout];
     [self configureDateSource];
     [self configureCollectionView];
@@ -27,10 +29,12 @@
 }
 
 - (void)configureDateSource {
+    
     self.productDetailDataSource = [ProductDetailDataSource new];
 }
 
 - (void)configureWaterFlowLayout {
+    
     self.layout = [[CHTCollectionViewWaterfallLayout alloc] init];
     self.layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.layout.headerHeight = 0;
@@ -40,9 +44,11 @@
 }
 
 - (void)configureCollectionView {
+    
     self.detailCollectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"DetailBaseInfomationCell" bundle:nil] forCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"SimpleRichTextCell" bundle:nil] forCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL];
+    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"CommentCell" bundle:nil] forCellWithReuseIdentifier:COMMENT_CELL];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
     DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithYaDunInfomation];
     self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
@@ -52,6 +58,7 @@
 }
 
 - (void)addSelectionView {
+    
     self.selectionView = [SelectionView create];
     [self.view insertSubview:self.selectionView belowSubview:self.topViewContainer];
     [self.selectionView setLeftSpace:0];
