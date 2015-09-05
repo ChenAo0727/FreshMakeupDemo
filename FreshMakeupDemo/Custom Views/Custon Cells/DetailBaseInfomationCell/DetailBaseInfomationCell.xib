@@ -9,10 +9,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailBaseInfomationCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-Uc-uZE">
                         <rect key="frame" x="0.0" y="376" width="320" height="20"/>
@@ -239,13 +239,13 @@
                 <constraint firstItem="Zaa-Uc-uZE" firstAttribute="top" secondItem="AL7-gX-3w4" secondAttribute="bottom" id="wM7-dz-j1H"/>
                 <constraint firstItem="AL7-gX-3w4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="276" id="wWh-j5-erF"/>
             </constraints>
-            <size key="customSize" width="320" height="570"/>
+            <size key="customSize" width="320" height="590"/>
             <connections>
                 <outlet property="detaBaseSpeakLabel" destination="olN-eL-GzY" id="fb2-xR-fSE"/>
                 <outlet property="detaBaseTitleLabel" destination="4Kq-MU-8Tw" id="8td-8i-PwV"/>
                 <outlet property="detaBaseView" destination="rPu-7B-Zon" id="bSM-bZ-DXO"/>
             </connections>
-            <point key="canvasLocation" x="216" y="331"/>
+            <point key="canvasLocation" x="216" y="341"/>
         </collectionViewCell>
     </objects>
     <resources>
