@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -9,16 +9,16 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DetailBaseInfomationCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="588"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-Uc-uZE">
                         <rect key="frame" x="0.0" y="376" width="320" height="20"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="规格:50ML" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuB-FD-hL8">
-                                <rect key="frame" x="125" y="0.0" width="71" height="17"/>
+                                <rect key="frame" x="125" y="0.0" width="70.5" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="9gQ-2L-y0f"/>
                                     <constraint firstAttribute="height" constant="17" id="uRV-Zd-Ind"/>
@@ -38,7 +38,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产地:美国" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-Yq-hF3">
-                                <rect key="frame" x="216" y="0.0" width="65" height="17"/>
+                                <rect key="frame" x="216" y="0.0" width="64.5" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="ole-bh-8a4"/>
                                     <constraint firstAttribute="height" constant="17" id="zio-OE-TL0"/>
@@ -103,7 +103,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1435人长草" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr3-wO-jOf">
-                                <rect key="frame" x="14" y="5" width="84" height="17"/>
+                                <rect key="frame" x="15" y="7" width="84" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" id="6vc-W9-gEa"/>
                                     <constraint firstAttribute="height" constant="17" id="v3R-WD-eLh"/>
@@ -113,7 +113,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100份试用" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-Ma-Jf9">
-                                <rect key="frame" x="221" y="5" width="75" height="17"/>
+                                <rect key="frame" x="221" y="7" width="75" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Od3-bL-OIP"/>
                                     <constraint firstAttribute="height" constant="17" id="U3Q-Oy-xc4"/>
@@ -125,9 +125,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="XcS-Ma-Jf9" firstAttribute="top" secondItem="XiM-rs-b80" secondAttribute="top" constant="5" id="Dhh-pU-g6N"/>
+                            <constraint firstAttribute="centerY" secondItem="Rr3-wO-jOf" secondAttribute="centerY" id="DMU-NL-YVz"/>
                             <constraint firstAttribute="centerY" secondItem="cQJ-M1-6bj" secondAttribute="centerY" id="Edz-5f-WRJ"/>
-                            <constraint firstItem="Rr3-wO-jOf" firstAttribute="top" secondItem="XiM-rs-b80" secondAttribute="top" constant="5" id="NUp-ah-bsd"/>
+                            <constraint firstAttribute="centerY" secondItem="XcS-Ma-Jf9" secondAttribute="centerY" id="L02-GP-ZkS"/>
                             <constraint firstAttribute="centerX" secondItem="cQJ-M1-6bj" secondAttribute="centerX" id="O1d-9C-FUk"/>
                             <constraint firstAttribute="height" constant="30" id="UTh-u6-5f8"/>
                             <constraint firstItem="cQJ-M1-6bj" firstAttribute="leading" secondItem="Rr3-wO-jOf" secondAttribute="trailing" constant="16" id="X34-us-qIR"/>
@@ -135,17 +135,17 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Okx-dT-oT9">
-                        <rect key="frame" x="0.0" y="456" width="320" height="5"/>
+                        <rect key="frame" x="0.0" y="456" width="320" height="8"/>
                         <color key="backgroundColor" red="0.90980392160000001" green="0.93725490199999995" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="5" id="Po9-wW-3Xq"/>
+                            <constraint firstAttribute="height" constant="8" id="Po9-wW-3Xq"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPu-7B-Zon">
-                        <rect key="frame" x="0.0" y="461" width="320" height="107"/>
+                        <rect key="frame" x="0.0" y="464" width="320" height="104"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“这款产品是赫莲娜家推出的一款新品，它XXXXXXXXXXXXXXXXXXXXXX，效果炒鸡棒，各方面的文章看点，总结成这段100字”" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olN-eL-GzY">
-                                <rect key="frame" x="17" y="30" width="285" height="77"/>
+                                <rect key="frame" x="17" y="30" width="285" height="76.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="39n-4z-aox"/>
                                 </constraints>
@@ -239,16 +239,21 @@
                 <constraint firstItem="Zaa-Uc-uZE" firstAttribute="top" secondItem="AL7-gX-3w4" secondAttribute="bottom" id="wM7-dz-j1H"/>
                 <constraint firstItem="AL7-gX-3w4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="276" id="wWh-j5-erF"/>
             </constraints>
-            <size key="customSize" width="320" height="570"/>
+            <size key="customSize" width="320" height="590"/>
             <connections>
                 <outlet property="detaBaseSpeakLabel" destination="olN-eL-GzY" id="fb2-xR-fSE"/>
                 <outlet property="detaBaseTitleLabel" destination="4Kq-MU-8Tw" id="8td-8i-PwV"/>
                 <outlet property="detaBaseView" destination="rPu-7B-Zon" id="bSM-bZ-DXO"/>
             </connections>
-            <point key="canvasLocation" x="216" y="331"/>
+            <point key="canvasLocation" x="216" y="341"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="detail_logo_image.png" width="159" height="160"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

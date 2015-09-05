@@ -9,10 +9,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="SimpleRichTextCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="405"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="420"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="405"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeL-Iq-UrW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="9"/>
@@ -46,25 +46,46 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用感受:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-8G-h7j">
-                        <rect key="frame" x="10" y="275" width="60" height="20"/>
+                        <rect key="frame" x="10" y="280" width="70" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="4tD-0Q-evG"/>
+                            <constraint firstAttribute="width" constant="70" id="4tD-0Q-evG"/>
                             <constraint firstAttribute="height" constant="20" id="Fvi-xb-VaI"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                         <color key="textColor" red="0.52156862749999999" green="0.80000000000000004" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-pP-tZp">
-                        <rect key="frame" x="10" y="300" width="300" height="98"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雅诗兰黛的Advanced TrueVision Technology ™科技使这支液体唇膏展现魅力四射的动人色彩，更兼具立体丰盈妆效。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-pP-tZp">
+                        <rect key="frame" x="10" y="300" width="300" height="58"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="prq-eS-Wjd"/>
                         </constraints>
-                        <string key="text">雅诗兰黛的Advanced TrueVision Technology ™科技使这支液体唇膏展现魅力四射的动人色彩，更兼具立体丰盈妆效。独特的缓释水分胶囊复合成分协同玻尿酸，助力双唇锁住水分，持续补水。配方还特别添加了滋养混合精油：鳄梨油、荷荷巴油和葵花籽油</string>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" red="0.4823529411764706" green="0.4823529411764706" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                        <color key="textColor" red="0.37647058820000001" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrX-xW-zqb">
+                        <rect key="frame" x="95" y="365" width="131" height="32"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看更多" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wz-Bb-hAs">
+                                <rect key="frame" x="33" y="3" width="64" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="jkW-qt-G7R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
+                                <color key="textColor" red="0.72941176470000002" green="0.72941176470000002" blue="0.72941176470000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="6eT-k9-Ece"/>
+                            <constraint firstAttribute="bottom" secondItem="7wz-Bb-hAs" secondAttribute="bottom" constant="3" id="B7m-cL-JgR"/>
+                            <constraint firstAttribute="centerX" secondItem="7wz-Bb-hAs" secondAttribute="centerX" id="G7F-Lk-YQv"/>
+                            <constraint firstAttribute="width" constant="131" id="XSZ-di-cJP"/>
+                            <constraint firstItem="7wz-Bb-hAs" firstAttribute="top" secondItem="UrX-xW-zqb" secondAttribute="top" constant="3" id="dv9-eN-ePB"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
@@ -74,13 +95,15 @@
                 <constraint firstItem="VeL-Iq-UrW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5nt-Uv-ArY"/>
                 <constraint firstItem="mZ5-qu-XLc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BJU-NK-jTM"/>
                 <constraint firstAttribute="trailing" secondItem="e8M-pP-tZp" secondAttribute="trailing" constant="10" id="BXh-x9-ftn"/>
+                <constraint firstAttribute="centerX" secondItem="UrX-xW-zqb" secondAttribute="centerX" id="H5x-Zg-LvW"/>
+                <constraint firstAttribute="bottom" secondItem="UrX-xW-zqb" secondAttribute="bottom" priority="750" constant="8" id="Sc8-lL-hx1"/>
                 <constraint firstItem="l27-bN-OrY" firstAttribute="top" secondItem="VeL-Iq-UrW" secondAttribute="bottom" constant="15" id="Sf8-hf-4Ce"/>
                 <constraint firstItem="VeL-Iq-UrW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="UqW-SX-KgE"/>
-                <constraint firstAttribute="bottom" secondItem="e8M-pP-tZp" secondAttribute="bottom" constant="22" id="Vsv-fT-HeM"/>
                 <constraint firstAttribute="trailing" secondItem="VeL-Iq-UrW" secondAttribute="trailing" id="YPQ-Go-e5B"/>
-                <constraint firstItem="e8M-pP-tZp" firstAttribute="top" secondItem="zLP-8G-h7j" secondAttribute="bottom" constant="5" id="YZF-qT-xxJ"/>
-                <constraint firstItem="zLP-8G-h7j" firstAttribute="top" secondItem="mZ5-qu-XLc" secondAttribute="bottom" constant="5" id="cjD-QW-hy1"/>
-                <constraint firstItem="mZ5-qu-XLc" firstAttribute="top" secondItem="BEV-jE-dcm" secondAttribute="bottom" constant="20" id="crh-Ge-Byy"/>
+                <constraint firstItem="e8M-pP-tZp" firstAttribute="top" secondItem="zLP-8G-h7j" secondAttribute="bottom" priority="750" id="YZF-qT-xxJ"/>
+                <constraint firstItem="zLP-8G-h7j" firstAttribute="top" secondItem="mZ5-qu-XLc" secondAttribute="bottom" priority="750" constant="10" id="cjD-QW-hy1"/>
+                <constraint firstItem="mZ5-qu-XLc" firstAttribute="top" secondItem="BEV-jE-dcm" secondAttribute="bottom" priority="750" constant="20" id="crh-Ge-Byy"/>
+                <constraint firstItem="UrX-xW-zqb" firstAttribute="top" secondItem="e8M-pP-tZp" secondAttribute="bottom" priority="750" constant="7" id="dJl-Vp-MSF"/>
                 <constraint firstAttribute="centerX" secondItem="l27-bN-OrY" secondAttribute="centerX" id="e7r-tD-xu2"/>
                 <constraint firstItem="e8M-pP-tZp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="jwJ-f8-qsG"/>
                 <constraint firstItem="BEV-jE-dcm" firstAttribute="top" secondItem="l27-bN-OrY" secondAttribute="bottom" constant="3" id="wR5-wq-l8P"/>
@@ -90,7 +113,10 @@
             <connections>
                 <outlet property="contentLabel" destination="e8M-pP-tZp" id="GT8-Gn-2Fd"/>
                 <outlet property="coverImageView" destination="mZ5-qu-XLc" id="F2z-dK-J5k"/>
+                <outlet property="coverImageViewLeftConstraint" destination="BJU-NK-jTM" id="V0T-FF-n1P"/>
+                <outlet property="coverImageViewRightConstraint" destination="xJY-mq-eTD" id="tpc-xJ-gbj"/>
                 <outlet property="descriptionTitleLabel" destination="zLP-8G-h7j" id="1v3-yO-hTM"/>
+                <outlet property="moreViewHeightConstraint" destination="6eT-k9-Ece" id="yOt-2u-yPn"/>
                 <outlet property="titleLabel" destination="l27-bN-OrY" id="9jc-VS-tXD"/>
             </connections>
             <point key="canvasLocation" x="563" y="345"/>

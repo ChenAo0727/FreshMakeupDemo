@@ -16,8 +16,11 @@
 @property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *coverImageViewLeftConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *coverImageViewRightConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *moreViewHeightConstraint;
 
-- (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText;
+- (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText isFeeling:(BOOL)isFeeling;
 - (CGSize)sizeOfCell;
 
 @end
