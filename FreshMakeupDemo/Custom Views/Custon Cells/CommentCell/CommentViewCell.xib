@@ -142,7 +142,7 @@
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="40" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="T87-Rx-g0g">
+                    <tableView clipsSubviews="YES" tag="1" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="40" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="T87-Rx-g0g">
                         <rect key="frame" x="72" y="159" width="225" height="92"/>
                         <color key="backgroundColor" red="0.90588235294117647" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -179,6 +179,7 @@
                 <outlet property="bootomView" destination="eoX-p2-CEw" id="7nq-AH-s4V"/>
                 <outlet property="bottomLine" destination="EWY-qy-kWB" id="06b-kw-YYI"/>
                 <outlet property="commentCount" destination="NPg-xB-DJP" id="bbr-Zn-D7p"/>
+                <outlet property="commentHeight" destination="BM2-aV-pnz" id="UAp-39-9zK"/>
                 <outlet property="commentImage" destination="6mM-rg-yq7" id="HIU-j1-x2J"/>
                 <outlet property="commentLabel" destination="uy4-Nq-mdE" id="oTi-iB-lm2"/>
                 <outlet property="commentTableView" destination="T87-Rx-g0g" id="yq9-y7-FWB"/>

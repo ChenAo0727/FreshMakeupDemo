@@ -27,7 +27,8 @@ static NSString *CHATCELL = @"ChatCell";
     self.commentTableView.delegate = self;
     self.commentTableView.dataSource = self;
     [self.commentTableView registerNib:[UINib nibWithNibName:CHATCELL bundle:nil] forCellReuseIdentifier:CHATCELL];
-
+    
+    self.isHide = YES;
 
 
 
@@ -74,51 +75,42 @@ static NSString *CHATCELL = @"ChatCell";
 }
 
 - (IBAction)commentButtonClick:(id)sender {
+   
+
     
-    if (!self.commentTableView.hidden) {
-        
-        self.commentTableView.hidden = YES;
-        CGRect frame = self.bootomView.frame;
-        frame.origin.y -= self.commentTableView.frame.size.height;
-        self.bootomView.frame = frame;
-        CGRect frame1 = self.bottomLine.frame;
-        frame1.origin.y -= self.commentTableView.frame.size.height;
-        
-        self.bottomLine.frame = frame1;
-        
+    
+    
+}
+
+- (void)updateHeightConstraint {
+
+    if (self.isHide) {
+        self.heightConstraint.constant = 0;
+        self.commentHeight.constant = self.commentLabel.frame.size.height;
+        [self layoutIfNeeded];
+        [self setNeedsLayout];
+
     }else{
-    
-        self.commentTableView.hidden = NO;
 
-        CGRect frame = self.bootomView.frame;
-        frame.origin.y += self.commentTableView.frame.size.height;
-        self.bootomView.frame = frame;
-        CGRect frame1 = self.bottomLine.frame;
-        frame1.origin.y += self.commentTableView.frame.size.height;
-        
-        self.bottomLine.frame = frame1;
-
+    self.heightConstraint.constant = self.commentTableView.contentSize.height ;
+       [self layoutIfNeeded];
+        [self setNeedsLayout];
 
     }
-    
 }
-- (void)updateHeightConstraint{
-    
-    self.heightConstraint.constant = self.commentTableView.contentSize.height ;
-    [self layoutIfNeeded];
-    [self setNeedsLayout];
-}
+
+
 - (CGFloat)getCommentHeight{
     
 
     
     return [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
-    
+
     
     
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 1;
 
 }
 
@@ -131,7 +123,6 @@ static NSString *CHATCELL = @"ChatCell";
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     ChatCell *cell = [tableView dequeueReusableCellWithIdentifier:CHATCELL];
-
     CGFloat height = [cell cellHeight];
     [cell setNeedsLayout];
     [cell layoutIfNeeded];
