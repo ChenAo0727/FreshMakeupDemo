@@ -14,6 +14,7 @@
 #import "ProductiDescriptionCell.h"
 #import "HeaderViewCell.h"
 #import "EvaluationCell.h"
+#import "MoreTitleCell.h"
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -33,7 +34,9 @@
         ProductiDescriptionCell *cell = (ProductiDescriptionCell *)[self getCellWithNibName:@"ProductiDescriptionCell"];
         return [cell sizeOfCell];
     } else if ([self isEvalueCell:indexPath]) {
-      return CGSizeMake([UIScreen mainScreen].bounds.size.width, 190);
+      return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
+    } else if ([self moreTitleCell:indexPath]) {
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 102);
     } else {
         return CGSizeZero;
     }
@@ -48,16 +51,17 @@
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 2;
+    return 3;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == 0) {
         return 4;
-    }  else if (section == 1){
+    } else if (section == 1){
         //评价
         return 6;
-    
+    } else if (section == 2) {
+        return 1;
     } else {
         return 0;
     }
@@ -78,9 +82,10 @@
     } else if (indexPath.section == 1 ) {
         CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:COMMENT_CELL forIndexPath:indexPath];
         return cell;
-    }
-    
-    else {
+    } else if ([self moreTitleCell:indexPath]) {
+        MoreTitleCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MORE_TITLE_CELL forIndexPath:indexPath];
+        return cell;
+    } else {
         return nil;
     }
 }
@@ -137,6 +142,9 @@
 - (BOOL)isCommentCell:(NSIndexPath *)indexPath {
 
     return (1 == indexPath.section);
+}
+- (BOOL)moreTitleCell:(NSIndexPath *)indexPath {
+    return (2 == indexPath.section) && (0 == indexPath.row);
 }
 
 - (CGSize)sizeOfDetailBaseInfomationCellWithIndexPath:(NSIndexPath *)indexPath {
