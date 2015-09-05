@@ -11,7 +11,7 @@
 #import "DetailBaseInfomationCell.h"
 #import "UIScreen+Utility.h"
 #import "CommentCell.h"
-#import "UserFeelingCell.h"
+#import "ProductiDescriptionCell.h"
 #import "HeaderViewCell.h"
 #import "EvaluationCell.h"
 @implementation ProductDetailDataSource
@@ -20,16 +20,17 @@
 
     if ([self isBaseInfoCell:indexPath]) {
         return [self sizeOfDetailBaseInfomationCellWithIndexPath:indexPath];
-    } else if ([self isProductionDescriptionCell:indexPath]) {
-        
+    } else if ([self isUserFeeling:indexPath]) {
         SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
+        NSDictionary *userFeeling = [self.detailInfomationTool.feeling objectAtIndex:0];
+        [cell updateWithCoverImage:[UIImage imageNamed:[userFeeling objectForKey:@"image"]] contentText:[userFeeling objectForKey:@"text"]];
         return [cell sizeOfCell];
     }else if ([self isCommentCell:indexPath]) {
         
         CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
         return [cell sizeOfCell];
-    } else if ([self isUserFeelingCell:indexPath]) {
-        UserFeelingCell *cell = (UserFeelingCell *)[self getCellWithNibName:@"UserFeelingCell"];
+    } else if ([self isProductiDescriptionCell:indexPath]) {
+        ProductiDescriptionCell *cell = (ProductiDescriptionCell *)[self getCellWithNibName:@"ProductiDescriptionCell"];
         return [cell sizeOfCell];
     } else if ([self isEvalueCell:indexPath]) {
       return CGSizeMake([UIScreen mainScreen].bounds.size.width, 190);
@@ -67,11 +68,10 @@
 
     if ([self isBaseInfoCell:indexPath]) {
         return [self detailBaseInfomationCellWithCollectionView:collectionView indexPath:indexPath];
-    } else if ([self isProductionDescriptionCell:indexPath]) {
-        SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
-        return cell;
-    } else if ([self isUserFeelingCell:indexPath]) {
-        UserFeelingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:USER_FELLING_CELL forIndexPath:indexPath];
+    } else if ([self isUserFeeling:indexPath]) {
+        return [self userFeelingCellWithCollectionView:collectionView indexPath:indexPath];
+    } else if ([self isProductiDescriptionCell:indexPath]) {
+        ProductiDescriptionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:USER_FELLING_CELL forIndexPath:indexPath];
         return cell;
     } else if ([self isEvalueCell:indexPath]) {
         return [self evaluationCellWithCollectionView:collectionView indexPath:indexPath];
@@ -84,6 +84,14 @@
         return nil;
     }
 }
+
+- (UICollectionViewCell *)userFeelingCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
+    SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
+    NSDictionary *userFeeling = [self.detailInfomationTool.feeling objectAtIndex:0];
+    [cell updateWithCoverImage:[UIImage imageNamed:[userFeeling objectForKey:@"image"]] contentText:[userFeeling objectForKey:@"text"]];
+    return cell;
+}
+
 - (UICollectionViewCell *)detailBaseInfomationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
     
     DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
@@ -111,12 +119,12 @@
     return (0 == indexPath.row) && (0 == indexPath.section);
 }
 
-- (BOOL)isProductionDescriptionCell:(NSIndexPath *)indexPath {
+- (BOOL)isUserFeeling:(NSIndexPath *)indexPath {
     
     return (0 == indexPath.section) && (1 == indexPath.row);
 }
 
-- (BOOL)isUserFeelingCell:(NSIndexPath *)indexPath {
+- (BOOL)isProductiDescriptionCell:(NSIndexPath *)indexPath {
     
     return (0 == indexPath.section) && (2 == indexPath.row);
 }

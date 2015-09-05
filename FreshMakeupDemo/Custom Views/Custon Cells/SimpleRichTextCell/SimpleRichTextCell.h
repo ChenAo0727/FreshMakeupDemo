@@ -17,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *descriptionTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 
+- (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText;
 - (CGSize)sizeOfCell;
 
 @end

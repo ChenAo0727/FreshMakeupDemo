@@ -11,7 +11,7 @@
 #import "SimpleRichTextCell.h"
 #import "EvaluationCell.h"
 #import "DetailInfomationTool.h"
-#import "UserFeelingCell.h"
+#import "ProductiDescriptionCell.h"
 #import "CommentCell.h"
 @implementation DetailViewController (Configuration)
 
@@ -49,7 +49,7 @@
 - (void)configureCollectionView {
     
     self.detailCollectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"UserFeelingCell" bundle:nil] forCellWithReuseIdentifier:USER_FELLING_CELL];
+    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"ProductiDescriptionCell" bundle:nil] forCellWithReuseIdentifier:USER_FELLING_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"DetailBaseInfomationCell" bundle:nil] forCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"SimpleRichTextCell" bundle:nil] forCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"EvaluationCell" bundle:nil] forCellWithReuseIdentifier:EVALUATION_CELL];

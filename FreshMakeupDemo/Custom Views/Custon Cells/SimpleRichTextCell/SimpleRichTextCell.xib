@@ -21,7 +21,7 @@
                             <constraint firstAttribute="height" constant="9" id="vWn-dL-zCh"/>
                         </constraints>
                     </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产品介绍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l27-bN-OrY">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用感受" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l27-bN-OrY">
                         <rect key="frame" x="120" y="24" width="80" height="21"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="21" id="EPP-ou-3Ni"/>
@@ -45,10 +45,10 @@
                             <constraint firstAttribute="width" secondItem="mZ5-qu-XLc" secondAttribute="height" multiplier="8:5" id="uj6-6A-V6k"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-8G-h7j">
-                        <rect key="frame" x="10" y="275" width="35" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用感受:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-8G-h7j">
+                        <rect key="frame" x="10" y="275" width="60" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="35" id="4tD-0Q-evG"/>
+                            <constraint firstAttribute="width" constant="60" id="4tD-0Q-evG"/>
                             <constraint firstAttribute="height" constant="20" id="Fvi-xb-VaI"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
