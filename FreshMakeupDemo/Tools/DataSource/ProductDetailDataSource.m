@@ -89,11 +89,11 @@
         if ([[self.detailInfomationTool.feeling objectAtIndex:0] objectForKey:@"video"]) {
             return [self productionCellWithCollectionView:collectionView indexPath:indexPath isFeeling:YES video:@""];
         } else {
-            return [self userFeelingCellWithCollectionView:collectionView indexPath:indexPath data:[self.detailInfomationTool.feeling objectAtIndex:0] isFeeling:NO];
+            return [self userFeelingCellWithCollectionView:collectionView indexPath:indexPath data:[self.detailInfomationTool.feeling objectAtIndex:0] isFeeling:YES];
         }
     } else if ([self isProductiDescriptionCell:indexPath]) {
         if ([[self.detailInfomationTool.productionDescription objectAtIndex:0] objectForKey:@"video"]) {
-            return [self productionCellWithCollectionView:collectionView indexPath:indexPath isFeeling:YES video:@""];
+            return [self productionCellWithCollectionView:collectionView indexPath:indexPath isFeeling:NO video:@""];
         } else {
             return [self userFeelingCellWithCollectionView:collectionView indexPath:indexPath data:[self.detailInfomationTool.productionDescription objectAtIndex:0] isFeeling:NO];
         }
@@ -122,11 +122,13 @@
 
 - (CGSize)productionCellSizeWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath isFeeling:(BOOL)isFeeling video:(NSString *)video {
     ProductiDescriptionCell *cell = (ProductiDescriptionCell *)[self getCellWithNibName:@"ProductiDescriptionCell"];
+    [cell updateIsFeeling:isFeeling];
     return [cell sizeOfCell];
 }
 
 - (UICollectionViewCell *)productionCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath isFeeling:(BOOL)isFeeling video:(NSString *)video {
     ProductiDescriptionCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:USER_FELLING_CELL forIndexPath:indexPath];
+    [cell updateIsFeeling:isFeeling];
     return cell;
 }
 

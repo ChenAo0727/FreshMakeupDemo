@@ -18,6 +18,14 @@
     self.moreInfomationBorderView.layer.borderColor = [[UIColor colorWithIntRed:222 green:222 blue:222] CGColor];
 }
 
+- (void)updateIsFeeling:(BOOL)isFeeling {
+    if (isFeeling) {
+        self.titleLabel.text = @"使用感受";
+    } else {
+        self.titleLabel.text = @"产品简介";
+    }
+}
+
 - (CGSize)sizeOfCell {
     NSLayoutConstraint *tempWidthConstraint = [NSLayoutConstraint constraintWithItem:self.contentImageView
                                  attribute:NSLayoutAttributeWidth

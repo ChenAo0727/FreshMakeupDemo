@@ -19,5 +19,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *moreInfomationLabel;
 
 - (CGSize)sizeOfCell;
+- (void)updateIsFeeling:(BOOL)isFeeling;
 
 @end
