@@ -15,5 +15,11 @@
 @property (strong, nonatomic) NSArray *productionDescription;
 @property (strong, nonatomic) NSArray *feeling;
 
-- (instancetype)initWithYaDunInfomation;
+- (instancetype)initWithYaDunInfomation;//雅顿
+- (instancetype)initWithBareMineralsInformation;//矿物彩妆
+- (instancetype)initWithClearSkin;//拉杜丽
+- (instancetype)initWithSisley;//希思黎
+- (instancetype)initWithSK;//SK-II
+- (instancetype)initWithLanZhi;//兰芝
+- (instancetype)initWithAupres;//欧珀莱
 @end
