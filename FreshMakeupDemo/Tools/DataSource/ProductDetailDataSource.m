@@ -9,17 +9,30 @@
 #import "ProductDetailDataSource.h"
 #import "SimpleRichTextCell.h"
 #import "DetailBaseInfomationCell.h"
+#import "UIScreen+Utility.h"
+#import "CommentCell.h"
+#import "HeaderViewCell.h"
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+
     if ([self isBaseInfoCell:indexPath]) {
         return CGSizeMake([UIScreen mainScreen].bounds.size.width, 568);
     } else if ([self isProductionDescriptionCell:indexPath]) {
         SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
         return [cell sizeOfCell];
-    } else {
+    }else if ([self isCommentCell:indexPath]) {
+        CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
+        return [cell sizeOfCell];
+    
+    
+    }
+    
+    
+    else {
         return CGSizeZero;
     }
+
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section {
@@ -32,21 +45,47 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == 0) {
+
         return 2;
-    } else {
-        return 0;
+    }  else if (section == 1){
+        //评价
+        return 6;
+    
     }
+
+    else{
+        return 1;
+    }
+    
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+
     if ([self isBaseInfoCell:indexPath]) {
         return [self detailBaseInfomationCellWithCollectionView:collectionView indexPath:indexPath];
     } else if ([self isProductionDescriptionCell:indexPath]) {
         SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
         return cell;
     } else {
+    if (indexPath.section == 0 && indexPath.row == 0) {
+    DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
+    return cell;
+    }if (indexPath.section == 1 && indexPath.row == 0) {
+        //评价
+        HeaderViewCell *cell = [HeaderViewCell create];
+        return cell;
+    }if (indexPath.section == 1 && indexPath.row != 0) {
+        CommentCell *cell = [CommentCell create];
+        return cell;
+    }
+    
+    
+    else {
+
         return nil;
     }
+    }
+    
 }
 - (UICollectionViewCell *)detailBaseInfomationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
     DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
@@ -78,5 +117,8 @@
 - (BOOL)isEvalueCell:(NSIndexPath *)indexPath {
     return  (0 == indexPath.section) && (3 == indexPath.row);
 }
+- (BOOL)isCommentCell:(NSIndexPath *)indexPath {
 
+    return (1 == indexPath.section);
+}
 @end
