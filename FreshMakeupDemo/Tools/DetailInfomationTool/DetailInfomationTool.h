@@ -22,4 +22,5 @@
 - (instancetype)initWithSK;//SK-II
 - (instancetype)initWithLanZhi;//兰芝
 - (instancetype)initWithAupres;//欧珀莱
+
 @end

@@ -59,7 +59,7 @@
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"MoreTitleCell" bundle:nil] forCellWithReuseIdentifier:MORE_TITLE_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"TrialCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:TRIAL_COLLECTION_VIEW_CELL];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
-    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithYaDunInfomation];
+    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithAupres];
     self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
     self.detailCollectionView.alwaysBounceVertical = YES;
     self.detailCollectionView.dataSource = self.productDetailDataSource;
@@ -77,7 +77,8 @@
 }
 
 - (void)registerNibWithDictionaty:(NSDictionary *)dictionary {
-    NSEnumerator * enumeratorKey = [dictionary keyEnumerator];
+    
+    NSEnumerator *enumeratorKey = [dictionary keyEnumerator];
     for (NSString *identifier in enumeratorKey) {
         [self.detailCollectionView registerNib:[UINib nibWithNibName:[dictionary objectForKey:identifier] bundle:nil] forCellWithReuseIdentifier:identifier];
     }
