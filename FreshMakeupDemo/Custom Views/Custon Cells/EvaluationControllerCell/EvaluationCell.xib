@@ -14,7 +14,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="201"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评价" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zbx-HH-xan">
-                        <rect key="frame" x="140" y="13" width="40" height="24"/>
+                        <rect key="frame" x="140" y="18" width="40" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Fl2-Di-bQm"/>
                         </constraints>
@@ -23,7 +23,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aSC-5n-xU8">
-                        <rect key="frame" x="135" y="39" width="50" height="2"/>
+                        <rect key="frame" x="135" y="44" width="50" height="2"/>
                         <color key="backgroundColor" red="0.4549019608" green="0.76078431369999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="2" id="80p-pw-gTq"/>
@@ -50,19 +50,29 @@
                         <color key="textColor" red="0.61176470588235299" green="0.58823529411764708" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t70-ZX-zcR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="8"/>
+                        <color key="backgroundColor" red="0.91764705882352937" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="cdg-ko-gZa"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Zbx-HH-xan" firstAttribute="centerX" secondItem="Qwe-Qp-jyh" secondAttribute="centerX" id="4ja-EX-RDV"/>
+                <constraint firstItem="t70-ZX-zcR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5W2-Hb-K7t"/>
+                <constraint firstAttribute="trailing" secondItem="t70-ZX-zcR" secondAttribute="trailing" id="6Cf-4Z-jqL"/>
                 <constraint firstItem="aSC-5n-xU8" firstAttribute="top" secondItem="Zbx-HH-xan" secondAttribute="bottom" constant="2" id="GMy-dL-X7c"/>
-                <constraint firstItem="Zbx-HH-xan" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="Kvd-TF-0CT"/>
+                <constraint firstItem="Zbx-HH-xan" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="18" id="Kvd-TF-0CT"/>
                 <constraint firstAttribute="centerX" secondItem="Zbx-HH-xan" secondAttribute="centerX" id="W9r-92-9J2"/>
                 <constraint firstAttribute="centerX" secondItem="aSC-5n-xU8" secondAttribute="centerX" id="c7t-Nz-G9d"/>
                 <constraint firstAttribute="bottom" secondItem="zwe-M6-sZJ" secondAttribute="bottom" constant="6" id="fMr-V8-JSn"/>
                 <constraint firstItem="Zbx-HH-xan" firstAttribute="centerX" secondItem="zwe-M6-sZJ" secondAttribute="centerX" id="jgm-ec-K4U"/>
                 <constraint firstAttribute="bottom" secondItem="Qwe-Qp-jyh" secondAttribute="bottom" constant="25" id="mKL-86-XdJ"/>
+                <constraint firstItem="t70-ZX-zcR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="twu-QM-d24"/>
             </constraints>
             <size key="customSize" width="320" height="201"/>
             <point key="canvasLocation" x="307" y="355.5"/>

@@ -9,51 +9,88 @@
 #import "ProductDetailDataSource.h"
 #import "SimpleRichTextCell.h"
 #import "DetailBaseInfomationCell.h"
+#import "UIScreen+Utility.h"
+#import "CommentCell.h"
+#import "UserFeelingCell.h"
+#import "HeaderViewCell.h"
 #import "EvaluationCell.h"
+#import "MoreTitleCell.h"
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+
     if ([self isBaseInfoCell:indexPath]) {
         return [self sizeOfDetailBaseInfomationCellWithIndexPath:indexPath];
     } else if ([self isProductionDescriptionCell:indexPath]) {
+        
         SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
         return [cell sizeOfCell];
+    }else if ([self isCommentCell:indexPath]) {
+        
+        CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
+        return [cell sizeOfCell];
     } else if ([self isUserFeelingCell:indexPath]) {
-      return CGSizeMake([UIScreen mainScreen].bounds.size.width, 190);
+        UserFeelingCell *cell = (UserFeelingCell *)[self getCellWithNibName:@"UserFeelingCell"];
+        return [cell sizeOfCell];
+    } else if ([self isEvalueCell:indexPath]) {
+      return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
+    } else if ([self moreTitleCell:indexPath]) {
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 102);
     } else {
         return CGSizeZero;
     }
+
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section {
+    if(section == 1) {
+        return 2;
+    }
     return 1;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == 0) {
-        return 3;
+        return 4;
+    } else if (section == 1){
+        //评价
+        return 6;
+    } else if (section == 2) {
+        return 1;
     } else {
         return 0;
     }
+    
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+
     if ([self isBaseInfoCell:indexPath]) {
         return [self detailBaseInfomationCellWithCollectionView:collectionView indexPath:indexPath];
     } else if ([self isProductionDescriptionCell:indexPath]) {
         SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
         return cell;
     } else if ([self isUserFeelingCell:indexPath]) {
+        UserFeelingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:USER_FELLING_CELL forIndexPath:indexPath];
+        return cell;
+    } else if ([self isEvalueCell:indexPath]) {
         return [self evaluationCellWithCollectionView:collectionView indexPath:indexPath];
+    } else if (indexPath.section == 1 ) {
+        CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:COMMENT_CELL forIndexPath:indexPath];
+        return cell;
+    } else if ([self moreTitleCell:indexPath]) {
+        MoreTitleCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MORE_TITLE_CELL forIndexPath:indexPath];
+        return cell;
     } else {
         return nil;
     }
 }
 - (UICollectionViewCell *)detailBaseInfomationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
+    
     DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
     [cell updateWithTitleLabel:self.detailInfomationTool.title];
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
@@ -61,6 +98,7 @@
 }
 
 - (UICollectionViewCell *)getCellWithNibName:(NSString *)nibName {
+    
     static UICollectionViewCell *cell = nil;
     cell = [[NSBundle mainBundle] loadNibNamed:nibName owner:self options:nil][0];
     [cell setNeedsLayout];
@@ -74,20 +112,33 @@
 
 
 - (BOOL)isBaseInfoCell:(NSIndexPath *)indexPath {
+    
     return (0 == indexPath.row) && (0 == indexPath.section);
 }
 
 - (BOOL)isProductionDescriptionCell:(NSIndexPath *)indexPath {
+    
     return (0 == indexPath.section) && (1 == indexPath.row);
 }
 
 - (BOOL)isUserFeelingCell:(NSIndexPath *)indexPath {
+    
     return (0 == indexPath.section) && (2 == indexPath.row);
 }
 
 - (BOOL)isEvalueCell:(NSIndexPath *)indexPath {
+    
     return  (0 == indexPath.section) && (3 == indexPath.row);
 }
+
+- (BOOL)isCommentCell:(NSIndexPath *)indexPath {
+
+    return (1 == indexPath.section);
+}
+- (BOOL)moreTitleCell:(NSIndexPath *)indexPath {
+    return (2 == indexPath.section) && (0 == indexPath.row);
+}
+
 - (CGSize)sizeOfDetailBaseInfomationCellWithIndexPath:(NSIndexPath *)indexPath {
     DetailBaseInfomationCell *cell = (DetailBaseInfomationCell *)[self getCellWithNibName:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];

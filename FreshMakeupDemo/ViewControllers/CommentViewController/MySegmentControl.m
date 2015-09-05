@@ -13,6 +13,7 @@
     UIView* buttonDown;
     NSInteger selectSeugment;
 }
+
 @end
 
 @implementation MySegmentControl
@@ -20,7 +21,7 @@
     if (self = [super initWithFrame:frame]) {
     
     self.ButtonArray=[NSMutableArray array];
-    selectSeugment=0;
+    selectSeugment = 0;
     self.titleFont=[UIFont fontWithName:@".Helvetica Neue Interface" size:16.0f];
     self=[super initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, 34)];
     self.titleColor=[UIColor colorWithRed:161.0/255 green:155.0/255 blue:155.0/255 alpha:1.0f];

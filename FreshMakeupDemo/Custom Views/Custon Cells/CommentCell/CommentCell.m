@@ -9,7 +9,7 @@
 #import "CommentCell.h"
 #import "UIColor+Utility.h"
 #import "UIScreen+Utility.h"
-
+static NSString *COMMENTCELL = @"CommentCell";
 @implementation CommentCell {
     CGAffineTransform approveTransform;
     CGAffineTransform commentTransform;
@@ -25,7 +25,10 @@
     self.skinPropertyLabel.layer.cornerRadius = self.skinPropertyLabel.frame.size.width / 2;
     
 }
++ (instancetype)create{
+    return [[[NSBundle mainBundle]loadNibNamed:COMMENTCELL owner:nil options:nil] lastObject];
 
+}
 - (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount {
     self.avatarImageView.image = avatar;
     self.nickNameLabel.text = nickName;

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define MORE_TITLE_CELL @"MoreTitleCell"
 @interface MoreTitleCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIView *moreTitleView;
 
 @end
