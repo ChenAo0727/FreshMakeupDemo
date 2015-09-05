@@ -72,7 +72,7 @@
         self.title = @"SK-II全新 [超肌因] 逆龄系列新品发布";
         self.coverImage = [UIImage imageNamed:@"SK.png"];
         self.shortComment = @"有没有想过你的护肤品可以让你在任何年龄，任何角度看起来都一样年轻？SK-II启发自micro RNA科研，为你解开保持年轻美丽的神秘面纱。带来跨越未来的抗老修护科技，揭开肌肤保养的新一章。";
-        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"SKIntroduce.png",@"image", nil];
+        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"SKIntroduce.png",@"image",@"http://static.video.qq.com/TPout.swf?vid=j0162if02fs&auto=0",@"video", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
         NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @" “我觉得超肌因系列的精华质地很薄透，面霜很丰盈，非常细腻，容易吸收，使用感受我觉得甚至比之前的大小红瓶更加好。” ——游丝祺",@"text",@"SKFelling.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];

@@ -59,7 +59,7 @@
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"MoreTitleCell" bundle:nil] forCellWithReuseIdentifier:MORE_TITLE_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"TrialCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:TRIAL_COLLECTION_VIEW_CELL];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
-    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithAupres];
+    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithSK];
     self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
     self.detailCollectionView.alwaysBounceVertical = YES;
     self.detailCollectionView.dataSource = self.productDetailDataSource;
