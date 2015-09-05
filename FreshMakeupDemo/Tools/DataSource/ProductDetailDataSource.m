@@ -35,7 +35,6 @@
     } else if ([self isTrailCell:indexPath]){
         TrialCollectionViewCell *cell = (TrialCollectionViewCell *)[self getCellWithNibName:@"TrialCollectionViewCell"];
         return [cell sizeOfCell];
-     
     } else if ([self isEvalueCell:indexPath]) {
       return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
     } else if ([self moreTitleCell:indexPath]) {
