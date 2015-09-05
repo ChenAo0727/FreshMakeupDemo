@@ -32,12 +32,16 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0 && indexPath.row == 0) {
-    DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
-    return cell;
+        return [self detailBaseInfomationCellWithCollectionView:collectionView indexPath:indexPath];
     } else {
         return nil;
     }
 }
-
+- (UICollectionViewCell *)detailBaseInfomationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
+    DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
+    [cell updateWithTitleLabel:self.detailInfomationTool.title];
+    [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
+    return cell;
+}
 
 @end
