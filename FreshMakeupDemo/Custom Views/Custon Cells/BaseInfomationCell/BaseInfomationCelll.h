@@ -17,5 +17,5 @@
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
 
 - (CGFloat)heightOfCell;
-
+- (void)updateWithTitleLabel:(NSString *)label;
 @end

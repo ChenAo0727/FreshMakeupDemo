@@ -8,6 +8,7 @@
 
 #import "CommentCell.h"
 #import "UIColor+Utility.h"
+#import "UIScreen+Utility.h"
 
 @implementation CommentCell {
     CGAffineTransform approveTransform;
@@ -15,7 +16,7 @@
 }
 
 - (void)awakeFromNib {
-    
+    self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     approveTransform = self.approveImageView.transform;
     commentTransform = self.commentImageView.transform;
     self.avatarImageView.layer.cornerRadius = self.avatarImageView.frame.size.width / 2;
@@ -53,6 +54,25 @@
     
     CGRect frame  = self.bottomLineView.frame;
     return frame.origin.y + self.frame.size.height;
+}
+
+- (CGSize)sizeOfCell {
+    self.bounds = CGRectMake(0, 0, 320, self.frame.size.height);
+    self.contentView.bounds = self.bounds;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+    NSLayoutConstraint *tempWidthConstraint =
+    [NSLayoutConstraint constraintWithItem:self.commentLabel
+                                 attribute:NSLayoutAttributeWidth
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:nil
+                                 attribute:NSLayoutAttributeNotAnAttribute
+                                multiplier:1.0
+                                  constant:[UIScreen screenWidth] / 2 - 24];
+    [self.commentLabel addConstraint:tempWidthConstraint];
+    CGSize size = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    [self.commentLabel removeConstraint:tempWidthConstraint];
+    return size;
 }
 
 - (IBAction)onClickCommentButton:(id)sender {

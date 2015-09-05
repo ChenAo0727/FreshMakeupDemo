@@ -85,6 +85,8 @@
 		05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDF01B8D8FBC00DD1667 /* try.png */; };
 		05D5F3691B944FBE0080AE64 /* ShakeAshakeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D5F3681B944FBE0080AE64 /* ShakeAshakeView.m */; };
 		05D5F36B1B944FEA0080AE64 /* ShakeAshakeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */; };
+		05D6BA601B99C50D00C20107 /* DetailBaseInfomationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D6BA5E1B99C50D00C20107 /* DetailBaseInfomationCell.m */; };
+		05D6BA611B99C50D00C20107 /* DetailBaseInfomationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D6BA5F1B99C50D00C20107 /* DetailBaseInfomationCell.xib */; };
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		05DEA0541B880C560094E123 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA0521B880C560094E123 /* black.png */; };
@@ -216,6 +218,9 @@
 		2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB611BD1B8757E9000414A2 /* TitleCell.m */; };
 		2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB611BE1B8757E9000414A2 /* TitleCell.xib */; };
 		2ECD47F41B8EE249002AFEEB /* MaterialTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD47F31B8EE249002AFEEB /* MaterialTransition.m */; };
+		2EECA6A21B998FA5007D51C2 /* ProductDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECA6A11B998FA5007D51C2 /* ProductDetailDataSource.m */; };
+		2EECA6AC1B999512007D51C2 /* SimpleRichTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECA6AA1B999512007D51C2 /* SimpleRichTextCell.m */; };
+		2EECA6AD1B999512007D51C2 /* SimpleRichTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EECA6AB1B999512007D51C2 /* SimpleRichTextCell.xib */; };
 		2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */; };
 		2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */; };
 		2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA821B8AD6130044BAF0 /* selection_like_image.png */; };
@@ -350,6 +355,9 @@
 		05D5F3671B944FBE0080AE64 /* ShakeAshakeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakeAshakeView.h; sourceTree = "<group>"; };
 		05D5F3681B944FBE0080AE64 /* ShakeAshakeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakeAshakeView.m; sourceTree = "<group>"; };
 		05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakeAshakeView.xib; sourceTree = "<group>"; };
+		05D6BA5D1B99C50D00C20107 /* DetailBaseInfomationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailBaseInfomationCell.h; sourceTree = "<group>"; };
+		05D6BA5E1B99C50D00C20107 /* DetailBaseInfomationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailBaseInfomationCell.m; sourceTree = "<group>"; };
+		05D6BA5F1B99C50D00C20107 /* DetailBaseInfomationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailBaseInfomationCell.xib; sourceTree = "<group>"; };
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05DEA0521B880C560094E123 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -544,6 +552,11 @@
 		2EB611BE1B8757E9000414A2 /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
 		2ECD47F21B8EE249002AFEEB /* MaterialTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialTransition.h; sourceTree = "<group>"; };
 		2ECD47F31B8EE249002AFEEB /* MaterialTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialTransition.m; sourceTree = "<group>"; };
+		2EECA6A01B998FA5007D51C2 /* ProductDetailDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailDataSource.h; sourceTree = "<group>"; };
+		2EECA6A11B998FA5007D51C2 /* ProductDetailDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailDataSource.m; sourceTree = "<group>"; };
+		2EECA6A91B999512007D51C2 /* SimpleRichTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRichTextCell.h; sourceTree = "<group>"; };
+		2EECA6AA1B999512007D51C2 /* SimpleRichTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleRichTextCell.m; sourceTree = "<group>"; };
+		2EECA6AB1B999512007D51C2 /* SimpleRichTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleRichTextCell.xib; sourceTree = "<group>"; };
 		2EFAEA7D1B8AB4170044BAF0 /* SelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionView.h; sourceTree = "<group>"; };
 		2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionView.m; sourceTree = "<group>"; };
 		2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionView.xib; sourceTree = "<group>"; };
@@ -781,6 +794,16 @@
 				05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */,
 			);
 			path = ShakeAshakeView;
+			sourceTree = "<group>";
+		};
+		05D6BA571B99961C00C20107 /* DetailBaseInfomationCell */ = {
+			isa = PBXGroup;
+			children = (
+				05D6BA5D1B99C50D00C20107 /* DetailBaseInfomationCell.h */,
+				05D6BA5E1B99C50D00C20107 /* DetailBaseInfomationCell.m */,
+				05D6BA5F1B99C50D00C20107 /* DetailBaseInfomationCell.xib */,
+			);
+			path = DetailBaseInfomationCell;
 			sourceTree = "<group>";
 		};
 		05DEA0561B8858CB0094E123 /* Shake a shakeImage */ = {
@@ -1152,6 +1175,7 @@
 		2E8C34311B7DF404006B5BC0 /* Custon Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2EECA6A81B999504007D51C2 /* SimpleRichTextCell */,
 				2EB4EF591B96C0350080185A /* TagsTableViewCell */,
 				2EA556FC1B95756100C696B0 /* DetailCommentCell */,
 				2E7706961B8888F70024282D /* TrialCollectionViewCell */,
@@ -1164,6 +1188,7 @@
 				05E04CD51B9697B100E5D28C /* ImageMaxCell */,
 				2EB611AE1B874551000414A2 /* OwnerSayCell */,
 				2EB6119D1B86EFB6000414A2 /* BaseInfomationCell */,
+				05D6BA571B99961C00C20107 /* DetailBaseInfomationCell */,
 				054DFD281B81A0ED00651F11 /* EarlyAdoptersTheTrialViewController Cells */,
 				058ABF681B830A6000A0BA8A /* RollCollectionView Cell */,
 				059E88B61B8414D30086544F /* FindViewController Cell */,
@@ -1319,6 +1344,8 @@
 			children = (
 				2EA556ED1B953A4300C696B0 /* DetailCollectionViewDatasource.h */,
 				2EA556EE1B953A4300C696B0 /* DetailCollectionViewDatasource.m */,
+				2EECA6A01B998FA5007D51C2 /* ProductDetailDataSource.h */,
+				2EECA6A11B998FA5007D51C2 /* ProductDetailDataSource.m */,
 			);
 			path = DataSource;
 			sourceTree = "<group>";
@@ -1407,6 +1434,16 @@
 				2EB611BE1B8757E9000414A2 /* TitleCell.xib */,
 			);
 			path = TitleCell;
+			sourceTree = "<group>";
+		};
+		2EECA6A81B999504007D51C2 /* SimpleRichTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EECA6A91B999512007D51C2 /* SimpleRichTextCell.h */,
+				2EECA6AA1B999512007D51C2 /* SimpleRichTextCell.m */,
+				2EECA6AB1B999512007D51C2 /* SimpleRichTextCell.xib */,
+			);
+			path = SimpleRichTextCell;
 			sourceTree = "<group>";
 		};
 		2EFAEA7C1B8AB3FE0044BAF0 /* SelectionView */ = {
@@ -1534,6 +1571,7 @@
 				05D3CDED1B8D8FB100DD1667 /* share.png in Resources */,
 				2EB611B91B8755A7000414A2 /* ImageCell.xib in Resources */,
 				2E8C33E61B7DEC79006B5BC0 /* LaunchScreen.xib in Resources */,
+				2EECA6AD1B999512007D51C2 /* SimpleRichTextCell.xib in Resources */,
 				054DFD4C1B81AAEE00651F11 /* division.png in Resources */,
 				057A26521B86D255003DAF07 /* interval.png in Resources */,
 				2E6B46441B81A85400BF39D5 /* home_user_info_icon.png in Resources */,
@@ -1603,6 +1641,7 @@
 				2E4C0C861B90511A00ECD2BF /* book_shadow.png in Resources */,
 				2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */,
 				058ABF4B1B82C58100A0BA8A /* findad1.png in Resources */,
+				05D6BA611B99C50D00C20107 /* DetailBaseInfomationCell.xib in Resources */,
 				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
 				2EA556FB1B95725A00C696B0 /* DetailCommentView.xib in Resources */,
 				059E88BE1B8414D30086544F /* FindBranchTableViewCell.xib in Resources */,
@@ -1700,6 +1739,7 @@
 				2E8C342B1B7DF3DC006B5BC0 /* PickUpMotion+Animation.m in Sources */,
 				054DFD391B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.m in Sources */,
 				2E4C0C7F1B900AA100ECD2BF /* RealBookView.m in Sources */,
+				2EECA6AC1B999512007D51C2 /* SimpleRichTextCell.m in Sources */,
 				059E88D11B841BB20086544F /* FindViewControllerDataSource.m in Sources */,
 				059E88BD1B8414D30086544F /* FindBranchTableViewCell.m in Sources */,
 				2EA557001B95757E00C696B0 /* DetailCommentCell.m in Sources */,
@@ -1752,6 +1792,7 @@
 				059E88CF1B841BB20086544F /* FindViewController.m in Sources */,
 				2E8C34101B7DF361006B5BC0 /* BaseViewController.m in Sources */,
 				2E8C342C1B7DF3DC006B5BC0 /* PickUpMotion+Calculation.m in Sources */,
+				05D6BA601B99C50D00C20107 /* DetailBaseInfomationCell.m in Sources */,
 				2E8C34301B7DF3DC006B5BC0 /* SlideMotion.m in Sources */,
 				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
 				054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */,
@@ -1765,6 +1806,7 @@
 				2E132F8E1B85B505005DCF14 /* HomeViewController+Configuration.m in Sources */,
 				054DFD401B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m in Sources */,
 				054DFD351B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.m in Sources */,
+				2EECA6A21B998FA5007D51C2 /* ProductDetailDataSource.m in Sources */,
 				05D5F3691B944FBE0080AE64 /* ShakeAshakeView.m in Sources */,
 				2E7DC93F1B82D2D300152A0B /* StackCollectionView+Caculation.m in Sources */,
 				2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */,

@@ -74,7 +74,7 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
         
     }else if (indexPath.section == 1 || indexPath.section == 3){
        
-        size = CGSizeMake(([UIScreen screenWidth] - 20), [cell heightOfCell]);
+        size = [cell sizeOfCell];
         
     }if (indexPath.section == 2) {
         return CGSizeMake([UIScreen screenWidth] - 20, 40);

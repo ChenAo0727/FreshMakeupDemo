@@ -13,6 +13,7 @@
 @interface OwnerSayCell : UICollectionViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *discriptionLabel;
+- (void)updateWithLabel:(NSString *)label;
 - (CGFloat)heightOfCell;
 
 @end

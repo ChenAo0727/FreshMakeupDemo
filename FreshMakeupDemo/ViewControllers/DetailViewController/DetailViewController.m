@@ -65,11 +65,11 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return [self.detailCollectionViewDatasource collectionView:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath];
+    return [self.productDetailDataSource collectionView:collectionView layout:collectionViewLayout sizeForItemAtIndexPath:indexPath];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section {
-    return [self.detailCollectionViewDatasource collectionView:collectionView layout:collectionViewLayout columnCountForSection:section];
+    return [self.productDetailDataSource collectionView:collectionView layout:collectionViewLayout columnCountForSection:section];
 }
 
 #pragma mark - PrivateMethod

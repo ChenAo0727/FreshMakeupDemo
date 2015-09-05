@@ -163,7 +163,7 @@
                 <outlet property="commentCountLabel" destination="DBY-Ua-DS3" id="ksz-8R-KLi"/>
                 <outlet property="titleLabel" destination="SfS-XE-NBy" id="H2i-Rv-z9t"/>
             </connections>
-            <point key="canvasLocation" x="234" y="356.5"/>
+            <point key="canvasLocation" x="436" y="456.5"/>
         </collectionViewCell>
     </objects>
     <resources>

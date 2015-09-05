@@ -7,18 +7,35 @@
 //
 
 #import "CopywriterCell.h"
+#import "UIScreen+Utility.h"
 
 @implementation CopywriterCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
 }
 
 - (void)updateWithContentText:(NSString *)contentText {
-    self.contentLabel.text = [NSString stringWithFormat:@"%@%@", @"文案:", contentText];
+    self.contentLabel.text = contentText;
+}
+
+- (CGSize)sizeOfCell {
+    self.bounds = CGRectMake(0, 0, 320, self.frame.size.height);
+    self.contentView.bounds = self.bounds;
     [self setNeedsLayout];
     [self layoutIfNeeded];
-    
+    NSLayoutConstraint *tempWidthConstraint =
+    [NSLayoutConstraint constraintWithItem:self.contentLabel
+                                 attribute:NSLayoutAttributeWidth
+                                 relatedBy:NSLayoutRelationEqual
+                                    toItem:nil
+                                 attribute:NSLayoutAttributeNotAnAttribute
+                                multiplier:1.0
+                                  constant:[UIScreen screenWidth] - 40];
+    [self.contentView addConstraint:tempWidthConstraint];
+    CGSize size = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
+    [self.contentLabel removeConstraint:tempWidthConstraint];
+    return size;
 }
 
 - (CGFloat)heightOfCell {

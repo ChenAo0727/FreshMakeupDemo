@@ -7,21 +7,13 @@
 //
 
 #import "DetailViewController+Configuration.h"
-#import "FeatureDescriptionCell.h"
-#import "TrialCollectionViewCell.h"
-#import "BaseInfomationCelll.h"
-#import "MoreInfomationCell.h"
-#import "CopywriterCell.h"
-#import "CommentCell.h"
-#import "OwnerSayCell.h"
-#import "ImageCell.h"
-#import "TitleCell.h"
-
+#import "DetailBaseInfomationCell.h"
+#import "DetailInfomationTool.h"
 @implementation DetailViewController (Configuration)
 
 - (void)updateSelectionViewY {
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:4];
-    TitleCell *cell = [self.detailCollectionView dequeueReusableCellWithReuseIdentifier:TITLE_CELL forIndexPath:indexPath];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:0 inSection:0];
+    DetailBaseInfomationCell *cell = [self.detailCollectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
     CGRect frame = cell.frame;
     self.selectionViewY = frame.origin.y + frame.size.height;
 }
@@ -34,12 +26,12 @@
 }
 
 - (void)configureDateSource {
-    self.detailCollectionViewDatasource = [DetailCollectionViewDatasource new];
+    self.productDetailDataSource = [ProductDetailDataSource new];
 }
 
 - (void)configureWaterFlowLayout {
     self.layout = [[CHTCollectionViewWaterfallLayout alloc] init];
-    self.layout.sectionInset = UIEdgeInsetsMake(0, 5, 0, 5);
+    self.layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.layout.headerHeight = 0;
     self.layout.footerHeight = 0;
     self.layout.minimumColumnSpacing = 0;
@@ -48,11 +40,12 @@
 
 - (void)configureCollectionView {
     self.detailCollectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [self.detailCollectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionViewCell"];
-    NSDictionary *nibDictionary = @{BASE_INFO_CELL : @"BaseInfomationCell", OWNER_SAY_CELL : @"OwnerSayCell", TITLE_CELL : @"TitleCell", IMAGE_CELL : @"ImageCell", MORE_INFOMATION_CELL : @"MoreInfomationCell", FEATURE_DESCRIPTION_CELL : @"FeatureDescriptionCell", COMMENT_CELL : @"CommentCell", COPY_WRITER_CELL : @"CopywriterCell", TRIAL_COLLECTION_VIEW_CELL : @"TrialCollectionViewCell"};
-    [self registerNibWithDictionaty:nibDictionary];
+    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"DetailBaseInfomationCell" bundle:nil] forCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
-    self.detailCollectionView.dataSource = self.detailCollectionViewDatasource;
+    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithYaDunInfomation];
+    self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
+    self.detailCollectionView.alwaysBounceVertical = YES;
+    self.detailCollectionView.dataSource = self.productDetailDataSource;
     self.detailCollectionView.delegate = self;
 }
 

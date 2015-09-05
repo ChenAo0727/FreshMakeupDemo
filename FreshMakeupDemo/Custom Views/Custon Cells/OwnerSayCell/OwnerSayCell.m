@@ -18,5 +18,7 @@
 - (void)awakeFromNib {
     // Initialization code
 }
-
+- (void)updateWithLabel:(NSString *)label {
+    self.discriptionLabel.text = label;
+}
 @end
