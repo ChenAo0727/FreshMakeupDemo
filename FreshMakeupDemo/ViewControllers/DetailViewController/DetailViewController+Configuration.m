@@ -14,6 +14,7 @@
 #import "ProductiDescriptionCell.h"
 #import "CommentCell.h"
 #import "MoreTitleCell.h"
+#import "TrialCollectionViewCell.h"
 @implementation DetailViewController (Configuration)
 
 - (void)updateSelectionViewY {
@@ -56,6 +57,7 @@
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"EvaluationCell" bundle:nil] forCellWithReuseIdentifier:EVALUATION_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"CommentCell" bundle:nil] forCellWithReuseIdentifier:COMMENT_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"MoreTitleCell" bundle:nil] forCellWithReuseIdentifier:MORE_TITLE_CELL];
+    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"TrialCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:TRIAL_COLLECTION_VIEW_CELL];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
     DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithYaDunInfomation];
     self.productDetailDataSource.detailInfomationTool = detailInfomationTool;

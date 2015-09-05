@@ -15,10 +15,10 @@
 #import "HeaderViewCell.h"
 #import "EvaluationCell.h"
 #import "MoreTitleCell.h"
+#import "TrialCollectionViewCell.h"
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-
     if ([self isBaseInfoCell:indexPath]) {
         return [self sizeOfDetailBaseInfomationCellWithIndexPath:indexPath];
     } else if ([self isUserFeeling:indexPath]) {
@@ -27,12 +27,15 @@
         [cell updateWithCoverImage:[UIImage imageNamed:[userFeeling objectForKey:@"image"]] contentText:[userFeeling objectForKey:@"text"]];
         return [cell sizeOfCell];
     }else if ([self isCommentCell:indexPath]) {
-        
         CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
         return [cell sizeOfCell];
     } else if ([self isProductiDescriptionCell:indexPath]) {
         ProductiDescriptionCell *cell = (ProductiDescriptionCell *)[self getCellWithNibName:@"ProductiDescriptionCell"];
         return [cell sizeOfCell];
+    } else if ([self isTrailCell:indexPath]){
+        TrialCollectionViewCell *cell = (TrialCollectionViewCell *)[self getCellWithNibName:@"TrialCollectionViewCell"];
+        return [cell sizeOfCell];
+     
     } else if ([self isEvalueCell:indexPath]) {
       return CGSizeMake([UIScreen mainScreen].bounds.size.width, 200);
     } else if ([self moreTitleCell:indexPath]) {
@@ -44,14 +47,15 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section {
-    if(section == 1) {
+    if(section == 1 || section == 3) {
         return 2;
     }
+    
     return 1;
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -62,6 +66,10 @@
         return 6;
     } else if (section == 2) {
         return 1;
+    } else if (section == 3){
+    //适用
+        return 4;
+    
     } else {
         return 0;
     }
@@ -79,13 +87,19 @@
         return cell;
     } else if ([self isEvalueCell:indexPath]) {
         return [self evaluationCellWithCollectionView:collectionView indexPath:indexPath];
-    } else if (indexPath.section == 1 ) {
+    } else if ([self isCommentCell:indexPath] ) {
         CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:COMMENT_CELL forIndexPath:indexPath];
         return cell;
     } else if ([self moreTitleCell:indexPath]) {
         MoreTitleCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MORE_TITLE_CELL forIndexPath:indexPath];
         return cell;
-    } else {
+    } else if ([self isTrailCell:indexPath]){
+        TrialCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:TRIAL_COLLECTION_VIEW_CELL forIndexPath:indexPath];
+        return cell;
+    
+    
+    }
+    else {
         return nil;
     }
 }
@@ -145,6 +159,12 @@
 }
 - (BOOL)moreTitleCell:(NSIndexPath *)indexPath {
     return (2 == indexPath.section) && (0 == indexPath.row);
+}
+
+- (BOOL)isTrailCell:(NSIndexPath *)indexPath{
+
+    return (3 == indexPath.section);
+
 }
 
 - (CGSize)sizeOfDetailBaseInfomationCellWithIndexPath:(NSIndexPath *)indexPath {

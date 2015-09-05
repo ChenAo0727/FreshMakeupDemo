@@ -25,5 +25,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *approveImageView;
 
 - (void)updateWithAvatarImage:(UIImage *)image nickName:(NSString *)nickName time:(NSString *)time coverImage:(UIImage *)coverImage description:(NSString *)description watchCount:(NSInteger)watchCount approveCount:(NSInteger)approveCount;
-
+- (CGSize)sizeOfCell;
 @end
