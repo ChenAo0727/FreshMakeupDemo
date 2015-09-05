@@ -10,6 +10,7 @@
 #import "DetailBaseInfomationCell.h"
 #import "SimpleRichTextCell.h"
 #import "DetailInfomationTool.h"
+#import "UserFeelingCell.h"
 @implementation DetailViewController (Configuration)
 
 - (void)updateSelectionViewY {
@@ -41,6 +42,7 @@
 
 - (void)configureCollectionView {
     self.detailCollectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    [self.detailCollectionView registerNib:[UINib nibWithNibName:@"UserFeelingCell" bundle:nil] forCellWithReuseIdentifier:USER_FELLING_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"DetailBaseInfomationCell" bundle:nil] forCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"SimpleRichTextCell" bundle:nil] forCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL];
     [self.detailCollectionView setCollectionViewLayout:self.layout];

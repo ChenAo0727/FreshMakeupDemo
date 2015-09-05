@@ -219,6 +219,8 @@
 		2EB611B91B8755A7000414A2 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB611B71B8755A7000414A2 /* ImageCell.xib */; };
 		2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB611BD1B8757E9000414A2 /* TitleCell.m */; };
 		2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EB611BE1B8757E9000414A2 /* TitleCell.xib */; };
+		2EBAB3B21B9A91F2008E559F /* UserFeelingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EBAB3B01B9A91F2008E559F /* UserFeelingCell.m */; };
+		2EBAB3B31B9A91F2008E559F /* UserFeelingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EBAB3B11B9A91F2008E559F /* UserFeelingCell.xib */; };
 		2ECD47F41B8EE249002AFEEB /* MaterialTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ECD47F31B8EE249002AFEEB /* MaterialTransition.m */; };
 		2EECA6A21B998FA5007D51C2 /* ProductDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECA6A11B998FA5007D51C2 /* ProductDetailDataSource.m */; };
 		2EECA6AC1B999512007D51C2 /* SimpleRichTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECA6AA1B999512007D51C2 /* SimpleRichTextCell.m */; };
@@ -555,6 +557,9 @@
 		2EB611BC1B8757E9000414A2 /* TitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleCell.h; sourceTree = "<group>"; };
 		2EB611BD1B8757E9000414A2 /* TitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleCell.m; sourceTree = "<group>"; };
 		2EB611BE1B8757E9000414A2 /* TitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleCell.xib; sourceTree = "<group>"; };
+		2EBAB3AF1B9A91F2008E559F /* UserFeelingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFeelingCell.h; sourceTree = "<group>"; };
+		2EBAB3B01B9A91F2008E559F /* UserFeelingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFeelingCell.m; sourceTree = "<group>"; };
+		2EBAB3B11B9A91F2008E559F /* UserFeelingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserFeelingCell.xib; sourceTree = "<group>"; };
 		2ECD47F21B8EE249002AFEEB /* MaterialTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaterialTransition.h; sourceTree = "<group>"; };
 		2ECD47F31B8EE249002AFEEB /* MaterialTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaterialTransition.m; sourceTree = "<group>"; };
 		2EECA6A01B998FA5007D51C2 /* ProductDetailDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailDataSource.h; sourceTree = "<group>"; };
@@ -1191,6 +1196,7 @@
 		2E8C34311B7DF404006B5BC0 /* Custon Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2EBAB3AE1B9A91E1008E559F /* UserFeelingCell */,
 				05E2B2921B9A82F90024C7FE /* EvaluationCell */,
 				2EECA6A81B999504007D51C2 /* SimpleRichTextCell */,
 				2EB4EF591B96C0350080185A /* TagsTableViewCell */,
@@ -1453,6 +1459,16 @@
 			path = TitleCell;
 			sourceTree = "<group>";
 		};
+		2EBAB3AE1B9A91E1008E559F /* UserFeelingCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EBAB3AF1B9A91F2008E559F /* UserFeelingCell.h */,
+				2EBAB3B01B9A91F2008E559F /* UserFeelingCell.m */,
+				2EBAB3B11B9A91F2008E559F /* UserFeelingCell.xib */,
+			);
+			path = UserFeelingCell;
+			sourceTree = "<group>";
+		};
 		2EECA6A81B999504007D51C2 /* SimpleRichTextCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -1644,6 +1660,7 @@
 				05DEA0641B8858CB0094E123 /* shaking2.png in Resources */,
 				058ABF581B82C58100A0BA8A /* findhottopic3.jpg in Resources */,
 				2E7706851B8818960024282D /* CopywriterCell.xib in Resources */,
+				2EBAB3B31B9A91F2008E559F /* UserFeelingCell.xib in Resources */,
 				2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */,
 				2EB4EF5E1B96C0510080185A /* TagsTableViewCell.xib in Resources */,
 				2E6B46431B81A85400BF39D5 /* home_discovery_icon.png in Resources */,
@@ -1802,6 +1819,7 @@
 				054DFD371B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.m in Sources */,
 				38AF47171B9686B4006C45CB /* CommentViewCell.m in Sources */,
 				054DFD261B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.m in Sources */,
+				2EBAB3B21B9A91F2008E559F /* UserFeelingCell.m in Sources */,
 				2E8C344B1B7DF46E006B5BC0 /* UIImage+Utility.m in Sources */,
 				059E88D21B841BB20086544F /* RollCollectionViewDataSource.m in Sources */,
 				2EB4EF5D1B96C0510080185A /* TagsTableViewCell.m in Sources */,

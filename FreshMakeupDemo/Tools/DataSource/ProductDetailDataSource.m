@@ -11,7 +11,9 @@
 #import "DetailBaseInfomationCell.h"
 #import "UIScreen+Utility.h"
 #import "CommentCell.h"
+#import "UserFeelingCell.h"
 #import "HeaderViewCell.h"
+
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -26,9 +28,10 @@
         return [cell sizeOfCell];
     
     
+    } else if ([self isUserFeelingCell:indexPath]) {
+        UserFeelingCell *cell = (UserFeelingCell *)[self getCellWithNibName:@"UserFeelingCell"];
+        return [cell sizeOfCell];
     }
-    
-    
     else {
         return CGSizeZero;
     }
@@ -46,7 +49,7 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == 0) {
 
-        return 2;
+        return 3;
     }  else if (section == 1){
         //评价
         return 6;
@@ -66,14 +69,18 @@
     } else if ([self isProductionDescriptionCell:indexPath]) {
         SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
         return cell;
-    } if (indexPath.section == 1 && indexPath.row == 0) {
+    } else if (indexPath.section == 1 && indexPath.row == 0) {
         //评价
         HeaderViewCell *cell = [HeaderViewCell create];
         return cell;
-    }if (indexPath.section == 1 && indexPath.row != 0) {
+    } else if (indexPath.section == 1 && indexPath.row != 0) {
         CommentCell *cell = [CommentCell create];
         return cell;
-    } else {
+    } else if ([self isUserFeelingCell:indexPath]) {
+        UserFeelingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:USER_FELLING_CELL forIndexPath:indexPath];
+        return cell;
+    }
+    else {
 
         return nil;
     }
