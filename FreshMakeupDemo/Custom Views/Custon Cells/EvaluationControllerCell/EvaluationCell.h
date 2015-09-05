@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WorthSlideView.h"
-#define EVALUATION_CELL @"UICollectionViewCell"
+#import "MySegmentControl.h"
+#define EVALUATION_CELL @"EvaluationCell"
 @interface EvaluationCell : UICollectionViewCell
-@property (strong, nonatomic) WorthSlideView *worthSlideView;
+@property (strong, nonatomic) MySegmentControl *mySegmentControl;
 @end

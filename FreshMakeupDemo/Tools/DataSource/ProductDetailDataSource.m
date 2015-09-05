@@ -9,14 +9,17 @@
 #import "ProductDetailDataSource.h"
 #import "SimpleRichTextCell.h"
 #import "DetailBaseInfomationCell.h"
+#import "EvaluationCell.h"
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     if ([self isBaseInfoCell:indexPath]) {
-        return CGSizeMake([UIScreen mainScreen].bounds.size.width, 568);
+        return [self sizeOfDetailBaseInfomationCellWithIndexPath:indexPath];
     } else if ([self isProductionDescriptionCell:indexPath]) {
         SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
         return [cell sizeOfCell];
+    } else if ([self isUserFeelingCell:indexPath]) {
+      return CGSizeMake([UIScreen mainScreen].bounds.size.width, 190);
     } else {
         return CGSizeZero;
     }
@@ -32,7 +35,7 @@
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (section == 0) {
-        return 2;
+        return 3;
     } else {
         return 0;
     }
@@ -44,6 +47,8 @@
     } else if ([self isProductionDescriptionCell:indexPath]) {
         SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
         return cell;
+    } else if ([self isUserFeelingCell:indexPath]) {
+        return [self evaluationCellWithCollectionView:collectionView indexPath:indexPath];
     } else {
         return nil;
     }
@@ -62,6 +67,11 @@
     [cell layoutIfNeeded];
     return cell;
 }
+- (UICollectionViewCell *)evaluationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
+    EvaluationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:EVALUATION_CELL forIndexPath:indexPath];
+    return cell;
+}
+
 
 - (BOOL)isBaseInfoCell:(NSIndexPath *)indexPath {
     return (0 == indexPath.row) && (0 == indexPath.section);
@@ -78,5 +88,10 @@
 - (BOOL)isEvalueCell:(NSIndexPath *)indexPath {
     return  (0 == indexPath.section) && (3 == indexPath.row);
 }
-
+- (CGSize)sizeOfDetailBaseInfomationCellWithIndexPath:(NSIndexPath *)indexPath {
+    DetailBaseInfomationCell *cell = (DetailBaseInfomationCell *)[self getCellWithNibName:DETAIL_BASE_COLLECTION_VIEW_CELL];
+    [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
+    [cell layoutIfNeeded];
+    return CGSizeMake([UIScreen mainScreen].bounds.size.width, [cell heightOfCell]);
+}
 @end
