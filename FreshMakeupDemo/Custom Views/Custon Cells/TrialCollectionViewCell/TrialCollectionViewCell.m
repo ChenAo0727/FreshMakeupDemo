@@ -8,6 +8,7 @@
 
 #import "TrialCollectionViewCell.h"
 #import "UIColor+Utility.h"
+#import "UIScreen+Utility.h"
 
 @implementation TrialCollectionViewCell {
     CGAffineTransform trialApproveTransform;
@@ -40,6 +41,8 @@
     }];
 
 }
+
+
 - (IBAction)onClickTrialApproveButton:(id)sender {
     CGAffineTransform transform = trialApproveTransform;
     transform = CGAffineTransformScale(transform, 1.2, 1.2);
@@ -65,5 +68,8 @@
     }];
 
 }
-
+- (CGSize)sizeOfCell{
+    
+    return CGSizeMake([UIScreen screenWidth] / 2, 265);
+}
 @end
