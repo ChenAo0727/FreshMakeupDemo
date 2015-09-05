@@ -66,26 +66,17 @@
     } else if ([self isProductionDescriptionCell:indexPath]) {
         SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
         return cell;
-    } else {
-    if (indexPath.section == 0 && indexPath.row == 0) {
-    DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
-    return cell;
-    }if (indexPath.section == 1 && indexPath.row == 0) {
+    } if (indexPath.section == 1 && indexPath.row == 0) {
         //评价
         HeaderViewCell *cell = [HeaderViewCell create];
         return cell;
     }if (indexPath.section == 1 && indexPath.row != 0) {
         CommentCell *cell = [CommentCell create];
         return cell;
-    }
-    
-    
-    else {
+    } else {
 
         return nil;
     }
-    }
-    
 }
 - (UICollectionViewCell *)detailBaseInfomationCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath {
     DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];

@@ -16,4 +16,4 @@ SPEC CHECKSUMS:
   SGSStaggeredFlowLayout: 7b20a3b7ac88a0db063ce9c4ac71c5fc95e165c2
   UITableView+FDTemplateLayoutCell: d5be6056b5060313f5955a2590ecd33142ad713d
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.37.2
