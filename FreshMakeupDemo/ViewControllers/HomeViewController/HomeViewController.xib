@@ -27,8 +27,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="下次更新时间12：00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeV-UL-J9W">
-                    <rect key="frame" x="100" y="73" width="139" height="18"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下次更新时间12：00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeV-UL-J9W">
+                    <rect key="frame" x="99" y="73" width="138.5" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="GAF-aH-fCn"/>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="QPg-Je-BUB"/>
@@ -37,8 +37,8 @@
                     <color key="textColor" red="0.5725490196078431" green="0.58823529411764708" blue="0.56862745098039214" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="home_update_time_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="QEf-g5-af6">
-                    <rect key="frame" x="82" y="73" width="18" height="18"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_update_time_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="QEf-g5-af6">
+                    <rect key="frame" x="81" y="73" width="18" height="18"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="18" id="W10-jt-jv5"/>
                         <constraint firstAttribute="width" constant="18" id="lxY-Qd-1nC"/>

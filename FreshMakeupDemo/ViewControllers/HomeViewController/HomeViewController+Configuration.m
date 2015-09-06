@@ -23,6 +23,8 @@
     self.materialTransition = [[MaterialTransition alloc] init];
     self.materialTransition.startFrame = CGRectMake([UIScreen screenWidth] - 25, -25, 50, 50);
     self.flipTransition = [[FlipTransition alloc] init];
+    self.bookFlipTransition = [[BookFlipTransition alloc] init];
+    self.bookFlipTransition.delegate = self;
 }
 
 - (void)configureTableView {

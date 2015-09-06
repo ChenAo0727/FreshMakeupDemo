@@ -26,6 +26,7 @@
     [self findTitleView];
     [self findThreeDimensionalRollView];
     [self mineViewEdit];
+    self.navigationController.delegate = self;
 }
 - (void)tableViewEdit {
     self.findViewControllerDataSource = [FindViewControllerDataSource new];

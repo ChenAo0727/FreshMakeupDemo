@@ -12,8 +12,14 @@
 #import "HomeViewController+Animation.h"
 #import "XHDrawerController.h"
 #import "DetailViewController.h"
+#import "RealBookView.h"
+#import "UIImage+Utility.h"
+#import "UIScreen+Utility.h"
+#import "CirclePushTransition.h"
 
-@implementation HomeViewController
+@implementation HomeViewController {
+    RealBookView *realBook;
+}
 
 + (instancetype)create {
     return [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
@@ -25,6 +31,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    self.navigationController.delegate = self;
 //    [self.downGuideImageView startAnimating];
 }
 
@@ -39,9 +46,7 @@
 
 - (IBAction)onClickRightButton:(id)sender {
     FindViewController *findViewController = [FindViewController create];
-    findViewController.modalPresentationStyle = UIModalPresentationCustom;
-    findViewController.transitioningDelegate = self;
-    [self presentViewController:findViewController animated:YES completion:nil];
+    [self.navigationController pushViewController:findViewController animated:YES];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -68,30 +73,47 @@
     [bookCollectionView startSpriteAnimation];
 }
 
-- (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index {
+- (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index cell:(UICollectionViewCell *)cell {
+    realBook = (RealBookView *)cell;
+    self.bookFlipTransition.coverImage = [UIImage imageWithView:realBook.coverContainerView];
+    UIImage *image = [UIImage imageWithView:realBook.backgroundContanerView];
+    self.bookFlipTransition.contentView = [[UIImageView alloc] initWithImage:image];
     DetailViewController *detailViewController = [DetailViewController create];
     detailViewController.modalPresentationStyle = UIModalPresentationCustom;
     detailViewController.transitioningDelegate = self;
+    CGFloat top = 133;
+    CGFloat height = realBook.coverContainerView.frame.size.height;
+    CGFloat width = realBook.coverContainerView.frame.size.width;
+    CGFloat left = ([UIScreen screenWidth] - width) / 2;
+    CGRect parentRect = CGRectMake(left, top, width, height);
+    self.bookFlipTransition.startFrame = parentRect;
     [self presentViewController:detailViewController animated:YES completion:nil];
 }
 
+- (void)BookFlipTransitiondidEndCloseAnimation:(BookFlipTransition *)bookFlipTransition {
+    realBook.hidden = NO;
+}
+
+- (void)BookFlipTransitionWillStartOpenAnimation:(BookFlipTransition *)bookFlipTransition {
+    realBook.hidden = YES;
+}
+
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    if ([presented isKindOfClass:[DetailViewController class]]) {
-        self.flipTransition.reverse = NO;
-        return self.flipTransition;
-    } else {
-        self.materialTransition.reverse = NO;
-        return self.materialTransition;
-    }
+    self.bookFlipTransition.reverse = NO;
+    return self.bookFlipTransition;
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    if ([dismissed isKindOfClass:[DetailViewController class]]) {
-        self.flipTransition.reverse = YES;
-        return self.flipTransition;
-    } else {
-        self.materialTransition.reverse = YES;
-        return self.materialTransition;
+    self.bookFlipTransition.reverse = YES;
+    return self.bookFlipTransition;
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
+    if (operation == UINavigationControllerOperationPush) {
+        CirclePushTransition *transition = [CirclePushTransition new];
+        return transition;
+    }else{
+        return nil;
     }
 }
 

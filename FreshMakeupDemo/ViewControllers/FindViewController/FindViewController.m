@@ -10,6 +10,7 @@
 #import "FindViewController+Configuration.h"
 #import "FindTableViewCell.h"
 #import "FindViewController+Animation.h"
+#import "CirclePopTransition.h"
 @interface FindViewController ()
 
 @end
@@ -23,7 +24,6 @@
     // Do any additional setup after loading the view from its nib.
     [self getScreenWidth];
     [self configureViews];
-   
 }
 - (void)dealloc {
     [self.timer setFireDate:[NSDate distantFuture]];
@@ -63,8 +63,19 @@
 }
 
 - (IBAction)onClickRightButton:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
+- (id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                   animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                fromViewController:(UIViewController *)fromVC
+                                                  toViewController:(UIViewController *)toVC{
+    if (operation == UINavigationControllerOperationPop) {
+        CirclePopTransition *transition = [CirclePopTransition new];
+        return transition;
+    }else{
+        return nil;
+    }
+}
 
 @end

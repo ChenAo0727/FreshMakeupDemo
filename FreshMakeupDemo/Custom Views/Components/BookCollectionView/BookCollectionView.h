@@ -27,6 +27,6 @@
 
 @protocol BookCollectionViewDelegate <NSObject>
 @optional
-- (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index;
+- (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index cell:(UICollectionViewCell *)cell;
 
 @end

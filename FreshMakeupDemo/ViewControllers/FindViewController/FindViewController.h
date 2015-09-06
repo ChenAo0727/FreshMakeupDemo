@@ -13,7 +13,7 @@
 #import "SlideMotion.h"
 #import "FindViewController.h"
 #import "SeeMoreView.h"
-@interface FindViewController :BaseViewController <UITableViewDelegate,SlideMotionDataSource,SlideMotionDelegate,UICollectionViewDelegate>
+@interface FindViewController :BaseViewController <UITableViewDelegate,SlideMotionDataSource,SlideMotionDelegate,UICollectionViewDelegate, UINavigationControllerDelegate>
 
 
 @property (strong, nonatomic) IBOutlet UILabel *findTitleLabel;

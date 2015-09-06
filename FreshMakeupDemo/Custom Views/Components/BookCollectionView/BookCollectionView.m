@@ -60,8 +60,8 @@
     RealBookView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL forIndexPath:indexPath];
     __weak typeof(self) weakself = self;
     cell.didSelectCellBllock = ^(UICollectionViewCell *cell) {
-        if ([weakself.delegate respondsToSelector:@selector(BookCollectionView:didSelectItemAtIndex:)]) {
-            [weakself.delegate BookCollectionView:self didSelectItemAtIndex:0];
+        if ([weakself.delegate respondsToSelector:@selector(BookCollectionView:didSelectItemAtIndex:cell:)]) {
+            [weakself.delegate BookCollectionView:self didSelectItemAtIndex:0 cell:cell];
         }
     };
     [cell layoutIfNeeded];
