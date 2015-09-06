@@ -9,6 +9,7 @@
 #import "FindViewController.h"
 #import "FindViewController+Configuration.h"
 #import "FindTableViewCell.h"
+#import "XHDrawerController.h"
 #import "FindViewController+Animation.h"
 #import "CirclePopTransition.h"
 @interface FindViewController ()
@@ -59,7 +60,8 @@
 }
 
 - (IBAction)onClickLeftButton:(id)sender {
-    
+    [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:^(BOOL finished) {
+    }];
 }
 
 - (IBAction)onClickRightButton:(id)sender {
