@@ -22,4 +22,15 @@
     }];
 }
 
+- (void)animateUpdateTitle:(NSString *)text {
+    [UIView animateWithDuration:0.2 animations:^{
+        self.titleLabel.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.titleLabel.text = text;
+        [UIView animateWithDuration:0.2 animations:^{
+            self.titleLabel.alpha = 1;
+        }];
+    }];
+}
+
 @end

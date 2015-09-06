@@ -51,6 +51,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BookCollectionView *bookCollectionView = [tableView dequeueReusableCellWithIdentifier:@"BookCollectionView" forIndexPath:indexPath];
+    [bookCollectionView updateNextGroupTitle:[self.groupNameArray objectAtIndex:indexPath.row + 1]];
     bookCollectionView.delegate = self;
     return bookCollectionView;
 }
@@ -60,12 +61,20 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 6;
+    return 3;
 }
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     BookCollectionView *bookCollectionView = (BookCollectionView *)cell;
     [bookCollectionView stopSpriteAnimation];
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    NSInteger index = scrollView.contentOffset.y / scrollView.frame.size.height;
+    if (index != self.currentGroupIndex) {
+        [self animateUpdateTitle:[self.groupNameArray objectAtIndex:index]];
+        self.currentGroupIndex = index;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {

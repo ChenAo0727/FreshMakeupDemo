@@ -80,6 +80,7 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="bottomViewContrainer" destination="29S-n1-PLH" id="evc-50-wdm"/>
                 <outlet property="downGuideImageView" destination="emO-Sm-BoH" id="KZz-wN-se8"/>
                 <outlet property="lineCollectionView" destination="agM-nk-6q4" id="quZ-QV-ahE"/>
                 <outlet property="lineView" destination="Kge-dH-EMx" id="5HK-88-7O1"/>

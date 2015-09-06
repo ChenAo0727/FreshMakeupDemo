@@ -26,8 +26,13 @@
     [self.downGuideImageView stopAnimating];
 }
 
+- (void)updateNextGroupTitle:(NSString *)text {
+    self.nextStackTitleLabel.text = text;
+    self.bottomViewContrainer.hidden = [text isEqualToString:@""];
+}
+
 - (void)updateWithCurrentIndex:(NSInteger)index {
-    //NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
 }
 
 - (void)awakeFromNib {

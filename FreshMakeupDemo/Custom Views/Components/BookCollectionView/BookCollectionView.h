@@ -12,6 +12,7 @@
 
 @interface BookCollectionView :UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegate>
 
+@property (weak, nonatomic) IBOutlet UIView *bottomViewContrainer;
 @property (weak, nonatomic) IBOutlet UICollectionView *lineCollectionView;
 @property (weak, nonatomic) IBOutlet UILabel *nextStackTitleLabel;
 @property (weak, nonatomic) IBOutlet UIView *lineView;
@@ -19,6 +20,7 @@
 @property (strong, nonatomic) NSMutableArray *images;
 @property (weak, nonatomic) id<BookCollectionViewDelegate>delegate;
 
+- (void)updateNextGroupTitle:(NSString *)text;
 - (void)updateWithCurrentIndex:(NSInteger)index;
 - (void)startSpriteAnimation;
 - (void)stopSpriteAnimation;
