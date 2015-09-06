@@ -13,6 +13,7 @@
 
 
 @interface DetailViewController : BaseViewController<CHTCollectionViewDelegateWaterfallLayout>
+@property (weak, nonatomic) IBOutlet UIImageView *detailITitleImageView;
 
 @property (weak, nonatomic) IBOutlet UIView *topViewContainer;
 @property (weak, nonatomic) IBOutlet UICollectionView *detailCollectionView;
