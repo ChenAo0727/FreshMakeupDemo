@@ -136,6 +136,9 @@
 		05E2B29C1B9AB8280024C7FE /* MoreTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E2B29A1B9AB8280024C7FE /* MoreTitleCell.m */; };
 		05E2B29D1B9AB8280024C7FE /* MoreTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E2B29B1B9AB8280024C7FE /* MoreTitleCell.xib */; };
 		05F8B4FB1B9D328C0011FD05 /* FreshSaleInfomationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F8B4FA1B9D328C0011FD05 /* FreshSaleInfomationTool.m */; };
+		05F8B4FF1B9D402B0011FD05 /* freshSale_DALGCR_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F8B4FC1B9D402B0011FD05 /* freshSale_DALGCR_image.png */; };
+		05F8B5001B9D402B0011FD05 /* freshSale_LilyBell_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F8B4FD1B9D402B0011FD05 /* freshSale_LilyBell_image.png */; };
+		05F8B5011B9D402B0011FD05 /* freshSale_Clarisonic_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 05F8B4FE1B9D402B0011FD05 /* freshSale_Clarisonic_image.png */; };
 		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
 		2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */; };
 		2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F841B85A71F005DCF14 /* home_update_time_image.png */; };
@@ -463,6 +466,9 @@
 		05E2B29B1B9AB8280024C7FE /* MoreTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreTitleCell.xib; sourceTree = "<group>"; };
 		05F8B4F91B9D328C0011FD05 /* FreshSaleInfomationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshSaleInfomationTool.h; sourceTree = "<group>"; };
 		05F8B4FA1B9D328C0011FD05 /* FreshSaleInfomationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreshSaleInfomationTool.m; sourceTree = "<group>"; };
+		05F8B4FC1B9D402B0011FD05 /* freshSale_DALGCR_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freshSale_DALGCR_image.png; sourceTree = "<group>"; };
+		05F8B4FD1B9D402B0011FD05 /* freshSale_LilyBell_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freshSale_LilyBell_image.png; sourceTree = "<group>"; };
+		05F8B4FE1B9D402B0011FD05 /* freshSale_Clarisonic_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freshSale_Clarisonic_image.png; sourceTree = "<group>"; };
 		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_view_unlike_line.png; sourceTree = "<group>"; };
 		2E132F841B85A71F005DCF14 /* home_update_time_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_update_time_image.png; sourceTree = "<group>"; };
@@ -1664,6 +1670,9 @@
 		389A1FF61B9D3A8E0035BC2B /* FreshSaleImage */ = {
 			isa = PBXGroup;
 			children = (
+				05F8B4FC1B9D402B0011FD05 /* freshSale_DALGCR_image.png */,
+				05F8B4FD1B9D402B0011FD05 /* freshSale_LilyBell_image.png */,
+				05F8B4FE1B9D402B0011FD05 /* freshSale_Clarisonic_image.png */,
 				389A1FF71B9D3B030035BC2B /* MISSHA.png */,
 				389A1FF91B9D3DE00035BC2B /* BIODERMA.png */,
 				389A1FFB1B9D3E810035BC2B /* Panasonic.png */,
@@ -1837,6 +1846,7 @@
 				05E04CE61B96C36500E5D28C /* TextCell.xib in Resources */,
 				058ABF541B82C58100A0BA8A /* findarticleavatar2.png in Resources */,
 				054DFD271B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.xib in Resources */,
+				05F8B5011B9D402B0011FD05 /* freshSale_Clarisonic_image.png in Resources */,
 				054DFD491B81AAEE00651F11 /* apply_head_product.png in Resources */,
 				2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */,
 				389A1FFC1B9D3E810035BC2B /* Panasonic.png in Resources */,
@@ -1917,6 +1927,7 @@
 				0596FFF91B9AF06E00E5653D /* detail_YSL_feeling.png in Resources */,
 				0596FFF21B9AF06E00E5653D /* detail_yadun_cover.png in Resources */,
 				2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */,
+				05F8B5001B9D402B0011FD05 /* freshSale_LilyBell_image.png in Resources */,
 				2EB611AD1B8736EA000414A2 /* detail_logo_image.png in Resources */,
 				2E7706911B883C460024282D /* detail_watch_icon.png in Resources */,
 				059E88C01B8414D30086544F /* FindTableViewCell.xib in Resources */,
@@ -1938,6 +1949,7 @@
 				058ABF531B82C58100A0BA8A /* findarticleavatar1.png in Resources */,
 				0596FFEC1B9AF06E00E5653D /* detail_CPB_feeling.png in Resources */,
 				059E88D61B8431460086544F /* title1.png in Resources */,
+				05F8B4FF1B9D402B0011FD05 /* freshSale_DALGCR_image.png in Resources */,
 				2E8C34081B7DF2B7006B5BC0 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
