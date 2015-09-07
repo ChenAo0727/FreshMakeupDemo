@@ -26,21 +26,11 @@
                     <view alpha="0.70000000000000018" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Zw-Gz-Rym">
                         <rect key="frame" x="0.0" y="201" width="320" height="64"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离申请结束还有:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfb-Wc-3Rm">
-                                <rect key="frame" x="23" y="35" width="141" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="rwH-Mj-xQG"/>
-                                    <constraint firstAttribute="height" constant="21" id="vbA-dF-VWb"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5小时40分钟38秒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMT-kO-odd">
-                                <rect key="frame" x="165" y="35" width="128" height="21"/>
+                                <rect key="frame" x="161" y="35" width="118" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="ue0-5A-DOR"/>
-                                    <constraint firstAttribute="width" constant="128" id="vgM-kA-bMP"/>
+                                    <constraint firstAttribute="height" constant="21" id="Gen-kx-6cA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="hOw-L5-GUb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.4823529411764706" green="0.96078431372549022" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,17 +45,36 @@
                                 <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6k-xy-TxA">
+                                <rect key="frame" x="160" y="35" width="1" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="DiF-0x-Qwh"/>
+                                    <constraint firstAttribute="height" constant="21" id="Pkv-By-hkh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离申请结束还有:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfb-Wc-3Rm">
+                                <rect key="frame" x="35" y="35" width="125" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="KlC-1D-6pD"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" id="awp-1u-XDB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <color key="textColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.63921568627450975" green="0.63921568627450975" blue="0.63921568627450975" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="hfb-Wc-3Rm" secondAttribute="bottom" constant="8" id="6o4-Fm-0c4"/>
-                            <constraint firstAttribute="bottom" secondItem="LMT-kO-odd" secondAttribute="bottom" constant="8" id="FSp-S7-3hx"/>
-                            <constraint firstItem="LMT-kO-odd" firstAttribute="leading" secondItem="hfb-Wc-3Rm" secondAttribute="trailing" constant="1" id="Rcv-BS-kJi"/>
-                            <constraint firstItem="hfb-Wc-3Rm" firstAttribute="leading" secondItem="9Zw-Gz-Rym" secondAttribute="leading" constant="23" id="Rtj-Gn-skx"/>
+                            <constraint firstAttribute="bottom" secondItem="hfb-Wc-3Rm" secondAttribute="bottom" constant="8" id="Sbg-Aw-jc6"/>
                             <constraint firstItem="Rb8-wi-f9h" firstAttribute="leading" secondItem="9Zw-Gz-Rym" secondAttribute="leading" constant="93" id="UfP-IX-rFo"/>
                             <constraint firstAttribute="height" constant="64" id="Wd7-sQ-2TV"/>
+                            <constraint firstAttribute="bottom" secondItem="LMT-kO-odd" secondAttribute="bottom" constant="8" id="bLG-3y-OZC"/>
+                            <constraint firstAttribute="bottom" secondItem="z6k-xy-TxA" secondAttribute="bottom" constant="8" id="k89-Td-iFv"/>
+                            <constraint firstAttribute="centerX" secondItem="z6k-xy-TxA" secondAttribute="centerX" id="kJh-CP-D9x"/>
+                            <constraint firstItem="z6k-xy-TxA" firstAttribute="leading" secondItem="hfb-Wc-3Rm" secondAttribute="trailing" id="qc7-wV-WST"/>
                             <constraint firstAttribute="trailing" secondItem="Rb8-wi-f9h" secondAttribute="trailing" constant="92" id="vEL-CE-X9Z"/>
                             <constraint firstItem="Rb8-wi-f9h" firstAttribute="top" secondItem="9Zw-Gz-Rym" secondAttribute="top" constant="8" id="vcL-PV-RO0"/>
+                            <constraint firstItem="LMT-kO-odd" firstAttribute="leading" secondItem="z6k-xy-TxA" secondAttribute="trailing" id="vex-ep-uhS"/>
                         </constraints>
                     </view>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0007.png" translatesAutoresizingMaskIntoConstraints="NO" id="0Lf-b0-klW">

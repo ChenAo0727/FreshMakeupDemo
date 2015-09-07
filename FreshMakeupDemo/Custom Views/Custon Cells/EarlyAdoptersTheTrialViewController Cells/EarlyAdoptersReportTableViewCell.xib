@@ -131,7 +131,6 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.96078431369999995" green="0.97254901959999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstItem="60U-Ac-qOw" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Nih-9J-ya2" secondAttribute="trailing" constant="47" id="03v-dF-Qgp"/>
                                             <constraint firstAttribute="centerY" secondItem="Zpa-rc-ElH" secondAttribute="centerY" id="GBH-nx-Ysk"/>
                                             <constraint firstItem="Zpa-rc-ElH" firstAttribute="leading" secondItem="nAI-aS-BBI" secondAttribute="leading" constant="18" id="NZN-VE-DJB"/>
                                             <constraint firstAttribute="trailing" secondItem="I6I-Y7-S28" secondAttribute="trailing" constant="20" id="ODw-fu-4zT"/>
@@ -235,7 +234,6 @@
                                         <constraints>
                                             <constraint firstAttribute="centerY" secondItem="cM6-Pq-YwF" secondAttribute="centerY" id="2eQ-P5-Ylb"/>
                                             <constraint firstItem="0EB-Ds-DTX" firstAttribute="leading" secondItem="fhA-L2-XSY" secondAttribute="trailing" constant="4" id="AHB-Ns-YJ5"/>
-                                            <constraint firstItem="fhA-L2-XSY" firstAttribute="leading" relation="lessThanOrEqual" secondItem="KPl-Ek-mKQ" secondAttribute="trailing" constant="47" id="F1F-PO-2Bx"/>
                                             <constraint firstItem="KPl-Ek-mKQ" firstAttribute="leading" secondItem="j05-fF-MV5" secondAttribute="trailing" constant="7" id="KY1-QX-MLI"/>
                                             <constraint firstAttribute="centerY" secondItem="0EB-Ds-DTX" secondAttribute="centerY" id="OJ8-Mh-6gM"/>
                                             <constraint firstAttribute="centerY" secondItem="j05-fF-MV5" secondAttribute="centerY" id="Osa-NU-Oyv"/>
