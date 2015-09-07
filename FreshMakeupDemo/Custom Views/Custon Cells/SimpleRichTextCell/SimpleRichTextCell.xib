@@ -40,13 +40,13 @@
                         </constraints>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detail_top_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="mZ5-qu-XLc">
-                        <rect key="frame" x="0.0" y="70" width="320" height="200"/>
+                        <rect key="frame" x="0.0" y="60" width="320" height="200"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="mZ5-qu-XLc" secondAttribute="height" multiplier="8:5" id="uj6-6A-V6k"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用感受:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLP-8G-h7j">
-                        <rect key="frame" x="10" y="280" width="70" height="20"/>
+                        <rect key="frame" x="10" y="270" width="70" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="4tD-0Q-evG"/>
                             <constraint firstAttribute="height" constant="20" id="Fvi-xb-VaI"/>
@@ -56,7 +56,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雅诗兰黛的Advanced TrueVision Technology ™科技使这支液体唇膏展现魅力四射的动人色彩，更兼具立体丰盈妆效。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8M-pP-tZp">
-                        <rect key="frame" x="10" y="300" width="300" height="58"/>
+                        <rect key="frame" x="10" y="290" width="300" height="68"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="prq-eS-Wjd"/>
                         </constraints>
@@ -102,7 +102,7 @@
                 <constraint firstAttribute="trailing" secondItem="VeL-Iq-UrW" secondAttribute="trailing" id="YPQ-Go-e5B"/>
                 <constraint firstItem="e8M-pP-tZp" firstAttribute="top" secondItem="zLP-8G-h7j" secondAttribute="bottom" priority="750" id="YZF-qT-xxJ"/>
                 <constraint firstItem="zLP-8G-h7j" firstAttribute="top" secondItem="mZ5-qu-XLc" secondAttribute="bottom" priority="750" constant="10" id="cjD-QW-hy1"/>
-                <constraint firstItem="mZ5-qu-XLc" firstAttribute="top" secondItem="BEV-jE-dcm" secondAttribute="bottom" priority="750" constant="20" id="crh-Ge-Byy"/>
+                <constraint firstItem="mZ5-qu-XLc" firstAttribute="top" secondItem="BEV-jE-dcm" secondAttribute="bottom" priority="750" constant="10" id="crh-Ge-Byy"/>
                 <constraint firstItem="UrX-xW-zqb" firstAttribute="top" secondItem="e8M-pP-tZp" secondAttribute="bottom" priority="750" constant="7" id="dJl-Vp-MSF"/>
                 <constraint firstAttribute="centerX" secondItem="l27-bN-OrY" secondAttribute="centerX" id="e7r-tD-xu2"/>
                 <constraint firstItem="e8M-pP-tZp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="jwJ-f8-qsG"/>
@@ -116,6 +116,7 @@
                 <outlet property="coverImageViewLeftConstraint" destination="BJU-NK-jTM" id="V0T-FF-n1P"/>
                 <outlet property="coverImageViewRightConstraint" destination="xJY-mq-eTD" id="tpc-xJ-gbj"/>
                 <outlet property="descriptionTitleLabel" destination="zLP-8G-h7j" id="1v3-yO-hTM"/>
+                <outlet property="moreTitleView" destination="UrX-xW-zqb" id="9ZK-dr-Sao"/>
                 <outlet property="moreViewHeightConstraint" destination="6eT-k9-Ece" id="yOt-2u-yPn"/>
                 <outlet property="titleLabel" destination="l27-bN-OrY" id="9jc-VS-tXD"/>
             </connections>

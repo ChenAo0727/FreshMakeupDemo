@@ -8,11 +8,14 @@
 
 #import "SimpleRichTextCell.h"
 #import "UIScreen+Utility.h"
+#import "UIColor+Utility.h"
 
 @implementation SimpleRichTextCell
 
 - (void)awakeFromNib {
-   self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight; 
+   self.contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.moreTitleView.layer.borderColor = [[UIColor colorWithIntRed:186 green:186 blue:186] CGColor];
+    self.moreTitleView.layer.borderWidth = 0.5;
 }
 
 - (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText isFeeling:(BOOL)isFeeling {
@@ -20,11 +23,6 @@
         self.coverImageView.image = coverImage;
     } else {
         self.coverImageViewRightConstraint.constant = [UIScreen screenWidth];
-    }
-    if ([contentText isEqual:@""]) {
-        self.contentLabel.text = @"没有文字内容啦~~";
-    } else {
-        self.contentLabel.text = contentText;
     }
     if (isFeeling) {
         self.titleLabel.text = @"使用感受";
@@ -34,6 +32,11 @@
         self.titleLabel.text = @"产品介绍";
         self.descriptionTitleLabel.text = @"简介:";
         self.moreViewHeightConstraint.constant = 0;
+    }
+    if ([contentText isEqual:@""]) {
+        self.contentLabel.text = @"没有文字内容啦~~";
+    } else {
+        self.contentLabel.text = contentText;
     }
 }
 

@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *coverImageViewLeftConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *coverImageViewRightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *moreViewHeightConstraint;
+@property (weak, nonatomic) IBOutlet UIView *moreTitleView;
 
 - (void)updateWithCoverImage:(UIImage *)coverImage contentText:(NSString *)contentText isFeeling:(BOOL)isFeeling;
 - (CGSize)sizeOfCell;

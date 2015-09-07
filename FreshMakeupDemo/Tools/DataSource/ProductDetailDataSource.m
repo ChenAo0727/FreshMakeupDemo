@@ -116,7 +116,7 @@
 
 - (CGSize)userFeelingCellSizeWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath data:(NSDictionary *)data isFeeling:(BOOL)isFeeling {
     SimpleRichTextCell *cell = (SimpleRichTextCell *)[self getCellWithNibName:@"SimpleRichTextCell"];
-    [cell updateWithCoverImage:[UIImage imageNamed:[data objectForKey:@"image"]] contentText:[data objectForKey:@"text"] isFeeling:NO];
+    [cell updateWithCoverImage:[UIImage imageNamed:[data objectForKey:@"image"]] contentText:[data objectForKey:@"text"] isFeeling:isFeeling];
     return [cell sizeOfCell];
 }
 
