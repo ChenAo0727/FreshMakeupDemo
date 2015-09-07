@@ -42,10 +42,8 @@
     self.labelArray = [NSArray arrayWithObjects:@"卸妆水",@"保湿卸妆水",@" 舒妍温和",@"贝德玛",nil];
     self.image = [UIImage imageNamed:@"freshSale_BIODERMA_image"];
     self.commentary = @"1号店148元。蓝色款适合油性混合皮肤用，快速卸妆，深层洁净。明星、美妆达人的御用卸妆品牌，没有卸妆油的油腻，轻轻一抹，立见干净，身边的妹子都在用的卸妆水.";
-}
-
-return self;
-
+    }
+    return self;
 }
 - (instancetype)initWithPanasonic{
     if (self = [super init]) {
