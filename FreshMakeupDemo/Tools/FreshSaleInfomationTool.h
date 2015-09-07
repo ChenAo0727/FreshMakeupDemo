@@ -15,4 +15,8 @@
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) NSString *commentary;
 
+- (instancetype)initWithMISSHA;
+- (instancetype)initWithBIODERMA;
+- (instancetype)initWithPanasonic;
+
 @end
