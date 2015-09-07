@@ -12,9 +12,9 @@
 
 - (NSString *)IntegerFommatToString {
     if (self.integerValue < 10) {
-        return [NSString stringWithFormat:@"0%d", self.integerValue];
+        return [NSString stringWithFormat:@"0%ld", self.integerValue];
     } else {
-        return [NSString stringWithFormat:@"%d", self.integerValue];
+        return [NSString stringWithFormat:@"%ld", self.integerValue];
     }
 }
 
