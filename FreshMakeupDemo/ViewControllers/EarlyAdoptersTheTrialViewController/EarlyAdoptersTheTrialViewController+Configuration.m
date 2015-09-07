@@ -20,6 +20,7 @@
 - (void)configureViews {
     [self tableViewEdit];
     [self mineViewEdit];
+    [self configureDateSource];
 }
 - (void)configureDateSource {
     if (!self.earlyAdoptersTheTrialViewControllerDataSource) {

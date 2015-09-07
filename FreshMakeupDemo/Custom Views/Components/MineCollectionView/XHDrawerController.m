@@ -100,10 +100,12 @@ typedef enum ScrollDirection {
     NSParameterAssert(drawerSide != XHDrawerSideNone);
     if(self.openSide == XHDrawerSideNone){
         [self openDrawerSide:drawerSide animated:animated completion:completion];
+        self.scrollView.scrollEnabled = YES;
     } else {
         if(drawerSide == XHDrawerSideLeft &&
             self.openSide == XHDrawerSideLeft){
                [self closeDrawerAnimated:animated completion:completion];
+            self.scrollView.scrollEnabled = NO;
            }
         else if(completion) {
             completion(NO);
@@ -284,8 +286,11 @@ typedef enum ScrollDirection {
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     
     CGPoint contentOffset = [scrollView contentOffset];
-    
     CGFloat currentContentOffsetX = contentOffset.x;
+    if (currentContentOffsetX == 230) {
+        self.scrollView.scrollEnabled = NO;
+        [self closeDrawerAnimated:nil completion:nil];
+    }
     if (currentContentOffsetX > 0 && currentContentOffsetX < XHContentContainerViewOriginX && self.cuurrentContentOffsetX > currentContentOffsetX) {
         self.openSide = XHDrawerSideLeft;
     }
