@@ -22,4 +22,6 @@
 @property (strong, nonatomic) SelectionView *selectionView;
 @property (assign, nonatomic) CGFloat selectionViewY;
 
+- (void)updateDatasourceWithDetailTool:(DetailInfomationTool *)detailInfomationTool;
+
 @end

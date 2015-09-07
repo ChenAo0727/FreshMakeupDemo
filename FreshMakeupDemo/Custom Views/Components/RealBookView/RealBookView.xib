@@ -61,7 +61,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="A1h-Vl-4j2"/>
-                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" id="t4r-wV-nWo"/>
+                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="t4r-wV-nWo"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                     <color key="textColor" red="0.3843137254901961" green="0.37647058823529411" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>

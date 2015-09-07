@@ -26,9 +26,11 @@
     [self.downGuideImageView stopAnimating];
 }
 
-- (void)updateNextGroupTitle:(NSString *)text {
+- (void)updateNextGroupTitle:(NSString *)text andDetailInfomationToolArray:(NSArray *)detailInfomationToolArray {
     self.nextStackTitleLabel.text = text;
     self.bottomViewContrainer.hidden = [text isEqualToString:@""];
+    self.freshMakeupArray = detailInfomationToolArray;
+    [self.lineCollectionView reloadData];
 }
 
 - (void)updateWithCurrentIndex:(NSInteger)index {
@@ -59,25 +61,28 @@
 #pragma mark - <UICollectionViewDataSource>
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (self.freshMakeupArray && self.freshMakeupArray.count > 0) {
+        return self.freshMakeupArray.count;
+    }
     return 7;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     RealBookView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL forIndexPath:indexPath];
+    cell.indexPath = [NSIndexPath indexPathForRow:indexPath.row inSection:self.tag];
     __weak typeof(self) weakself = self;
     cell.didSelectCellBllock = ^(UICollectionViewCell *cell) {
         if ([weakself.delegate respondsToSelector:@selector(BookCollectionView:didSelectItemAtIndex:cell:)]) {
             [weakself.delegate BookCollectionView:self didSelectItemAtIndex:0 cell:cell];
         }
     };
+    if (self.freshMakeupArray && self.freshMakeupArray.count > 0) {
+        [cell updateWithDetailInfomationTool:[self.freshMakeupArray objectAtIndex:indexPath.row]];
+    } else {
+        [cell updateWithCoverImage:[UIImage imageNamed:@"detail_cover_image"] title:@"DIOR新款口红" shortComment:@"这里是一段介绍哦，啦啦啦啦啦啦啦啦， 这里是一段介绍哦， 介绍本款新鲜美妆的信息"];
+    }
     [cell layoutIfNeeded];
     return cell;
-}
-
-#pragma mark - <UICollectionViewDelegate>
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    RealBookView *cell = (RealBookView *)[collectionView cellForItemAtIndexPath:indexPath];
 }
 
 @end

@@ -30,10 +30,17 @@
     [self updateSelectionViewY];
 }
 
+- (void)updateDatasourceWithDetailTool:(DetailInfomationTool *)detailInfomationTool {
+    self.productDetailDataSource = [ProductDetailDataSource new];
+    self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
+    [self.detailCollectionView reloadData];
+}
+
 - (IBAction)detailRetainButtonAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
+
 - (IBAction)detailOnTrialButtonAction:(id)sender {
     EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
     [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
