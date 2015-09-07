@@ -55,7 +55,12 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BookCollectionView *bookCollectionView = [tableView dequeueReusableCellWithIdentifier:@"BookCollectionView" forIndexPath:indexPath];
-    [bookCollectionView updateNextGroupTitle:[self.groupNameArray objectAtIndex:indexPath.row + 1]];
+    if (indexPath.row == 0) {
+        [bookCollectionView updateNextGroupTitle:[self.groupNameArray objectAtIndex:indexPath.row + 1] andDetailInfomationToolArray:self.freshMakeupArray];
+    } else {
+        [bookCollectionView updateNextGroupTitle:[self.groupNameArray objectAtIndex:indexPath.row + 1] andDetailInfomationToolArray:nil];
+    }
+    bookCollectionView.tag = indexPath.row;
     bookCollectionView.delegate = self;
     return bookCollectionView;
 }
@@ -92,6 +97,12 @@
     UIImage *image = [UIImage imageWithView:realBook.backgroundContanerView];
     self.bookFlipTransition.contentView = [[UIImageView alloc] initWithImage:image];
     DetailViewController *detailViewController = [DetailViewController create];
+    if (realBook.detailInfomationTool) {
+        [detailViewController updateDatasourceWithDetailTool:realBook.detailInfomationTool];
+    } else {
+        [detailViewController updateDatasourceWithDetailTool:[[DetailInfomationTool alloc] initWithElizabethArdenInfomation]];
+    }
+    [detailViewController.detailCollectionView reloadData];
     detailViewController.modalPresentationStyle = UIModalPresentationCustom;
     detailViewController.transitioningDelegate = self;
     CGFloat top = 133;

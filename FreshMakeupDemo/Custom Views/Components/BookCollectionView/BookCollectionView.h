@@ -19,8 +19,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *downGuideImageView;
 @property (strong, nonatomic) NSMutableArray *images;
 @property (weak, nonatomic) id<BookCollectionViewDelegate>delegate;
+@property (strong, nonatomic) NSArray *freshMakeupArray;
 
-- (void)updateNextGroupTitle:(NSString *)text;
+- (void)updateNextGroupTitle:(NSString *)text andDetailInfomationToolArray:(NSArray *)detailInfomationToolArray;
 - (void)updateWithCurrentIndex:(NSInteger)index;
 - (void)startSpriteAnimation;
 - (void)stopSpriteAnimation;

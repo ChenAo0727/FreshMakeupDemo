@@ -27,6 +27,7 @@
 @property (strong, nonatomic) StackCollectionView *stackCollectionView;
 @property (assign, nonatomic) NSInteger currentGroupIndex;
 @property (strong, nonatomic) NSArray *groupNameArray;
+@property (strong, nonatomic) NSArray *freshMakeupArray;
 @property (strong, nonatomic) MaterialTransition *materialTransition;
 @property (strong, nonatomic) BookFlipTransition *bookFlipTransition;
 @property (strong, nonatomic) FlipTransition *flipTransition;

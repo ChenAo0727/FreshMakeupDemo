@@ -7,12 +7,14 @@
 //
 
 #import "HomeViewController+Configuration.h"
+#import "DetailInfomationTool.h"
 #import "UIScreen+Utility.h"
 
 @implementation HomeViewController (Configuration)
 
 - (void)configureViews {
 //    [self configureStackView];
+    [self configureFreshMakeupData];
     [self createTransition];
     [self configureTableView];
 }
@@ -33,6 +35,10 @@
     self.homeTableView.delegate = self;
     self.homeTableView.dataSource = self;
     [self.homeTableView registerNib:[UINib nibWithNibName:@"BookCollectionView" bundle:nil] forCellReuseIdentifier:@"BookCollectionView"];
+}
+
+- (void)configureFreshMakeupData {
+    self.freshMakeupArray = @[[[DetailInfomationTool alloc] initWithSK], [[DetailInfomationTool alloc] initWithElizabethArdenInfomation], [[DetailInfomationTool alloc] initWithSisley], [[DetailInfomationTool alloc] initWithSisley], [[DetailInfomationTool alloc] initWithLanZhi], [[DetailInfomationTool alloc] initWithAupres], [[DetailInfomationTool alloc] initWithBareMineralsInformation]];
 }
 
 @end

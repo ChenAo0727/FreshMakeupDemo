@@ -26,7 +26,6 @@
 }
 
 - (void)configureViews {
-    
     [self configureWaterFlowLayout];
     [self configureDateSource];
     [self configureCollectionView];
@@ -34,12 +33,13 @@
 }
 
 - (void)configureDateSource {
-    
-    self.productDetailDataSource = [ProductDetailDataSource new];
+    if (!self.productDetailDataSource) {
+        self.productDetailDataSource = [ProductDetailDataSource new];
+    }
+    self.detailITitleImageView.image = self.productDetailDataSource.detailInfomationTool.coverImage;
 }
 
 - (void)configureWaterFlowLayout {
-    
     self.layout = [[CHTCollectionViewWaterfallLayout alloc] init];
     self.layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.layout.headerHeight = 0;
@@ -59,10 +59,10 @@
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"MoreTitleCell" bundle:nil] forCellWithReuseIdentifier:MORE_TITLE_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"TrialCollectionViewCell" bundle:nil] forCellWithReuseIdentifier:TRIAL_COLLECTION_VIEW_CELL];
     [self.detailCollectionView setCollectionViewLayout:self.layout];
-    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithElizabethArdenInfomation];
-    self.detailITitleImageView.image = detailInfomationTool.coverImage;
-//    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithSK];
-    self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
+//    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithElizabethArdenInfomation];
+//    self.detailITitleImageView.image = detailInfomationTool.coverImage;
+////    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithSK];
+//    self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
     self.detailCollectionView.alwaysBounceVertical = YES;
     self.detailCollectionView.dataSource = self.productDetailDataSource;
     self.detailCollectionView.delegate = self;
