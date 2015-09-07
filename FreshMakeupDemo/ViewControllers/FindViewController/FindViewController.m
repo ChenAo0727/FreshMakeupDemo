@@ -12,6 +12,7 @@
 #import "XHDrawerController.h"
 #import "FindViewController+Animation.h"
 #import "CirclePopTransition.h"
+#import "MineViewController+Animation.h"
 @interface FindViewController ()
 
 @end
@@ -61,6 +62,8 @@
 
 - (IBAction)onClickLeftButton:(id)sender {
     [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:^(BOOL finished) {
+        MineViewController *viewController = (MineViewController *)self.drawerController.leftViewController;
+        [viewController mineLabelAnimation];
     }];
 }
 
