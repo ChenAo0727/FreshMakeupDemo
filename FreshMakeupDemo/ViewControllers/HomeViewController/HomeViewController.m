@@ -9,6 +9,7 @@
 #import "HomeViewController.h"
 #import "HomeViewController+Configuration.h"
 #import "FindViewController.h"
+#import "FreashSaleViewController.h"
 #import "HomeViewController+Animation.h"
 #import "XHDrawerController.h"
 #import "DetailViewController.h"
@@ -92,22 +93,34 @@
     self.bookFlipTransition.coverImage = [UIImage imageWithView:realBook.coverContainerView];
     UIImage *image = [UIImage imageWithView:realBook.backgroundContanerView];
     self.bookFlipTransition.contentView = [[UIImageView alloc] initWithImage:image];
-    DetailViewController *detailViewController = [DetailViewController create];
-    if (realBook.detailInfomationTool) {
-        [detailViewController updateDatasourceWithDetailTool:realBook.detailInfomationTool];
-    } else {
-        [detailViewController updateDatasourceWithDetailTool:[[DetailInfomationTool alloc] initWithElizabethArdenInfomation]];
-    }
-    [detailViewController.detailCollectionView reloadData];
-    detailViewController.modalPresentationStyle = UIModalPresentationCustom;
-    detailViewController.transitioningDelegate = self;
+    UIViewController *viewcontroller = [self generateViewControllerWithRealBookView:realBook];
     CGFloat top = 133;
     CGFloat height = realBook.coverContainerView.frame.size.height;
     CGFloat width = realBook.coverContainerView.frame.size.width;
     CGFloat left = ([UIScreen screenWidth] - width) / 2;
     CGRect parentRect = CGRectMake(left, top, width, height);
     self.bookFlipTransition.startFrame = parentRect;
-    [self presentViewController:detailViewController animated:YES completion:nil];
+    [self presentViewController:viewcontroller animated:YES completion:nil];
+}
+
+- (UIViewController *)generateViewControllerWithRealBookView:(RealBookView *)realBookView {
+    if (1 == realBook.indexPath.section) {
+        FreashSaleViewController *freshSaleViewController = [FreashSaleViewController create];
+        freshSaleViewController.modalPresentationStyle = UIModalPresentationCustom;
+        freshSaleViewController.transitioningDelegate = self;
+        return freshSaleViewController;
+    } else {
+        DetailViewController *detailViewController = [DetailViewController create];
+        if (realBook.detailInfomationTool) {
+            [detailViewController updateDatasourceWithDetailTool:realBook.detailInfomationTool];
+        } else {
+            [detailViewController updateDatasourceWithDetailTool:[[DetailInfomationTool alloc] initWithElizabethArdenInfomation]];
+        }
+        [detailViewController.detailCollectionView reloadData];
+        detailViewController.modalPresentationStyle = UIModalPresentationCustom;
+        detailViewController.transitioningDelegate = self;
+        return detailViewController;
+    }
 }
 
 - (void)BookFlipTransitiondidEndCloseAnimation:(BookFlipTransition *)bookFlipTransition {
