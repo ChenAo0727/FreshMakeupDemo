@@ -148,9 +148,7 @@
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
         NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @" “我觉得超肌因系列的精华质地很薄透，面霜很丰盈，非常细腻，容易吸收，使用感受我觉得甚至比之前的大小红瓶更加好。” ——游丝祺",@"text",@"SKFelling.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
-        
     }
-    
     return self;
 
 }
