@@ -12,6 +12,7 @@
 #import "CommentViewController.h"
 #import "DetailViewController.h"
 #import "MoreInfomationCell.h"
+#import "MoreTitleCell.h"
 #import "TitleCell.h"
 
 @implementation DetailViewController
@@ -64,8 +65,8 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-    if ([cell isKindOfClass:[MoreInfomationCell class]]) {
-        if (indexPath.section == 6 && indexPath.row == 0) {
+    if ([cell isKindOfClass:[MoreTitleCell class]]) {
+        if (indexPath.section == 2 && indexPath.row == 0) {
             [self pushViewCommentViewController];
         }
     }
