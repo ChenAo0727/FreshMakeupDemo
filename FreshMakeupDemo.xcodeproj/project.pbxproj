@@ -135,6 +135,7 @@
 		05E2B2971B9A832B0024C7FE /* EvaluationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E2B2951B9A832B0024C7FE /* EvaluationCell.xib */; };
 		05E2B29C1B9AB8280024C7FE /* MoreTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E2B29A1B9AB8280024C7FE /* MoreTitleCell.m */; };
 		05E2B29D1B9AB8280024C7FE /* MoreTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E2B29B1B9AB8280024C7FE /* MoreTitleCell.xib */; };
+		05F8B4FB1B9D328C0011FD05 /* FreshSaleInfomationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F8B4FA1B9D328C0011FD05 /* FreshSaleInfomationTool.m */; };
 		1FE064467596DBEE7D2E6AE2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BEAE562AD3319ADF4371D12 /* libPods.a */; };
 		2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */; };
 		2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E132F841B85A71F005DCF14 /* home_update_time_image.png */; };
@@ -457,6 +458,8 @@
 		05E2B2991B9AB8280024C7FE /* MoreTitleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreTitleCell.h; sourceTree = "<group>"; };
 		05E2B29A1B9AB8280024C7FE /* MoreTitleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreTitleCell.m; sourceTree = "<group>"; };
 		05E2B29B1B9AB8280024C7FE /* MoreTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoreTitleCell.xib; sourceTree = "<group>"; };
+		05F8B4F91B9D328C0011FD05 /* FreshSaleInfomationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreshSaleInfomationTool.h; sourceTree = "<group>"; };
+		05F8B4FA1B9D328C0011FD05 /* FreshSaleInfomationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FreshSaleInfomationTool.m; sourceTree = "<group>"; };
 		2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2E085F511B8C545E0049B137 /* selection_view_unlike_line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_view_unlike_line.png; sourceTree = "<group>"; };
 		2E132F841B85A71F005DCF14 /* home_update_time_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_update_time_image.png; sourceTree = "<group>"; };
@@ -1356,6 +1359,8 @@
 				2E8C34331B7DF46E006B5BC0 /* Utilities */,
 				2EB4EF4A1B968B640080185A /* DetailInfomationTool.h */,
 				2EB4EF4B1B968B640080185A /* DetailInfomationTool.m */,
+				05F8B4F91B9D328C0011FD05 /* FreshSaleInfomationTool.h */,
+				05F8B4FA1B9D328C0011FD05 /* FreshSaleInfomationTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -2033,6 +2038,7 @@
 				2EA556F21B95460400C696B0 /* DetailViewController+Configuration.m in Sources */,
 				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
 				057A26391B86CC8C003DAF07 /* MineViewController.m in Sources */,
+				05F8B4FB1B9D328C0011FD05 /* FreshSaleInfomationTool.m in Sources */,
 				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,
 				2E132F8E1B85B505005DCF14 /* HomeViewController+Configuration.m in Sources */,
 				054DFD401B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.m in Sources */,
