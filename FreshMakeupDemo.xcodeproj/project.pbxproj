@@ -278,9 +278,9 @@
 		389A1FF11B9AE2610035BC2B /* AupresIntroduce.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FF01B9AE2610035BC2B /* AupresIntroduce.png */; };
 		389A1FF31B9AE2BF0035BC2B /* AupresFelling.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FF21B9AE2BF0035BC2B /* AupresFelling.png */; };
 		389A1FF51B9AE36F0035BC2B /* sisleyFelling.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FF41B9AE36F0035BC2B /* sisleyFelling.png */; };
-		389A1FF81B9D3B040035BC2B /* MISSHA.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FF71B9D3B030035BC2B /* MISSHA.png */; };
-		389A1FFA1B9D3DE00035BC2B /* BIODERMA.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FF91B9D3DE00035BC2B /* BIODERMA.png */; };
-		389A1FFC1B9D3E810035BC2B /* Panasonic.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FFB1B9D3E810035BC2B /* Panasonic.png */; };
+		389A1FF81B9D3B040035BC2B /* freshSale_MISSHA_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FF71B9D3B030035BC2B /* freshSale_MISSHA_image.png */; };
+		389A1FFA1B9D3DE00035BC2B /* freshSale_BIODERMA_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FF91B9D3DE00035BC2B /* freshSale_BIODERMA_image.png */; };
+		389A1FFC1B9D3E810035BC2B /* freshSale_Panasonic_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FFB1B9D3E810035BC2B /* freshSale_Panasonic_image.png */; };
 		38AF47171B9686B4006C45CB /* CommentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AF47151B9686B4006C45CB /* CommentViewCell.m */; };
 		38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AF47161B9686B4006C45CB /* CommentViewCell.xib */; };
 		38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B48A2F1B941EB100092D6D /* MySegmentControl.m */; };
@@ -677,9 +677,9 @@
 		389A1FF01B9AE2610035BC2B /* AupresIntroduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AupresIntroduce.png; sourceTree = "<group>"; };
 		389A1FF21B9AE2BF0035BC2B /* AupresFelling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AupresFelling.png; sourceTree = "<group>"; };
 		389A1FF41B9AE36F0035BC2B /* sisleyFelling.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sisleyFelling.png; sourceTree = "<group>"; };
-		389A1FF71B9D3B030035BC2B /* MISSHA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MISSHA.png; sourceTree = "<group>"; };
-		389A1FF91B9D3DE00035BC2B /* BIODERMA.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BIODERMA.png; sourceTree = "<group>"; };
-		389A1FFB1B9D3E810035BC2B /* Panasonic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Panasonic.png; sourceTree = "<group>"; };
+		389A1FF71B9D3B030035BC2B /* freshSale_MISSHA_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freshSale_MISSHA_image.png; sourceTree = "<group>"; };
+		389A1FF91B9D3DE00035BC2B /* freshSale_BIODERMA_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freshSale_BIODERMA_image.png; sourceTree = "<group>"; };
+		389A1FFB1B9D3E810035BC2B /* freshSale_Panasonic_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freshSale_Panasonic_image.png; sourceTree = "<group>"; };
 		38AF47141B9686B4006C45CB /* CommentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewCell.h; sourceTree = "<group>"; };
 		38AF47151B9686B4006C45CB /* CommentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewCell.m; sourceTree = "<group>"; wrapsLines = 1; };
 		38AF47161B9686B4006C45CB /* CommentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewCell.xib; sourceTree = "<group>"; };
@@ -1673,9 +1673,9 @@
 				05F8B4FC1B9D402B0011FD05 /* freshSale_DALGCR_image.png */,
 				05F8B4FD1B9D402B0011FD05 /* freshSale_LilyBell_image.png */,
 				05F8B4FE1B9D402B0011FD05 /* freshSale_Clarisonic_image.png */,
-				389A1FF71B9D3B030035BC2B /* MISSHA.png */,
-				389A1FF91B9D3DE00035BC2B /* BIODERMA.png */,
-				389A1FFB1B9D3E810035BC2B /* Panasonic.png */,
+				389A1FF71B9D3B030035BC2B /* freshSale_MISSHA_image.png */,
+				389A1FF91B9D3DE00035BC2B /* freshSale_BIODERMA_image.png */,
+				389A1FFB1B9D3E810035BC2B /* freshSale_Panasonic_image.png */,
 			);
 			name = FreshSaleImage;
 			sourceTree = "<group>";
@@ -1849,7 +1849,7 @@
 				05F8B5011B9D402B0011FD05 /* freshSale_Clarisonic_image.png in Resources */,
 				054DFD491B81AAEE00651F11 /* apply_head_product.png in Resources */,
 				2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */,
-				389A1FFC1B9D3E810035BC2B /* Panasonic.png in Resources */,
+				389A1FFC1B9D3E810035BC2B /* freshSale_Panasonic_image.png in Resources */,
 				2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */,
 				2EA557011B95757E00C696B0 /* DetailCommentCell.xib in Resources */,
 				053BFEA21B84AD80002058BA /* lexus.ttf in Resources */,
@@ -1898,7 +1898,7 @@
 				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
 				2EA556FB1B95725A00C696B0 /* DetailCommentView.xib in Resources */,
 				059E88BE1B8414D30086544F /* FindBranchTableViewCell.xib in Resources */,
-				389A1FFA1B9D3DE00035BC2B /* BIODERMA.png in Resources */,
+				389A1FFA1B9D3DE00035BC2B /* freshSale_BIODERMA_image.png in Resources */,
 				05DEA0621B8858CB0094E123 /* shakeaShake.png in Resources */,
 				0596FFF11B9AF06E00E5653D /* detail_sisley_product.png in Resources */,
 				2E8C33E31B7DEC79006B5BC0 /* Images.xcassets in Resources */,
@@ -1944,7 +1944,7 @@
 				2EB6119C1B86ED62000414A2 /* detail_top_image.png in Resources */,
 				2EB4EF661B96CDED0080185A /* TagCollectionViewCell.xib in Resources */,
 				058ABF551B82C58100A0BA8A /* findarticleavatar3.png in Resources */,
-				389A1FF81B9D3B040035BC2B /* MISSHA.png in Resources */,
+				389A1FF81B9D3B040035BC2B /* freshSale_MISSHA_image.png in Resources */,
 				054DFD381B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.xib in Resources */,
 				058ABF531B82C58100A0BA8A /* findarticleavatar1.png in Resources */,
 				0596FFEC1B9AF06E00E5653D /* detail_CPB_feeling.png in Resources */,
