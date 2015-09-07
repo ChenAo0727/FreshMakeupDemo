@@ -46,6 +46,7 @@
 - (UITableViewCell *)earlyAdoptersTitleImageTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
     EarlyAdoptersTitleImageTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_TITLEIMAGE_TABLEVIEW_CELL];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    [cell updateCoverImage:self.freshTryInformationTool.image Title:self.freshTryInformationTool.title];
     [cell startTimer];
     return cell;
 }
@@ -78,7 +79,7 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     cell.earlyPartitionTow.backgroundColor = [UIColor whiteColor];
     [cell.moreButton setTitle:@"查看更多" forState:UIControlStateNormal];
-    cell.moreButton.layer.borderWidth = 1;
+    cell.moreButton.layer.borderWidth = .5;
     cell.moreButton.layer.borderColor = [UIColor colorFromHexCode:@"#AAAAAA"].CGColor;
     [cell.moreButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
     return cell;

@@ -9,6 +9,7 @@
 #import "HomeViewController+Configuration.h"
 #import "DetailInfomationTool.h"
 #import "FreshSaleInfomationTool.h"
+#import "FreshTryInformationTool.h"
 #import "UIScreen+Utility.h"
 
 @implementation HomeViewController (Configuration)
@@ -17,6 +18,7 @@
 //    [self configureStackView];
     [self configureFreshMakeupData];
     [self configureFreshSaleData];
+    [self configureFreshTryData];
     [self createTransition];
     [self configureTableView];
 }
@@ -43,7 +45,7 @@
     self.freshMakeupArray = @[
                               [[DetailInfomationTool alloc] initWithSK],
                               [[DetailInfomationTool alloc] initWithElizabethArdenInfomation],
-                              [[DetailInfomationTool alloc] initWithClearSkin],
+                              [[DetailInfomationTool alloc] initWithHelpClearSkinInfomation],
                               [[DetailInfomationTool alloc] initWithSisley],
                               [[DetailInfomationTool alloc] initWithLanZhi],
                               [[DetailInfomationTool alloc] initWithAupres],
@@ -53,6 +55,7 @@
 }
 
 - (void)configureFreshSaleData {
+    
     self.freshSaleArray = @[
                             [[FreshSaleInfomationTool alloc] initWithBIODERMA],
                             [[FreshSaleInfomationTool alloc] initWithClarisonicInfomation],
@@ -61,6 +64,19 @@
                             [[FreshSaleInfomationTool alloc] initWithMISSHA],
                             [[FreshSaleInfomationTool alloc] initWithPanasonic]
                             ];
+
+}
+
+- (void)configureFreshTryData{
+    
+    self.freshTryArray = @[
+                            [[FreshTryInformationTool alloc]initWithDanceLegend],
+                            [[FreshTryInformationTool alloc]initWithForBeloveOne],
+                            [[FreshTryInformationTool alloc]initWithMAYSU],
+                            [[FreshTryInformationTool alloc]initWithBOBBI],
+                            [[FreshTryInformationTool alloc]initWithJurlique]
+                           ];
+
 }
 
 @end

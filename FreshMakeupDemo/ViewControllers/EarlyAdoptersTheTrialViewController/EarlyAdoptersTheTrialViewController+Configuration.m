@@ -21,8 +21,12 @@
     [self tableViewEdit];
     [self mineViewEdit];
 }
+- (void)configureDateSource {
+    if (!self.earlyAdoptersTheTrialViewControllerDataSource) {
+        self.earlyAdoptersTheTrialViewControllerDataSource = [EarlyAdoptersTheTrialViewControllerDataSource new];
+    }
+}
 - (void)tableViewEdit {
-    self.earlyAdoptersTheTrialViewControllerDataSource = [EarlyAdoptersTheTrialViewControllerDataSource new];
     self.earlyAdoptersTheTrialViewControllerDataSource.delegate = self;//摇一摇代理
     self.earlyAdoptersTableView.tableFooterView = [[UIView alloc] initWithFrame:(CGRectMake(0, self.earlyAdoptersTableView.frame.size.height, self.earlyAdoptersTableView.frame.size.width, 30))]; 
     self.earlyAdoptersTableView.tableFooterView.backgroundColor = [UIColor colorFromHexCode:@"#EFF1F1"];
@@ -37,6 +41,7 @@
     [self.earlyAdoptersTableView registerNib:[UINib nibWithNibName:@"EarlyAdoptersPartitionTableViewCell" bundle:nil] forCellReuseIdentifier:EARLY_ADOPTERS_PARTITION_TABLEVIEW_CELL];
 }
 - (void)mineViewEdit {
+    
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(leftAction)];
     self.earlyAdoptersTheTrialLeftInconImage.userInteractionEnabled = YES;
     [self.earlyAdoptersTheTrialLeftInconImage addGestureRecognizer:tap];

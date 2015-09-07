@@ -10,8 +10,8 @@
 @implementation EarlyAdoptersReceiveTableViewCell
 
 - (void)awakeFromNib {
-    self.strengthButton.layer.borderWidth = 1;
-    self.luckButton.layer.borderWidth = 1;
+    self.strengthButton.layer.borderWidth = 0.5;
+    self.luckButton.layer.borderWidth = 0.5;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

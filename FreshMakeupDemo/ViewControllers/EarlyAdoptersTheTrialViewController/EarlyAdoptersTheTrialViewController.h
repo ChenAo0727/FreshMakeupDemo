@@ -10,6 +10,7 @@
 #import "EarlyAdoptersTheTrialViewControllerDataSource.h"
 #import "BaseViewController.h"
 #import "ShakeAshakeView.h"
+#import "FreshTryInformationTool.h"
 @interface EarlyAdoptersTheTrialViewController : BaseViewController<UITableViewDelegate,EarlyAdoptersTheTrialViewControllerDataSourceDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *earlyAdoptersTheTrialTitleLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialLeftInconImage;
@@ -18,4 +19,5 @@
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialRightTestInconImageView;
 @property (strong, nonatomic) EarlyAdoptersTheTrialViewControllerDataSource *earlyAdoptersTheTrialViewControllerDataSource;
 @property (strong, nonatomic) ShakeAshakeView *shakeAshakeView;
+- (void)updateDatasourceWithFreshTryTool:(FreshTryInformationTool *)freshTryInformationTool;
 @end

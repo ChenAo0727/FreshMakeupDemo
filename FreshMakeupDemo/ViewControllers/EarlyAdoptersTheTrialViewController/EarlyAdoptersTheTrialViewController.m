@@ -45,7 +45,12 @@
 - (IBAction)earlyRetainButtonAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+- (void)updateDatasourceWithFreshTryTool:(FreshTryInformationTool *)freshTryInformationTool {
+    self.earlyAdoptersTheTrialViewControllerDataSource = [EarlyAdoptersTheTrialViewControllerDataSource new];
+    self.earlyAdoptersTheTrialViewControllerDataSource.freshTryInformationTool = freshTryInformationTool;
+    [self.earlyAdoptersTableView reloadData];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
