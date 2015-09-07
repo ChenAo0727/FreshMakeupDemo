@@ -40,11 +40,13 @@
         CGRect frame = textCell.frame;
         frame.size.width = [UIScreen screenWidth];
         textCell.frame = frame;
+        [textCell updateWithLabel:self.freashSaleViewControllerDataSource.freshSaleInfomationTool.commentary];
         CGFloat cellHeight = [textCell heightOfCell];
        return cellHeight;
     } else if (indexPath.row == 2) {
         CGFloat cellHeight = [tableView fd_heightForCellWithIdentifier:TAGS_TABLEVIEW_CELL cacheByIndexPath:indexPath configuration:^(TagsTableViewCell *cell) {
             [cell.tagCollectionView reloadData];
+            [cell updateWithTage:self.freashSaleViewControllerDataSource.freshSaleInfomationTool.labelArray];
             [cell layoutIfNeeded];
             [cell updateHeightConstraint];
             CGRect frame = cell.frame;
@@ -74,6 +76,12 @@
     }
 }
 
+- (void)updateDatasourceWithFreshSaleTool:(FreshSaleInfomationTool *)freshSaleInfomationTool {
+    self.freashSaleViewControllerDataSource = [FreashSaleViewControllerDataSource new];
+    self.freashSaleViewControllerDataSource.freshSaleInfomationTool = freshSaleInfomationTool;
+    [self.freashSaleTableView reloadData];
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

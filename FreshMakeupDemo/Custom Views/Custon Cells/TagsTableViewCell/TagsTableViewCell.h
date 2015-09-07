@@ -19,5 +19,5 @@
 @property (strong, nonatomic) EqualSpaceFlowLayout *equalSpaceFlowLayout;
 - (CGFloat)heightOfCell;
 - (void)updateHeightConstraint;
-
+- (void)updateWithTage:(NSArray *)tags;
 @end

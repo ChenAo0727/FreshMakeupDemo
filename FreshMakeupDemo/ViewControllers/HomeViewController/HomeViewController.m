@@ -111,7 +111,11 @@
 
 - (UIViewController *)generateViewControllerWithRealBookView:(RealBookView *)realBookView {
     if (1 == realBook.indexPath.section) {
+
         FreashSaleViewController *freshSaleViewController = [FreashSaleViewController create];
+        if (realBook.freshSaleInfomationTool) {
+            [freshSaleViewController updateDatasourceWithFreshSaleTool:realBook.freshSaleInfomationTool];
+        }
         freshSaleViewController.modalPresentationStyle = UIModalPresentationCustom;
         freshSaleViewController.transitioningDelegate = self;
         return freshSaleViewController;

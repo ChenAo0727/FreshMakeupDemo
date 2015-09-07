@@ -22,7 +22,10 @@
     self.tagCollectionView.dataSource = self;
     self.tagCollectionView.delegate = self;
 }
-
+- (void)updateWithTage:(NSArray *)tagsArr {
+    tags = tagsArr;
+    [self.tagCollectionView reloadData];
+}
 - (CGFloat)heightOfCell {
     return self.tagCollectionView.contentSize.height + 50;
 }

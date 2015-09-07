@@ -15,12 +15,16 @@
 @implementation FreashSaleViewController (Configuration)
 - (void)configureViews {
     [self tableViewEdit];
+    [self configureDateSource];
 }
-
+- (void)configureDateSource {
+    if (!self.freashSaleViewControllerDataSource) {
+        self.freashSaleViewControllerDataSource = [FreashSaleViewControllerDataSource new];
+    }
+}
 - (void)tableViewEdit {
     self.freashSaleTableView.rowHeight = UITableViewAutomaticDimension;
     self.freashSaleTableView.estimatedRowHeight = 20;
-    self.freashSaleViewControllerDataSource = [FreashSaleViewControllerDataSource new];
     self.freashSaleTableView.delegate = self;
     self.freashSaleTableView.dataSource = self.freashSaleViewControllerDataSource;
     [self.freashSaleTableView registerNib:[UINib nibWithNibName:@"TitleHeadCell" bundle:nil] forCellReuseIdentifier:TITLE_HEAD_CELL];
