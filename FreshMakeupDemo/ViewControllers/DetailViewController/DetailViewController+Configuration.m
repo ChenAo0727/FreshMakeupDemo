@@ -61,6 +61,7 @@
     [self.detailCollectionView setCollectionViewLayout:self.layout];
     DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithElizabethArdenInfomation];
     self.detailITitleImageView.image = detailInfomationTool.coverImage;
+//    DetailInfomationTool *detailInfomationTool = [[DetailInfomationTool alloc] initWithSK];
     self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
     self.detailCollectionView.alwaysBounceVertical = YES;
     self.detailCollectionView.dataSource = self.productDetailDataSource;
@@ -78,7 +79,8 @@
 }
 
 - (void)registerNibWithDictionaty:(NSDictionary *)dictionary {
-    NSEnumerator * enumeratorKey = [dictionary keyEnumerator];
+    
+    NSEnumerator *enumeratorKey = [dictionary keyEnumerator];
     for (NSString *identifier in enumeratorKey) {
         [self.detailCollectionView registerNib:[UINib nibWithNibName:[dictionary objectForKey:identifier] bundle:nil] forCellWithReuseIdentifier:identifier];
     }
