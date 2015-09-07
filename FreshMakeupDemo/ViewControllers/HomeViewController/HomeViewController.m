@@ -16,6 +16,7 @@
 #import "UIImage+Utility.h"
 #import "UIScreen+Utility.h"
 #import "CirclePushTransition.h"
+#import "MineViewController+Animation.h"
 
 @implementation HomeViewController {
     RealBookView *realBook;
@@ -41,6 +42,9 @@
 
 - (IBAction)onClickLeftButton:(id)sender {
     [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:^(BOOL finished) {
+        MineViewController *viewController = (MineViewController *)self.drawerController.leftViewController;
+        [viewController mineLabelAnimation];
+        
     }];
 }
 
