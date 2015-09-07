@@ -33,7 +33,7 @@
 
 - (void)configureTableView {
     self.currentGroupIndex = 0;
-    self.groupNameArray = @[@"新鲜美妆", @"新鲜惠", @"新鲜达人", @""];
+    self.groupNameArray = @[@"新鲜美妆", @"新鲜惠", @"新鲜试", @""];
     self.homeTableView.delegate = self;
     self.homeTableView.dataSource = self;
     [self.homeTableView registerNib:[UINib nibWithNibName:@"BookCollectionView" bundle:nil] forCellReuseIdentifier:@"BookCollectionView"];
