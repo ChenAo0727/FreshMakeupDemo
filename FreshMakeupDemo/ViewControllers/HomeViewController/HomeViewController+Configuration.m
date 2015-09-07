@@ -45,7 +45,7 @@
     self.freshMakeupArray = @[
                               [[DetailInfomationTool alloc] initWithSK],
                               [[DetailInfomationTool alloc] initWithElizabethArdenInfomation],
-                              [[DetailInfomationTool alloc] initWithClearSkin],
+                              [[DetailInfomationTool alloc] initWithHelpClearSkinInfomation],
                               [[DetailInfomationTool alloc] initWithSisley],
                               [[DetailInfomationTool alloc] initWithLanZhi],
                               [[DetailInfomationTool alloc] initWithAupres],
