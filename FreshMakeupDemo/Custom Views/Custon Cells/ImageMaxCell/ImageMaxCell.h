@@ -15,5 +15,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *imageMaxLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imageMaxImageView;
 @property (strong, nonatomic) WorthSlideView *worthSlideView;
+- (void)updateWithCoverImage:(UIImage *)image title:(NSString *)title price:(CGFloat)price;
 
 @end

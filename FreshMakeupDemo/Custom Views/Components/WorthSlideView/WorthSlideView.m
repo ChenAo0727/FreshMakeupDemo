@@ -12,6 +12,10 @@
     CGFloat lastCarViewConstraint;
 }
 
+- (void)updateWithPrice:(CGFloat)price worthCount:(NSInteger)worthCount NotWorthCount:(NSInteger)NotWorthCount {
+    self.priceLabel.text = [NSString stringWithFormat:@"%f", price];
+}
+
 + (instancetype)create {
     WorthSlideView *worthSlideView = [[[NSBundle mainBundle] loadNibNamed:@"WorthSlideView" owner:nil options:nil] lastObject];
     worthSlideView.translatesAutoresizingMaskIntoConstraints = NO;

@@ -24,6 +24,6 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *carViewRightConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *leftProcessViewWithConstraint;
 @property (strong, nonatomic) SlideMotion *slideMotion;
-
+- (void)updateWithPrice:(CGFloat)price worthCount:(NSInteger)worthCount NotWorthCount:(NSInteger)NotWorthCount;
 
 @end
