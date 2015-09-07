@@ -12,7 +12,7 @@
 - (instancetype)initWithDALGCRInfomation {
     if (self = [super init]) {
       self.title = @"Dior Addict LIP GLOW COLOR REVIEW 自然魅惑润唇膏（珊瑚色)";
-        self.price = @"165.15元";
+        self.price = @"165.15";
         self.labelArray = [NSMutableArray arrayWithObjects:@"润唇膏",@"addict dior", nil];
         self.image = [UIImage imageNamed:@"freshSale_DALGCR_image.png"];
         self.commentary = @"迪奥这支润唇膏可是偶化妆包的必备货，它可是会变色的润唇膏哦！采用神奇的高科技“水漾润色科技”，刚擦上时是无色透明的，但它可以立即感应双唇的含水量，渐变出适合使用者的不同的红润效果。内含天然植物红润成分，红润效果也应人而异，所以适合任何唇色的人使用，还有清凉感，用完非常清新、丰盈、透亮。这款唇膏除了我们能看到品牌大街小巷的广告之外，我还发现之前日本著名的超级平面模特藤井莉娜LENA也推荐过哦！她也是一直用这款。个人觉得，这款产品也算是Dior的代表作之一了，如果EL有小棕瓶，兰蔻有粉水，那就不得不提到Dior这款变色润唇膏了~这个牌子的介绍我就不多说，我想说现在这个价格买很划算，草莓网新推出了周末精选推广，迪奥、YSL、阿玛尼这三个牌子周末3天购买再额外9折，所以这款产品折弯只要￥165.15 （付款页面可见此价，新客免运费）淘宝价介乎185-200+不等";

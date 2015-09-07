@@ -20,6 +20,9 @@
 
     // Configure the view for the selected state
 }
+- (void)updateWithLabel:(NSString *)label {
+    self.textCellLabel.text = label;
+}
 - (CGFloat)heightOfCell {
     [self layoutIfNeeded];
     return self.textCellLabel.frame.size.height;

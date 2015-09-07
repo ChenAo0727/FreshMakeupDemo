@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FreshSaleInfomationTool.h"
 @interface FreashSaleViewControllerDataSource : NSObject<UITableViewDataSource>
-
+@property (strong, nonatomic) FreshSaleInfomationTool *freshSaleInfomationTool;
 @end

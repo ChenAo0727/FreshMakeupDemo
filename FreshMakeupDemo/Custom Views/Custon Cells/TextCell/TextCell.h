@@ -13,5 +13,6 @@
 @interface TextCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *textCellLabel;
 @property (weak, nonatomic) id<TextDelegate> delegate;
+- (void)updateWithLabel:(NSString *)label;
 - (CGFloat)heightOfCell;
 @end

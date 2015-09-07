@@ -59,6 +59,7 @@
 
 - (UITableViewCell *)imageMaxTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
     ImageMaxCell *cell = [tableView dequeueReusableCellWithIdentifier:IMAGE_MAX_CELL];
+    [cell updateWithCoverImage:self.freshSaleInfomationTool.image title:self.freshSaleInfomationTool.title price:self.freshSaleInfomationTool.price];
     return cell;
 }
 
@@ -77,11 +78,13 @@
 
 - (UITableViewCell *)textTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
     TextCell *cell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
+    [cell updateWithLabel:self.freshSaleInfomationTool.commentary];
     return cell;
 }
 
 - (UITableViewCell *)tagsTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
     TagsTableViewCell *cell =[tableView dequeueReusableCellWithIdentifier:TAGS_TABLEVIEW_CELL];
+    [cell updateWithTage:self.freshSaleInfomationTool.labelArray];
     return cell;
 }
 

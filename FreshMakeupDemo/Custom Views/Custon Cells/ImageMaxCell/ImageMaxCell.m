@@ -20,7 +20,7 @@
     [self setSelectionStyle:UITableViewCellSelectionStyleNone];
 }
 
-- (void)updateWithCoverImage:(UIImage *)image title:(NSString *)title price:(CGFloat)price {
+- (void)updateWithCoverImage:(UIImage *)image title:(NSString *)title price:(NSString *)price {
     self.imageMaxLabel.text = title;
     self.imageMaxImageView.image = image;
     [self.worthSlideView updateWithPrice:price worthCount:0 NotWorthCount:0];
