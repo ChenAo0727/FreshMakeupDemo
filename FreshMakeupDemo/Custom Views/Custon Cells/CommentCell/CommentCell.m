@@ -13,6 +13,7 @@ static NSString *COMMENTCELL = @"CommentCell";
 @implementation CommentCell {
     CGAffineTransform approveTransform;
     CGAffineTransform commentTransform;
+
 }
 
 - (void)awakeFromNib {
@@ -23,7 +24,7 @@ static NSString *COMMENTCELL = @"CommentCell";
     self.avatarImageView.layer.borderWidth = 1;
     self.avatarImageView.layer.borderColor = [[UIColor colorWithIntRed:103 green:212 blue:223] CGColor];
     self.skinPropertyLabel.layer.cornerRadius = self.skinPropertyLabel.frame.size.width / 2;
-    
+
 }
 + (instancetype)create{
     return [[[NSBundle mainBundle]loadNibNamed:COMMENTCELL owner:nil options:nil] lastObject];
