@@ -8,6 +8,7 @@
 
 #import "HomeViewController+Configuration.h"
 #import "DetailInfomationTool.h"
+#import "FreshSaleInfomationTool.h"
 #import "UIScreen+Utility.h"
 
 @implementation HomeViewController (Configuration)
@@ -15,6 +16,7 @@
 - (void)configureViews {
 //    [self configureStackView];
     [self configureFreshMakeupData];
+    [self configureFreshSaleData];
     [self createTransition];
     [self configureTableView];
 }
@@ -48,6 +50,17 @@
                               [[DetailInfomationTool alloc] initWithBareMineralsInformation]
                               ];
 
+}
+
+- (void)configureFreshSaleData {
+    self.freshSaleArray = @[
+                            [[FreshSaleInfomationTool alloc] initWithBIODERMA],
+                            [[FreshSaleInfomationTool alloc] initWithClarisonicInfomation],
+                            [[FreshSaleInfomationTool alloc] initWithDALGCRInfomation],
+                            [[FreshSaleInfomationTool alloc] initWithLilyBellInfomation],
+                            [[FreshSaleInfomationTool alloc] initWithMISSHA],
+                            [[FreshSaleInfomationTool alloc] initWithPanasonic]
+                            ];
 }
 
 @end

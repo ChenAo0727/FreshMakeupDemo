@@ -22,6 +22,11 @@
     [self updateWithCoverImage:detailInfomationTool.coverImage title:detailInfomationTool.title shortComment:detailInfomationTool.shortComment];
 }
 
+- (void)updateWithFreshSaleInfomationTool:(FreshSaleInfomationTool *)freshSaleInfomationTool {
+    self.freshSaleInfomationTool = freshSaleInfomationTool;
+    [self updateWithCoverImage:freshSaleInfomationTool.image title:freshSaleInfomationTool.title shortComment:freshSaleInfomationTool.commentary];
+}
+
 - (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment {
     self.converImageView.image = coverImage;
     self.titleLabel.text = title;

@@ -58,6 +58,8 @@
     BookCollectionView *bookCollectionView = [tableView dequeueReusableCellWithIdentifier:@"BookCollectionView" forIndexPath:indexPath];
     if (indexPath.row == 0) {
         [bookCollectionView updateNextGroupTitle:[self.groupNameArray objectAtIndex:indexPath.row + 1] andDetailInfomationToolArray:self.freshMakeupArray];
+    } else if (indexPath.row == 1) {
+        [bookCollectionView updateNextGroupTitle:[self.groupNameArray objectAtIndex:indexPath.row + 1] andFreshSaleInfomationToolArray:self.freshSaleArray];
     } else {
         [bookCollectionView updateNextGroupTitle:[self.groupNameArray objectAtIndex:indexPath.row + 1] andDetailInfomationToolArray:nil];
     }

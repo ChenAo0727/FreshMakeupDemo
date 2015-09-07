@@ -13,11 +13,9 @@
 #import "TextCell.h"
 #import "UIScreen+Utility.h"
 #import "TagsTableViewCell.h"
-@interface FreashSaleViewController ()
 
-@end
-static int i = 0;
 @implementation FreashSaleViewController
+
 + (instancetype)create {
     return [[FreashSaleViewController alloc] initWithNibName:@"FreashSaleViewController" bundle:nil];
 }
@@ -26,6 +24,10 @@ static int i = 0;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self configureViews];
+}
+
+- (IBAction)onClickBackButton:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -9,6 +9,7 @@
 #import "BookCollectionView.h"
 #import "RealBookView.h"
 #import "LineLayout.h"
+#import "FreshSaleInfomationTool.h"
 
 @implementation BookCollectionView
 
@@ -30,6 +31,13 @@
     self.nextStackTitleLabel.text = text;
     self.bottomViewContrainer.hidden = [text isEqualToString:@""];
     self.freshMakeupArray = detailInfomationToolArray;
+    [self.lineCollectionView reloadData];
+}
+
+- (void)updateNextGroupTitle:(NSString *)text andFreshSaleInfomationToolArray:(NSArray *)freshSaleInfomationToolArray {
+    self.nextStackTitleLabel.text = text;
+    self.bottomViewContrainer.hidden = [text isEqualToString:@""];
+    self.freshSaleArray = freshSaleInfomationToolArray;
     [self.lineCollectionView reloadData];
 }
 
@@ -63,6 +71,8 @@
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (self.freshMakeupArray && self.freshMakeupArray.count > 0) {
         return self.freshMakeupArray.count;
+    } else if (self.freshSaleArray && self.freshSaleArray.count > 0) {
+        return self.freshSaleArray.count;
     }
     return 7;
 }
@@ -79,6 +89,8 @@
     };
     if (self.freshMakeupArray && self.freshMakeupArray.count > 0) {
         [cell updateWithDetailInfomationTool:[self.freshMakeupArray objectAtIndex:indexPath.row]];
+    } else if (self.freshSaleArray && self.freshSaleArray.count > 0) {
+        [cell updateWithFreshSaleInfomationTool:[self.freshSaleArray objectAtIndex:indexPath.row]];
     } else {
         [cell updateWithCoverImage:[UIImage imageNamed:@"detail_cover_image"] title:@"DIOR新款口红" shortComment:@"这里是一段介绍哦，啦啦啦啦啦啦啦啦， 这里是一段介绍哦， 介绍本款新鲜美妆的信息"];
     }

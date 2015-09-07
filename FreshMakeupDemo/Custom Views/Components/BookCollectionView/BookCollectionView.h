@@ -20,8 +20,10 @@
 @property (strong, nonatomic) NSMutableArray *images;
 @property (weak, nonatomic) id<BookCollectionViewDelegate>delegate;
 @property (strong, nonatomic) NSArray *freshMakeupArray;
+@property (strong, nonatomic) NSArray *freshSaleArray;
 
 - (void)updateNextGroupTitle:(NSString *)text andDetailInfomationToolArray:(NSArray *)detailInfomationToolArray;
+- (void)updateNextGroupTitle:(NSString *)text andFreshSaleInfomationToolArray:(NSArray *)freshSaleInfomationToolArray;
 - (void)updateWithCurrentIndex:(NSInteger)index;
 - (void)startSpriteAnimation;
 - (void)stopSpriteAnimation;
