@@ -38,7 +38,16 @@
 }
 
 - (void)configureFreshMakeupData {
-    self.freshMakeupArray = @[[[DetailInfomationTool alloc] initWithSK], [[DetailInfomationTool alloc] initWithElizabethArdenInfomation], [[DetailInfomationTool alloc] initWithSisley], [[DetailInfomationTool alloc] initWithSisley], [[DetailInfomationTool alloc] initWithLanZhi], [[DetailInfomationTool alloc] initWithAupres], [[DetailInfomationTool alloc] initWithBareMineralsInformation]];
+    self.freshMakeupArray = @[
+                              [[DetailInfomationTool alloc] initWithSK],
+                              [[DetailInfomationTool alloc] initWithElizabethArdenInfomation],
+                              [[DetailInfomationTool alloc] initWithClearSkin],
+                              [[DetailInfomationTool alloc] initWithSisley],
+                              [[DetailInfomationTool alloc] initWithLanZhi],
+                              [[DetailInfomationTool alloc] initWithAupres],
+                              [[DetailInfomationTool alloc] initWithBareMineralsInformation]
+                              ];
+
 }
 
 @end

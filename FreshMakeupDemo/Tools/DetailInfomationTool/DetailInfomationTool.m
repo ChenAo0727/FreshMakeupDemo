@@ -100,7 +100,7 @@
         self.title = @"BareMinerals睡眠粉—留宿必备";
         self.coverImage = [UIImage imageNamed:@"BareMinerals.png"];
         self.shortComment = @"睡觉也要涂粉？这是因为很多女孩子担心自己的素颜吓到男票，或是去朋友家留宿怕被发现皮肤差等等等。所以这款堪比护肤品的晚间睡眠粉便应运而生～全新突破夜间护理方式!";
-        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Pure Transformation Night Treatment 夜间焕肤睡眠粉(去痘消炎、抗皱、嫩滑皮肤）规格：4.2g/0.15oz 产地：美国 质地：粉状 矿物护肤夜间护理的全新突破！采用活性配方，将72种有机矿物结合，持续作用于肌肤，不含防腐剂，对皮肤无刺激，适合包括敏感性肌肤在内的各种肤质。",@"text",@"BareMinerals.png",@"image", nil];
+        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Pure Transformation Night Treatment 夜间焕肤睡眠粉(去痘消炎、抗皱、嫩滑皮肤）\n规格：4.2g/0.15oz \n产地：美国 \n质地：粉状 矿物护肤夜间护理的全新突破！采用活性配方，将72种有机矿物结合，持续作用于肌肤，不含防腐剂，对皮肤无刺激，适合包括敏感性肌肤在内的各种肤质。",@"text",@"BareMinerals.png",@"image", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
         NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"bareMinerals应该说是矿物护肤的始祖，而夜间焕肤睡眠粉则是他们家的最明星单品。没用过这款矿物睡眠粉的，都不好意思说自己真的跟矿物结缘过很久之前会注意到她是因为她一副彩妆的外表却是护肤的干活，分明就是望眼娇滴滴，转身却抬起煤气罐上6楼的女汉子！而且官网标明“永不过期！不需卸妆！不会堵塞毛孔的散粉”！戳！你这么强大又逆生长，散粉同胞们知道么？为你按赞按到死！！！！",@"text",@"BareMinerals.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
@@ -112,9 +112,9 @@
         self.title = @"Help Clear Skin祛痘牛奶——喝出来的光滑肌肤";
         self.coverImage = [UIImage imageNamed:@"ClearSkin.png"];
         self.shortComment = @"提到拉杜丽laduree首先想到是他们家的马卡龙，但你知道它的彩妆同样出色吗？拉杜丽laduree和Albion合作推出的彩妆，几乎一夜之间，彩妆界人手几盒，甚至有人直接入了所有颜色！它的花瓣腮红，6克价格800多，号称彩妆里的“爱马仕”，如此高昂的价格还让这么多人趋之若鹜，到底好在哪里呢？";
-        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"【商品名称】LADUREE拉杜丽 贵族玫瑰花瓣造型腮红修容【商品产地】日本【商品包装】盒装【适合肤质】所有肤质【商品色号】01、02、04",@"text",@"ClearSkin.png",@"image", nil];
+        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"【商品名称】LADUREE拉杜丽 贵族玫瑰花瓣造型腮红修容\n【商品产地】日本\n【商品包装】盒装\n【适合肤质】所有肤质\n【商品色号】01、02、04",@"text",@"ClearSkin.png",@"image", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
-        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"",@"text",@"BareMinerals.png",@"image", nil];
+        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"",@"text",@"ClearSkin.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
 
     }
