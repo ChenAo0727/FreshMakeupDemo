@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DetailInfomationTool.h"
 
 #define BOOK_COLLECTIONVIEW_CELL @"BookCollectionViewCell"
 
@@ -28,11 +29,15 @@ typedef void (^DidSelectCellBllock) (UICollectionViewCell * cell);
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *nextViewTopConstraint;
 
 @property (strong, nonatomic) DidSelectCellBllock didSelectCellBllock;
+@property (strong, nonatomic) NSIndexPath *indexPath;
+@property (strong, nonatomic) DetailInfomationTool *detailInfomationTool;
 
 - (void)updateToOpenBookStatus;
 - (void)updateToCloseBookStatus;
 - (void)animationToOpenBookWithCompletion:(void (^)(BOOL finished))completion;
 - (void)animationToCloseBookWithCompletion:(void (^)(BOOL finished))completion;
 + (instancetype)create;
+- (void)updateWithDetailInfomationTool:(DetailInfomationTool *)detailInfomationTool;
+- (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment;
 
 @end

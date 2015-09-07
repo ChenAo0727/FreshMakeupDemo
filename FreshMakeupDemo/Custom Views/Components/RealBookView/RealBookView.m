@@ -17,6 +17,17 @@
     return [[[NSBundle mainBundle] loadNibNamed:@"RealBookView" owner:nil options:nil] lastObject];
 }
 
+- (void)updateWithDetailInfomationTool:(DetailInfomationTool *)detailInfomationTool {
+    self.detailInfomationTool = detailInfomationTool;
+    [self updateWithCoverImage:detailInfomationTool.coverImage title:detailInfomationTool.title shortComment:detailInfomationTool.shortComment];
+}
+
+- (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment {
+    self.converImageView.image = coverImage;
+    self.titleLabel.text = title;
+    self.descriptionLabel.text = shortComment;
+}
+
 - (void)awakeFromNib {
     originTransform = self.coverContainerView.layer.transform;
     [self addBottomShadow];
