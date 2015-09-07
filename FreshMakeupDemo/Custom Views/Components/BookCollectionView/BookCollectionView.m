@@ -46,6 +46,7 @@
     self.lineCollectionView.delegate = self;
     [self.lineCollectionView registerNib:[UINib nibWithNibName:@"RealBookView" bundle:nil] forCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL];
     [self configureGuiAnimation];
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)dealloc {
