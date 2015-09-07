@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DetailInfomationTool.h"
 #import "FreshSaleInfomationTool.h"
-
+#import "FreshTryInformationTool.h"
 #define BOOK_COLLECTIONVIEW_CELL @"BookCollectionViewCell"
 
 typedef void (^DidSelectCellBllock) (UICollectionViewCell * cell);
@@ -33,14 +33,14 @@ typedef void (^DidSelectCellBllock) (UICollectionViewCell * cell);
 @property (strong, nonatomic) NSIndexPath *indexPath;
 @property (strong, nonatomic) DetailInfomationTool *detailInfomationTool;
 @property (strong, nonatomic) FreshSaleInfomationTool *freshSaleInfomationTool;
-
+@property (strong, nonatomic) FreshTryInformationTool *freshTryInformationTool;
 - (void)updateToOpenBookStatus;
 - (void)updateToCloseBookStatus;
 - (void)animationToOpenBookWithCompletion:(void (^)(BOOL finished))completion;
 - (void)animationToCloseBookWithCompletion:(void (^)(BOOL finished))completion;
 + (instancetype)create;
-- (void)updateWithDetailInfomationTool:(DetailInfomationTool *)detailInfomationTool;
 - (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment;
+- (void)updateWithDetailInfomationTool:(DetailInfomationTool *)detailInfomationTool;
 - (void)updateWithFreshSaleInfomationTool:(FreshSaleInfomationTool *)freshSaleInfomationTool;
-
+- (void)updateWithFreshTryInformationTool:(FreshTryInformationTool *)freshTryInformationTool;
 @end

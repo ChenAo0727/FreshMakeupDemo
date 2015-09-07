@@ -19,5 +19,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *titleImageViewTime;
 @property (strong, nonatomic) IBOutlet UILabel *titltImageViewTimerLabel;
 @property (strong, nonatomic) NSTimer *timerCell;
+- (void)updateCoverImage:(UIImage *)image Title:(NSString *)title;
 - (void)startTimer;
 @end

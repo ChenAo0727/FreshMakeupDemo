@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FreshTryInformationTool.h"
 @protocol EarlyAdoptersTheTrialViewControllerDataSourceDelegate <NSObject>
 - (void)EarlyAdoptersTheTrialViewControllerShakeAshake;
 @end
+
 @interface EarlyAdoptersTheTrialViewControllerDataSource : NSObject<UITableViewDataSource>
 @property (nonatomic, weak) id<EarlyAdoptersTheTrialViewControllerDataSourceDelegate>delegate;
+@property (strong, nonatomic)FreshTryInformationTool *freshTryInformationTool;
 @end

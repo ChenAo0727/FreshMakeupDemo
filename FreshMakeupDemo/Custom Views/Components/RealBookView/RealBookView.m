@@ -27,6 +27,13 @@
     [self updateWithCoverImage:freshSaleInfomationTool.image title:freshSaleInfomationTool.title shortComment:freshSaleInfomationTool.commentary];
 }
 
+- (void)updateWithFreshTryInformationTool:(FreshTryInformationTool *)freshTryInformationTool {
+
+    self.freshTryInformationTool = freshTryInformationTool;
+    [self updateWithCoverImage:freshTryInformationTool.image title:freshTryInformationTool.title shortComment:freshTryInformationTool.shortComment];
+
+}
+
 - (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment {
     self.converImageView.image = coverImage;
     self.titleLabel.text = title;

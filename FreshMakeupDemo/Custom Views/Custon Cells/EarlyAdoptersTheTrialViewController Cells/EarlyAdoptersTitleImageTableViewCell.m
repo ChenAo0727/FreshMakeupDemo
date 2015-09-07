@@ -21,7 +21,12 @@
     // Configure the view for the selected state
 }
 
+- (void)updateCoverImage:(UIImage *)image Title:(NSString *)title {
+    self.titleImageView.image = image;
+    self.titleImageViewTitltLabel.text = title;
 
+
+}
 - (void)startTimer {
    self.timerCell = [NSTimer scheduledTimerWithTimeInterval:1.0f target:self selector:@selector(timerFire) userInfo:nil repeats:YES];
 }
