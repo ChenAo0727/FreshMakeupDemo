@@ -29,9 +29,11 @@
                     </imageView>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="4Uw-BW-puQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9Uq-ms-eP1"/>
                     <constraint firstItem="oZT-yZ-PRQ" firstAttribute="centerX" secondItem="4Uw-BW-puQ" secondAttribute="centerX" id="A1c-cd-YmN"/>
                     <constraint firstItem="oZT-yZ-PRQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ADq-co-WEP"/>
                     <constraint firstAttribute="bottomMargin" secondItem="oZT-yZ-PRQ" secondAttribute="bottom" constant="35" id="HJ3-vW-MmK"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="4Uw-BW-puQ" secondAttribute="trailing" id="LgM-2u-VcW"/>
                     <constraint firstAttribute="trailing" secondItem="oZT-yZ-PRQ" secondAttribute="trailing" id="NHG-zN-8BO"/>
                     <constraint firstItem="oZT-yZ-PRQ" firstAttribute="top" secondItem="4Uw-BW-puQ" secondAttribute="bottom" constant="8" id="Tyr-Bx-FC7"/>
                     <constraint firstAttribute="centerX" secondItem="4Uw-BW-puQ" secondAttribute="centerX" id="YaR-0D-PMS"/>

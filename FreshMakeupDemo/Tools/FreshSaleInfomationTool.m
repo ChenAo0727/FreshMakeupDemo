@@ -50,7 +50,7 @@ return self;
 - (instancetype)initWithPanasonic{
     if (self = [super init]) {
         
-        self.title = @"Panasonic 松下 EH-SA31-P离子蒸汽美容器";
+        self.title = @"松下 EH-SA31-P离子蒸汽美容器";
         self.price = @"349";
         self.labelArray = [NSArray arrayWithObjects:@"Panasonic",@"松下",@"EH-SA31-P离子蒸汽美容器",nil];
         self.image = [UIImage imageNamed:@"freshSale_Panasonic_image"];
