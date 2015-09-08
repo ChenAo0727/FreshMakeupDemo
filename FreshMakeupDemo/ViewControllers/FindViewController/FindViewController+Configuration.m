@@ -161,7 +161,6 @@
 
 //手势 结束 重启  动画
 - (void)slideMotion:(SlideMotion *)slideMotion didEndSlideView:(UIView *)view {
-    NSLog(@"=====%ld",(long)self.set);
     if (self.set < -61 ) {
         [self findThreeDimensional];
     } else if (self.set > -60 && self.set < 0) {
@@ -184,7 +183,6 @@
         } else {
             [self returnLeftAnimationView:self.imageViewThree ViewTow:self.imageViewFour];
         }
-
     } else if (self.set > 60) {
         [self findRightDimensional];
     } else  {
