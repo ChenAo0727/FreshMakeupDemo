@@ -18,5 +18,6 @@
 - (instancetype)initWithMAYSU;
 - (instancetype)initWithBOBBI;
 - (instancetype)initWithJurlique;
+- (instancetype)initWithClearSkin;
 @end
 

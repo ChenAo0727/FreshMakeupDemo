@@ -11,7 +11,7 @@
 @implementation FreshSaleInfomationTool
 - (instancetype)initWithDALGCRInfomation {
     if (self = [super init]) {
-      self.title = @"Dior Addict LIP GLOW COLOR REVIEW 自然魅惑润唇膏（珊瑚色)";
+      self.title = @"Dior 自然魅惑润唇膏（珊瑚色)";
         self.price = @"165.15";
         self.priceImage = [UIImage imageNamed:@"dior_price_image"];
         self.labelArray = [NSMutableArray arrayWithObjects:@"润唇膏",@"addict dior", nil];
@@ -24,7 +24,7 @@
 
 - (instancetype)initWithMISSHA{
     if (self = [super init]) {
-        self.title = @"MISSHA 谜尚 魅力莹润无暇气垫粉凝霜 21号";
+        self.title = @"谜尚 魅力莹润无暇气垫粉凝霜 21号";
         self.price = @"49";
         self.priceImage = [UIImage imageNamed:@"mishang_price_image"];
         self.labelArray = [NSArray arrayWithObjects:@"MISSHA",@"谜尚",@"BB霜", @"魅力莹润无暇", nil];
@@ -37,7 +37,7 @@
 - (instancetype)initWithBIODERMA{
     if (self = [super init]) {
         
-    self.title = @"舒妍温和保湿卸妆水500ml";
+    self.title = @"贝德码 舒妍温和保湿卸妆水500ml";
     self.price = @"99";
     self.priceImage = [UIImage imageNamed:@"bioderma_price_image"];
     self.labelArray = [NSArray arrayWithObjects:@"卸妆水",@"保湿卸妆水",@" 舒妍温和",@"贝德玛",nil];
@@ -62,7 +62,7 @@
 
 - (instancetype)initWithClarisonicInfomation {
     if (self = [super init]) {
-        self.title = @"Clarisonic 科莱丽 声波洁面仪（智能型)";
+        self.title = @"科莱丽 声波洁面仪（智能型)";
         self.price = @"1400";
         self.priceImage = [UIImage imageNamed:@"clarisonic_price_image"];
         self.labelArray = [NSMutableArray arrayWithObjects:@"洁面仪",@"声波洁面仪",@"Clarisonic", nil];

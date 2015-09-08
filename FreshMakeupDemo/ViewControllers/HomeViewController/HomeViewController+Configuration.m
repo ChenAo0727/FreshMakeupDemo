@@ -42,12 +42,11 @@
 
 - (void)configureFreshMakeupData {
     self.freshMakeupArray = @[
-                              [[DetailInfomationTool alloc] initWithSK],
-                              [[DetailInfomationTool alloc] initWithElizabethArdenInfomation],
+                              [[DetailInfomationTool alloc] initWithClearSkin],
                               [[DetailInfomationTool alloc] initWithHelpClearSkinInfomation],
+                              [[DetailInfomationTool alloc] initWithSK],
                               [[DetailInfomationTool alloc] initWithSisley],
-                              [[DetailInfomationTool alloc] initWithLanZhi],
-                              [[DetailInfomationTool alloc] initWithAupres],
+                              [[DetailInfomationTool alloc] initWithBobblBrownInfomation],
                               [[DetailInfomationTool alloc] initWithBareMineralsInformation]
                               ];
 
@@ -56,12 +55,12 @@
 - (void)configureFreshSaleData {
     
     self.freshSaleArray = @[
-                            [[FreshSaleInfomationTool alloc] initWithBIODERMA],
-                            [[FreshSaleInfomationTool alloc] initWithClarisonicInfomation],
-                            [[FreshSaleInfomationTool alloc] initWithDALGCRInfomation],
-                            [[FreshSaleInfomationTool alloc] initWithLilyBellInfomation],
                             [[FreshSaleInfomationTool alloc] initWithMISSHA],
-                            [[FreshSaleInfomationTool alloc] initWithPanasonic]
+                            [[FreshSaleInfomationTool alloc] initWithBIODERMA],
+                            [[FreshSaleInfomationTool alloc] initWithPanasonic],
+                            [[FreshSaleInfomationTool alloc] initWithDALGCRInfomation],
+                            [[FreshSaleInfomationTool alloc] initWithClarisonicInfomation],
+                            [[FreshSaleInfomationTool alloc] initWithLilyBellInfomation]
                             ];
 
 }
@@ -70,9 +69,10 @@
     
     self.freshTryArray = @[
                             [[FreshTryInformationTool alloc]initWithDanceLegend],
-                            [[FreshTryInformationTool alloc]initWithForBeloveOne],
-                            [[FreshTryInformationTool alloc]initWithMAYSU],
                             [[FreshTryInformationTool alloc]initWithBOBBI],
+                            [[FreshTryInformationTool alloc]initWithForBeloveOne],
+                            [[FreshTryInformationTool alloc] initWithClearSkin],
+                            [[FreshTryInformationTool alloc]initWithMAYSU],
                             [[FreshTryInformationTool alloc]initWithJurlique]
                            ];
 
