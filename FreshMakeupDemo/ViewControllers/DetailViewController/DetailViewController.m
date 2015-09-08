@@ -42,13 +42,6 @@
     
 }
 
-- (IBAction)detailOnTrialButtonAction:(id)sender {
-    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
-    FreshTryInformationTool *freshteryInformatinTool = [[FreshTryInformationTool alloc] initWithBOBBI];
-    [earlyAdoptersTheTrialViewController updateDatasourceWithFreshTryTool:freshteryInformatinTool];
-    [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
-}
-
 - (void)dealloc {
     self.detailCollectionView.dataSource = nil;
     self.detailCollectionView.delegate = nil;
