@@ -119,6 +119,17 @@
 		05D76C411B9EC6580061546F /* StrengthGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C3F1B9EC6580061546F /* StrengthGameViewController.m */; };
 		05D76C421B9EC6580061546F /* StrengthGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C401B9EC6580061546F /* StrengthGameViewController.xib */; };
 		05D76C441B9EC7AE0061546F /* strength_game.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C431B9EC7AE0061546F /* strength_game.png */; };
+		05D76C511B9ED6930061546F /* Aupres-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C461B9ED6930061546F /* Aupres-logo.png */; };
+		05D76C521B9ED6930061546F /* bareminerals-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C471B9ED6930061546F /* bareminerals-logo.png */; };
+		05D76C531B9ED6930061546F /* bobbi-brown-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C481B9ED6930061546F /* bobbi-brown-logo.png */; };
+		05D76C541B9ED6930061546F /* cbp-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C491B9ED6930061546F /* cbp-logo.png */; };
+		05D76C551B9ED6930061546F /* ClearSkin-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C4A1B9ED6930061546F /* ClearSkin-logo.png */; };
+		05D76C561B9ED6930061546F /* ElizabethArden-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C4B1B9ED6930061546F /* ElizabethArden-logo.png */; };
+		05D76C571B9ED6930061546F /* EsteeLauder-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C4C1B9ED6930061546F /* EsteeLauder-logo.png */; };
+		05D76C581B9ED6930061546F /* help-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C4D1B9ED6930061546F /* help-logo.png */; };
+		05D76C591B9ED6930061546F /* LanZhi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C4E1B9ED6930061546F /* LanZhi-logo.png */; };
+		05D76C5A1B9ED6930061546F /* Sisley-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C4F1B9ED6930061546F /* Sisley-logo.png */; };
+		05D76C5B1B9ED6930061546F /* skii-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C501B9ED6930061546F /* skii-logo.png */; };
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		05DEA0541B880C560094E123 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA0521B880C560094E123 /* black.png */; };
@@ -477,6 +488,17 @@
 		05D76C3F1B9EC6580061546F /* StrengthGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrengthGameViewController.m; sourceTree = "<group>"; };
 		05D76C401B9EC6580061546F /* StrengthGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrengthGameViewController.xib; sourceTree = "<group>"; };
 		05D76C431B9EC7AE0061546F /* strength_game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strength_game.png; sourceTree = "<group>"; };
+		05D76C461B9ED6930061546F /* Aupres-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Aupres-logo.png"; sourceTree = "<group>"; };
+		05D76C471B9ED6930061546F /* bareminerals-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bareminerals-logo.png"; sourceTree = "<group>"; };
+		05D76C481B9ED6930061546F /* bobbi-brown-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bobbi-brown-logo.png"; sourceTree = "<group>"; };
+		05D76C491B9ED6930061546F /* cbp-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cbp-logo.png"; sourceTree = "<group>"; };
+		05D76C4A1B9ED6930061546F /* ClearSkin-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ClearSkin-logo.png"; sourceTree = "<group>"; };
+		05D76C4B1B9ED6930061546F /* ElizabethArden-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ElizabethArden-logo.png"; sourceTree = "<group>"; };
+		05D76C4C1B9ED6930061546F /* EsteeLauder-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "EsteeLauder-logo.png"; sourceTree = "<group>"; };
+		05D76C4D1B9ED6930061546F /* help-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-logo.png"; sourceTree = "<group>"; };
+		05D76C4E1B9ED6930061546F /* LanZhi-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LanZhi-logo.png"; sourceTree = "<group>"; };
+		05D76C4F1B9ED6930061546F /* Sisley-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sisley-logo.png"; sourceTree = "<group>"; };
+		05D76C501B9ED6930061546F /* skii-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skii-logo.png"; sourceTree = "<group>"; };
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05DEA0521B880C560094E123 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -1046,6 +1068,24 @@
 			path = StrengthGameViewController;
 			sourceTree = "<group>";
 		};
+		05D76C451B9ED6930061546F /* logo */ = {
+			isa = PBXGroup;
+			children = (
+				05D76C461B9ED6930061546F /* Aupres-logo.png */,
+				05D76C471B9ED6930061546F /* bareminerals-logo.png */,
+				05D76C481B9ED6930061546F /* bobbi-brown-logo.png */,
+				05D76C491B9ED6930061546F /* cbp-logo.png */,
+				05D76C4A1B9ED6930061546F /* ClearSkin-logo.png */,
+				05D76C4B1B9ED6930061546F /* ElizabethArden-logo.png */,
+				05D76C4C1B9ED6930061546F /* EsteeLauder-logo.png */,
+				05D76C4D1B9ED6930061546F /* help-logo.png */,
+				05D76C4E1B9ED6930061546F /* LanZhi-logo.png */,
+				05D76C4F1B9ED6930061546F /* Sisley-logo.png */,
+				05D76C501B9ED6930061546F /* skii-logo.png */,
+			);
+			path = logo;
+			sourceTree = "<group>";
+		};
 		05DEA0561B8858CB0094E123 /* Shake a shakeImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1582,6 +1622,7 @@
 				389A20031B9D7BE30035BC2B /* FreshTryImage */,
 				389A1FF61B9D3A8E0035BC2B /* FreshSaleImage */,
 				389A1FD71B9AD5650035BC2B /* Product */,
+				05D76C451B9ED6930061546F /* logo */,
 				05D76C431B9EC7AE0061546F /* strength_game.png */,
 				2EB4EF4D1B9692A50080185A /* worth_slideview_car.png */,
 				2EB4EF4E1B9692A50080185A /* worth_slideview_notworth.png */,
@@ -1945,10 +1986,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05D76C591B9ED6930061546F /* LanZhi-logo.png in Resources */,
 				05E04CDA1B9697CE00E5D28C /* ImageMaxCell.xib in Resources */,
 				2E77068B1B8829B30024282D /* CommentCell.xib in Resources */,
 				389A20131B9D7D5B0035BC2B /* MAYSU.png in Resources */,
 				054DFD501B81AB8D00651F11 /* 0007.png in Resources */,
+				05D76C571B9ED6930061546F /* EsteeLauder-logo.png in Resources */,
 				2EE6FA681B9E79E900EE5A26 /* Icon@3x.png in Resources */,
 				389A1FE91B9AE07B0035BC2B /* LanZhi.png in Resources */,
 				058ABF571B82C58100A0BA8A /* findhottopic2.png in Resources */,
@@ -1975,6 +2018,7 @@
 				2E6B46441B81A85400BF39D5 /* home_user_info_icon.png in Resources */,
 				389A1FED1B9AE13E0035BC2B /* LanZhiFelling.png in Resources */,
 				2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */,
+				05D76C581B9ED6930061546F /* help-logo.png in Resources */,
 				389A201D1B9E77870035BC2B /* FeelingTextCell.xib in Resources */,
 				2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */,
 				05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */,
@@ -2015,6 +2059,7 @@
 				05D76C3A1B9EBBA70061546F /* feeling_yadun_feeling_tow.png in Resources */,
 				0596FFF41B9AF06E00E5653D /* detail_yadun_produc.png in Resources */,
 				054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */,
+				05D76C5B1B9ED6930061546F /* skii-logo.png in Resources */,
 				389A1FE51B9ADEC00035BC2B /* SKIntroduce.png in Resources */,
 				2E4C0C841B900B3F00ECD2BF /* realbook_background.png in Resources */,
 				058ABF521B82C58100A0BA8A /* findarticle4.png in Resources */,
@@ -2027,6 +2072,8 @@
 				054DFD271B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.xib in Resources */,
 				05F8B5011B9D402B0011FD05 /* freshSale_Clarisonic_image.png in Resources */,
 				054DFD491B81AAEE00651F11 /* apply_head_product.png in Resources */,
+				05D76C561B9ED6930061546F /* ElizabethArden-logo.png in Resources */,
+				05D76C541B9ED6930061546F /* cbp-logo.png in Resources */,
 				2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */,
 				389A1FFC1B9D3E810035BC2B /* freshSale_Panasonic_image.png in Resources */,
 				2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */,
@@ -2056,6 +2103,7 @@
 				389A1FEF1B9AE2100035BC2B /* Aupres.png in Resources */,
 				2EB4EF5E1B96C0510080185A /* TagsTableViewCell.xib in Resources */,
 				2E6B46431B81A85400BF39D5 /* home_discovery_icon.png in Resources */,
+				05D76C521B9ED6930061546F /* bareminerals-logo.png in Resources */,
 				0596FFF71B9AF06E00E5653D /* detail_yashilandai_cover.png in Resources */,
 				05DEA0541B880C560094E123 /* black.png in Resources */,
 				057A263A1B86CC8C003DAF07 /* MineViewController.xib in Resources */,
@@ -2077,6 +2125,7 @@
 				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
 				2EA556FB1B95725A00C696B0 /* DetailCommentView.xib in Resources */,
 				059E88BE1B8414D30086544F /* FindBranchTableViewCell.xib in Resources */,
+				05D76C551B9ED6930061546F /* ClearSkin-logo.png in Resources */,
 				389A1FFA1B9D3DE00035BC2B /* freshSale_BIODERMA_image.png in Resources */,
 				05DEA0621B8858CB0094E123 /* shakeaShake.png in Resources */,
 				0596FFF11B9AF06E00E5653D /* detail_sisley_product.png in Resources */,
@@ -2093,8 +2142,11 @@
 				2E77069B1B88890D0024282D /* TrialCollectionViewCell.xib in Resources */,
 				2E21BAD11B897F91001F75D8 /* detail_cover_image.png in Resources */,
 				2E7706901B883C460024282D /* detail_comment_icon.png in Resources */,
+				05D76C5A1B9ED6930061546F /* Sisley-logo.png in Resources */,
 				054DFD3C1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib in Resources */,
+				05D76C511B9ED6930061546F /* Aupres-logo.png in Resources */,
 				389A1FEB1B9AE0E30035BC2B /* LanZhiIntroduce.png in Resources */,
+				05D76C531B9ED6930061546F /* bobbi-brown-logo.png in Resources */,
 				2E7EB50B1B877FAA00DA6494 /* detail_introduction_image.png in Resources */,
 				3876B2651B95361500D916FF /* NewCommentCell.xib in Resources */,
 				2E77067F1B8813FE0024282D /* detail_wrinkle_icon.png in Resources */,
