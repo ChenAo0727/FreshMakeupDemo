@@ -112,6 +112,10 @@
 		05D76C2D1B9E80D80061546F /* FeelIngViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C2B1B9E80D80061546F /* FeelIngViewController.xib */; };
 		05D76C301B9E82720061546F /* FeelIngViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C2F1B9E82720061546F /* FeelIngViewController+Configuration.m */; };
 		05D76C331B9E82AF0061546F /* FeelIngViwControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C321B9E82AF0061546F /* FeelIngViwControllerDataSource.m */; };
+		05D76C361B9EB5BE0061546F /* FeelingInformationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C351B9EB5BE0061546F /* FeelingInformationTool.m */; };
+		05D76C3A1B9EBBA70061546F /* feeling_yadun_feeling_tow.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C371B9EBBA70061546F /* feeling_yadun_feeling_tow.png */; };
+		05D76C3B1B9EBBA70061546F /* feeling_yadun_feeling_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C381B9EBBA70061546F /* feeling_yadun_feeling_three.png */; };
+		05D76C3C1B9EBBA70061546F /* feeling_yadun_feeling_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C391B9EBBA70061546F /* feeling_yadun_feeling_one.png */; };
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		05DEA0541B880C560094E123 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA0521B880C560094E123 /* black.png */; };
@@ -455,6 +459,11 @@
 		05D76C2F1B9E82720061546F /* FeelIngViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FeelIngViewController+Configuration.m"; sourceTree = "<group>"; };
 		05D76C311B9E82AF0061546F /* FeelIngViwControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeelIngViwControllerDataSource.h; sourceTree = "<group>"; };
 		05D76C321B9E82AF0061546F /* FeelIngViwControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeelIngViwControllerDataSource.m; sourceTree = "<group>"; };
+		05D76C341B9EB5BE0061546F /* FeelingInformationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeelingInformationTool.h; sourceTree = "<group>"; };
+		05D76C351B9EB5BE0061546F /* FeelingInformationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeelingInformationTool.m; sourceTree = "<group>"; };
+		05D76C371B9EBBA70061546F /* feeling_yadun_feeling_tow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_tow.png; sourceTree = "<group>"; };
+		05D76C381B9EBBA70061546F /* feeling_yadun_feeling_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_three.png; sourceTree = "<group>"; };
+		05D76C391B9EBBA70061546F /* feeling_yadun_feeling_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_one.png; sourceTree = "<group>"; };
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05DEA0521B880C560094E123 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -1447,6 +1456,8 @@
 				05F8B4FA1B9D328C0011FD05 /* FreshSaleInfomationTool.m */,
 				389A20001B9D74B20035BC2B /* FreshTryInformationTool.h */,
 				389A20011B9D74B20035BC2B /* FreshTryInformationTool.m */,
+				05D76C341B9EB5BE0061546F /* FeelingInformationTool.h */,
+				05D76C351B9EB5BE0061546F /* FeelingInformationTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -1554,6 +1565,9 @@
 				2E77067A1B8813FE0024282D /* detail_good_price_icon.png */,
 				2E77068C1B883C460024282D /* detail_approve_icon.png */,
 				2E77068D1B883C460024282D /* detail_comment_icon.png */,
+				05D76C371B9EBBA70061546F /* feeling_yadun_feeling_tow.png */,
+				05D76C381B9EBBA70061546F /* feeling_yadun_feeling_three.png */,
+				05D76C391B9EBBA70061546F /* feeling_yadun_feeling_one.png */,
 				2E77068E1B883C460024282D /* detail_watch_icon.png */,
 				2E77067B1B8813FE0024282D /* detail_keepwet_icon.png */,
 				2E77067C1B8813FE0024282D /* detail_wrinkle_icon.png */,
@@ -1941,17 +1955,20 @@
 				2E77068F1B883C460024282D /* detail_approve_icon.png in Resources */,
 				2E7706791B8812E10024282D /* FeatureDescriptionCell.xib in Resources */,
 				2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */,
+				05D76C3B1B9EBBA70061546F /* feeling_yadun_feeling_three.png in Resources */,
 				2E132F8B1B85B0E7005DCF14 /* home_down_guide3.png in Resources */,
 				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
 				054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */,
 				05DEA0681B8858CB0094E123 /* undertheNew.png in Resources */,
 				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
+				05D76C3A1B9EBBA70061546F /* feeling_yadun_feeling_tow.png in Resources */,
 				0596FFF41B9AF06E00E5653D /* detail_yadun_produc.png in Resources */,
 				054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */,
 				389A1FE51B9ADEC00035BC2B /* SKIntroduce.png in Resources */,
 				2E4C0C841B900B3F00ECD2BF /* realbook_background.png in Resources */,
 				058ABF521B82C58100A0BA8A /* findarticle4.png in Resources */,
 				054DFD411B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib in Resources */,
+				05D76C3C1B9EBBA70061546F /* feeling_yadun_feeling_one.png in Resources */,
 				054DFD4A1B81AAEE00651F11 /* apply_luck.png in Resources */,
 				058ABF511B82C58100A0BA8A /* findarticle3.png in Resources */,
 				05E04CE61B96C36500E5D28C /* TextCell.xib in Resources */,
@@ -2218,6 +2235,7 @@
 				05D76C331B9E82AF0061546F /* FeelIngViwControllerDataSource.m in Sources */,
 				2ED04D681B9C785300D3F4B1 /* CirclePopTransition.m in Sources */,
 				2EB611A11B86EFDF000414A2 /* BaseInfomationCell.m in Sources */,
+				05D76C361B9EB5BE0061546F /* FeelingInformationTool.m in Sources */,
 				2EB611B81B8755A7000414A2 /* ImageCell.m in Sources */,
 				380D8F7B1B8C37AF000FA98C /* CommentViewLayout.m in Sources */,
 				057A264F1B86D08C003DAF07 /* MineViewController+Configuratin.m in Sources */,

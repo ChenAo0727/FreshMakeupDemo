@@ -7,7 +7,9 @@
 //
 
 #import "FeelIngViewController.h"
+#import "UIScreen+Utility.h"
 #import "FeelIngViewController+Configuration.h"
+#import "feelingImageCell.h"
 @interface FeelIngViewController ()
 
 @end
@@ -24,7 +26,12 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 1 || indexPath.row % 2 == 1) {
-        return 192;
+        feelingImageCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_IMAGE_CELL];
+        CGRect frame = cell.frame;
+        frame.size.width = [UIScreen screenWidth];
+        cell.frame = frame;
+        CGFloat cellHeight = [cell getCellHeight];
+        return cellHeight;
     } else {
     return 300;
     }

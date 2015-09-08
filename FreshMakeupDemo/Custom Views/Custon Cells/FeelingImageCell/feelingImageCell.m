@@ -14,7 +14,10 @@
     // Initialization code
     
 }
-
+- (CGFloat)getCellHeight {
+    
+    return self.feelImageView.frame.size.height + 10;
+}
 - (void)updateWithFeelImageView:(NSString *)feelImageView Feelllabel:(NSString *)feelllabel {
     self.feelImageView.image = [UIImage imageNamed:feelImageView];
     if ([feelllabel isEqualToString:@""]) {

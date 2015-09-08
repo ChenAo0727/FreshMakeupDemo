@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "FeelingInformationTool.h"
 @interface FeelIngViwControllerDataSource : NSObject<UITableViewDataSource>
-
+@property (strong, nonatomic)FeelingInformationTool *feelingInformationTool;
 @end
