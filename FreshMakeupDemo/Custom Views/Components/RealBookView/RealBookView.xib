@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -77,6 +78,12 @@
                                     <color key="textColor" red="0.77254901960784317" green="0.7686274509803922" blue="0.76078431372549016" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dior_price_image.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qoc-rr-nGK">
+                                    <rect key="frame" x="8" y="10" width="100" height="72"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Qoc-rr-nGK" secondAttribute="height" multiplier="32:23" id="zaF-Ns-rO2"/>
+                                    </constraints>
+                                </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="book_shadow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mpw-ln-yRp">
                                     <rect key="frame" x="0.0" y="0.0" width="35" height="351"/>
                                     <constraints>
@@ -93,6 +100,7 @@
                                 <constraint firstAttribute="bottom" secondItem="sET-9S-l8P" secondAttribute="bottom" constant="105" id="DxF-OZ-llW"/>
                                 <constraint firstItem="8V0-xx-8fk" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" id="Fom-4h-4kq"/>
                                 <constraint firstItem="U1u-oH-nvq" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" constant="15" id="G5b-5P-xKr"/>
+                                <constraint firstAttribute="trailing" secondItem="Qoc-rr-nGK" secondAttribute="trailing" constant="145" id="Hgj-Mp-0M5"/>
                                 <constraint firstAttribute="trailing" secondItem="sET-9S-l8P" secondAttribute="trailing" id="Ivt-4q-Cgj"/>
                                 <constraint firstAttribute="trailing" secondItem="U1u-oH-nvq" secondAttribute="trailing" constant="15" id="Je2-m1-PBg"/>
                                 <constraint firstItem="kLz-kq-jnW" firstAttribute="top" secondItem="8V0-xx-8fk" secondAttribute="bottom" constant="5" id="Pwg-rs-MRq"/>
@@ -100,8 +108,10 @@
                                 <constraint firstAttribute="bottom" secondItem="Mpw-ln-yRp" secondAttribute="bottom" constant="7" id="Ur2-Ws-bOO"/>
                                 <constraint firstAttribute="trailing" secondItem="0wt-HY-eaI" secondAttribute="trailing" id="cn0-e6-2G8"/>
                                 <constraint firstItem="8V0-xx-8fk" firstAttribute="top" secondItem="sET-9S-l8P" secondAttribute="bottom" constant="-1" id="eTx-gm-9kg"/>
+                                <constraint firstItem="Qoc-rr-nGK" firstAttribute="top" secondItem="f4K-WV-aLo" secondAttribute="top" constant="10" id="lph-5p-R3m"/>
                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="U1u-oH-nvq" secondAttribute="bottom" constant="15" id="oJn-7u-tGu"/>
                                 <constraint firstAttribute="trailing" secondItem="8V0-xx-8fk" secondAttribute="trailing" id="oRB-Fa-ffc"/>
+                                <constraint firstItem="Qoc-rr-nGK" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" constant="8" id="phU-S7-RGd"/>
                                 <constraint firstItem="Mpw-ln-yRp" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" id="tJN-uZ-jwo"/>
                                 <constraint firstItem="kLz-kq-jnW" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" constant="15" id="ugJ-8b-prT"/>
                                 <constraint firstItem="sET-9S-l8P" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" id="xYb-C6-yzm"/>
@@ -156,6 +166,7 @@
                 <outlet property="nextViewLeftConstraint" destination="6D3-Ss-0MQ" id="Z2q-Pi-7aB"/>
                 <outlet property="nextViewRightConstraint" destination="MQ2-Nh-d6f" id="2Pc-Zx-yzI"/>
                 <outlet property="nextViewTopConstraint" destination="Gdh-SV-we9" id="tps-n3-at4"/>
+                <outlet property="priceImageView" destination="Qoc-rr-nGK" id="HVE-LR-aT9"/>
                 <outlet property="titleLabel" destination="kLz-kq-jnW" id="jMI-BZ-Irs"/>
             </connections>
             <point key="canvasLocation" x="248.5" y="356.5"/>
@@ -164,6 +175,7 @@
     <resources>
         <image name="book_shadow.png" width="720" height="1280"/>
         <image name="detail_cover_image.png" width="300" height="270"/>
+        <image name="dior_price_image.png" width="189" height="155"/>
         <image name="interval.png" width="559" height="3"/>
         <image name="realbook_background.png" width="573" height="833"/>
     </resources>

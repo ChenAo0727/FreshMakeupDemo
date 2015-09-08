@@ -28,6 +28,7 @@ typedef void (^DidSelectCellBllock) (UICollectionViewCell * cell);
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *nextViewBottomConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *nextViewLeftConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *nextViewTopConstraint;
+@property (weak, nonatomic) IBOutlet UIImageView *priceImageView;
 
 @property (strong, nonatomic) DidSelectCellBllock didSelectCellBllock;
 @property (strong, nonatomic) NSIndexPath *indexPath;
@@ -39,7 +40,7 @@ typedef void (^DidSelectCellBllock) (UICollectionViewCell * cell);
 - (void)animationToOpenBookWithCompletion:(void (^)(BOOL finished))completion;
 - (void)animationToCloseBookWithCompletion:(void (^)(BOOL finished))completion;
 + (instancetype)create;
-- (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment;
+- (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment priceImage:(UIImage *)priceImage;
 - (void)updateWithDetailInfomationTool:(DetailInfomationTool *)detailInfomationTool;
 - (void)updateWithFreshSaleInfomationTool:(FreshSaleInfomationTool *)freshSaleInfomationTool;
 - (void)updateWithFreshTryInformationTool:(FreshTryInformationTool *)freshTryInformationTool;

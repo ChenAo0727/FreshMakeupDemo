@@ -260,6 +260,12 @@
 		2EE6FA641B9E65D200EE5A26 /* launchScreenImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA631B9E65D200EE5A26 /* launchScreenImage.png */; };
 		2EE6FA671B9E79E900EE5A26 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA651B9E79E900EE5A26 /* Icon@2x.png */; };
 		2EE6FA681B9E79E900EE5A26 /* Icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA661B9E79E900EE5A26 /* Icon@3x.png */; };
+		2EE6FA701B9EB6BE00EE5A26 /* bioderma_price_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA6A1B9EB6BE00EE5A26 /* bioderma_price_image.png */; };
+		2EE6FA711B9EB6BE00EE5A26 /* clarisonic_price_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA6B1B9EB6BE00EE5A26 /* clarisonic_price_image.png */; };
+		2EE6FA721B9EB6BE00EE5A26 /* dior_price_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA6C1B9EB6BE00EE5A26 /* dior_price_image.png */; };
+		2EE6FA731B9EB6BE00EE5A26 /* lily_bell_price_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA6D1B9EB6BE00EE5A26 /* lily_bell_price_image.png */; };
+		2EE6FA741B9EB6BE00EE5A26 /* mishang_price_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA6E1B9EB6BE00EE5A26 /* mishang_price_image.png */; };
+		2EE6FA751B9EB6BE00EE5A26 /* panasonic_price_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA6F1B9EB6BE00EE5A26 /* panasonic_price_image.png */; };
 		2EECA6A21B998FA5007D51C2 /* ProductDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECA6A11B998FA5007D51C2 /* ProductDetailDataSource.m */; };
 		2EECA6AC1B999512007D51C2 /* SimpleRichTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECA6AA1B999512007D51C2 /* SimpleRichTextCell.m */; };
 		2EECA6AD1B999512007D51C2 /* SimpleRichTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EECA6AB1B999512007D51C2 /* SimpleRichTextCell.xib */; };
@@ -672,6 +678,12 @@
 		2EE6FA631B9E65D200EE5A26 /* launchScreenImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreenImage.png; sourceTree = "<group>"; };
 		2EE6FA651B9E79E900EE5A26 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		2EE6FA661B9E79E900EE5A26 /* Icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@3x.png"; sourceTree = "<group>"; };
+		2EE6FA6A1B9EB6BE00EE5A26 /* bioderma_price_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bioderma_price_image.png; sourceTree = "<group>"; };
+		2EE6FA6B1B9EB6BE00EE5A26 /* clarisonic_price_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clarisonic_price_image.png; sourceTree = "<group>"; };
+		2EE6FA6C1B9EB6BE00EE5A26 /* dior_price_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dior_price_image.png; sourceTree = "<group>"; };
+		2EE6FA6D1B9EB6BE00EE5A26 /* lily_bell_price_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lily_bell_price_image.png; sourceTree = "<group>"; };
+		2EE6FA6E1B9EB6BE00EE5A26 /* mishang_price_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mishang_price_image.png; sourceTree = "<group>"; };
+		2EE6FA6F1B9EB6BE00EE5A26 /* panasonic_price_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = panasonic_price_image.png; sourceTree = "<group>"; };
 		2EECA6A01B998FA5007D51C2 /* ProductDetailDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailDataSource.h; sourceTree = "<group>"; };
 		2EECA6A11B998FA5007D51C2 /* ProductDetailDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailDataSource.m; sourceTree = "<group>"; };
 		2EECA6A91B999512007D51C2 /* SimpleRichTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRichTextCell.h; sourceTree = "<group>"; };
@@ -1525,6 +1537,7 @@
 		2EA427451B7ED71900BF4705 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2EE6FA691B9EB6BE00EE5A26 /* priceImage */,
 				2EE6FA651B9E79E900EE5A26 /* Icon@2x.png */,
 				2EE6FA661B9E79E900EE5A26 /* Icon@3x.png */,
 				2EE6FA631B9E65D200EE5A26 /* launchScreenImage.png */,
@@ -1693,6 +1706,19 @@
 				2ED04D5E1B9C1AC600D3F4B1 /* OpenBookAnimtionView.m */,
 			);
 			path = OpenBookAnimtionView;
+			sourceTree = "<group>";
+		};
+		2EE6FA691B9EB6BE00EE5A26 /* priceImage */ = {
+			isa = PBXGroup;
+			children = (
+				2EE6FA6A1B9EB6BE00EE5A26 /* bioderma_price_image.png */,
+				2EE6FA6B1B9EB6BE00EE5A26 /* clarisonic_price_image.png */,
+				2EE6FA6C1B9EB6BE00EE5A26 /* dior_price_image.png */,
+				2EE6FA6D1B9EB6BE00EE5A26 /* lily_bell_price_image.png */,
+				2EE6FA6E1B9EB6BE00EE5A26 /* mishang_price_image.png */,
+				2EE6FA6F1B9EB6BE00EE5A26 /* panasonic_price_image.png */,
+			);
+			path = priceImage;
 			sourceTree = "<group>";
 		};
 		2EECA6A81B999504007D51C2 /* SimpleRichTextCell */ = {
@@ -1889,6 +1915,7 @@
 				389A1FDF1B9ADBFF0035BC2B /* sisley.png in Resources */,
 				2EECA6AD1B999512007D51C2 /* SimpleRichTextCell.xib in Resources */,
 				054DFD4C1B81AAEE00651F11 /* division.png in Resources */,
+				2EE6FA701B9EB6BE00EE5A26 /* bioderma_price_image.png in Resources */,
 				057A26521B86D255003DAF07 /* interval.png in Resources */,
 				2E6B46441B81A85400BF39D5 /* home_user_info_icon.png in Resources */,
 				389A1FED1B9AE13E0035BC2B /* LanZhiFelling.png in Resources */,
@@ -1899,6 +1926,7 @@
 				389A1FF51B9AE36F0035BC2B /* sisleyFelling.png in Resources */,
 				053BFEA41B84AD80002058BA /* yaoti.ttf in Resources */,
 				2E7EB50D1B87835800DA6494 /* detail_movie_image.png in Resources */,
+				2EE6FA741B9EB6BE00EE5A26 /* mishang_price_image.png in Resources */,
 				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				0596FFEB1B9AF06E00E5653D /* detail_CPB_cover.png in Resources */,
@@ -1916,12 +1944,14 @@
 				05E04CCB1B96928700E5D28C /* freash_sale_title_image.jpg in Resources */,
 				389A1FDB1B9ADA3F0035BC2B /* ClearSkin.png in Resources */,
 				389A1FDD1B9ADA680035BC2B /* BareMinerals.png in Resources */,
+				2EE6FA731B9EB6BE00EE5A26 /* lily_bell_price_image.png in Resources */,
 				2E77068F1B883C460024282D /* detail_approve_icon.png in Resources */,
 				2E7706791B8812E10024282D /* FeatureDescriptionCell.xib in Resources */,
 				2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */,
 				2E132F8B1B85B0E7005DCF14 /* home_down_guide3.png in Resources */,
 				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
 				054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */,
+				2EE6FA721B9EB6BE00EE5A26 /* dior_price_image.png in Resources */,
 				05DEA0681B8858CB0094E123 /* undertheNew.png in Resources */,
 				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
 				0596FFF41B9AF06E00E5653D /* detail_yadun_produc.png in Resources */,
@@ -2017,6 +2047,7 @@
 				0596FFF21B9AF06E00E5653D /* detail_yadun_cover.png in Resources */,
 				2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */,
 				2EE6FA671B9E79E900EE5A26 /* Icon@2x.png in Resources */,
+				2EE6FA751B9EB6BE00EE5A26 /* panasonic_price_image.png in Resources */,
 				05F8B5001B9D402B0011FD05 /* freshSale_LilyBell_image.png in Resources */,
 				2EB611AD1B8736EA000414A2 /* detail_logo_image.png in Resources */,
 				2E7706911B883C460024282D /* detail_watch_icon.png in Resources */,
@@ -2032,6 +2063,7 @@
 				05DEA0601B8858CB0094E123 /* last.png in Resources */,
 				058ABF4D1B82C58100A0BA8A /* findad3.jpg in Resources */,
 				2EB6119C1B86ED62000414A2 /* detail_top_image.png in Resources */,
+				2EE6FA711B9EB6BE00EE5A26 /* clarisonic_price_image.png in Resources */,
 				2EB4EF661B96CDED0080185A /* TagCollectionViewCell.xib in Resources */,
 				058ABF551B82C58100A0BA8A /* findarticleavatar3.png in Resources */,
 				389A1FF81B9D3B040035BC2B /* freshSale_MISSHA_image.png in Resources */,

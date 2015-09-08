@@ -14,7 +14,7 @@
 @property (strong, nonatomic) NSArray *labelArray;
 @property (strong, nonatomic) UIImage *image;
 @property (strong, nonatomic) NSString *commentary;
-
+@property (strong, nonatomic) UIImage *priceImage;
 
 - (instancetype)initWithMISSHA;
 - (instancetype)initWithBIODERMA;

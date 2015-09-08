@@ -61,11 +61,17 @@
 }
 
 - (void)slideMotion:(SlideMotion *)slideMotion didEndSlideView:(UIView *)view {
+    if (0 == self.carViewRightConstraint.constant) {
+        self.notWorthCountLabel.text = [NSString stringWithFormat:@"%@", @(1 + [self.notWorthCountLabel.text integerValue])];
+    } else if (self.carViewRightConstraint.constant == self.processView.frame.size.width - self.carView.frame.size.width) {
+        self.worthCountLabel.text = [NSString stringWithFormat:@"%@", @(1 + [self.worthCountLabel.text integerValue])];
+    }
     [UIView animateWithDuration:0.2 animations:^{
         [self updateCarToDefaultPostion];
     } completion:^(BOOL finished) {
-        
     }];
 }
+
+
 
 @end
