@@ -75,9 +75,11 @@
         [moreTitleCell animateZoomOutMoreTitleViewWithCompletion:^(BOOL finished) {
             [self pushViewCommentViewController];
         }];
-//        if (indexPath.section == 2 && indexPath.row == 0) {
-//            [self pushViewCommentViewController];
-//        }
+        if (indexPath.section == 2 && indexPath.row == 0) {
+            [self pushViewCommentViewController];
+        }
+       
+       
     }
 }
 
