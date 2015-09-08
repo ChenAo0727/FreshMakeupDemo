@@ -8,14 +8,19 @@
 
 #import "FeelIngViwControllerDataSource.h"
 #import "feelingImageCell.h"
+#import "FeelingTextCell.h"
 @implementation FeelIngViwControllerDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     feelingImageCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_IMAGE_CELL];
     [cell updateWithFeelImageView:@"detail_introduction_image.png" Feelllabel:@""];
+    if (indexPath.row == 1) {
+        FeelingTextCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_TEXT_CELL];
+        return cell;
+    }
     return cell;
     
 }
