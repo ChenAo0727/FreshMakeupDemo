@@ -24,7 +24,8 @@
     self.textCellLabel.text = label;
 }
 - (CGFloat)heightOfCell {
+    
     [self layoutIfNeeded];
-    return self.textCellLabel.frame.size.height;
+    return self.textCellLabel.frame.size.height + 30;
 }
 @end

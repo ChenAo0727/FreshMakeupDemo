@@ -34,6 +34,7 @@
 
 - (void)updateDatasourceWithDetailTool:(DetailInfomationTool *)detailInfomationTool {
     self.productDetailDataSource = [ProductDetailDataSource new];
+    self.productDetailDataSource.delegate = self;
     self.productDetailDataSource.detailInfomationTool = detailInfomationTool;
     [self.detailCollectionView reloadData];
 }
@@ -43,11 +44,16 @@
     
 }
 
+
+
 - (IBAction)detailOnTrialButtonAction:(id)sender {
-//    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
-//    FreshTryInformationTool *freshteryInformatinTool = [[FreshTryInformationTool alloc] initWithBOBBI];
-//    [earlyAdoptersTheTrialViewController updateDatasourceWithFreshTryTool:freshteryInformatinTool];
-//    [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
+    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
+    FreshTryInformationTool *freshteryInformatinTool = [[FreshTryInformationTool alloc] initWithBOBBI];
+    [earlyAdoptersTheTrialViewController updateDatasourceWithFreshTryTool:freshteryInformatinTool];
+    [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
+   
+}
+- (void)ProductDetailDataSourceMoreJump {
     FeelIngViewController *feelIngViewController = [[FeelIngViewController alloc] init];
     [self presentViewController:feelIngViewController animated:YES completion:nil];
 }
@@ -75,9 +81,11 @@
         [moreTitleCell animateZoomOutMoreTitleViewWithCompletion:^(BOOL finished) {
             [self pushViewCommentViewController];
         }];
-//        if (indexPath.section == 2 && indexPath.row == 0) {
-//            [self pushViewCommentViewController];
-//        }
+        if (indexPath.section == 2 && indexPath.row == 0) {
+            [self pushViewCommentViewController];
+        }
+       
+       
     }
 }
 

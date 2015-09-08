@@ -36,6 +36,7 @@
         return 384;
     
     } else if (indexPath.row == 1) {
+        
         TextCell *textCell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
         CGRect frame = textCell.frame;
         frame.size.width = [UIScreen screenWidth];
@@ -43,6 +44,7 @@
         [textCell updateWithLabel:self.freashSaleViewControllerDataSource.freshSaleInfomationTool.commentary];
         CGFloat cellHeight = [textCell heightOfCell];
        return cellHeight;
+        
     } else if (indexPath.row == 2) {
         CGFloat cellHeight = [tableView fd_heightForCellWithIdentifier:TAGS_TABLEVIEW_CELL cacheByIndexPath:indexPath configuration:^(TagsTableViewCell *cell) {
             [cell.tagCollectionView reloadData];
@@ -66,11 +68,11 @@
             
             [cell updateWithUserImage:[UIImage imageNamed:@"detail_avatar_image.jpg"] userName:@"宝贝" curentFloor:1 commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:comment];
 
-            [cell.commentTableView reloadData];
+//            [cell.commentTableView reloadData];
             
-            [cell layoutIfNeeded];
+//            [cell layoutIfNeeded];
 
-            [cell updateHeightConstraint];
+//            [cell updateHeightConstraint];
     
         }];
     }

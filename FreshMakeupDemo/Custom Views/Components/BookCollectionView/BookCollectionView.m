@@ -57,6 +57,7 @@
 }
 - (void)updateWithCurrentIndex:(NSInteger)index {
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+
 }
 
 - (void)awakeFromNib {
