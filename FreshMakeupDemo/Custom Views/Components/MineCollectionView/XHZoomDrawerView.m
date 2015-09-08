@@ -19,7 +19,7 @@
         _scrollView = [[UIScrollView alloc] initWithFrame:self.bounds];
         self.scrollView.scrollsToTop = NO;
         self.scrollView.bounces = NO;
-        self.scrollView.scrollEnabled = YES;
+        self.scrollView.scrollEnabled = NO;
         self.scrollView.showsHorizontalScrollIndicator = NO;
         self.scrollView.showsVerticalScrollIndicator = NO;
         self.scrollView.backgroundColor = [UIColor colorFromHexCode:@"#78bab7"];

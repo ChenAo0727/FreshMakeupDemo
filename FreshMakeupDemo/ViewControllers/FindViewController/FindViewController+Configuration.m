@@ -161,9 +161,10 @@
 
 //手势 结束 重启  动画
 - (void)slideMotion:(SlideMotion *)slideMotion didEndSlideView:(UIView *)view {
-    if (self.set < -190 ) {
+    NSLog(@"=====%ld",(long)self.set);
+    if (self.set < -61 ) {
         [self findThreeDimensional];
-    } else if (self.set > -190 && self.set < 0) {
+    } else if (self.set > -60 && self.set < 0) {
         if (self.num == 0) {
             [self returnRightAnimationView:self.imageViewOne ViewTow:self.imageViewTow];
         } else if (self.num == 1) {
@@ -173,7 +174,7 @@
         } else {
             [self returnRightAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
         }
-    } else if (self.set > 0 && self.set < 190) {
+    } else if (self.set > 0 && self.set < 61) {
         if (self.num == 0) {
             [self returnLeftAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
         } else if (self.num == 1) {
@@ -184,8 +185,10 @@
             [self returnLeftAnimationView:self.imageViewThree ViewTow:self.imageViewFour];
         }
 
-    } else if (self.set > 190) {
+    } else if (self.set > 60) {
         [self findRightDimensional];
+    } else  {
+        
     }
      self.timer = [NSTimer scheduledTimerWithTimeInterval:6 target:self selector:@selector(findThreeDimensional) userInfo:nil repeats:YES];
 }

@@ -30,7 +30,7 @@
 }
 - (void)findRightDimensional {
     if (self.num == 0) {
-        [self animationReghtView:self.imageViewFour viewTow:self.imageViewOne   viewThree:self.imageViewThree];
+        [self animationReghtView:self.imageViewFour viewTow:self.imageViewOne viewThree:self.imageViewThree];
         self.pageControl.currentPage = 3;
         self.num = 3;
     } else if (self.num == 1) {
@@ -76,7 +76,7 @@
     }];
 }
 - (void)animationReghtView:(UIView *)viewOne viewTow:(UIView *)viewTow  viewThree:(UIView *)viewThree {
-    [UIView animateKeyframesWithDuration:1.4 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+    [UIView animateKeyframesWithDuration:0.8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         viewOne.frame = CGRectMake(0, 0,self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
         viewTow.frame = CGRectMake(self.findAutomatiView.frame.size.width , 0, 0, self.findAutomatiView.frame.size.height);
     } completion:^(BOOL finished) {

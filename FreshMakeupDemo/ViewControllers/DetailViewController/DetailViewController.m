@@ -14,7 +14,7 @@
 #import "MoreInfomationCell.h"
 #import "MoreTitleCell.h"
 #import "TitleCell.h"
-
+#import "FreshTryInformationTool.h"
 @implementation DetailViewController
 
 + (instancetype)create {
@@ -44,6 +44,8 @@
 
 - (IBAction)detailOnTrialButtonAction:(id)sender {
     EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
+    FreshTryInformationTool *freshteryInformatinTool = [[FreshTryInformationTool alloc] initWithBOBBI];
+    [earlyAdoptersTheTrialViewController updateDatasourceWithFreshTryTool:freshteryInformatinTool];
     [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
 }
 
