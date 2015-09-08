@@ -10,9 +10,9 @@
 #import "SelectionView.h"
 #import "CHTCollectionViewWaterfallLayout.h"
 #import "ProductDetailDataSource.h"
+#import "ZoomFadeTransition.h"
 
-
-@interface DetailViewController : BaseViewController<CHTCollectionViewDelegateWaterfallLayout>
+@interface DetailViewController : BaseViewController<CHTCollectionViewDelegateWaterfallLayout, UIViewControllerTransitioningDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *detailITitleImageView;
 
 @property (weak, nonatomic) IBOutlet UIView *topViewContainer;
@@ -21,6 +21,7 @@
 @property (strong, nonatomic) CHTCollectionViewWaterfallLayout *layout;
 @property (strong, nonatomic) SelectionView *selectionView;
 @property (assign, nonatomic) CGFloat selectionViewY;
+@property (strong, nonatomic) ZoomFadeTransition *zoomFadeTransition;
 
 - (void)updateDatasourceWithDetailTool:(DetailInfomationTool *)detailInfomationTool;
 

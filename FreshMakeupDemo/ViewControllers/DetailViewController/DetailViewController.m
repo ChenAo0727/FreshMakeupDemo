@@ -70,7 +70,7 @@
     if ([cell isKindOfClass:[MoreTitleCell class]]) {
         MoreTitleCell *moreTitleCell = (MoreTitleCell *)cell;
         [moreTitleCell animateZoomOutMoreTitleViewWithCompletion:^(BOOL finished) {
-            
+            [self pushViewCommentViewController];
         }];
 //        if (indexPath.section == 2 && indexPath.row == 0) {
 //            [self pushViewCommentViewController];
@@ -90,7 +90,19 @@
 
 - (void)pushViewCommentViewController {
     CommentViewController *commentViewController = [CommentViewController create];
+    commentViewController.modalPresentationStyle = UIModalPresentationCustom;
+    commentViewController.transitioningDelegate = self;
     [self presentViewController:commentViewController animated:YES completion:nil];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    self.zoomFadeTransition.reverse = NO;
+    return self.zoomFadeTransition;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    self.zoomFadeTransition.reverse = YES;
+    return self.zoomFadeTransition;
 }
 
 @end

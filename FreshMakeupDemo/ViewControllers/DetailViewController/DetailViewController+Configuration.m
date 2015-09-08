@@ -30,6 +30,7 @@
     [self configureDateSource];
     [self configureCollectionView];
     [self addSelectionView];
+    [self configureTransition];
 }
 
 - (void)configureDateSource {
@@ -46,6 +47,10 @@
     self.layout.footerHeight = 0;
     self.layout.minimumColumnSpacing = 0;
     self.layout.minimumInteritemSpacing = 0;
+}
+
+- (void)configureTransition {
+    self.zoomFadeTransition = [[ZoomFadeTransition alloc] init];
 }
 
 - (void)configureCollectionView {
