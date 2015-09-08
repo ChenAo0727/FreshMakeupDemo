@@ -21,6 +21,10 @@
     [self tableViewEdit];
     [self mineViewEdit];
     [self configureDateSource];
+    [self zoomFigureEdit];
+}
+- (void)zoomFigureEdit {
+    self.zoomFadeTransition = [[ZoomFadeTransition alloc] init];
 }
 - (void)configureDateSource {
     if (!self.earlyAdoptersTheTrialViewControllerDataSource) {

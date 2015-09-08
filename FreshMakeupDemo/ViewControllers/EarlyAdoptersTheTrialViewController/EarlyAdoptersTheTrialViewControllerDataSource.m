@@ -41,6 +41,11 @@
     }
 
 }
+- (void)strengthButtonAction:(UIButton *)button {
+    if ([self.delegate respondsToSelector:@selector(EarlyViewControllerStrengthGame)]) {
+        [self.delegate EarlyViewControllerStrengthGame];
+    }
+}
 
 #pragma mark 自定义cell
 - (UITableViewCell *)earlyAdoptersTitleImageTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
@@ -59,6 +64,7 @@
     EarlyAdoptersReceiveTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:EARLY_ADOPTERS_RECEIVE_TABLEVIEW_CELL];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     cell.strengthButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
+    [cell.strengthButton addTarget:self action:@selector(strengthButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     cell.luckButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
     [cell.luckButton addTarget:self action:@selector(luckButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     return cell;

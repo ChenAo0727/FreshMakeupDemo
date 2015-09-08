@@ -11,7 +11,9 @@
 #import "BaseViewController.h"
 #import "ShakeAshakeView.h"
 #import "FreshTryInformationTool.h"
-@interface EarlyAdoptersTheTrialViewController : BaseViewController<UITableViewDelegate,EarlyAdoptersTheTrialViewControllerDataSourceDelegate>
+#import "ZoomFadeTransition.h"
+
+@interface EarlyAdoptersTheTrialViewController : BaseViewController<UITableViewDelegate,EarlyAdoptersTheTrialViewControllerDataSourceDelegate,UIViewControllerTransitioningDelegate>
 @property (strong, nonatomic) IBOutlet UILabel *earlyAdoptersTheTrialTitleLabel;
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialLeftInconImage;
 @property (strong, nonatomic) IBOutlet UIImageView *earlyAdoptersTheTrialRightInconImageView;
@@ -20,4 +22,8 @@
 @property (strong, nonatomic) EarlyAdoptersTheTrialViewControllerDataSource *earlyAdoptersTheTrialViewControllerDataSource;
 @property (strong, nonatomic) ShakeAshakeView *shakeAshakeView;
 - (void)updateDatasourceWithFreshTryTool:(FreshTryInformationTool *)freshTryInformationTool;
+
+
+@property (strong, nonatomic) ZoomFadeTransition *zoomFadeTransition;
+
 @end

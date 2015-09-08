@@ -10,6 +10,7 @@
 #import "FreshTryInformationTool.h"
 @protocol EarlyAdoptersTheTrialViewControllerDataSourceDelegate <NSObject>
 - (void)EarlyAdoptersTheTrialViewControllerShakeAshake;
+- (void)EarlyViewControllerStrengthGame;
 @end
 
 @interface EarlyAdoptersTheTrialViewControllerDataSource : NSObject<UITableViewDataSource>
