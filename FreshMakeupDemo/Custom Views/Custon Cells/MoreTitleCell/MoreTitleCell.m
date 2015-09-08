@@ -21,10 +21,6 @@
         completion(finished);
     }];
 }
-- (IBAction)moreAction:(id)sender {
-   
-    
-}
 
 - (void)awakeFromNib {
     // Initialization code

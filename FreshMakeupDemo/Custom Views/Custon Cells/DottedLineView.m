@@ -7,6 +7,7 @@
 //
 
 #import "DottedLineView.h"
+#import "UIColor+Utility.h"
 
 @implementation DottedLineView
 
@@ -27,7 +28,7 @@
     
     // 设置虚线颜色
 
-    [shapeLayer setStrokeColor:[UIColor greenColor].CGColor];
+    [shapeLayer setStrokeColor:[UIColor colorWithIntRed:222 green:222 blue:222].CGColor];
     
     // 设置虚线的宽度
     [shapeLayer setLineWidth:.5f];

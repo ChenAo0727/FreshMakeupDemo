@@ -203,6 +203,7 @@
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
     return [cell sizeOfCell];
 }
+
 - (void)moreViewAction {
     if ([self.delegate respondsToSelector:@selector(ProductDetailDataSourceMoreJump)]) {
         [self.delegate ProductDetailDataSourceMoreJump];

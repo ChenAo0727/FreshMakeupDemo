@@ -44,17 +44,10 @@
     
 }
 
-
-
-- (IBAction)detailOnTrialButtonAction:(id)sender {
-    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
-    FreshTryInformationTool *freshteryInformatinTool = [[FreshTryInformationTool alloc] initWithBOBBI];
-    [earlyAdoptersTheTrialViewController updateDatasourceWithFreshTryTool:freshteryInformatinTool];
-    [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
-   
-}
 - (void)ProductDetailDataSourceMoreJump {
     FeelIngViewController *feelIngViewController = [[FeelIngViewController alloc] init];
+    feelIngViewController.modalPresentationStyle = UIModalPresentationCustom;
+    feelIngViewController.transitioningDelegate = self;
     [self presentViewController:feelIngViewController animated:YES completion:nil];
 }
 
@@ -81,11 +74,6 @@
         [moreTitleCell animateZoomOutMoreTitleViewWithCompletion:^(BOOL finished) {
             [self pushViewCommentViewController];
         }];
-        if (indexPath.section == 2 && indexPath.row == 0) {
-            [self pushViewCommentViewController];
-        }
-       
-       
     }
 }
 
