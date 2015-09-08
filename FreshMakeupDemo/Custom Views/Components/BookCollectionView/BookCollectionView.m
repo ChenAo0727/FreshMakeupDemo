@@ -9,6 +9,7 @@
 #import "BookCollectionView.h"
 #import "RealBookView.h"
 #import "LineLayout.h"
+#import "UIScreen+Utility.h"
 #import "FreshSaleInfomationTool.h"
 
 @implementation BookCollectionView
@@ -57,6 +58,7 @@
 }
 - (void)updateWithCurrentIndex:(NSInteger)index {
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+
 }
 
 - (void)awakeFromNib {
@@ -89,10 +91,8 @@
     } else if (self.freshSaleArray && self.freshSaleArray.count > 0) {
         return self.freshSaleArray.count;
     }else if (self.freshTryArray && self.freshTryArray.count > 0){
-    
         return self.freshTryArray.count;
     }
-
     return 7;
 }
 
@@ -108,17 +108,23 @@
     };
     if (self.freshMakeupArray && self.freshMakeupArray.count > 0) {
         [cell updateWithDetailInfomationTool:[self.freshMakeupArray objectAtIndex:indexPath.row]];
-        
     } else if (self.freshSaleArray && self.freshSaleArray.count > 0) {
         [cell updateWithFreshSaleInfomationTool:[self.freshSaleArray objectAtIndex:indexPath.row]];
         
     } else if(self.freshTryArray && self.freshTryArray.count > 0){
-        
-
         [cell updateWithFreshTryInformationTool:[self.freshTryArray objectAtIndex:indexPath.row]];
     }
     [cell layoutIfNeeded];
     return cell;
+}
+
+- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
+    LineLayout *layout = (LineLayout *)self.lineCollectionView.collectionViewLayout;
+    CGFloat maxOffset = scrollView.contentSize.width - ((3 * [UIScreen screenWidth]) / 2 - layout.itemSize.width * 0.25 / 2);
+    if (scrollView.contentOffset.x > maxOffset) {
+        CGFloat targetOffset = scrollView.contentSize.width - [UIScreen screenWidth];
+        [scrollView setContentOffset:CGPointMake(targetOffset, 0) animated:YES];
+    }
 }
 
 @end

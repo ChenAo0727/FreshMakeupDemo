@@ -13,7 +13,7 @@
 }
 
 - (void)updateWithPrice:(NSString *)price worthCount:(NSInteger)worthCount NotWorthCount:(NSInteger)NotWorthCount {
-    self.priceLabel.text = [NSString stringWithFormat:@"%@", price];
+    self.priceLabel.text = [NSString stringWithFormat:@"￥%@", price];
 }
 
 + (instancetype)create {
@@ -62,9 +62,13 @@
 
 - (void)slideMotion:(SlideMotion *)slideMotion didEndSlideView:(UIView *)view {
     if (0 == self.carViewRightConstraint.constant) {
-        self.notWorthCountLabel.text = [NSString stringWithFormat:@"%@", @(1 + [self.notWorthCountLabel.text integerValue])];
+        [self creaseAnimationBehind:self.notWorthCountLabel completion:^(BOOL finished) {
+            self.notWorthCountLabel.text = [NSString stringWithFormat:@"%@", @(1 + [self.notWorthCountLabel.text integerValue])];
+        }];
     } else if (self.carViewRightConstraint.constant == self.processView.frame.size.width - self.carView.frame.size.width) {
-        self.worthCountLabel.text = [NSString stringWithFormat:@"%@", @(1 + [self.worthCountLabel.text integerValue])];
+        [self creaseAnimationBehind:self.worthCountLabel completion:^(BOOL finished) {
+            self.worthCountLabel.text = [NSString stringWithFormat:@"%@", @(1 + [self.worthCountLabel.text integerValue])];
+        }];
     }
     [UIView animateWithDuration:0.2 animations:^{
         [self updateCarToDefaultPostion];
@@ -72,6 +76,18 @@
     }];
 }
 
+- (void)creaseAnimationBehind:(UIView *)view completion:(void (^)(BOOL finished))completion{
+    UILabel *targetLabelView = (UILabel *)view;
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(view.frame.origin.x, view.frame.origin.y + CGRectGetHeight(view.frame), 15, 15)];
+    [view.superview addSubview: label];
+    label.text = @"+1";
+    label.textColor = targetLabelView.textColor;
+    label.textAlignment = NSTextAlignmentCenter;
+    [UIView animateWithDuration:1 animations:^{
+        label.transform = CGAffineTransformScale(label.transform, 1.5, 1.5);
+        label.alpha = 0;
+    } completion:completion];
+}
 
 
 @end

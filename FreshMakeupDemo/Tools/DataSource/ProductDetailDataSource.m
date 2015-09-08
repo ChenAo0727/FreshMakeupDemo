@@ -172,12 +172,12 @@
 
 - (BOOL)isUserFeeling:(NSIndexPath *)indexPath {
     
-    return (0 == indexPath.section) && (1 == indexPath.row);
+    return (0 == indexPath.section) && (2 == indexPath.row);
 }
 
 - (BOOL)isProductiDescriptionCell:(NSIndexPath *)indexPath {
     
-    return (0 == indexPath.section) && (2 == indexPath.row);
+    return (0 == indexPath.section) && (1 == indexPath.row);
 }
 
 - (BOOL)isEvalueCell:(NSIndexPath *)indexPath {
@@ -204,6 +204,7 @@
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
     return [cell sizeOfCell];
 }
+
 - (void)moreViewAction {
     if ([self.delegate respondsToSelector:@selector(ProductDetailDataSourceMoreJump)]) {
         [self.delegate ProductDetailDataSourceMoreJump];

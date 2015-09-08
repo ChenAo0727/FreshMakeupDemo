@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -25,19 +25,18 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="freash_sale_title_image.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oZT-yZ-PRQ">
-                        <rect key="frame" x="0.0" y="38" width="320" height="302"/>
+                        <rect key="frame" x="0.0" y="35" width="320" height="306"/>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="4Uw-BW-puQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9Uq-ms-eP1"/>
-                    <constraint firstItem="oZT-yZ-PRQ" firstAttribute="centerX" secondItem="4Uw-BW-puQ" secondAttribute="centerX" id="A1c-cd-YmN"/>
                     <constraint firstItem="oZT-yZ-PRQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ADq-co-WEP"/>
                     <constraint firstAttribute="bottomMargin" secondItem="oZT-yZ-PRQ" secondAttribute="bottom" constant="35" id="HJ3-vW-MmK"/>
-                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="4Uw-BW-puQ" secondAttribute="trailing" id="LgM-2u-VcW"/>
+                    <constraint firstItem="4Uw-BW-puQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HrS-hm-JXE"/>
+                    <constraint firstAttribute="centerX" secondItem="4Uw-BW-puQ" secondAttribute="centerX" id="JR2-Gl-HNg"/>
+                    <constraint firstItem="4Uw-BW-puQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="KWJ-SB-3aQ"/>
                     <constraint firstAttribute="trailing" secondItem="oZT-yZ-PRQ" secondAttribute="trailing" id="NHG-zN-8BO"/>
-                    <constraint firstItem="oZT-yZ-PRQ" firstAttribute="top" secondItem="4Uw-BW-puQ" secondAttribute="bottom" constant="8" id="Tyr-Bx-FC7"/>
-                    <constraint firstAttribute="centerX" secondItem="4Uw-BW-puQ" secondAttribute="centerX" id="YaR-0D-PMS"/>
-                    <constraint firstItem="4Uw-BW-puQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="ur1-N2-MmC"/>
+                    <constraint firstItem="oZT-yZ-PRQ" firstAttribute="top" secondItem="4Uw-BW-puQ" secondAttribute="bottom" constant="5" id="Tyr-Bx-FC7"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Uw-BW-puQ" secondAttribute="trailing" id="xO3-2q-hYk"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -50,4 +49,9 @@
     <resources>
         <image name="freash_sale_title_image.jpg" width="720" height="670"/>
     </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

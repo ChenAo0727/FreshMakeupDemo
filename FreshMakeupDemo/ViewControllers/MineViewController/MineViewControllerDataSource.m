@@ -22,6 +22,6 @@
     return cell;
 }
 - (void)InitializationData {
-    self.mineLabelArray = [NSMutableArray arrayWithObjects:@"首页",@"我的试用",@"草地",@"参与",@"设置", nil];
+    self.mineLabelArray = [NSMutableArray arrayWithObjects:@"我的草地",@"我的优惠",@"我的试用",@"消息",@"设置", nil];
 }
 @end
