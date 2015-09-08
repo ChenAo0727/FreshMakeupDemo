@@ -66,9 +66,13 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
     if ([cell isKindOfClass:[MoreTitleCell class]]) {
-        if (indexPath.section == 2 && indexPath.row == 0) {
-            [self pushViewCommentViewController];
-        }
+        MoreTitleCell *moreTitleCell = (MoreTitleCell *)cell;
+        [moreTitleCell animateZoomOutMoreTitleViewWithCompletion:^(BOOL finished) {
+            
+        }];
+//        if (indexPath.section == 2 && indexPath.row == 0) {
+//            [self pushViewCommentViewController];
+//        }
     }
 }
 

@@ -11,4 +11,6 @@
 @interface MoreTitleCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIView *moreTitleView;
 
+- (void)animateZoomOutMoreTitleViewWithCompletion:(void (^)(BOOL finished))completion;
+
 @end

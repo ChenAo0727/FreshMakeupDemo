@@ -251,6 +251,8 @@
 		2ED04D621B9C20E400D3F4B1 /* BookFlipTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED04D611B9C20E400D3F4B1 /* BookFlipTransition.m */; };
 		2ED04D651B9C751A00D3F4B1 /* CirclePushTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED04D641B9C751A00D3F4B1 /* CirclePushTransition.m */; };
 		2ED04D681B9C785300D3F4B1 /* CirclePopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED04D671B9C785300D3F4B1 /* CirclePopTransition.m */; };
+		2ED04D6B1B9DBA1800D3F4B1 /* ZoomTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ED04D6A1B9DBA1800D3F4B1 /* ZoomTransition.m */; };
+		2EE6FA641B9E65D200EE5A26 /* launchScreenImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EE6FA631B9E65D200EE5A26 /* launchScreenImage.png */; };
 		2EECA6A21B998FA5007D51C2 /* ProductDetailDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECA6A11B998FA5007D51C2 /* ProductDetailDataSource.m */; };
 		2EECA6AC1B999512007D51C2 /* SimpleRichTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EECA6AA1B999512007D51C2 /* SimpleRichTextCell.m */; };
 		2EECA6AD1B999512007D51C2 /* SimpleRichTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EECA6AB1B999512007D51C2 /* SimpleRichTextCell.xib */; };
@@ -649,6 +651,9 @@
 		2ED04D641B9C751A00D3F4B1 /* CirclePushTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirclePushTransition.m; sourceTree = "<group>"; };
 		2ED04D661B9C785300D3F4B1 /* CirclePopTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CirclePopTransition.h; sourceTree = "<group>"; };
 		2ED04D671B9C785300D3F4B1 /* CirclePopTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CirclePopTransition.m; sourceTree = "<group>"; };
+		2ED04D691B9DBA1800D3F4B1 /* ZoomTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZoomTransition.h; sourceTree = "<group>"; };
+		2ED04D6A1B9DBA1800D3F4B1 /* ZoomTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoomTransition.m; sourceTree = "<group>"; };
+		2EE6FA631B9E65D200EE5A26 /* launchScreenImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreenImage.png; sourceTree = "<group>"; };
 		2EECA6A01B998FA5007D51C2 /* ProductDetailDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailDataSource.h; sourceTree = "<group>"; };
 		2EECA6A11B998FA5007D51C2 /* ProductDetailDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailDataSource.m; sourceTree = "<group>"; };
 		2EECA6A91B999512007D51C2 /* SimpleRichTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleRichTextCell.h; sourceTree = "<group>"; };
@@ -1261,6 +1266,8 @@
 				2E4C0C881B90522200ECD2BF /* FlipTransition.m */,
 				2ED04D601B9C20E400D3F4B1 /* BookFlipTransition.h */,
 				2ED04D611B9C20E400D3F4B1 /* BookFlipTransition.m */,
+				2ED04D691B9DBA1800D3F4B1 /* ZoomTransition.h */,
+				2ED04D6A1B9DBA1800D3F4B1 /* ZoomTransition.m */,
 			);
 			path = "Navigation Controller";
 			sourceTree = "<group>";
@@ -1475,6 +1482,7 @@
 		2EA427451B7ED71900BF4705 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2EE6FA631B9E65D200EE5A26 /* launchScreenImage.png */,
 				389A20031B9D7BE30035BC2B /* FreshTryImage */,
 				389A1FF61B9D3A8E0035BC2B /* FreshSaleImage */,
 				389A1FD71B9AD5650035BC2B /* Product */,
@@ -1938,6 +1946,7 @@
 				0596FFED1B9AF06E00E5653D /* detail_helpSkin_cover.png in Resources */,
 				2E7706951B8845D10024282D /* detail_avatar_image.jpg in Resources */,
 				058ABF4F1B82C58100A0BA8A /* findarticle1.png in Resources */,
+				2EE6FA641B9E65D200EE5A26 /* launchScreenImage.png in Resources */,
 				389A1FE31B9ADE600035BC2B /* SK.png in Resources */,
 				0596FFF61B9AF06E00E5653D /* detail_yanshilandai_product.png in Resources */,
 				05D5F36B1B944FEA0080AE64 /* ShakeAshakeView.xib in Resources */,
@@ -2061,6 +2070,7 @@
 				38DEFC431B993FA3003E9E0F /* ChatCell.m in Sources */,
 				2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */,
 				05E04CD91B9697CE00E5D28C /* ImageMaxCell.m in Sources */,
+				2ED04D6B1B9DBA1800D3F4B1 /* ZoomTransition.m in Sources */,
 				2EA556EF1B953A4300C696B0 /* DetailCollectionViewDatasource.m in Sources */,
 				054DFD3B1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.m in Sources */,
 				2EB4EF691B96F5D90080185A /* EqualSpaceFlowLayout.m in Sources */,
