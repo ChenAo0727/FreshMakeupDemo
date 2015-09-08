@@ -24,16 +24,13 @@
 - (void)updateFeelingTextLabel:(NSString *)text {
 
     if ([text isEqualToString:@""]) {
-        
         self.isHideLableImage = YES;
-        self.LabelImage.hidden = YES;
+        self.labelImage.hidden = YES;
     
     }else{
-    
         self.isHideLableImage = NO;
-        self.LabelImage.hidden = NO;
-        self.FeelingTextLabel.text = text;
-            
+        self.labelImage.hidden = NO;
+        self.feelingTextLabel.text = text;
     }
 
 }

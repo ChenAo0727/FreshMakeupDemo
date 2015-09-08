@@ -14,8 +14,10 @@
     [self tableViewEdit];
 }
 - (void)tableViewEdit {
+    self.feelingInformationTool = [[FeelingInformationTool alloc] initWithElizabethArdenInfomation];
     self.feelIngViwControllerDataSource = [FeelIngViwControllerDataSource new];
     self.feelingTableView.delegate = self;
+    self.feelIngViwControllerDataSource.feelingInformationTool = self.feelingInformationTool;
     self.feelingTableView.dataSource = self.feelIngViwControllerDataSource;
     [self.feelingTableView registerNib:[UINib nibWithNibName:@"feelingImageCell" bundle:nil] forCellReuseIdentifier:FEELING_IMAGE_CELL];
     [self.feelingTableView registerNib:[UINib nibWithNibName:@"FeelingTextCell" bundle:nil] forCellReuseIdentifier:FEELING_TEXT_CELL];

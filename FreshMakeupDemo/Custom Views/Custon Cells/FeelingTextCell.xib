@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -53,9 +53,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="FeelingTextLabel" destination="rMJ-KH-8TA" id="r3V-gT-LOj"/>
-                <outlet property="LabelImage" destination="thb-kz-mPQ" id="KlK-bB-30n"/>
-                <outlet property="dottedLine" destination="y9c-eN-jh0" id="thP-vH-1ZO"/>
+                <outlet property="dottedLine" destination="y9c-eN-jh0" id="NH5-0A-jZ9"/>
+                <outlet property="feelingTextLabel" destination="rMJ-KH-8TA" id="xMg-Tp-zIG"/>
+                <outlet property="labelImage" destination="thb-kz-mPQ" id="TxT-EO-V2b"/>
             </connections>
             <point key="canvasLocation" x="262" y="317.5"/>
         </tableViewCell>

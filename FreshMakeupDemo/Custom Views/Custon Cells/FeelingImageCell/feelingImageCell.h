@@ -16,4 +16,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *feelllabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *feelingDashedY;
 - (void)updateWithFeelImageView:(NSString *)feelImageView Feelllabel:(NSString *)feelllabel;
+- (CGFloat)getCellHeight;
 @end
