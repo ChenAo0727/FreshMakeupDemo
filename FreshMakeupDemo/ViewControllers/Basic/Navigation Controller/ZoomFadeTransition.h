@@ -1,5 +1,5 @@
 //
-//  ZoomTransition.h
+//  ZoomFadeTransition.h
 //  FreshMakeupDemo
 //
 //  Created by guoshencheng on 9/7/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZoomTransition : NSObject<UIViewControllerAnimatedTransitioning>
+@interface ZoomFadeTransition : NSObject<UIViewControllerAnimatedTransitioning>
 
 @property (getter=isReverse) BOOL reverse;
 
