@@ -11,21 +11,22 @@
 #import "FeelingTextCell.h"
 @implementation FeelIngViwControllerDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.feelingInformationTool.feelIngArray.count * 2;
+    return self.feelingInformationTool.feelIngArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    if (indexPath.row == 1 || indexPath.row % 2 == 1) {
-        feelingImageCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_IMAGE_CELL];
+    if ([[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"image"]) {
+      feelingImageCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_IMAGE_CELL];
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-        [cell updateWithFeelImageView:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row / 2] objectForKey:@"image"] Feelllabel:@""];
+        [cell updateWithFeelImageView:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row ] objectForKey:@"image"] Feelllabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row ] objectForKey:@"hasTag"]];
         return cell;
+
+        
     } else {
         FeelingTextCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_TEXT_CELL];
-        [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row / 2] objectForKey:@"text"]];
+        [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"text"]];
         return cell;
     }
-}
 
+}
 @end
