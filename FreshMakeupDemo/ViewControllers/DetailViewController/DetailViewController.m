@@ -15,6 +15,7 @@
 #import "MoreTitleCell.h"
 #import "TitleCell.h"
 #import "FreshTryInformationTool.h"
+#import "FeelIngViewController.h"
 @implementation DetailViewController
 
 + (instancetype)create {
@@ -43,10 +44,12 @@
 }
 
 - (IBAction)detailOnTrialButtonAction:(id)sender {
-    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
-    FreshTryInformationTool *freshteryInformatinTool = [[FreshTryInformationTool alloc] initWithBOBBI];
-    [earlyAdoptersTheTrialViewController updateDatasourceWithFreshTryTool:freshteryInformatinTool];
-    [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
+//    EarlyAdoptersTheTrialViewController *earlyAdoptersTheTrialViewController = [[EarlyAdoptersTheTrialViewController alloc] init];
+//    FreshTryInformationTool *freshteryInformatinTool = [[FreshTryInformationTool alloc] initWithBOBBI];
+//    [earlyAdoptersTheTrialViewController updateDatasourceWithFreshTryTool:freshteryInformatinTool];
+//    [self presentViewController:earlyAdoptersTheTrialViewController animated:YES completion:nil];
+    FeelIngViewController *feelIngViewController = [[FeelIngViewController alloc] init];
+    [self presentViewController:feelIngViewController animated:YES completion:nil];
 }
 
 - (void)dealloc {

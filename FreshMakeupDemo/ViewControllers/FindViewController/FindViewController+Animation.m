@@ -68,19 +68,21 @@
     } completion:nil];
 }
 - (void)animationLeftView:(UIView *)viewOne viewTow:(UIView *)viewTow  viewThree:(UIView *)viewThree {
+    viewThree.frame = CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height);
     [UIView animateKeyframesWithDuration:0.8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         viewOne.frame = CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height);
         viewTow.frame = CGRectMake(0, 0, self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
     } completion:^(BOOL finished) {
-        viewThree.frame = CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height);
     }];
+    
 }
 - (void)animationReghtView:(UIView *)viewOne viewTow:(UIView *)viewTow  viewThree:(UIView *)viewThree {
     [UIView animateKeyframesWithDuration:0.8 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         viewOne.frame = CGRectMake(0, 0,self.findAutomatiView.frame.size.width, self.findAutomatiView.frame.size.height);
         viewTow.frame = CGRectMake(self.findAutomatiView.frame.size.width , 0, 0, self.findAutomatiView.frame.size.height);
     } completion:^(BOOL finished) {
-        viewThree.frame = CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height);
+       
     }];
+     viewThree.frame = CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height);
 }
 @end
