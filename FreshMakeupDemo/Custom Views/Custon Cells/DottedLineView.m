@@ -21,7 +21,7 @@
     
 
     CAShapeLayer *shapeLayer = [CAShapeLayer layer];
-    [shapeLayer setBounds:self.bounds];
+    [shapeLayer setBounds:self.frame];
     [shapeLayer setPosition:self.center];
     [shapeLayer setFillColor:[[UIColor clearColor] CGColor]];
     
@@ -30,7 +30,7 @@
     [shapeLayer setStrokeColor:[UIColor greenColor].CGColor];
     
     // 设置虚线的宽度
-    [shapeLayer setLineWidth:1.5f];
+    [shapeLayer setLineWidth:.5f];
     [shapeLayer setLineJoin:kCALineJoinRound];
     
     // 3=线的宽度 1=每条线的间距
@@ -45,7 +45,8 @@
     [shapeLayer setPath:path];
     CGPathRelease(path);
     
-    [[self layer] addSublayer:shapeLayer];
+    [self.layer addSublayer:shapeLayer];
+
 
 }
 

@@ -11,12 +11,13 @@
 #define FEELING_TEXT_CELL @"feelingTextCell"
 
 @interface FeelingTextCell : UITableViewCell
-@property (weak, nonatomic) IBOutlet UIImageView *LableImageView;
-@property (weak, nonatomic) IBOutlet DottedLineView *bottomDottedLineView;
+@property (weak, nonatomic) IBOutlet DottedLineView *dottedLine;
+@property (weak, nonatomic) IBOutlet UIImageView *LabelImage;
+
 
 @property (weak, nonatomic) IBOutlet UILabel *FeelingTextLabel;
 @property (assign, nonatomic)BOOL isHideLableImage;
-@property (weak, nonatomic) IBOutlet DottedLineView *TopDottedLineView;
 
 - (void)updateFeelingTextLabel:(NSString *)text;
+
 @end

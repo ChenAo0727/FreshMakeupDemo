@@ -11,13 +11,8 @@
 @implementation FeelingTextCell
 
 - (void)awakeFromNib {
-    // Initialization code
-//    if ([self.FeelingTextLabel.text isEqualToString:@""]) {
-//        self.isHideLableImage = YES;
-//        self.LableImageView.hidden = YES;
-//        self.
-//    }
-    
+
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -31,18 +26,15 @@
     if ([text isEqualToString:@""]) {
         
         self.isHideLableImage = YES;
-        self.LableImageView.hidden = YES;
-        self.TopDottedLineView.hidden = YES;
+        self.LabelImage.hidden = YES;
     
     }else{
     
         self.isHideLableImage = NO;
-        self.LableImageView.hidden = NO;
-        self.TopDottedLineView.hidden = NO;
-
-    
+        self.LabelImage.hidden = NO;
+        self.FeelingTextLabel.text = text;
+            
     }
 
 }
-
 @end
