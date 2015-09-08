@@ -19,25 +19,31 @@
 
 - (void)updateWithDetailInfomationTool:(DetailInfomationTool *)detailInfomationTool {
     self.detailInfomationTool = detailInfomationTool;
-    [self updateWithCoverImage:detailInfomationTool.coverImage title:detailInfomationTool.title shortComment:detailInfomationTool.shortComment];
+    [self updateWithCoverImage:detailInfomationTool.coverImage title:detailInfomationTool.title shortComment:detailInfomationTool.shortComment priceImage:nil];
 }
 
 - (void)updateWithFreshSaleInfomationTool:(FreshSaleInfomationTool *)freshSaleInfomationTool {
     self.freshSaleInfomationTool = freshSaleInfomationTool;
-    [self updateWithCoverImage:freshSaleInfomationTool.image title:freshSaleInfomationTool.title shortComment:freshSaleInfomationTool.commentary];
+    [self updateWithCoverImage:freshSaleInfomationTool.image title:freshSaleInfomationTool.title shortComment:freshSaleInfomationTool.commentary priceImage:freshSaleInfomationTool.priceImage];
 }
 
 - (void)updateWithFreshTryInformationTool:(FreshTryInformationTool *)freshTryInformationTool {
 
     self.freshTryInformationTool = freshTryInformationTool;
-    [self updateWithCoverImage:freshTryInformationTool.image title:freshTryInformationTool.title shortComment:freshTryInformationTool.shortComment];
+    [self updateWithCoverImage:freshTryInformationTool.image title:freshTryInformationTool.title shortComment:freshTryInformationTool.shortComment priceImage:nil];
 
 }
 
-- (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment {
+- (void)updateWithCoverImage:(UIImage *)coverImage title:(NSString *)title shortComment:(NSString *)shortComment priceImage:(UIImage *)priceImage {
     self.converImageView.image = coverImage;
     self.titleLabel.text = title;
     self.descriptionLabel.text = shortComment;
+    if (priceImage) {
+        self.priceImageView.image = priceImage;
+        self.priceImageView.hidden = NO;
+    } else {
+        self.priceImageView.hidden = YES;
+    }
 }
 
 - (void)awakeFromNib {
