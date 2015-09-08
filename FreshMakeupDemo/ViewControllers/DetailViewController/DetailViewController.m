@@ -15,6 +15,7 @@
 #import "MoreTitleCell.h"
 #import "TitleCell.h"
 #import "FreshTryInformationTool.h"
+#import "FeelIngViewController.h"
 @implementation DetailViewController
 
 + (instancetype)create {
