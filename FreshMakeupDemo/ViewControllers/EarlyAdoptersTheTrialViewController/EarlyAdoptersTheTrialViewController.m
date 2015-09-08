@@ -9,6 +9,7 @@
 #import "EarlyAdoptersTheTrialViewController.h"
 #import "EarlyAdoptersTheTrialViewController+Configuration.h"
 #import "EarlyAdoptersReportTableViewCell.h"
+#import "StrengthGameViewController.h"
 @interface EarlyAdoptersTheTrialViewController ()
 
 @end
@@ -51,10 +52,24 @@
     [self.earlyAdoptersTableView reloadData];
     
 }
+- (void)EarlyViewControllerStrengthGame {
+    StrengthGameViewController *strengthGameViewController = [[StrengthGameViewController alloc] init];
+    strengthGameViewController.modalPresentationStyle = UIModalPresentationCustom;
+    strengthGameViewController.transitioningDelegate = self;
+    [self presentViewController:strengthGameViewController animated:YES completion:nil];
+}
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    self.zoomFadeTransition.reverse = NO;
+    return self.zoomFadeTransition;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    self.zoomFadeTransition.reverse = YES;
+    return self.zoomFadeTransition;
 }
 
 /*

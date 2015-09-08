@@ -116,6 +116,9 @@
 		05D76C3A1B9EBBA70061546F /* feeling_yadun_feeling_tow.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C371B9EBBA70061546F /* feeling_yadun_feeling_tow.png */; };
 		05D76C3B1B9EBBA70061546F /* feeling_yadun_feeling_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C381B9EBBA70061546F /* feeling_yadun_feeling_three.png */; };
 		05D76C3C1B9EBBA70061546F /* feeling_yadun_feeling_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C391B9EBBA70061546F /* feeling_yadun_feeling_one.png */; };
+		05D76C411B9EC6580061546F /* StrengthGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C3F1B9EC6580061546F /* StrengthGameViewController.m */; };
+		05D76C421B9EC6580061546F /* StrengthGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C401B9EC6580061546F /* StrengthGameViewController.xib */; };
+		05D76C441B9EC7AE0061546F /* strength_game.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C431B9EC7AE0061546F /* strength_game.png */; };
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		05DEA0541B880C560094E123 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA0521B880C560094E123 /* black.png */; };
@@ -470,6 +473,10 @@
 		05D76C371B9EBBA70061546F /* feeling_yadun_feeling_tow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_tow.png; sourceTree = "<group>"; };
 		05D76C381B9EBBA70061546F /* feeling_yadun_feeling_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_three.png; sourceTree = "<group>"; };
 		05D76C391B9EBBA70061546F /* feeling_yadun_feeling_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_one.png; sourceTree = "<group>"; };
+		05D76C3E1B9EC6580061546F /* StrengthGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrengthGameViewController.h; sourceTree = "<group>"; };
+		05D76C3F1B9EC6580061546F /* StrengthGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrengthGameViewController.m; sourceTree = "<group>"; };
+		05D76C401B9EC6580061546F /* StrengthGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrengthGameViewController.xib; sourceTree = "<group>"; };
+		05D76C431B9EC7AE0061546F /* strength_game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = strength_game.png; sourceTree = "<group>"; };
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05DEA0521B880C560094E123 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -1029,6 +1036,16 @@
 			path = FeelingViewController;
 			sourceTree = "<group>";
 		};
+		05D76C3D1B9EC61A0061546F /* StrengthGameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05D76C3E1B9EC6580061546F /* StrengthGameViewController.h */,
+				05D76C3F1B9EC6580061546F /* StrengthGameViewController.m */,
+				05D76C401B9EC6580061546F /* StrengthGameViewController.xib */,
+			);
+			path = StrengthGameViewController;
+			sourceTree = "<group>";
+		};
 		05DEA0561B8858CB0094E123 /* Shake a shakeImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1285,6 +1302,7 @@
 				057A26351B86CC75003DAF07 /* MineViewController */,
 				05E04CBC1B9685D200E5D28C /* FreashSaleViewController */,
 				05D76C281B9E80520061546F /* FeelingViewController */,
+				05D76C3D1B9EC61A0061546F /* StrengthGameViewController */,
 			);
 			name = ViewControllers;
 			path = FreshMakeupDemo/ViewControllers;
@@ -1564,6 +1582,7 @@
 				389A20031B9D7BE30035BC2B /* FreshTryImage */,
 				389A1FF61B9D3A8E0035BC2B /* FreshSaleImage */,
 				389A1FD71B9AD5650035BC2B /* Product */,
+				05D76C431B9EC7AE0061546F /* strength_game.png */,
 				2EB4EF4D1B9692A50080185A /* worth_slideview_car.png */,
 				2EB4EF4E1B9692A50080185A /* worth_slideview_notworth.png */,
 				2EB4EF4F1B9692A50080185A /* worth_slideview_worth.png */,
@@ -1949,6 +1968,7 @@
 				2E8C33E61B7DEC79006B5BC0 /* LaunchScreen.xib in Resources */,
 				389A1FDF1B9ADBFF0035BC2B /* sisley.png in Resources */,
 				2EECA6AD1B999512007D51C2 /* SimpleRichTextCell.xib in Resources */,
+				05D76C421B9EC6580061546F /* StrengthGameViewController.xib in Resources */,
 				054DFD4C1B81AAEE00651F11 /* division.png in Resources */,
 				2EE6FA701B9EB6BE00EE5A26 /* bioderma_price_image.png in Resources */,
 				057A26521B86D255003DAF07 /* interval.png in Resources */,
@@ -1969,6 +1989,7 @@
 				053BFEA31B84AD80002058BA /* simhei.ttf in Resources */,
 				05E2B2971B9A832B0024C7FE /* EvaluationCell.xib in Resources */,
 				0596FFEE1B9AF06E00E5653D /* detail_helpSkin_feeling.png in Resources */,
+				05D76C441B9EC7AE0061546F /* strength_game.png in Resources */,
 				05D76C2D1B9E80D80061546F /* FeelIngViewController.xib in Resources */,
 				2E77067E1B8813FE0024282D /* detail_keepwet_icon.png in Resources */,
 				380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */,
@@ -2221,6 +2242,7 @@
 				3876B2641B95361500D916FF /* NewCommentCell.m in Sources */,
 				059E88CF1B841BB20086544F /* FindViewController.m in Sources */,
 				2E8C34101B7DF361006B5BC0 /* BaseViewController.m in Sources */,
+				05D76C411B9EC6580061546F /* StrengthGameViewController.m in Sources */,
 				2E8C342C1B7DF3DC006B5BC0 /* PickUpMotion+Calculation.m in Sources */,
 				05D6BA601B99C50D00C20107 /* DetailBaseInfomationCell.m in Sources */,
 				05E2B2961B9A832B0024C7FE /* EvaluationCell.m in Sources */,
