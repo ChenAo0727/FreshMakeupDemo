@@ -10,6 +10,8 @@
 #import "UIScreen+Utility.h"
 #import "FeelIngViewController+Configuration.h"
 #import "feelingImageCell.h"
+#import "FeelingTextCell.h"
+#import "UITableView+FDTemplateLayoutCell.h"
 @interface FeelIngViewController ()
 
 @end
@@ -33,7 +35,9 @@
         CGFloat cellHeight = [cell getCellHeight];
         return cellHeight;
     } else {
-    return 300;
+        return [tableView fd_heightForCellWithIdentifier:FEELING_TEXT_CELL cacheByIndexPath:indexPath configuration:^(id cell) {
+            [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row / 2] objectForKey:@"text"]];
+        }];
     }
 }
 - (IBAction)returnAction:(id)sender {

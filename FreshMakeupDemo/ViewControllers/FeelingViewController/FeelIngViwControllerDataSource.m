@@ -24,8 +24,8 @@
     } else {
         FeelingTextCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_TEXT_CELL];
         [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row / 2] objectForKey:@"text"]];
-        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         return cell;
     }
 }
+
 @end
