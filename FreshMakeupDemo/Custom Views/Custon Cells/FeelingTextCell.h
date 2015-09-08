@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "DottedLineView.h"
+#define FEELING_TEXT_CELL @"feelingTextCell"
+
 @interface FeelingTextCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *LableImageView;
 @property (weak, nonatomic) IBOutlet DottedLineView *bottomDottedLineView;

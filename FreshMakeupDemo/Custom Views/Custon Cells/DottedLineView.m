@@ -25,18 +25,18 @@
     [shapeLayer setPosition:self.center];
     [shapeLayer setFillColor:[[UIColor clearColor] CGColor]];
     
-    // 设置虚线颜色为blackColor
-    [shapeLayer setStrokeColor:[[UIColor greenColor] CGColor]];
-    [shapeLayer setStrokeColor:[[UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1.0f] CGColor]];
+    // 设置虚线颜色
+
+    [shapeLayer setStrokeColor:[UIColor greenColor].CGColor];
     
-    // 3.0f设置虚线的宽度
-    [shapeLayer setLineWidth:1.0f];
+    // 设置虚线的宽度
+    [shapeLayer setLineWidth:1.5f];
     [shapeLayer setLineJoin:kCALineJoinRound];
     
     // 3=线的宽度 1=每条线的间距
     [shapeLayer setLineDashPattern:
-     [NSArray arrayWithObjects:[NSNumber numberWithInt:3],
-      [NSNumber numberWithInt:1],nil]];
+     [NSArray arrayWithObjects:[NSNumber numberWithInt:5],
+      [NSNumber numberWithInt:2],nil]];
     
     // Setup the path
     CGMutablePathRef path = CGPathCreateMutable();
