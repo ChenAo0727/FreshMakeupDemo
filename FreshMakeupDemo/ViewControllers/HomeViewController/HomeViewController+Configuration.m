@@ -15,7 +15,6 @@
 @implementation HomeViewController (Configuration)
 
 - (void)configureViews {
-//    [self configureStackView];
     [self configureFreshMakeupData];
     [self configureFreshSaleData];
     [self configureFreshTryData];

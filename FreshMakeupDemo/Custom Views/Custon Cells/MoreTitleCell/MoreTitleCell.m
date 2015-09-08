@@ -10,6 +10,18 @@
 #import "UIColor+Utility.h"
 @implementation MoreTitleCell
 
+- (void)animateZoomOutMoreTitleViewWithCompletion:(void (^)(BOOL finished))completion {
+    CGAffineTransform transform = self.moreTitleView.transform;
+    [UIView animateWithDuration:0.4 animations:^{
+        self.moreTitleView.transform = CGAffineTransformScale(transform, 2.0, 2.0);
+        self.moreTitleView.alpha = 0;
+    } completion:^(BOOL finished) {
+        self.moreTitleView.transform = CGAffineTransformIdentity;
+        self.moreTitleView.alpha = 1;
+        completion(finished);
+    }];
+}
+
 - (void)awakeFromNib {
     // Initialization code
     self.backgroundColor = [UIColor whiteColor];
