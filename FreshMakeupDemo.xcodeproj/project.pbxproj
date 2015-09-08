@@ -289,6 +289,9 @@
 		389A20131B9D7D5B0035BC2B /* MAYSU.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A20121B9D7D5B0035BC2B /* MAYSU.png */; };
 		389A20151B9D7D650035BC2B /* BOBBI_BROWN.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A20141B9D7D650035BC2B /* BOBBI_BROWN.png */; };
 		389A20171B9D7D6F0035BC2B /* Jurlique.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A20161B9D7D6F0035BC2B /* Jurlique.png */; };
+		389A201C1B9E77870035BC2B /* FeelingTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 389A201A1B9E77870035BC2B /* FeelingTextCell.m */; };
+		389A201D1B9E77870035BC2B /* FeelingTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 389A201B1B9E77870035BC2B /* FeelingTextCell.xib */; };
+		389A20201B9E7D9B0035BC2B /* DottedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 389A201F1B9E7D9B0035BC2B /* DottedLineView.m */; };
 		38AF47171B9686B4006C45CB /* CommentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AF47151B9686B4006C45CB /* CommentViewCell.m */; };
 		38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AF47161B9686B4006C45CB /* CommentViewCell.xib */; };
 		38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B48A2F1B941EB100092D6D /* MySegmentControl.m */; };
@@ -698,6 +701,11 @@
 		389A20121B9D7D5B0035BC2B /* MAYSU.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MAYSU.png; sourceTree = "<group>"; };
 		389A20141B9D7D650035BC2B /* BOBBI_BROWN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BOBBI_BROWN.png; sourceTree = "<group>"; };
 		389A20161B9D7D6F0035BC2B /* Jurlique.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Jurlique.png; sourceTree = "<group>"; };
+		389A20191B9E77870035BC2B /* FeelingTextCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeelingTextCell.h; sourceTree = "<group>"; };
+		389A201A1B9E77870035BC2B /* FeelingTextCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeelingTextCell.m; sourceTree = "<group>"; };
+		389A201B1B9E77870035BC2B /* FeelingTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeelingTextCell.xib; sourceTree = "<group>"; };
+		389A201E1B9E7D9B0035BC2B /* DottedLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DottedLineView.h; sourceTree = "<group>"; };
+		389A201F1B9E7D9B0035BC2B /* DottedLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DottedLineView.m; sourceTree = "<group>"; };
 		38AF47141B9686B4006C45CB /* CommentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewCell.h; sourceTree = "<group>"; };
 		38AF47151B9686B4006C45CB /* CommentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewCell.m; sourceTree = "<group>"; wrapsLines = 1; };
 		38AF47161B9686B4006C45CB /* CommentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewCell.xib; sourceTree = "<group>"; };
@@ -1357,6 +1365,7 @@
 		2E8C34311B7DF404006B5BC0 /* Custon Cells */ = {
 			isa = PBXGroup;
 			children = (
+				389A20181B9E77300035BC2B /* FeelingTextCell */,
 				05E2B2981B9AB80C0024C7FE /* MoreTitleCell */,
 				2EBAB3AE1B9A91E1008E559F /* ProductiDescriptionCell */,
 				05E2B2921B9A82F90024C7FE /* EvaluationCell */,
@@ -1716,6 +1725,18 @@
 			name = FreshTryImage;
 			sourceTree = "<group>";
 		};
+		389A20181B9E77300035BC2B /* FeelingTextCell */ = {
+			isa = PBXGroup;
+			children = (
+				389A20191B9E77870035BC2B /* FeelingTextCell.h */,
+				389A201A1B9E77870035BC2B /* FeelingTextCell.m */,
+				389A201B1B9E77870035BC2B /* FeelingTextCell.xib */,
+				389A201E1B9E7D9B0035BC2B /* DottedLineView.h */,
+				389A201F1B9E7D9B0035BC2B /* DottedLineView.m */,
+			);
+			name = FeelingTextCell;
+			sourceTree = "<group>";
+		};
 		EF0BB323A10A85CD2217AC02 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1847,6 +1868,7 @@
 				2E6B46441B81A85400BF39D5 /* home_user_info_icon.png in Resources */,
 				389A1FED1B9AE13E0035BC2B /* LanZhiFelling.png in Resources */,
 				2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */,
+				389A201D1B9E77870035BC2B /* FeelingTextCell.xib in Resources */,
 				2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */,
 				05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */,
 				059E88D01B841BB20086544F /* FindViewController.xib in Resources */,
@@ -2051,6 +2073,7 @@
 				059E88D11B841BB20086544F /* FindViewControllerDataSource.m in Sources */,
 				059E88BD1B8414D30086544F /* FindBranchTableViewCell.m in Sources */,
 				2EA557001B95757E00C696B0 /* DetailCommentCell.m in Sources */,
+				389A20201B9E7D9B0035BC2B /* DottedLineView.m in Sources */,
 				057A26551B86F9DA003DAF07 /* MineViewController+Animation.m in Sources */,
 				2E4C0C891B90522200ECD2BF /* FlipTransition.m in Sources */,
 				2E8C34461B7DF46E006B5BC0 /* NSDictionary+Utility.m in Sources */,
@@ -2131,6 +2154,7 @@
 				2E77068A1B8829B30024282D /* CommentCell.m in Sources */,
 				05E04CDF1B96A67800E5D28C /* TitleHeadCell.m in Sources */,
 				05E04CE51B96C36500E5D28C /* TextCell.m in Sources */,
+				389A201C1B9E77870035BC2B /* FeelingTextCell.m in Sources */,
 				057A26501B86D08C003DAF07 /* MineViewControllerDataSource.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */,
