@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="simhei.ttf">
@@ -53,7 +53,7 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离申请结束还有:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfb-Wc-3Rm">
-                                <rect key="frame" x="35" y="35" width="125" height="21"/>
+                                <rect key="frame" x="36" y="35" width="125" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="KlC-1D-6pD"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" id="awp-1u-XDB"/>
@@ -67,7 +67,9 @@
                         <constraints>
                             <constraint firstItem="Rb8-wi-f9h" firstAttribute="top" secondItem="9Zw-Gz-Rym" secondAttribute="top" constant="8" id="Hib-pj-RiV"/>
                             <constraint firstAttribute="bottom" secondItem="hfb-Wc-3Rm" secondAttribute="bottom" constant="8" id="Sbg-Aw-jc6"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Rb8-wi-f9h" secondAttribute="trailing" constant="10" id="VoD-kl-NPc"/>
                             <constraint firstAttribute="height" constant="64" id="Wd7-sQ-2TV"/>
+                            <constraint firstItem="Rb8-wi-f9h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="9Zw-Gz-Rym" secondAttribute="leading" constant="10" id="b53-Lh-yYE"/>
                             <constraint firstAttribute="bottom" secondItem="LMT-kO-odd" secondAttribute="bottom" constant="8" id="bLG-3y-OZC"/>
                             <constraint firstAttribute="centerX" secondItem="Rb8-wi-f9h" secondAttribute="centerX" id="cvC-bd-4Eh"/>
                             <constraint firstAttribute="bottom" secondItem="z6k-xy-TxA" secondAttribute="bottom" constant="8" id="k89-Td-iFv"/>
