@@ -116,7 +116,7 @@
 }
 - (instancetype)initWithClearSkin{
     if (self = [super init]) {
-        self.title = @"Help Clear Skin祛痘牛奶——喝出来的光滑肌肤";
+        self.title = @"拉杜丽 贵族玫瑰花瓣腮红";
         self.coverImage = [UIImage imageNamed:@"ClearSkin.png"];
         self.titleImage = @"ClearSkin-logo.png";
         self.shortComment = @"提到拉杜丽laduree首先想到是他们家的马卡龙，但你知道它的彩妆同样出色吗？拉杜丽laduree和Albion合作推出的彩妆，几乎一夜之间，彩妆界人手几盒，甚至有人直接入了所有颜色！它的花瓣腮红，6克价格800多，号称彩妆里的“爱马仕”，如此高昂的价格还让这么多人趋之若鹜，到底好在哪里呢？";
