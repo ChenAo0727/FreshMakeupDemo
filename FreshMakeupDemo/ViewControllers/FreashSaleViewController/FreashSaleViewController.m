@@ -36,13 +36,11 @@
         return 384;
     
     } else if (indexPath.row == 1) {
-        TextCell *textCell = [tableView dequeueReusableCellWithIdentifier:TEXT_CELL];
-        CGRect frame = textCell.frame;
-        frame.size.width = [UIScreen screenWidth];
-        textCell.frame = frame;
-        [textCell updateWithLabel:self.freashSaleViewControllerDataSource.freshSaleInfomationTool.commentary];
-        CGFloat cellHeight = [textCell heightOfCell];
-       return cellHeight;
+        CGFloat cellHeight = [tableView fd_heightForCellWithIdentifier:TEXT_CELL cacheByIndexPath:indexPath configuration:^(TextCell *cell) {
+            [cell updateWithLabel:self.freashSaleViewControllerDataSource.freshSaleInfomationTool.commentary];
+        }];
+        return cellHeight;
+        
     } else if (indexPath.row == 2) {
         CGFloat cellHeight = [tableView fd_heightForCellWithIdentifier:TAGS_TABLEVIEW_CELL cacheByIndexPath:indexPath configuration:^(TagsTableViewCell *cell) {
             [cell.tagCollectionView reloadData];
@@ -52,7 +50,7 @@
             CGRect frame = cell.frame;
             frame.size.width = [UIScreen screenWidth];
             cell.frame = frame;
-        }];;
+        }];
         return cellHeight;
     } else if (indexPath.row == 3) {
         return 50;
