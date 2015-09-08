@@ -10,10 +10,12 @@
 #define DETAIL_BASE_COLLECTION_VIEW_CELL @"DetailBaseInfomationCell"
 @interface DetailBaseInfomationCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIView *detaBaseView;
+@property (weak, nonatomic) IBOutlet UIImageView *detaBaseTitleImageView;
 @property (weak, nonatomic) IBOutlet UILabel *detaBaseTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detaBaseSpeakLabel;
 - (CGFloat)heightOfCell;
 - (CGSize)sizeOfCell;
 - (void)updateWithTitleLabel:(NSString *)label;
 - (void)updateWithSpeakLabel:(NSString *)label;
+- (void)updatewithTitleImageView:(NSString *)imageString;
 @end

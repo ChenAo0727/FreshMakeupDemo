@@ -147,6 +147,7 @@
     DetailBaseInfomationCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL forIndexPath:indexPath];
     [cell updateWithTitleLabel:self.detailInfomationTool.title];
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
+    [cell updatewithTitleImageView:self.detailInfomationTool.titleImage];
     return cell;
 }
 

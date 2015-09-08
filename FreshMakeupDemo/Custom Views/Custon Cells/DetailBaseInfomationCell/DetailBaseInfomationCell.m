@@ -34,5 +34,8 @@
 - (void)updateWithSpeakLabel:(NSString *)label {
     self.detaBaseSpeakLabel.text = label;
 }
-
+- (void)updatewithTitleImageView:(NSString *)imageString {
+    self.detaBaseTitleImageView.image = [UIImage imageNamed:imageString];
+    
+}
 @end
