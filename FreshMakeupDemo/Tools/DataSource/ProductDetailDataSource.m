@@ -16,6 +16,7 @@
 #import "EvaluationCell.h"
 #import "MoreTitleCell.h"
 #import "TrialCollectionViewCell.h"
+#import "FeelIngViewController.h"
 @implementation ProductDetailDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
@@ -134,6 +135,9 @@
 
 - (UICollectionViewCell *)userFeelingCellWithCollectionView:(UICollectionView *)collectionView indexPath:(NSIndexPath *)indexPath data:(NSDictionary *)data isFeeling:(BOOL)isFeeling {
     SimpleRichTextCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:SIMPLE_RICH_TEXTCELL forIndexPath:indexPath];
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(moreViewAction)];
+    cell.moreTitleView.userInteractionEnabled = YES;
+    [cell.moreTitleView addGestureRecognizer:tap];
     [cell updateWithCoverImage:[UIImage imageNamed:[data objectForKey:@"image"]] contentText:[data objectForKey:@"text"] isFeeling:isFeeling];
     return cell;
 }
@@ -198,5 +202,12 @@
     DetailBaseInfomationCell *cell = (DetailBaseInfomationCell *)[self getCellWithNibName:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
     return [cell sizeOfCell];
+}
+- (void)moreViewAction {
+    if ([self.delegate respondsToSelector:@selector(ProductDetailDataSourceMoreJump)]) {
+        [self.delegate ProductDetailDataSourceMoreJump];
+    }
+    
+
 }
 @end

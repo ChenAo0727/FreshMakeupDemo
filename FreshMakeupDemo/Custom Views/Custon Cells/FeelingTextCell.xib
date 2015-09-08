@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="feelingTextCell" rowHeight="127" id="KGk-i7-Jjw" customClass="FeelingTextCell">
+            <rect key="frame" x="0.0" y="-1" width="328" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dc5-x8-vfN">
+                        <rect key="frame" x="8" y="0.0" width="16" height="16"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="7nd-74-GLp"/>
+                            <constraint firstAttribute="height" constant="16" id="STT-OU-fKn"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GG-Go-Q1m" customClass="DottedLineView">
+                        <rect key="frame" x="10" y="2" width="1" height="124"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="JYf-ga-3ZO"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="青春若有张不老的脸 但愿他永远不会改变 抗老听起来好像很大件事 但他其实真的不是老了之后才该做的 预防永远比逆转容易的多....." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMJ-KH-8TA">
+                        <rect key="frame" x="37" y="0.0" width="284" height="113"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="CdC-75-Puj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rMJ-KH-8TA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2GB-yl-JtP"/>
+                    <constraint firstAttribute="bottom" secondItem="1GG-Go-Q1m" secondAttribute="bottom" id="7W5-jB-dWo"/>
+                    <constraint firstItem="1GG-Go-Q1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8hf-SH-cyu"/>
+                    <constraint firstItem="rMJ-KH-8TA" firstAttribute="leading" secondItem="dc5-x8-vfN" secondAttribute="trailing" constant="13" id="FLe-bG-vgu"/>
+                    <constraint firstItem="rMJ-KH-8TA" firstAttribute="leading" secondItem="1GG-Go-Q1m" secondAttribute="trailing" constant="15" id="HQr-qp-EYv"/>
+                    <constraint firstAttribute="trailing" secondItem="rMJ-KH-8TA" secondAttribute="trailing" constant="7" id="Kj5-8b-6Is"/>
+                    <constraint firstItem="1GG-Go-Q1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="QVl-c3-ZTV"/>
+                    <constraint firstItem="1GG-Go-Q1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="RWI-8j-qzH"/>
+                    <constraint firstItem="1GG-Go-Q1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Su9-fg-0yq"/>
+                    <constraint firstItem="rMJ-KH-8TA" firstAttribute="leading" secondItem="1GG-Go-Q1m" secondAttribute="trailing" constant="8" id="T0Q-Oq-7QD"/>
+                    <constraint firstItem="1GG-Go-Q1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VeQ-kf-Ql3"/>
+                    <constraint firstItem="dc5-x8-vfN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="a3c-et-bu7"/>
+                    <constraint firstItem="1GG-Go-Q1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="h4n-Cc-tzI"/>
+                    <constraint firstItem="dc5-x8-vfN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jpq-Nr-nFn"/>
+                    <constraint firstItem="rMJ-KH-8TA" firstAttribute="leading" secondItem="dc5-x8-vfN" secondAttribute="trailing" constant="13" id="vnf-Cx-Jv2"/>
+                    <constraint firstAttribute="bottom" secondItem="rMJ-KH-8TA" secondAttribute="bottom" constant="13" id="zV3-M8-SsI"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="8hf-SH-cyu"/>
+                        <exclude reference="RWI-8j-qzH"/>
+                        <exclude reference="VeQ-kf-Ql3"/>
+                        <exclude reference="h4n-Cc-tzI"/>
+                        <exclude reference="FLe-bG-vgu"/>
+                        <exclude reference="HQr-qp-EYv"/>
+                        <exclude reference="T0Q-Oq-7QD"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="FeelingTextLabel" destination="rMJ-KH-8TA" id="r3V-gT-LOj"/>
+                <outlet property="LableImageView" destination="dc5-x8-vfN" id="dAe-HO-4uz"/>
+                <outlet property="bottomDottedLineView" destination="1GG-Go-Q1m" id="tXh-Ho-bQk"/>
+            </connections>
+            <point key="canvasLocation" x="262" y="317.5"/>
+        </tableViewCell>
+    </objects>
+</document>
