@@ -10,6 +10,10 @@
 @interface DetailInfomationTool : NSObject
 
 @property (strong, nonatomic) NSString *title;
+@property (strong, nonatomic) NSString *fitCrowd;
+@property (strong, nonatomic) NSString *specification;
+@property (strong, nonatomic) NSString *origin;
+@property (strong, nonatomic) NSString *price;
 @property (strong, nonatomic) NSString *titleImage;
 @property (strong, nonatomic) UIImage *coverImage;
 @property (strong, nonatomic) NSString *shortComment;

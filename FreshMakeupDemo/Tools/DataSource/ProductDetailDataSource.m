@@ -49,7 +49,6 @@
     } else {
         return CGSizeZero;
     }
-
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section {
@@ -148,6 +147,7 @@
     [cell updateWithTitleLabel:self.detailInfomationTool.title];
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
     [cell updatewithTitleImageView:self.detailInfomationTool.titleImage];
+    [cell updateWithFitCrowd:self.detailInfomationTool.fitCrowd origin:self.detailInfomationTool.origin specification:self.detailInfomationTool.specification price:self.detailInfomationTool.price];
     return cell;
 }
 
@@ -202,6 +202,7 @@
 - (CGSize)sizeOfDetailBaseInfomationCellWithIndexPath:(NSIndexPath *)indexPath {
     DetailBaseInfomationCell *cell = (DetailBaseInfomationCell *)[self getCellWithNibName:DETAIL_BASE_COLLECTION_VIEW_CELL];
     [cell updateWithSpeakLabel:self.detailInfomationTool.shortComment];
+    [cell updateWithFitCrowd:self.detailInfomationTool.fitCrowd origin:self.detailInfomationTool.origin specification:self.detailInfomationTool.specification price:self.detailInfomationTool.price];
     return [cell sizeOfCell];
 }
 

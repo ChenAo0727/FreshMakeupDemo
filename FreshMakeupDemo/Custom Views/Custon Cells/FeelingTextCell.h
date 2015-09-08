@@ -13,8 +13,6 @@
 @interface FeelingTextCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet DottedLineView *dottedLine;
 @property (weak, nonatomic) IBOutlet UIImageView *labelImage;
-
-
 @property (weak, nonatomic) IBOutlet UILabel *feelingTextLabel;
 @property (assign, nonatomic)BOOL isHideLableImage;
 

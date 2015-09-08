@@ -12,6 +12,7 @@
 
 - (instancetype)initWithElizabethArdenInfomation {
     if (self = [super init]) {
+        
         self.title = @"拯救压力初老肌 雅顿无瑕未来微胶囊全新上市";
         self.coverImage = [UIImage imageNamed:@"detail_yadun.png"];
         self.titleImage = @"ElizabethArden-logo.png";
@@ -39,6 +40,10 @@
 - (instancetype)initWithBobblBrownInfomation {
     if (self = [super init]) {
         self.title = @"芭比波朗魅蓝暖灰限量版眼影盘全新上市";
+        self.price = @"780";
+        self.origin = @"美国";
+        self.specification = @"8.4g";
+        self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"detail_babibolang_cover.png"];
         self.titleImage = @"bobbi-brown-logo.png";
         self.shortComment = @"此次全新的眼妆盘色彩多为中性，有不同的深度和光泽度，适合搭配不同的场合来调整妆容，你可以打造最经典百搭的日常通勤妆，也可稍加点缀变换成约会晚妆，更可加强色彩描画柔和的小烟熏，是秋季最适合搭配的眼妆组合.";
@@ -78,6 +83,10 @@
 - (instancetype)initWithSisleyInfomation {
     if (self = [super init]) {
         self.title = @"sisley 全新黑玫瑰珍宠滋养精华液";
+        self.price = @"1580";
+        self.origin = @"美国";
+        self.specification = @"25ml";
+        self.fitCrowd = @"30岁以上干性皮肤";
         self.coverImage = [UIImage imageNamed:@"detail_sisley_cover.png"];
         self.titleImage = @"Sisley-logo.png";
         self.shortComment = @"保养肌肤要从肌肤最基础的步骤做起，而肌肤最需要的基本元素就是清洁，人的脸上有300,000个毛孔，仅仅依靠双手和洁面卸妆产品，只能洗净表层的肌肤，无法彻底清洗毛孔里的油污。被誉为“洗脸神器”的科莱丽声波洁面仪推出Smart Profile (智能型)。它真的如此神奇？和小鲜鲜我来一探究竟吧";
@@ -91,6 +100,10 @@
 - (instancetype)initWithHelpClearSkinInfomation {
     if (self = [super init]) {
         self.title = @"Help Clear Skin祛痘牛奶——喝出来的光滑肌肤";
+        self.price = @"220";
+        self.origin = @"英国";
+        self.specification = @"14*3.5g";
+        self.fitCrowd = @"12岁以上，孕妇慎用";
         self.coverImage = [UIImage imageNamed:@"detail_helpSkin_cover.png"];
         self.titleImage = @"help-logo.png";
         self.shortComment = @"原来只听说过痘痘肌的妹子应该少喝牛奶，现在居然连牛奶也能祛痘？好吧，此牛奶非彼牛奶，而是英国的一种特殊饮品，被称为是help：clear skin。这个“牛奶”中包含了一种生物活性蛋白，富含乳铁蛋白，由于其抗菌效果，已被证实可以降低许多皮肤杂质的细菌的发展，有助于防止瑕疵的形成，帮助实现更清晰的皮肤.";
@@ -104,6 +117,10 @@
 - (instancetype)initWithBareMineralsInformation {
     if (self = [super init]) {
         self.title = @"BareMinerals睡眠粉—留宿必备";
+        self.price = @"360";
+        self.origin = @"美国";
+        self.specification = @"4.2g";
+        self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"BareMinerals.png"];
         self.titleImage = @"bareminerals-logo.png";
         self.shortComment = @"睡觉也要涂粉？这是因为很多女孩子担心自己的素颜吓到男票，或是去朋友家留宿怕被发现皮肤差等等等。所以这款堪比护肤品的晚间睡眠粉便应运而生～全新突破夜间护理方式!";
@@ -117,6 +134,10 @@
 - (instancetype)initWithClearSkin{
     if (self = [super init]) {
         self.title = @"拉杜丽 贵族玫瑰花瓣腮红";
+        self.price = @"786";
+        self.origin = @"日本";
+        self.specification = @"6g";
+        self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"ClearSkin.png"];
         self.titleImage = @"ClearSkin-logo.png";
         self.shortComment = @"提到拉杜丽laduree首先想到是他们家的马卡龙，但你知道它的彩妆同样出色吗？拉杜丽laduree和Albion合作推出的彩妆，几乎一夜之间，彩妆界人手几盒，甚至有人直接入了所有颜色！它的花瓣腮红，6克价格800多，号称彩妆里的“爱马仕”，如此高昂的价格还让这么多人趋之若鹜，到底好在哪里呢？";
@@ -132,8 +153,13 @@
 
     if (self = [super init]) {
         self.title = @"sisley 全新黑玫瑰珍宠滋养精华液";
+        self.price = @"1580";
+        self.origin = @"美国";
+        self.specification = @"25ml";
+        self.fitCrowd = @"30岁以上干性皮肤";
+        self.title = @"sisley 全新黑玫瑰珍宠滋养精华液";
         self.coverImage = [UIImage imageNamed:@"sisley.png"];
-        self.titleImage = @"help-logo.png";
+        self.titleImage = @"Sisley-logo.png";
         self.shortComment = @"2015年夏，CPB肌肤之钥专业底妆又加入了话题性十足的新品光盈粉饼，将实现裸纱光钻，聚焦光采主角概念，使肌肤有如穿上薄纱光层般，创造前所未有的透明光泽感。YOKA评测中心对其进行了评测，看看其表现如何。";
         NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"sisleyIntroduce.png",@"image", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
@@ -150,6 +176,10 @@
 
     if (self = [super init]) {
         self.title = @"SK-II全新 [超肌因] 逆龄系列新品发布";
+        self.price = @"1710";
+        self.origin = @"日本";
+        self.specification = @"30ml/50g";
+        self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"SK.png"];
         self.titleImage = @"skii-logo.png";
         self.shortComment = @"有没有想过你的护肤品可以让你在任何年龄，任何角度看起来都一样年轻？SK-II启发自micro RNA科研，为你解开保持年轻美丽的神秘面纱。带来跨越未来的抗老修护科技，揭开肌肤保养的新一章。";
