@@ -11,17 +11,20 @@
 #import "FeelingTextCell.h"
 @implementation FeelIngViwControllerDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
+    return 9;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    feelingImageCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_IMAGE_CELL];
-    [cell updateWithFeelImageView:@"detail_introduction_image.png" Feelllabel:@""];
-    if (indexPath.row == 1) {
+    
+    if (indexPath.row == 1 || indexPath.row % 2 == 1) {
+        feelingImageCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_IMAGE_CELL];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+        [cell updateWithFeelImageView:@"detail_introduction_image.png" Feelllabel:@""];
+        return cell;
+    } else {
         FeelingTextCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_TEXT_CELL];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         return cell;
     }
-    return cell;
-    
 }
 @end

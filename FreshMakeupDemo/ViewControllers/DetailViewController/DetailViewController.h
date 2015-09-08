@@ -12,7 +12,7 @@
 #import "ProductDetailDataSource.h"
 #import "ZoomFadeTransition.h"
 
-@interface DetailViewController : BaseViewController<CHTCollectionViewDelegateWaterfallLayout, UIViewControllerTransitioningDelegate>
+@interface DetailViewController : BaseViewController<CHTCollectionViewDelegateWaterfallLayout, UIViewControllerTransitioningDelegate,ProductDetailDataSourceDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *detailITitleImageView;
 
 @property (weak, nonatomic) IBOutlet UIView *topViewContainer;
