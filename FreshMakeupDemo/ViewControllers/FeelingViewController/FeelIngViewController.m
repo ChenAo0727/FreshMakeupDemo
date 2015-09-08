@@ -23,7 +23,11 @@
     [self configureViews];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200;
+    if (indexPath.row == 1 || indexPath.row % 2 == 1) {
+        return 192;
+    } else {
+    return 300;
+    }
 }
 - (IBAction)returnAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
