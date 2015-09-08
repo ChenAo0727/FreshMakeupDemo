@@ -19,7 +19,7 @@
     self.textLabelLeftConstraint.constant = 320;
     self.mineLabel.alpha = 0;
     [self layoutIfNeeded];
-    [UIView animateKeyframesWithDuration:0.2 delay:integer *0.04 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
+    [UIView animateKeyframesWithDuration:0.2 delay:integer *0.02 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         self.textLabelLeftConstraint.constant = 15;
         self.mineLabel.alpha = 1;
         [self layoutIfNeeded];

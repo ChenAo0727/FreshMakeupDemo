@@ -106,6 +106,12 @@
 		05D5F36B1B944FEA0080AE64 /* ShakeAshakeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D5F36A1B944FEA0080AE64 /* ShakeAshakeView.xib */; };
 		05D6BA601B99C50D00C20107 /* DetailBaseInfomationCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D6BA5E1B99C50D00C20107 /* DetailBaseInfomationCell.m */; };
 		05D6BA611B99C50D00C20107 /* DetailBaseInfomationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D6BA5F1B99C50D00C20107 /* DetailBaseInfomationCell.xib */; };
+		05D76C261B9E78560061546F /* feelingImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C241B9E78560061546F /* feelingImageCell.m */; };
+		05D76C271B9E78560061546F /* feelingImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C251B9E78560061546F /* feelingImageCell.xib */; };
+		05D76C2C1B9E80D80061546F /* FeelIngViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C2A1B9E80D80061546F /* FeelIngViewController.m */; };
+		05D76C2D1B9E80D80061546F /* FeelIngViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C2B1B9E80D80061546F /* FeelIngViewController.xib */; };
+		05D76C301B9E82720061546F /* FeelIngViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C2F1B9E82720061546F /* FeelIngViewController+Configuration.m */; };
+		05D76C331B9E82AF0061546F /* FeelIngViwControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C321B9E82AF0061546F /* FeelIngViwControllerDataSource.m */; };
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		05DEA0541B880C560094E123 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA0521B880C560094E123 /* black.png */; };
@@ -435,6 +441,16 @@
 		05D6BA5D1B99C50D00C20107 /* DetailBaseInfomationCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailBaseInfomationCell.h; sourceTree = "<group>"; };
 		05D6BA5E1B99C50D00C20107 /* DetailBaseInfomationCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailBaseInfomationCell.m; sourceTree = "<group>"; };
 		05D6BA5F1B99C50D00C20107 /* DetailBaseInfomationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailBaseInfomationCell.xib; sourceTree = "<group>"; };
+		05D76C231B9E78560061546F /* feelingImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = feelingImageCell.h; sourceTree = "<group>"; };
+		05D76C241B9E78560061546F /* feelingImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = feelingImageCell.m; sourceTree = "<group>"; };
+		05D76C251B9E78560061546F /* feelingImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = feelingImageCell.xib; sourceTree = "<group>"; };
+		05D76C291B9E80D80061546F /* FeelIngViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeelIngViewController.h; sourceTree = "<group>"; };
+		05D76C2A1B9E80D80061546F /* FeelIngViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeelIngViewController.m; sourceTree = "<group>"; };
+		05D76C2B1B9E80D80061546F /* FeelIngViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeelIngViewController.xib; sourceTree = "<group>"; };
+		05D76C2E1B9E82720061546F /* FeelIngViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FeelIngViewController+Configuration.h"; sourceTree = "<group>"; };
+		05D76C2F1B9E82720061546F /* FeelIngViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FeelIngViewController+Configuration.m"; sourceTree = "<group>"; };
+		05D76C311B9E82AF0061546F /* FeelIngViwControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeelIngViwControllerDataSource.h; sourceTree = "<group>"; };
+		05D76C321B9E82AF0061546F /* FeelIngViwControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeelIngViwControllerDataSource.m; sourceTree = "<group>"; };
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05DEA0521B880C560094E123 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -958,6 +974,30 @@
 			path = DetailBaseInfomationCell;
 			sourceTree = "<group>";
 		};
+		05D76C221B9E780E0061546F /* FeelingImageCell */ = {
+			isa = PBXGroup;
+			children = (
+				05D76C231B9E78560061546F /* feelingImageCell.h */,
+				05D76C241B9E78560061546F /* feelingImageCell.m */,
+				05D76C251B9E78560061546F /* feelingImageCell.xib */,
+			);
+			path = FeelingImageCell;
+			sourceTree = "<group>";
+		};
+		05D76C281B9E80520061546F /* FeelingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05D76C291B9E80D80061546F /* FeelIngViewController.h */,
+				05D76C2A1B9E80D80061546F /* FeelIngViewController.m */,
+				05D76C2B1B9E80D80061546F /* FeelIngViewController.xib */,
+				05D76C2E1B9E82720061546F /* FeelIngViewController+Configuration.h */,
+				05D76C2F1B9E82720061546F /* FeelIngViewController+Configuration.m */,
+				05D76C311B9E82AF0061546F /* FeelIngViwControllerDataSource.h */,
+				05D76C321B9E82AF0061546F /* FeelIngViwControllerDataSource.m */,
+			);
+			path = FeelingViewController;
+			sourceTree = "<group>";
+		};
 		05DEA0561B8858CB0094E123 /* Shake a shakeImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1214,6 +1254,7 @@
 				059E88C11B841BB20086544F /* FindViewController */,
 				057A26351B86CC75003DAF07 /* MineViewController */,
 				05E04CBC1B9685D200E5D28C /* FreashSaleViewController */,
+				05D76C281B9E80520061546F /* FeelingViewController */,
 			);
 			name = ViewControllers;
 			path = FreshMakeupDemo/ViewControllers;
@@ -1380,6 +1421,7 @@
 				057A26451B86D046003DAF07 /* MineViewControllerCell */,
 				05E04CDB1B96A64500E5D28C /* TitleHeadCell */,
 				05E04CE11B96C34600E5D28C /* TextCell */,
+				05D76C221B9E780E0061546F /* FeelingImageCell */,
 			);
 			path = "Custon Cells";
 			sourceTree = "<group>";
@@ -1859,9 +1901,11 @@
 				053BFEA31B84AD80002058BA /* simhei.ttf in Resources */,
 				05E2B2971B9A832B0024C7FE /* EvaluationCell.xib in Resources */,
 				0596FFEE1B9AF06E00E5653D /* detail_helpSkin_feeling.png in Resources */,
+				05D76C2D1B9E80D80061546F /* FeelIngViewController.xib in Resources */,
 				2E77067E1B8813FE0024282D /* detail_keepwet_icon.png in Resources */,
 				380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */,
 				2EB611A21B86EFDF000414A2 /* BaseInfomationCell.xib in Resources */,
+				05D76C271B9E78560061546F /* feelingImageCell.xib in Resources */,
 				0596FFFC1B9AF75100E5653D /* detail_yadun.png in Resources */,
 				389A20171B9D7D6F0035BC2B /* Jurlique.png in Resources */,
 				2EB611B31B874570000414A2 /* OwnerSayCell.xib in Resources */,
@@ -2112,6 +2156,7 @@
 				057A26491B86D046003DAF07 /* MineTableViewCell.m in Sources */,
 				2EA556F21B95460400C696B0 /* DetailViewController+Configuration.m in Sources */,
 				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
+				05D76C2C1B9E80D80061546F /* FeelIngViewController.m in Sources */,
 				057A26391B86CC8C003DAF07 /* MineViewController.m in Sources */,
 				05F8B4FB1B9D328C0011FD05 /* FreshSaleInfomationTool.m in Sources */,
 				2E8C344C1B7DF46E006B5BC0 /* UIScreen+Utility.m in Sources */,
@@ -2136,11 +2181,13 @@
 				2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */,
 				2EB4EF561B9699D80080185A /* WorthSlideView.m in Sources */,
 				05E04CC01B96864E00E5D28C /* FreashSaleViewController.m in Sources */,
+				05D76C301B9E82720061546F /* FeelIngViewController+Configuration.m in Sources */,
 				2E7706781B8812E10024282D /* FeatureDescriptionCell.m in Sources */,
 				2E7706721B88085A0024282D /* MoreInfomationCell.m in Sources */,
 				2ED04D5F1B9C1AC600D3F4B1 /* OpenBookAnimtionView.m in Sources */,
 				2E8C34111B7DF361006B5BC0 /* UINavigationController+CustomNavigationController.m in Sources */,
 				059E88CE1B841BB20086544F /* FindViewController+Configuration.m in Sources */,
+				05D76C331B9E82AF0061546F /* FeelIngViwControllerDataSource.m in Sources */,
 				2ED04D681B9C785300D3F4B1 /* CirclePopTransition.m in Sources */,
 				2EB611A11B86EFDF000414A2 /* BaseInfomationCell.m in Sources */,
 				2EB611B81B8755A7000414A2 /* ImageCell.m in Sources */,
@@ -2151,6 +2198,7 @@
 				2E6B46621B82182D00BF39D5 /* Pool.m in Sources */,
 				2E7706841B8818960024282D /* CopywriterCell.m in Sources */,
 				38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */,
+				05D76C261B9E78560061546F /* feelingImageCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

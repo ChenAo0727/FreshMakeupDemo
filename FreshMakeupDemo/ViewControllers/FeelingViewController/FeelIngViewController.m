@@ -1,39 +1,32 @@
 //
-//  MineViewController.m
+//  FeelIngViewController.m
 //  FreshMakeupDemo
 //
-//  Created by winchance on 15/8/21.
+//  Created by winchance on 15/9/8.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "MineViewController.h"
-#import "MineViewController+Animation.h"
-@interface MineViewController ()
+#import "FeelIngViewController.h"
+#import "FeelIngViewController+Configuration.h"
+@interface FeelIngViewController ()
 
 @end
 
-@implementation MineViewController
+@implementation FeelIngViewController
 + (instancetype)create {
-    return [[MineViewController alloc] initWithNibName:@"MineViewController" bundle:nil];
+    return [[FeelIngViewController alloc] initWithNibName:@"FeelIngViewController" bundle:nil];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    [self mineConfigureViews];
+    [self configureViews];
 }
-//出现的时候调用
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    //[self mineLabelAnimation];
-}
-
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 40;
+    return 200;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
-    [self guideViewAnimation:indexPath.row];
-    
-    
+- (IBAction)returnAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
