@@ -346,6 +346,30 @@
 		2EF5E96A1BA0118400D9BA5C /* avatar_data_image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9641BA0118400D9BA5C /* avatar_data_image5.jpg */; };
 		2EF5E96B1BA0118400D9BA5C /* avatar_data_image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9651BA0118400D9BA5C /* avatar_data_image6.jpg */; };
 		2EF5E96E1BA02E6400D9BA5C /* TrialInfomationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5E96D1BA02E6400D9BA5C /* TrialInfomationTool.m */; };
+		2EF5E9881BA0398700D9BA5C /* product_trial_image_cpb1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9701BA0398700D9BA5C /* product_trial_image_cpb1.jpg */; };
+		2EF5E9891BA0398700D9BA5C /* product_trial_image_cpb2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9711BA0398700D9BA5C /* product_trial_image_cpb2.jpg */; };
+		2EF5E98A1BA0398700D9BA5C /* product_trial_image_cpb3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9721BA0398700D9BA5C /* product_trial_image_cpb3.jpg */; };
+		2EF5E98B1BA0398700D9BA5C /* product_trial_image_cpb4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9731BA0398700D9BA5C /* product_trial_image_cpb4.jpg */; };
+		2EF5E98C1BA0398700D9BA5C /* product_trial_image_help1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9741BA0398700D9BA5C /* product_trial_image_help1.jpg */; };
+		2EF5E98D1BA0398700D9BA5C /* product_trial_image_help2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9751BA0398700D9BA5C /* product_trial_image_help2.jpg */; };
+		2EF5E98E1BA0398700D9BA5C /* product_trial_image_help3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9761BA0398700D9BA5C /* product_trial_image_help3.jpg */; };
+		2EF5E98F1BA0398700D9BA5C /* product_trial_image_help4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9771BA0398700D9BA5C /* product_trial_image_help4.jpg */; };
+		2EF5E9901BA0398700D9BA5C /* product_trial_image_ldl1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9781BA0398700D9BA5C /* product_trial_image_ldl1.jpg */; };
+		2EF5E9911BA0398700D9BA5C /* product_trial_image_ldl2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9791BA0398700D9BA5C /* product_trial_image_ldl2.jpg */; };
+		2EF5E9921BA0398700D9BA5C /* product_trial_image_ldl3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E97A1BA0398700D9BA5C /* product_trial_image_ldl3.jpg */; };
+		2EF5E9931BA0398700D9BA5C /* product_trial_image_ldl4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E97B1BA0398700D9BA5C /* product_trial_image_ldl4.jpg */; };
+		2EF5E9941BA0398700D9BA5C /* product_trial_image_skii1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E97C1BA0398700D9BA5C /* product_trial_image_skii1.jpg */; };
+		2EF5E9951BA0398700D9BA5C /* product_trial_image_skii2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E97D1BA0398700D9BA5C /* product_trial_image_skii2.jpg */; };
+		2EF5E9961BA0398700D9BA5C /* product_trial_image_skii3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E97E1BA0398700D9BA5C /* product_trial_image_skii3.jpg */; };
+		2EF5E9971BA0398700D9BA5C /* product_trial_image_skii4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E97F1BA0398700D9BA5C /* product_trial_image_skii4.jpg */; };
+		2EF5E9981BA0398700D9BA5C /* product_trial_image_yd1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9801BA0398700D9BA5C /* product_trial_image_yd1.jpg */; };
+		2EF5E9991BA0398700D9BA5C /* product_trial_image_yd2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9811BA0398700D9BA5C /* product_trial_image_yd2.jpg */; };
+		2EF5E99A1BA0398700D9BA5C /* product_trial_image_yd3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9821BA0398700D9BA5C /* product_trial_image_yd3.jpg */; };
+		2EF5E99B1BA0398700D9BA5C /* product_trial_image_yd4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9831BA0398700D9BA5C /* product_trial_image_yd4.jpg */; };
+		2EF5E99C1BA0398700D9BA5C /* product_trial_image_ysld1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9841BA0398700D9BA5C /* product_trial_image_ysld1.jpg */; };
+		2EF5E99D1BA0398700D9BA5C /* product_trial_image_ysld2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9851BA0398700D9BA5C /* product_trial_image_ysld2.jpg */; };
+		2EF5E99E1BA0398700D9BA5C /* product_trial_image_ysld3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9861BA0398700D9BA5C /* product_trial_image_ysld3.jpg */; };
+		2EF5E99F1BA0398700D9BA5C /* product_trial_image_ysld4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9871BA0398700D9BA5C /* product_trial_image_ysld4.jpg */; };
 		2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */; };
 		2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */; };
 		2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA821B8AD6130044BAF0 /* selection_like_image.png */; };
@@ -871,6 +895,30 @@
 		2EF5E9651BA0118400D9BA5C /* avatar_data_image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar_data_image6.jpg; path = avatarImage/avatar_data_image6.jpg; sourceTree = "<group>"; };
 		2EF5E96C1BA02E6400D9BA5C /* TrialInfomationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrialInfomationTool.h; sourceTree = "<group>"; };
 		2EF5E96D1BA02E6400D9BA5C /* TrialInfomationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrialInfomationTool.m; sourceTree = "<group>"; };
+		2EF5E9701BA0398700D9BA5C /* product_trial_image_cpb1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_cpb1.jpg; sourceTree = "<group>"; };
+		2EF5E9711BA0398700D9BA5C /* product_trial_image_cpb2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_cpb2.jpg; sourceTree = "<group>"; };
+		2EF5E9721BA0398700D9BA5C /* product_trial_image_cpb3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_cpb3.jpg; sourceTree = "<group>"; };
+		2EF5E9731BA0398700D9BA5C /* product_trial_image_cpb4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_cpb4.jpg; sourceTree = "<group>"; };
+		2EF5E9741BA0398700D9BA5C /* product_trial_image_help1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_help1.jpg; sourceTree = "<group>"; };
+		2EF5E9751BA0398700D9BA5C /* product_trial_image_help2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_help2.jpg; sourceTree = "<group>"; };
+		2EF5E9761BA0398700D9BA5C /* product_trial_image_help3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_help3.jpg; sourceTree = "<group>"; };
+		2EF5E9771BA0398700D9BA5C /* product_trial_image_help4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_help4.jpg; sourceTree = "<group>"; };
+		2EF5E9781BA0398700D9BA5C /* product_trial_image_ldl1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_ldl1.jpg; sourceTree = "<group>"; };
+		2EF5E9791BA0398700D9BA5C /* product_trial_image_ldl2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_ldl2.jpg; sourceTree = "<group>"; };
+		2EF5E97A1BA0398700D9BA5C /* product_trial_image_ldl3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_ldl3.jpg; sourceTree = "<group>"; };
+		2EF5E97B1BA0398700D9BA5C /* product_trial_image_ldl4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_ldl4.jpg; sourceTree = "<group>"; };
+		2EF5E97C1BA0398700D9BA5C /* product_trial_image_skii1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_skii1.jpg; sourceTree = "<group>"; };
+		2EF5E97D1BA0398700D9BA5C /* product_trial_image_skii2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_skii2.jpg; sourceTree = "<group>"; };
+		2EF5E97E1BA0398700D9BA5C /* product_trial_image_skii3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_skii3.jpg; sourceTree = "<group>"; };
+		2EF5E97F1BA0398700D9BA5C /* product_trial_image_skii4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_skii4.jpg; sourceTree = "<group>"; };
+		2EF5E9801BA0398700D9BA5C /* product_trial_image_yd1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_yd1.jpg; sourceTree = "<group>"; };
+		2EF5E9811BA0398700D9BA5C /* product_trial_image_yd2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_yd2.jpg; sourceTree = "<group>"; };
+		2EF5E9821BA0398700D9BA5C /* product_trial_image_yd3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_yd3.jpg; sourceTree = "<group>"; };
+		2EF5E9831BA0398700D9BA5C /* product_trial_image_yd4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_yd4.jpg; sourceTree = "<group>"; };
+		2EF5E9841BA0398700D9BA5C /* product_trial_image_ysld1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_ysld1.jpg; sourceTree = "<group>"; };
+		2EF5E9851BA0398700D9BA5C /* product_trial_image_ysld2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_ysld2.jpg; sourceTree = "<group>"; };
+		2EF5E9861BA0398700D9BA5C /* product_trial_image_ysld3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_ysld3.jpg; sourceTree = "<group>"; };
+		2EF5E9871BA0398700D9BA5C /* product_trial_image_ysld4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = product_trial_image_ysld4.jpg; sourceTree = "<group>"; };
 		2EFAEA7D1B8AB4170044BAF0 /* SelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionView.h; sourceTree = "<group>"; };
 		2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionView.m; sourceTree = "<group>"; };
 		2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionView.xib; sourceTree = "<group>"; };
@@ -1527,6 +1575,7 @@
 		2E8C33D41B7DEC79006B5BC0 /* FreshMakeupDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2EF5E96F1BA0398700D9BA5C /* trialImage */,
 				2EA427451B7ED71900BF4705 /* Images */,
 				2E8C34321B7DF46E006B5BC0 /* Tools */,
 				2E8C34121B7DF3DC006B5BC0 /* Custom Views */,
@@ -2083,6 +2132,38 @@
 			path = SimpleRichTextCell;
 			sourceTree = "<group>";
 		};
+		2EF5E96F1BA0398700D9BA5C /* trialImage */ = {
+			isa = PBXGroup;
+			children = (
+				2EF5E9701BA0398700D9BA5C /* product_trial_image_cpb1.jpg */,
+				2EF5E9711BA0398700D9BA5C /* product_trial_image_cpb2.jpg */,
+				2EF5E9721BA0398700D9BA5C /* product_trial_image_cpb3.jpg */,
+				2EF5E9731BA0398700D9BA5C /* product_trial_image_cpb4.jpg */,
+				2EF5E9741BA0398700D9BA5C /* product_trial_image_help1.jpg */,
+				2EF5E9751BA0398700D9BA5C /* product_trial_image_help2.jpg */,
+				2EF5E9761BA0398700D9BA5C /* product_trial_image_help3.jpg */,
+				2EF5E9771BA0398700D9BA5C /* product_trial_image_help4.jpg */,
+				2EF5E9781BA0398700D9BA5C /* product_trial_image_ldl1.jpg */,
+				2EF5E9791BA0398700D9BA5C /* product_trial_image_ldl2.jpg */,
+				2EF5E97A1BA0398700D9BA5C /* product_trial_image_ldl3.jpg */,
+				2EF5E97B1BA0398700D9BA5C /* product_trial_image_ldl4.jpg */,
+				2EF5E97C1BA0398700D9BA5C /* product_trial_image_skii1.jpg */,
+				2EF5E97D1BA0398700D9BA5C /* product_trial_image_skii2.jpg */,
+				2EF5E97E1BA0398700D9BA5C /* product_trial_image_skii3.jpg */,
+				2EF5E97F1BA0398700D9BA5C /* product_trial_image_skii4.jpg */,
+				2EF5E9801BA0398700D9BA5C /* product_trial_image_yd1.jpg */,
+				2EF5E9811BA0398700D9BA5C /* product_trial_image_yd2.jpg */,
+				2EF5E9821BA0398700D9BA5C /* product_trial_image_yd3.jpg */,
+				2EF5E9831BA0398700D9BA5C /* product_trial_image_yd4.jpg */,
+				2EF5E9841BA0398700D9BA5C /* product_trial_image_ysld1.jpg */,
+				2EF5E9851BA0398700D9BA5C /* product_trial_image_ysld2.jpg */,
+				2EF5E9861BA0398700D9BA5C /* product_trial_image_ysld3.jpg */,
+				2EF5E9871BA0398700D9BA5C /* product_trial_image_ysld4.jpg */,
+			);
+			name = trialImage;
+			path = Images/trialImage;
+			sourceTree = "<group>";
+		};
 		2EFAEA7C1B8AB3FE0044BAF0 /* SelectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -2299,7 +2380,9 @@
 				2E7706931B883C4E0024282D /* detail_approve_clicked_icon.png in Resources */,
 				389A1FE71B9ADF440035BC2B /* SKFelling.png in Resources */,
 				05E2B29D1B9AB8280024C7FE /* MoreTitleCell.xib in Resources */,
+				2EF5E9951BA0398700D9BA5C /* product_trial_image_skii2.jpg in Resources */,
 				059E88D71B8431460086544F /* title2.png in Resources */,
+				2EF5E9921BA0398700D9BA5C /* product_trial_image_ldl3.jpg in Resources */,
 				0596FFF51B9AF06E00E5653D /* detail_yanshilandai_feeling.png in Resources */,
 				05D3CDED1B8D8FB100DD1667 /* share.png in Resources */,
 				389A200F1B9D7D3C0035BC2B /* Dance_Legend.png in Resources */,
@@ -2322,6 +2405,7 @@
 				389A1FED1B9AE13E0035BC2B /* LanZhiFelling.png in Resources */,
 				2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */,
 				2EF5E9581B9FD6BC00D9BA5C /* feeling_help_clear_skin_image7png in Resources */,
+				2EF5E9941BA0398700D9BA5C /* product_trial_image_skii1.jpg in Resources */,
 				05D76C581B9ED6930061546F /* help-logo.png in Resources */,
 				389A201D1B9E77870035BC2B /* FeelingTextCell.xib in Resources */,
 				2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */,
@@ -2329,8 +2413,10 @@
 				059E88D01B841BB20086544F /* FindViewController.xib in Resources */,
 				389A1FF51B9AE36F0035BC2B /* sisleyFelling.png in Resources */,
 				053BFEA41B84AD80002058BA /* yaoti.ttf in Resources */,
+				2EF5E99F1BA0398700D9BA5C /* product_trial_image_ysld4.jpg in Resources */,
 				2E7EB50D1B87835800DA6494 /* detail_movie_image.png in Resources */,
 				2EE6FA741B9EB6BE00EE5A26 /* mishang_price_image.png in Resources */,
+				2EF5E9881BA0398700D9BA5C /* product_trial_image_cpb1.jpg in Resources */,
 				05D76C751B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png in Resources */,
 				389A20221B9FC1340035BC2B /* feeling_SK-II.png in Resources */,
 				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
@@ -2346,8 +2432,10 @@
 				05D76C781B9F0EEF0061546F /* feeling_EsteeLauder_feeling_4.png in Resources */,
 				380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */,
 				2EB611A21B86EFDF000414A2 /* BaseInfomationCell.xib in Resources */,
+				2EF5E9891BA0398700D9BA5C /* product_trial_image_cpb2.jpg in Resources */,
 				05D76C271B9E78560061546F /* feelingImageCell.xib in Resources */,
 				2EF5E9441B9FC56D00D9BA5C /* feeling_laduree_image3.png in Resources */,
+				2EF5E9901BA0398700D9BA5C /* product_trial_image_ldl1.jpg in Resources */,
 				2EF5E9671BA0118400D9BA5C /* avatar_data_image2.jpg in Resources */,
 				0596FFFC1B9AF75100E5653D /* detail_yadun.png in Resources */,
 				389A20171B9D7D6F0035BC2B /* Jurlique.png in Resources */,
@@ -2361,9 +2449,11 @@
 				2EE6FA731B9EB6BE00EE5A26 /* lily_bell_price_image.png in Resources */,
 				2EF5E9541B9FD6BC00D9BA5C /* feeling_help_clear_skin_image4.png in Resources */,
 				2E77068F1B883C460024282D /* detail_approve_icon.png in Resources */,
+				2EF5E98A1BA0398700D9BA5C /* product_trial_image_cpb3.jpg in Resources */,
 				2E7706791B8812E10024282D /* FeatureDescriptionCell.xib in Resources */,
 				2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */,
 				2E132F8B1B85B0E7005DCF14 /* home_down_guide3.png in Resources */,
+				2EF5E9971BA0398700D9BA5C /* product_trial_image_skii4.jpg in Resources */,
 				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
 				054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */,
 				2EE6FA721B9EB6BE00EE5A26 /* dior_price_image.png in Resources */,
@@ -2417,6 +2507,8 @@
 				059E88D81B8431460086544F /* title3.png in Resources */,
 				2EB4EF581B969A250080185A /* WorthSlideView.xib in Resources */,
 				05DEA0641B8858CB0094E123 /* shaking2.png in Resources */,
+				2EF5E99E1BA0398700D9BA5C /* product_trial_image_ysld3.jpg in Resources */,
+				2EF5E98B1BA0398700D9BA5C /* product_trial_image_cpb4.jpg in Resources */,
 				058ABF581B82C58100A0BA8A /* findhottopic3.jpg in Resources */,
 				2E7706851B8818960024282D /* CopywriterCell.xib in Resources */,
 				389A1FF11B9AE2610035BC2B /* AupresIntroduce.png in Resources */,
@@ -2444,6 +2536,7 @@
 				389A1FE11B9ADCED0035BC2B /* sisleyIntroduce.png in Resources */,
 				2EB4EF511B9692A50080185A /* worth_slideview_notworth.png in Resources */,
 				058ABF501B82C58100A0BA8A /* findarticle2.png in Resources */,
+				2EF5E98D1BA0398700D9BA5C /* product_trial_image_help2.jpg in Resources */,
 				389A1FF31B9AE2BF0035BC2B /* AupresFelling.png in Resources */,
 				2EF5E9421B9FC55700D9BA5C /* feeling_laduree_image5.png in Resources */,
 				38620C151BA01453000CD318 /* LawnCell.xib in Resources */,
@@ -2456,14 +2549,18 @@
 				05D76C761B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png in Resources */,
 				05D76C6A1B9EFC960061546F /* feeling_yadun_feeling_one.png in Resources */,
 				0596FFF01B9AF06E00E5653D /* detail_sisley_feeling.png in Resources */,
+				2EF5E99A1BA0398700D9BA5C /* product_trial_image_yd3.jpg in Resources */,
 				389A202C1B9FC69D0035BC2B /* feeling_sisley_feeling_five.png in Resources */,
 				05D6BA611B99C50D00C20107 /* DetailBaseInfomationCell.xib in Resources */,
 				38620C241BA02CF9000CD318 /* lawn.jpg in Resources */,
 				0596FFEA1B9AF06E00E5653D /* detail_bobbi_feeliing.png in Resources */,
+				2EF5E99C1BA0398700D9BA5C /* product_trial_image_ysld1.jpg in Resources */,
+				2EF5E98F1BA0398700D9BA5C /* product_trial_image_help4.jpg in Resources */,
 				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
 				2EA556FB1B95725A00C696B0 /* DetailCommentView.xib in Resources */,
 				059E88BE1B8414D30086544F /* FindBranchTableViewCell.xib in Resources */,
 				05D76C551B9ED6930061546F /* ClearSkin-logo.png in Resources */,
+				2EF5E98C1BA0398700D9BA5C /* product_trial_image_help1.jpg in Resources */,
 				05D76C8E1B9F16C50061546F /* PreferentialCell.xib in Resources */,
 				389A1FFA1B9D3DE00035BC2B /* freshSale_BIODERMA_image.png in Resources */,
 				05DEA0621B8858CB0094E123 /* shakeaShake.png in Resources */,
@@ -2485,16 +2582,21 @@
 				2E77069B1B88890D0024282D /* TrialCollectionViewCell.xib in Resources */,
 				2EF5E95B1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image10.png in Resources */,
 				2E21BAD11B897F91001F75D8 /* detail_cover_image.png in Resources */,
+				2EF5E9991BA0398700D9BA5C /* product_trial_image_yd2.jpg in Resources */,
 				2E7706901B883C460024282D /* detail_comment_icon.png in Resources */,
 				05D76C5A1B9ED6930061546F /* Sisley-logo.png in Resources */,
 				054DFD3C1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib in Resources */,
 				05D76C511B9ED6930061546F /* Aupres-logo.png in Resources */,
+				2EF5E9911BA0398700D9BA5C /* product_trial_image_ldl2.jpg in Resources */,
 				05CD8F151B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_1.png in Resources */,
+				2EF5E98E1BA0398700D9BA5C /* product_trial_image_help3.jpg in Resources */,
 				389A1FEB1B9AE0E30035BC2B /* LanZhiIntroduce.png in Resources */,
 				2EF5E9411B9FC55700D9BA5C /* feeling_laduree_image4.png in Resources */,
 				05D76C531B9ED6930061546F /* bobbi-brown-logo.png in Resources */,
 				2E7EB50B1B877FAA00DA6494 /* detail_introduction_image.png in Resources */,
 				3876B2651B95361500D916FF /* NewCommentCell.xib in Resources */,
+				2EF5E9931BA0398700D9BA5C /* product_trial_image_ldl4.jpg in Resources */,
+				2EF5E9981BA0398700D9BA5C /* product_trial_image_yd1.jpg in Resources */,
 				2E77067F1B8813FE0024282D /* detail_wrinkle_icon.png in Resources */,
 				38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */,
 				389A20261B9FC4900035BC2B /* feeling_sisiley_feeling_two.png in Resources */,
@@ -2513,11 +2615,13 @@
 				2EE6FA751B9EB6BE00EE5A26 /* panasonic_price_image.png in Resources */,
 				05F8B5001B9D402B0011FD05 /* freshSale_LilyBell_image.png in Resources */,
 				2EB611AD1B8736EA000414A2 /* detail_logo_image.png in Resources */,
+				2EF5E9961BA0398700D9BA5C /* product_trial_image_skii3.jpg in Resources */,
 				2E7706911B883C460024282D /* detail_watch_icon.png in Resources */,
 				059E88C01B8414D30086544F /* FindTableViewCell.xib in Resources */,
 				05DEA0631B8858CB0094E123 /* shaking1.png in Resources */,
 				05D76C7C1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_2.png in Resources */,
 				0596FFF81B9AF06E00E5653D /* detail_YSL_cover.png in Resources */,
+				2EF5E99D1BA0398700D9BA5C /* product_trial_image_ysld2.jpg in Resources */,
 				05CD8F181B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_2.png in Resources */,
 				2E4C0C801B900AA100ECD2BF /* RealBookView.xib in Resources */,
 				05E04CC11B96864E00E5D28C /* FreashSaleViewController.xib in Resources */,
@@ -2530,6 +2634,7 @@
 				2EB6119C1B86ED62000414A2 /* detail_top_image.png in Resources */,
 				2EF5E96A1BA0118400D9BA5C /* avatar_data_image5.jpg in Resources */,
 				2EE6FA711B9EB6BE00EE5A26 /* clarisonic_price_image.png in Resources */,
+				2EF5E99B1BA0398700D9BA5C /* product_trial_image_yd4.jpg in Resources */,
 				2EB4EF661B96CDED0080185A /* TagCollectionViewCell.xib in Resources */,
 				058ABF551B82C58100A0BA8A /* findarticleavatar3.png in Resources */,
 				389A1FF81B9D3B040035BC2B /* freshSale_MISSHA_image.png in Resources */,
