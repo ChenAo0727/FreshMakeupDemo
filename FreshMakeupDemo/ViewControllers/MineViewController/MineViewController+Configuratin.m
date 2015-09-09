@@ -14,6 +14,11 @@
     [self mineTableViewEdit];
     [self mineViewEdit];
     [self mineGuideViewEdit];
+    [self zoomFigureEdit];
+}
+
+- (void)zoomFigureEdit {
+    self.zoomFadeTransition = [[ZoomFadeTransition alloc] init];
 }
 
 - (void)mineTableViewEdit {

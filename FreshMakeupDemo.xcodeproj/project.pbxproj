@@ -99,6 +99,13 @@
 		059E88D61B8431460086544F /* title1.png in Resources */ = {isa = PBXBuildFile; fileRef = 059E88D31B8431460086544F /* title1.png */; };
 		059E88D71B8431460086544F /* title2.png in Resources */ = {isa = PBXBuildFile; fileRef = 059E88D41B8431460086544F /* title2.png */; };
 		059E88D81B8431460086544F /* title3.png in Resources */ = {isa = PBXBuildFile; fileRef = 059E88D51B8431460086544F /* title3.png */; };
+		05CD8F131B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F0D1B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_4.png */; };
+		05CD8F141B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_7.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F0E1B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_7.png */; };
+		05CD8F151B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F0F1B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_1.png */; };
+		05CD8F161B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F101B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_2.png */; };
+		05CD8F171B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F111B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_6.png */; };
+		05CD8F181B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F121B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_2.png */; };
+		05CD8F1A1B9FC5F70097DAE0 /* preferential.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F191B9FC5F70097DAE0 /* preferential.png */; };
 		05D3CDED1B8D8FB100DD1667 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDEC1B8D8FB100DD1667 /* share.png */; };
 		05D3CDEF1B8D8FB600DD1667 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDEE1B8D8FB600DD1667 /* back.png */; };
 		05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDF01B8D8FBC00DD1667 /* try.png */; };
@@ -500,6 +507,13 @@
 		059E88D31B8431460086544F /* title1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title1.png; sourceTree = "<group>"; };
 		059E88D41B8431460086544F /* title2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title2.png; sourceTree = "<group>"; };
 		059E88D51B8431460086544F /* title3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title3.png; sourceTree = "<group>"; };
+		05CD8F0D1B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_BareMinerals_feeling_4.png; sourceTree = "<group>"; };
+		05CD8F0E1B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_BareMinerals_feeling_7.png; sourceTree = "<group>"; };
+		05CD8F0F1B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_BobblBrown_feeling_1.png; sourceTree = "<group>"; };
+		05CD8F101B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_BareMinerals_feeling_2.png; sourceTree = "<group>"; };
+		05CD8F111B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_BareMinerals_feeling_6.png; sourceTree = "<group>"; };
+		05CD8F121B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_BobblBrown_feeling_2.png; sourceTree = "<group>"; };
+		05CD8F191B9FC5F70097DAE0 /* preferential.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = preferential.png; sourceTree = "<group>"; };
 		05D3CDEC1B8D8FB100DD1667 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		05D3CDEE1B8D8FB600DD1667 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		05D3CDF01B8D8FBC00DD1667 /* try.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = try.png; sourceTree = "<group>"; };
@@ -1194,6 +1208,12 @@
 				2EF5E93D1B9FC25B00D9BA5C /* feeling_laduree_image2.png */,
 				2EF5E93B1B9FC1C100D9BA5C /* feeling_laduree_image.png */,
 				05D76C6D1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png */,
+				05CD8F0D1B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_4.png */,
+				05CD8F0E1B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_7.png */,
+				05CD8F0F1B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_1.png */,
+				05CD8F101B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_2.png */,
+				05CD8F111B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_6.png */,
+				05CD8F121B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_2.png */,
 				05D76C6E1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png */,
 				05D76C6F1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_8.png */,
 				05D76C701B9F0EEF0061546F /* feeling_EsteeLauder_feeling_4.png */,
@@ -1778,6 +1798,7 @@
 				389A1FD71B9AD5650035BC2B /* Product */,
 				05D76C451B9ED6930061546F /* logo */,
 				05D76C5C1B9EFC960061546F /* feelingImages */,
+				05CD8F191B9FC5F70097DAE0 /* preferential.png */,
 				05D76C431B9EC7AE0061546F /* strength_game.png */,
 				2EB4EF4D1B9692A50080185A /* worth_slideview_car.png */,
 				2EB4EF4E1B9692A50080185A /* worth_slideview_notworth.png */,
@@ -2183,6 +2204,7 @@
 				05D76C421B9EC6580061546F /* StrengthGameViewController.xib in Resources */,
 				054DFD4C1B81AAEE00651F11 /* division.png in Resources */,
 				2EE6FA701B9EB6BE00EE5A26 /* bioderma_price_image.png in Resources */,
+				05CD8F171B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_6.png in Resources */,
 				057A26521B86D255003DAF07 /* interval.png in Resources */,
 				2E6B46441B81A85400BF39D5 /* home_user_info_icon.png in Resources */,
 				2EF5E9531B9FD6BC00D9BA5C /* feeling_help_clear_skin_image3.png in Resources */,
@@ -2221,6 +2243,7 @@
 				05E04CCB1B96928700E5D28C /* freash_sale_title_image.jpg in Resources */,
 				2EF5E9561B9FD6BC00D9BA5C /* feeling_help_clear_skin_image6.png in Resources */,
 				389A1FDB1B9ADA3F0035BC2B /* ClearSkin.png in Resources */,
+				05CD8F161B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_2.png in Resources */,
 				389A1FDD1B9ADA680035BC2B /* BareMinerals.png in Resources */,
 				2EE6FA731B9EB6BE00EE5A26 /* lily_bell_price_image.png in Resources */,
 				2EF5E9541B9FD6BC00D9BA5C /* feeling_help_clear_skin_image4.png in Resources */,
@@ -2235,6 +2258,7 @@
 				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
 				05D76C671B9EFC960061546F /* feeling_yadun_feeling_3.png in Resources */,
 				05D76C691B9EFC960061546F /* feeling_yadun_feeling_8.png in Resources */,
+				05CD8F131B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_4.png in Resources */,
 				0596FFF41B9AF06E00E5653D /* detail_yadun_produc.png in Resources */,
 				054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */,
 				05D76C5B1B9ED6930061546F /* skii-logo.png in Resources */,
@@ -2285,6 +2309,7 @@
 				389A1FEF1B9AE2100035BC2B /* Aupres.png in Resources */,
 				2EB4EF5E1B96C0510080185A /* TagsTableViewCell.xib in Resources */,
 				2E6B46431B81A85400BF39D5 /* home_discovery_icon.png in Resources */,
+				05CD8F1A1B9FC5F70097DAE0 /* preferential.png in Resources */,
 				05D76C521B9ED6930061546F /* bareminerals-logo.png in Resources */,
 				0596FFF71B9AF06E00E5653D /* detail_yashilandai_cover.png in Resources */,
 				05DEA0541B880C560094E123 /* black.png in Resources */,
@@ -2339,6 +2364,7 @@
 				05D76C5A1B9ED6930061546F /* Sisley-logo.png in Resources */,
 				054DFD3C1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib in Resources */,
 				05D76C511B9ED6930061546F /* Aupres-logo.png in Resources */,
+				05CD8F151B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_1.png in Resources */,
 				389A1FEB1B9AE0E30035BC2B /* LanZhiIntroduce.png in Resources */,
 				2EF5E9411B9FC55700D9BA5C /* feeling_laduree_image4.png in Resources */,
 				05D76C531B9ED6930061546F /* bobbi-brown-logo.png in Resources */,
@@ -2350,6 +2376,7 @@
 				05DEA0651B8858CB0094E123 /* shaking3.png in Resources */,
 				054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */,
 				05D76C6B1B9EFC960061546F /* feeling_yadun_feeling_three.png in Resources */,
+				05CD8F141B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_7.png in Resources */,
 				2E77067D1B8813FE0024282D /* detail_good_price_icon.png in Resources */,
 				0596FFF91B9AF06E00E5653D /* detail_YSL_feeling.png in Resources */,
 				0596FFF21B9AF06E00E5653D /* detail_yadun_cover.png in Resources */,
@@ -2364,6 +2391,7 @@
 				05DEA0631B8858CB0094E123 /* shaking1.png in Resources */,
 				05D76C7C1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_2.png in Resources */,
 				0596FFF81B9AF06E00E5653D /* detail_YSL_cover.png in Resources */,
+				05CD8F181B9FC52B0097DAE0 /* feeling_BobblBrown_feeling_2.png in Resources */,
 				2E4C0C801B900AA100ECD2BF /* RealBookView.xib in Resources */,
 				05E04CC11B96864E00E5D28C /* FreashSaleViewController.xib in Resources */,
 				05DEA0671B8858CB0094E123 /* underthe.png in Resources */,

@@ -8,6 +8,7 @@
 
 #import "MineViewController.h"
 #import "MineViewController+Animation.h"
+#import "PreferentialViewController.h"
 @interface MineViewController ()
 
 @end
@@ -32,10 +33,22 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
     [self guideViewAnimation:indexPath.row];
-    
+    if (indexPath.row == 1) {
+        PreferentialViewController *preferentialViewController = [[PreferentialViewController alloc] init];
+        preferentialViewController.modalPresentationStyle = UIModalPresentationCustom;
+        preferentialViewController.transitioningDelegate = self;
+        [self presentViewController:preferentialViewController animated:YES completion:nil];
+    }
     
 }
-
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    self.zoomFadeTransition.reverse = NO;
+    return self.zoomFadeTransition;
+}
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    self.zoomFadeTransition.reverse = YES;
+    return self.zoomFadeTransition;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
