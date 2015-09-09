@@ -337,6 +337,12 @@
 		2EF5E95B1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image10.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E94F1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image10.png */; };
 		2EF5E95C1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9501B9FD6BC00D9BA5C /* feeling_help_clear_skin_image11.png */; };
 		2EF5E95F1B9FF41E00D9BA5C /* CommentInfomationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5E95E1B9FF41E00D9BA5C /* CommentInfomationTool.m */; };
+		2EF5E9661BA0118400D9BA5C /* avatar_data_image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9601BA0118400D9BA5C /* avatar_data_image1.jpg */; };
+		2EF5E9671BA0118400D9BA5C /* avatar_data_image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9611BA0118400D9BA5C /* avatar_data_image2.jpg */; };
+		2EF5E9681BA0118400D9BA5C /* avatar_data_image3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9621BA0118400D9BA5C /* avatar_data_image3.jpg */; };
+		2EF5E9691BA0118400D9BA5C /* avatar_data_image4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9631BA0118400D9BA5C /* avatar_data_image4.jpg */; };
+		2EF5E96A1BA0118400D9BA5C /* avatar_data_image5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9641BA0118400D9BA5C /* avatar_data_image5.jpg */; };
+		2EF5E96B1BA0118400D9BA5C /* avatar_data_image6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9651BA0118400D9BA5C /* avatar_data_image6.jpg */; };
 		2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */; };
 		2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */; };
 		2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA821B8AD6130044BAF0 /* selection_like_image.png */; };
@@ -852,6 +858,12 @@
 		2EF5E9501B9FD6BC00D9BA5C /* feeling_help_clear_skin_image11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_help_clear_skin_image11.png; sourceTree = "<group>"; };
 		2EF5E95D1B9FF41E00D9BA5C /* CommentInfomationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInfomationTool.h; sourceTree = "<group>"; };
 		2EF5E95E1B9FF41E00D9BA5C /* CommentInfomationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentInfomationTool.m; sourceTree = "<group>"; };
+		2EF5E9601BA0118400D9BA5C /* avatar_data_image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar_data_image1.jpg; path = avatarImage/avatar_data_image1.jpg; sourceTree = "<group>"; };
+		2EF5E9611BA0118400D9BA5C /* avatar_data_image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar_data_image2.jpg; path = avatarImage/avatar_data_image2.jpg; sourceTree = "<group>"; };
+		2EF5E9621BA0118400D9BA5C /* avatar_data_image3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar_data_image3.jpg; path = avatarImage/avatar_data_image3.jpg; sourceTree = "<group>"; };
+		2EF5E9631BA0118400D9BA5C /* avatar_data_image4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar_data_image4.jpg; path = avatarImage/avatar_data_image4.jpg; sourceTree = "<group>"; };
+		2EF5E9641BA0118400D9BA5C /* avatar_data_image5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar_data_image5.jpg; path = avatarImage/avatar_data_image5.jpg; sourceTree = "<group>"; };
+		2EF5E9651BA0118400D9BA5C /* avatar_data_image6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = avatar_data_image6.jpg; path = avatarImage/avatar_data_image6.jpg; sourceTree = "<group>"; };
 		2EFAEA7D1B8AB4170044BAF0 /* SelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionView.h; sourceTree = "<group>"; };
 		2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionView.m; sourceTree = "<group>"; };
 		2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionView.xib; sourceTree = "<group>"; };
@@ -1838,6 +1850,12 @@
 		2EA427451B7ED71900BF4705 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				2EF5E9601BA0118400D9BA5C /* avatar_data_image1.jpg */,
+				2EF5E9611BA0118400D9BA5C /* avatar_data_image2.jpg */,
+				2EF5E9621BA0118400D9BA5C /* avatar_data_image3.jpg */,
+				2EF5E9631BA0118400D9BA5C /* avatar_data_image4.jpg */,
+				2EF5E9641BA0118400D9BA5C /* avatar_data_image5.jpg */,
+				2EF5E9651BA0118400D9BA5C /* avatar_data_image6.jpg */,
 				2EE6FA691B9EB6BE00EE5A26 /* priceImage */,
 				2EE6FA651B9E79E900EE5A26 /* Icon@2x.png */,
 				2EE6FA661B9E79E900EE5A26 /* Icon@3x.png */,
@@ -2319,6 +2337,7 @@
 				2EB611A21B86EFDF000414A2 /* BaseInfomationCell.xib in Resources */,
 				05D76C271B9E78560061546F /* feelingImageCell.xib in Resources */,
 				2EF5E9441B9FC56D00D9BA5C /* feeling_laduree_image3.png in Resources */,
+				2EF5E9671BA0118400D9BA5C /* avatar_data_image2.jpg in Resources */,
 				0596FFFC1B9AF75100E5653D /* detail_yadun.png in Resources */,
 				389A20171B9D7D6F0035BC2B /* Jurlique.png in Resources */,
 				2EB611B31B874570000414A2 /* OwnerSayCell.xib in Resources */,
@@ -2360,11 +2379,13 @@
 				054DFD491B81AAEE00651F11 /* apply_head_product.png in Resources */,
 				05D76C561B9ED6930061546F /* ElizabethArden-logo.png in Resources */,
 				05D76C541B9ED6930061546F /* cbp-logo.png in Resources */,
+				2EF5E9681BA0118400D9BA5C /* avatar_data_image3.jpg in Resources */,
 				2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */,
 				389A1FFC1B9D3E810035BC2B /* freshSale_Panasonic_image.png in Resources */,
 				2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */,
 				2EA557011B95757E00C696B0 /* DetailCommentCell.xib in Resources */,
 				053BFEA21B84AD80002058BA /* lexus.ttf in Resources */,
+				2EF5E9661BA0118400D9BA5C /* avatar_data_image1.jpg in Resources */,
 				0596FFE91B9AF06E00E5653D /* detail_babibolang_cover.png in Resources */,
 				05D3CDEF1B8D8FB600DD1667 /* back.png in Resources */,
 				05DEA0661B8858CB0094E123 /* twinkle.png in Resources */,
@@ -2394,6 +2415,7 @@
 				389A1FEF1B9AE2100035BC2B /* Aupres.png in Resources */,
 				2EB4EF5E1B96C0510080185A /* TagsTableViewCell.xib in Resources */,
 				2E6B46431B81A85400BF39D5 /* home_discovery_icon.png in Resources */,
+				2EF5E96B1BA0118400D9BA5C /* avatar_data_image6.jpg in Resources */,
 				05CD8F1A1B9FC5F70097DAE0 /* preferential.png in Resources */,
 				05D76C521B9ED6930061546F /* bareminerals-logo.png in Resources */,
 				0596FFF71B9AF06E00E5653D /* detail_yashilandai_cover.png in Resources */,
@@ -2462,6 +2484,7 @@
 				2E77067F1B8813FE0024282D /* detail_wrinkle_icon.png in Resources */,
 				38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */,
 				389A20261B9FC4900035BC2B /* feeling_sisiley_feeling_two.png in Resources */,
+				2EF5E9691BA0118400D9BA5C /* avatar_data_image4.jpg in Resources */,
 				058ABF4E1B82C58100A0BA8A /* findad4.jpg in Resources */,
 				05DEA0651B8858CB0094E123 /* shaking3.png in Resources */,
 				054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */,
@@ -2492,6 +2515,7 @@
 				05DEA0601B8858CB0094E123 /* last.png in Resources */,
 				058ABF4D1B82C58100A0BA8A /* findad3.jpg in Resources */,
 				2EB6119C1B86ED62000414A2 /* detail_top_image.png in Resources */,
+				2EF5E96A1BA0118400D9BA5C /* avatar_data_image5.jpg in Resources */,
 				2EE6FA711B9EB6BE00EE5A26 /* clarisonic_price_image.png in Resources */,
 				2EB4EF661B96CDED0080185A /* TagCollectionViewCell.xib in Resources */,
 				058ABF551B82C58100A0BA8A /* findarticleavatar3.png in Resources */,

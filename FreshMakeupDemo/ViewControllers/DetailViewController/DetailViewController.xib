@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="detailCollectionView" destination="Vd1-mD-l4y" id="K1f-ud-Lwl"/>
                 <outlet property="detailITitleImageView" destination="4Mc-EE-uAo" id="T0G-XY-Blw"/>
+                <outlet property="lineView" destination="INg-20-Oiy" id="81E-wy-ESL"/>
                 <outlet property="topViewContainer" destination="6Zc-UQ-pFB" id="KtP-og-Tav"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>

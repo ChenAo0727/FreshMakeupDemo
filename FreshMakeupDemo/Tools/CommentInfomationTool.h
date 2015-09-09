@@ -6,10 +6,18 @@
 //  Copyright (c) 2015 guoshencheng. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface CommentInfomationTool : NSObject
 
+@property (strong, nonatomic) NSString *nickName;
+@property (strong, nonatomic) UIImage *avatar;
+@property (assign, nonatomic) NSInteger skinProperty;
+@property (assign, nonatomic) BOOL isMale;
+@property (strong, nonatomic) NSString *age;
+@property (strong, nonatomic) NSString *identity;
+@property (strong, nonatomic) NSString *commentText;
 
++ (NSArray *)ladureeCommentArray;
 
 @end

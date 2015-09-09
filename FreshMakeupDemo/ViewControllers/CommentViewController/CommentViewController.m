@@ -73,7 +73,7 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
         return CGSizeMake([UIScreen screenWidth] - 20, 200);
         
     }else if (indexPath.section == 1 || indexPath.section == 3){
-       
+        [cell updateWithCommentInfomationTool:[self.comments objectAtIndex:indexPath.row]];
         size = [cell sizeOfCell];
         
     }if (indexPath.section == 2) {
@@ -113,6 +113,12 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
     if (indexPath.section == 1 || indexPath.section == 3) {
         
         CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CommentIdentifier forIndexPath:indexPath];
+        [cell updateWithCommentInfomationTool:[self.comments objectAtIndex:indexPath.row]];
+        if (cell.frame.origin.x < 20) {
+            cell.rightLine.hidden = NO;
+        } else {
+            cell.rightLine.hidden = YES;
+        }
         cell.delegate = self;
         return cell;
 

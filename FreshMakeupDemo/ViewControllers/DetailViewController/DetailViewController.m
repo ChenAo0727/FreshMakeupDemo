@@ -61,6 +61,8 @@
 #pragma mark - UICollectionDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    self.detailITitleImageView.hidden = scrollView.contentOffset.y > 280;
+    self.lineView.hidden = scrollView.contentOffset.y > 280;
     CGFloat expectOffset = self.selectionViewY + 54 - self.detailCollectionView.frame.size.height;
     if (scrollView.contentOffset.y >= expectOffset) {
         [self.selectionView updateBottomSpace:(expectOffset - scrollView.contentOffset.y)];
@@ -91,6 +93,7 @@
 
 - (void)pushViewCommentViewController {
     CommentViewController *commentViewController = [CommentViewController create];
+    commentViewController.comments = self.productDetailDataSource.detailInfomationTool.comments;
     commentViewController.modalPresentationStyle = UIModalPresentationCustom;
     commentViewController.transitioningDelegate = self;
     [self presentViewController:commentViewController animated:YES completion:nil];
