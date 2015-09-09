@@ -10,5 +10,9 @@
 #import "PreferentialViewControllerDataSource.h"
 @interface PreferentialViewController : BaseViewController<UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *preferentialTableView;
+
+@property (weak, nonatomic) IBOutlet UILabel *TitleLabel;
+@property (assign, nonatomic)NSInteger index;
 @property (strong, nonatomic)PreferentialViewControllerDataSource *preferentialViewControllerDataSource;
++ (instancetype)create;
 @end

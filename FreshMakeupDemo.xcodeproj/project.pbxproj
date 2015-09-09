@@ -345,6 +345,14 @@
 		380D8F7B1B8C37AF000FA98C /* CommentViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7A1B8C37AF000FA98C /* CommentViewLayout.m */; };
 		380D8F7F1B8C5369000FA98C /* HeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */; };
 		380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */; };
+		38620C051BA01197000CD318 /* LawnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C031BA01197000CD318 /* LawnViewController.m */; };
+		38620C061BA01197000CD318 /* LawnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38620C041BA01197000CD318 /* LawnViewController.xib */; };
+		38620C091BA012EF000CD318 /* LawnViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C081BA012EF000CD318 /* LawnViewController+Configuration.m */; };
+		38620C0C1BA01354000CD318 /* LawnViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C0B1BA01354000CD318 /* LawnViewControllerDataSource.m */; };
+		38620C141BA01453000CD318 /* LawnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C121BA01453000CD318 /* LawnCell.m */; };
+		38620C151BA01453000CD318 /* LawnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38620C131BA01453000CD318 /* LawnCell.xib */; };
+		38620C1C1BA01F89000CD318 /* lawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 38620C1A1BA01F89000CD318 /* lawn.png */; };
+		38620C1D1BA01F89000CD318 /* probation.png in Resources */ = {isa = PBXBuildFile; fileRef = 38620C1B1BA01F89000CD318 /* probation.png */; };
 		3876B2641B95361500D916FF /* NewCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876B2621B95361500D916FF /* NewCommentCell.m */; };
 		3876B2651B95361500D916FF /* NewCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876B2631B95361500D916FF /* NewCommentCell.xib */; };
 		389A1FDB1B9ADA3F0035BC2B /* ClearSkin.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FDA1B9ADA3F0035BC2B /* ClearSkin.png */; };
@@ -856,6 +864,18 @@
 		380D8F7C1B8C5369000FA98C /* HeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewCell.h; sourceTree = "<group>"; };
 		380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewCell.m; sourceTree = "<group>"; };
 		380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
+		38620C021BA01197000CD318 /* LawnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawnViewController.h; sourceTree = "<group>"; };
+		38620C031BA01197000CD318 /* LawnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawnViewController.m; sourceTree = "<group>"; };
+		38620C041BA01197000CD318 /* LawnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LawnViewController.xib; sourceTree = "<group>"; };
+		38620C071BA012EF000CD318 /* LawnViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LawnViewController+Configuration.h"; sourceTree = "<group>"; };
+		38620C081BA012EF000CD318 /* LawnViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LawnViewController+Configuration.m"; sourceTree = "<group>"; };
+		38620C0A1BA01354000CD318 /* LawnViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawnViewControllerDataSource.h; sourceTree = "<group>"; };
+		38620C0B1BA01354000CD318 /* LawnViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawnViewControllerDataSource.m; sourceTree = "<group>"; };
+		38620C111BA01453000CD318 /* LawnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawnCell.h; sourceTree = "<group>"; };
+		38620C121BA01453000CD318 /* LawnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawnCell.m; sourceTree = "<group>"; };
+		38620C131BA01453000CD318 /* LawnCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LawnCell.xib; sourceTree = "<group>"; };
+		38620C1A1BA01F89000CD318 /* lawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lawn.png; sourceTree = "<group>"; };
+		38620C1B1BA01F89000CD318 /* probation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = probation.png; sourceTree = "<group>"; };
 		3876B2611B95361500D916FF /* NewCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCommentCell.h; sourceTree = "<group>"; };
 		3876B2621B95361500D916FF /* NewCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCommentCell.m; sourceTree = "<group>"; };
 		3876B2631B95361500D916FF /* NewCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCommentCell.xib; sourceTree = "<group>"; };
@@ -1540,6 +1560,7 @@
 				05E04CBC1B9685D200E5D28C /* FreashSaleViewController */,
 				05D76C281B9E80520061546F /* FeelingViewController */,
 				05D76C3D1B9EC61A0061546F /* StrengthGameViewController */,
+				38620C011BA01154000CD318 /* LawnViewController */,
 				05D76C7D1B9F12E20061546F /* PreferentialViewController */,
 			);
 			name = ViewControllers;
@@ -1709,6 +1730,7 @@
 				05E04CDB1B96A64500E5D28C /* TitleHeadCell */,
 				05E04CE11B96C34600E5D28C /* TextCell */,
 				05D76C221B9E780E0061546F /* FeelingImageCell */,
+				38620C0D1BA013BB000CD318 /* LawnCell */,
 				05D76C891B9F166F0061546F /* PreferentialCell */,
 			);
 			path = "Custon Cells";
@@ -1826,6 +1848,8 @@
 				05D76C451B9ED6930061546F /* logo */,
 				05D76C5C1B9EFC960061546F /* feelingImages */,
 				05CD8F191B9FC5F70097DAE0 /* preferential.png */,
+				38620C1A1BA01F89000CD318 /* lawn.png */,
+				38620C1B1BA01F89000CD318 /* probation.png */,
 				05CD8F1D1B9FF63A0097DAE0 /* delete.png */,
 				05D76C431B9EC7AE0061546F /* strength_game.png */,
 				05CD8F1B1B9FD8160097DAE0 /* square.png */,
@@ -2040,6 +2064,32 @@
 			path = SelectionView;
 			sourceTree = "<group>";
 		};
+		38620C011BA01154000CD318 /* LawnViewController */ = {
+			isa = PBXGroup;
+			children = (
+				38620C021BA01197000CD318 /* LawnViewController.h */,
+				38620C031BA01197000CD318 /* LawnViewController.m */,
+				38620C041BA01197000CD318 /* LawnViewController.xib */,
+				38620C071BA012EF000CD318 /* LawnViewController+Configuration.h */,
+				38620C081BA012EF000CD318 /* LawnViewController+Configuration.m */,
+				38620C0A1BA01354000CD318 /* LawnViewControllerDataSource.h */,
+				38620C0B1BA01354000CD318 /* LawnViewControllerDataSource.m */,
+			);
+			name = LawnViewController;
+			path = PreferentialViewController;
+			sourceTree = "<group>";
+		};
+		38620C0D1BA013BB000CD318 /* LawnCell */ = {
+			isa = PBXGroup;
+			children = (
+				38620C111BA01453000CD318 /* LawnCell.h */,
+				38620C121BA01453000CD318 /* LawnCell.m */,
+				38620C131BA01453000CD318 /* LawnCell.xib */,
+			);
+			name = LawnCell;
+			path = PreferentialCell;
+			sourceTree = "<group>";
+		};
 		389A1FD71B9AD5650035BC2B /* Product */ = {
 			isa = PBXGroup;
 			children = (
@@ -2243,6 +2293,7 @@
 				2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */,
 				2EF5E9581B9FD6BC00D9BA5C /* feeling_help_clear_skin_image7png in Resources */,
 				05D76C581B9ED6930061546F /* help-logo.png in Resources */,
+				38620C1C1BA01F89000CD318 /* lawn.png in Resources */,
 				389A201D1B9E77870035BC2B /* FeelingTextCell.xib in Resources */,
 				2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */,
 				05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */,
@@ -2351,6 +2402,7 @@
 				2EF5E9521B9FD6BC00D9BA5C /* feeling_help_clear_skin_image2.png in Resources */,
 				2EB4EF521B9692A50080185A /* worth_slideview_worth.png in Resources */,
 				058ABF5B1B82C58100A0BA8A /* newarticlebg.9.png in Resources */,
+				38620C061BA01197000CD318 /* LawnViewController.xib in Resources */,
 				05CD8F1E1B9FF63A0097DAE0 /* delete.png in Resources */,
 				2EF5E93C1B9FC1C100D9BA5C /* feeling_laduree_image.png in Resources */,
 				058ABF4C1B82C58100A0BA8A /* findad2.jpg in Resources */,
@@ -2359,6 +2411,7 @@
 				058ABF501B82C58100A0BA8A /* findarticle2.png in Resources */,
 				389A1FF31B9AE2BF0035BC2B /* AupresFelling.png in Resources */,
 				2EF5E9421B9FC55700D9BA5C /* feeling_laduree_image5.png in Resources */,
+				38620C151BA01453000CD318 /* LawnCell.xib in Resources */,
 				05E04CCA1B96928700E5D28C /* feash_sale_review.png in Resources */,
 				05DEA0611B8858CB0094E123 /* lastNew.png in Resources */,
 				05D76C681B9EFC960061546F /* feeling_yadun_feeling_6.png in Resources */,
@@ -2416,6 +2469,7 @@
 				05CD8F141B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_7.png in Resources */,
 				2E77067D1B8813FE0024282D /* detail_good_price_icon.png in Resources */,
 				0596FFF91B9AF06E00E5653D /* detail_YSL_feeling.png in Resources */,
+				38620C1D1BA01F89000CD318 /* probation.png in Resources */,
 				0596FFF21B9AF06E00E5653D /* detail_yadun_cover.png in Resources */,
 				2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */,
 				05D76C7B1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_14.png in Resources */,
@@ -2500,6 +2554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EFAEA8D1B8B1D3D0044BAF0 /* DetailViewController+Animation.m in Sources */,
+				38620C051BA01197000CD318 /* LawnViewController.m in Sources */,
 				2E8C342B1B7DF3DC006B5BC0 /* PickUpMotion+Animation.m in Sources */,
 				054DFD391B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.m in Sources */,
 				2E4C0C7F1B900AA100ECD2BF /* RealBookView.m in Sources */,
@@ -2520,6 +2575,7 @@
 				2E7DC9371B82CF3900152A0B /* StackCollectionView.m in Sources */,
 				2EF5E95F1B9FF41E00D9BA5C /* CommentInfomationTool.m in Sources */,
 				054DFD251B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m in Sources */,
+				38620C0C1BA01354000CD318 /* LawnViewControllerDataSource.m in Sources */,
 				2ECD47F41B8EE249002AFEEB /* MaterialTransition.m in Sources */,
 				2E7DC9341B82BD1F00152A0B /* StackCollectionViewCell.m in Sources */,
 				2EB611BF1B8757E9000414A2 /* TitleCell.m in Sources */,
@@ -2552,6 +2608,7 @@
 				2E8C342F1B7DF3DC006B5BC0 /* SlideMotion+Calculation.m in Sources */,
 				054DFD371B81A0ED00651F11 /* EarlyAdoptersReceiveTableViewCell.m in Sources */,
 				38AF47171B9686B4006C45CB /* CommentViewCell.m in Sources */,
+				38620C141BA01453000CD318 /* LawnCell.m in Sources */,
 				054DFD261B81A09D00651F11 /* EarlyAdoptersTheTrialViewController.m in Sources */,
 				2EBAB3B21B9A91F2008E559F /* ProductiDescriptionCell.m in Sources */,
 				2E8C344B1B7DF46E006B5BC0 /* UIImage+Utility.m in Sources */,
@@ -2587,6 +2644,7 @@
 				2EECA6A21B998FA5007D51C2 /* ProductDetailDataSource.m in Sources */,
 				05D5F3691B944FBE0080AE64 /* ShakeAshakeView.m in Sources */,
 				389A20021B9D74B20035BC2B /* FreshTryInformationTool.m in Sources */,
+				38620C091BA012EF000CD318 /* LawnViewController+Configuration.m in Sources */,
 				2ED04D651B9C751A00D3F4B1 /* CirclePushTransition.m in Sources */,
 				2E7DC93F1B82D2D300152A0B /* StackCollectionView+Caculation.m in Sources */,
 				05E2B29C1B9AB8280024C7FE /* MoreTitleCell.m in Sources */,

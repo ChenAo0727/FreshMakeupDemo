@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PreferentialViewControllerDataSource : NSObject<UITableViewDataSource>
-
+@property (strong, nonatomic)UIImage *image;
 @end
