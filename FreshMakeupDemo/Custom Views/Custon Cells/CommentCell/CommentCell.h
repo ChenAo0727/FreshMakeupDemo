@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CommentInfomationTool.h"
 #define COMMENT_CELL @"CommentCell"
 
 @protocol CommentCellDelegate;
@@ -29,7 +29,8 @@
 
 @property (weak, nonatomic) id<CommentCellDelegate> delegate;
 
-- (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount;
+- (void)updateWithCommentInfomationTool:(CommentInfomationTool *)commentInfomationTool;
+- (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount commentText:(NSString *)commentText;
 - (CGFloat)heightOfCell;
 - (CGSize)sizeOfCell;
 + (instancetype)create;

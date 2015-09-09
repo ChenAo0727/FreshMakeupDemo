@@ -30,7 +30,12 @@ static NSString *COMMENTCELL = @"CommentCell";
     return [[[NSBundle mainBundle]loadNibNamed:COMMENTCELL owner:nil options:nil] lastObject];
 
 }
-- (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount {
+
+- (void)updateWithCommentInfomationTool:(CommentInfomationTool *)commentInfomationTool {
+    [self updateWithAvater:commentInfomationTool.avatar nickName:commentInfomationTool.nickName skinProperty:commentInfomationTool.skinProperty gender:commentInfomationTool.isMale age:commentInfomationTool.age identity:commentInfomationTool.identity commentCount:([self.commentCountLabel.text integerValue]) approveCount:([self.approveCountLabel.text integerValue]) commentText:commentInfomationTool.commentText];
+}
+
+- (void)updateWithAvater:(UIImage *)avatar nickName:(NSString *)nickName skinProperty:(NSInteger)skinProperty gender:(BOOL)isMale age:(NSString *)age identity:(NSString *)identity commentCount:(NSInteger)commentCount approveCount:(NSInteger)approveCount commentText:(NSString *)commentText {
     self.avatarImageView.image = avatar;
     self.nickNameLabel.text = nickName;
     switch (skinProperty) {
@@ -50,6 +55,7 @@ static NSString *COMMENTCELL = @"CommentCell";
     self.genderLabel.text = isMale ? @"男" : @"女";
     self.ageLabel.text = age;
     self.identityLabel.text = identity;
+    self.commentLabel.text = commentText;
     self.commentCountLabel.text = [NSString stringWithFormat:@"%ld", (long)commentCount];
     self.approveCountLabel.text = [NSString stringWithFormat:@"%ld", (long)approveCount];
     [self setNeedsLayout];

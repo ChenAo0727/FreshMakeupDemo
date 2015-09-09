@@ -17,6 +17,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *topViewContainer;
 @property (weak, nonatomic) IBOutlet UICollectionView *detailCollectionView;
+@property (weak, nonatomic) IBOutlet UIView *lineView;
 @property (strong, nonatomic) ProductDetailDataSource *productDetailDataSource;
 @property (strong, nonatomic) CHTCollectionViewWaterfallLayout *layout;
 @property (strong, nonatomic) SelectionView *selectionView;

@@ -61,6 +61,8 @@
 #pragma mark - UICollectionDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    self.detailITitleImageView.hidden = scrollView.contentOffset.y > 280;
+    self.lineView.hidden = scrollView.contentOffset.y > 280;
     CGFloat expectOffset = self.selectionViewY + 54 - self.detailCollectionView.frame.size.height;
     if (scrollView.contentOffset.y >= expectOffset) {
         [self.selectionView updateBottomSpace:(expectOffset - scrollView.contentOffset.y)];

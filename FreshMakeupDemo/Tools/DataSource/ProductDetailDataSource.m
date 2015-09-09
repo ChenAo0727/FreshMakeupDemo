@@ -31,6 +31,7 @@
         }
     }else if ([self isCommentCell:indexPath]) {
         CommentCell *cell = (CommentCell *)[self getCellWithNibName:@"CommentCell"];
+        [cell updateWithCommentInfomationTool:[self.detailInfomationTool.comments objectAtIndex:indexPath.row]];
         return [cell sizeOfCell];
     } else if ([self isProductiDescriptionCell:indexPath]) {
         if ([[self.detailInfomationTool.productionDescription objectAtIndex:0] objectForKey:@"video"]) {
@@ -101,6 +102,7 @@
         return [self evaluationCellWithCollectionView:collectionView indexPath:indexPath];
     } else if ([self isCommentCell:indexPath] ) {
         CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:COMMENT_CELL forIndexPath:indexPath];
+        [cell updateWithCommentInfomationTool:[self.detailInfomationTool.comments objectAtIndex:indexPath.row]];
         return cell;
     } else if ([self moreTitleCell:indexPath]) {
         MoreTitleCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MORE_TITLE_CELL forIndexPath:indexPath];
