@@ -20,7 +20,7 @@
     [self configureViews];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 970;
+    return 1100;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -29,7 +29,7 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j02-fu-Ge0">
-                        <rect key="frame" x="3" y="0.0" width="20" height="20"/>
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.png" translatesAutoresizingMaskIntoConstraints="NO" id="g7r-mc-KP4">
                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -60,9 +60,9 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="j02-fu-Ge0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="6PP-aZ-Sqo"/>
+                    <constraint firstItem="cm0-Ox-vsd" firstAttribute="leading" secondItem="j02-fu-Ge0" secondAttribute="trailing" constant="3" id="61I-cl-MmH"/>
+                    <constraint firstItem="j02-fu-Ge0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6PP-aZ-Sqo"/>
                     <constraint firstAttribute="bottom" secondItem="sXI-dH-EUq" secondAttribute="bottom" id="Bem-y9-BPf"/>
-                    <constraint firstItem="cm0-Ox-vsd" firstAttribute="leading" secondItem="j02-fu-Ge0" secondAttribute="trailing" id="Cjw-DU-2mw"/>
                     <constraint firstAttribute="trailing" secondItem="cm0-Ox-vsd" secondAttribute="trailing" constant="8" id="GrH-c1-xh8"/>
                     <constraint firstItem="j02-fu-Ge0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mid-bc-bOW"/>
                     <constraint firstItem="cm0-Ox-vsd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mq5-LR-nlu"/>
