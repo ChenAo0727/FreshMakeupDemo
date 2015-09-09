@@ -2313,11 +2313,11 @@
 				0596FFEF1B9AF06E00E5653D /* detail_sisley_cover.png in Resources */,
 				05D76C651B9EFC960061546F /* feeling_yadun_feeling_11.png in Resources */,
 				058ABF5A1B82C58100A0BA8A /* findhottopic5.jpg in Resources */,
-<<<<<<< HEAD
+
 				389A202A1B9FC6170035BC2B /* feeling_sisley_feeling_four.png in Resources */,
-=======
+
 				2EF5E9591B9FD6BC00D9BA5C /* feeling_help_clear_skin_image8.png in Resources */,
->>>>>>> origin/master
+
 				058ABF591B82C58100A0BA8A /* findhottopic4.jpg in Resources */,
 				38DEFC441B993FA3003E9E0F /* ChatCell.xib in Resources */,
 				2E6B46401B819DB800BF39D5 /* DetailViewController.xib in Resources */,
