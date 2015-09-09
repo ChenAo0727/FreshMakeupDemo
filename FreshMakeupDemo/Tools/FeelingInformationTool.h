@@ -14,11 +14,11 @@
 - (instancetype)initWithHelpClearSkinInfomation;
 - (instancetype)initWithElizabethArdenInfomation;//雅顿
 - (instancetype)initWithEsteeLauderInfomation;//雅诗兰黛
-<<<<<<< HEAD
+
 - (instancetype)initWithSKInformation;
 - (instancetype)initWithSisleyInformation;
-=======
+
 - (instancetype)initWithBobblBrownInfomation;//芭比布朗
 - (instancetype)initWithBareMineralsInformation;//睡眠粉
->>>>>>> origin/master
+
 @end
