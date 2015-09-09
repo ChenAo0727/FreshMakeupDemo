@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *approveCountLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *approveImageView;
 @property (weak, nonatomic) IBOutlet UIView *bottomLineView;
+@property (weak, nonatomic) IBOutlet UIView *rightLine;
 
 @property (weak, nonatomic) id<CommentCellDelegate> delegate;
 

@@ -11,6 +11,7 @@
 #import "CHTCollectionViewWaterfallLayout.h"
 #import "DetailCommentView.h"
 #import "CommentCell.h"
+#import "CommentInfomationTool.h"
 
 @class CommentViewLayout;
 @interface CommentViewController : BaseViewController<UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout, CommentCellDelegate>
@@ -18,5 +19,6 @@
 @property (strong, nonatomic) UICollectionView *collectionView;
 @property (strong, nonatomic) CHTCollectionViewWaterfallLayout *layout;
 @property (strong, nonatomic) DetailCommentView *detailCommentView;
+@property (strong, nonatomic) NSArray *comments;
 
 @end

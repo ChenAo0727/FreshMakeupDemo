@@ -103,6 +103,11 @@
     } else if ([self isCommentCell:indexPath] ) {
         CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:COMMENT_CELL forIndexPath:indexPath];
         [cell updateWithCommentInfomationTool:[self.detailInfomationTool.comments objectAtIndex:indexPath.row]];
+        if (0 == indexPath.row % 2) {
+            cell.rightLine.hidden = NO;
+        } else {
+            cell.rightLine.hidden = YES;
+        }
         return cell;
     } else if ([self moreTitleCell:indexPath]) {
         MoreTitleCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:MORE_TITLE_CELL forIndexPath:indexPath];

@@ -93,6 +93,7 @@
 
 - (void)pushViewCommentViewController {
     CommentViewController *commentViewController = [CommentViewController create];
+    commentViewController.comments = self.productDetailDataSource.detailInfomationTool.comments;
     commentViewController.modalPresentationStyle = UIModalPresentationCustom;
     commentViewController.transitioningDelegate = self;
     [self presentViewController:commentViewController animated:YES completion:nil];

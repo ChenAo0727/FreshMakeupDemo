@@ -24,11 +24,11 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="蒙奇奇" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkk-aV-68s">
-                                <rect key="frame" x="15" y="58" width="135" height="20"/>
+                                <rect key="frame" x="15" y="61" width="135" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Ylu-j5-r2k"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="14"/>
                                 <color key="textColor" red="0.49019607840000001" green="0.78039215689999997" blue="0.75686274509999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -78,7 +78,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="zkk-aV-68s" secondAttribute="trailing" constant="10" id="1bm-vg-Axs"/>
                             <constraint firstItem="CUY-xO-af2" firstAttribute="leading" secondItem="816-oI-751" secondAttribute="trailing" constant="8" id="83n-NB-oap"/>
-                            <constraint firstItem="zkk-aV-68s" firstAttribute="top" secondItem="yRG-Br-tnZ" secondAttribute="bottom" constant="1" id="9JE-nO-xlM"/>
+                            <constraint firstItem="zkk-aV-68s" firstAttribute="top" secondItem="yRG-Br-tnZ" secondAttribute="bottom" constant="4" id="9JE-nO-xlM"/>
                             <constraint firstItem="8SA-YH-tCH" firstAttribute="top" secondItem="CUY-xO-af2" secondAttribute="bottom" constant="5" id="Aod-cq-EGd"/>
                             <constraint firstItem="yRG-Br-tnZ" firstAttribute="top" secondItem="t6v-El-o3K" secondAttribute="top" constant="8" id="Dlh-fR-6Oi"/>
                             <constraint firstItem="zkk-aV-68s" firstAttribute="leading" secondItem="t6v-El-o3K" secondAttribute="leading" constant="15" id="H8c-dM-3dc"/>
@@ -229,6 +229,7 @@
                 <outlet property="genderLabel" destination="816-oI-751" id="Ys1-Fr-Mvk"/>
                 <outlet property="identityLabel" destination="8SA-YH-tCH" id="X2F-sS-02v"/>
                 <outlet property="nickNameLabel" destination="zkk-aV-68s" id="nag-M4-2Ib"/>
+                <outlet property="rightLine" destination="fEm-YQ-uhG" id="EPA-dg-VOd"/>
                 <outlet property="skinPropertyLabel" destination="qRO-W1-vi1" id="dmO-z5-bpy"/>
             </connections>
             <point key="canvasLocation" x="461" y="420"/>
