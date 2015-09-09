@@ -13,6 +13,7 @@
 #import "FindViewController+Animation.h"
 #import "CirclePopTransition.h"
 #import "MineViewController+Animation.h"
+#import "UIScreen+Utility.h"
 @interface FindViewController ()
 
 @end
@@ -34,13 +35,14 @@
     if (indexPath.section == 1) {
         return 1;
     }else{
-        if (indexPath.row == 1 || indexPath.row == 3 || indexPath.row == 5 || indexPath.row == 7) {
-            return 12;
-        } else {
             FindTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_TABLEVIEW_CELL];
-            CGFloat cellHeight = [cell getCellHeight];
-            return cellHeight;
-        }
+        CGRect frame = cell.frame;
+        frame.size.width = [UIScreen screenWidth];
+        cell.frame = frame;
+        cell.findLabel.text = [self.findViewControllerDataSource.lableArray objectAtIndex:indexPath.row];
+        [cell layoutIfNeeded];
+        CGFloat cellHeight = [cell getCellHeight];
+        return cellHeight;
     }
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
