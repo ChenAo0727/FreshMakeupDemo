@@ -22,5 +22,5 @@
 @property (strong, nonatomic) UIImageView *mineGuideimageView;
 
 @property (strong, nonatomic) ZoomFadeTransition *zoomFadeTransition;
-
+- (void)updateAllCellsToRight;
 @end

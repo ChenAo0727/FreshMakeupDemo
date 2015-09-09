@@ -10,6 +10,7 @@
 #import "MineViewController+Animation.h"
 #import "PreferentialViewController.h"
 #import "LawnViewController.h"
+#import "MineTableViewCell.h"
 @interface MineViewController ()
 
 @end
@@ -27,6 +28,14 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     //[self mineLabelAnimation];
+}
+
+- (void)updateAllCellsToRight {
+    for (NSInteger i = 0; i < 5; i++) {
+        MineTableViewCell *cell = (MineTableViewCell *)[self.mineTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
+        cell.textLabelLeftConstraint.constant = 320;
+        [cell layoutIfNeeded];
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
