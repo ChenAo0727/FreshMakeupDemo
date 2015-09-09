@@ -9,6 +9,58 @@
 #import "FeelingInformationTool.h"
 
 @implementation FeelingInformationTool
+
+- (instancetype) initLadureeInfomation {
+    if (self = [super init]) {
+        NSDictionary *feelingDictionary1 = @{@"hasTag":@"1", @"text":@"评测项目一：外观设计"};
+        NSDictionary *feelingDictionary2 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_laduree_image"]};
+        NSDictionary *feelingDictionary3 = @{@"hasTag":@"0", @"text":@"    我们买的是限量mini版，1克300多！腮红不像粉底消耗那么大，再加上平时不怎么化妆，或者有些花心的MM各种腮红用都用不完，这个mini版的量简直就是再适合不过了!\n    根据上市的时间不同，限定版的包装也不一样，我们买的是一周年纪念版，还有很多其他花色的盒子可供选择！与平常买来就装在盒子里面的腮红不同的是，拿到手上时，腮红在方形纸盒里面，外壳是单独放置的。使用时，需要自己把腮红放到盒子里面，这样既卫生又不用担心东西会在运输的过程中被损坏。包装风格就是laduree一贯的宫廷贵族风，粉色条纹的盒子上点缀了一圈小花，狠狠地抓住了每个女人心中的那个公主梦！"};
+        NSDictionary *feelingDictionary4 = @{@"hasTag":@"2", @"text":@"评测项目二：造型做工"};
+        NSDictionary *feelingDictionary5 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_laduree_image2"]};
+        NSDictionary *feelingDictionary6 = @{@"hasTag":@"0", @"text":@"    把玫瑰花放进盒子里就是这种效果了，本来还在担心粉质的东西会不会很脆弱，做成花瓣的形状会不会更加不堪一“碰”？但是真正开始用它却发现花瓣如同真花一样，只要你不去撕扯，完全不用担心它会碎成片。可以放心大胆地用。\n    花瓣一共六片，大的小的分别三片，正装的话有大中小三种型号。纯手工制作，1克的量要压在六片花瓣上，真是让人惊叹的工艺，每一片上面都可以看到十分清晰的纹路，周边还有不规则的卷曲，做工之精巧就像是新鲜的玫瑰一样，与其说是化妆品不如说是一件艺术品！真的让人有种静静观赏就好，不忍去用的感觉!"};
+        NSDictionary *feelingDictionary7 = @{@"hasTag":@"3", @"text":@"评测项目三：香味"};
+        NSDictionary *feelingDictionary8 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_laduree_image3"]};
+        NSDictionary *feelingDictionary9 = @{@"hasTag":@"0", @"text":@"    造型如此出众的腮红，自然也让人想闻一闻究竟是什么样的味道，除了粉妆特有的脂粉味以外，花瓣腮红闻起来还有一股玫瑰味，很多人说就像是真的玫瑰香气一样，香味比较浓郁，我们参与评测的几个人里面都没有排斥这个味道的。浓郁的玫瑰香，能如此香而不腻的腮红确实不多见，闻到这股香气会有一种穿越到古代宫廷的感觉！但如果你对香气敏感的话，可能会觉得过香。所以我们只给了它8分"};
+        NSDictionary *feelingDictionary10 = @{@"hasTag":@"4", @"text":@"评测项目四：色"};
+        NSDictionary *feelingDictionary11 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_laduree_image4"]};
+        NSDictionary *feelingDictionary12 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_laduree_image5"]};
+        NSDictionary *feelingDictionary13 = @{@"hasTag":@"0", @"text":@"【01号浅粉】——没有看起来那么艳，用量自行斟酌，适合皮肤较白\n【02号蜜桃粉】——健康肤色，偏黄肤色的妹纸还是这款保险哦\n【03号自然修容色】——小脸用，打腮边和脖颈可以修饰下颚的骨头"};
+        self.feelIngArray = @[feelingDictionary1, feelingDictionary2, feelingDictionary3, feelingDictionary4, feelingDictionary5, feelingDictionary6, feelingDictionary7, feelingDictionary8,feelingDictionary9, feelingDictionary10, feelingDictionary11, feelingDictionary12, feelingDictionary13];
+    }
+    return self;
+}
+
+- (instancetype)initWithHelpClearSkinInfomation {
+    if (self = [super init]) {
+        NSDictionary *feelingDictionary1 = @{@"hasTag":@"1", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image1"]};
+        NSDictionary *feelingDictionary2 = @{@"hasTag":@"0", @"text":@"先说一下, 我的脸已经不是以前两颊同时长满含脓暗疮的光景了\n这年来最严重时↓↓↓"};
+        NSDictionary *feelingDictionary3 = @{@"hasTag":@"2", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image2"]};
+        NSDictionary *feelingDictionary4 = @{@"hasTag":@"0", @"text":@"是, 我知道自己不算最严重的那个\n可是到这种地步已经是想死的感觉, 你明白吗?\n从去年开始, 每逢有产品声称对暗疮好, 我都会去试!\n皮肤反反复复, 时好时坏, 託赖是没有再像上图那麽严重"};
+        NSDictionary *feelingDictionary5 = @{@"hasTag":@"3", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image3"]};
+        NSDictionary *feelingDictionary6 = @{@"hasTag":@"0", @"text":@"HELPHELP ： CLEAR SKIN 可以有效地在 6个星期内对抗痘痘.是 100% 天然 产品，当中的主要成份是 Praventin、芦荟、Oligofructose (水溶性膳食纤维)\nPraventin含多种纯天然蛋白质複方与乳铁蛋白, 从奶品中提炼出来, 但直接饮奶却不能摄取这些天然元素。\n它可帮助痘痘肌肤从内而外变得健康, 又具有增强身体免疫力,对抗细菌引起的感染, 减少脸部红肿, 帮助肌肤的修复。"};
+        NSDictionary *feelingDictionary7 = @{@"hasTag":@"4", @"text":@"它是 100% 天然 产品，当中的主要成份是 Praventin、芦荟、Oligofructose (水溶性膳食纤维)\nPraventin含多种纯天然蛋白质複方与乳铁蛋白, 从奶品中提炼出来, 但直接饮奶却不能摄取这些天然元素。\n它可帮助痘痘肌肤从内而外变得健康, 又具有增强身体免疫力,对抗细菌引起的感染, 减少脸部红肿, 帮助肌肤的修复。"};
+        NSDictionary *feelingDictionary8 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image4"]};
+        NSDictionary *feelingDictionary9 = @{@"hasTag":@"5", @"text":@"它不含麸质, 所以对麸质过敏的人也可以食用\n而素食者、糖尿病患者、乳糖不耐症患者也可以食用\n不过, 孕妇、授乳妇女、低血糖患者服用前最好先请教医生"};
+        NSDictionary *feelingDictionary10 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image5"]};
+        NSDictionary *feelingDictionary11 = @{@"hasTag":@"0", @"text":@"每盒 Help: Clear Skin 有7小包, 每包5g份量\n每天吃一小包, 持续服用4-6星期就有改善\n即是说, 大概要吃七至八盒才叫完成一个疗程。"};
+        NSDictionary *feelingDictioanry12 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image6"]};
+        NSDictionary *feelingDictioanry13 = @{@"hasTag":@"0", @"text":@"服用方法很简单, 只需要加入自己的无汽饮料 / 乳酪 / 麦片 / 汤 之中就可以。\n但我想告诉你..............配清水去服用绝对不是一个明智的选择!!!!"};
+        NSDictionary *feelingDictioanry14 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image7"]};
+        NSDictionary *feelingDictionary15 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image8"]};
+        NSDictionary *feelingDictionary16 = @{@"hasTag":@"0", @"text":@"是的, 它无色无嗅, 但绝对不是无味萝 !!!!!!!!!!!!!!!\n沟水饮就好像饮紧一杯沟得好稀的奶咁, 好难入口 !!!\n仲有, 虽然包装上指示可以加于冷热饮品.....\n但千万不要加进雪过的饮品萝 !!!!!\n因为................."};
+        NSDictionary *feelingDictioanry17 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image9"]};
+        NSDictionary *feelingDictionary18 = @{@"hasTag":@"0", @"text":@"完全搞唔匀 !!!!\n我加左落杯冇汽苹果汁, 再死搞烂搞都仲系咁~\n同事见到就叫我当糖食左佢算 XDDDD"};
+        NSDictionary *feelingDictionary19 = @{@"hasTag":@"6", @"text":@"经过我一番试验, 试过沟茶....仲难顶.....\n最后发现加落奶类饮品系最好............因为唔会饮出怪味.....\n所以我多数都沟阿华田饮.....不过佢会令杯饮品变淡~"};
+        NSDictionary *feelingDictionary20 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image10"]};
+        NSDictionary *feelingDictionary21 = @{@"hasTag":@"7", @"text":@"最后, 要分享一下效果\n我基本上都连续每日饮, 除了中途有2天肠胃好像不太舒服所以停左2日\n而期间系有继续出暗疮的~ 分别在下巴、鼻翼....."};
+        NSDictionary *feelingDictionary22 = @{@"hasTag":@"0", @"text":@"所以其实我自己觉得冇好大好明显的改善\n生暗疮期间我亦忍唔住有搽暗疮膏, 亦有敷暗疮mask\n不过我留意到今次m前只系生左一粒咁大把\n平时点都有2,3粒, 而且复原得快过之前\n但.....到前2日又出左粒大佬系眼旁, 羊事先而家 XDDD"};
+        NSDictionary *feelingDictionary23 = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image11"]};
+        NSDictionary *feelingDictionary24 = @{@"hasTag":@"8", @"text":@"Help : Clear Skin 始终不是药物, 只是一些对皮肤抵抗力 / 伤口复原有帮助的天然食材\n所以也不奢望效果有多快多显著\n想要极短期内变成不会长暗疮的肤质, 只是不设实际\n但长期服用当作是保养品的话, 我觉得一试无妨 !"};
+        self.feelIngArray = @[feelingDictionary1, feelingDictionary2, feelingDictionary3, feelingDictionary4, feelingDictionary5, feelingDictionary6, feelingDictionary7, feelingDictionary8, feelingDictionary9, feelingDictionary10, feelingDictionary11, feelingDictioanry12, feelingDictioanry13, feelingDictioanry14, feelingDictionary15, feelingDictionary16, feelingDictioanry17, feelingDictionary18, feelingDictionary19, feelingDictionary20, feelingDictionary21, feelingDictionary22, feelingDictionary23, feelingDictionary24];
+    }
+    return self;
+}
+
 - (instancetype)initWithElizabethArdenInfomation {
     if (self = [super init]) {
         NSDictionary *feelingDictionary1 =  @{@"hasTag":@"1", @"text":@"用起这个新收回的雅顿无瑕未来系列对于雅顿，这个陪伴我多年的小伙伴，对它的好感是源源不断。从早先的8小时保湿到21天显效霜再到逆时空胶囊，算得上一步一个脚印见证了它的好用!"};
