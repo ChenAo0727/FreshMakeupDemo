@@ -13,15 +13,15 @@
 @implementation FindViewControllerDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     [self initializationDate];
-    return 8;
+    if (section == 0) {
+        return 6;
+    } else {
+    return 0;
+    }
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.section == 0) {
-    if (indexPath.row == 1 || indexPath.row == 3|| indexPath.row == 5 || indexPath.row == 7) {
-        return [self findBranchTableView:tableView indexPath:indexPath];
-    } else {
+    if (indexPath.section == 0 ) {
         return [self findTableView:tableView indexPath:indexPath];
-    }
     } else {
         static NSString *str = @"retuse";
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:str];
@@ -32,6 +32,7 @@
 
     }
 }
+
 //分区个数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     // Return the number of sections.
@@ -39,26 +40,20 @@
 }
 //数组 初始化
 - (void)initializationDate {
-    self.headImageArray = [NSMutableArray arrayWithObjects:@"findarticleavatar1.png",@"2",@"findarticleavatar2.png",@"4",@"findarticleavatar3.png",@"6",@"findarticleavatar2.png", nil];
-    self.imageArray = [NSMutableArray arrayWithObjects:@"findarticle1.png",@"2",@"findarticle2.png",@"4",@"findarticle3.png",@"6",@"findarticle4.png", nil];
-    self.lableArray = [NSMutableArray arrayWithObjects:@"[叫我女王]女人的化妆台绝对比床神秘",@"2",@"[小歪]难得一见的化妆刷,性价比极高",@"4",@"[柠檬]百雀羚就是国货的代言词",@"6",@"[叫我女王]女人的化妆台就是神秘", nil];
-    self.findLableArray = [NSMutableArray arrayWithObjects:@"赫莲娜新品强势上线",@"2",@"潮流达人必备的一套化妆刷",@"4",@"百雀羚新品面膜上市",@"6",@"晒出你的化妆台", nil];
-    self.subtitleArray = [NSMutableArray arrayWithObjects:@"black.png",@"2",@"white.png",@"4",@"white.png",@"6",@"black.png", nil];
+    self.headImageArray = [NSMutableArray arrayWithObjects:@"findarticleavatar1.png",@"findarticleavatar2.png",@"findarticleavatar3.png",@"findarticleavatar2.png",@"findarticleavatar1.png",@"findarticleavatar3.png", nil];
+    self.imageArray = [NSMutableArray arrayWithObjects:@"findarticle1.png",@"findarticle2.png",@"findarticle3.png",@"findarticle4.png",@"findarticle5.png",@"findarticle6.png", nil];
+   self.lableArray = [NSMutableArray arrayWithObjects:@"[香水传奇]Kendall Jenner代言,打造最经典百搭的日常通勤装",@"[叫我女王]聚焦光彩主角概念,使肌肤有如穿上薄纱光层般",@"[柠檬]走向成熟不再青春的肌肤需要能量,抗老的步调走起~",@"[法海]源自韩国爱茉莉太平洋顶尖技术",@"[小喵]让Q弹媚眼再生",@"[小歪]聚焦光彩主角概念,使肌肤有如穿上薄纱光层般", nil];
+   self.findLableArray = [NSMutableArray arrayWithObjects:@"不出色,怎么型?雅诗兰黛倾慕液态唇膏",@"CPB肌肤之钥光盈粉饼华丽上市",@"拯救压力初老肌 雅顿无瑕未来微胶囊全新上市",@"兰芝遇见时尚定制版BB霜",@"欧珀莱 全新时光锁紧致塑颜系列",@"sisley 全新黑玫瑰珍宠滋养精华液", nil];
 }
 #pragma mark 自定义cell
 - (UITableViewCell *)findTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
     FindTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_TABLEVIEW_CELL];
     cell.findImageView.image = [UIImage imageNamed:[self.imageArray objectAtIndex:indexPath.row]];
     cell.findHeadImageView.image = [UIImage imageNamed:[self.headImageArray objectAtIndex:indexPath.row]];
-    cell.findSubtitleImageView.image = [UIImage imageNamed:[self.subtitleArray objectAtIndex:indexPath.row]];
     cell.findLabel.text = [self.lableArray objectAtIndex:indexPath.row];
     cell.findAdvertLabel.text = [self.findLableArray objectAtIndex:indexPath.row];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
-    return cell;
-}
-- (UITableViewCell *)findBranchTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
-    FindBranchTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_BRANCH_TABLEVIEWCELL];
-    cell.backgroundColor = [UIColor colorFromHexCode:@"#EAEAEA"];
+    [cell updateGradientLayer];
     return cell;
 }
 @end
