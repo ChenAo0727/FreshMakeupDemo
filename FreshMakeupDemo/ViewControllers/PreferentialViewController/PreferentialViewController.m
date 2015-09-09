@@ -8,6 +8,7 @@
 
 #import "PreferentialViewController.h"
 #import "PreferentialViewController+Configuration.h"
+#import "UIScreen+Utility.h"
 @interface PreferentialViewController ()
 
 @end
@@ -24,7 +25,7 @@
     [self configureViews];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 1100;
+    return [UIScreen screenWidth] * 900 / 298;
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
