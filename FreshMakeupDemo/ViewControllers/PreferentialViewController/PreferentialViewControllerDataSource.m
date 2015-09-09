@@ -7,13 +7,15 @@
 //
 
 #import "PreferentialViewControllerDataSource.h"
-
+#import "PreferentialCell.h"
 @implementation PreferentialViewControllerDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return nil;
+    PreferentialCell *cell = [tableView dequeueReusableCellWithIdentifier:PREFERENTIAL_CELL];
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    return cell;
 }
 @end
