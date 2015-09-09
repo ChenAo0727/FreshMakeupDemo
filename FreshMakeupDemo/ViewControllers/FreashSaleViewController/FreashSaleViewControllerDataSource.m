@@ -13,6 +13,7 @@
 #import "TextCell.h"
 #import "TagsTableViewCell.h"
 #import "UITableView+FDTemplateLayoutCell.h"
+#import "CommentInfomationTool.h"
 
 @implementation FreashSaleViewControllerDataSource
 
@@ -63,11 +64,17 @@
     return cell;
 }
 
-- (UITableViewCell *)commentViewTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indesPath {
-    CommentViewCell *cell = [tableView dequeueReusableCellWithIdentifier:COMMENT_VIEW_CELL];
-    NSString *comment = @"这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高";
-    
-    [cell updateWithUserImage:[UIImage imageNamed:@"detail_avatar_image.jpg"] userName:@"宝贝" curentFloor:1 commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:comment];
+- (UITableViewCell *)commentViewTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath {
+    CommentViewCell *cell = [tableView dequeueReusableCellWithIdentifier:COMMENT_VIEW_CELL forIndexPath:indexPath];
+    //NSString *comment = @"这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收";
+    NSInteger index = 0;
+    if (indexPath.row < 7 && indexPath.row > 3) {
+        index = indexPath.row - 4;
+    } else if(indexPath.row > 7) {
+        index = indexPath.row - 8;
+    }
+    CommentInfomationTool *commentTool = [self.freshSaleInfomationTool.comments objectAtIndex:index];
+    [cell updateWithUserImage:commentTool.avatar userName:commentTool.nickName curentFloor:(index + 1) commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:commentTool.commentText];
     
        cell.block = ^(CommentViewCell *cell){
            cell.isHide = !cell.isHide;

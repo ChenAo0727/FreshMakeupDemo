@@ -7,11 +7,13 @@
 //
 
 #import "FreshSaleInfomationTool.h"
+#import "CommentInfomationTool.h"
 
 @implementation FreshSaleInfomationTool
 - (instancetype)initWithDALGCRInfomation {
     if (self = [super init]) {
       self.title = @"Dior 自然魅惑润唇膏（珊瑚色)";
+        self.comments = [CommentInfomationTool ladureeCommentArray];
         self.price = @"165.15";
         self.priceImage = [UIImage imageNamed:@"dior_price_image"];
         self.labelArray = [NSMutableArray arrayWithObjects:@"润唇膏",@"addict dior", nil];
@@ -25,6 +27,7 @@
 - (instancetype)initWithMISSHA{
     if (self = [super init]) {
         self.title = @"谜尚 魅力莹润无暇气垫粉凝霜 21号";
+        self.comments = [CommentInfomationTool ladureeCommentArray];
         self.price = @"49";
         self.priceImage = [UIImage imageNamed:@"mishang_price_image"];
         self.labelArray = [NSArray arrayWithObjects:@"MISSHA",@"谜尚",@"BB霜", @"魅力莹润无暇", nil];
@@ -38,6 +41,7 @@
     if (self = [super init]) {
         
     self.title = @"贝德码 舒妍温和保湿卸妆水500ml";
+    self.comments = [CommentInfomationTool ladureeCommentArray];
     self.price = @"99";
     self.priceImage = [UIImage imageNamed:@"bioderma_price_image"];
     self.labelArray = [NSArray arrayWithObjects:@"卸妆水",@"保湿卸妆水",@" 舒妍温和",@"贝德玛",nil];
@@ -51,6 +55,7 @@
     if (self = [super init]) {
         
         self.title = @"松下 EH-SA31-P离子蒸汽美容器";
+        self.comments = [CommentInfomationTool ladureeCommentArray];
         self.price = @"349";
         self.priceImage = [UIImage imageNamed:@"panasonic_price_image"];
         self.labelArray = [NSArray arrayWithObjects:@"Panasonic",@"松下",@"EH-SA31-P离子蒸汽美容器",nil];
@@ -63,12 +68,13 @@
 - (instancetype)initWithClarisonicInfomation {
     if (self = [super init]) {
         self.title = @"科莱丽 声波洁面仪（智能型)";
+        self.comments = [CommentInfomationTool ladureeCommentArray];
         self.price = @"1400";
         self.priceImage = [UIImage imageNamed:@"clarisonic_price_image"];
         self.labelArray = [NSMutableArray arrayWithObjects:@"洁面仪",@"声波洁面仪",@"Clarisonic", nil];
         self.image = [UIImage imageNamed:@"freshSale_Clarisonic_image.png"];
         self.commentary = @"    科莱丽最新款，智能型，原价2000，现在购买输入340345可以同时使用9折优惠券，可以做到1400，除了套装自带的脸部和身体刷头外，还附送一个科莱丽面部刷头和足部2个刷头.";
-        
+    
     }
     return self;
 }
@@ -76,6 +82,7 @@
 - (instancetype)initWithLilyBellInfomation {
     if (self = [super init]) {
         self.title = @"Lily Bell 丽丽贝尔 化妆棉 222片 *5包装";
+        self.comments = [CommentInfomationTool ladureeCommentArray];
         self.price = @"44";
         self.priceImage = [UIImage imageNamed:@"lily_bell_price_image"];
         self.labelArray = [NSMutableArray arrayWithObjects:@"化妆棉",@"丽丽贝尔", nil];

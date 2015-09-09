@@ -12,6 +12,7 @@
 #import "CommentViewCell.h"
 #import "TextCell.h"
 #import "UIScreen+Utility.h"
+#import "CommentInfomationTool.h"
 #import "TagsTableViewCell.h"
 
 @implementation FreashSaleViewController
@@ -56,19 +57,15 @@
     } else if (indexPath.row == 7) {
         return 50;
     } else {
-        
-        NSString *comment = @"这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高这款眼部精华真的不错滋润度高不黏腻，保湿效果好，同意涂开并被肌肤快速吸收，味道清香，性价比高";
-
+        NSInteger index = 0;
+        if (indexPath.row < 7 && indexPath.row > 3) {
+            index = indexPath.row - 4;
+        } else if(indexPath.row > 7) {
+            index = indexPath.row - 8;
+        }
+        CommentInfomationTool *commentTool = [self.freashSaleViewControllerDataSource.freshSaleInfomationTool.comments objectAtIndex:index];
         return [tableView fd_heightForCellWithIdentifier:COMMENT_VIEW_CELL cacheByIndexPath:indexPath configuration:^(CommentViewCell *cell) {
-            
-            [cell updateWithUserImage:[UIImage imageNamed:@"detail_avatar_image.jpg"] userName:@"宝贝" curentFloor:1 commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:comment];
-
-//            [cell.commentTableView reloadData];
-            
-//            [cell layoutIfNeeded];
-
-//            [cell updateHeightConstraint];
-    
+            [cell updateWithUserImage:commentTool.avatar userName:commentTool.nickName curentFloor:(index + 1) commitTime:@"十分钟前" approveCount:200 commentCount:500 commentLabel:commentTool.commentText];
         }];
     }
 }
