@@ -33,16 +33,16 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
     [self guideViewAnimation:indexPath.row];
-    if (indexPath.row == 1) {
-        PreferentialViewController *preferentialViewController = [[PreferentialViewController alloc] init];
-        preferentialViewController.modalPresentationStyle = UIModalPresentationCustom;
-        preferentialViewController.transitioningDelegate = self;
-        [self presentViewController:preferentialViewController animated:YES completion:nil];
-    }
-    if ([self.delegate respondsToSelector:@selector(mineReturnViewControllerAction)]) {
-        [self.delegate mineReturnViewControllerAction];
-    }
+    [self.drawerController closeDrawerAnimated:YES completion:^(BOOL finished) {
+        if (indexPath.row == 1) {
+            PreferentialViewController *preferentialViewController = [[PreferentialViewController alloc] init];
+            preferentialViewController.modalPresentationStyle = UIModalPresentationCustom;
+            preferentialViewController.transitioningDelegate = self;
+            [self presentViewController:preferentialViewController animated:YES completion:nil];
+        }
 
+    }];
+    
     
 }
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {

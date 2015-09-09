@@ -85,8 +85,7 @@ typedef enum ScrollDirection {
     self.zoomDrawerView.scrollView.delegate = self;
     self.zoomDrawerView.contentContainerButton.userInteractionEnabled = NO;
     [self.zoomDrawerView.contentContainerButton addTarget:self action:@selector(contentContainerButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
-    self.mineViewController = [[MineViewController alloc] init];
-    self.mineViewController.delegate = self;
+
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
