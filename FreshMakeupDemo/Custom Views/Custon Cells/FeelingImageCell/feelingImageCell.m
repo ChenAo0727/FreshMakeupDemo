@@ -25,6 +25,7 @@
         self.feelllabel.hidden = YES;
        [self layoutIfNeeded];
     } else {
+      
         self.feelllabel.text = feelllabel;
         self.feelView.hidden = NO;
         self.feelllabel.hidden = NO;
