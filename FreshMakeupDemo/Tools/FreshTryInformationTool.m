@@ -20,7 +20,7 @@
     return self;
 }
 
-- (instancetype)initWithClearSkin {
+- (instancetype)initWithLaduree {
     if (self = [super init]) {
         self.title = @"拉杜丽 贵族玫瑰花瓣腮红";
         self.image = [UIImage imageNamed:@"ClearSkin.png"];

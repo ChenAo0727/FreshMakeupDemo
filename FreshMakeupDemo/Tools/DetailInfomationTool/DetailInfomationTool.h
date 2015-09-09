@@ -29,7 +29,7 @@
 - (instancetype)initWithSisleyInfomation;//科莱丽  ----
 - (instancetype)initWithHelpClearSkinInfomation;//祛痘牛奶
 - (instancetype)initWithBareMineralsInformation;//矿物彩妆  睡眠粉 ----
-- (instancetype)initWithClearSkin;//拉杜丽  ----
+- (instancetype)initWithLaduree;//拉杜丽  ----
 - (instancetype)initWithSisley;//希思黎
 - (instancetype)initWithSK;//SK-II  ----
 - (instancetype)initWithLanZhi;//兰芝   ----
