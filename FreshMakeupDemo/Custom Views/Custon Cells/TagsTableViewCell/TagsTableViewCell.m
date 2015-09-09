@@ -8,6 +8,7 @@
 
 #import "TagsTableViewCell.h"
 #import "TagCollectionViewCell.h"
+#import "UIColor+Utility.h"
 
 @implementation TagsTableViewCell {
     NSArray *tags;
@@ -35,15 +36,13 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (0 == indexPath.row) {
-        UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"DEFAULT_CELL" forIndexPath:indexPath];
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, cell.frame.size.width, cell.frame.size.height)];
-        label.text = @"订阅标签";
-        [cell addSubview:label];
-        return cell;
-    }
     TagCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:TAG_COLLECTION_VIEW_CELL forIndexPath:indexPath];
-    [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1]];
+    if (0 == indexPath.row) {
+        [cell updateWithTagText:@"订阅标签" isTitle:YES];
+        
+    } else {
+        [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1] isTitle:NO];
+    }
     return cell;
 }
 
@@ -52,11 +51,12 @@
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    if (0 == indexPath.row) {
-        return CGSizeMake(80, 27);
-    }
     TagCollectionViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagCollectionViewCell" owner:nil options:nil] lastObject];
-    [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1]];
+    if (0 == indexPath.row) {
+        [cell updateWithTagText:@"订阅标签" isTitle:YES];
+    } else {
+        [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1] isTitle:NO];
+    }
     return [cell sizeOfCell];
 }
 

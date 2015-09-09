@@ -14,6 +14,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *tagTextLabel;
 
 - (CGSize)sizeOfCell;
-- (void)updateWithTagText:(NSString *)text;
+- (void)updateWithTagText:(NSString *)text isTitle:(BOOL)isTitle;
 
 @end
