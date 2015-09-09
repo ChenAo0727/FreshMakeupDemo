@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -34,25 +34,25 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpg-gK-IWE">
                         <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZU-iz-W07">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.png" translatesAutoresizingMaskIntoConstraints="NO" id="NZU-iz-W07">
                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="CAG-Uh-9oo"/>
                                     <constraint firstAttribute="width" constant="20" id="wdY-rb-88s"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs2-sW-hjA">
-                                <rect key="frame" x="10" y="0.0" width="20" height="20"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs2-sW-hjA">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="6Qk-OL-5O3"/>
-                            <constraint firstAttribute="trailing" secondItem="zs2-sW-hjA" secondAttribute="trailing" constant="-10" id="8ly-0O-w0Q"/>
-                            <constraint firstItem="zs2-sW-hjA" firstAttribute="leading" secondItem="wpg-gK-IWE" secondAttribute="leading" constant="10" id="FH2-PS-WEk"/>
+                            <constraint firstAttribute="trailing" secondItem="zs2-sW-hjA" secondAttribute="trailing" id="8ly-0O-w0Q"/>
+                            <constraint firstItem="zs2-sW-hjA" firstAttribute="leading" secondItem="wpg-gK-IWE" secondAttribute="leading" id="FH2-PS-WEk"/>
                             <constraint firstAttribute="bottom" secondItem="zs2-sW-hjA" secondAttribute="bottom" id="Mji-o7-SIP"/>
                             <constraint firstAttribute="width" constant="20" id="O5B-ey-wh4"/>
                             <constraint firstItem="zs2-sW-hjA" firstAttribute="top" secondItem="wpg-gK-IWE" secondAttribute="top" id="WIH-Yj-uue"/>
@@ -85,6 +85,9 @@
             <point key="canvasLocation" x="262" y="317.5"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="square.png" width="31" height="31"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

@@ -21,11 +21,14 @@
 - (void)updateWithFeelImageView:(UIImage *)feelImage Feelllabel:(NSString *)feelllabel {
     self.feelImageView.image = feelImage;
     if ([feelllabel isEqualToString:@"0"]) {
-        self.feelView.alpha = 0;
-        self.feelllabel.alpha = 0;
+        self.feelView.hidden = YES;
+        self.feelllabel.hidden = YES;
        [self layoutIfNeeded];
     } else {
+      
         self.feelllabel.text = feelllabel;
+        self.feelView.hidden = NO;
+        self.feelllabel.hidden = NO;
     }
     
 }

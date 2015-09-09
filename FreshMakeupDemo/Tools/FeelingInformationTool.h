@@ -14,8 +14,12 @@
 - (instancetype)initWithHelpClearSkinInfomation;//help
 - (instancetype)initWithElizabethArdenInfomation;//雅顿
 - (instancetype)initWithEsteeLauderInfomation;//雅诗兰黛
+
+
+
 - (instancetype)initWithSKInformation;
 - (instancetype)initWithSisleyInformation;
+
 - (instancetype)initWithBobblBrownInfomation;//芭比布朗
 - (instancetype)initWithBareMineralsInformation;//睡眠粉
 
