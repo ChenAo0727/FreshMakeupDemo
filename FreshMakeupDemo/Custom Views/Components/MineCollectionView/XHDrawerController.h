@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 typedef NS_ENUM(NSInteger, XHDrawerSide){
     XHDrawerSideNone = 0,
     XHDrawerSideLeft,
