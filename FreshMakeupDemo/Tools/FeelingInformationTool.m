@@ -29,7 +29,6 @@
     }
     return self;
 }
-
 - (instancetype)initWithHelpClearSkinInfomation {
     if (self = [super init]) {
         NSDictionary *feelingDictionary1 = @{@"hasTag":@"1", @"image":[UIImage imageNamed:@"feeling_help_clear_skin_image1"]};
@@ -60,7 +59,6 @@
     }
     return self;
 }
-
 - (instancetype)initWithElizabethArdenInfomation {
     if (self = [super init]) {
         NSDictionary *feelingDictionary1 =  @{@"hasTag":@"1", @"text":@"用起这个新收回的雅顿无瑕未来系列对于雅顿，这个陪伴我多年的小伙伴，对它的好感是源源不断。从早先的8小时保湿到21天显效霜再到逆时空胶囊，算得上一步一个脚印见证了它的好用!"};
@@ -150,7 +148,7 @@
         NSDictionary *feelingDictionary1
         = @{@"hasTag":@"1", @"image":[UIImage imageNamed:@"feeling_BobblBrown_feeling_1.png"]};
         NSDictionary *feelingDictionary2
-        = @{@"hasTag":@"2", @"image":[UIImage imageNamed:@"feeling_BobblBrown_feeling_12.png"]};
+        = @{@"hasTag":@"2", @"image":[UIImage imageNamed:@"feeling_BobblBrown_feeling_2.png"]};
         self.feelIngArray = [NSArray arrayWithObjects:feelingDictionary1,feelingDictionary2, nil];
     }
     return self;

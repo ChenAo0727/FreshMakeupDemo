@@ -43,6 +43,7 @@
         self.price = @"780";
         self.origin = @"美国";
         self.specification = @"8.4g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithBobblBrownInfomation];
         self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"detail_babibolang_cover.png"];
         self.titleImage = @"bobbi-brown-logo.png";
@@ -87,6 +88,7 @@
         self.origin = @"美国";
         self.specification = @"25ml";
         self.fitCrowd = @"30岁以上干性皮肤";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithSisleyInformation];
         self.coverImage = [UIImage imageNamed:@"detail_sisley_cover.png"];
         self.titleImage = @"Sisley-logo.png";
         self.shortComment = @"保养肌肤要从肌肤最基础的步骤做起，而肌肤最需要的基本元素就是清洁，人的脸上有300,000个毛孔，仅仅依靠双手和洁面卸妆产品，只能洗净表层的肌肤，无法彻底清洗毛孔里的油污。被誉为“洗脸神器”的科莱丽声波洁面仪推出Smart Profile (智能型)。它真的如此神奇？和小鲜鲜我来一探究竟吧";
@@ -103,6 +105,7 @@
         self.price = @"220";
         self.origin = @"英国";
         self.specification = @"14*3.5g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithHelpClearSkinInfomation];
         self.fitCrowd = @"12岁以上，孕妇慎用";
         self.coverImage = [UIImage imageNamed:@"detail_helpSkin_cover.png"];
         self.titleImage = @"help-logo.png";
@@ -120,6 +123,7 @@
         self.price = @"360";
         self.origin = @"美国";
         self.specification = @"4.2g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithBareMineralsInformation];
         self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"BareMinerals.png"];
         self.titleImage = @"bareminerals-logo.png";
@@ -135,6 +139,7 @@
     if (self = [super init]) {
         self.title = @"拉杜丽 贵族玫瑰花瓣腮红";
         self.price = @"786";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initLadureeInfomation];
         self.origin = @"日本";
         self.specification = @"6g";
         self.fitCrowd = @"所有肤质";
@@ -157,6 +162,7 @@
         self.origin = @"美国";
         self.specification = @"25ml";
         self.fitCrowd = @"30岁以上干性皮肤";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithSisleyInformation];
         self.title = @"sisley 全新黑玫瑰珍宠滋养精华液";
         self.coverImage = [UIImage imageNamed:@"sisley.png"];
         self.titleImage = @"Sisley-logo.png";
@@ -179,6 +185,7 @@
         self.origin = @"日本";
         self.specification = @"30ml/50g";
         self.fitCrowd = @"所有肤质";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithSKInformation];
         self.coverImage = [UIImage imageNamed:@"SK.png"];
         self.titleImage = @"skii-logo.png";
         self.shortComment = @"有没有想过你的护肤品可以让你在任何年龄，任何角度看起来都一样年轻？SK-II启发自micro RNA科研，为你解开保持年轻美丽的神秘面纱。带来跨越未来的抗老修护科技，揭开肌肤保养的新一章。";

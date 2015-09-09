@@ -29,6 +29,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="preferential.png" width="295" height="865"/>
+        <image name="preferential.png" width="720" height="2117"/>
     </resources>
 </document>
