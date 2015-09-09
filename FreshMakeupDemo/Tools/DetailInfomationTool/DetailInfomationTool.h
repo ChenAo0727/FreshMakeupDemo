@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "FeelingInformationTool.h"
 #import "CommentInfomationTool.h"
+#import "TrialInfomationTool.h"
 @interface DetailInfomationTool : NSObject
 
 @property (strong, nonatomic) NSString *title;
@@ -23,6 +24,7 @@
 @property (strong, nonatomic) NSArray *feeling;
 @property (strong, nonatomic) NSArray *comments;
 @property (strong, nonatomic) FeelingInformationTool *feelingInfomationTool;
+@property (strong, nonatomic) NSArray *trials;
 - (instancetype)initWithElizabethArdenInfomation;//伊丽莎白雅顿 ----
 - (instancetype)initWithEsteeLauderInfomation;//雅诗兰黛  ----
 - (instancetype)initWithBobblBrownInfomation;//芭比布朗  ----

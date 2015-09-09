@@ -17,6 +17,7 @@
         self.coverImage = [UIImage imageNamed:@"detail_yadun.png"];
         self.titleImage = @"ElizabethArden-logo.png";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.shortComment = @"跨入的2015年，工作越来越忙，是种忙不停歇的节奏，每日里最为感慨的就是时间不够用不够用，在一步一步迈向职场精英的同时，也愈加体会了随之而来的压力.\n让我感受最为明显的即是我的皮肤，每天远超8小时的办公，密闭空间，电脑辐射，还有因各种压力带来的疲倦，走向成熟不再青春的肌肤需要能量，抗老的步调走起~";
         NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"detail_yadun_produc.png",@"image", @"http://v.youku.com/v_show/id_XOTQ3OTk3MzI0.html", @"video", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
@@ -31,6 +32,7 @@
         self.coverImage = [UIImage imageNamed:@"detail_yashilandai_cover.png"];
         self.titleImage = @"EsteeLauder-logo.png";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.shortComment = @"这款唇膏由Kendall Jenner代言。Kendall Jenner，媒体爱称“金小妹”。此次全新的眼妆盘色彩多为中性，有不同的深度和光泽度，适合搭配不同的场合来调整妆容，你可以打造最经典百搭的日常通勤妆，也可稍加点缀变换成约会晚妆，更可加强色彩描画柔和的小烟熏，是秋季最适合搭配的眼妆组合";
         NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"雅诗兰黛的Advanced TrueVision Technology ™科技使这支液体唇膏展现魅力四射的动人色彩，更兼具立体丰盈妆效。独特的缓释水分胶囊复合成分协同玻尿酸，助力双唇锁住水分，持续补水。配方还特别添加了滋养混合精油：鳄梨油、荷荷巴油和葵花籽油",@"text",@"detail_yanshilandai_product.png",@"image", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
@@ -45,6 +47,7 @@
         self.price = @"780";
         self.origin = @"美国";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.specification = @"8.4g";
         self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithBobblBrownInfomation];
         self.fitCrowd = @"所有肤质";
@@ -62,6 +65,7 @@
     if (self = [super init]) {
         self.title = @"CPB肌肤之钥光盈粉饼华丽上市";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.coverImage = [UIImage imageNamed:@"detail_CPB_cover.png"];
         self.titleImage = @"cbp-logo.png";
         self.shortComment = @"2015年夏，CPB肌肤之钥专业底妆又加入了话题性十足的新品光盈粉饼，将实现裸纱光钻，聚焦光采主角概念，使肌肤有如穿上薄纱光层般，创造前所未有的透明光泽感。YOKA评测中心对其进行了评测，看看其表现如何.";
@@ -76,6 +80,7 @@
     if (self = [super init]) {
         self.title = @"YSL妍活青春角质调理液";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.coverImage = [UIImage imageNamed:@"detail_YSL_cover.png"];
         self.titleImage = @"help-logo.png";
         self.shortComment = @"YSL妍活青春角质调理液，利用诺贝尔聚糖科技，揭示最新护肤发现：角质层的规律代谢，以及角质细胞的健康成熟程度，是决定肌肤肤质的关键因素。通过“角质调理”让角质层重回规律代谢，肌肤重获青春、水润、强韧健康，释放绝对光芒.";
@@ -90,6 +95,7 @@
     if (self = [super init]) {
         self.title = @"sisley 全新黑玫瑰珍宠滋养精华液";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.price = @"1580";
         self.origin = @"美国";
         self.specification = @"25ml";
@@ -109,6 +115,7 @@
     if (self = [super init]) {
         self.title = @"Help Clear Skin祛痘牛奶——喝出来的光滑肌肤";
         self.comments = [CommentInfomationTool helpClearMilkArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.price = @"220";
         self.origin = @"英国";
         self.specification = @"14*3.5g";
@@ -128,6 +135,7 @@
     if (self = [super init]) {
         self.title = @"BareMinerals睡眠粉—留宿必备";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.price = @"360";
         self.origin = @"美国";
         self.specification = @"4.2g";
@@ -147,6 +155,7 @@
     if (self = [super init]) {
         self.title = @"拉杜丽 贵族玫瑰花瓣腮红";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.price = @"786";
         self.feelingInfomationTool = [[FeelingInformationTool alloc] initLadureeInfomation];
         self.origin = @"日本";
@@ -168,6 +177,7 @@
     if (self = [super init]) {
         self.title = @"sisley 全新黑玫瑰珍宠滋养精华液";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.price = @"1580";
         self.origin = @"美国";
         self.specification = @"25ml";
@@ -192,6 +202,7 @@
     if (self = [super init]) {
         self.title = @"SK-II全新 [超肌因] 逆龄系列新品发布";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.price = @"1710";
         self.origin = @"日本";
         self.specification = @"30ml/50g";
@@ -214,6 +225,7 @@
     if (self = [super init]) {
         self.title = @"兰芝遇见时尚定制版BB霜";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.coverImage = [UIImage imageNamed:@"LanZhi.png"];
         self.titleImage = @"LanZhi-logo.png";
         self.shortComment = @"源自韩国第一大化妆品集团爱茉莉太平洋顶尖科技，横扫多项美妆大奖";
@@ -233,6 +245,7 @@
     if (self = [super init]) {
         self.title = @"欧珀莱 全新时光锁紧致塑颜系列";
         self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.trials = [TrialInfomationTool ladureeTrialArray];
         self.coverImage = [UIImage imageNamed:@"Aupres.png"];
         self.titleImage = @"Aupres-logo.png";
         self.shortComment = @"欧珀莱时光锁紧实弹润系列抗皱精萃眼霜就能很好滴满足上述要求，让Q弹媚眼再生 小P老师可是倾情推荐这款眼霜哦";

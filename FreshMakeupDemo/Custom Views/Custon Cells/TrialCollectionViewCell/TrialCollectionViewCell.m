@@ -15,6 +15,21 @@
     CGAffineTransform trialCommentTransform;
 }
 
+- (void)updateWithAvatarImage:(UIImage *)image nickName:(NSString *)nickName time:(NSString *)time coverImage:(UIImage *)coverImage description:(NSString *)description watchCount:(NSInteger)watchCount approveCount:(NSInteger)approveCount {
+    self.avatarImageVIew.image = image;
+    self.nickNameLabel.text = nickName;
+    self.timeLabel.text = time;
+    if (coverImage) {
+        self.coverImageView.image = coverImage;
+    }
+    self.descriptionLabel.text = description;
+    self.watchCountLabel.text = [NSString stringWithFormat:@"%@", @(watchCount)];
+    self.approveCountLabel.text = [NSString stringWithFormat:@"%@", @(approveCount)];
+}
+
+- (void)updateWithTrialInfomationTool:(TrialInfomationTool *)trialInfomationTool {
+    [self updateWithAvatarImage:trialInfomationTool.avatar nickName:trialInfomationTool.nickName time:trialInfomationTool.time coverImage:trialInfomationTool.coverImage description:trialInfomationTool.descriptionText watchCount:[self.watchCountLabel.text integerValue] approveCount:[self.approveCountLabel.text integerValue]];
+}
 
 - (void)awakeFromNib {
     

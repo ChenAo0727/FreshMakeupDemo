@@ -114,6 +114,7 @@
         return cell;
     } else if ([self isTrailCell:indexPath]){
         TrialCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:TRIAL_COLLECTION_VIEW_CELL forIndexPath:indexPath];
+        [cell updateWithTrialInfomationTool:[self.detailInfomationTool.trials objectAtIndex:indexPath.row]];
         return cell;
     }
     else {
