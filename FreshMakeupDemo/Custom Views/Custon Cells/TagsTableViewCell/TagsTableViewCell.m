@@ -37,27 +37,30 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     TagCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:TAG_COLLECTION_VIEW_CELL forIndexPath:indexPath];
-    if (0 == indexPath.row) {
-        [cell updateWithTagText:@"订阅标签" isTitle:YES];
-        
-    } else {
-        [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1] isTitle:NO];
-    }
+    [cell updateWithTagText:[tags objectAtIndex:indexPath.row] isTitle:NO];
+//    if (0 == indexPath.row) {
+//        [cell updateWithTagText:@"订阅标签" isTitle:YES];
+//        
+//    } else {
+//        [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1] isTitle:NO];
+//    }
     return cell;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return tags.count + 1;
+    return tags.count;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     TagCollectionViewCell *cell = [[[NSBundle mainBundle] loadNibNamed:@"TagCollectionViewCell" owner:nil options:nil] lastObject];
-    if (0 == indexPath.row) {
-        [cell updateWithTagText:@"订阅标签" isTitle:YES];
-    } else {
-        [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1] isTitle:NO];
-    }
-    return [cell sizeOfCell];
+//    if (0 == indexPath.row) {
+//        [cell updateWithTagText:@"订阅标签" isTitle:YES];
+//    } else {
+//        [cell updateWithTagText:[tags objectAtIndex:indexPath.row - 1] isTitle:NO];
+//    }
+    [cell updateWithTagText:[tags objectAtIndex:indexPath.row] isTitle:NO];
+    CGSize cellSize = [cell sizeOfCell];
+    return cellSize;
 }
 
 @end
