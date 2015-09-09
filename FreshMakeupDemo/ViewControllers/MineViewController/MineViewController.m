@@ -34,11 +34,16 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath  {
     [self guideViewAnimation:indexPath.row];
     [self.drawerController closeDrawerAnimated:YES completion:^(BOOL finished) {
-        if (indexPath.row == 1) {
+        if (indexPath.row == 0) {
+            
+        }else if (indexPath.row == 1) {
             PreferentialViewController *preferentialViewController = [[PreferentialViewController alloc] init];
             preferentialViewController.modalPresentationStyle = UIModalPresentationCustom;
             preferentialViewController.transitioningDelegate = self;
             [self presentViewController:preferentialViewController animated:YES completion:nil];
+        }else if (indexPath.row == 2) {
+        
+        
         }
 
     }];
