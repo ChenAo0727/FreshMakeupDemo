@@ -18,6 +18,7 @@
 - (void)mineLabelAnimation {
     for (NSInteger i = 0; i < 5; i++) {
         MineTableViewCell *cell = (MineTableViewCell *)[self.mineTableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
+        cell.mineLabel.hidden = YES;
         [cell animateToShowLabel:i];
     }
    
