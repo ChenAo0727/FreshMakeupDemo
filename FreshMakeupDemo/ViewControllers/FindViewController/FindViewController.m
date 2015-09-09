@@ -63,8 +63,9 @@
 }
 
 - (IBAction)onClickLeftButton:(id)sender {
+    MineViewController *viewController = (MineViewController *)self.drawerController.leftViewController;
+    [viewController updateAllCellsToRight];
     [self.drawerController toggleDrawerSide:XHDrawerSideLeft animated:YES completion:^(BOOL finished) {
-        MineViewController *viewController = (MineViewController *)self.drawerController.leftViewController;
         [viewController mineLabelAnimation];
     }];
 }
