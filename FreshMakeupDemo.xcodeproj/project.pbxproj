@@ -346,6 +346,12 @@
 		389A201C1B9E77870035BC2B /* FeelingTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 389A201A1B9E77870035BC2B /* FeelingTextCell.m */; };
 		389A201D1B9E77870035BC2B /* FeelingTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 389A201B1B9E77870035BC2B /* FeelingTextCell.xib */; };
 		389A20201B9E7D9B0035BC2B /* DottedLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 389A201F1B9E7D9B0035BC2B /* DottedLineView.m */; };
+		389A20221B9FC1340035BC2B /* feeling_SK-II.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A20211B9FC1340035BC2B /* feeling_SK-II.png */; };
+		389A20241B9FC3200035BC2B /* feeling_sisley_feeling_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A20231B9FC3200035BC2B /* feeling_sisley_feeling_one.png */; };
+		389A20261B9FC4900035BC2B /* feeling_sisiley_feeling_two.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A20251B9FC4900035BC2B /* feeling_sisiley_feeling_two.png */; };
+		389A20281B9FC5670035BC2B /* feeling_sisley_feeling_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A20271B9FC5670035BC2B /* feeling_sisley_feeling_three.png */; };
+		389A202A1B9FC6170035BC2B /* feeling_sisley_feeling_four.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A20291B9FC6170035BC2B /* feeling_sisley_feeling_four.png */; };
+		389A202C1B9FC69D0035BC2B /* feeling_sisley_feeling_five.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A202B1B9FC69C0035BC2B /* feeling_sisley_feeling_five.png */; };
 		38AF47171B9686B4006C45CB /* CommentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AF47151B9686B4006C45CB /* CommentViewCell.m */; };
 		38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38AF47161B9686B4006C45CB /* CommentViewCell.xib */; };
 		38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 38B48A2F1B941EB100092D6D /* MySegmentControl.m */; };
@@ -827,6 +833,12 @@
 		389A201B1B9E77870035BC2B /* FeelingTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeelingTextCell.xib; sourceTree = "<group>"; };
 		389A201E1B9E7D9B0035BC2B /* DottedLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DottedLineView.h; sourceTree = "<group>"; };
 		389A201F1B9E7D9B0035BC2B /* DottedLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DottedLineView.m; sourceTree = "<group>"; };
+		389A20211B9FC1340035BC2B /* feeling_SK-II.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feeling_SK-II.png"; sourceTree = "<group>"; };
+		389A20231B9FC3200035BC2B /* feeling_sisley_feeling_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_sisley_feeling_one.png; sourceTree = "<group>"; };
+		389A20251B9FC4900035BC2B /* feeling_sisiley_feeling_two.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_sisiley_feeling_two.png; sourceTree = "<group>"; };
+		389A20271B9FC5670035BC2B /* feeling_sisley_feeling_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_sisley_feeling_three.png; sourceTree = "<group>"; };
+		389A20291B9FC6170035BC2B /* feeling_sisley_feeling_four.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_sisley_feeling_four.png; sourceTree = "<group>"; };
+		389A202B1B9FC69C0035BC2B /* feeling_sisley_feeling_five.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_sisley_feeling_five.png; sourceTree = "<group>"; };
 		38AF47141B9686B4006C45CB /* CommentViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewCell.h; sourceTree = "<group>"; };
 		38AF47151B9686B4006C45CB /* CommentViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewCell.m; sourceTree = "<group>"; wrapsLines = 1; };
 		38AF47161B9686B4006C45CB /* CommentViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewCell.xib; sourceTree = "<group>"; };
@@ -1158,6 +1170,12 @@
 				05D76C621B9EFC960061546F /* feeling_yadun_feeling_one.png */,
 				05D76C631B9EFC960061546F /* feeling_yadun_feeling_three.png */,
 				05D76C641B9EFC960061546F /* feeling_yadun_feeling_tow.png */,
+				389A20211B9FC1340035BC2B /* feeling_SK-II.png */,
+				389A20231B9FC3200035BC2B /* feeling_sisley_feeling_one.png */,
+				389A20251B9FC4900035BC2B /* feeling_sisiley_feeling_two.png */,
+				389A20271B9FC5670035BC2B /* feeling_sisley_feeling_three.png */,
+				389A20291B9FC6170035BC2B /* feeling_sisley_feeling_four.png */,
+				389A202B1B9FC69C0035BC2B /* feeling_sisley_feeling_five.png */,
 			);
 			path = feelingImages;
 			sourceTree = "<group>";
@@ -2145,6 +2163,7 @@
 				2E7EB50D1B87835800DA6494 /* detail_movie_image.png in Resources */,
 				2EE6FA741B9EB6BE00EE5A26 /* mishang_price_image.png in Resources */,
 				05D76C751B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png in Resources */,
+				389A20221B9FC1340035BC2B /* feeling_SK-II.png in Resources */,
 				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				0596FFEB1B9AF06E00E5653D /* detail_CPB_cover.png in Resources */,
@@ -2161,6 +2180,7 @@
 				0596FFFC1B9AF75100E5653D /* detail_yadun.png in Resources */,
 				389A20171B9D7D6F0035BC2B /* Jurlique.png in Resources */,
 				2EB611B31B874570000414A2 /* OwnerSayCell.xib in Resources */,
+				389A20241B9FC3200035BC2B /* feeling_sisley_feeling_one.png in Resources */,
 				05E04CCB1B96928700E5D28C /* freash_sale_title_image.jpg in Resources */,
 				389A1FDB1B9ADA3F0035BC2B /* ClearSkin.png in Resources */,
 				389A1FDD1B9ADA680035BC2B /* BareMinerals.png in Resources */,
@@ -2176,6 +2196,7 @@
 				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
 				05D76C671B9EFC960061546F /* feeling_yadun_feeling_3.png in Resources */,
 				05D76C691B9EFC960061546F /* feeling_yadun_feeling_8.png in Resources */,
+				389A20281B9FC5670035BC2B /* feeling_sisley_feeling_three.png in Resources */,
 				0596FFF41B9AF06E00E5653D /* detail_yadun_produc.png in Resources */,
 				054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */,
 				05D76C5B1B9ED6930061546F /* skii-logo.png in Resources */,
@@ -2206,6 +2227,7 @@
 				0596FFEF1B9AF06E00E5653D /* detail_sisley_cover.png in Resources */,
 				05D76C651B9EFC960061546F /* feeling_yadun_feeling_11.png in Resources */,
 				058ABF5A1B82C58100A0BA8A /* findhottopic5.jpg in Resources */,
+				389A202A1B9FC6170035BC2B /* feeling_sisley_feeling_four.png in Resources */,
 				058ABF591B82C58100A0BA8A /* findhottopic4.jpg in Resources */,
 				38DEFC441B993FA3003E9E0F /* ChatCell.xib in Resources */,
 				2E6B46401B819DB800BF39D5 /* DetailViewController.xib in Resources */,
@@ -2244,6 +2266,7 @@
 				05D76C761B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png in Resources */,
 				05D76C6A1B9EFC960061546F /* feeling_yadun_feeling_one.png in Resources */,
 				0596FFF01B9AF06E00E5653D /* detail_sisley_feeling.png in Resources */,
+				389A202C1B9FC69D0035BC2B /* feeling_sisley_feeling_five.png in Resources */,
 				05D6BA611B99C50D00C20107 /* DetailBaseInfomationCell.xib in Resources */,
 				0596FFEA1B9AF06E00E5653D /* detail_bobbi_feeliing.png in Resources */,
 				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
@@ -2278,6 +2301,7 @@
 				3876B2651B95361500D916FF /* NewCommentCell.xib in Resources */,
 				2E77067F1B8813FE0024282D /* detail_wrinkle_icon.png in Resources */,
 				38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */,
+				389A20261B9FC4900035BC2B /* feeling_sisiley_feeling_two.png in Resources */,
 				058ABF4E1B82C58100A0BA8A /* findad4.jpg in Resources */,
 				05DEA0651B8858CB0094E123 /* shaking3.png in Resources */,
 				054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */,

@@ -34,11 +34,14 @@
         cell.frame = frame;
         CGFloat cellHeight = [cell getCellHeight];
         return cellHeight;
-    } else {
-        return [tableView fd_heightForCellWithIdentifier:FEELING_TEXT_CELL cacheByIndexPath:indexPath configuration:^(id cell) {
-            [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"text"]];
+    } else if([[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"text"]){
+        
+        return [tableView fd_heightForCellWithIdentifier:FEELING_TEXT_CELL configuration:^(id cell) {
+            
+            [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row]objectForKey:@"text"] WithTag:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"hasTag"]];
         }];
     }
+    return 0;
 }
 - (IBAction)returnAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
