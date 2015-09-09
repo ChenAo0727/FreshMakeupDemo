@@ -9,7 +9,8 @@
 #import "BaseViewController.h"
 #import "MineViewControllerDataSource.h"
 #import "MineViewController+Configuratin.h"
-@interface MineViewController : BaseViewController<UITableViewDelegate>
+#import "ZoomFadeTransition.h"
+@interface MineViewController : BaseViewController<UITableViewDelegate,UIViewControllerTransitioningDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *mineTableView;
 @property (strong, nonatomic) IBOutlet UIView *mineEndView;
 @property (weak, nonatomic) IBOutlet UILabel *mineEndLabel;
@@ -17,4 +18,6 @@
 @property (strong, nonatomic) IBOutlet UIView *mineGuideView;
 @property (strong, nonatomic) MineViewControllerDataSource * mineViewControllerDataSource;
 @property (strong, nonatomic) UIImageView *mineGuideimageView;
+
+@property (strong, nonatomic) ZoomFadeTransition *zoomFadeTransition;
 @end

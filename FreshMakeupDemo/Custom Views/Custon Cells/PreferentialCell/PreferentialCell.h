@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#define PREFERENTIAL_CELL @"PreferentialCell"
 @interface PreferentialCell : UITableViewCell
 
 @end

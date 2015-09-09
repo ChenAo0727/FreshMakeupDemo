@@ -7,7 +7,7 @@
 //
 
 #import "PreferentialViewController+Configuration.h"
-
+#import "PreferentialCell.h"
 @implementation PreferentialViewController (Configuration)
 - (void)configureViews {
     [self tableViewEdit];
@@ -16,6 +16,6 @@
     self.preferentialViewControllerDataSource  = [PreferentialViewControllerDataSource new];
     self.preferentialTableView.delegate = self;
     self.preferentialTableView.dataSource = self.preferentialViewControllerDataSource;
-    [self.preferentialTableView registerNib:[UINib nibWithNibName:@"" bundle:nil] forCellReuseIdentifier:nil];
+    [self.preferentialTableView registerNib:[UINib nibWithNibName:@"PreferentialCell" bundle:nil] forCellReuseIdentifier:PREFERENTIAL_CELL];
 }
 @end
