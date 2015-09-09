@@ -31,11 +31,9 @@
 //滚动视图
 @property (strong, nonatomic) UIImageView *imageViewOne;
 @property (strong, nonatomic) UIImageView *imageViewTow;
-@property (strong, nonatomic) UIImageView *imageViewThree;
 @property (strong, nonatomic) UIImageView *imageViewFour;
 @property (strong, nonatomic) UIImage *imageOne;
 @property (strong, nonatomic) UIImage *imageTow;
-@property (strong, nonatomic) UIImage *imageThree;
 @property (strong, nonatomic) UIImage *imageFour;
 @property (assign, nonatomic) NSInteger num;
 @property (retain, nonatomic) UIPageControl *pageControl;
