@@ -39,6 +39,10 @@
         preferentialViewController.transitioningDelegate = self;
         [self presentViewController:preferentialViewController animated:YES completion:nil];
     }
+    if ([self.delegate respondsToSelector:@selector(mineReturnViewControllerAction)]) {
+        [self.delegate mineReturnViewControllerAction];
+    }
+
     
 }
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {

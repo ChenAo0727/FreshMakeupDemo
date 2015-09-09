@@ -28,30 +28,46 @@
                             <constraint firstAttribute="width" constant="1" id="xai-0d-ZbQ"/>
                         </constraints>
                     </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJR-5d-vQW">
+                        <rect key="frame" x="3" y="0.0" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="3Qs-Uw-CbI"/>
+                            <constraint firstAttribute="width" constant="18" id="loB-j0-i01"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j02-fu-Ge0">
                         <rect key="frame" x="3" y="0.0" width="20" height="20"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJR-5d-vQW">
-                                <rect key="frame" x="0.0" y="0.0" width="20" height="0.0"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
-                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.3921568627" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.png" translatesAutoresizingMaskIntoConstraints="NO" id="g7r-mc-KP4">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" none="YES" image="YES"/>
+                        </accessibility>
                         <constraints>
+                            <constraint firstItem="g7r-mc-KP4" firstAttribute="top" secondItem="j02-fu-Ge0" secondAttribute="top" id="BOq-hy-8qm"/>
+                            <constraint firstItem="g7r-mc-KP4" firstAttribute="leading" secondItem="j02-fu-Ge0" secondAttribute="leading" id="MN3-hz-7pF"/>
+                            <constraint firstAttribute="bottom" secondItem="g7r-mc-KP4" secondAttribute="bottom" id="oeb-tL-FM5"/>
                             <constraint firstAttribute="height" constant="20" id="rOk-zb-t0m"/>
+                            <constraint firstAttribute="trailing" secondItem="g7r-mc-KP4" secondAttribute="trailing" id="wjZ-gZ-Yxm"/>
                             <constraint firstAttribute="width" constant="20" id="ySc-GA-VxD"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="j02-fu-Ge0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="6PP-aZ-Sqo"/>
+                    <constraint firstItem="nJR-5d-vQW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Asr-ca-2x6"/>
                     <constraint firstAttribute="bottom" secondItem="sXI-dH-EUq" secondAttribute="bottom" id="Bem-y9-BPf"/>
                     <constraint firstItem="cm0-Ox-vsd" firstAttribute="leading" secondItem="j02-fu-Ge0" secondAttribute="trailing" id="Cjw-DU-2mw"/>
                     <constraint firstAttribute="trailing" secondItem="cm0-Ox-vsd" secondAttribute="trailing" constant="8" id="GrH-c1-xh8"/>
                     <constraint firstItem="j02-fu-Ge0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mid-bc-bOW"/>
                     <constraint firstItem="cm0-Ox-vsd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Mq5-LR-nlu"/>
+                    <constraint firstItem="nJR-5d-vQW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="ZZp-9v-ghA"/>
                     <constraint firstAttribute="bottom" secondItem="cm0-Ox-vsd" secondAttribute="bottom" constant="10" id="ZuG-W7-VUZ"/>
                     <constraint firstItem="sXI-dH-EUq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jvR-cz-41v"/>
                     <constraint firstItem="sXI-dH-EUq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uNR-DQ-9uu"/>
@@ -67,6 +83,9 @@
             <point key="canvasLocation" x="526" y="522"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="square.png" width="31" height="31"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

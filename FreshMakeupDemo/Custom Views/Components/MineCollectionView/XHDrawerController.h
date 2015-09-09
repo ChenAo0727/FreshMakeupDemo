@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MineViewController.h"
 typedef NS_ENUM(NSInteger, XHDrawerSide){
     XHDrawerSideNone = 0,
     XHDrawerSideLeft,
 };
 
 
-@interface XHDrawerController : UIViewController
+@interface XHDrawerController : UIViewController<MineViewControllerDelegate>
 
+@property (strong, nonatomic) MineViewController *mineViewController;
 @property (nonatomic, assign, readonly) XHDrawerSide openSide;
 
 @property (nonatomic, assign) CGFloat animateDuration;

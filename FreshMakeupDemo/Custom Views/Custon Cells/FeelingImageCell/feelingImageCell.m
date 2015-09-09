@@ -22,7 +22,7 @@
     self.feelImageView.image = feelImage;
     if ([feelllabel isEqualToString:@"0"]) {
         self.feelView.alpha = 0;
-       
+        self.feelllabel.alpha = 0;
        [self layoutIfNeeded];
     } else {
         self.feelllabel.text = feelllabel;
