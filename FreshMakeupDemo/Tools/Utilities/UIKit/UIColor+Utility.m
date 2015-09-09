@@ -10,6 +10,19 @@
 
 @implementation UIColor (Utility)
 
+
++ (instancetype)drySkinLabelColor {
+    return [UIColor colorWithIntRed:103 green:212 blue:223];
+}
+
++ (instancetype)mixSkinLabelColor {
+    return [UIColor colorWithIntRed:220 green:109 blue:83];
+}
+
++ (instancetype)oilySkinLabelColor {
+    return [UIColor colorWithIntRed:229 green:193 blue:95];
+}
+
 //example
 + (instancetype)darkGreyLabelColor {
     return [UIColor colorWithIntRed:50 green:50 blue:50];
