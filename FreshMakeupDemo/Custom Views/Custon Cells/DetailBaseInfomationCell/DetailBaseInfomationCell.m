@@ -36,6 +36,12 @@
 }
 - (void)updatewithTitleImageView:(NSString *)imageString {
     self.detaBaseTitleImageView.image = [UIImage imageNamed:imageString];
-    
+}
+
+- (void)updateWithFitCrowd:(NSString *)fitCrowd origin:(NSString *)origin specification:(NSString *)specification price:(NSString *)price {
+    self.fitCrowdLabel.text = [NSString stringWithFormat:@"适用人群:%@", fitCrowd];
+    self.originLabel.text = [NSString stringWithFormat:@"产地:%@", origin];
+    self.specificationLabel.text = [NSString stringWithFormat:@"规格:%@", specification];
+    self.priceLabel.text = [NSString stringWithFormat:@"价格:%@元", price];
 }
 @end

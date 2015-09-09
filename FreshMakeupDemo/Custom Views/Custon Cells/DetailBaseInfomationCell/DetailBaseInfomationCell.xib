@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -17,8 +17,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zaa-Uc-uZE">
                         <rect key="frame" x="0.0" y="376" width="320" height="20"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="规格:50ML" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuB-FD-hL8">
-                                <rect key="frame" x="126" y="0.0" width="71" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="规格:50ML" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuB-FD-hL8">
+                                <rect key="frame" x="125" y="0.0" width="71" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="9gQ-2L-y0f"/>
                                     <constraint firstAttribute="height" constant="17" id="uRV-Zd-Ind"/>
@@ -27,8 +27,8 @@
                                 <color key="textColor" red="0.37647058820000001" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="价格:1800元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-3T-pDv">
-                                <rect key="frame" x="23" y="0.0" width="83" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="价格:1800元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tB1-3T-pDv">
+                                <rect key="frame" x="22" y="0.0" width="83" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="AQw-Ms-Nix"/>
                                     <constraint firstAttribute="height" constant="17" id="ecH-aF-nXy"/>
@@ -37,8 +37,8 @@
                                 <color key="textColor" red="0.37647058820000001" green="0.38431372549999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="产地:美国" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-Yq-hF3">
-                                <rect key="frame" x="215.5" y="0.0" width="64.5" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="产地:美国" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHk-Yq-hF3">
+                                <rect key="frame" x="215" y="0.0" width="65" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="ole-bh-8a4"/>
                                     <constraint firstAttribute="height" constant="17" id="zio-OE-TL0"/>
@@ -92,8 +92,8 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiM-rs-b80">
                         <rect key="frame" x="0.0" y="426" width="320" height="30"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="34654人评论" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQJ-M1-6bj">
-                                <rect key="frame" x="115" y="5" width="93" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34654人评论" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQJ-M1-6bj">
+                                <rect key="frame" x="114" y="5" width="93" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="LDp-9e-YWx"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Xey-Ow-maA"/>
@@ -102,8 +102,8 @@
                                 <color key="textColor" red="0.4039215686" green="0.40784313729999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1435人长草" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr3-wO-jOf">
-                                <rect key="frame" x="15" y="7" width="84" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1435人长草" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rr3-wO-jOf">
+                                <rect key="frame" x="14" y="7" width="84" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" id="6vc-W9-gEa"/>
                                     <constraint firstAttribute="height" constant="17" id="v3R-WD-eLh"/>
@@ -112,8 +112,8 @@
                                 <color key="textColor" red="0.4039215686" green="0.40784313729999999" blue="0.3803921569" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100份试用" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-Ma-Jf9">
-                                <rect key="frame" x="220.5" y="7" width="75" height="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="100份试用" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-Ma-Jf9">
+                                <rect key="frame" x="220" y="7" width="75" height="17"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" id="Od3-bL-OIP"/>
                                     <constraint firstAttribute="height" constant="17" id="U3Q-Oy-xc4"/>
@@ -145,7 +145,7 @@
                         <rect key="frame" x="0.0" y="464" width="320" height="124"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="“这款产品是赫莲娜家推出的一款新品，它XXXXXXXXXXXXXXXXXXXXXX，效果炒鸡棒，各方面的文章看点，总结成这段100字”" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="olN-eL-GzY">
-                                <rect key="frame" x="17" y="30" width="285" height="76.5"/>
+                                <rect key="frame" x="17" y="30" width="285" height="77"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" id="39n-4z-aox"/>
                                 </constraints>
@@ -247,6 +247,10 @@
                 <outlet property="detaBaseTitleImageView" destination="VY0-dp-9f7" id="J7G-j5-ahu"/>
                 <outlet property="detaBaseTitleLabel" destination="4Kq-MU-8Tw" id="8td-8i-PwV"/>
                 <outlet property="detaBaseView" destination="rPu-7B-Zon" id="bSM-bZ-DXO"/>
+                <outlet property="fitCrowdLabel" destination="f5N-vg-aPY" id="nHy-DM-M74"/>
+                <outlet property="originLabel" destination="bHk-Yq-hF3" id="nh2-V8-oV7"/>
+                <outlet property="priceLabel" destination="tB1-3T-pDv" id="he6-5t-ha6"/>
+                <outlet property="specificationLabel" destination="wuB-FD-hL8" id="sGd-xk-jae"/>
             </connections>
             <point key="canvasLocation" x="216" y="341"/>
         </collectionViewCell>
