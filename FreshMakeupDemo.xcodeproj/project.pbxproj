@@ -357,8 +357,8 @@
 		38620C0C1BA01354000CD318 /* LawnViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C0B1BA01354000CD318 /* LawnViewControllerDataSource.m */; };
 		38620C141BA01453000CD318 /* LawnCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C121BA01453000CD318 /* LawnCell.m */; };
 		38620C151BA01453000CD318 /* LawnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38620C131BA01453000CD318 /* LawnCell.xib */; };
-		38620C1C1BA01F89000CD318 /* lawn.png in Resources */ = {isa = PBXBuildFile; fileRef = 38620C1A1BA01F89000CD318 /* lawn.png */; };
-		38620C1D1BA01F89000CD318 /* probation.png in Resources */ = {isa = PBXBuildFile; fileRef = 38620C1B1BA01F89000CD318 /* probation.png */; };
+		38620C241BA02CF9000CD318 /* lawn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38620C221BA02CF9000CD318 /* lawn.jpg */; };
+		38620C251BA02CF9000CD318 /* probation.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38620C231BA02CF9000CD318 /* probation.jpg */; };
 		3876B2641B95361500D916FF /* NewCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3876B2621B95361500D916FF /* NewCommentCell.m */; };
 		3876B2651B95361500D916FF /* NewCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3876B2631B95361500D916FF /* NewCommentCell.xib */; };
 		389A1FDB1B9ADA3F0035BC2B /* ClearSkin.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A1FDA1B9ADA3F0035BC2B /* ClearSkin.png */; };
@@ -886,8 +886,8 @@
 		38620C111BA01453000CD318 /* LawnCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawnCell.h; sourceTree = "<group>"; };
 		38620C121BA01453000CD318 /* LawnCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawnCell.m; sourceTree = "<group>"; };
 		38620C131BA01453000CD318 /* LawnCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LawnCell.xib; sourceTree = "<group>"; };
-		38620C1A1BA01F89000CD318 /* lawn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lawn.png; sourceTree = "<group>"; };
-		38620C1B1BA01F89000CD318 /* probation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = probation.png; sourceTree = "<group>"; };
+		38620C221BA02CF9000CD318 /* lawn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lawn.jpg; sourceTree = "<group>"; };
+		38620C231BA02CF9000CD318 /* probation.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = probation.jpg; sourceTree = "<group>"; };
 		3876B2611B95361500D916FF /* NewCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewCommentCell.h; sourceTree = "<group>"; };
 		3876B2621B95361500D916FF /* NewCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewCommentCell.m; sourceTree = "<group>"; };
 		3876B2631B95361500D916FF /* NewCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewCommentCell.xib; sourceTree = "<group>"; };
@@ -1866,8 +1866,8 @@
 				05D76C451B9ED6930061546F /* logo */,
 				05D76C5C1B9EFC960061546F /* feelingImages */,
 				05CD8F191B9FC5F70097DAE0 /* preferential.png */,
-				38620C1A1BA01F89000CD318 /* lawn.png */,
-				38620C1B1BA01F89000CD318 /* probation.png */,
+				38620C221BA02CF9000CD318 /* lawn.jpg */,
+				38620C231BA02CF9000CD318 /* probation.jpg */,
 				05CD8F1D1B9FF63A0097DAE0 /* delete.png */,
 				05D76C431B9EC7AE0061546F /* strength_game.png */,
 				05CD8F1B1B9FD8160097DAE0 /* square.png */,
@@ -2294,6 +2294,7 @@
 				389A200F1B9D7D3C0035BC2B /* Dance_Legend.png in Resources */,
 				2EB611B91B8755A7000414A2 /* ImageCell.xib in Resources */,
 				0596FFFA1B9AF06E00E5653D /* detail_YSL_produc.png in Resources */,
+				38620C251BA02CF9000CD318 /* probation.jpg in Resources */,
 				05D76C7A1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_16.png in Resources */,
 				2E8C33E61B7DEC79006B5BC0 /* LaunchScreen.xib in Resources */,
 				389A1FDF1B9ADBFF0035BC2B /* sisley.png in Resources */,
@@ -2311,7 +2312,6 @@
 				2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */,
 				2EF5E9581B9FD6BC00D9BA5C /* feeling_help_clear_skin_image7png in Resources */,
 				05D76C581B9ED6930061546F /* help-logo.png in Resources */,
-				38620C1C1BA01F89000CD318 /* lawn.png in Resources */,
 				389A201D1B9E77870035BC2B /* FeelingTextCell.xib in Resources */,
 				2EB611C01B8757E9000414A2 /* TitleCell.xib in Resources */,
 				05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */,
@@ -2445,6 +2445,7 @@
 				0596FFF01B9AF06E00E5653D /* detail_sisley_feeling.png in Resources */,
 				389A202C1B9FC69D0035BC2B /* feeling_sisley_feeling_five.png in Resources */,
 				05D6BA611B99C50D00C20107 /* DetailBaseInfomationCell.xib in Resources */,
+				38620C241BA02CF9000CD318 /* lawn.jpg in Resources */,
 				0596FFEA1B9AF06E00E5653D /* detail_bobbi_feeliing.png in Resources */,
 				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
 				2EA556FB1B95725A00C696B0 /* DetailCommentView.xib in Resources */,
@@ -2492,7 +2493,6 @@
 				05CD8F141B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_7.png in Resources */,
 				2E77067D1B8813FE0024282D /* detail_good_price_icon.png in Resources */,
 				0596FFF91B9AF06E00E5653D /* detail_YSL_feeling.png in Resources */,
-				38620C1D1BA01F89000CD318 /* probation.png in Resources */,
 				0596FFF21B9AF06E00E5653D /* detail_yadun_cover.png in Resources */,
 				2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */,
 				05D76C7B1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_14.png in Resources */,

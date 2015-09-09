@@ -24,7 +24,7 @@
 - (void)loadTitleName {
     if (self.index == 0) {
         self.TitleLabel.text = @"草地";
-        self.preferentialViewControllerDataSource.image = [UIImage imageNamed:@"lawn"];
+        self.preferentialViewControllerDataSource.image = [UIImage imageNamed:@"lawn.jpg"];
     }
     if (self.index == 1) {
         self.TitleLabel.text = @"优惠";
@@ -32,7 +32,7 @@
 
     }else if (self.index == 2){
         self.TitleLabel.text = @"试用";
-        self.preferentialViewControllerDataSource.image = [UIImage imageNamed:@"probation"];
+        self.preferentialViewControllerDataSource.image = [UIImage imageNamed:@"probation.jpg"];
     }
 
 }
