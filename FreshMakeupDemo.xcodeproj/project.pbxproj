@@ -113,9 +113,6 @@
 		05D76C301B9E82720061546F /* FeelIngViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C2F1B9E82720061546F /* FeelIngViewController+Configuration.m */; };
 		05D76C331B9E82AF0061546F /* FeelIngViwControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C321B9E82AF0061546F /* FeelIngViwControllerDataSource.m */; };
 		05D76C361B9EB5BE0061546F /* FeelingInformationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C351B9EB5BE0061546F /* FeelingInformationTool.m */; };
-		05D76C3A1B9EBBA70061546F /* feeling_yadun_feeling_tow.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C371B9EBBA70061546F /* feeling_yadun_feeling_tow.png */; };
-		05D76C3B1B9EBBA70061546F /* feeling_yadun_feeling_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C381B9EBBA70061546F /* feeling_yadun_feeling_three.png */; };
-		05D76C3C1B9EBBA70061546F /* feeling_yadun_feeling_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C391B9EBBA70061546F /* feeling_yadun_feeling_one.png */; };
 		05D76C411B9EC6580061546F /* StrengthGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C3F1B9EC6580061546F /* StrengthGameViewController.m */; };
 		05D76C421B9EC6580061546F /* StrengthGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C401B9EC6580061546F /* StrengthGameViewController.xib */; };
 		05D76C441B9EC7AE0061546F /* strength_game.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C431B9EC7AE0061546F /* strength_game.png */; };
@@ -130,6 +127,28 @@
 		05D76C591B9ED6930061546F /* LanZhi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C4E1B9ED6930061546F /* LanZhi-logo.png */; };
 		05D76C5A1B9ED6930061546F /* Sisley-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C4F1B9ED6930061546F /* Sisley-logo.png */; };
 		05D76C5B1B9ED6930061546F /* skii-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C501B9ED6930061546F /* skii-logo.png */; };
+		05D76C651B9EFC960061546F /* feeling_yadun_feeling_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C5D1B9EFC960061546F /* feeling_yadun_feeling_11.png */; };
+		05D76C661B9EFC960061546F /* feeling_yadun_feeling_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C5E1B9EFC960061546F /* feeling_yadun_feeling_13.png */; };
+		05D76C671B9EFC960061546F /* feeling_yadun_feeling_3.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C5F1B9EFC960061546F /* feeling_yadun_feeling_3.png */; };
+		05D76C681B9EFC960061546F /* feeling_yadun_feeling_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C601B9EFC960061546F /* feeling_yadun_feeling_6.png */; };
+		05D76C691B9EFC960061546F /* feeling_yadun_feeling_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C611B9EFC960061546F /* feeling_yadun_feeling_8.png */; };
+		05D76C6A1B9EFC960061546F /* feeling_yadun_feeling_one.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C621B9EFC960061546F /* feeling_yadun_feeling_one.png */; };
+		05D76C6B1B9EFC960061546F /* feeling_yadun_feeling_three.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C631B9EFC960061546F /* feeling_yadun_feeling_three.png */; };
+		05D76C6C1B9EFC960061546F /* feeling_yadun_feeling_tow.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C641B9EFC960061546F /* feeling_yadun_feeling_tow.png */; };
+		05D76C751B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C6D1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png */; };
+		05D76C761B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C6E1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png */; };
+		05D76C771B9F0EEF0061546F /* feeling_EsteeLauder_feeling_8.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C6F1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_8.png */; };
+		05D76C781B9F0EEF0061546F /* feeling_EsteeLauder_feeling_4.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C701B9F0EEF0061546F /* feeling_EsteeLauder_feeling_4.png */; };
+		05D76C791B9F0EEF0061546F /* feeling_EsteeLauder_feeling_6.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C711B9F0EEF0061546F /* feeling_EsteeLauder_feeling_6.png */; };
+		05D76C7A1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_16.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C721B9F0EEF0061546F /* feeling_EsteeLauder_feeling_16.png */; };
+		05D76C7B1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_14.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C731B9F0EEF0061546F /* feeling_EsteeLauder_feeling_14.png */; };
+		05D76C7C1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C741B9F0EEF0061546F /* feeling_EsteeLauder_feeling_2.png */; };
+		05D76C811B9F13120061546F /* PreferentialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C7F1B9F13120061546F /* PreferentialViewController.m */; };
+		05D76C821B9F13120061546F /* PreferentialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C801B9F13120061546F /* PreferentialViewController.xib */; };
+		05D76C851B9F14750061546F /* PreferentialViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C841B9F14750061546F /* PreferentialViewController+Configuration.m */; };
+		05D76C881B9F150B0061546F /* PreferentialViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C871B9F150B0061546F /* PreferentialViewControllerDataSource.m */; };
+		05D76C8D1B9F16C50061546F /* PreferentialCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 05D76C8B1B9F16C50061546F /* PreferentialCell.m */; };
+		05D76C8E1B9F16C50061546F /* PreferentialCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05D76C8C1B9F16C50061546F /* PreferentialCell.xib */; };
 		05D7D5A71B856D9E0079843C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A61B856D9E0079843C /* Foundation.framework */; };
 		05D7D5A91B856DA90079843C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05D7D5A81B856DA90079843C /* CoreGraphics.framework */; };
 		05DEA0541B880C560094E123 /* black.png in Resources */ = {isa = PBXBuildFile; fileRef = 05DEA0521B880C560094E123 /* black.png */; };
@@ -485,9 +504,6 @@
 		05D76C321B9E82AF0061546F /* FeelIngViwControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeelIngViwControllerDataSource.m; sourceTree = "<group>"; };
 		05D76C341B9EB5BE0061546F /* FeelingInformationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeelingInformationTool.h; sourceTree = "<group>"; };
 		05D76C351B9EB5BE0061546F /* FeelingInformationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeelingInformationTool.m; sourceTree = "<group>"; };
-		05D76C371B9EBBA70061546F /* feeling_yadun_feeling_tow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_tow.png; sourceTree = "<group>"; };
-		05D76C381B9EBBA70061546F /* feeling_yadun_feeling_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_three.png; sourceTree = "<group>"; };
-		05D76C391B9EBBA70061546F /* feeling_yadun_feeling_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_one.png; sourceTree = "<group>"; };
 		05D76C3E1B9EC6580061546F /* StrengthGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrengthGameViewController.h; sourceTree = "<group>"; };
 		05D76C3F1B9EC6580061546F /* StrengthGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrengthGameViewController.m; sourceTree = "<group>"; };
 		05D76C401B9EC6580061546F /* StrengthGameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StrengthGameViewController.xib; sourceTree = "<group>"; };
@@ -503,6 +519,32 @@
 		05D76C4E1B9ED6930061546F /* LanZhi-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LanZhi-logo.png"; sourceTree = "<group>"; };
 		05D76C4F1B9ED6930061546F /* Sisley-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sisley-logo.png"; sourceTree = "<group>"; };
 		05D76C501B9ED6930061546F /* skii-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "skii-logo.png"; sourceTree = "<group>"; };
+		05D76C5D1B9EFC960061546F /* feeling_yadun_feeling_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_11.png; sourceTree = "<group>"; };
+		05D76C5E1B9EFC960061546F /* feeling_yadun_feeling_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_13.png; sourceTree = "<group>"; };
+		05D76C5F1B9EFC960061546F /* feeling_yadun_feeling_3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_3.png; sourceTree = "<group>"; };
+		05D76C601B9EFC960061546F /* feeling_yadun_feeling_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_6.png; sourceTree = "<group>"; };
+		05D76C611B9EFC960061546F /* feeling_yadun_feeling_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_8.png; sourceTree = "<group>"; };
+		05D76C621B9EFC960061546F /* feeling_yadun_feeling_one.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_one.png; sourceTree = "<group>"; };
+		05D76C631B9EFC960061546F /* feeling_yadun_feeling_three.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_three.png; sourceTree = "<group>"; };
+		05D76C641B9EFC960061546F /* feeling_yadun_feeling_tow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_yadun_feeling_tow.png; sourceTree = "<group>"; };
+		05D76C6D1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_EsteeLauder_feeling_10.png; sourceTree = "<group>"; };
+		05D76C6E1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_EsteeLauder_feeling_12.png; sourceTree = "<group>"; };
+		05D76C6F1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_EsteeLauder_feeling_8.png; sourceTree = "<group>"; };
+		05D76C701B9F0EEF0061546F /* feeling_EsteeLauder_feeling_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_EsteeLauder_feeling_4.png; sourceTree = "<group>"; };
+		05D76C711B9F0EEF0061546F /* feeling_EsteeLauder_feeling_6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_EsteeLauder_feeling_6.png; sourceTree = "<group>"; };
+		05D76C721B9F0EEF0061546F /* feeling_EsteeLauder_feeling_16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_EsteeLauder_feeling_16.png; sourceTree = "<group>"; };
+		05D76C731B9F0EEF0061546F /* feeling_EsteeLauder_feeling_14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_EsteeLauder_feeling_14.png; sourceTree = "<group>"; };
+		05D76C741B9F0EEF0061546F /* feeling_EsteeLauder_feeling_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_EsteeLauder_feeling_2.png; sourceTree = "<group>"; };
+		05D76C7E1B9F13120061546F /* PreferentialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferentialViewController.h; sourceTree = "<group>"; };
+		05D76C7F1B9F13120061546F /* PreferentialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferentialViewController.m; sourceTree = "<group>"; };
+		05D76C801B9F13120061546F /* PreferentialViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferentialViewController.xib; sourceTree = "<group>"; };
+		05D76C831B9F14750061546F /* PreferentialViewController+Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PreferentialViewController+Configuration.h"; sourceTree = "<group>"; };
+		05D76C841B9F14750061546F /* PreferentialViewController+Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PreferentialViewController+Configuration.m"; sourceTree = "<group>"; };
+		05D76C861B9F150B0061546F /* PreferentialViewControllerDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferentialViewControllerDataSource.h; sourceTree = "<group>"; };
+		05D76C871B9F150B0061546F /* PreferentialViewControllerDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferentialViewControllerDataSource.m; sourceTree = "<group>"; };
+		05D76C8A1B9F16C50061546F /* PreferentialCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferentialCell.h; sourceTree = "<group>"; };
+		05D76C8B1B9F16C50061546F /* PreferentialCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferentialCell.m; sourceTree = "<group>"; };
+		05D76C8C1B9F16C50061546F /* PreferentialCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferentialCell.xib; sourceTree = "<group>"; };
 		05D7D5A61B856D9E0079843C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		05D7D5A81B856DA90079843C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		05DEA0521B880C560094E123 /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -1097,6 +1139,53 @@
 			path = logo;
 			sourceTree = "<group>";
 		};
+		05D76C5C1B9EFC960061546F /* feelingImages */ = {
+			isa = PBXGroup;
+			children = (
+				05D76C6D1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png */,
+				05D76C6E1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png */,
+				05D76C6F1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_8.png */,
+				05D76C701B9F0EEF0061546F /* feeling_EsteeLauder_feeling_4.png */,
+				05D76C711B9F0EEF0061546F /* feeling_EsteeLauder_feeling_6.png */,
+				05D76C721B9F0EEF0061546F /* feeling_EsteeLauder_feeling_16.png */,
+				05D76C731B9F0EEF0061546F /* feeling_EsteeLauder_feeling_14.png */,
+				05D76C741B9F0EEF0061546F /* feeling_EsteeLauder_feeling_2.png */,
+				05D76C5D1B9EFC960061546F /* feeling_yadun_feeling_11.png */,
+				05D76C5E1B9EFC960061546F /* feeling_yadun_feeling_13.png */,
+				05D76C5F1B9EFC960061546F /* feeling_yadun_feeling_3.png */,
+				05D76C601B9EFC960061546F /* feeling_yadun_feeling_6.png */,
+				05D76C611B9EFC960061546F /* feeling_yadun_feeling_8.png */,
+				05D76C621B9EFC960061546F /* feeling_yadun_feeling_one.png */,
+				05D76C631B9EFC960061546F /* feeling_yadun_feeling_three.png */,
+				05D76C641B9EFC960061546F /* feeling_yadun_feeling_tow.png */,
+			);
+			path = feelingImages;
+			sourceTree = "<group>";
+		};
+		05D76C7D1B9F12E20061546F /* PreferentialViewController */ = {
+			isa = PBXGroup;
+			children = (
+				05D76C7E1B9F13120061546F /* PreferentialViewController.h */,
+				05D76C7F1B9F13120061546F /* PreferentialViewController.m */,
+				05D76C801B9F13120061546F /* PreferentialViewController.xib */,
+				05D76C831B9F14750061546F /* PreferentialViewController+Configuration.h */,
+				05D76C841B9F14750061546F /* PreferentialViewController+Configuration.m */,
+				05D76C861B9F150B0061546F /* PreferentialViewControllerDataSource.h */,
+				05D76C871B9F150B0061546F /* PreferentialViewControllerDataSource.m */,
+			);
+			path = PreferentialViewController;
+			sourceTree = "<group>";
+		};
+		05D76C891B9F166F0061546F /* PreferentialCell */ = {
+			isa = PBXGroup;
+			children = (
+				05D76C8A1B9F16C50061546F /* PreferentialCell.h */,
+				05D76C8B1B9F16C50061546F /* PreferentialCell.m */,
+				05D76C8C1B9F16C50061546F /* PreferentialCell.xib */,
+			);
+			path = PreferentialCell;
+			sourceTree = "<group>";
+		};
 		05DEA0561B8858CB0094E123 /* Shake a shakeImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1355,6 +1444,7 @@
 				05E04CBC1B9685D200E5D28C /* FreashSaleViewController */,
 				05D76C281B9E80520061546F /* FeelingViewController */,
 				05D76C3D1B9EC61A0061546F /* StrengthGameViewController */,
+				05D76C7D1B9F12E20061546F /* PreferentialViewController */,
 			);
 			name = ViewControllers;
 			path = FreshMakeupDemo/ViewControllers;
@@ -1523,6 +1613,7 @@
 				05E04CDB1B96A64500E5D28C /* TitleHeadCell */,
 				05E04CE11B96C34600E5D28C /* TextCell */,
 				05D76C221B9E780E0061546F /* FeelingImageCell */,
+				05D76C891B9F166F0061546F /* PreferentialCell */,
 			);
 			path = "Custon Cells";
 			sourceTree = "<group>";
@@ -1635,6 +1726,7 @@
 				389A1FF61B9D3A8E0035BC2B /* FreshSaleImage */,
 				389A1FD71B9AD5650035BC2B /* Product */,
 				05D76C451B9ED6930061546F /* logo */,
+				05D76C5C1B9EFC960061546F /* feelingImages */,
 				05D76C431B9EC7AE0061546F /* strength_game.png */,
 				2EB4EF4D1B9692A50080185A /* worth_slideview_car.png */,
 				2EB4EF4E1B9692A50080185A /* worth_slideview_notworth.png */,
@@ -1650,9 +1742,6 @@
 				2E77067A1B8813FE0024282D /* detail_good_price_icon.png */,
 				2E77068C1B883C460024282D /* detail_approve_icon.png */,
 				2E77068D1B883C460024282D /* detail_comment_icon.png */,
-				05D76C371B9EBBA70061546F /* feeling_yadun_feeling_tow.png */,
-				05D76C381B9EBBA70061546F /* feeling_yadun_feeling_three.png */,
-				05D76C391B9EBBA70061546F /* feeling_yadun_feeling_one.png */,
 				2E77068E1B883C460024282D /* detail_watch_icon.png */,
 				2E77067B1B8813FE0024282D /* detail_keepwet_icon.png */,
 				2E77067C1B8813FE0024282D /* detail_wrinkle_icon.png */,
@@ -2034,6 +2123,7 @@
 				389A200F1B9D7D3C0035BC2B /* Dance_Legend.png in Resources */,
 				2EB611B91B8755A7000414A2 /* ImageCell.xib in Resources */,
 				0596FFFA1B9AF06E00E5653D /* detail_YSL_produc.png in Resources */,
+				05D76C7A1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_16.png in Resources */,
 				2E8C33E61B7DEC79006B5BC0 /* LaunchScreen.xib in Resources */,
 				389A1FDF1B9ADBFF0035BC2B /* sisley.png in Resources */,
 				2EECA6AD1B999512007D51C2 /* SimpleRichTextCell.xib in Resources */,
@@ -2042,6 +2132,7 @@
 				2EE6FA701B9EB6BE00EE5A26 /* bioderma_price_image.png in Resources */,
 				057A26521B86D255003DAF07 /* interval.png in Resources */,
 				2E6B46441B81A85400BF39D5 /* home_user_info_icon.png in Resources */,
+				05D76C661B9EFC960061546F /* feeling_yadun_feeling_13.png in Resources */,
 				389A1FED1B9AE13E0035BC2B /* LanZhiFelling.png in Resources */,
 				2E6B463A1B817F2E00BF39D5 /* home_book_cover_image.png in Resources */,
 				05D76C581B9ED6930061546F /* help-logo.png in Resources */,
@@ -2053,6 +2144,7 @@
 				053BFEA41B84AD80002058BA /* yaoti.ttf in Resources */,
 				2E7EB50D1B87835800DA6494 /* detail_movie_image.png in Resources */,
 				2EE6FA741B9EB6BE00EE5A26 /* mishang_price_image.png in Resources */,
+				05D76C751B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png in Resources */,
 				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				0596FFEB1B9AF06E00E5653D /* detail_CPB_cover.png in Resources */,
@@ -2062,6 +2154,7 @@
 				05D76C441B9EC7AE0061546F /* strength_game.png in Resources */,
 				05D76C2D1B9E80D80061546F /* FeelIngViewController.xib in Resources */,
 				2E77067E1B8813FE0024282D /* detail_keepwet_icon.png in Resources */,
+				05D76C781B9F0EEF0061546F /* feeling_EsteeLauder_feeling_4.png in Resources */,
 				380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */,
 				2EB611A21B86EFDF000414A2 /* BaseInfomationCell.xib in Resources */,
 				05D76C271B9E78560061546F /* feelingImageCell.xib in Resources */,
@@ -2075,14 +2168,14 @@
 				2E77068F1B883C460024282D /* detail_approve_icon.png in Resources */,
 				2E7706791B8812E10024282D /* FeatureDescriptionCell.xib in Resources */,
 				2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */,
-				05D76C3B1B9EBBA70061546F /* feeling_yadun_feeling_three.png in Resources */,
 				2E132F8B1B85B0E7005DCF14 /* home_down_guide3.png in Resources */,
 				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
 				054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */,
 				2EE6FA721B9EB6BE00EE5A26 /* dior_price_image.png in Resources */,
 				05DEA0681B8858CB0094E123 /* undertheNew.png in Resources */,
 				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
-				05D76C3A1B9EBBA70061546F /* feeling_yadun_feeling_tow.png in Resources */,
+				05D76C671B9EFC960061546F /* feeling_yadun_feeling_3.png in Resources */,
+				05D76C691B9EFC960061546F /* feeling_yadun_feeling_8.png in Resources */,
 				0596FFF41B9AF06E00E5653D /* detail_yadun_produc.png in Resources */,
 				054DFD3A1B81A0ED00651F11 /* EarlyAdoptersReportTableViewCell.xib in Resources */,
 				05D76C5B1B9ED6930061546F /* skii-logo.png in Resources */,
@@ -2090,7 +2183,6 @@
 				2E4C0C841B900B3F00ECD2BF /* realbook_background.png in Resources */,
 				058ABF521B82C58100A0BA8A /* findarticle4.png in Resources */,
 				054DFD411B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib in Resources */,
-				05D76C3C1B9EBBA70061546F /* feeling_yadun_feeling_one.png in Resources */,
 				054DFD4A1B81AAEE00651F11 /* apply_luck.png in Resources */,
 				058ABF511B82C58100A0BA8A /* findarticle3.png in Resources */,
 				05E04CE61B96C36500E5D28C /* TextCell.xib in Resources */,
@@ -2112,6 +2204,7 @@
 				05DEA0551B880C560094E123 /* white.png in Resources */,
 				0596FFF31B9AF06E00E5653D /* detail_yadun_feeling_one.png in Resources */,
 				0596FFEF1B9AF06E00E5653D /* detail_sisley_cover.png in Resources */,
+				05D76C651B9EFC960061546F /* feeling_yadun_feeling_11.png in Resources */,
 				058ABF5A1B82C58100A0BA8A /* findhottopic5.jpg in Resources */,
 				058ABF591B82C58100A0BA8A /* findhottopic4.jpg in Resources */,
 				38DEFC441B993FA3003E9E0F /* ChatCell.xib in Resources */,
@@ -2127,6 +2220,7 @@
 				389A1FF11B9AE2610035BC2B /* AupresIntroduce.png in Resources */,
 				2EBAB3B31B9A91F2008E559F /* ProductiDescriptionCell.xib in Resources */,
 				2E132F851B85A71F005DCF14 /* home_update_time_image.png in Resources */,
+				05D76C791B9F0EEF0061546F /* feeling_EsteeLauder_feeling_6.png in Resources */,
 				389A1FEF1B9AE2100035BC2B /* Aupres.png in Resources */,
 				2EB4EF5E1B96C0510080185A /* TagsTableViewCell.xib in Resources */,
 				2E6B46431B81A85400BF39D5 /* home_discovery_icon.png in Resources */,
@@ -2143,9 +2237,12 @@
 				389A1FF31B9AE2BF0035BC2B /* AupresFelling.png in Resources */,
 				05E04CCA1B96928700E5D28C /* feash_sale_review.png in Resources */,
 				05DEA0611B8858CB0094E123 /* lastNew.png in Resources */,
+				05D76C681B9EFC960061546F /* feeling_yadun_feeling_6.png in Resources */,
 				2E4C0C861B90511A00ECD2BF /* book_shadow.png in Resources */,
 				2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */,
 				058ABF4B1B82C58100A0BA8A /* findad1.png in Resources */,
+				05D76C761B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png in Resources */,
+				05D76C6A1B9EFC960061546F /* feeling_yadun_feeling_one.png in Resources */,
 				0596FFF01B9AF06E00E5653D /* detail_sisley_feeling.png in Resources */,
 				05D6BA611B99C50D00C20107 /* DetailBaseInfomationCell.xib in Resources */,
 				0596FFEA1B9AF06E00E5653D /* detail_bobbi_feeliing.png in Resources */,
@@ -2153,6 +2250,7 @@
 				2EA556FB1B95725A00C696B0 /* DetailCommentView.xib in Resources */,
 				059E88BE1B8414D30086544F /* FindBranchTableViewCell.xib in Resources */,
 				05D76C551B9ED6930061546F /* ClearSkin-logo.png in Resources */,
+				05D76C8E1B9F16C50061546F /* PreferentialCell.xib in Resources */,
 				389A1FFA1B9D3DE00035BC2B /* freshSale_BIODERMA_image.png in Resources */,
 				05DEA0621B8858CB0094E123 /* shakeaShake.png in Resources */,
 				0596FFF11B9AF06E00E5653D /* detail_sisley_product.png in Resources */,
@@ -2164,6 +2262,8 @@
 				0596FFF61B9AF06E00E5653D /* detail_yanshilandai_product.png in Resources */,
 				05D5F36B1B944FEA0080AE64 /* ShakeAshakeView.xib in Resources */,
 				2EB4EF501B9692A50080185A /* worth_slideview_car.png in Resources */,
+				05D76C821B9F13120061546F /* PreferentialViewController.xib in Resources */,
+				05D76C6C1B9EFC960061546F /* feeling_yadun_feeling_tow.png in Resources */,
 				058ABF6D1B830A8E00A0BA8A /* RollCollectionViewCell.xib in Resources */,
 				2E7706731B88085A0024282D /* MoreInfomationCell.xib in Resources */,
 				2E77069B1B88890D0024282D /* TrialCollectionViewCell.xib in Resources */,
@@ -2181,10 +2281,12 @@
 				058ABF4E1B82C58100A0BA8A /* findad4.jpg in Resources */,
 				05DEA0651B8858CB0094E123 /* shaking3.png in Resources */,
 				054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */,
+				05D76C6B1B9EFC960061546F /* feeling_yadun_feeling_three.png in Resources */,
 				2E77067D1B8813FE0024282D /* detail_good_price_icon.png in Resources */,
 				0596FFF91B9AF06E00E5653D /* detail_YSL_feeling.png in Resources */,
 				0596FFF21B9AF06E00E5653D /* detail_yadun_cover.png in Resources */,
 				2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */,
+				05D76C7B1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_14.png in Resources */,
 				2EE6FA671B9E79E900EE5A26 /* Icon@2x.png in Resources */,
 				2EE6FA751B9EB6BE00EE5A26 /* panasonic_price_image.png in Resources */,
 				05F8B5001B9D402B0011FD05 /* freshSale_LilyBell_image.png in Resources */,
@@ -2192,6 +2294,7 @@
 				2E7706911B883C460024282D /* detail_watch_icon.png in Resources */,
 				059E88C01B8414D30086544F /* FindTableViewCell.xib in Resources */,
 				05DEA0631B8858CB0094E123 /* shaking1.png in Resources */,
+				05D76C7C1B9F0EEF0061546F /* feeling_EsteeLauder_feeling_2.png in Resources */,
 				0596FFF81B9AF06E00E5653D /* detail_YSL_cover.png in Resources */,
 				2E4C0C801B900AA100ECD2BF /* RealBookView.xib in Resources */,
 				05E04CC11B96864E00E5D28C /* FreashSaleViewController.xib in Resources */,
@@ -2212,6 +2315,7 @@
 				059E88D61B8431460086544F /* title1.png in Resources */,
 				05F8B4FF1B9D402B0011FD05 /* freshSale_DALGCR_image.png in Resources */,
 				2E8C34081B7DF2B7006B5BC0 /* HomeViewController.xib in Resources */,
+				05D76C771B9F0EEF0061546F /* feeling_EsteeLauder_feeling_8.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2321,6 +2425,7 @@
 				2EE6FA861B9F0A4300EE5A26 /* LawnInfoListDatasource.m in Sources */,
 				2EB4EF5D1B96C0510080185A /* TagsTableViewCell.m in Sources */,
 				2E77069A1B88890D0024282D /* TrialCollectionViewCell.m in Sources */,
+				05D76C811B9F13120061546F /* PreferentialViewController.m in Sources */,
 				3876B2641B95361500D916FF /* NewCommentCell.m in Sources */,
 				059E88CF1B841BB20086544F /* FindViewController.m in Sources */,
 				2E8C34101B7DF361006B5BC0 /* BaseViewController.m in Sources */,
@@ -2332,6 +2437,7 @@
 				2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */,
 				054DFD561B81AD6A00651F11 /* EarlyAdoptersTheTrialViewControllerDataSource.m in Sources */,
 				2EA556F61B9571E100C696B0 /* DetailCommentView.m in Sources */,
+				05D76C851B9F14750061546F /* PreferentialViewController+Configuration.m in Sources */,
 				2E7DC93C1B82D2BD00152A0B /* StackCollectionView+Configuration.m in Sources */,
 				057A26491B86D046003DAF07 /* MineTableViewCell.m in Sources */,
 				2EA556F21B95460400C696B0 /* DetailViewController+Configuration.m in Sources */,
@@ -2357,6 +2463,7 @@
 				05E04CDF1B96A67800E5D28C /* TitleHeadCell.m in Sources */,
 				05E04CE51B96C36500E5D28C /* TextCell.m in Sources */,
 				389A201C1B9E77870035BC2B /* FeelingTextCell.m in Sources */,
+				05D76C8D1B9F16C50061546F /* PreferentialCell.m in Sources */,
 				057A26501B86D08C003DAF07 /* MineViewControllerDataSource.m in Sources */,
 				2E8C34291B7DF3DC006B5BC0 /* AutoLayoutView.m in Sources */,
 				2E7DC9311B82BCD400152A0B /* StackCollectionViewPile.m in Sources */,
@@ -2377,6 +2484,7 @@
 				057A264F1B86D08C003DAF07 /* MineViewController+Configuratin.m in Sources */,
 				2E8C344A1B7DF46E006B5BC0 /* UIColor+Utility.m in Sources */,
 				2E8C34071B7DF2B7006B5BC0 /* HomeViewController.m in Sources */,
+				05D76C881B9F150B0061546F /* PreferentialViewControllerDataSource.m in Sources */,
 				2E6B46621B82182D00BF39D5 /* Pool.m in Sources */,
 				2E7706841B8818960024282D /* CopywriterCell.m in Sources */,
 				38B48A301B941EB100092D6D /* MySegmentControl.m in Sources */,

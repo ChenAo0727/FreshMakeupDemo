@@ -27,7 +27,7 @@
     [self configureViews];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (indexPath.row == 1 || indexPath.row % 2 == 1) {
+    if ([[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"image"]) {
         feelingImageCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_IMAGE_CELL];
         CGRect frame = cell.frame;
         frame.size.width = [UIScreen screenWidth];
@@ -36,7 +36,7 @@
         return cellHeight;
     } else {
         return [tableView fd_heightForCellWithIdentifier:FEELING_TEXT_CELL cacheByIndexPath:indexPath configuration:^(id cell) {
-            [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row / 2] objectForKey:@"text"]];
+            [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"text"]];
         }];
     }
 }

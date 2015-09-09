@@ -18,9 +18,9 @@
     
     return self.feelImageView.frame.size.height + 10;
 }
-- (void)updateWithFeelImageView:(NSString *)feelImageView Feelllabel:(NSString *)feelllabel {
-    self.feelImageView.image = [UIImage imageNamed:feelImageView];
-    if ([feelllabel isEqualToString:@""]) {
+- (void)updateWithFeelImageView:(UIImage *)feelImage Feelllabel:(NSString *)feelllabel {
+    self.feelImageView.image = feelImage;
+    if ([feelllabel isEqualToString:@"0"]) {
         self.feelView.alpha = 0;
        
        [self layoutIfNeeded];
