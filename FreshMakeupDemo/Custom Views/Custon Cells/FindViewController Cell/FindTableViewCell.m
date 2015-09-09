@@ -7,8 +7,11 @@
 //
 
 #import "FindTableViewCell.h"
+#import "UIScreen+Utility.h"
 
-@implementation FindTableViewCell
+@implementation FindTableViewCell {
+    CAGradientLayer *gradientLayer;
+}
 
 - (void)awakeFromNib {
     // Initialization code
@@ -21,10 +24,15 @@
 }
 - (CGFloat)getCellHeight {
     
-    return self.findImageView.frame.size.height + self.findLabel.frame.size.height + 24;
+    return self.findImageView.frame.size.height + self.findLabel.frame.size.height + 80;
 }
+
+- (void)updateGradientLayer {
+    gradientLayer.frame = CGRectMake(0, 0, [UIScreen screenWidth], [self getCellHeight]);
+}
+
 - (void)addGradientMaskToCover {
-    CAGradientLayer *gradientLayer = [CAGradientLayer layer];
+    gradientLayer = [CAGradientLayer layer];
     gradientLayer.frame = self.findImageView.frame;
     gradientLayer.colors =  @[(id)[[UIColor colorWithWhite:0.f alpha:0.4f] CGColor], (id)[[UIColor colorWithWhite:0.f alpha:0.02f] CGColor]];
     gradientLayer.startPoint = CGPointMake(0.5f, 1.0f);
