@@ -1,24 +1,21 @@
 //
-//  PreferentialCell.m
+//  LawnCell.m
 //  FreshMakeupDemo
 //
-//  Created by winchance on 15/9/8.
+//  Created by chenao on 15/9/9.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
 
-#import "PreferentialCell.h"
+#import "LawnCell.h"
 
-@implementation PreferentialCell
+@implementation LawnCell
 
 - (void)awakeFromNib {
     // Initialization code
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    
 }
-- (void)updateImage:(UIImage *)image {
 
-    self.scrollImage.image = image;
-
-
-}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

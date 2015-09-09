@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 #define PREFERENTIAL_CELL @"PreferentialCell"
 @interface PreferentialCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *scrollImage;
+
+- (void)updateImage:(UIImage *)image;
 
 @end

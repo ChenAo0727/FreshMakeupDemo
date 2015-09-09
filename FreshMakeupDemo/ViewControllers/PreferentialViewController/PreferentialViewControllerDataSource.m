@@ -16,6 +16,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     PreferentialCell *cell = [tableView dequeueReusableCellWithIdentifier:PREFERENTIAL_CELL];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    [cell updateImage:self.image];
     return cell;
 }
 @end

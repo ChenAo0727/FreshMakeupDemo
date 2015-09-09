@@ -9,6 +9,7 @@
 #import "MineViewController.h"
 #import "MineViewController+Animation.h"
 #import "PreferentialViewController.h"
+#import "LawnViewController.h"
 @interface MineViewController ()
 
 @end
@@ -35,15 +36,23 @@
     [self guideViewAnimation:indexPath.row];
     [self.drawerController closeDrawerAnimated:YES completion:^(BOOL finished) {
         if (indexPath.row == 0) {
+//            LawnViewController *lawnViewController = [[LawnViewController alloc]init];
+//            [self presentViewController:lawnViewController animated:YES completion:nil];
+            
+            PreferentialViewController *lawnViewController = [PreferentialViewController create];
+            lawnViewController.index = indexPath.row;
+            [self presentViewController:lawnViewController animated:YES completion:nil];
             
         }else if (indexPath.row == 1) {
-            PreferentialViewController *preferentialViewController = [[PreferentialViewController alloc] init];
-            preferentialViewController.modalPresentationStyle = UIModalPresentationCustom;
-            preferentialViewController.transitioningDelegate = self;
+
+            PreferentialViewController *preferentialViewController = [PreferentialViewController create];
+            preferentialViewController.index = indexPath.row;
             [self presentViewController:preferentialViewController animated:YES completion:nil];
         }else if (indexPath.row == 2) {
-        
-        
+            PreferentialViewController *probationViewController = [PreferentialViewController create];
+            probationViewController.index = indexPath.row;
+            [self presentViewController:probationViewController animated:YES completion:nil];
+    
         }
 
     }];
