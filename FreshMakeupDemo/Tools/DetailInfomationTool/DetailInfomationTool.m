@@ -43,6 +43,7 @@
         self.price = @"780";
         self.origin = @"美国";
         self.specification = @"8.4g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithBobblBrownInfomation];
         self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"detail_babibolang_cover.png"];
         self.titleImage = @"bobbi-brown-logo.png";
@@ -103,6 +104,7 @@
         self.price = @"220";
         self.origin = @"英国";
         self.specification = @"14*3.5g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithHelpClearSkinInfomation];
         self.fitCrowd = @"12岁以上，孕妇慎用";
         self.coverImage = [UIImage imageNamed:@"detail_helpSkin_cover.png"];
         self.titleImage = @"help-logo.png";
@@ -120,6 +122,7 @@
         self.price = @"360";
         self.origin = @"美国";
         self.specification = @"4.2g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithBareMineralsInformation];
         self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"BareMinerals.png"];
         self.titleImage = @"bareminerals-logo.png";
@@ -135,6 +138,7 @@
     if (self = [super init]) {
         self.title = @"拉杜丽 贵族玫瑰花瓣腮红";
         self.price = @"786";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initLadureeInfomation];
         self.origin = @"日本";
         self.specification = @"6g";
         self.fitCrowd = @"所有肤质";
