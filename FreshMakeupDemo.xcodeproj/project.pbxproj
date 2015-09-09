@@ -45,10 +45,8 @@
 		057A26501B86D08C003DAF07 /* MineViewControllerDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 057A264E1B86D08C003DAF07 /* MineViewControllerDataSource.m */; };
 		057A26521B86D255003DAF07 /* interval.png in Resources */ = {isa = PBXBuildFile; fileRef = 057A26511B86D255003DAF07 /* interval.png */; };
 		057A26551B86F9DA003DAF07 /* MineViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 057A26541B86F9DA003DAF07 /* MineViewController+Animation.m */; };
-		058ABF4B1B82C58100A0BA8A /* findad1.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF3A1B82C58100A0BA8A /* findad1.png */; };
 		058ABF4C1B82C58100A0BA8A /* findad2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF3B1B82C58100A0BA8A /* findad2.jpg */; };
 		058ABF4D1B82C58100A0BA8A /* findad3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF3C1B82C58100A0BA8A /* findad3.jpg */; };
-		058ABF4E1B82C58100A0BA8A /* findad4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF3D1B82C58100A0BA8A /* findad4.jpg */; };
 		058ABF4F1B82C58100A0BA8A /* findarticle1.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF3E1B82C58100A0BA8A /* findarticle1.png */; };
 		058ABF501B82C58100A0BA8A /* findarticle2.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF3F1B82C58100A0BA8A /* findarticle2.png */; };
 		058ABF511B82C58100A0BA8A /* findarticle3.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF401B82C58100A0BA8A /* findarticle3.png */; };
@@ -56,8 +54,6 @@
 		058ABF531B82C58100A0BA8A /* findarticleavatar1.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF421B82C58100A0BA8A /* findarticleavatar1.png */; };
 		058ABF541B82C58100A0BA8A /* findarticleavatar2.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF431B82C58100A0BA8A /* findarticleavatar2.png */; };
 		058ABF551B82C58100A0BA8A /* findarticleavatar3.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF441B82C58100A0BA8A /* findarticleavatar3.png */; };
-		058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF451B82C58100A0BA8A /* findhottopic1.png */; };
-		058ABF571B82C58100A0BA8A /* findhottopic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF461B82C58100A0BA8A /* findhottopic2.png */; };
 		058ABF581B82C58100A0BA8A /* findhottopic3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF471B82C58100A0BA8A /* findhottopic3.jpg */; };
 		058ABF591B82C58100A0BA8A /* findhottopic4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF481B82C58100A0BA8A /* findhottopic4.jpg */; };
 		058ABF5A1B82C58100A0BA8A /* findhottopic5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 058ABF491B82C58100A0BA8A /* findhottopic5.jpg */; };
@@ -110,6 +106,16 @@
 		05CD8F1E1B9FF63A0097DAE0 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F1D1B9FF63A0097DAE0 /* delete.png */; };
 		05CD8F211BA01FD30097DAE0 /* findarticle5.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F1F1BA01FD30097DAE0 /* findarticle5.png */; };
 		05CD8F221BA01FD30097DAE0 /* findarticle6.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F201BA01FD30097DAE0 /* findarticle6.png */; };
+		05CD8F241BA050E10097DAE0 /* findad1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F231BA050E10097DAE0 /* findad1.jpg */; };
+		05CD8F2C1BA059CD0097DAE0 /* findhottopic2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F251BA059CD0097DAE0 /* findhottopic2.jpg */; };
+		05CD8F2D1BA059CD0097DAE0 /* findhottopic4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F261BA059CD0097DAE0 /* findhottopic4.jpg */; };
+		05CD8F2E1BA059CD0097DAE0 /* findhottopic5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F271BA059CD0097DAE0 /* findhottopic5.jpg */; };
+		05CD8F2F1BA059CD0097DAE0 /* findhottopic6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F281BA059CD0097DAE0 /* findhottopic6.jpg */; };
+		05CD8F301BA059CD0097DAE0 /* findhottopic7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F291BA059CD0097DAE0 /* findhottopic7.jpg */; };
+		05CD8F311BA059CD0097DAE0 /* findhottopic9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F2A1BA059CD0097DAE0 /* findhottopic9.jpg */; };
+		05CD8F321BA059CD0097DAE0 /* findhottopic10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F2B1BA059CD0097DAE0 /* findhottopic10.jpg */; };
+		05CD8F341BA05AD30097DAE0 /* findhottopic1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F331BA05AD30097DAE0 /* findhottopic1.jpg */; };
+		05CD8F361BA05CE10097DAE0 /* findhottopic8.png in Resources */ = {isa = PBXBuildFile; fileRef = 05CD8F351BA05CE10097DAE0 /* findhottopic8.png */; };
 		05D3CDED1B8D8FB100DD1667 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDEC1B8D8FB100DD1667 /* share.png */; };
 		05D3CDEF1B8D8FB600DD1667 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDEE1B8D8FB600DD1667 /* back.png */; };
 		05D3CDF11B8D8FBC00DD1667 /* try.png in Resources */ = {isa = PBXBuildFile; fileRef = 05D3CDF01B8D8FBC00DD1667 /* try.png */; };
@@ -494,10 +500,8 @@
 		057A26511B86D255003DAF07 /* interval.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = interval.png; sourceTree = "<group>"; };
 		057A26531B86F9DA003DAF07 /* MineViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MineViewController+Animation.h"; sourceTree = "<group>"; };
 		057A26541B86F9DA003DAF07 /* MineViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MineViewController+Animation.m"; sourceTree = "<group>"; };
-		058ABF3A1B82C58100A0BA8A /* findad1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findad1.png; sourceTree = "<group>"; };
 		058ABF3B1B82C58100A0BA8A /* findad2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findad2.jpg; sourceTree = "<group>"; };
 		058ABF3C1B82C58100A0BA8A /* findad3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findad3.jpg; sourceTree = "<group>"; };
-		058ABF3D1B82C58100A0BA8A /* findad4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findad4.jpg; sourceTree = "<group>"; };
 		058ABF3E1B82C58100A0BA8A /* findarticle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findarticle1.png; sourceTree = "<group>"; };
 		058ABF3F1B82C58100A0BA8A /* findarticle2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findarticle2.png; sourceTree = "<group>"; };
 		058ABF401B82C58100A0BA8A /* findarticle3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findarticle3.png; sourceTree = "<group>"; };
@@ -505,8 +509,6 @@
 		058ABF421B82C58100A0BA8A /* findarticleavatar1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findarticleavatar1.png; sourceTree = "<group>"; };
 		058ABF431B82C58100A0BA8A /* findarticleavatar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findarticleavatar2.png; sourceTree = "<group>"; };
 		058ABF441B82C58100A0BA8A /* findarticleavatar3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findarticleavatar3.png; sourceTree = "<group>"; };
-		058ABF451B82C58100A0BA8A /* findhottopic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findhottopic1.png; sourceTree = "<group>"; };
-		058ABF461B82C58100A0BA8A /* findhottopic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findhottopic2.png; sourceTree = "<group>"; };
 		058ABF471B82C58100A0BA8A /* findhottopic3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic3.jpg; sourceTree = "<group>"; };
 		058ABF481B82C58100A0BA8A /* findhottopic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic4.jpg; sourceTree = "<group>"; };
 		058ABF491B82C58100A0BA8A /* findhottopic5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic5.jpg; sourceTree = "<group>"; };
@@ -568,6 +570,16 @@
 		05CD8F1D1B9FF63A0097DAE0 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 		05CD8F1F1BA01FD30097DAE0 /* findarticle5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findarticle5.png; sourceTree = "<group>"; };
 		05CD8F201BA01FD30097DAE0 /* findarticle6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findarticle6.png; sourceTree = "<group>"; };
+		05CD8F231BA050E10097DAE0 /* findad1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findad1.jpg; sourceTree = "<group>"; };
+		05CD8F251BA059CD0097DAE0 /* findhottopic2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic2.jpg; sourceTree = "<group>"; };
+		05CD8F261BA059CD0097DAE0 /* findhottopic4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic4.jpg; sourceTree = "<group>"; };
+		05CD8F271BA059CD0097DAE0 /* findhottopic5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic5.jpg; sourceTree = "<group>"; };
+		05CD8F281BA059CD0097DAE0 /* findhottopic6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic6.jpg; sourceTree = "<group>"; };
+		05CD8F291BA059CD0097DAE0 /* findhottopic7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic7.jpg; sourceTree = "<group>"; };
+		05CD8F2A1BA059CD0097DAE0 /* findhottopic9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic9.jpg; sourceTree = "<group>"; };
+		05CD8F2B1BA059CD0097DAE0 /* findhottopic10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic10.jpg; sourceTree = "<group>"; };
+		05CD8F331BA05AD30097DAE0 /* findhottopic1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = findhottopic1.jpg; sourceTree = "<group>"; };
+		05CD8F351BA05CE10097DAE0 /* findhottopic8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = findhottopic8.png; sourceTree = "<group>"; };
 		05D3CDEC1B8D8FB100DD1667 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		05D3CDEE1B8D8FB600DD1667 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		05D3CDF01B8D8FBC00DD1667 /* try.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = try.png; sourceTree = "<group>"; };
@@ -1124,10 +1136,9 @@
 		058ABF391B82C58100A0BA8A /* FoundImages */ = {
 			isa = PBXGroup;
 			children = (
-				058ABF3A1B82C58100A0BA8A /* findad1.png */,
+				05CD8F231BA050E10097DAE0 /* findad1.jpg */,
 				058ABF3B1B82C58100A0BA8A /* findad2.jpg */,
 				058ABF3C1B82C58100A0BA8A /* findad3.jpg */,
-				058ABF3D1B82C58100A0BA8A /* findad4.jpg */,
 				058ABF3E1B82C58100A0BA8A /* findarticle1.png */,
 				058ABF3F1B82C58100A0BA8A /* findarticle2.png */,
 				058ABF401B82C58100A0BA8A /* findarticle3.png */,
@@ -1137,9 +1148,16 @@
 				058ABF421B82C58100A0BA8A /* findarticleavatar1.png */,
 				058ABF431B82C58100A0BA8A /* findarticleavatar2.png */,
 				058ABF441B82C58100A0BA8A /* findarticleavatar3.png */,
-				058ABF451B82C58100A0BA8A /* findhottopic1.png */,
-				058ABF461B82C58100A0BA8A /* findhottopic2.png */,
 				058ABF471B82C58100A0BA8A /* findhottopic3.jpg */,
+				05CD8F251BA059CD0097DAE0 /* findhottopic2.jpg */,
+				05CD8F261BA059CD0097DAE0 /* findhottopic4.jpg */,
+				05CD8F271BA059CD0097DAE0 /* findhottopic5.jpg */,
+				05CD8F281BA059CD0097DAE0 /* findhottopic6.jpg */,
+				05CD8F331BA05AD30097DAE0 /* findhottopic1.jpg */,
+				05CD8F291BA059CD0097DAE0 /* findhottopic7.jpg */,
+				05CD8F2A1BA059CD0097DAE0 /* findhottopic9.jpg */,
+				05CD8F351BA05CE10097DAE0 /* findhottopic8.png */,
+				05CD8F2B1BA059CD0097DAE0 /* findhottopic10.jpg */,
 				058ABF481B82C58100A0BA8A /* findhottopic4.jpg */,
 				058ABF491B82C58100A0BA8A /* findhottopic5.jpg */,
 				058ABF4A1B82C58100A0BA8A /* newarticlebg.9.png */,
@@ -2371,7 +2389,6 @@
 				05D76C571B9ED6930061546F /* EsteeLauder-logo.png in Resources */,
 				2EE6FA681B9E79E900EE5A26 /* Icon@3x.png in Resources */,
 				389A1FE91B9AE07B0035BC2B /* LanZhi.png in Resources */,
-				058ABF571B82C58100A0BA8A /* findhottopic2.png in Resources */,
 				389A20151B9D7D650035BC2B /* BOBBI_BROWN.png in Resources */,
 				054DFD4B1B81AAEE00651F11 /* apply_power.png in Resources */,
 				2EF5E9511B9FD6BC00D9BA5C /* feeling_help_clear_skin_image1.png in Resources */,
@@ -2398,6 +2415,7 @@
 				054DFD4C1B81AAEE00651F11 /* division.png in Resources */,
 				2EE6FA701B9EB6BE00EE5A26 /* bioderma_price_image.png in Resources */,
 				05CD8F171B9FC52B0097DAE0 /* feeling_BareMinerals_feeling_6.png in Resources */,
+				05CD8F311BA059CD0097DAE0 /* findhottopic9.jpg in Resources */,
 				057A26521B86D255003DAF07 /* interval.png in Resources */,
 				2E6B46441B81A85400BF39D5 /* home_user_info_icon.png in Resources */,
 				2EF5E9531B9FD6BC00D9BA5C /* feeling_help_clear_skin_image3.png in Resources */,
@@ -2419,10 +2437,11 @@
 				2EF5E9881BA0398700D9BA5C /* product_trial_image_cpb1.jpg in Resources */,
 				05D76C751B9F0EEF0061546F /* feeling_EsteeLauder_feeling_10.png in Resources */,
 				389A20221B9FC1340035BC2B /* feeling_SK-II.png in Resources */,
-				058ABF561B82C58100A0BA8A /* findhottopic1.png in Resources */,
 				054DFD5D1B820D0900651F11 /* .gitignore in Resources */,
 				0596FFEB1B9AF06E00E5653D /* detail_CPB_cover.png in Resources */,
 				053BFEA31B84AD80002058BA /* simhei.ttf in Resources */,
+				05CD8F361BA05CE10097DAE0 /* findhottopic8.png in Resources */,
+				05CD8F341BA05AD30097DAE0 /* findhottopic1.jpg in Resources */,
 				05E2B2971B9A832B0024C7FE /* EvaluationCell.xib in Resources */,
 				2EF5E9551B9FD6BC00D9BA5C /* feeling_help_clear_skin_image5.png in Resources */,
 				0596FFEE1B9AF06E00E5653D /* detail_helpSkin_feeling.png in Resources */,
@@ -2457,6 +2476,7 @@
 				2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */,
 				054DFD5B1B81D32C00651F11 /* EarlyAdoptersPartitionTableViewCell.xib in Resources */,
 				2EE6FA721B9EB6BE00EE5A26 /* dior_price_image.png in Resources */,
+				05CD8F321BA059CD0097DAE0 /* findhottopic10.jpg in Resources */,
 				05DEA0681B8858CB0094E123 /* undertheNew.png in Resources */,
 				2E7DC9391B82CFB300152A0B /* StackCollectionView.xib in Resources */,
 				05D76C671B9EFC960061546F /* feeling_yadun_feeling_3.png in Resources */,
@@ -2469,6 +2489,7 @@
 				389A1FE51B9ADEC00035BC2B /* SKIntroduce.png in Resources */,
 				2E4C0C841B900B3F00ECD2BF /* realbook_background.png in Resources */,
 				058ABF521B82C58100A0BA8A /* findarticle4.png in Resources */,
+				05CD8F2F1BA059CD0097DAE0 /* findhottopic6.jpg in Resources */,
 				054DFD411B81A91B00651F11 /* EarlyAdoptersReportTitleTableViewCell.xib in Resources */,
 				054DFD4A1B81AAEE00651F11 /* apply_luck.png in Resources */,
 				058ABF511B82C58100A0BA8A /* findarticle3.png in Resources */,
@@ -2505,6 +2526,7 @@
 				2EFAEA851B8AD6130044BAF0 /* selection_unlike_image.png in Resources */,
 				057A264A1B86D046003DAF07 /* MineTableViewCell.xib in Resources */,
 				059E88D81B8431460086544F /* title3.png in Resources */,
+				05CD8F2D1BA059CD0097DAE0 /* findhottopic4.jpg in Resources */,
 				2EB4EF581B969A250080185A /* WorthSlideView.xib in Resources */,
 				05DEA0641B8858CB0094E123 /* shaking2.png in Resources */,
 				2EF5E99E1BA0398700D9BA5C /* product_trial_image_ysld3.jpg in Resources */,
@@ -2545,7 +2567,7 @@
 				05D76C681B9EFC960061546F /* feeling_yadun_feeling_6.png in Resources */,
 				2E4C0C861B90511A00ECD2BF /* book_shadow.png in Resources */,
 				2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */,
-				058ABF4B1B82C58100A0BA8A /* findad1.png in Resources */,
+				05CD8F241BA050E10097DAE0 /* findad1.jpg in Resources */,
 				05D76C761B9F0EEF0061546F /* feeling_EsteeLauder_feeling_12.png in Resources */,
 				05D76C6A1B9EFC960061546F /* feeling_yadun_feeling_one.png in Resources */,
 				0596FFF01B9AF06E00E5653D /* detail_sisley_feeling.png in Resources */,
@@ -2556,6 +2578,7 @@
 				0596FFEA1B9AF06E00E5653D /* detail_bobbi_feeliing.png in Resources */,
 				2EF5E99C1BA0398700D9BA5C /* product_trial_image_ysld1.jpg in Resources */,
 				2EF5E98F1BA0398700D9BA5C /* product_trial_image_help4.jpg in Resources */,
+				05CD8F2E1BA059CD0097DAE0 /* findhottopic5.jpg in Resources */,
 				054DFD4E1B81AAEE00651F11 /* title.png in Resources */,
 				2EA556FB1B95725A00C696B0 /* DetailCommentView.xib in Resources */,
 				059E88BE1B8414D30086544F /* FindBranchTableViewCell.xib in Resources */,
@@ -2564,6 +2587,7 @@
 				05D76C8E1B9F16C50061546F /* PreferentialCell.xib in Resources */,
 				389A1FFA1B9D3DE00035BC2B /* freshSale_BIODERMA_image.png in Resources */,
 				05DEA0621B8858CB0094E123 /* shakeaShake.png in Resources */,
+				05CD8F301BA059CD0097DAE0 /* findhottopic7.jpg in Resources */,
 				0596FFF11B9AF06E00E5653D /* detail_sisley_product.png in Resources */,
 				0596FFED1B9AF06E00E5653D /* detail_helpSkin_cover.png in Resources */,
 				2EF5E95A1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image9.png in Resources */,
@@ -2584,6 +2608,7 @@
 				2E21BAD11B897F91001F75D8 /* detail_cover_image.png in Resources */,
 				2EF5E9991BA0398700D9BA5C /* product_trial_image_yd2.jpg in Resources */,
 				2E7706901B883C460024282D /* detail_comment_icon.png in Resources */,
+				05CD8F2C1BA059CD0097DAE0 /* findhottopic2.jpg in Resources */,
 				05D76C5A1B9ED6930061546F /* Sisley-logo.png in Resources */,
 				054DFD3C1B81A0ED00651F11 /* EarlyAdoptersTitleImageTableViewCell.xib in Resources */,
 				05D76C511B9ED6930061546F /* Aupres-logo.png in Resources */,
@@ -2601,7 +2626,6 @@
 				38AF47181B9686B4006C45CB /* CommentViewCell.xib in Resources */,
 				389A20261B9FC4900035BC2B /* feeling_sisiley_feeling_two.png in Resources */,
 				2EF5E9691BA0118400D9BA5C /* avatar_data_image4.jpg in Resources */,
-				058ABF4E1B82C58100A0BA8A /* findad4.jpg in Resources */,
 				05DEA0651B8858CB0094E123 /* shaking3.png in Resources */,
 				054DFD361B81A0ED00651F11 /* EarlyAdoptersInformationTableViewCell.xib in Resources */,
 				05D76C6B1B9EFC960061546F /* feeling_yadun_feeling_three.png in Resources */,

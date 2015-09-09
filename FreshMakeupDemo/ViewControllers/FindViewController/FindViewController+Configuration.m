@@ -93,7 +93,7 @@
     self.pageControl.pageIndicatorTintColor = [UIColor grayColor];
     self.pageControl.currentPageIndicatorTintColor = [UIColor colorFromHexCode:@"#78bab7"];
     [self.findAutomatiView addSubview:self.pageControl];
-    self.pageControl.numberOfPages = 4;
+    self.pageControl.numberOfPages = 3;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:6 target:self selector:@selector(findThreeDimensional) userInfo:nil repeats:YES];
     self.num = 0;
     [self slideMotinEdit];
@@ -114,18 +114,14 @@
     self.imageViewTow = [[UIImageView alloc] initWithFrame:(CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height))];
     self.imageViewTow.image = self.imageTow;
     [self.findAutomatiView addSubview:self.imageViewTow];
-    self.imageViewThree = [[UIImageView alloc] initWithFrame:CGRectMake(self.findAutomatiView.frame.size.width, 0, 0, self.findAutomatiView.frame.size.height)];
-    self.imageViewThree.image = self.imageThree;
-    [self.findAutomatiView addSubview:self.imageViewThree];
     self.imageViewFour = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 0, self.findAutomatiView.frame.size.height)];
     self.imageViewFour.image = self.imageFour;
     [self.findAutomatiView addSubview:self.imageViewFour];
 }
 - (void)imageData {
-    self.imageOne = [UIImage imageNamed:@"findad1.png"];
+    self.imageOne = [UIImage imageNamed:@"findad1.jpg"];
     self.imageTow = [UIImage imageNamed:@"findad2.jpg"];
-    self.imageThree = [UIImage imageNamed:@"findad3.jpg"];
-    self.imageFour = [UIImage imageNamed:@"findad4.jpg"];
+    self.imageFour = [UIImage imageNamed:@"findad3.jpg"];
 }
 #define mark SlideMotion -delegate
 - (void)slideMotion:(SlideMotion *)slideMotion didSlideView:(UIView *)view withOffset:(CGFloat)offset {
@@ -134,9 +130,7 @@
     if (self.num == 0) {
         [self findLeftView:self.imageViewOne ViewTow:self.imageViewTow];
     } else if (self.num == 1) {
-        [self findLeftView:self.imageViewTow ViewTow:self.imageViewThree];
-    } else if (self.num == 2) {
-        [self findLeftView:self.imageViewThree ViewTow:self.imageViewFour];
+        [self findLeftView:self.imageViewTow ViewTow:self.imageViewFour];
     } else {
         [self findLeftView:self.imageViewFour ViewTow:self.imageViewOne];
     }
@@ -145,10 +139,8 @@
             [self findRightView:self.imageViewFour ViewTow:self.imageViewOne];
         } else if (self.num == 1) {
             [self findRightView:self.imageViewOne ViewTow:self.imageViewTow];
-        } else if (self.num == 2) {
-            [self findRightView:self.imageViewTow ViewTow:self.imageViewThree];
         } else {
-            [self findRightView:self.imageViewThree ViewTow:self.imageViewFour];
+            [self findRightView:self.imageViewTow ViewTow:self.imageViewFour];
         }
 
        
@@ -167,9 +159,7 @@
         if (self.num == 0) {
             [self returnRightAnimationView:self.imageViewOne ViewTow:self.imageViewTow];
         } else if (self.num == 1) {
-            [self returnRightAnimationView:self.imageViewTow ViewTow:self.imageViewThree];
-        } else if (self.num == 2) {
-            [self returnRightAnimationView:self.imageViewThree ViewTow:self.imageViewFour];
+            [self returnRightAnimationView:self.imageViewTow ViewTow:self.imageViewFour];
         } else {
             [self returnRightAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
         }
@@ -178,10 +168,8 @@
             [self returnLeftAnimationView:self.imageViewFour ViewTow:self.imageViewOne];
         } else if (self.num == 1) {
             [self returnLeftAnimationView:self.imageViewOne ViewTow:self.imageViewTow];
-        } else if (self.num == 2) {
-            [self returnLeftAnimationView:self.imageViewTow ViewTow:self.imageViewThree];
         } else {
-            [self returnLeftAnimationView:self.imageViewThree ViewTow:self.imageViewFour];
+            [self returnLeftAnimationView:self.imageViewTow ViewTow:self.imageViewFour];
         }
     } else if (self.set > 60) {
         [self findRightDimensional];
