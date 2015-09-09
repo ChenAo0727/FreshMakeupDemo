@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
@@ -16,6 +16,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="青春若有张不老的脸 但愿他永远不会改变 抗老听起来好像很大件事 但他其实真的不是老了之后才该做的 预防永远比逆转容易的多....." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMJ-KH-8TA">
                         <rect key="frame" x="26" y="0.0" width="295" height="113"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="CdC-75-Puj"/>
                         </constraints>
@@ -23,46 +24,67 @@
                         <color key="textColor" red="0.58823529411764708" green="0.59607843137254901" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9c-eN-jh0" customClass="DottedLineView">
-                        <rect key="frame" x="10" y="0.0" width="1" height="125"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cv8-FR-BMQ" customClass="DottedLineView">
+                        <rect key="frame" x="10" y="0.0" width="1" height="126"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="1" id="Nzb-Bs-ddc"/>
-                            <constraint firstAttribute="height" relation="greaterThanOrEqual" id="trL-pq-unC"/>
+                            <constraint firstAttribute="width" constant="1" id="0Ga-q2-dpz"/>
                         </constraints>
                     </view>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.png" translatesAutoresizingMaskIntoConstraints="NO" id="thb-kz-mPQ">
-                        <rect key="frame" x="2" y="0.0" width="16" height="16"/>
-                        <color key="backgroundColor" red="0.28676842209999998" green="1" blue="0.2386638489" alpha="1" colorSpace="calibratedRGB"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpg-gK-IWE">
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NZU-iz-W07">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CAG-Uh-9oo"/>
+                                    <constraint firstAttribute="width" constant="20" id="wdY-rb-88s"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs2-sW-hjA">
+                                <rect key="frame" x="10" y="0.0" width="20" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="16" id="LNI-9l-g9q"/>
-                            <constraint firstAttribute="height" constant="16" id="vKP-VJ-TKp"/>
+                            <constraint firstAttribute="height" constant="20" id="6Qk-OL-5O3"/>
+                            <constraint firstAttribute="trailing" secondItem="zs2-sW-hjA" secondAttribute="trailing" constant="-10" id="8ly-0O-w0Q"/>
+                            <constraint firstItem="zs2-sW-hjA" firstAttribute="leading" secondItem="wpg-gK-IWE" secondAttribute="leading" constant="10" id="FH2-PS-WEk"/>
+                            <constraint firstAttribute="bottom" secondItem="zs2-sW-hjA" secondAttribute="bottom" id="Mji-o7-SIP"/>
+                            <constraint firstAttribute="width" constant="20" id="O5B-ey-wh4"/>
+                            <constraint firstItem="zs2-sW-hjA" firstAttribute="top" secondItem="wpg-gK-IWE" secondAttribute="top" id="WIH-Yj-uue"/>
+                            <constraint firstAttribute="bottom" secondItem="NZU-iz-W07" secondAttribute="bottom" id="bgG-t7-Vvr"/>
+                            <constraint firstItem="NZU-iz-W07" firstAttribute="top" secondItem="wpg-gK-IWE" secondAttribute="top" id="dmK-rA-m1Y"/>
+                            <constraint firstAttribute="trailing" secondItem="NZU-iz-W07" secondAttribute="trailing" id="r9h-9J-hK9"/>
+                            <constraint firstItem="NZU-iz-W07" firstAttribute="leading" secondItem="wpg-gK-IWE" secondAttribute="leading" id="z1k-Xj-hgX"/>
                         </constraints>
-                    </imageView>
+                    </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="rMJ-KH-8TA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2GB-yl-JtP"/>
+                    <constraint firstItem="wpg-gK-IWE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6r7-UI-fcI"/>
                     <constraint firstItem="rMJ-KH-8TA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="Aeg-yv-HMN"/>
+                    <constraint firstItem="cv8-FR-BMQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="D8D-pv-QNT"/>
                     <constraint firstAttribute="trailing" secondItem="rMJ-KH-8TA" secondAttribute="trailing" constant="7" id="Kzf-4n-fTJ"/>
-                    <constraint firstItem="thb-kz-mPQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="2" id="OTv-c2-VK8"/>
-                    <constraint firstItem="y9c-eN-jh0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="RZo-Ge-PLK"/>
-                    <constraint firstItem="y9c-eN-jh0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="lSb-jy-ZkD"/>
-                    <constraint firstItem="thb-kz-mPQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pUS-w4-G6W"/>
-                    <constraint firstAttribute="bottom" secondItem="y9c-eN-jh0" secondAttribute="bottom" constant="1" id="yFb-aL-jTN"/>
+                    <constraint firstItem="wpg-gK-IWE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XPY-Dp-lO6"/>
+                    <constraint firstItem="cv8-FR-BMQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sSY-v4-M9j"/>
+                    <constraint firstAttribute="bottom" secondItem="cv8-FR-BMQ" secondAttribute="bottom" id="yMy-tE-3mj"/>
                     <constraint firstAttribute="bottom" secondItem="rMJ-KH-8TA" secondAttribute="bottom" constant="13" id="zV3-M8-SsI"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="dottedLine" destination="y9c-eN-jh0" id="NH5-0A-jZ9"/>
+                <outlet property="LabelView" destination="wpg-gK-IWE" id="XnF-cj-eSv"/>
+                <outlet property="dottedLineView" destination="cv8-FR-BMQ" id="gNb-xL-Snc"/>
                 <outlet property="feelingTextLabel" destination="rMJ-KH-8TA" id="xMg-Tp-zIG"/>
-                <outlet property="labelImage" destination="thb-kz-mPQ" id="TxT-EO-V2b"/>
+                <outlet property="labelImage" destination="NZU-iz-W07" id="DQL-3e-e45"/>
+                <outlet property="labelNumLabel" destination="zs2-sW-hjA" id="W34-DZ-gvy"/>
             </connections>
             <point key="canvasLocation" x="262" y="317.5"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="square.png" width="31" height="31"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

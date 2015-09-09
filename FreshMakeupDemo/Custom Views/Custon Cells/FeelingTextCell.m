@@ -21,17 +21,21 @@
     // Configure the view for the selected state
 }
 
-- (void)updateFeelingTextLabel:(NSString *)text {
+- (void)updateFeelingTextLabel:(NSString *)text WithTag:(NSString *)tag{
 
-    if ([text isEqualToString:@""]) {
+    if ([tag isEqualToString:@"0"]) {
         self.isHideLableImage = YES;
-        self.labelImage.hidden = YES;
+        self.LabelView.hidden = YES;
+        
     
-    }else{
+    }else {
         self.isHideLableImage = NO;
-        self.labelImage.hidden = NO;
+        self.LabelView.hidden = NO;
         self.feelingTextLabel.text = text;
+        self.labelNumLabel.text = tag;
     }
+    [self layoutIfNeeded];
+    [self.dottedLineView drawRect:self.dottedLineView.frame];
 
 }
 @end

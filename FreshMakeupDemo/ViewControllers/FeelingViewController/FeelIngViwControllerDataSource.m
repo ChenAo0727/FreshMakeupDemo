@@ -22,11 +22,12 @@
         return cell;
 
         
-    } else {
+    } else if([[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"text"]){
         FeelingTextCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_TEXT_CELL];
-        [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"text"]];
+        [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row]objectForKey:@"text"] WithTag:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row]objectForKey:@"hasTag"]];
         return cell;
     }
+    return nil;
 
 }
 @end

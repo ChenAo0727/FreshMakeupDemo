@@ -84,6 +84,33 @@
     }
     return self;
 }
+- (instancetype)initWithSKInformation {
+
+    if (self = [super init]) {
+        NSDictionary *feelingDictionary1 = @{@"hasTag":@"0",@"image":[UIImage imageNamed:@"feeling_SK-II"]};
+        NSDictionary *feelingDictionary2 = @{@"hasTag":@"1",@"text":@"“我觉得超肌因系列的精华质地很薄透，面霜很丰盈，非常细腻，容易吸收，使用感受我觉得甚至比之前的大小红瓶更加好。” ——游丝祺"};
+        self.feelIngArray = [NSArray arrayWithObjects: feelingDictionary1,feelingDictionary2,nil];
+    }
+    return self;
+}
+
+- (instancetype)initWithSisleyInformation {
+    if (self = [super init]) {
+        NSDictionary *feelingDic1 = @{@"hasTag":@"0",@"image":[UIImage imageNamed:@"feeling_sisley_feeling_one"]};
+        NSDictionary *feelingDic2 = @{@"hasTag":@"1",@"text":@"评测结果：法国希思黎黑玫瑰珍宠滋养精华油紫色外包装高档大气，滴管取用设计使得精华油不易受二次污染，且取用方便。精华油为透明的油状质地，触感柔滑，流动性好，但轻薄易吸收，蕴含玫瑰、木兰和天竺葵精油，散发馥郁香气。"};
+        NSDictionary *feelingDic3 = @{@"hasTag":@"0",@"image":[UIImage imageNamed:@"feeling_sisiley_feeling_two"]};
+        NSDictionary *feelingDic4 = @{@"hasTag":@"2",@"text":@"评测得分：9.0分\n评测结果：从图片中可以很清楚地看到法国希思黎黑玫瑰珍宠滋养精华油的吸收力不错，肌肤表面只粘附了较少的小泡沫球，说明产品吸收得很较快，使用时肤感清爽舒适，不会对肌肤造成负担，配合按摩和拍打更能加速吸收。"};
+        NSDictionary *feelingDic5 = @{@"hasTag":@"0",@"image":[UIImage imageNamed:@"feeling_sisley_feeling_three"]};
+        NSDictionary *feelingDic6 = @{@"hasTag":@"3",@"text":@"评测得分：9.5分\n评测结果：通过对比我们看到浸润过样品的叶片细胞染色后95%左右的区域褪色了，褪色区颜色基本没有被染色，褪色程度较高，表明法国希思黎黑玫瑰珍宠滋养精华油具有优秀的促进细胞活跃能力，融合了5种植物活性成分，其中特有的经典抗老成分海扇藻精粹，能够促进透明质酸合成，强化真皮结构，恢复真皮组织的密度，促进细胞的新生，修复受损肤质。"};
+        NSDictionary *feelingDic7 = @{@"hasTag":@"0",@"image":[UIImage imageNamed:@"feeling_sisley_feeling_four"]};
+        NSDictionary *feelingDic8 = @{@"hasTag":@"4",@"text":@"评测得分： 9.5分\n评测结果：从肌肤水分测试仪可知，使用这款法国希思黎黑玫瑰珍宠滋养精华油前，肌肤的水分值仅仅为35.1%，处于缺水干燥状态。使用产品后，肌肤水分值立即上升到56.3%，即时补水效果非常好，能瞬间给肌肤补充足够的水分，使肌肤水嫩饱满;使用一小时后，肌肤水分值仅仅下降2.8%，还是处于非常滋润状态，说明法国希思黎黑玫瑰珍宠滋养精华油，所蕴含的海扇藻精粹、植物甘油等，能够强效持久保湿、加强真皮层的水分屏障，提升真皮层的锁水能力。"};
+        NSDictionary *feelingDic9 = @{@"hasTag":@"0",@"image":[UIImage imageNamed:@"feeling_sisley_feeling_five"]};
+        NSDictionary *feelingDic10 = @{@"hasTag":@"5",@"text":@"评测得分： 9.5分\n评测结果：从上图中我们可以看出，使用了法国希思黎黑玫瑰珍宠滋养精华油后，肤质得到明显改善，含水量和皮肤细嫩度都显著提高6个级别，肌肤变得水润细滑;同时含油量也提高了4个等级，说明此款精华油能迅速为肌肤补充水分的同时，帮助肌肤恢复水油平衡的最佳状态，令肌肤变得柔润细腻，滋润效果十分明显。"};
+        self.feelIngArray = [NSArray arrayWithObjects:feelingDic1,feelingDic2,feelingDic3,feelingDic4,feelingDic5,feelingDic6,feelingDic7,feelingDic8,feelingDic9,feelingDic10,nil];
+        
+    }
+    return self;
+}
 - (instancetype)initWithEsteeLauderInfomation {
     if (self = [super init]) {
         NSDictionary *feelingDictionary1 =  @{@"hasTag":@"1", @"text":@"雅诗兰黛四大型色态度:"};
