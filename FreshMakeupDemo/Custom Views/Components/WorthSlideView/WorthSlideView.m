@@ -7,6 +7,7 @@
 //
 
 #import "WorthSlideView.h"
+#import "UIScreen+Utility.h"
 
 @implementation WorthSlideView {
     CGFloat lastCarViewConstraint;
@@ -37,7 +38,7 @@
 }
 
 - (void)updateCarToDefaultPostion {
-    self.carViewRightConstraint.constant = self.processView.frame.size.width - self.leftProcessViewWithConstraint.constant;
+    self.carViewRightConstraint.constant = ([UIScreen screenWidth] - self.carView.frame.size.width) / 2 - 52;
     [self layoutIfNeeded];
 }
 

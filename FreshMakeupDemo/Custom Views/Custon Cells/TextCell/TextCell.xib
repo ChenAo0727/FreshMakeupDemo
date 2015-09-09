@@ -19,7 +19,7 @@
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" id="l3C-nq-nuC"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
                         <color key="textColor" red="0.6705882352941176" green="0.6705882352941176" blue="0.6588235294117647" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
