@@ -103,7 +103,7 @@
     } else if ([self isCommentCell:indexPath] ) {
         CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:COMMENT_CELL forIndexPath:indexPath];
         [cell updateWithCommentInfomationTool:[self.detailInfomationTool.comments objectAtIndex:indexPath.row]];
-        if (0 == indexPath.row % 2) {
+        if (cell.frame.origin.x < 20) {
             cell.rightLine.hidden = NO;
         } else {
             cell.rightLine.hidden = YES;

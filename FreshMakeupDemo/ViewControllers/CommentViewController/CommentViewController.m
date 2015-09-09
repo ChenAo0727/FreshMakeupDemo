@@ -114,7 +114,7 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
         
         CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CommentIdentifier forIndexPath:indexPath];
         [cell updateWithCommentInfomationTool:[self.comments objectAtIndex:indexPath.row]];
-        if (0 == indexPath.row % 2) {
+        if (cell.frame.origin.x < 20) {
             cell.rightLine.hidden = NO;
         } else {
             cell.rightLine.hidden = YES;
