@@ -148,7 +148,7 @@
         NSDictionary *feelingDictionary1
         = @{@"hasTag":@"1", @"image":[UIImage imageNamed:@"feeling_BobblBrown_feeling_1.png"]};
         NSDictionary *feelingDictionary2
-        = @{@"hasTag":@"2", @"image":[UIImage imageNamed:@"feeling_BobblBrown_feeling_12.png"]};
+        = @{@"hasTag":@"2", @"image":[UIImage imageNamed:@"feeling_BobblBrown_feeling_2.png"]};
         self.feelIngArray = [NSArray arrayWithObjects:feelingDictionary1,feelingDictionary2, nil];
     }
     return self;
