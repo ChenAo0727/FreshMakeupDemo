@@ -53,6 +53,13 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="delete.png" translatesAutoresizingMaskIntoConstraints="NO" id="PcG-1B-vjU">
+                            <rect key="frame" x="282" y="27" width="25" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="25" id="38Q-vF-Bi4"/>
+                                <constraint firstAttribute="height" constant="25" id="eYP-sO-Lcf"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <color key="backgroundColor" red="0.45098039220000002" green="0.76078431369999999" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -66,11 +73,13 @@
                         <constraint firstItem="h0m-Pt-T1N" firstAttribute="top" secondItem="TMs-j9-AbN" secondAttribute="top" constant="27" id="Yho-nT-a9D"/>
                         <constraint firstAttribute="bottom" secondItem="tad-Bb-cUg" secondAttribute="bottom" id="bDD-Cd-dHz"/>
                         <constraint firstItem="tad-Bb-cUg" firstAttribute="leading" secondItem="h0m-Pt-T1N" secondAttribute="trailing" constant="74" id="bKh-VU-6cF"/>
+                        <constraint firstAttribute="bottom" secondItem="PcG-1B-vjU" secondAttribute="bottom" constant="13" id="bu9-V0-2Ev"/>
                         <constraint firstAttribute="centerY" secondItem="Fo0-Oe-Icl" secondAttribute="centerY" id="dCE-jN-LGo"/>
                         <constraint firstItem="tad-Bb-cUg" firstAttribute="leading" secondItem="TMs-j9-AbN" secondAttribute="leading" constant="112" id="jpp-lR-3dv"/>
                         <constraint firstAttribute="bottom" secondItem="tad-Bb-cUg" secondAttribute="bottom" id="lpa-4B-iys"/>
                         <constraint firstItem="tad-Bb-cUg" firstAttribute="top" secondItem="TMs-j9-AbN" secondAttribute="top" constant="15" id="mlh-Sj-MD3"/>
                         <constraint firstAttribute="bottom" secondItem="Fo0-Oe-Icl" secondAttribute="bottom" id="n1m-g2-Aos"/>
+                        <constraint firstAttribute="trailing" secondItem="PcG-1B-vjU" secondAttribute="trailing" constant="13" id="tmD-KC-crC"/>
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="a8G-DA-HhK">
@@ -93,6 +102,7 @@
     </objects>
     <resources>
         <image name="back.png" width="27" height="48"/>
+        <image name="delete.png" width="45" height="45"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

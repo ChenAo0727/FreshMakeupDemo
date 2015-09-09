@@ -46,6 +46,8 @@
 
 - (void)ProductDetailDataSourceMoreJump {
     FeelIngViewController *feelIngViewController = [[FeelIngViewController alloc] init];
+    feelIngViewController.feelingInformationTool = self.productDetailDataSource.detailInfomationTool.feelingInfomationTool;
+    
     feelIngViewController.modalPresentationStyle = UIModalPresentationCustom;
     feelIngViewController.transitioningDelegate = self;
     [self presentViewController:feelIngViewController animated:YES completion:nil];

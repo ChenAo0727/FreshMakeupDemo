@@ -36,12 +36,15 @@ static NSString *COMMENTCELL = @"CommentCell";
     switch (skinProperty) {
         case 0:
             self.skinPropertyLabel.text = @"干";
+            self.skinPropertyLabel.backgroundColor = [UIColor drySkinLabelColor];
             break;
         case 1:
             self.skinPropertyLabel.text = @"油";
+            self.skinPropertyLabel.backgroundColor = [UIColor oilySkinLabelColor];
             break;
         default:
             self.skinPropertyLabel.text = @"混";
+            self.skinPropertyLabel.backgroundColor = [UIColor mixSkinLabelColor];
             break;
     }
     self.genderLabel.text = isMale ? @"男" : @"女";
@@ -49,7 +52,6 @@ static NSString *COMMENTCELL = @"CommentCell";
     self.identityLabel.text = identity;
     self.commentCountLabel.text = [NSString stringWithFormat:@"%ld", (long)commentCount];
     self.approveCountLabel.text = [NSString stringWithFormat:@"%ld", (long)approveCount];
-
     [self setNeedsLayout];
     [self layoutIfNeeded];
 }

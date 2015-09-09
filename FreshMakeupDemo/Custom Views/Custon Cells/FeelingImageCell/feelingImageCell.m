@@ -25,6 +25,7 @@
         self.feelllabel.alpha = 0;
        [self layoutIfNeeded];
     } else {
+      
         self.feelllabel.text = feelllabel;
     }
     

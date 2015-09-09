@@ -14,6 +14,9 @@
 + (instancetype)colorWithIntRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue alpha:(NSInteger)alpha;
 
 //custom color
++ (instancetype)drySkinLabelColor;
++ (instancetype)mixSkinLabelColor;
++ (instancetype)oilySkinLabelColor;
 + (instancetype)darkGreyLabelColor;
 + (UIColor *) colorFromHexCode:(NSString *)hexString;
 + (UIColor *)mainBlueColor;

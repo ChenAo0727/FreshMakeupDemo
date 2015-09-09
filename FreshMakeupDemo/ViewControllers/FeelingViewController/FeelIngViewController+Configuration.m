@@ -14,7 +14,6 @@
     [self tableViewEdit];
 }
 - (void)tableViewEdit {
-    self.feelingInformationTool = [[FeelingInformationTool alloc] initWithEsteeLauderInfomation];
     self.feelIngViwControllerDataSource = [FeelIngViwControllerDataSource new];
     self.feelingTableView.delegate = self;
     self.feelIngViwControllerDataSource.feelingInformationTool = self.feelingInformationTool;

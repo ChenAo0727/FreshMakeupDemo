@@ -10,10 +10,11 @@
 
 @interface FeelingInformationTool : NSObject
 @property (strong, nonatomic) NSArray *feelIngArray;
-- (instancetype) initLadureeInfomation;
-- (instancetype)initWithHelpClearSkinInfomation;
+- (instancetype) initLadureeInfomation;//拉杜丽
+- (instancetype)initWithHelpClearSkinInfomation;//help
 - (instancetype)initWithElizabethArdenInfomation;//雅顿
 - (instancetype)initWithEsteeLauderInfomation;//雅诗兰黛
+
 
 
 - (instancetype)initWithSKInformation;

@@ -43,13 +43,14 @@
         self.price = @"780";
         self.origin = @"美国";
         self.specification = @"8.4g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithBobblBrownInfomation];
         self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"detail_babibolang_cover.png"];
         self.titleImage = @"bobbi-brown-logo.png";
         self.shortComment = @"此次全新的眼妆盘色彩多为中性，有不同的深度和光泽度，适合搭配不同的场合来调整妆容，你可以打造最经典百搭的日常通勤妆，也可稍加点缀变换成约会晚妆，更可加强色彩描画柔和的小烟熏，是秋季最适合搭配的眼妆组合.";
-        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"",@"image", nil];
+        NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"    融合了Bobbi挚爱的深邃的灰色、柔和的米褐色和优雅的海军蓝，任何肤色都可以轻松驾驭；由浅至深，涵盖所有灰调眼妆，质感哑面亦或金属光泽皆由你随心打造，轻松演绎优雅知性。\n    此次全新的眼妆盘色彩多为中性，有不同的深度和光泽度，适合搭配不同的场合来调整妆容，你可以打造最经典百搭的日常通勤妆，也可稍加点缀变换成约会晚妆，更可加强色彩描画柔和的小烟熏，是秋季最适合搭配的眼妆组合。\n    色号：Ivory; Stone; Opal; Rich Navy; Storm Cloud; Nude Beach; Slate; Caviar",@"text",@"",@"image", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
-        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"    融合了Bobbi挚爱的深邃的灰色、柔和的米褐色和优雅的海军蓝，任何肤色都可以轻松驾驭；由浅至深，涵盖所有灰调眼妆，质感哑面亦或金属光泽皆由你随心打造，轻松演绎优雅知性。\n    此次全新的眼妆盘色彩多为中性，有不同的深度和光泽度，适合搭配不同的场合来调整妆容，你可以打造最经典百搭的日常通勤妆，也可稍加点缀变换成约会晚妆，更可加强色彩描画柔和的小烟熏，是秋季最适合搭配的眼妆组合。\n    色号：Ivory; Stone; Opal; Rich Navy; Storm Cloud; Nude Beach; Slate; Caviar 使用感受:",@"text",@"detail_bobbi_feeliing.png",@"image", nil];
+        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"detail_bobbi_feeliing.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
     }
     return self;
@@ -87,6 +88,7 @@
         self.origin = @"美国";
         self.specification = @"25ml";
         self.fitCrowd = @"30岁以上干性皮肤";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithSisleyInformation];
         self.coverImage = [UIImage imageNamed:@"detail_sisley_cover.png"];
         self.titleImage = @"Sisley-logo.png";
         self.shortComment = @"保养肌肤要从肌肤最基础的步骤做起，而肌肤最需要的基本元素就是清洁，人的脸上有300,000个毛孔，仅仅依靠双手和洁面卸妆产品，只能洗净表层的肌肤，无法彻底清洗毛孔里的油污。被誉为“洗脸神器”的科莱丽声波洁面仪推出Smart Profile (智能型)。它真的如此神奇？和小鲜鲜我来一探究竟吧";
@@ -103,6 +105,7 @@
         self.price = @"220";
         self.origin = @"英国";
         self.specification = @"14*3.5g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithHelpClearSkinInfomation];
         self.fitCrowd = @"12岁以上，孕妇慎用";
         self.coverImage = [UIImage imageNamed:@"detail_helpSkin_cover.png"];
         self.titleImage = @"help-logo.png";
@@ -120,21 +123,23 @@
         self.price = @"360";
         self.origin = @"美国";
         self.specification = @"4.2g";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithBareMineralsInformation];
         self.fitCrowd = @"所有肤质";
         self.coverImage = [UIImage imageNamed:@"BareMinerals.png"];
         self.titleImage = @"bareminerals-logo.png";
         self.shortComment = @"睡觉也要涂粉？这是因为很多女孩子担心自己的素颜吓到男票，或是去朋友家留宿怕被发现皮肤差等等等。所以这款堪比护肤品的晚间睡眠粉便应运而生～全新突破夜间护理方式!";
         NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"Pure Transformation Night Treatment 夜间焕肤睡眠粉(去痘消炎、抗皱、嫩滑皮肤）\n规格：4.2g/0.15oz \n产地：美国 \n质地：粉状 矿物护肤夜间护理的全新突破！采用活性配方，将72种有机矿物结合，持续作用于肌肤，不含防腐剂，对皮肤无刺激，适合包括敏感性肌肤在内的各种肤质。",@"text",@"BareMinerals.png",@"image", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
-        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"bareMinerals应该说是矿物护肤的始祖，而夜间焕肤睡眠粉则是他们家的最明星单品。没用过这款矿物睡眠粉的，都不好意思说自己真的跟矿物结缘过很久之前会注意到她是因为她一副彩妆的外表却是护肤的干活，分明就是望眼娇滴滴，转身却抬起煤气罐上6楼的女汉子！而且官网标明“永不过期！不需卸妆！不会堵塞毛孔的散粉”！戳！你这么强大又逆生长，散粉同胞们知道么？为你按赞按到死！！！！",@"text",@"BareMinerals.png",@"image", nil];
+        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"bareMinerals应该说是矿物护肤的始祖，而夜间焕肤睡眠粉则是他们家的最明星单品。没用过这款矿物睡眠粉的，都不好意思说自己真的跟矿物结缘过很久之前会注意到她是因为她一副彩妆的外表却是护肤的干活，分明就是望眼娇滴滴，转身却抬起煤气罐上6楼的女汉子！而且官网标明“永不过期！不需卸妆！不会堵塞毛孔的散粉”！戳！你这么强大又逆生长，散粉同胞们知道么？为你按赞按到死！！！！",@"text",@"feeling_BareMinerals_feeling_6.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
     }
     return self;
 }
-- (instancetype)initWithClearSkin{
+- (instancetype)initWithLaduree {
     if (self = [super init]) {
         self.title = @"拉杜丽 贵族玫瑰花瓣腮红";
         self.price = @"786";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initLadureeInfomation];
         self.origin = @"日本";
         self.specification = @"6g";
         self.fitCrowd = @"所有肤质";
@@ -143,7 +148,7 @@
         self.shortComment = @"提到拉杜丽laduree首先想到是他们家的马卡龙，但你知道它的彩妆同样出色吗？拉杜丽laduree和Albion合作推出的彩妆，几乎一夜之间，彩妆界人手几盒，甚至有人直接入了所有颜色！它的花瓣腮红，6克价格800多，号称彩妆里的“爱马仕”，如此高昂的价格还让这么多人趋之若鹜，到底好在哪里呢？";
         NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"【商品名称】LADUREE拉杜丽 贵族玫瑰花瓣造型腮红修容\n【商品产地】日本\n【商品包装】盒装\n【适合肤质】所有肤质\n【商品色号】01、02、04",@"text",@"ClearSkin.png",@"image", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
-        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"",@"text",@"ClearSkin.png",@"image", nil];
+        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"   我们买的是限量mini版，1克300多！腮红不像粉底消耗那么大，再加上平时不怎么化妆，或者有些花心的MM各种腮红用都用不完，这个mini版的量简直就是再适合不过了!",@"text",@"feeling_laduree_image",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
 
     }
@@ -157,17 +162,17 @@
         self.origin = @"美国";
         self.specification = @"25ml";
         self.fitCrowd = @"30岁以上干性皮肤";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithSisleyInformation];
         self.title = @"sisley 全新黑玫瑰珍宠滋养精华液";
         self.coverImage = [UIImage imageNamed:@"sisley.png"];
         self.titleImage = @"Sisley-logo.png";
         self.shortComment = @"2015年夏，CPB肌肤之钥专业底妆又加入了话题性十足的新品光盈粉饼，将实现裸纱光钻，聚焦光采主角概念，使肌肤有如穿上薄纱光层般，创造前所未有的透明光泽感。YOKA评测中心对其进行了评测，看看其表现如何。";
         NSDictionary *productionDescriptionDictionary = [NSDictionary dictionaryWithObjectsAndKeys:@"",@"text",@"sisleyIntroduce.png",@"image", nil];
         self.productionDescription = [NSArray arrayWithObjects:productionDescriptionDictionary, nil];
-        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"",@"text",@"sisleyFelling.png",@"image", nil];
+        NSDictionary *feelingDictionary = [NSDictionary dictionaryWithObjectsAndKeys: @"    评测结果：法国希思黎黑玫瑰珍宠滋养精华油紫色外包装高档大气，滴管取用设计使得精华油不易受二次污染，且取用方便。精华油为透明的油状质地，触感柔滑，流动性好，但轻薄易吸收，蕴含玫瑰、木兰和天竺葵精油，散发馥郁香气",@"text",@"sisleyFelling.png",@"image", nil];
         self.feeling = [NSArray arrayWithObjects:feelingDictionary, nil];
         
     }
-    
     return self;
 
 }
@@ -180,6 +185,7 @@
         self.origin = @"日本";
         self.specification = @"30ml/50g";
         self.fitCrowd = @"所有肤质";
+        self.feelingInfomationTool = [[FeelingInformationTool alloc] initWithSKInformation];
         self.coverImage = [UIImage imageNamed:@"SK.png"];
         self.titleImage = @"skii-logo.png";
         self.shortComment = @"有没有想过你的护肤品可以让你在任何年龄，任何角度看起来都一样年轻？SK-II启发自micro RNA科研，为你解开保持年轻美丽的神秘面纱。带来跨越未来的抗老修护科技，揭开肌肤保养的新一章。";

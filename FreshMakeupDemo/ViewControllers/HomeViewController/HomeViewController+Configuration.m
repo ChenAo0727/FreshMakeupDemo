@@ -42,7 +42,7 @@
 
 - (void)configureFreshMakeupData {
     self.freshMakeupArray = @[
-                              [[DetailInfomationTool alloc] initWithClearSkin],
+                              [[DetailInfomationTool alloc] initWithLaduree],
                               [[DetailInfomationTool alloc] initWithHelpClearSkinInfomation],
                               [[DetailInfomationTool alloc] initWithSK],
                               [[DetailInfomationTool alloc] initWithSisley],
@@ -71,7 +71,7 @@
                             [[FreshTryInformationTool alloc]initWithDanceLegend],
                             [[FreshTryInformationTool alloc]initWithBOBBI],
                             [[FreshTryInformationTool alloc]initWithForBeloveOne],
-                            [[FreshTryInformationTool alloc] initWithClearSkin],
+                            [[FreshTryInformationTool alloc] initWithLaduree],
                             [[FreshTryInformationTool alloc]initWithMAYSU],
                             [[FreshTryInformationTool alloc]initWithJurlique]
                            ];
