@@ -336,6 +336,7 @@
 		2EF5E95A1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image9.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E94E1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image9.png */; };
 		2EF5E95B1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image10.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E94F1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image10.png */; };
 		2EF5E95C1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image11.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EF5E9501B9FD6BC00D9BA5C /* feeling_help_clear_skin_image11.png */; };
+		2EF5E95F1B9FF41E00D9BA5C /* CommentInfomationTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF5E95E1B9FF41E00D9BA5C /* CommentInfomationTool.m */; };
 		2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */; };
 		2EFAEA811B8AB4280044BAF0 /* SelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */; };
 		2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA821B8AD6130044BAF0 /* selection_like_image.png */; };
@@ -841,6 +842,8 @@
 		2EF5E94E1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_help_clear_skin_image9.png; sourceTree = "<group>"; };
 		2EF5E94F1B9FD6BC00D9BA5C /* feeling_help_clear_skin_image10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_help_clear_skin_image10.png; sourceTree = "<group>"; };
 		2EF5E9501B9FD6BC00D9BA5C /* feeling_help_clear_skin_image11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feeling_help_clear_skin_image11.png; sourceTree = "<group>"; };
+		2EF5E95D1B9FF41E00D9BA5C /* CommentInfomationTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentInfomationTool.h; sourceTree = "<group>"; };
+		2EF5E95E1B9FF41E00D9BA5C /* CommentInfomationTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentInfomationTool.m; sourceTree = "<group>"; };
 		2EFAEA7D1B8AB4170044BAF0 /* SelectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectionView.h; sourceTree = "<group>"; };
 		2EFAEA7E1B8AB4170044BAF0 /* SelectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectionView.m; sourceTree = "<group>"; };
 		2EFAEA801B8AB4280044BAF0 /* SelectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectionView.xib; sourceTree = "<group>"; };
@@ -1724,6 +1727,8 @@
 				389A20011B9D74B20035BC2B /* FreshTryInformationTool.m */,
 				05D76C341B9EB5BE0061546F /* FeelingInformationTool.h */,
 				05D76C351B9EB5BE0061546F /* FeelingInformationTool.m */,
+				2EF5E95D1B9FF41E00D9BA5C /* CommentInfomationTool.h */,
+				2EF5E95E1B9FF41E00D9BA5C /* CommentInfomationTool.m */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -2513,6 +2518,7 @@
 				054DFD241B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Animation.m in Sources */,
 				2E8C342D1B7DF3DC006B5BC0 /* PickUpMotion+Layout.m in Sources */,
 				2E7DC9371B82CF3900152A0B /* StackCollectionView.m in Sources */,
+				2EF5E95F1B9FF41E00D9BA5C /* CommentInfomationTool.m in Sources */,
 				054DFD251B81A09D00651F11 /* EarlyAdoptersTheTrialViewController+Configuration.m in Sources */,
 				2ECD47F41B8EE249002AFEEB /* MaterialTransition.m in Sources */,
 				2E7DC9341B82BD1F00152A0B /* StackCollectionViewCell.m in Sources */,
