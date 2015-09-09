@@ -108,7 +108,7 @@
 - (instancetype)initWithHelpClearSkinInfomation {
     if (self = [super init]) {
         self.title = @"Help Clear Skin祛痘牛奶——喝出来的光滑肌肤";
-        self.comments = [CommentInfomationTool ladureeCommentArray];
+        self.comments = [CommentInfomationTool helpClearMilkArray];
         self.price = @"220";
         self.origin = @"英国";
         self.specification = @"14*3.5g";

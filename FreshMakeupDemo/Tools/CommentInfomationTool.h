@@ -19,5 +19,6 @@
 @property (strong, nonatomic) NSString *commentText;
 
 + (NSArray *)ladureeCommentArray;
++ (NSArray *)helpClearMilkArray;
 
 @end
