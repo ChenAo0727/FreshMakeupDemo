@@ -33,15 +33,13 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
 }
 
 - (void)initCollectionView{
-    
     self.layout = [[CHTCollectionViewWaterfallLayout alloc] init];
-    self.layout.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);
+    self.layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.layout.headerHeight = 0;
     self.layout.footerHeight = 0;
     self.layout.minimumColumnSpacing = 0;
     self.layout.minimumInteritemSpacing = 0;
-    self.collectionView = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 64,[UIScreen screenWidth], [UIScreen screenHeight] - 64) collectionViewLayout:self.layout];
-
+    self.collectionView.collectionViewLayout = self.layout;
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     [self.collectionView registerNib:[UINib nibWithNibName:CommentIdentifier bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:CommentIdentifier];
@@ -65,17 +63,18 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     
     CGSize size;
-    
-    CommentCell *cell = [CommentCell create];
 
     if (indexPath.section == 0 ) {
         
         return CGSizeMake([UIScreen screenWidth] - 20, 200);
         
     }else if (indexPath.section == 1 || indexPath.section == 3){
+        static CommentCell *cell = nil;
+        cell = [[NSBundle mainBundle] loadNibNamed:@"CommentCell" owner:self options:nil][0];
+        [cell setNeedsLayout];
+        [cell layoutIfNeeded];
         [cell updateWithCommentInfomationTool:[self.comments objectAtIndex:indexPath.row]];
         size = [cell sizeOfCell];
-        
     }if (indexPath.section == 2) {
         return CGSizeMake([UIScreen screenWidth] - 20, 40);
     }

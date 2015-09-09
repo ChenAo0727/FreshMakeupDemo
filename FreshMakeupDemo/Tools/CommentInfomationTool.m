@@ -31,4 +31,13 @@
              [CommentInfomationTool createWithAvatar:[UIImage imageNamed:@"avatar_data_image6.jpg"] nickName:@"蝴蝶妃妃" skinProperty:2 gender:NO age:@"29" identity:@"YSL死忠" commentText:@"还是我家YSL的粉好用！"]];
 }
 
++ (NSArray *)helpClearMilkArray {
+    return @[[CommentInfomationTool createWithAvatar:[UIImage imageNamed:@"avatar_data_image1.jpg"] nickName:@"伊娃" skinProperty:2 gender:NO age:@"18" identity:@"OLAY最棒" commentText:@"自从把三鹿换了这个，妈妈再也不用担心我长痘痘了"],
+             [CommentInfomationTool createWithAvatar:[UIImage imageNamed:@"avatar_data_image4.jpg"] nickName:@"花木兰" skinProperty:1 gender:NO age:@"26" identity:@"只买贵的" commentText:@"牛奶去痘？我读书少别骗我"],
+             [CommentInfomationTool createWithAvatar:[UIImage imageNamed:@"avatar_data_image3.jpg"] nickName:@"LDQ" skinProperty:2 gender:NO age:@"21" identity:@"剁手狂魔" commentText:@"京东现在买2送1， 是时候拔一波草了！"],
+             [CommentInfomationTool createWithAvatar:[UIImage imageNamed:@"avatar_data_image2.jpg"] nickName:@"黛拉" skinProperty:0 gender:NO age:@"16" identity:@"理性派不剁手" commentText:@"喝了一个月，胖了！"],
+             [CommentInfomationTool createWithAvatar:[UIImage imageNamed:@"avatar_data_image6.jpg"] nickName:@"朽木" skinProperty:1 gender:YES age:@"23" identity:@"并不会化妆" commentText:@"推荐加雀巢麦片！"],
+             [CommentInfomationTool createWithAvatar:[UIImage imageNamed:@"avatar_data_image5.jpg"] nickName:@"会飞的猫" skinProperty:0 gender:NO age:@"22" identity:@"YSL死忠" commentText:@"然而并没有什么卵用"]];
+}
+
 @end
