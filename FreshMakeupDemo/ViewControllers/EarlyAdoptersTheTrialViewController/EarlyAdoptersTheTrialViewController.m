@@ -10,6 +10,7 @@
 #import "EarlyAdoptersTheTrialViewController+Configuration.h"
 #import "EarlyAdoptersReportTableViewCell.h"
 #import "StrengthGameViewController.h"
+#import "EarlyAdoptersTheTrialViewController+Animation.h"
 @interface EarlyAdoptersTheTrialViewController ()
 
 @end
@@ -51,6 +52,10 @@
     self.earlyAdoptersTheTrialViewControllerDataSource.freshTryInformationTool = freshTryInformationTool;
     [self.earlyAdoptersTableView reloadData];
     
+}
+- (void)EarlyAdoptersTheTrialViewControllerShakeAshake {
+    
+    [self shakeAShakeAction];
 }
 - (void)EarlyViewControllerStrengthGame {
     StrengthGameViewController *strengthGameViewController = [[StrengthGameViewController alloc] init];

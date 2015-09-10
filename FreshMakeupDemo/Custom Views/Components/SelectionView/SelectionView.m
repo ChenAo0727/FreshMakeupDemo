@@ -55,9 +55,9 @@
         self.processLeftViewWithConstraint.constant = self.processView.frame.size.width * (1.0 * likeCount / (likeCount + unlikeCount));
     }
     [self layoutIfNeeded];
-    self.approveCountLabel.text = [NSString stringWithFormat:@"%d", likeCount];
-    self.disapproveCountLabel.text = [NSString stringWithFormat:@"%d", unlikeCount];
-    self.sumUserCountLabel.text = [NSString stringWithFormat:@"已有%d用户参与", (likeCount + unlikeCount)];
+    self.approveCountLabel.text = [NSString stringWithFormat:@"%ld", (long)likeCount];
+    self.disapproveCountLabel.text = [NSString stringWithFormat:@"%ld", (long)unlikeCount];
+    self.sumUserCountLabel.text = [NSString stringWithFormat:@"已有%ld用户参与", (likeCount + unlikeCount)];
 }
 
 - (void)animateIfClickUnLikeImageView {

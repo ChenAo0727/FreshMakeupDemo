@@ -40,7 +40,7 @@
             if (praiseCountLeft == 24) {
                 self.earlyClickLeftLabel.text = @"25";
                 self.earlyClickLefImageView.image = [UIImage imageNamed:@"detail_approve_clicked_icon.png"];
-                self.earlyClickLeftLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
+                self.earlyClickLeftLabel.textColor = [UIColor redColor];
             } else {
                 self.earlyClickLeftLabel.text = @"24";
                 self.earlyClickLefImageView.image = [UIImage imageNamed:@"detail_approve_icon.png"];
@@ -62,7 +62,7 @@
             if (praiseCountLeft == 24) {
                 self.earlyClickRightLabel.text = @"25";
                 self.earlyClickRightImageView.image =[UIImage imageNamed:@"detail_approve_clicked_icon.png"];
-                self.earlyClickRightLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
+                self.earlyClickRightLabel.textColor = [UIColor redColor];
             } else {
                 self.earlyClickRightLabel.text = @"24";
                 self.earlyClickRightImageView.image = [UIImage imageNamed:@"detail_approve_icon.png"];

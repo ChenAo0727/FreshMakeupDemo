@@ -117,7 +117,7 @@ static NSString *COMMENTCELL = @"CommentCell";
            if (praiseCountLeft == 233) {
                 self.approveCountLabel.text = @"234";
                 self.approveImageView.image = [UIImage imageNamed:@"detail_approve_clicked_icon.png"];
-                self.approveCountLabel.textColor = [UIColor colorFromHexCode:@"#EA5E42"];
+                self.approveCountLabel.textColor = [UIColor redColor];
             } else {
                 self.approveCountLabel.text = @"233";
                 self.approveImageView.image = [UIImage imageNamed:@"detail_approve_icon.png"];

@@ -145,7 +145,7 @@
     maxDistance = [self.dataSource pickUpmotion:self maxDecelerateDistanceInDirection:direction];
   }
   maxDistance = maxDistance * (0 > offset ? -1 : 1);
-  offset = velocity < abs(offset) ? velocity : abs(offset);
+  offset = velocity < fabs(offset) ? velocity : fabs(offset);
   return maxDistance * (1 - powf((velocity - offset) / velocity, 2));
 }
 
