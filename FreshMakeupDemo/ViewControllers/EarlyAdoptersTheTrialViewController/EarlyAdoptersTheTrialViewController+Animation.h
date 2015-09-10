@@ -9,5 +9,5 @@
 #import "EarlyAdoptersTheTrialViewController.h"
 
 @interface EarlyAdoptersTheTrialViewController (Animation)
-
+- (void) shakeAShakeAction;
 @end

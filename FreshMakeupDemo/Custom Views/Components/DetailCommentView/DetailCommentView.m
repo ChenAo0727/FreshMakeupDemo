@@ -29,6 +29,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     DetailCommentCell *cell = [self.detailCommentTableView dequeueReusableCellWithIdentifier:DETAIL_COMMENT_CELL];
+    NSMutableArray * imageArray = [NSMutableArray arrayWithObjects:@"findarticleavatar1.png",@"findarticleavatar2.png",@"findarticleavatar3.png",@"findarticleavatar2.png", nil];
+    cell.avatarImageView.image = [UIImage imageNamed:[imageArray objectAtIndex:indexPath.row]];
     return cell;
 }
 
