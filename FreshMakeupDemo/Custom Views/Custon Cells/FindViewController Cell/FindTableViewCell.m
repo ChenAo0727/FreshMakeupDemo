@@ -24,7 +24,7 @@
 }
 - (CGFloat)getCellHeight {
     
-    return self.findImageView.frame.size.height + self.findLabel.frame.size.height + 80;
+    return 265;
 }
 
 - (void)updateGradientLayer {

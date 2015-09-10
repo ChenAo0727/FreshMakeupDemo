@@ -34,13 +34,11 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 1) {
         return 1;
-    }else{
-            FindTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_TABLEVIEW_CELL];
+    } else {
+        FindTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:FIND_TABLEVIEW_CELL];
         CGRect frame = cell.frame;
         frame.size.width = [UIScreen screenWidth];
         cell.frame = frame;
-        cell.findLabel.text = [self.findViewControllerDataSource.lableArray objectAtIndex:indexPath.row];
-        [cell layoutIfNeeded];
         CGFloat cellHeight = [cell getCellHeight];
         return cellHeight;
     }
