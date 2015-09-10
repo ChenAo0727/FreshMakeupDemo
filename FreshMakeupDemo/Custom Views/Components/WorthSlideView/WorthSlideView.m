@@ -87,7 +87,10 @@
     [UIView animateWithDuration:1 animations:^{
         label.transform = CGAffineTransformScale(label.transform, 1.5, 1.5);
         label.alpha = 0;
-    } completion:completion];
+    } completion:^(BOOL finished) {
+        [label removeFromSuperview];
+        completion(finished);
+    }];
 }
 
 
