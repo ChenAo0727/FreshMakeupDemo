@@ -7,6 +7,7 @@
 //
 
 #import "TagCollectionViewCell.h"
+#import "UIColor+Utility.h"
 
 @implementation TagCollectionViewCell
 
@@ -14,8 +15,13 @@
     self.layer.cornerRadius = self.frame.size.height / 4;
 }
 
-- (void)updateWithTagText:(NSString *)text {
+- (void)updateWithTagText:(NSString *)text isTitle:(BOOL)isTitle {
     self.tagTextLabel.text = text;
+    if (isTitle) {
+        self.backgroundColor = [UIColor whiteColor];
+    } else {
+        self.backgroundColor = [UIColor colorWithIntRed:230 green:230 blue:230];
+    }
     [self layoutIfNeeded];
 }
 
