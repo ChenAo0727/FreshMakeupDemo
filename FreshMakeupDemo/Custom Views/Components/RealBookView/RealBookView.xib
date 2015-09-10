@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2043" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -58,11 +58,10 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DIOR新款口红" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kLz-kq-jnW">
-                                    <rect key="frame" x="15" y="261" width="108" height="21"/>
+                                    <rect key="frame" x="16" y="261" width="237" height="21"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="A1h-Vl-4j2"/>
-                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="t4r-wV-nWo"/>
                                     </constraints>
                                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                     <color key="textColor" red="0.3843137254901961" green="0.37647058823529411" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
@@ -93,6 +92,7 @@
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
+                                <constraint firstAttribute="trailing" secondItem="kLz-kq-jnW" secondAttribute="trailing" id="6Y5-yy-eJT"/>
                                 <constraint firstItem="0wt-HY-eaI" firstAttribute="top" secondItem="8V0-xx-8fk" secondAttribute="bottom" id="7sb-rt-zi5"/>
                                 <constraint firstItem="Mpw-ln-yRp" firstAttribute="top" secondItem="f4K-WV-aLo" secondAttribute="top" id="AA1-WN-U8x"/>
                                 <constraint firstItem="sET-9S-l8P" firstAttribute="top" secondItem="f4K-WV-aLo" secondAttribute="top" id="BBL-oD-Ahb"/>
@@ -113,7 +113,7 @@
                                 <constraint firstAttribute="trailing" secondItem="8V0-xx-8fk" secondAttribute="trailing" id="oRB-Fa-ffc"/>
                                 <constraint firstItem="Qoc-rr-nGK" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" constant="8" id="phU-S7-RGd"/>
                                 <constraint firstItem="Mpw-ln-yRp" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" id="tJN-uZ-jwo"/>
-                                <constraint firstItem="kLz-kq-jnW" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" constant="15" id="ugJ-8b-prT"/>
+                                <constraint firstItem="kLz-kq-jnW" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" constant="16" id="ugJ-8b-prT"/>
                                 <constraint firstItem="sET-9S-l8P" firstAttribute="leading" secondItem="f4K-WV-aLo" secondAttribute="leading" id="xYb-C6-yzm"/>
                                 <constraint firstItem="U1u-oH-nvq" firstAttribute="top" secondItem="kLz-kq-jnW" secondAttribute="bottom" constant="2" id="xq4-GY-azq"/>
                             </constraints>
