@@ -24,6 +24,7 @@
 - (void)updateFeelingTextLabel:(NSString *)text WithTag:(NSString *)tag{
 
     if ([tag isEqualToString:@"0"]) {
+        
         self.isHideLableImage = YES;
         self.LabelView.hidden = YES;
         self.feelingTextLabel.text = text;
