@@ -2,6 +2,8 @@
 //  EarlyAdoptersTheTrialViewController.m
 //  FreshMakeupDemo
 //
+//  注释
+//
 //  Created by winchance on 15/8/17.
 //  Copyright (c) 2015年 guoshencheng. All rights reserved.
 //
@@ -11,20 +13,18 @@
 #import "EarlyAdoptersReportTableViewCell.h"
 #import "StrengthGameViewController.h"
 #import "EarlyAdoptersTheTrialViewController+Animation.h"
-@interface EarlyAdoptersTheTrialViewController ()
-
-@end
 
 @implementation EarlyAdoptersTheTrialViewController
 + (instancetype)create {
     return [[EarlyAdoptersTheTrialViewController alloc] initWithNibName:@"EarlyAdoptersTheTrialViewController" bundle:nil];
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
     [self configureViews];
-   
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         return 266;
@@ -44,47 +44,36 @@
         return 250;
     }
 }
+
 - (IBAction)earlyRetainButtonAction:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 - (void)updateDatasourceWithFreshTryTool:(FreshTryInformationTool *)freshTryInformationTool {
     self.earlyAdoptersTheTrialViewControllerDataSource = [EarlyAdoptersTheTrialViewControllerDataSource new];
     self.earlyAdoptersTheTrialViewControllerDataSource.freshTryInformationTool = freshTryInformationTool;
     [self.earlyAdoptersTableView reloadData];
-    
 }
+
 - (void)EarlyAdoptersTheTrialViewControllerShakeAshake {
-    
     [self shakeAShakeAction];
 }
+
 - (void)EarlyViewControllerStrengthGame {
     StrengthGameViewController *strengthGameViewController = [[StrengthGameViewController alloc] init];
     strengthGameViewController.modalPresentationStyle = UIModalPresentationCustom;
     strengthGameViewController.transitioningDelegate = self;
     [self presentViewController:strengthGameViewController animated:YES completion:nil];
 }
+
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
     self.zoomFadeTransition.reverse = NO;
     return self.zoomFadeTransition;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     self.zoomFadeTransition.reverse = YES;
     return self.zoomFadeTransition;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

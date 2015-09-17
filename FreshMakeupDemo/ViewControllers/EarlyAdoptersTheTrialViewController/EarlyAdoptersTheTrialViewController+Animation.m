@@ -7,9 +7,10 @@
 //
 
 #import "EarlyAdoptersTheTrialViewController+Animation.h"
+
 @implementation EarlyAdoptersTheTrialViewController (Animation)
 
-- (void) shakeAShakeAction {
+- (void)shakeAShakeAction {
     self.shakeAshakeView = [ShakeAshakeView create];
     self.shakeAshakeView.frame = self.view.bounds;
     [self.view addSubview:self.shakeAshakeView];
@@ -19,15 +20,19 @@
     [[UIApplication sharedApplication] setApplicationSupportsShakeToEdit:YES];
     [self becomeFirstResponder];
 }
+
 - (void)shakeImageAction {
     self.shakeAshakeView.alpha = 0;
 }
+
 - (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     [self.shakeAshakeView shakeAshakeBefore];
 }
+
 - (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     [self.shakeAshakeView shakeAshakeIn];
 }
+
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     [self.shakeAshakeView shakeAshakeAfter];
 }

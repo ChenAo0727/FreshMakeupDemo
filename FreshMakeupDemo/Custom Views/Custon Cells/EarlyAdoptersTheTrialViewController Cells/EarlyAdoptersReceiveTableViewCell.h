@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #define EARLY_ADOPTERS_RECEIVE_TABLEVIEW_CELL @"EarlyAdoptersReceiveTableViewCell"
 @interface EarlyAdoptersReceiveTableViewCell : UITableViewCell
+
 @property (strong, nonatomic) IBOutlet UIButton *strengthButton;
 @property (strong, nonatomic) IBOutlet UIButton *luckButton;
+
+- (void)updateWithLuckyAction:(SEL)luckyAction strengthAction:(SEL)strengthAction target:(id)target;
 
 @end

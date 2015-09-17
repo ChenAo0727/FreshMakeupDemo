@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "FreshTryInformationTool.h"
+// 首字母  小写       把自己 传出去
 @protocol EarlyAdoptersTheTrialViewControllerDataSourceDelegate <NSObject>
 - (void)EarlyAdoptersTheTrialViewControllerShakeAshake;
 - (void)EarlyViewControllerStrengthGame;
 @end
 
 @interface EarlyAdoptersTheTrialViewControllerDataSource : NSObject<UITableViewDataSource>
-@property (nonatomic, weak) id<EarlyAdoptersTheTrialViewControllerDataSourceDelegate>delegate;
+@property (weak, nonatomic) id<EarlyAdoptersTheTrialViewControllerDataSourceDelegate>delegate;
 @property (strong, nonatomic)FreshTryInformationTool *freshTryInformationTool;
 @end

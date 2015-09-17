@@ -7,11 +7,22 @@
 //
 
 #import "EarlyAdoptersReceiveTableViewCell.h"
+#import "UIColor+Utility.h"
+
 @implementation EarlyAdoptersReceiveTableViewCell
 
 - (void)awakeFromNib {
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    self.strengthButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
+    self.luckButton.layer.borderColor = [UIColor colorFromHexCode:@"#48D1CC"].CGColor;
     self.strengthButton.layer.borderWidth = 0.5;
     self.luckButton.layer.borderWidth = 0.5;
+}
+
+
+- (void)updateWithLuckyAction:(SEL)luckyAction strengthAction:(SEL)strengthAction target:(id)target {
+    [self.strengthButton addTarget:target action:strengthAction forControlEvents:UIControlEventTouchUpInside];
+    [self.luckButton addTarget:target action:luckyAction forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
