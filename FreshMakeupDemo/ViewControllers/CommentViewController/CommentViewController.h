@@ -7,16 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 #import "CHTCollectionViewWaterfallLayout.h"
+#import "CommentInfomationTool.h"
+#import "BaseViewController.h"
 #import "DetailCommentView.h"
 #import "CommentCell.h"
-#import "CommentInfomationTool.h"
 
 @class CommentViewLayout;
 @interface CommentViewController : BaseViewController<UICollectionViewDataSource, CHTCollectionViewDelegateWaterfallLayout, CommentCellDelegate>
 
-@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;@property (strong, nonatomic) CHTCollectionViewWaterfallLayout *layout;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (strong, nonatomic) CHTCollectionViewWaterfallLayout *layout;
 @property (strong, nonatomic) DetailCommentView *detailCommentView;
 @property (strong, nonatomic) NSArray *comments;
 

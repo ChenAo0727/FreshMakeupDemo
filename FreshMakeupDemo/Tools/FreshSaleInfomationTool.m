@@ -34,7 +34,7 @@
         self.image = [UIImage imageNamed:@"freshSale_MISSHA_image"];
         self.commentary = @"    MISSHA谜尚是韩国三大化妆品集团之一ABLE C&C株式会社旗下的品牌，这款MISSHA 谜尚魅力莹润无暇气垫粉凝霜，粉体细腻，有遮瑕功效，涂抹后自然清新，能够吸收汗水和皮脂，淡化暗沉，同时使妆容更持久，补妆不会让底妆结块，含有金缕梅等提取物，同时能够补充水分舒缓肌肤。\n京东目前售价49元，且可参加满199减40活动，合理凑单可以低至40元左右，近期好价，其他渠道售价80元以上。建议与活动产品一起凑单带回，或者组团拼单也不错";
     }
-    return self;
+        return self;
 }
 
 - (instancetype)initWithBIODERMA{

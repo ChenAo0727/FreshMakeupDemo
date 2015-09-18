@@ -9,6 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface NewCommentCell : UICollectionViewCell
-
 @property (weak, nonatomic) IBOutlet UILabel *NewCommentCount;
 @end

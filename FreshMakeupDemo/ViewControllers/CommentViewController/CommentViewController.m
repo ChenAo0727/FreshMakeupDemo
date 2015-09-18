@@ -7,21 +7,17 @@
 //
 
 #import "CommentViewController.h"
-#import "CommentViewLayout.h"
 #import "SelectionView.h"
 #import "HeaderViewCell.h"
 #import "UIScreen+Utility.h"
 #import "NewCommentCell.h"
 
-
 static NSString *CommentIdentifier = @"CommentCell";
 static NSString *HeaderIdentifier = @"HeaderViewCell";
 static NSString *NewCommentIdentifier = @"NewCommentCell";
-@interface CommentViewController ()
-
-@end
 
 @implementation CommentViewController
+
  + (instancetype)create {
     return [[CommentViewController alloc] initWithNibName:@"CommentViewController" bundle:nil];
 }
@@ -29,7 +25,6 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
     [super viewDidLoad];
     [self initCollectionView];
     [self addDetailView];
-
 }
 
 - (void)initCollectionView{
@@ -46,7 +41,6 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
     [self.collectionView registerNib:[UINib nibWithNibName:HeaderIdentifier bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:HeaderIdentifier];
         self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerNib:[UINib nibWithNibName:@"NewCommentCell" bundle:nil ]forCellWithReuseIdentifier:@"NewCommentCell"];
-    [self.view addSubview:self.collectionView];
 }
 
 - (void)addDetailView {
@@ -59,15 +53,11 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
     self.detailCommentView.hidden = YES;
 }
 
-#pragma mark - UICollectionViewDataSource
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    
+#pragma mark - CHTCollectionViewWaterfallLayout
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     CGSize size;
-
     if (indexPath.section == 0 ) {
-        
         return CGSizeMake([UIScreen screenWidth] - 20, 200);
-        
     }else if (indexPath.section == 1 || indexPath.section == 3){
         static CommentCell *cell = nil;
         cell = [[NSBundle mainBundle] loadNibNamed:@"CommentCell" owner:self options:nil][0];
@@ -79,70 +69,9 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
         return CGSizeMake([UIScreen screenWidth] - 20, 40);
     }
     return size;
-
-
-}
-- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
-
-    return 4;
-}
-- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    if (section == 0) {
-        return 1;
-
-    }else if (section == 1) {
-        return 6;
-    }else if (section == 2){
-    
-        return 1;
-    }
-    
-        return 6;
-
 }
 
-- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    
-    if (indexPath.section == 0) {
-        HeaderViewCell *headerCell = [collectionView dequeueReusableCellWithReuseIdentifier:HeaderIdentifier forIndexPath:indexPath];
-        
-        return headerCell;
-   
-    }
-    if (indexPath.section == 1 || indexPath.section == 3) {
-        
-        CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CommentIdentifier forIndexPath:indexPath];
-        [cell updateWithCommentInfomationTool:[self.comments objectAtIndex:indexPath.row]];
-        if (cell.frame.origin.x < 20) {
-            cell.rightLine.hidden = NO;
-        } else {
-            cell.rightLine.hidden = YES;
-        }
-        cell.delegate = self;
-        return cell;
-
-
-    }
-    NewCommentCell *NewCommentCell = [collectionView dequeueReusableCellWithReuseIdentifier:NewCommentIdentifier forIndexPath:indexPath];
-    return NewCommentCell;
-    
-
-}
-
-- (void)CommentCell:(CommentCell *)commentCell didClickCommentButtonWithTag:(NSInteger)tag {
-    self.detailCommentView.hidden = NO;
-}
-
-#pragma mark - UICollectionViewDelegateFlowLayout
-
-- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section{
-    
-    return UIEdgeInsetsMake(0, 10, 0, 10);
-
-}
-
-
-- (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section{
+- (NSInteger)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout columnCountForSection:(NSInteger)section {
     NSInteger column = 0;
     if (section == 0 || section == 2) {
         column = 1;
@@ -153,8 +82,54 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
     return column;
 }
 
+- (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(0, 10, 0, 10);
+}
+
+#pragma mark - UICollectionViewDataSource
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
+    return 4;
+}
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    if (section == 0) {
+        return 1;
+    }else if (section == 1) {
+        return 6;
+    }else if (section == 2){
+        return 1;
+    }
+        return 6;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.section == 0) {
+        HeaderViewCell *headerCell = [collectionView dequeueReusableCellWithReuseIdentifier:HeaderIdentifier forIndexPath:indexPath];
+        return headerCell;
+   
+    }
+    if (indexPath.section == 1 || indexPath.section == 3) {
+        CommentCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CommentIdentifier forIndexPath:indexPath];
+        [cell updateWithCommentInfomationTool:[self.comments objectAtIndex:indexPath.row]];
+        if (cell.frame.origin.x < 20) {
+            cell.rightLine.hidden = NO;
+        } else {
+            cell.rightLine.hidden = YES;
+        }
+        cell.delegate = self;
+        return cell;
+    }
+        NewCommentCell *NewCommentCell = [collectionView dequeueReusableCellWithReuseIdentifier:NewCommentIdentifier forIndexPath:indexPath];
+        return NewCommentCell;
+}
+
+#pragma mark - CommentCellDelegate
+- (void)CommentCell:(CommentCell *)commentCell didClickCommentButtonWithTag:(NSInteger)tag {
+    self.detailCommentView.hidden = NO;
+}
+
+#pragma mark - return method
 - (IBAction)backClick:(id)sender {
-    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end

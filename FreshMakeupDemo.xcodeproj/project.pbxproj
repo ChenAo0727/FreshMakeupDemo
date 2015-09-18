@@ -380,7 +380,6 @@
 		2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA821B8AD6130044BAF0 /* selection_like_image.png */; };
 		2EFAEA851B8AD6130044BAF0 /* selection_unlike_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EFAEA831B8AD6130044BAF0 /* selection_unlike_image.png */; };
 		2EFAEA8D1B8B1D3D0044BAF0 /* DetailViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA8C1B8B1D3D0044BAF0 /* DetailViewController+Animation.m */; };
-		380D8F7B1B8C37AF000FA98C /* CommentViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7A1B8C37AF000FA98C /* CommentViewLayout.m */; };
 		380D8F7F1B8C5369000FA98C /* HeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */; };
 		380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */; };
 		38620C051BA01197000CD318 /* LawnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C031BA01197000CD318 /* LawnViewController.m */; };
@@ -936,8 +935,6 @@
 		2EFAEA831B8AD6130044BAF0 /* selection_unlike_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = selection_unlike_image.png; sourceTree = "<group>"; };
 		2EFAEA8B1B8B1D3D0044BAF0 /* DetailViewController+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DetailViewController+Animation.h"; sourceTree = "<group>"; };
 		2EFAEA8C1B8B1D3D0044BAF0 /* DetailViewController+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DetailViewController+Animation.m"; sourceTree = "<group>"; };
-		380D8F791B8C37AF000FA98C /* CommentViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewLayout.h; sourceTree = "<group>"; };
-		380D8F7A1B8C37AF000FA98C /* CommentViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewLayout.m; sourceTree = "<group>"; };
 		380D8F7C1B8C5369000FA98C /* HeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewCell.h; sourceTree = "<group>"; };
 		380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewCell.m; sourceTree = "<group>"; };
 		380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
@@ -1886,8 +1883,6 @@
 				2E8E27971B804BE000687E1B /* CommentViewController.h */,
 				2E8E27981B804BE000687E1B /* CommentViewController.m */,
 				2E8E27991B804BE000687E1B /* CommentViewController.xib */,
-				380D8F791B8C37AF000FA98C /* CommentViewLayout.h */,
-				380D8F7A1B8C37AF000FA98C /* CommentViewLayout.m */,
 				380D8F7C1B8C5369000FA98C /* HeaderViewCell.h */,
 				380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */,
 				380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */,
@@ -2835,7 +2830,6 @@
 				2EB611A11B86EFDF000414A2 /* BaseInfomationCell.m in Sources */,
 				05D76C361B9EB5BE0061546F /* FeelingInformationTool.m in Sources */,
 				2EB611B81B8755A7000414A2 /* ImageCell.m in Sources */,
-				380D8F7B1B8C37AF000FA98C /* CommentViewLayout.m in Sources */,
 				057A264F1B86D08C003DAF07 /* MineViewController+Configuratin.m in Sources */,
 				2E8C344A1B7DF46E006B5BC0 /* UIColor+Utility.m in Sources */,
 				2E8C34071B7DF2B7006B5BC0 /* HomeViewController.m in Sources */,
@@ -2965,7 +2959,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FreshMakeupDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2980,7 +2974,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FreshMakeupDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

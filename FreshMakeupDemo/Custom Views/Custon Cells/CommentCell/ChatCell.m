@@ -10,16 +10,10 @@
 
 @implementation ChatCell
 
-- (void)awakeFromNib {
-  
-
-}
 + (instancetype)create {
     return [[[NSBundle mainBundle]loadNibNamed:@"ChatCell" owner:nil options:nil] lastObject];
 }
-- (CGFloat)cellHeight{
-
+- (CGFloat)cellHeight {
     return self.answerContent.frame.size.height +self.answerContent.frame.origin.y ;
-
 }
 @end

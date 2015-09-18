@@ -10,19 +10,16 @@
 #import "HomeViewController.h"
 #import "FindViewController.h"
 
-
 @interface CirclePushTransition ()
 @property (nonatomic,strong)id<UIViewControllerContextTransitioning> transitionContext;
-
 @end
 
 @implementation CirclePushTransition
-
-- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext{
-    return  0.7f;
+- (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext {
+    return  .7f;
 }
 
-- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext{
+- (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext {
     self.transitionContext = transitionContext;
     HomeViewController * fromVC = (HomeViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     FindViewController *toVC = (FindViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
@@ -67,15 +64,13 @@
 }
 
 #pragma mark - CABasicAnimation的Delegate
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag{
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     //告诉 iOS 这个 transition 完成
     [self.transitionContext completeTransition:![self. transitionContext transitionWasCancelled]];
     //清除 fromVC 的 mask
     [self.transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey].view.layer.mask = nil;
     [self.transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view.layer.mask = nil;
 }
-
-
 
 @end
 

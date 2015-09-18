@@ -11,9 +11,7 @@
 #import "FindViewController.h"
 
 @interface CirclePopTransition()
-
 @property(nonatomic,strong)id<UIViewControllerContextTransitioning>transitionContext;
-
 @end
 
 @implementation CirclePopTransition
@@ -59,14 +57,11 @@
     [maskLayer addAnimation:pingAnimation forKey:@"pingInvert"];
 }
 
-
 - (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     [self.transitionContext completeTransition:![self.transitionContext transitionWasCancelled]];
     [self.transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey].view.layer.mask = nil;
     [self.transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view.layer.mask = nil;
 }
-
-
 @end
 
 

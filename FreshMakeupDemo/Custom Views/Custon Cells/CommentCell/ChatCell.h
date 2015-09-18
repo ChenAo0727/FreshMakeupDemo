@@ -15,4 +15,5 @@
 
 - (CGFloat)cellHeight;
 + (instancetype)create;
+
 @end

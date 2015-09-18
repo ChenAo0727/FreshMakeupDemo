@@ -69,6 +69,7 @@ static NSString *COMMENTCELL = @"CommentCell";
 }
 
 - (CGSize)sizeOfCell {
+    
     self.bounds = CGRectMake(0, 0, 320, self.frame.size.height);
     self.contentView.bounds = self.bounds;
     [self setNeedsLayout];

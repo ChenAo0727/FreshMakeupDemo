@@ -10,7 +10,7 @@
 #import "SelectionView.h"
 #import "UIScreen+Utility.h"
 #import "MySegmentControl.h"
-static NSString *HEADCELL = @"HeaderViewCell";
+
 @implementation HeaderViewCell
 
 - (void)awakeFromNib {
@@ -27,8 +27,6 @@ static NSString *HEADCELL = @"HeaderViewCell";
 }
 
 + (instancetype)create{
-
     return [[[NSBundle mainBundle]loadNibNamed:HEADCELL owner:nil options:nil] lastObject];
-
 }
 @end

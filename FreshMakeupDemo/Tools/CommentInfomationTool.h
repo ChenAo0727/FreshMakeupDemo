@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CommentInfomationTool : NSObject
-
 @property (strong, nonatomic) NSString *nickName;
 @property (strong, nonatomic) UIImage *avatar;
 @property (assign, nonatomic) NSInteger skinProperty;

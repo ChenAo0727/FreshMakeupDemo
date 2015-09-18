@@ -13,6 +13,7 @@
 @property (strong, nonatomic)UIImage *image;
 @property (strong, nonatomic)NSString *title;
 @property (strong, nonatomic)NSString *shortComment;
+
 - (instancetype)initWithDanceLegend;
 - (instancetype)initWithForBeloveOne;
 - (instancetype)initWithMAYSU;

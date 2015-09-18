@@ -154,7 +154,7 @@
     return self;
 }
 - (instancetype)initWithBareMineralsInformation {
-    if (self = [super init]) {
+        if (self = [super init]) {
         NSDictionary *feelingDictionary1 =  @{@"hasTag":@"1", @"text":@"bareMinerals应该说是矿物护肤的始祖，而夜间焕肤睡眠粉则是他们家的最明星单品。\n没用过这款矿物睡眠粉的，都不好意思说自己真的跟矿物结缘过\n很久之前会注意到她是因为她一副彩妆的外表却是护肤的干活，分明就是望眼娇滴滴，转身却抬起煤气罐上6楼的女汉子！ 而且官网标明“永不过期！不需卸妆！不会堵塞毛孔的散粉”！戳！你这么强大又逆生长，散粉同胞们知道么？ 为你按赞按到死！！！！"};
         NSDictionary *feelingDictionary2
         = @{@"hasTag":@"0", @"image":[UIImage imageNamed:@"feeling_BareMinerals_feeling_2.png"]};

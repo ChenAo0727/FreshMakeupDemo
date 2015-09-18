@@ -7,8 +7,7 @@
 //
 
 #import "MySegmentControl.h"
-@interface MySegmentControl ()<MyUISegmentedControlDelegate>
-{
+@interface MySegmentControl ()<MyUISegmentedControlDelegate> {
     CGFloat witdFloat;
     UIView* buttonDown;
     NSInteger selectSeugment;
@@ -19,7 +18,6 @@
 @implementation MySegmentControl
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
-    
     self.ButtonArray=[NSMutableArray array];
     selectSeugment = 0;
     self.titleFont=[UIFont fontWithName:@".Helvetica Neue Interface" size:16.0f];
@@ -27,15 +25,12 @@
     self.titleColor=[UIColor colorWithRed:161.0/255 green:155.0/255 blue:155.0/255 alpha:1.0f];
     self.selectColor=[UIColor colorWithRed:116.0/255 green:194.0/255 blue:189.0/255 alpha:1.0f];
     self.layer.borderWidth = 0.8;
-        self.layer.borderColor = self.selectColor.CGColor;
-    
+    self.layer.borderColor = self.selectColor.CGColor;
     }
     return self;
-    
 }
 
 - (void)AddSegumentArray:(NSArray *)SegumentArray {
-    
     NSInteger seugemtNumber = SegumentArray.count;
     witdFloat = (self.bounds.size.width) / seugemtNumber;
     for (NSInteger i = 0; i < SegumentArray.count; i++) {
@@ -64,13 +59,10 @@
 }
 
 - (void)changeTheSegument:(UIButton*)button {
-    
     [self selectTheSegument:button.tag];
-    
 }
 
 - (void)selectTheSegument:(NSInteger)segument {
-    
     if (selectSeugment != segument) {
         [self.ButtonArray[selectSeugment] setSelected:NO];
         [self.ButtonArray[segument] setSelected:YES];

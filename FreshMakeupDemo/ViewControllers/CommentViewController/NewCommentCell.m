@@ -11,7 +11,6 @@
 @implementation NewCommentCell
 
 - (void)awakeFromNib {
-    // Initialization code
 }
 
 @end
