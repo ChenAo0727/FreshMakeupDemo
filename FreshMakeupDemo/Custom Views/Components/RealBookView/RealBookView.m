@@ -2,8 +2,8 @@
 //  RealBookView.m
 //  RealBookDemo
 //
-//  Created by guoshencheng on 8/28/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/28/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "RealBookView.h"
@@ -47,10 +47,9 @@
 }
 
 - (void)awakeFromNib {
+    [super awakeFromNib];
     originTransform = self.coverContainerView.layer.transform;
     [self addBottomShadow];
-    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(onClickViewButton:)];
-    [self addGestureRecognizer:tap];
 }
 
 - (void)addBottomShadow {
@@ -60,11 +59,6 @@
     self.backgroundContanerView.layer.shadowRadius = 10;
 }
 
-- (IBAction)onClickViewButton:(id)sender {
-    if (self.didSelectCellBllock) {
-        self.didSelectCellBllock(self);
-    }
-}
 
 - (void)updateToOpenBookStatus {
     self.coverViewLeftConstraint.constant = -self.coverContainerView.frame.size.width / 2 - ([UIScreen screenWidth] - self.backgroundContanerView.frame.size.width) / 2;

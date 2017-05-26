@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="simhei.ttf">
@@ -16,21 +16,12 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="agM-nk-6q4">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SYn-vp-Z95">
-                        <size key="itemSize" width="256" height="320"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29S-n1-PLH">
                     <rect key="frame" x="0.0" y="400" width="320" height="60"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新鲜惠" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oJw-zb-1Ln">
                             <rect key="frame" x="122" y="0.0" width="76" height="21"/>
+                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="76" id="TeB-99-DBt"/>
                                 <constraint firstAttribute="height" constant="21" id="rJw-tz-exX"/>
@@ -41,6 +32,7 @@
                         </label>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kge-dH-EMx" userLabel="lineView">
                             <rect key="frame" x="120" y="22" width="80" height="1"/>
+                            <animations/>
                             <color key="backgroundColor" red="0.70588235290000001" green="0.70980392160000005" blue="0.70588235290000001" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="80" id="Jvv-zd-Xtk"/>
@@ -49,12 +41,14 @@
                         </view>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_down_guide1.png" translatesAutoresizingMaskIntoConstraints="NO" id="emO-Sm-BoH">
                             <rect key="frame" x="130" y="24" width="60" height="29"/>
+                            <animations/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="60" id="Ifq-Se-qqt"/>
                                 <constraint firstAttribute="height" constant="29" id="vqt-3T-aaR"/>
                             </constraints>
                         </imageView>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="60" id="AUK-jq-1Dr"/>
@@ -67,22 +61,34 @@
                         <constraint firstItem="emO-Sm-BoH" firstAttribute="top" secondItem="Kge-dH-EMx" secondAttribute="bottom" constant="1" id="uIe-HV-UJ1"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fIO-EY-pT0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="400"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hkq-UA-bq6">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="29S-n1-PLH" firstAttribute="top" secondItem="agM-nk-6q4" secondAttribute="bottom" id="A5K-A8-dYr"/>
-                <constraint firstAttribute="trailing" secondItem="agM-nk-6q4" secondAttribute="trailing" id="DeD-el-piS"/>
+                <constraint firstItem="fIO-EY-pT0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8bY-Ey-ZnC"/>
+                <constraint firstItem="fIO-EY-pT0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ESH-0P-OOq"/>
                 <constraint firstAttribute="bottom" secondItem="29S-n1-PLH" secondAttribute="bottom" id="JMY-hT-NuJ"/>
-                <constraint firstItem="agM-nk-6q4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LSo-oO-PMF"/>
+                <constraint firstItem="29S-n1-PLH" firstAttribute="top" secondItem="fIO-EY-pT0" secondAttribute="bottom" id="Pkc-gj-Nik"/>
                 <constraint firstAttribute="trailing" secondItem="29S-n1-PLH" secondAttribute="trailing" id="WHQ-YY-pZJ"/>
                 <constraint firstItem="29S-n1-PLH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kgW-Xe-Hjz"/>
-                <constraint firstItem="agM-nk-6q4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="odQ-cH-9QB"/>
+                <constraint firstAttribute="trailing" secondItem="fIO-EY-pT0" secondAttribute="trailing" id="yFY-AD-736"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="bookCollectionView" destination="fIO-EY-pT0" id="qZj-TH-Uc3"/>
                 <outlet property="bottomViewContrainer" destination="29S-n1-PLH" id="evc-50-wdm"/>
                 <outlet property="downGuideImageView" destination="emO-Sm-BoH" id="KZz-wN-se8"/>
-                <outlet property="lineCollectionView" destination="agM-nk-6q4" id="quZ-QV-ahE"/>
                 <outlet property="lineView" destination="Kge-dH-EMx" id="5HK-88-7O1"/>
                 <outlet property="nextStackTitleLabel" destination="oJw-zb-1Ln" id="NCC-07-6wO"/>
             </connections>
@@ -92,9 +98,4 @@
     <resources>
         <image name="home_down_guide1.png" width="90" height="65"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

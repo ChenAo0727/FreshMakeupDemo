@@ -2,8 +2,8 @@
 //  Pool.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/17/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/17/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "Pool.h"

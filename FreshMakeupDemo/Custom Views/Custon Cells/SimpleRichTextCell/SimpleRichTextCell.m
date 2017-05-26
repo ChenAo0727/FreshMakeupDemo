@@ -2,8 +2,8 @@
 //  SimpleRichTextCell.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 9/4/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 9/4/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "SimpleRichTextCell.h"

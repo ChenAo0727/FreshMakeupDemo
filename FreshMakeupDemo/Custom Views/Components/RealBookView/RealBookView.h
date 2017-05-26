@@ -2,8 +2,8 @@
 //  RealBookView.h
 //  RealBookDemo
 //
-//  Created by guoshencheng on 8/28/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/28/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,8 +11,8 @@
 #import "FreshSaleInfomationTool.h"
 #import "FreshTryInformationTool.h"
 #define BOOK_COLLECTIONVIEW_CELL @"BookCollectionViewCell"
-
-typedef void (^DidSelectCellBllock) (UICollectionViewCell * cell);
+@class  RealBookView;
+typedef void (^DidSelectCellBlock) (RealBookView * cell);
 
 @interface RealBookView :UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIView *coverContainerView;
@@ -29,12 +29,12 @@ typedef void (^DidSelectCellBllock) (UICollectionViewCell * cell);
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *nextViewLeftConstraint;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *nextViewTopConstraint;
 @property (weak, nonatomic) IBOutlet UIImageView *priceImageView;
-
-@property (strong, nonatomic) DidSelectCellBllock didSelectCellBllock;
 @property (strong, nonatomic) NSIndexPath *indexPath;
 @property (strong, nonatomic) DetailInfomationTool *detailInfomationTool;
 @property (strong, nonatomic) FreshSaleInfomationTool *freshSaleInfomationTool;
 @property (strong, nonatomic) FreshTryInformationTool *freshTryInformationTool;
+
+
 - (void)updateToOpenBookStatus;
 - (void)updateToCloseBookStatus;
 - (void)animationToOpenBookWithCompletion:(void (^)(BOOL finished))completion;

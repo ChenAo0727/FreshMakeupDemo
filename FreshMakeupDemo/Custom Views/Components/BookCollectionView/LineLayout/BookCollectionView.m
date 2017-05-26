@@ -2,15 +2,18 @@
 //  BookCollectionView.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/15/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/15/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "BookCollectionView.h"
 #import "RealBookView.h"
-#import "LineLayout.h"
 #import "UIScreen+Utility.h"
 #import "FreshSaleInfomationTool.h"
+
+@interface BookCollectionView ()
+@property (nonatomic, assign) NSInteger index;
+@end
 
 @implementation BookCollectionView
 
@@ -34,7 +37,7 @@
     self.nextStackTitleLabel.text = text;
     self.bottomViewContrainer.hidden = [text isEqualToString:@""];
     self.freshMakeupArray = detailInfomationToolArray;
-    [self.lineCollectionView reloadData];
+    [self.bookCollectionView reloadData];
 }
 
 - (void)updateNextGroupTitle:(NSString *)text andFreshSaleInfomationToolArray:(NSArray *)freshSaleInfomationToolArray {
@@ -43,7 +46,7 @@
     self.nextStackTitleLabel.text = text;
     self.bottomViewContrainer.hidden = [text isEqualToString:@""];
     self.freshSaleArray = freshSaleInfomationToolArray;
-    [self.lineCollectionView reloadData];
+    [self.bookCollectionView reloadData];
 }
 
 - (void)updateNextGroupTitle:(NSString *)text andFreshTryInformationToolArray:(NSArray *)freshTryInformationToolArray {
@@ -52,23 +55,29 @@
     self.nextStackTitleLabel.text = text;
     self.bottomViewContrainer.hidden = [text isEqualToString:@""];
     self.freshTryArray = freshTryInformationToolArray;
-    [self.lineCollectionView reloadData];
-
-
+    [self.bookCollectionView reloadData];
 }
 - (void)updateWithCurrentIndex:(NSInteger)index {
-    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
+//    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
 
 }
 
 - (void)awakeFromNib {
     // 创建布局
-    LineLayout *layout = [[LineLayout alloc] init];
+    [super awakeFromNib];
+    NSArray *subs = self.subviews;
+    for (UIView *sub in subs) {
+        if ([sub isKindOfClass:NSClassFromString(@"UITableViewCellContentView" )]) {
+            [sub removeFromSuperview];
+        }
+    }
+    self.layout = [[LineLayout alloc] init];
     // 创建collectionView
-    [self.lineCollectionView setCollectionViewLayout:layout];
-    self.lineCollectionView.dataSource = self;
-    self.lineCollectionView.delegate = self;
-    [self.lineCollectionView registerNib:[UINib nibWithNibName:@"RealBookView" bundle:nil] forCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL];
+    [self.bookCollectionView setCollectionViewLayout:self.layout];
+    self.bookCollectionView.delegate = self;
+    self.bookCollectionView.dataSource = self;
+    self.bookCollectionView.showsHorizontalScrollIndicator = NO;
+    [self.bookCollectionView registerNib:[UINib nibWithNibName:@"RealBookView" bundle:nil] forCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL];
     [self configureGuiAnimation];
     self.selectionStyle = UITableViewCellSelectionStyleNone;
 }
@@ -99,13 +108,7 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     RealBookView *cell = [collectionView dequeueReusableCellWithReuseIdentifier:BOOK_COLLECTIONVIEW_CELL forIndexPath:indexPath];
     cell.indexPath = [NSIndexPath indexPathForRow:indexPath.row inSection:self.tag];
-    __weak typeof(self) weakself = self;
 
-    cell.didSelectCellBllock = ^(UICollectionViewCell *cell) {
-        if ([weakself.delegate respondsToSelector:@selector(BookCollectionView:didSelectItemAtIndex:cell:)]) {
-            [weakself.delegate BookCollectionView:self didSelectItemAtIndex:0 cell:cell];
-        }
-    };
     if (self.freshMakeupArray && self.freshMakeupArray.count > 0) {
         [cell updateWithDetailInfomationTool:[self.freshMakeupArray objectAtIndex:indexPath.row]];
     } else if (self.freshSaleArray && self.freshSaleArray.count > 0) {
@@ -114,17 +117,18 @@
     } else if(self.freshTryArray && self.freshTryArray.count > 0){
         [cell updateWithFreshTryInformationTool:[self.freshTryArray objectAtIndex:indexPath.row]];
     }
-    [cell layoutIfNeeded];
+
     return cell;
 }
 
-- (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView {
-    LineLayout *layout = (LineLayout *)self.lineCollectionView.collectionViewLayout;
-    CGFloat maxOffset = scrollView.contentSize.width - ((3 * [UIScreen screenWidth]) / 2 - layout.itemSize.width * 0.25 / 2);
-    if (scrollView.contentOffset.x > maxOffset) {
-        CGFloat targetOffset = scrollView.contentSize.width - [UIScreen screenWidth];
-        [scrollView setContentOffset:CGPointMake(targetOffset, 0) animated:YES];
-    }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+
+   
+    RealBookView *cell = (RealBookView *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+        if ([self.delegate respondsToSelector:@selector(BookCollectionView:didSelectItemAtIndex:cell:)]) {
+            [self.delegate BookCollectionView:self didSelectItemAtIndex:0 cell:cell];
+        }
 }
 
 @end

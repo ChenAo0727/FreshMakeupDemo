@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="yaoti.ttf">
@@ -24,6 +23,7 @@
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ec2-t6-BJN">
                     <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVe-AC-nHU" userLabel="topViewContainer">
@@ -34,6 +34,7 @@
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="草地" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNC-eW-cwP">
                                     <rect key="frame" x="136" y="0.0" width="48" height="50"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="hiX-gD-WP5"/>
                                     </constraints>
@@ -43,6 +44,7 @@
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="KnA-G7-iOE">
                                     <rect key="frame" x="13" y="12" width="25" height="25"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="25" id="WuI-HP-DXT"/>
                                         <constraint firstAttribute="height" constant="25" id="kVL-aV-mAr"/>
@@ -50,6 +52,7 @@
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share.png" translatesAutoresizingMaskIntoConstraints="NO" id="W3G-zd-3v7">
                                     <rect key="frame" x="282" y="12" width="25" height="25"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="Ade-do-DTI"/>
                                         <constraint firstAttribute="width" constant="25" id="M8c-25-PlB"/>
@@ -57,6 +60,7 @@
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U1e-SB-kAW">
                                     <rect key="frame" x="8" y="8" width="46" height="34"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="46" id="WQO-dP-5T5"/>
                                         <constraint firstAttribute="height" constant="34" id="tBh-ep-fml"/>
@@ -69,6 +73,7 @@
                                     </connections>
                                 </button>
                             </subviews>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="W3G-zd-3v7" secondAttribute="trailing" constant="13" id="32i-DQ-4g9"/>
@@ -83,6 +88,7 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" red="0.52156862749999999" green="0.80000000000000004" blue="0.78823529410000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="ZYC-Zg-DZQ" secondAttribute="bottom" id="DoT-YH-Fy1"/>
@@ -93,6 +99,7 @@
                     </constraints>
                 </view>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="aVe-AC-nHU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5fw-8t-BDD"/>
@@ -110,9 +117,4 @@
         <image name="back.png" width="27" height="48"/>
         <image name="share.png" width="42" height="41"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

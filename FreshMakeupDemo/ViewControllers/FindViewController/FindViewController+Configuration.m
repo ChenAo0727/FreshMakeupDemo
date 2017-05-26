@@ -3,7 +3,7 @@
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/8/18.
-//  Copyright (c) 2015年 guoshencheng. All rights reserved.
+//  Copyright (c) 2015年 chenao. All rights reserved.
 //
 
 #import "FindViewController+Configuration.h"
@@ -14,11 +14,11 @@
 #import "FindViewController+Animation.h"
 #import "XHDrawerController.h"
 #import "MineViewController+Animation.h"
+#import "UIScreen+Utility.h"
 @implementation FindViewController (Configuration)
 - (void)getScreenWidth {
-    CGRect rect = [[UIScreen mainScreen] bounds];
-    CGSize size = rect.size;
-    self.width = size.width;
+    self.width = [UIScreen screenWidth];
+    self.view.frame = CGRectMake(0, 0, self.width, [UIScreen screenHeight]);
 }
 - (void)configureViews {
     [self tableViewEdit];

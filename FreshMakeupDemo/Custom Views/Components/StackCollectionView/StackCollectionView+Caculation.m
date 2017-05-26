@@ -2,8 +2,8 @@
 //  StackCollectionView+Caculation.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/18/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/18/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "StackCollectionView+Caculation.h"
@@ -164,7 +164,6 @@
 
 
 #pragma mark - Private Methods
-
 - (BOOL)isPullPreviousCardAreaContains:(CGPoint)location {
     CGSize size = self.frame.size;
     return (location.y > DEFAULT_PAN_TRIGGER_HEIGHT / 3) && (location.x > (size.width - DEFAULT_PAN_TRIGGER_WIDTH) / 2) && (location.x < (size.width + DEFAULT_PAN_TRIGGER_WIDTH) / 2);

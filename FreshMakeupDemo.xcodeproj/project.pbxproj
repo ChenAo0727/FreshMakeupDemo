@@ -271,9 +271,7 @@
 		2E8C344D1B7DF46E006B5BC0 /* UITextField+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C34451B7DF46E006B5BC0 /* UITextField+Utility.m */; };
 		2E8E279A1B804BE000687E1B /* CommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8E27981B804BE000687E1B /* CommentViewController.m */; };
 		2E8E279B1B804BE000687E1B /* CommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E8E27991B804BE000687E1B /* CommentViewController.xib */; };
-		2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E92F5461B7E4EEB00C14B7A /* BookCollectionView.m */; };
 		2EA4273F1B7ED0FE00BF4705 /* LineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4273E1B7ED0FE00BF4705 /* LineLayout.m */; };
-		2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */; };
 		2EA427471B7ED72000BF4705 /* home_book_image.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EA427461B7ED72000BF4705 /* home_book_image.png */; };
 		2EA556EF1B953A4300C696B0 /* DetailCollectionViewDatasource.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA556EE1B953A4300C696B0 /* DetailCollectionViewDatasource.m */; };
 		2EA556F21B95460400C696B0 /* DetailViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EA556F11B95460400C696B0 /* DetailViewController+Configuration.m */; };
@@ -382,6 +380,8 @@
 		2EFAEA8D1B8B1D3D0044BAF0 /* DetailViewController+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFAEA8C1B8B1D3D0044BAF0 /* DetailViewController+Animation.m */; };
 		380D8F7F1B8C5369000FA98C /* HeaderViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */; };
 		380D8F801B8C5369000FA98C /* HeaderViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */; };
+		382C15E11C06DD8F001131FD /* BookCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 382C15E01C06DD8F001131FD /* BookCollectionView.m */; };
+		382C15E31C06DD95001131FD /* BookCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 382C15E21C06DD95001131FD /* BookCollectionView.xib */; };
 		38620C051BA01197000CD318 /* LawnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C031BA01197000CD318 /* LawnViewController.m */; };
 		38620C061BA01197000CD318 /* LawnViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38620C041BA01197000CD318 /* LawnViewController.xib */; };
 		38620C091BA012EF000CD318 /* LawnViewController+Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 38620C081BA012EF000CD318 /* LawnViewController+Configuration.m */; };
@@ -795,11 +795,8 @@
 		2E8E27971B804BE000687E1B /* CommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommentViewController.h; sourceTree = "<group>"; };
 		2E8E27981B804BE000687E1B /* CommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommentViewController.m; sourceTree = "<group>"; };
 		2E8E27991B804BE000687E1B /* CommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentViewController.xib; sourceTree = "<group>"; };
-		2E92F5451B7E4EEB00C14B7A /* BookCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookCollectionView.h; sourceTree = "<group>"; };
-		2E92F5461B7E4EEB00C14B7A /* BookCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookCollectionView.m; sourceTree = "<group>"; };
 		2EA4273D1B7ED0FE00BF4705 /* LineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineLayout.h; sourceTree = "<group>"; };
 		2EA4273E1B7ED0FE00BF4705 /* LineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineLayout.m; sourceTree = "<group>"; };
-		2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookCollectionView.xib; sourceTree = "<group>"; };
 		2EA427461B7ED72000BF4705 /* home_book_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_book_image.png; sourceTree = "<group>"; };
 		2EA556ED1B953A4300C696B0 /* DetailCollectionViewDatasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailCollectionViewDatasource.h; sourceTree = "<group>"; };
 		2EA556EE1B953A4300C696B0 /* DetailCollectionViewDatasource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailCollectionViewDatasource.m; sourceTree = "<group>"; };
@@ -938,6 +935,9 @@
 		380D8F7C1B8C5369000FA98C /* HeaderViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderViewCell.h; sourceTree = "<group>"; };
 		380D8F7D1B8C5369000FA98C /* HeaderViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderViewCell.m; sourceTree = "<group>"; };
 		380D8F7E1B8C5369000FA98C /* HeaderViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderViewCell.xib; sourceTree = "<group>"; };
+		382C15E01C06DD8F001131FD /* BookCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BookCollectionView.m; path = LineLayout/BookCollectionView.m; sourceTree = "<group>"; };
+		382C15E21C06DD95001131FD /* BookCollectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BookCollectionView.xib; path = LineLayout/BookCollectionView.xib; sourceTree = "<group>"; };
+		382C15E41C06DD9D001131FD /* BookCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BookCollectionView.h; path = LineLayout/BookCollectionView.h; sourceTree = "<group>"; };
 		38620C021BA01197000CD318 /* LawnViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LawnViewController.h; sourceTree = "<group>"; };
 		38620C031BA01197000CD318 /* LawnViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LawnViewController.m; sourceTree = "<group>"; };
 		38620C041BA01197000CD318 /* LawnViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LawnViewController.xib; sourceTree = "<group>"; };
@@ -1361,6 +1361,7 @@
 		05D76C7D1B9F12E20061546F /* PreferentialViewController */ = {
 			isa = PBXGroup;
 			children = (
+				2E8C33EE1B7DEC79006B5BC0 /* FreshMakeupDemoTests */,
 				05D76C7E1B9F13120061546F /* PreferentialViewController.h */,
 				05D76C7F1B9F13120061546F /* PreferentialViewController.m */,
 				05D76C801B9F13120061546F /* PreferentialViewController.xib */,
@@ -1567,7 +1568,6 @@
 			isa = PBXGroup;
 			children = (
 				2E8C33D41B7DEC79006B5BC0 /* FreshMakeupDemo */,
-				2E8C33EE1B7DEC79006B5BC0 /* FreshMakeupDemoTests */,
 				2E8C33D31B7DEC79006B5BC0 /* Products */,
 				EF0BB323A10A85CD2217AC02 /* Pods */,
 				F7691D9B3AFE5C5A498EBE74 /* Frameworks */,
@@ -1616,7 +1616,8 @@
 				2E8C33F11B7DEC79006B5BC0 /* FreshMakeupDemoTests.m */,
 				2E8C33EF1B7DEC79006B5BC0 /* Supporting Files */,
 			);
-			path = FreshMakeupDemoTests;
+			name = FreshMakeupDemoTests;
+			path = ../../../FreshMakeupDemoTests;
 			sourceTree = "<group>";
 		};
 		2E8C33EF1B7DEC79006B5BC0 /* Supporting Files */ = {
@@ -1898,10 +1899,10 @@
 		2E92F5441B7E4EA800C14B7A /* BookCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				382C15E41C06DD9D001131FD /* BookCollectionView.h */,
+				382C15E01C06DD8F001131FD /* BookCollectionView.m */,
+				382C15E21C06DD95001131FD /* BookCollectionView.xib */,
 				2EA4273C1B7ED0D600BF4705 /* LineLayout */,
-				2E92F5451B7E4EEB00C14B7A /* BookCollectionView.h */,
-				2E92F5461B7E4EEB00C14B7A /* BookCollectionView.m */,
-				2EA427401B7ED22F00BF4705 /* BookCollectionView.xib */,
 			);
 			name = BookCollectionView;
 			path = "FreshMakeupDemo/Custom Views/Components/BookCollectionView";
@@ -2024,9 +2025,9 @@
 		2EB4EF531B9699D80080185A /* WorthSlideView */ = {
 			isa = PBXGroup;
 			children = (
-				2EB4EF571B969A250080185A /* WorthSlideView.xib */,
 				2EB4EF541B9699D80080185A /* WorthSlideView.h */,
 				2EB4EF551B9699D80080185A /* WorthSlideView.m */,
+				2EB4EF571B969A250080185A /* WorthSlideView.xib */,
 			);
 			path = WorthSlideView;
 			sourceTree = "<group>";
@@ -2340,7 +2341,7 @@
 				TargetAttributes = {
 					2E8C33D11B7DEC79006B5BC0 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 3J6XZ49R9T;
+						DevelopmentTeam = P3U8RBA76L;
 					};
 					2E8C33EA1B7DEC79006B5BC0 = {
 						CreatedOnToolsVersion = 6.4;
@@ -2461,6 +2462,7 @@
 				2EF5E9541B9FD6BC00D9BA5C /* feeling_help_clear_skin_image4.png in Resources */,
 				2E77068F1B883C460024282D /* detail_approve_icon.png in Resources */,
 				2EF5E98A1BA0398700D9BA5C /* product_trial_image_cpb3.jpg in Resources */,
+				382C15E31C06DD95001131FD /* BookCollectionView.xib in Resources */,
 				2E7706791B8812E10024282D /* FeatureDescriptionCell.xib in Resources */,
 				2E085F521B8C545E0049B137 /* selection_view_unlike_line.png in Resources */,
 				2E132F8B1B85B0E7005DCF14 /* home_down_guide3.png in Resources */,
@@ -2495,7 +2497,6 @@
 				05D76C561B9ED6930061546F /* ElizabethArden-logo.png in Resources */,
 				05D76C541B9ED6930061546F /* cbp-logo.png in Resources */,
 				2EF5E9681BA0118400D9BA5C /* avatar_data_image3.jpg in Resources */,
-				2EA427411B7ED22F00BF4705 /* BookCollectionView.xib in Resources */,
 				389A1FFC1B9D3E810035BC2B /* freshSale_Panasonic_image.png in Resources */,
 				2EFAEA841B8AD6130044BAF0 /* selection_like_image.png in Resources */,
 				2EA557011B95757E00C696B0 /* DetailCommentCell.xib in Resources */,
@@ -2789,7 +2790,6 @@
 				2E7DC93C1B82D2BD00152A0B /* StackCollectionView+Configuration.m in Sources */,
 				057A26491B86D046003DAF07 /* MineTableViewCell.m in Sources */,
 				2EA556F21B95460400C696B0 /* DetailViewController+Configuration.m in Sources */,
-				2E92F5471B7E4EEB00C14B7A /* BookCollectionView.m in Sources */,
 				05D76C2C1B9E80D80061546F /* FeelIngViewController.m in Sources */,
 				057A26391B86CC8C003DAF07 /* MineViewController.m in Sources */,
 				05F8B4FB1B9D328C0011FD05 /* FreshSaleInfomationTool.m in Sources */,
@@ -2808,6 +2808,7 @@
 				2EFAEA7F1B8AB4170044BAF0 /* SelectionView.m in Sources */,
 				2E8C33D81B7DEC79006B5BC0 /* main.m in Sources */,
 				2EF5E96E1BA02E6400D9BA5C /* TrialInfomationTool.m in Sources */,
+				382C15E11C06DD8F001131FD /* BookCollectionView.m in Sources */,
 				2EB4EF4C1B968B640080185A /* DetailInfomationTool.m in Sources */,
 				2E77068A1B8829B30024282D /* CommentCell.m in Sources */,
 				05E04CDF1B96A67800E5D28C /* TitleHeadCell.m in Sources */,
@@ -2955,11 +2956,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2409403ED8AA8F44E837F791 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P3U8RBA76L;
 				INFOPLIST_FILE = FreshMakeupDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -2970,11 +2971,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 497D9807A3046FE50220F4E5 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = P3U8RBA76L;
 				INFOPLIST_FILE = FreshMakeupDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

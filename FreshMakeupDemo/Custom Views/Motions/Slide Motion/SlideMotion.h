@@ -2,20 +2,20 @@
 //  SlideMotion.h
 //  ArchitectureProject
 //
-//  Created by guoshencheng on 6/15/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 6/15/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-typedef enum {
+typedef NS_ENUM(NSInteger,SlideMotionDirection) {
     SlideMotionDirectionHorizontal = 0, // Horizontal slide (default)
     SlideMotionDirectionLeft = 1,
     SlideMotionDirectionRight = 2,
     SlideMotionDirectionVertical = 3,   // vertical slide
     SlideMotionDirectionUp = 4,
     SlideMotionDirectionDown = 5,
-} SlideMotionDirection;
+};
 
 @protocol SlideMotionDataSource;
 @protocol SlideMotionDelegate;

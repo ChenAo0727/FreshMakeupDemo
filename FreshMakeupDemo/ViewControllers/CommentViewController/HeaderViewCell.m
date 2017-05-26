@@ -3,7 +3,7 @@
 //  FreshMakeupDemo
 //
 //  Created by chenao on 15/8/25.
-//  Copyright (c) 2015年 guoshencheng. All rights reserved.
+//  Copyright (c) 2015年 chenao. All rights reserved.
 //
 
 #import "HeaderViewCell.h"

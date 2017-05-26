@@ -2,8 +2,8 @@
 //  BaseInfomationCell
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/21/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/21/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

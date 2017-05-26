@@ -2,8 +2,8 @@
 //  XHDrawerController.h
 //  XHDrawerController
 //
-//  Created by 曾 宪华 on 13-12-27.
-//  Copyright (c) 2013年 曾宪华 开发团队(http://iyilunba.com ) 本人QQ:543413507. All rights reserved.
+//  Created by chenao on 14-12-27.
+//  Copyright (c) chenao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -12,11 +12,8 @@ typedef NS_ENUM(NSInteger, XHDrawerSide){
     XHDrawerSideLeft,
 };
 
-
 @interface XHDrawerController : UIViewController
-
 @property (nonatomic, assign, readonly) XHDrawerSide openSide;
-
 @property (nonatomic, assign) CGFloat animateDuration;
 @property (nonatomic, assign) CGFloat animationDampingDuration;
 @property (nonatomic, assign) CGFloat animationVelocity;
@@ -26,13 +23,10 @@ typedef NS_ENUM(NSInteger, XHDrawerSide){
 @property (nonatomic, assign, getter = isSpringAnimationOn) BOOL springAnimationOn;
 
 - (void)toggleDrawerSide:(XHDrawerSide)drawerSide animated:(BOOL)animated completion:(void(^)(BOOL finished))completion;
-
 - (void)closeDrawerAnimated:(BOOL)animated completion:(void(^)(BOOL finished))completion;
-
 - (void)openDrawerSide:(XHDrawerSide)drawerSide animated:(BOOL)animated completion:(void(^)(BOOL finished))completion;
 
 @end
-
 
 @interface UIViewController (XHDrawerController)
 

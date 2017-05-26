@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/14/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/14/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -18,11 +18,9 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:[HomeViewController create]];
-
     self.navigationController.navigationBarHidden = YES;
     MineViewController *mineViewController = [MineViewController create];
     XHDrawerController *xhDrawerController = [[XHDrawerController alloc] init];

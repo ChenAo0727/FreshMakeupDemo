@@ -3,7 +3,7 @@
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/9/8.
-//  Copyright (c) 2015年 guoshencheng. All rights reserved.
+//  Copyright (c) 2015年 chenao. All rights reserved.
 //
 
 #import "FeelIngViwControllerDataSource.h"
@@ -20,8 +20,6 @@
         [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
         [cell updateWithFeelImageView:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row ] objectForKey:@"image"] Feelllabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row ] objectForKey:@"hasTag"]];
         return cell;
-
-        
     } else if([[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row] objectForKey:@"text"]){
         FeelingTextCell *cell = [tableView dequeueReusableCellWithIdentifier:FEELING_TEXT_CELL];
         [cell updateFeelingTextLabel:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row]objectForKey:@"text"] WithTag:[[self.feelingInformationTool.feelIngArray objectAtIndex:indexPath.row]objectForKey:@"hasTag"]];
@@ -30,4 +28,5 @@
     return nil;
 
 }
+
 @end

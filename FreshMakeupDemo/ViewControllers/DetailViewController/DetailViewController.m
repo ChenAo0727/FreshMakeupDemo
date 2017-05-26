@@ -2,8 +2,8 @@
 //  DetailViewController.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/17/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/17/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "EarlyAdoptersTheTrialViewController.h"
@@ -59,7 +59,6 @@
 }
 
 #pragma mark - UICollectionDelegate
-
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     self.detailITitleImageView.hidden = scrollView.contentOffset.y > 280;
     self.lineView.hidden = scrollView.contentOffset.y > 280;
@@ -90,7 +89,6 @@
 }
 
 #pragma mark - PrivateMethod
-
 - (void)pushViewCommentViewController {
     CommentViewController *commentViewController = [CommentViewController create];
     commentViewController.comments = self.productDetailDataSource.detailInfomationTool.comments;

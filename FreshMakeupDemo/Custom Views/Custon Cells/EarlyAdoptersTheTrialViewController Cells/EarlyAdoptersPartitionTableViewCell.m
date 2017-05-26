@@ -3,7 +3,7 @@
 //  FreshMakeupDemo
 //
 //  Created by winchance on 15/8/17.
-//  Copyright (c) 2015年 guoshencheng. All rights reserved.
+//  Copyright (c) 2015年 chenao. All rights reserved.
 //
 
 #import "EarlyAdoptersPartitionTableViewCell.h"

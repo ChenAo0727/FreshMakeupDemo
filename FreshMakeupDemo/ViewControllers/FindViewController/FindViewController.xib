@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="yaoti.ttf">
@@ -33,6 +32,7 @@
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发现" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bFF-up-R86">
                                     <rect key="frame" x="136" y="0.0" width="48" height="50"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="IUZ-qR-G5R"/>
                                     </constraints>
@@ -42,6 +42,7 @@
                                 </label>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_user_info_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="6sH-bB-sl9">
                                     <rect key="frame" x="13" y="13" width="25" height="25"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="JMj-g8-zdh"/>
                                         <constraint firstAttribute="width" constant="25" id="pnp-wL-bF0"/>
@@ -49,6 +50,7 @@
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_discovery_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="wEj-BS-5WR">
                                     <rect key="frame" x="282" y="12" width="25" height="25"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="GhJ-gP-uET"/>
                                         <constraint firstAttribute="width" constant="25" id="RFa-Hf-yML"/>
@@ -56,6 +58,7 @@
                                 </imageView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Dg-zz-53F">
                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="7M3-QF-MK5"/>
                                     </constraints>
@@ -68,6 +71,7 @@
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3G-c5-soT">
                                     <rect key="frame" x="270" y="0.0" width="50" height="50"/>
+                                    <animations/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="50" id="FIG-7B-rh0"/>
                                     </constraints>
@@ -79,6 +83,7 @@
                                     </connections>
                                 </button>
                             </subviews>
+                            <animations/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="centerY" secondItem="6sH-bB-sl9" secondAttribute="centerY" id="8SZ-gz-8T7"/>
@@ -97,6 +102,7 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <animations/>
                     <color key="backgroundColor" red="0.45098039215686275" green="0.76470588235294112" blue="0.73725490196078436" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="uTh-aa-5Iu" firstAttribute="leading" secondItem="CIM-5w-Hte" secondAttribute="leading" id="LWr-cb-jly"/>
@@ -108,9 +114,11 @@
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3Ie-wC-hVQ">
                     <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                    <animations/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
+            <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="3Ie-wC-hVQ" secondAttribute="trailing" id="Ctc-w3-904"/>
@@ -128,9 +136,4 @@
         <image name="home_discovery_icon.png" width="50" height="50"/>
         <image name="home_user_info_icon.png" width="50" height="50"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>

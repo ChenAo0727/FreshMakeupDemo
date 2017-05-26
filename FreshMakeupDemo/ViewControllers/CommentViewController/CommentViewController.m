@@ -2,8 +2,8 @@
 //  CommentViewController.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/16/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/16/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "CommentViewController.h"
@@ -55,7 +55,7 @@ static NSString *NewCommentIdentifier = @"NewCommentCell";
 
 #pragma mark - CHTCollectionViewWaterfallLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CGSize size;
+    CGSize size = CGSizeZero;
     if (indexPath.section == 0 ) {
         return CGSizeMake([UIScreen screenWidth] - 20, 200);
     }else if (indexPath.section == 1 || indexPath.section == 3){

@@ -2,8 +2,8 @@
 //  BaseViewController.m
 //  ArchitectureProject
 //
-//  Created by guoshencheng on 6/18/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 6/18/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "BaseViewController.h"
@@ -20,24 +20,14 @@
 }
 
 - (void)viewDidLoad {
-    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
+
+    
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
 #pragma mark Public Methods
-
-//- (void)toast:(NSString *)message complete:(MBProgressHUDCompletionBlock)complete {
-//    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-//    hud.mode = MBProgressHUDModeText;
-//    hud.labelText = message;
-//    hud.labelFont = [UIFont fontWithName:@"HelveticaNeue" size:12];
-//    hud.margin = 14.f;
-//    hud.userInteractionEnabled = NO;
-//    hud.removeFromSuperViewOnHide = YES;
-//    hud.completionBlock = complete;
-//    hud.yOffset = 0;
-//    [hud hide:YES afterDelay:1.3];
-//}
-
 - (void)addAutoDismissKeyboardGesture {
     NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
     UITapGestureRecognizer *singleTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(autoDismissKeyboardGestureAction:)];

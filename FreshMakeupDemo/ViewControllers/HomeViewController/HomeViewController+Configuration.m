@@ -2,8 +2,8 @@
 //  HomeViewController+Configuration.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/20/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/20/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "HomeViewController+Configuration.h"
@@ -17,13 +17,12 @@
 - (void)configureViews {
     [self configureFreshMakeupData];
     [self configureFreshSaleData];
+    [self configureTableView];
     [self configureFreshTryData];
     [self createTransition];
-    [self configureTableView];
 }
 
 #pragma marks - PrivateMethod
-
 - (void)createTransition {
     self.materialTransition = [[MaterialTransition alloc] init];
     self.materialTransition.startFrame = CGRectMake([UIScreen screenWidth] - 25, -25, 50, 50);

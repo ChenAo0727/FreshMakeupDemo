@@ -2,8 +2,8 @@
 //  StackCollectionView+Caculation.h
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/18/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/18/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "StackCollectionView.h"

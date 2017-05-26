@@ -2,8 +2,8 @@
 //  DetailViewController+Configuration.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 9/1/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 9/1/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "DetailViewController+Configuration.h"
@@ -54,7 +54,6 @@
 }
 
 - (void)configureCollectionView {
-    
     self.detailCollectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"ProductiDescriptionCell" bundle:nil] forCellWithReuseIdentifier:USER_FELLING_CELL];
     [self.detailCollectionView registerNib:[UINib nibWithNibName:@"DetailBaseInfomationCell" bundle:nil] forCellWithReuseIdentifier:DETAIL_BASE_COLLECTION_VIEW_CELL];
@@ -74,7 +73,6 @@
 }
 
 - (void)addSelectionView {
-    
     self.selectionView = [SelectionView create];
     [self.view insertSubview:self.selectionView belowSubview:self.topViewContainer];
     [self.selectionView setLeftSpace:0];

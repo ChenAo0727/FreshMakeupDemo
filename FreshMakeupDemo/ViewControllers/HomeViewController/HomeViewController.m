@@ -2,8 +2,8 @@
 //  HomeViewController.m
 //  FreshMakeupDemo
 //
-//  Created by guoshencheng on 8/14/15.
-//  Copyright (c) 2015 guoshencheng. All rights reserved.
+//  Created by chenao on 8/14/15.
+//  Copyright (c) 2015 chenao. All rights reserved.
 //
 
 #import "HomeViewController.h"
@@ -36,6 +36,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     self.navigationController.delegate = self;
 //    [self.downGuideImageView startAnimating];
+
 }
 
 - (NSInteger)stackCollectionView:(StackCollectionView *)stackCollectionView numberOfItemsInSection:(NSInteger)section {
@@ -96,11 +97,15 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     BookCollectionView *bookCollectionView = (BookCollectionView *)cell;
+    bookCollectionView.delegate = self;
     [bookCollectionView startSpriteAnimation];
 }
 
 - (void)BookCollectionView:(BookCollectionView *)bookCollectionView didSelectItemAtIndex:(NSInteger)index cell:(UICollectionViewCell *)cell {
+    
+    
     realBook = (RealBookView *)cell;
+
     self.bookFlipTransition.coverImage = [UIImage imageWithView:realBook.coverContainerView];
     UIImage *image = [UIImage imageWithView:realBook.backgroundContanerView];
     self.bookFlipTransition.contentView = [[UIImageView alloc] initWithImage:image];
